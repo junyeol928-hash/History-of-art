@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>美術の首都は、どこにあったか ─ 世界美術史</title>
+<meta name="description" content="テーベ、アテネ、ローマ、長安、バグダード、フィレンツェ、パリ、ニューヨーク。美術の中心地が五千年でどう移動したかを地図でたどる。">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+  .stage { display: grid; gap: 0; border: 1px solid var(--rule); margin: 1.8rem 0 1rem; }
+  @media (min-width: 900px) { .stage { grid-template-columns: 1fr 21rem; } }
+  #map { height: min(64vh, 580px); width: 100%; }
+  @media (max-width: 899px) { #map { height: 46vh; } }
+  .leaflet-container { background: var(--bg-sink); font-family: var(--sans); }
+
+  .panel { padding: 1.4rem 1.3rem; background: var(--bg-raise); border-top: 1px solid var(--rule); }
+  @media (min-width: 900px) { .panel { border-top: 0; border-left: 1px solid var(--rule); overflow-y: auto;
+    max-height: min(64vh, 580px); } }
+  .panel .years { font-family: var(--mono); font-size: .74rem; letter-spacing: .1em; color: var(--accent); }
+  .panel h2 { font-size: 1.35rem; margin: .35rem 0 .1rem; font-weight: 600; line-height: 1.4; }
+  .panel .region { font-family: var(--sans); font-size: .76rem; color: var(--ink-3); }
+  .panel p { font-size: .92rem; line-height: 1.95; margin: 1.1rem 0 0; color: var(--ink-2); }
+  .panel .toch { display: inline-block; margin-top: 1.2rem; font-family: var(--sans); font-size: .76rem;
+    text-decoration: none; color: var(--accent-ink); border: 1px solid var(--accent-line); padding: .45rem .8rem; }
+  .panel .toch:hover { background: var(--accent-soft); }
+
+  .track { display: flex; gap: 0; overflow-x: auto; border: 1px solid var(--rule); border-top: 0;
+           margin: -1rem 0 2rem; background: var(--bg-raise); }
+  .track button { flex: none; cursor: pointer; background: transparent; border: 0;
+    border-right: 1px solid var(--rule-soft); padding: .7rem .9rem; text-align: left; min-width: 8.5rem;
+    font-family: var(--sans); color: var(--ink-2); }
+  .track button:last-child { border-right: 0; }
+  .track button:hover { background: var(--accent-soft); }
+  .track button[aria-current="true"] { background: var(--accent); color: var(--mat); }
+  .track button[aria-current="true"] .ty { color: var(--mat); opacity: .85; }
+  .track .ty { display: block; font-family: var(--mono); font-size: .62rem; color: var(--ink-3); letter-spacing: .06em; }
+  .track .tp { display: block; font-size: .82rem; font-weight: 700; margin-top: .15rem; line-height: 1.5; }
+
+  .nav2 { display: flex; gap: .5rem; justify-content: space-between; margin: 0 0 2.5rem; }
+  .nav2 button { cursor: pointer; font-family: var(--sans); font-size: .78rem; color: var(--ink-2);
+    background: transparent; border: 1px solid var(--rule); padding: .6rem 1rem; min-height: 40px; }
+  .nav2 button:hover { border-color: var(--accent-line); color: var(--accent-ink); }
+  .nav2 button:disabled { opacity: .35; cursor: default; }
+</style>
+</head>
+<body class="era-renaissance">
+
+<div id="progress"></div>
+<header class="topbar" data-where="地図"></header>
+
+<main class="wrap wide">
+  <section style="padding-block:2.5rem 0">
+    <h1 style="font-size:clamp(1.7rem,6vw,2.4rem);margin:0;font-weight:600">美術の首都は、どこにあったか</h1>
+    <p style="font-size:.96rem;color:var(--ink-2);margin-top:1rem;max-width:44rem">
+      美術の中心地は、五千年のあいだ一か所に留まったことがありません。金と権力と人が集まるところに画家が集まり、
+      そこが崩れると次の街へ移る。<strong>下の帯を順に押していくと、その移動が地図の上で見えます。</strong>
+      ヨーロッパだけを追いかけないように、長安とバグダードと京都も同じ線の上に置きました。
+    </p>
+  </section>
+
+  <div class="stage">
+    <div id="map"></div>
+    <aside class="panel" id="panel"></aside>
+  </div>
+  <div class="track" id="track"></div>
+  <div class="nav2">
+    <button type="button" id="prev">← 前へ</button>
+    <button type="button" id="next">次へ →</button>
+  </div>
+</main>
+
+<footer class="foot wrap">
+  <p>地図タイル：&copy; OpenStreetMap contributors &copy; CARTO　／　各地点は代表的な場所を示したもので、
+     厳密な境界を意味するものではありません。</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="assets/js/site.js"></script>
+<script>
+(function () {
+  var LIGHT = 'https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png';
+  var DARK  = 'https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png';
+  var ATTR  = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>';
+
+  function isDark() {
+    var t = document.documentElement.getAttribute('data-theme');
+    return t ? t === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+  function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c];}); }
+  function accent() { return getComputedStyle(document.body).getPropertyValue('--accent').trim() || '#4a7c59'; }
+
+  var map = L.map('map', { scrollWheelZoom: false, zoomControl: true, worldCopyJump: true }).setView([35, 25], 3);
+  var tiles = L.tileLayer(isDark() ? DARK : LIGHT, { attribution: ATTR, maxZoom: 12, subdomains: 'abcd' }).addTo(map);
+  map.on('click', function () { map.scrollWheelZoom.enable(); });
+  new MutationObserver(function () { tiles.setUrl(isDark() ? DARK : LIGHT); paint(); })
+    .observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+
+  var stops = [], chapters = {}, at = 0;
+  var layer = L.layerGroup().addTo(map);
+
+  Promise.all([
+    fetch('data/capitals.json').then(function(r){return r.json();}),
+    fetch('data/chapters.json').then(function(r){return r.json();}).catch(function(){return {chapters:[]};})
+  ]).then(function (res) {
+    stops = res[0].stops;
+    (res[1].chapters || []).forEach(function (c) { chapters[c.n] = c; });
+    buildTrack();
+    go(0, true);
+  });
+
+  function buildTrack() {
+    document.getElementById('track').innerHTML = stops.map(function (s, i) {
+      return '<button type="button" data-i="' + i + '" aria-current="' + (i === 0) + '">' +
+        '<span class="ty">' + esc(s.years) + '</span>' +
+        '<span class="tp">' + esc(s.place) + '</span></button>';
+    }).join('');
+    document.getElementById('track').addEventListener('click', function (e) {
+      var b = e.target.closest('button'); if (b) go(+b.dataset.i);
+    });
+    document.getElementById('prev').addEventListener('click', function () { go(at - 1); });
+    document.getElementById('next').addEventListener('click', function () { go(at + 1); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight') go(at + 1);
+      if (e.key === 'ArrowLeft') go(at - 1);
+    });
+  }
+
+  /* これまで通ってきた道と、いまの地点を描き直す */
+  function paint() {
+    if (!stops.length) return;
+    layer.clearLayers();
+    var c = accent();
+
+    // 通ってきた線（薄く）
+    var path = stops.slice(0, at + 1).map(function (s) { return [s.lat, s.lng]; });
+    if (path.length > 1) {
+      L.polyline(path, { color: c, weight: 1.6, opacity: .38, dashArray: '5 6' }).addTo(layer);
+    }
+    // 通過した地点（小さな輪）
+    stops.slice(0, at).forEach(function (s) {
+      L.circleMarker([s.lat, s.lng], {
+        radius: 4, color: c, weight: 1.4, opacity: .55, fillOpacity: 0
+      }).addTo(layer).bindTooltip(s.place, { direction: 'top' });
+    });
+    // いまの地点
+    var now = stops[at];
+    L.circleMarker([now.lat, now.lng], {
+      radius: 9, color: c, weight: 2, fillColor: c, fillOpacity: .28
+    }).addTo(layer).bindTooltip(now.place + '　' + now.years, { permanent: true, direction: 'top', className: 'nowtip' });
+  }
+
+  function go(i, instant) {
+    if (i < 0 || i >= stops.length) return;
+    at = i;
+    var s = stops[at];
+
+    document.body.className = 'era-' + s.era;
+    document.querySelectorAll('.track button').forEach(function (b) {
+      b.setAttribute('aria-current', +b.dataset.i === at);
+    });
+    var active = document.querySelector('.track button[aria-current="true"]');
+    if (active) active.scrollIntoView({ inline: 'center', block: 'nearest', behavior: instant ? 'auto' : 'smooth' });
+
+    document.getElementById('prev').disabled = at === 0;
+    document.getElementById('next').disabled = at === stops.length - 1;
+
+    var ch = chapters[s.ch];
+    document.getElementById('panel').innerHTML =
+      '<p class="years">' + esc(s.years) + '</p>' +
+      '<h2>' + esc(s.place) + '</h2>' +
+      '<p class="region">' + esc(s.region) + '</p>' +
+      '<p>' + esc(s.text) + '</p>' +
+      (ch ? '<a class="toch" href="chapters/' + ch.slug + '.html">第' + ch.n + '章　' + esc(ch.title) + ' へ</a>' : '');
+
+    map.flyTo([s.lat, s.lng], s.zoom, { duration: instant ? 0 : 1.4 });
+    paint();
+  }
+})();
+</script>
+</body>
+</html>

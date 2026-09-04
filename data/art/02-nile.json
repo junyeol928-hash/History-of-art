@@ -1,0 +1,72 @@
+{
+  "nebamun-fowling": {
+    "artist": "作者不詳（テーベの職人）", "title": "ネバムンの墓の壁画　沼地の鳥猟", "year": "前1350年ごろ",
+    "collection": "大英博物館（ロンドン）",
+    "commons": "Nebamun tomb fresco.jpg",
+    "wiki": "ネバムンの墓", "wikiLang": "ja", "wikiEn": "Tomb of Nebamun",
+    "license": "パブリックドメイン"
+  },
+  "egyptian-seated-scribe": {
+    "artist": "作者不詳（サッカラの工房）", "title": "書記座像", "year": "前2600 — 前2350年ごろ",
+    "collection": "ルーヴル美術館（パリ）",
+    "commons": "Egypte louvre 285 scribe.jpg",
+    "wiki": "書記座像", "wikiLang": "ja", "wikiEn": "The Seated Scribe",
+    "license": "パブリックドメイン"
+  },
+  "nefertiti-bust": {
+    "artist": "トトメス（工房）と伝わる", "title": "ネフェルティティ胸像", "year": "前1345年ごろ",
+    "collection": "新博物館（ベルリン）",
+    "commons": "Nofretete Neues Museum.jpg",
+    "wiki": "ネフェルティティの胸像", "wikiLang": "ja", "wikiEn": "Nefertiti Bust",
+    "license": "パブリックドメイン"
+  },
+  "akhenaten-head": {
+    "artist": "作者不詳", "title": "アクエンアテン像", "year": "前1350年ごろ",
+    "collection": "エジプト考古学博物館（カイロ）ほか",
+    "commons": "Akhenaten statue.jpg",
+    "wiki": "アクエンアテン", "wikiLang": "ja", "wikiEn": "Akhenaten",
+    "license": "パブリックドメイン"
+  },
+  "akhenaten-family": {
+    "artist": "作者不詳（アケトアテンの工房）", "title": "アクエンアテンとネフェルティティと三人の娘", "year": "前1345年ごろ",
+    "collection": "新博物館（ベルリン）",
+    "commons": "Akhenaten, Nefertiti and their children.jpg",
+    "wiki": "アマルナ時代", "wikiLang": "ja", "wikiEn": "Amarna art",
+    "license": "パブリックドメイン"
+  },
+  "tutankhamun-mask": {
+    "artist": "作者不詳（王家の工房）", "title": "ツタンカーメンの黄金のマスク", "year": "前1323年ごろ",
+    "collection": "大エジプト博物館／エジプト考古学博物館（エジプト）",
+    "commons": "CairoEgMuseumTaaMaskMostlyPhotographed.jpg",
+    "wiki": "ツタンカーメンの黄金のマスク", "wikiLang": "ja", "wikiEn": "Mask of Tutankhamun",
+    "license": "パブリックドメイン"
+  },
+  "standard-of-ur": {
+    "artist": "作者不詳（シュメールの工人）", "title": "ウルのスタンダード", "year": "前2600年ごろ",
+    "collection": "大英博物館（ロンドン）",
+    "commons": "Standard of Ur - War.jpg",
+    "wiki": "ウルのスタンダード", "wikiLang": "ja", "wikiEn": "Standard of Ur",
+    "license": "パブリックドメイン"
+  },
+  "hammurabi-stele": {
+    "artist": "作者不詳（バビロンの工房）", "title": "ハンムラビ法典碑", "year": "前1750年ごろ",
+    "collection": "ルーヴル美術館（パリ）",
+    "commons": "Code-de-Hammurabi-1.jpg",
+    "wiki": "ハンムラビ法典", "wikiLang": "ja", "wikiEn": "Code of Hammurabi",
+    "license": "パブリックドメイン"
+  },
+  "lamassu": {
+    "artist": "作者不詳（アッシリアの工房）", "title": "人頭有翼牡牛像（ラマッスー）", "year": "前710年ごろ",
+    "collection": "ルーヴル美術館、大英博物館ほか",
+    "commons": "Human-headed winged bull, Khorsabad.jpg",
+    "wiki": "ラマッス", "wikiLang": "ja", "wikiEn": "Lamassu",
+    "license": "パブリックドメイン"
+  },
+  "ishtar-gate": {
+    "artist": "作者不詳（新バビロニアの工房）", "title": "イシュタル門", "year": "前575年ごろ",
+    "collection": "ペルガモン博物館（ベルリン）",
+    "commons": "Ishtar Gate at Berlin Museum.jpg",
+    "wiki": "イシュタル門", "wikiLang": "ja", "wikiEn": "Ishtar Gate",
+    "license": "パブリックドメイン"
+  }
+}

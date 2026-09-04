@@ -1,0 +1,72 @@
+{
+  "etruscan-sarcophagus-spouses": {
+    "artist": "エトルリアの工房", "title": "夫婦の棺（カエレ出土）", "year": "前520年頃",
+    "collection": "ヴィラ・ジュリア国立エトルリア博物館（ローマ）",
+    "commons": "Sarcofago degli sposi.jpg",
+    "wiki": "夫婦の棺", "wikiLang": "ja", "wikiEn": "Sarcophagus of the Spouses",
+    "license": "パブリックドメイン"
+  },
+  "togatus-barberini": {
+    "artist": "ローマの工房", "title": "二つの胸像を持つ男（バルベリーニのトガ像）", "year": "前1世紀末頃",
+    "collection": "カピトリーノ美術館（ローマ、モンテマルティーニ分館）",
+    "commons": "Togato Barberini.jpg",
+    "wiki": "バルベリーニのトガ像", "wikiLang": "ja", "wikiEn": "Togatus Barberini",
+    "license": "パブリックドメイン"
+  },
+  "augustus-prima-porta": {
+    "artist": "ローマの工房", "title": "プリマポルタのアウグストゥス", "year": "前20年頃の原型／後1世紀の複製",
+    "collection": "ヴァチカン美術館（ローマ）",
+    "commons": "Statue-Augustus.jpg",
+    "wiki": "プリマポルタのアウグストゥス", "wikiLang": "ja", "wikiEn": "Augustus of Prima Porta",
+    "license": "パブリックドメイン"
+  },
+  "augustus-bust": {
+    "artist": "ローマの工房", "title": "アウグストゥスの胸像（ベヴィラックア型）", "year": "前1世紀末",
+    "collection": "グリュプトテーク（ミュンヘン）",
+    "commons": "Augustus Bevilacqua Glyptothek Munich 317.jpg",
+    "wiki": "アウグストゥス", "wikiLang": "ja", "wikiEn": "Augustus",
+    "license": "パブリックドメイン"
+  },
+  "pantheon-interior": {
+    "artist": "ハドリアヌス帝時代の設計者", "title": "パンテオン　内部", "year": "118 — 128年頃",
+    "collection": "パンテオン（ローマ）",
+    "commons": "Roma-pantheon-interno01.jpg",
+    "wiki": "パンテオン (ローマ)", "wikiLang": "ja", "wikiEn": "Pantheon, Rome",
+    "license": "写真はウィキメディア・コモンズの自由利用画像"
+  },
+  "colosseum": {
+    "artist": "ウェスパシアヌス帝／ティトゥス帝の造営", "title": "コロッセウム（フラウィウス円形闘技場）", "year": "70 — 80年",
+    "collection": "ローマ",
+    "commons": "Colosseum in Rome, Italy - April 2007.jpg",
+    "wiki": "コロッセオ", "wikiLang": "ja", "wikiEn": "Colosseum",
+    "license": "写真はウィキメディア・コモンズの自由利用画像"
+  },
+  "trajan-column": {
+    "artist": "ダマスクスのアポロドロスに帰される", "title": "トラヤヌス帝記念柱", "year": "113年",
+    "collection": "トラヤヌスのフォルム（ローマ）",
+    "commons": "Colonna Traiana.jpg",
+    "wiki": "トラヤヌスの記念柱", "wikiLang": "ja", "wikiEn": "Trajan's Column",
+    "license": "写真はウィキメディア・コモンズの自由利用画像"
+  },
+  "pompeii-villa-mysteries": {
+    "artist": "ポンペイの壁画工房", "title": "秘儀荘の大壁画", "year": "前60 — 前50年頃",
+    "collection": "ポンペイ遺跡・秘儀荘（イタリア）",
+    "commons": "Roman fresco Villa dei Misteri Pompeii 001.jpg",
+    "wiki": "秘儀荘", "wikiLang": "ja", "wikiEn": "Villa of the Mysteries",
+    "license": "パブリックドメイン"
+  },
+  "fayum-mummy-portrait": {
+    "artist": "ローマ期エジプトの工房", "title": "ミイラ肖像画（ファイユーム出土）", "year": "2世紀",
+    "collection": "大英博物館ほか",
+    "commons": "Fayum-33.jpg",
+    "wiki": "ミイラ肖像画", "wikiLang": "ja", "wikiEn": "Fayum mummy portraits",
+    "license": "パブリックドメイン"
+  },
+  "constantine-colossus": {
+    "artist": "コンスタンティヌス帝時代の工房", "title": "コンスタンティヌス帝の巨像（頭部）", "year": "312 — 315年頃",
+    "collection": "カピトリーノ美術館（ローマ・中庭）",
+    "commons": "Colosso di Costantino - Testa.jpg",
+    "wiki": "コンスタンティヌスの巨像", "wikiLang": "ja", "wikiEn": "Colossus of Constantine",
+    "license": "写真はウィキメディア・コモンズの自由利用画像"
+  }
+}

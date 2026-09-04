@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>用語辞典 ─ 世界美術史</title>
+<meta name="description" content="本文に出てくる美術の用語を、あいうえお順に。展覧会のキャプションが読めるようになる。">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+  .searchbox { display: flex; align-items: center; gap: .6rem; border: 1px solid var(--rule);
+    background: var(--bg-raise); padding: .3rem .9rem; max-width: 24rem; margin: 1.6rem 0 .6rem; }
+  .searchbox:focus-within { border-color: var(--accent-line); }
+  .searchbox input { flex: 1; border: 0; background: transparent; outline: none; min-width: 0;
+    font-family: var(--sans); font-size: .88rem; color: var(--ink); min-height: 36px; }
+  .searchbox svg { width: 15px; height: 15px; color: var(--ink-3); flex: none; }
+  .count { font-family: var(--mono); font-size: .7rem; color: var(--ink-3); }
+  .gl { margin: 1.6rem 0 4rem; }
+  .gl-head { font-family: var(--sans); font-size: .72rem; font-weight: 700; letter-spacing: .22em;
+    color: var(--accent-ink); border-bottom: 1px solid var(--rule); padding-bottom: .4rem; margin: 2.4rem 0 .4rem; }
+  .gl-item { padding: 1rem .2rem; border-bottom: 1px solid var(--rule-soft); }
+  .gl-item dt { font-family: var(--sans); font-weight: 700; font-size: 1rem; color: var(--ink); }
+  .gl-item dd { margin: .4rem 0 0; font-size: .92rem; line-height: 1.9; color: var(--ink-2); }
+  .gl-item .from { display: inline-block; margin-top: .5rem; font-family: var(--sans); font-size: .7rem;
+    text-decoration: none; color: var(--accent-ink); border: 1px solid var(--accent-line); padding: .25rem .55rem; }
+  .gl-item .from:hover { background: var(--accent-soft); }
+  .empty { color: var(--ink-3); font-size: .9rem; padding: 2rem 0; }
+</style>
+</head>
+<body class="era-baroque">
+
+<div id="progress"></div>
+<header class="topbar" data-where="用語辞典"></header>
+
+<main class="wrap">
+  <section style="padding-block:2.5rem 0">
+    <h1 style="font-size:clamp(1.7rem,6vw,2.4rem);margin:0;font-weight:600">用語辞典</h1>
+    <p style="font-size:.95rem;color:var(--ink-2);margin-top:1rem">
+      本文中で点線が引いてある語を、あいうえお順に集めました。<strong>美術館のキャプションが読めるようになる</strong>ことを目安に書いています。
+      それぞれ、初めて出てくる章へ飛べます。
+    </p>
+  </section>
+
+  <div class="searchbox">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+      <circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21" stroke-linecap="round"/>
+    </svg>
+    <input type="search" id="q" placeholder="用語をさがす（例：遠近法、印象）" autocomplete="off">
+  </div>
+  <p class="count" id="count"></p>
+  <div class="gl" id="gl"></div>
+</main>
+
+<footer class="foot wrap"><p>章が増えるにつれて、この辞典も増えていきます。</p></footer>
+
+<script src="assets/js/site.js"></script>
+<script>
+(function () {
+  function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c];}); }
+
+  /* かな・カナ・英字をまとめて見出しにする */
+  var ROWS = [
+    ['あ', 'あいうえおアイウエオ'], ['か', 'かきくけこがぎぐげごカキクケコガギグゲゴ'],
+    ['さ', 'さしすせそざじずぜぞサシスセソザジズゼゾ'], ['た', 'たちつてとだぢづでどタチツテトダヂヅデド'],
+    ['な', 'なにぬねのナニヌネノ'], ['は', 'はひふへほばびぶべぼぱぴぷぺぽハヒフヘホバビブベボパピプペポ'],
+    ['ま', 'まみむめもマミムメモ'], ['や', 'やゆよヤユヨ'], ['ら', 'らりるれろラリルレロ'],
+    ['わ', 'わをんワヲン'], ['A–Z', 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz']
+  ];
+  function rowOf(term) {
+    var c = term.charAt(0);
+    for (var i = 0; i < ROWS.length; i++) if (ROWS[i][1].indexOf(c) >= 0) return ROWS[i][0];
+    return 'その他';
+  }
+
+  var terms = [], chapters = {};
+
+  Promise.all([
+    fetch('data/glossary.json').then(function(r){return r.json();}).catch(function(){return {};}),
+    fetch('data/chapters.json').then(function(r){return r.json();}).catch(function(){return {chapters:[]};})
+  ]).then(function (res) {
+    (res[1].chapters || []).forEach(function (c) { chapters[c.slug] = c; });
+    terms = Object.keys(res[0]).map(function (k) {
+      return { term: k, def: res[0][k].short || res[0][k].def || '', ch: res[0][k].chapter };
+    }).sort(function (a, b) { return a.term.localeCompare(b.term, 'ja'); });
+    render('');
+    document.getElementById('q').addEventListener('input', function (e) { render(e.target.value.trim()); });
+  });
+
+  function render(q) {
+    var hits = q ? terms.filter(function (t) {
+      return t.term.indexOf(q) >= 0 || t.def.indexOf(q) >= 0;
+    }) : terms;
+
+    document.getElementById('count').textContent = hits.length + ' 語' + (q ? '（「' + q + '」で絞り込み）' : '');
+    if (!hits.length) {
+      document.getElementById('gl').innerHTML = '<p class="empty">見つかりませんでした。</p>';
+      return;
+    }
+    var out = '', row = null;
+    hits.forEach(function (t) {
+      var r = rowOf(t.term);
+      if (r !== row && !q) { out += '<p class="gl-head">' + r + '</p>'; row = r; }
+      var c = chapters[t.ch];
+      out += '<dl class="gl-item"><dt>' + esc(t.term) + '</dt><dd>' + esc(t.def) +
+        (c ? '<br><a class="from" href="chapters/' + c.slug + '.html">第' + c.n + '章　' + esc(c.title) + '</a>' : '') +
+        '</dd></dl>';
+    });
+    document.getElementById('gl').innerHTML = out;
+  }
+})();
+</script>
+</body>
+</html>

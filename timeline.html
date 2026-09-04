@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>大年表 ─ 世界美術史</title>
+<meta name="description" content="西洋・日本・中国・イスラームを横に並べた美術の年表。《風神雷神図屏風》と《夜警》がほぼ同じ頃だと分かる。">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+  .tl-help { font-size: .93rem; color: var(--ink-2); max-width: 44rem; }
+  .tl-tools { display: flex; gap: .35rem; flex-wrap: wrap; align-items: center; margin: 1.6rem 0 .8rem; }
+  .tl-tools button { cursor: pointer; font-family: var(--sans); font-size: .74rem; font-weight: 700;
+    color: var(--ink-2); background: transparent; border: 1px solid var(--rule); padding: .4rem .8rem; min-height: 34px; }
+  .tl-tools button:hover { border-color: var(--accent-line); color: var(--accent-ink); }
+  .tl-tools button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--mat); }
+  .tl-tools .hint { font-family: var(--mono); font-size: .68rem; color: var(--ink-3); margin-left: auto; }
+
+  .tl-scroll { overflow-x: auto; overflow-y: hidden; border: 1px solid var(--rule);
+               background: var(--bg-raise); -webkit-overflow-scrolling: touch; cursor: grab; }
+  .tl-scroll.-drag { cursor: grabbing; }
+  .tl-inner { position: relative; height: 560px; }
+
+  .tl-axis { position: absolute; left: 0; right: 0; top: 0; height: 34px; border-bottom: 1px solid var(--rule); }
+  .tl-tick { position: absolute; top: 0; height: 100%; border-left: 1px solid var(--rule-soft); padding-left: .35rem;
+             font-family: var(--mono); font-size: .66rem; color: var(--ink-3); line-height: 34px; white-space: nowrap; }
+  .tl-grid { position: absolute; top: 34px; bottom: 0; border-left: 1px solid var(--rule-soft); opacity: .55; }
+
+  .tl-lane { position: absolute; left: 0; right: 0; border-bottom: 1px dashed var(--rule-soft); }
+  .tl-lane .lbl { position: sticky; left: 0; z-index: 3; display: inline-block;
+    font-family: var(--sans); font-size: .7rem; font-weight: 700; letter-spacing: .16em;
+    color: var(--mat); background: var(--accent); padding: .2rem .55rem; margin: .35rem 0 0 .35rem; }
+
+  .ev { position: absolute; width: 12.5rem; }
+  .ev .dot { position: absolute; left: -4px; top: 4px; width: 7px; height: 7px; background: var(--bg-raise);
+             border: 1.5px solid var(--accent-line); }
+  .ev.-key .dot { background: var(--accent); border-color: var(--accent); width: 9px; height: 9px; left: -5px; }
+  .ev .stem { position: absolute; left: 0; top: 11px; width: 1px; height: 8px; background: var(--rule); }
+  .ev a, .ev span.plain { display: block; padding-left: .55rem; text-decoration: none; color: var(--ink-2);
+    font-family: var(--sans); font-size: .72rem; line-height: 1.55; }
+  .ev a:hover { color: var(--accent-ink); }
+  .ev .yr { font-family: var(--mono); font-size: .64rem; color: var(--accent-ink); display: block; }
+  .ev.-key a, .ev.-key span.plain { color: var(--ink); font-weight: 700; }
+  .ev.-dim { opacity: .22; }
+
+  .tl-legend { display: flex; gap: 1.2rem; flex-wrap: wrap; font-family: var(--sans); font-size: .73rem;
+               color: var(--ink-3); margin: .9rem 0 3rem; }
+  .tl-legend i { display: inline-block; width: 9px; height: 9px; background: var(--accent); margin-right: .35rem; }
+</style>
+</head>
+<body class="era-medieval">
+
+<div id="progress"></div>
+<header class="topbar" data-where="大年表"></header>
+
+<main class="wrap wide">
+  <section style="padding-block:2.5rem 0">
+    <h1 style="font-size:clamp(1.7rem,6vw,2.4rem);margin:0;font-weight:600">大年表</h1>
+    <p class="tl-help" style="margin-top:1rem">
+      西洋・日本・中国・イスラームを、同じ時間軸の上に横に並べました。<strong>縦に見てください。</strong>
+      俵屋宗達が《風神雷神図屏風》を描いたのと、レンブラントが《夜警》を描いたのは、ほとんど同じ頃です。
+      東大寺の大仏が開眼した年、ヨーロッパにはまだ大聖堂が一つもありません。
+    </p>
+    <p class="tl-help" style="margin-top:.8rem;font-size:.85rem;color:var(--ink-3)">
+      横軸は等間隔ではありません。先史は圧縮し、近代は引き伸ばしてあります（そうしないと、
+      19世紀以降の百年が1ミリになってしまうので）。項目を押すとその章へ飛びます。
+    </p>
+  </section>
+
+  <div class="tl-tools" id="tools"></div>
+  <div class="tl-scroll" id="scroll"><div class="tl-inner" id="inner"></div></div>
+  <div class="tl-legend">
+    <span><i></i>この本で1章を割いている出来事</span>
+    <span>横にドラッグ、またはスクロールで動きます</span>
+  </div>
+</main>
+
+<footer class="foot wrap"><p>年代は代表的な説によります。制作年に幅のある作品は、通説の年を採りました。</p></footer>
+
+<script src="assets/js/site.js"></script>
+<script>
+(function () {
+  /* --- 年を画面上の x に変える。区間ごとに縮尺を変える --- */
+  var SEGS = [
+    [-40000, -10000,  260],
+    [-10000,  -3000,  200],
+    [ -3000,   -500,  520],
+    [  -500,    500,  760],
+    [   500,   1000,  420],
+    [  1000,   1400,  620],
+    [  1400,   1600, 1180],
+    [  1600,   1800, 1180],
+    [  1800,   1900,  980],
+    [  1900,   2000, 1180]
+  ];
+  var starts = [], acc = 0;
+  SEGS.forEach(function (s) { starts.push(acc); acc += s[2]; });
+  var TOTAL = acc + 120;
+
+  function x(year) {
+    for (var i = 0; i < SEGS.length; i++) {
+      var a = SEGS[i][0], b = SEGS[i][1], w = SEGS[i][2];
+      if (year < a) return starts[i];
+      if (year <= b) return starts[i] + (year - a) / (b - a) * w;
+    }
+    return TOTAL - 120;
+  }
+  function label(y) {
+    if (y < 0) return '前' + Math.abs(y).toLocaleString();
+    if (y === 0) return '紀元';
+    return y.toLocaleString() + '年';
+  }
+  function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c];}); }
+
+  var TICKS = [-40000,-20000,-10000,-5000,-3000,-2000,-1000,-500,0,500,1000,1200,1400,1500,1600,1700,1800,1850,1900,1950,2000];
+
+  var data = null, chapters = {}, filter = 'all';
+
+  Promise.all([
+    fetch('data/timeline.json').then(function(r){return r.json();}),
+    fetch('data/chapters.json').then(function(r){return r.json();}).catch(function(){return {chapters:[]};})
+  ]).then(function (res) {
+    data = res[0];
+    (res[1].chapters || []).forEach(function (c) { chapters[c.n] = c; });
+    tools();
+    draw();
+    // 起点はルネサンスあたり。いちばん密度が高くて面白いので
+    document.getElementById('scroll').scrollLeft = x(1400) - 120;
+  });
+
+  function tools() {
+    var host = document.getElementById('tools');
+    var btns = [['all','すべて']].concat(data.lanes.map(function (l) { return [l.id, l.name]; }));
+    host.innerHTML = btns.map(function (b, i) {
+      return '<button type="button" data-l="' + b[0] + '" aria-pressed="' + (i === 0) + '">' + esc(b[1]) + '</button>';
+    }).join('') + '<span class="hint">縦に見比べてください</span>';
+    host.addEventListener('click', function (e) {
+      var b = e.target.closest('button'); if (!b) return;
+      host.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', x === b); });
+      filter = b.dataset.l;
+      document.querySelectorAll('.ev').forEach(function (el) {
+        el.classList.toggle('-dim', filter !== 'all' && el.dataset.lane !== filter);
+      });
+    });
+  }
+
+  function draw() {
+    var inner = document.getElementById('inner');
+    var LANE_H = 124, TOP = 44;
+    inner.style.width = TOTAL + 'px';
+    inner.style.height = (TOP + LANE_H * data.lanes.length + 20) + 'px';
+
+    var html = '<div class="tl-axis">';
+    TICKS.forEach(function (t) {
+      html += '<span class="tl-tick" style="left:' + x(t) + 'px">' + label(t) + '</span>';
+    });
+    html += '</div>';
+    TICKS.forEach(function (t) {
+      html += '<span class="tl-grid" style="left:' + x(t) + 'px"></span>';
+    });
+
+    data.lanes.forEach(function (lane, li) {
+      html += '<div class="tl-lane era-' + lane.era + '" style="top:' + (TOP + li * LANE_H) + 'px;height:' + LANE_H + 'px">' +
+              '<span class="lbl">' + esc(lane.name) + '</span></div>';
+    });
+
+    // 同じ時期に固まった項目が重ならないよう、段をずらす
+    data.lanes.forEach(function (lane, li) {
+      var evs = data.events.filter(function (e) { return e.lane === lane.id; })
+                           .sort(function (a, b) { return a.y - b.y; });
+      var rows = [];  // 各段の「いま埋まっている右端」
+      evs.forEach(function (e) {
+        var px = x(e.y), W = 205, r = 0;
+        while (rows[r] !== undefined && rows[r] > px - 6) r++;
+        rows[r] = px + W;
+        if (r > 2) r = r % 3;      // 3段まで
+        var top = TOP + li * LANE_H + 30 + r * 30;
+        var c = chapters[e.ch];
+        var body = '<span class="yr">' + label(e.y) + '</span>' + esc(e.t);
+        html += '<div class="ev' + (e.key ? ' -key' : '') + '" data-lane="' + lane.id + '"' +
+                ' style="left:' + px + 'px;top:' + top + 'px">' +
+                '<span class="dot"></span><span class="stem"></span>' +
+                (c ? '<a href="chapters/' + c.slug + '.html" title="第' + c.n + '章　' + esc(c.title) + '">' + body + '</a>'
+                   : '<span class="plain">' + body + '</span>') +
+                '</div>';
+      });
+    });
+
+    inner.innerHTML = html;
+    dragScroll();
+  }
+
+  function dragScroll() {
+    var el = document.getElementById('scroll');
+    var down = false, sx = 0, sl = 0, moved = 0;
+    el.addEventListener('pointerdown', function (e) {
+      if (e.target.closest('a')) return;
+      down = true; moved = 0; sx = e.clientX; sl = el.scrollLeft;
+      el.classList.add('-drag'); el.setPointerCapture(e.pointerId);
+    });
+    el.addEventListener('pointermove', function (e) {
+      if (!down) return;
+      var d = e.clientX - sx; moved = Math.max(moved, Math.abs(d));
+      el.scrollLeft = sl - d;
+    });
+    ['pointerup','pointercancel'].forEach(function (t) {
+      el.addEventListener(t, function () { down = false; el.classList.remove('-drag'); });
+    });
+    // 縦ホイールを横スクロールに回す
+    el.addEventListener('wheel', function (e) {
+      if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) { el.scrollLeft += e.deltaY; e.preventDefault(); }
+    }, { passive: false });
+  }
+})();
+</script>
+</body>
+</html>

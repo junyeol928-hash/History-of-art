@@ -1,0 +1,65 @@
+{
+  "sainte-chapelle-interior": {
+    "artist": "パリの工房（親方名不詳）", "title": "サント・シャペル 上層礼拝堂", "year": "1242 — 1248年",
+    "collection": "サント・シャペル（パリ・シテ島）",
+    "commons": "Sainte Chapelle - Upper level 1.jpg",
+    "wiki": "サント・シャペル", "wikiLang": "ja", "wikiEn": "Sainte-Chapelle",
+    "license": "パブリックドメイン"
+  },
+  "notre-dame-chevet": {
+    "artist": "モーリス・ド・シュリー司教の発意にはじまる", "title": "ノートルダム・ド・パリ 東側（シュヴェ）の飛梁", "year": "1163年着工",
+    "collection": "ノートルダム大聖堂（パリ）",
+    "commons": "Notre-Dame de Paris, East View 140215 1.jpg",
+    "wiki": "フライング・バットレス", "wikiLang": "ja", "wikiEn": "Flying buttress",
+    "license": "パブリックドメイン"
+  },
+  "chartres-belle-verriere": {
+    "artist": "シャルトルの工房（作者不詳）", "title": "美しき絵ガラスの聖母（ノートル・ダム・ド・ラ・ベル・ヴェリエール）", "year": "1180年頃",
+    "collection": "シャルトル大聖堂 南側廊（フランス）",
+    "commons": "Chartres - cathédrale - Notre-Dame de la Belle-Verrière.jpg",
+    "wiki": "シャルトル大聖堂のステンドグラス", "wikiLang": "ja", "wikiEn": "Notre-Dame de la Belle-Verrière",
+    "license": "パブリックドメイン"
+  },
+  "amiens-nave": {
+    "artist": "ロベール・ド・リュザルシュほか", "title": "アミアン大聖堂 身廊", "year": "1220年着工",
+    "collection": "アミアン大聖堂（フランス）",
+    "commons": "Cathédrale Notre-Dame d'Amiens - Nef.jpg",
+    "wiki": "アミアン大聖堂", "wikiLang": "ja", "wikiEn": "Amiens Cathedral",
+    "license": "パブリックドメイン"
+  },
+  "beauvais-choir": {
+    "artist": "建設者名は特定されていない", "title": "サン・ピエール大聖堂 内陣（ボーヴェ）", "year": "1225年着工",
+    "collection": "ボーヴェ大聖堂（フランス）",
+    "commons": "Beauvais Cathedral Choir.jpg",
+    "wiki": "ボーヴェ大聖堂", "wikiLang": "ja", "wikiEn": "Beauvais Cathedral",
+    "license": "パブリックドメイン"
+  },
+  "chartres-royal-portal": {
+    "artist": "シャルトルの工房（作者不詳）", "title": "王の扉口の柱像", "year": "1145 — 1155年頃",
+    "collection": "シャルトル大聖堂 西正面（フランス）",
+    "commons": "Chartres - Portail royal.jpg",
+    "wiki": "シャルトル大聖堂", "wikiLang": "ja", "wikiEn": "Royal Portal",
+    "license": "パブリックドメイン"
+  },
+  "reims-smiling-angel": {
+    "artist": "ランスの工房（作者不詳）", "title": "微笑む天使", "year": "1236 — 1245年頃",
+    "collection": "ランス大聖堂 西正面 北扉口（フランス）",
+    "commons": "Reims Ange au sourire.jpg",
+    "wiki": "ランス大聖堂", "wikiLang": "ja", "wikiEn": "Smiling Angel",
+    "license": "パブリックドメイン"
+  },
+  "tres-riches-heures-fevrier": {
+    "artist": "ランブール兄弟", "title": "ベリー公のいとも豪華なる時祷書「2月」", "year": "1412 — 1416年",
+    "collection": "コンデ美術館（シャンティイ）",
+    "commons": "Les Très Riches Heures du duc de Berry février.jpg",
+    "wiki": "ベリー公のいとも豪華なる時祷書", "wikiLang": "ja", "wikiEn": "Très Riches Heures",
+    "license": "パブリックドメイン"
+  },
+  "suger-portrait": {
+    "artist": "サン・ドニの工房", "title": "シュジェール（ステンドグラスの寄進者像）", "year": "1140年代",
+    "collection": "サン・ドニ大聖堂（パリ近郊）",
+    "commons": "Suger.jpg",
+    "wiki": "シュジェール", "wikiLang": "ja", "wikiEn": "Suger",
+    "license": "パブリックドメイン"
+  }
+}

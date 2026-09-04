@@ -1,0 +1,58 @@
+{
+  "catacomb-good-shepherd": {
+    "artist": "作者不詳", "title": "善き牧者（プリシラのカタコンベ）", "year": "3世紀",
+    "collection": "プリシラのカタコンベ（ローマ）",
+    "commons": "Good shepherd 02b close.jpg",
+    "wiki": "カタコンベ", "wikiLang": "ja", "wikiEn": "Catacomb of Priscilla",
+    "license": "パブリックドメイン"
+  },
+  "galla-placidia-vault": {
+    "artist": "作者不詳", "title": "ガラ・プラキディア廟堂 天井のモザイク", "year": "425年ごろ",
+    "collection": "ガラ・プラキディア廟堂（ラヴェンナ）",
+    "commons": "Mausoleum of Galla Placidia ceiling mosaic.jpg",
+    "wiki": "ガッラ・プラキディア廟堂", "wikiLang": "ja", "wikiEn": "Mausoleum of Galla Placidia",
+    "license": "パブリックドメイン"
+  },
+  "san-vitale-justinian": {
+    "artist": "作者不詳", "title": "ユスティニアヌス帝と随臣", "year": "547年ごろ",
+    "collection": "サン・ヴィターレ聖堂（ラヴェンナ）",
+    "commons": "Meister von San Vitale in Ravenna 003.jpg",
+    "wiki": "サン・ヴィターレ聖堂", "wikiLang": "ja", "wikiEn": "Basilica of San Vitale",
+    "license": "パブリックドメイン"
+  },
+  "san-vitale-theodora": {
+    "artist": "作者不詳", "title": "テオドラ皇妃と侍女たち", "year": "547年ごろ",
+    "collection": "サン・ヴィターレ聖堂（ラヴェンナ）",
+    "commons": "Meister von San Vitale in Ravenna 004.jpg",
+    "wiki": "テオドラ (6世紀)", "wikiLang": "ja", "wikiEn": "Theodora (wife of Justinian I)",
+    "license": "パブリックドメイン"
+  },
+  "hagia-sophia-interior": {
+    "artist": "アンテミオスとイシドロス（設計）", "title": "ハギア・ソフィア 内部", "year": "537年",
+    "collection": "イスタンブール",
+    "commons": "Hagia Sophia Interior.jpg",
+    "wiki": "アヤソフィア", "wikiLang": "ja", "wikiEn": "Hagia Sophia",
+    "license": "パブリックドメイン"
+  },
+  "sinai-pantocrator": {
+    "artist": "作者不詳", "title": "全能者ハリストス（パントクラトール）", "year": "6世紀",
+    "collection": "聖カタリナ修道院（シナイ山）",
+    "commons": "Spas vsederzhitel sinay.jpg",
+    "wiki": "全能者ハリストス", "wikiLang": "ja", "wikiEn": "Christ Pantocrator (Sinai)",
+    "license": "パブリックドメイン"
+  },
+  "rublev-trinity": {
+    "artist": "アンドレイ・ルブリョフ", "title": "三位一体（至聖三者）", "year": "1425年ごろ",
+    "collection": "トレチャコフ美術館（モスクワ）",
+    "commons": "Angelsatmamre-trinity-rublev-1410.jpg",
+    "wiki": "至聖三者 (イコン)", "wikiLang": "ja", "wikiEn": "Trinity (Andrei Rublev)",
+    "license": "パブリックドメイン"
+  },
+  "yamashita-rin-portrait": {
+    "artist": "写真・作者不詳", "title": "山下りん", "year": "明治期",
+    "collection": "—",
+    "commons": "Rin Yamashita.jpg",
+    "wiki": "山下りん", "wikiLang": "ja", "wikiEn": "Rin Yamashita",
+    "license": "パブリックドメイン"
+  }
+}

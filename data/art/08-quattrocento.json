@@ -1,0 +1,65 @@
+{
+  "masaccio-trinity": {
+    "artist": "マサッチョ", "title": "聖三位一体", "year": "1427年ごろ",
+    "collection": "サンタ・マリア・ノヴェッラ聖堂（フィレンツェ）",
+    "commons": "Masaccio trinity.jpg",
+    "wiki": "聖三位一体 (マサッチョ)", "wikiLang": "ja", "wikiEn": "Holy Trinity (Masaccio)",
+    "license": "パブリックドメイン"
+  },
+  "giotto-kiss-of-judas": {
+    "artist": "ジョット・ディ・ボンドーネ", "title": "ユダの接吻", "year": "1305年ごろ",
+    "collection": "スクロヴェーニ礼拝堂（パドヴァ）",
+    "commons": "Giotto - Scrovegni - -31- - Kiss of Judas.jpg",
+    "wiki": "ユダの接吻 (ジョット)", "wikiLang": "ja", "wikiEn": "Kiss of Judas (Giotto)",
+    "license": "パブリックドメイン"
+  },
+  "masaccio-tribute-money": {
+    "artist": "マサッチョ", "title": "貢の銭", "year": "1425年ごろ",
+    "collection": "ブランカッチ礼拝堂、サンタ・マリア・デル・カルミネ聖堂（フィレンツェ）",
+    "commons": "Masaccio7.jpg",
+    "wiki": "貢の銭", "wikiLang": "ja", "wikiEn": "The Tribute Money (Masaccio)",
+    "license": "パブリックドメイン"
+  },
+  "masaccio-portrait": {
+    "artist": "マサッチョ", "title": "自画像とされる部分（ブランカッチ礼拝堂）", "year": "1425年ごろ",
+    "collection": "サンタ・マリア・デル・カルミネ聖堂（フィレンツェ）",
+    "commons": "Masaccio, autoritratto.jpg",
+    "wiki": "マサッチオ", "wikiLang": "ja", "wikiEn": "Masaccio",
+    "license": "パブリックドメイン"
+  },
+  "uccello-san-romano": {
+    "artist": "パオロ・ウッチェロ", "title": "サン・ロマーノの戦い", "year": "1435 — 1460年ごろ",
+    "collection": "ナショナル・ギャラリー（ロンドン）／ウフィツィ美術館（フィレンツェ）／ルーヴル美術館（パリ）",
+    "commons": "Paolo Uccello 044.jpg",
+    "wiki": "サン・ロマーノの戦い", "wikiLang": "ja", "wikiEn": "The Battle of San Romano",
+    "license": "パブリックドメイン"
+  },
+  "brunelleschi-dome": {
+    "artist": "フィリッポ・ブルネレスキ", "title": "サンタ・マリア・デル・フィオーレ大聖堂クーポラ", "year": "1420 — 1436年",
+    "collection": "フィレンツェ",
+    "commons": "Florence Duomo from Michelangelo hill.jpg",
+    "wiki": "サンタ・マリア・デル・フィオーレ大聖堂", "wikiLang": "ja", "wikiEn": "Florence Cathedral",
+    "license": "パブリックドメイン"
+  },
+  "donatello-david": {
+    "artist": "ドナテッロ", "title": "ダヴィデ", "year": "1440年代ごろか（諸説あり）",
+    "collection": "バルジェッロ国立美術館（フィレンツェ）",
+    "commons": "Florence - David by Donatello.jpg",
+    "wiki": "ダヴィデ像 (ドナテッロ)", "wikiLang": "ja", "wikiEn": "David (Donatello)",
+    "license": "パブリックドメイン"
+  },
+  "botticelli-birth-of-venus": {
+    "artist": "サンドロ・ボッティチェリ", "title": "ヴィーナスの誕生", "year": "1485年ごろ",
+    "collection": "ウフィツィ美術館（フィレンツェ）",
+    "commons": "Sandro Botticelli - La nascita di Venere - Google Art Project - edited.jpg",
+    "wiki": "ヴィーナスの誕生", "wikiLang": "ja", "wikiEn": "The Birth of Venus",
+    "license": "パブリックドメイン"
+  },
+  "botticelli-primavera": {
+    "artist": "サンドロ・ボッティチェリ", "title": "春（プリマヴェーラ）", "year": "1480年ごろ",
+    "collection": "ウフィツィ美術館（フィレンツェ）",
+    "commons": "Botticelli-primavera.jpg",
+    "wiki": "プリマヴェーラ (ボッティチェリ)", "wikiLang": "ja", "wikiEn": "Primavera (Botticelli)",
+    "license": "パブリックドメイン"
+  }
+}

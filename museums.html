@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>美術館ガイド ─ 世界美術史</title>
+<meta name="description" content="この本に出てくる作品が、日本のどこで、世界のどこで見られるか。地図と一覧で。">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+  .lead-copy { font-size: .96rem; color: var(--ink-2); }
+  .mapshell { margin: 1.6rem 0 1.2rem; border: 1px solid var(--rule); background: var(--bg-sink); }
+  #map { height: min(62vh, 560px); width: 100%; }
+  .leaflet-container { background: var(--bg-sink); font-family: var(--sans); }
+  .leaflet-popup-content-wrapper { border-radius: 0; background: var(--bg-raise); color: var(--ink); box-shadow: var(--shadow-m); }
+  .leaflet-popup-tip { background: var(--bg-raise); }
+  .leaflet-popup-content { margin: .85rem .95rem; line-height: 1.75; }
+  .pop-name { font-family: var(--sans); font-weight: 700; font-size: .95rem; display: block; }
+  .pop-city { font-family: var(--mono); font-size: .68rem; color: var(--ink-3); display: block; margin-top: .1rem; }
+  .pop-why  { font-size: .82rem; color: var(--ink-2); display: block; margin-top: .5rem; max-width: 22rem; }
+  .pop-links { display: flex; gap: .4rem; margin-top: .7rem; }
+  .pop-links a { font-family: var(--sans); font-size: .7rem; text-decoration: none; color: var(--accent-ink);
+                 border: 1px solid var(--accent-line); padding: .3rem .6rem; }
+  .pop-links a:hover { background: var(--accent-soft); }
+
+  .filters { display: flex; gap: .35rem; flex-wrap: wrap; margin: 1.4rem 0 .2rem; }
+  .filters button { cursor: pointer; font-family: var(--sans); font-size: .74rem; font-weight: 700;
+    color: var(--ink-2); background: transparent; border: 1px solid var(--rule); padding: .4rem .8rem; min-height: 34px; }
+  .filters button:hover { border-color: var(--accent-line); color: var(--accent-ink); }
+  .filters button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--mat); }
+  .count { font-family: var(--mono); font-size: .7rem; color: var(--ink-3); margin: .8rem 0 0; }
+
+  .mlist { list-style: none; margin: 1rem 0 3rem; padding: 0; }
+  .mrow { border-bottom: 1px solid var(--rule-soft); padding: 1rem .2rem; display: grid;
+          grid-template-columns: 1fr auto; gap: .3rem .8rem; align-items: start; }
+  .mrow h3 { margin: 0; font-family: var(--sans); font-size: .98rem; font-weight: 700; }
+  .mrow .city { font-family: var(--mono); font-size: .7rem; color: var(--ink-3); margin-left: .6rem; font-weight: 400; }
+  .mrow .for { grid-column: 1 / -1; font-family: var(--sans); font-size: .74rem; color: var(--accent-ink);
+               letter-spacing: .08em; }
+  .mrow .why { grid-column: 1 / -1; font-size: .88rem; color: var(--ink-2); line-height: 1.85; }
+  .mrow .acts { display: flex; gap: .35rem; }
+  .mrow .acts button, .mrow .acts a {
+    font-family: var(--sans); font-size: .68rem; white-space: nowrap; cursor: pointer;
+    text-decoration: none; color: var(--accent-ink); background: transparent;
+    border: 1px solid var(--accent-line); padding: .3rem .55rem; }
+  .mrow .acts button:hover, .mrow .acts a:hover { background: var(--accent-soft); }
+  .mrow .chs { grid-column: 1 / -1; display: flex; gap: .3rem; flex-wrap: wrap; margin-top: .2rem; }
+  .mrow .chs a { font-family: var(--mono); font-size: .64rem; text-decoration: none;
+                 color: var(--ink-3); border: 1px solid var(--rule-soft); padding: .15rem .4rem; }
+  .mrow .chs a:hover { color: var(--accent-ink); border-color: var(--accent-line); }
+</style>
+</head>
+<body class="era-renaissance">
+
+<div id="progress"></div>
+<header class="topbar" data-where="美術館ガイド"></header>
+
+<main class="wrap wide">
+  <section style="padding-block:2.5rem 0">
+    <h1 style="font-size:clamp(1.7rem,6vw,2.4rem);margin:0;font-weight:600">美術館ガイド</h1>
+    <p class="lead-copy" style="margin-top:1rem">
+      この本に出てくる作品が、実際にどこで見られるか。<strong>日本で見られるものを先に</strong>並べています。
+      展覧会は巡回しますが、常設は逃げません。行ってみて「あの章の話だ」と分かる場所を選びました。
+    </p>
+  </section>
+
+  <div class="mapshell"><div id="map"></div></div>
+
+  <div class="filters" id="filters"></div>
+  <p class="count" id="count"></p>
+  <ul class="mlist" id="list"></ul>
+</main>
+
+<footer class="foot wrap">
+  <p>座標は施設のおおよその位置です。正確な案内は各項目の「Googleマップ」から。
+     地図タイル：&copy; OpenStreetMap contributors &copy; CARTO</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="assets/js/site.js"></script>
+<script>
+(function () {
+  var LIGHT = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
+  var DARK  = 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
+  var ATTR  = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>';
+
+  function isDark() {
+    var t = document.documentElement.getAttribute('data-theme');
+    if (t) return t === 'dark';
+    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+  function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c];}); }
+  function gmap(name, city) {
+    return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(name + ' ' + city);
+  }
+
+  var map = L.map('map', { scrollWheelZoom: false, worldCopyJump: true })
+             .setView([35.0, 60.0], 2);
+  var tiles = L.tileLayer(isDark() ? DARK : LIGHT, { attribution: ATTR, maxZoom: 18, subdomains: 'abcd' }).addTo(map);
+  map.on('click', function () { map.scrollWheelZoom.enable(); });
+
+  // 配色が変わったらタイルも差し替える
+  new MutationObserver(function () {
+    tiles.setUrl(isDark() ? DARK : LIGHT);
+  }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+
+  function pin(isJP) {
+    var c = getComputedStyle(document.body).getPropertyValue('--accent').trim() || '#4a7c59';
+    return L.divIcon({
+      className: '',
+      html: '<span style="display:block;width:' + (isJP ? 15 : 11) + 'px;height:' + (isJP ? 15 : 11) + 'px;'
+          + 'border-radius:50%;background:' + (isJP ? c : 'transparent') + ';border:2px solid ' + c + ';'
+          + 'box-shadow:0 0 0 3px rgba(0,0,0,.10)"></span>',
+      iconSize: [isJP ? 15 : 11, isJP ? 15 : 11],
+      iconAnchor: [isJP ? 8 : 6, isJP ? 8 : 6]
+    });
+  }
+
+  var markers = {}, all = [], chapters = {};
+
+  Promise.all([
+    fetch('data/museums.json').then(function(r){return r.json();}),
+    fetch('data/chapters.json').then(function(r){return r.json();}).catch(function(){return {chapters:[]};})
+  ]).then(function (res) {
+    all = res[0].museums;
+    (res[1].chapters || []).forEach(function (c) { chapters[c.n] = c; });
+
+    all.forEach(function (m, i) {
+      var jp = m.country === 'jp';
+      var mk = L.marker([m.lat, m.lng], { icon: pin(jp), title: m.name }).addTo(map);
+      mk.bindPopup(
+        '<span class="pop-name">' + esc(m.name) + '</span>' +
+        '<span class="pop-city">' + esc(m.city) + '　' + esc(m.for) + '</span>' +
+        '<span class="pop-why">' + esc(m.why) + '</span>' +
+        '<span class="pop-links">' +
+          '<a href="' + gmap(m.name, m.city) + '" target="_blank" rel="noopener">Googleマップで開く</a>' +
+        '</span>');
+      markers[i] = mk;
+    });
+
+    render('all');
+    buildFilters();
+  });
+
+  var FILTERS = [
+    ['all', 'すべて'], ['jp', '日本で見る'], ['abroad', '本場で見る']
+  ];
+  function buildFilters() {
+    var host = document.getElementById('filters');
+    host.innerHTML = FILTERS.map(function (f, i) {
+      return '<button type="button" data-f="' + f[0] + '" aria-pressed="' + (i === 0) + '">' + f[1] + '</button>';
+    }).join('');
+    host.addEventListener('click', function (e) {
+      var b = e.target.closest('button'); if (!b) return;
+      host.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', x === b); });
+      render(b.dataset.f);
+    });
+  }
+
+  function render(mode) {
+    var rows = all.map(function (m, i) { return { m: m, i: i }; }).filter(function (x) {
+      if (mode === 'jp') return x.m.country === 'jp';
+      if (mode === 'abroad') return x.m.country !== 'jp';
+      return true;
+    });
+    // 日本を先に、そのあと国ごとにまとめる
+    rows.sort(function (a, b) {
+      var aj = a.m.country === 'jp' ? 0 : 1, bj = b.m.country === 'jp' ? 0 : 1;
+      if (aj !== bj) return aj - bj;
+      if (a.m.country !== b.m.country) return a.m.country < b.m.country ? -1 : 1;
+      return 0;
+    });
+
+    document.getElementById('count').textContent = rows.length + ' 館';
+    document.getElementById('list').innerHTML = rows.map(function (x) {
+      var m = x.m;
+      var chs = (m.ch || []).map(function (n) {
+        var c = chapters[n];
+        return c ? '<a href="chapters/' + c.slug + '.html">第' + n + '章　' + esc(c.title) + '</a>' : '';
+      }).join('');
+      return '<li class="mrow">' +
+        '<h3>' + esc(m.name) + '<span class="city">' + esc(m.city) + '</span></h3>' +
+        '<span class="acts">' +
+          '<button type="button" data-go="' + x.i + '">地図で見る</button>' +
+          '<a href="' + gmap(m.name, m.city) + '" target="_blank" rel="noopener">Googleマップ</a>' +
+        '</span>' +
+        '<span class="for">' + esc(m.for) + '</span>' +
+        '<span class="why">' + esc(m.why) + '</span>' +
+        (chs ? '<span class="chs">' + chs + '</span>' : '') +
+      '</li>';
+    }).join('');
+  }
+
+  document.getElementById('list').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-go]'); if (!b) return;
+    var mk = markers[b.dataset.go]; if (!mk) return;
+    document.querySelector('.mapshell').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    map.flyTo(mk.getLatLng(), 13, { duration: 1.1 });
+    setTimeout(function () { mk.openPopup(); }, 1150);
+  });
+})();
+</script>
+</body>
+</html>
