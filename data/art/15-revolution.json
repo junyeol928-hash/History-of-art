@@ -1,0 +1,72 @@
+{
+  "david-oath-horatii": {
+    "artist": "ジャック＝ルイ・ダヴィッド", "title": "ホラティウス兄弟の誓い", "year": "1784年",
+    "collection": "ルーヴル美術館（パリ）",
+    "commons": "Jacques-Louis David - Oath of the Horatii - Google Art Project.jpg",
+    "wiki": "ホラティウス兄弟の誓い", "wikiLang": "ja", "wikiEn": "Oath of the Horatii",
+    "license": "パブリックドメイン"
+  },
+  "david-death-of-marat": {
+    "artist": "ジャック＝ルイ・ダヴィッド", "title": "マラーの死", "year": "1793年",
+    "collection": "ベルギー王立美術館（ブリュッセル）",
+    "commons": "Death of Marat by David.jpg",
+    "wiki": "マラーの死", "wikiLang": "ja", "wikiEn": "The Death of Marat",
+    "license": "パブリックドメイン"
+  },
+  "david-self-portrait": {
+    "artist": "ジャック＝ルイ・ダヴィッド", "title": "自画像", "year": "1794年",
+    "collection": "ルーヴル美術館（パリ）",
+    "commons": "David Self Portrait.jpg",
+    "wiki": "ジャック＝ルイ・ダヴィッド", "wikiLang": "ja", "wikiEn": "Jacques-Louis David",
+    "license": "パブリックドメイン"
+  },
+  "ingres-grande-odalisque": {
+    "artist": "ジャン＝オーギュスト＝ドミニク・アングル", "title": "グランド・オダリスク", "year": "1814年",
+    "collection": "ルーヴル美術館（パリ）",
+    "commons": "Jean Auguste Dominique Ingres, La Grande Odalisque, 1814.jpg",
+    "wiki": "グランド・オダリスク", "wikiLang": "ja", "wikiEn": "Grande Odalisque",
+    "license": "パブリックドメイン"
+  },
+  "gericault-raft-medusa": {
+    "artist": "テオドール・ジェリコー", "title": "メデューズ号の筏", "year": "1819年",
+    "collection": "ルーヴル美術館（パリ）",
+    "commons": "JEAN LOUIS THÉODORE GÉRICAULT - La Balsa de la Medusa (Museo del Louvre, 1818-19).jpg",
+    "wiki": "メデューズ号の筏", "wikiLang": "ja", "wikiEn": "The Raft of the Medusa",
+    "license": "パブリックドメイン"
+  },
+  "goya-third-of-may": {
+    "artist": "フランシスコ・デ・ゴヤ", "title": "1808年5月3日", "year": "1814年",
+    "collection": "プラド美術館（マドリード）",
+    "commons": "El Tres de Mayo, by Francisco de Goya, from Prado thin black margin.jpg",
+    "wiki": "1808年5月3日", "wikiLang": "ja", "wikiEn": "The Third of May 1808",
+    "license": "パブリックドメイン"
+  },
+  "goya-saturn": {
+    "artist": "フランシスコ・デ・ゴヤ", "title": "我が子を食らうサトゥルヌス", "year": "1819 — 1823年ごろ",
+    "collection": "プラド美術館（マドリード）",
+    "commons": "Francisco de Goya, Saturno devorando a su hijo (1819-1823).jpg",
+    "wiki": "我が子を食らうサトゥルヌス", "wikiLang": "ja", "wikiEn": "Saturn Devouring His Son",
+    "license": "パブリックドメイン"
+  },
+  "delacroix-liberty": {
+    "artist": "ウジェーヌ・ドラクロワ", "title": "民衆を導く自由の女神", "year": "1830年",
+    "collection": "ルーヴル美術館（パリ）",
+    "commons": "Eugène Delacroix - Le 28 Juillet. La Liberté guidant le peuple.jpg",
+    "wiki": "民衆を導く自由の女神", "wikiLang": "ja", "wikiEn": "Liberty Leading the People",
+    "license": "パブリックドメイン"
+  },
+  "turner-rain-steam-speed": {
+    "artist": "ジョゼフ・マロード・ウィリアム・ターナー", "title": "雨、蒸気、速度 ─ グレート・ウェスタン鉄道", "year": "1844年",
+    "collection": "ナショナル・ギャラリー（ロンドン）",
+    "commons": "Rain Steam and Speed the Great Western Railway.jpg",
+    "wiki": "雨、蒸気、速度", "wikiLang": "ja", "wikiEn": "Rain, Steam and Speed – The Great Western Railway",
+    "license": "パブリックドメイン"
+  },
+  "friedrich-wanderer": {
+    "artist": "カスパー・ダーヴィト・フリードリヒ", "title": "雲海の上の旅人", "year": "1818年ごろ",
+    "collection": "ハンブルク美術館（ハンブルク）",
+    "commons": "Caspar David Friedrich - Wanderer above the sea of fog.jpg",
+    "wiki": "雲海の上の旅人", "wikiLang": "ja", "wikiEn": "Wanderer above the Sea of Fog",
+    "license": "パブリックドメイン"
+  }
+}

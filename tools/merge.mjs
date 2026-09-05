@@ -11,7 +11,8 @@ function merge(dir, out, label) {
     try { o = JSON.parse(readFileSync(`${dir}/${f}`, 'utf8')); }
     catch (e) { console.error(`  ✗ ${f} は JSON として壊れています: ${e.message}`); continue; }
     for (const [k, v] of Object.entries(o)) {
-      if (k in all) dupes.push(`${k}（${f}）`);
+      // 同じ用語が複数の章で導入されていたら、初出の章の定義を残す
+      if (k in all) { dupes.push(`${k}（${f} は初出ではないので採らない）`); continue; }
       all[k] = v;
     }
   }

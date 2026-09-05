@@ -1,0 +1,101 @@
+{
+ "van-eyck-arnolfini": {
+  "artist": "ヤン・ファン・エイク",
+  "title": "アルノルフィーニ夫妻像",
+  "year": "1434年",
+  "collection": "油彩・オーク板 82.2 × 60 cm ナショナル・ギャラリー（ロンドン）",
+  "commons": "Van Eyck - Arnolfini Portrait.jpg",
+  "wiki": "アルノルフィーニ夫妻像",
+  "wikiLang": "ja",
+  "wikiEn": "Arnolfini Portrait",
+  "license": "パブリックドメイン"
+ },
+ "van-eyck-ghent-altarpiece": {
+  "artist": "フーベルト＆ヤン・ファン・エイク",
+  "title": "ヘントの祭壇画（神秘の子羊）",
+  "year": "1432年",
+  "collection": "油彩・オーク板 開扉時 約350 × 470 cm 聖バーフ大聖堂（ヘント）",
+  "commons": "Lamgods open.jpg",
+  "wiki": "ヘントの祭壇画",
+  "wikiLang": "ja",
+  "wikiEn": "Ghent Altarpiece",
+  "license": "パブリックドメイン"
+ },
+ "bosch-garden-earthly-delights": {
+  "artist": "ヒエロニムス・ボス",
+  "title": "快楽の園",
+  "year": "1490 — 1500年ごろ",
+  "collection": "油彩・オーク板 三連画 開扉時 220 × 389 cm プラド美術館（マドリード）",
+  "commons": "The Garden of earthly delights.jpg",
+  "wiki": "快楽の園",
+  "wikiLang": "ja",
+  "wikiEn": "The Garden of Earthly Delights",
+  "license": "パブリックドメイン"
+ },
+ "durer-self-portrait-1498": {
+  "artist": "アルブレヒト・デューラー",
+  "title": "自画像",
+  "year": "1498年",
+  "collection": "プラド美術館（マドリード）",
+  "commons": "Albrecht Dürer - 1498 self-portrait.jpg",
+  "wiki": "アルブレヒト・デューラー",
+  "wikiLang": "ja",
+  "wikiEn": "Albrecht Dürer",
+  "license": "パブリックドメイン"
+ },
+ "durer-self-portrait-1500": {
+  "artist": "アルブレヒト・デューラー",
+  "title": "自画像（毛皮の襟のコートを着た）",
+  "year": "1500年",
+  "collection": "油彩・板 67 × 49 cm アルテ・ピナコテーク（ミュンヘン）",
+  "commons": "Albrecht Dürer - 1500 self-portrait (High resolution and detail).jpg",
+  "wiki": "自画像 (デューラー、1500年)",
+  "wikiLang": "ja",
+  "wikiEn": "Self-Portrait (Dürer, Munich)",
+  "license": "パブリックドメイン"
+ },
+ "durer-melencolia": {
+  "artist": "アルブレヒト・デューラー",
+  "title": "メランコリアI",
+  "year": "1514年",
+  "collection": "エングレーヴィング（銅版画） 約24 × 18.5 cm 各国の美術館に所蔵",
+  "commons": "Albrecht Dürer - Melencolia I - Google Art Project (_AGDdrjYpBjp0g).jpg",
+  "wiki": "メランコリアI",
+  "wikiLang": "ja",
+  "wikiEn": "Melencolia I",
+  "license": "パブリックドメイン"
+ },
+ "bruegel-hunters-in-snow": {
+  "artist": "ピーテル・ブリューゲル（父）",
+  "title": "雪中の狩人",
+  "year": "1565年",
+  "collection": "油彩・板 117 × 162 cm 美術史美術館（ウィーン）",
+  "commons": "Pieter Bruegel the Elder - Hunters in the Snow (Winter) - Google Art Project.jpg",
+  "wiki": "雪中の狩人",
+  "wikiLang": "ja",
+  "wikiEn": "The Hunters in the Snow",
+  "license": "パブリックドメイン"
+ },
+ "bruegel-tower-of-babel": {
+  "artist": "ピーテル・ブリューゲル（父）",
+  "title": "バベルの塔",
+  "year": "1568年ごろ",
+  "collection": "油彩・板 60 × 74.5 cm ボイマンス・ファン・ベーニンゲン美術館（ロッテルダム）",
+  "commons": "Pieter Bruegel the Elder - The Tower of Babel (Rotterdam) - Google Art Project.jpg",
+  "wiki": "バベルの塔 (絵画)",
+  "wikiLang": "ja",
+  "wikiEn": "The Tower of Babel (Bruegel)",
+  "license": "パブリックドメイン"
+ },
+ "bruegel-fall-of-icarus": {
+  "artist": "ピーテル・ブリューゲル（父）に帰属",
+  "title": "イカロスの墜落のある風景",
+  "year": "1560年代",
+  "collection": "油彩・カンヴァス（板から移設） 73.5 × 112 cm ベルギー王立美術館（ブリュッセル）",
+  "commons": "Pieter Bruegel de Oude - De val van Icarus.jpg",
+  "wiki": "イカロスの墜落のある風景",
+  "wikiLang": "ja",
+  "wikiEn": "Landscape with the Fall of Icarus",
+  "license": "パブリックドメイン"
+ }
+}

@@ -1,0 +1,101 @@
+{
+ "genji-emaki-yadorigi": {
+  "artist": "作者不詳（複数の工房による）",
+  "title": "源氏物語絵巻",
+  "year": "12世紀前半",
+  "collection": "紙本著色 紙高 約21.8 cm 徳川美術館（名古屋）・五島美術館（東京） 国宝",
+  "commons": "Genji emaki 01003 002.jpg",
+  "wiki": "源氏物語絵巻",
+  "wikiLang": "ja",
+  "wikiEn": "The Tale of Genji Scroll",
+  "license": "パブリックドメイン"
+ },
+ "shigisan-engi-emaki": {
+  "artist": "作者不詳（常盤光長筆とも伝わる）",
+  "title": "信貴山縁起絵巻",
+  "year": "12世紀後半",
+  "collection": "紙本著色 三巻 朝護孫子寺蔵（奈良国立博物館寄託） 国宝",
+  "commons": "Shigisan-engi.jpg",
+  "wiki": "信貴山縁起",
+  "wikiLang": "ja",
+  "wikiEn": "Shigisan Engi",
+  "license": "パブリックドメイン"
+ },
+ "ban-dainagon-ekotoba": {
+  "artist": "作者不詳（常盤光長筆と伝わる）",
+  "title": "伴大納言絵詞",
+  "year": "12世紀後半",
+  "collection": "紙本著色 三巻 出光美術館（東京） 国宝",
+  "commons": "Ban Dainagon Ekotoba 1.jpg",
+  "wiki": "伴大納言絵詞",
+  "wikiLang": "ja",
+  "wikiEn": "Ban Dainagon Ekotoba",
+  "license": "パブリックドメイン"
+ },
+ "choju-jinbutsu-giga": {
+  "artist": "作者不詳（鳥羽僧正覚猷筆と伝わる）",
+  "title": "鳥獣人物戯画",
+  "year": "12 — 13世紀",
+  "collection": "紙本墨画 四巻（甲巻は縦30.4 cm・長さ11.5 m） 高山寺（京都） 国宝",
+  "commons": "Choju sumo.jpg",
+  "wiki": "鳥獣人物戯画",
+  "wikiLang": "ja",
+  "wikiEn": "Chōjū-jinbutsu-giga",
+  "license": "パブリックドメイン"
+ },
+ "todaiji-nio-agyo": {
+  "artist": "運慶・快慶と慶派の仏師たち",
+  "title": "東大寺南大門 金剛力士像",
+  "year": "1203年",
+  "collection": "木造（寄木造） 阿形 8.36 m・吽形 8.42 m 東大寺（奈良） 国宝",
+  "commons": "Nio Todaiji2.JPG",
+  "wiki": "金剛力士",
+  "wikiLang": "ja",
+  "wikiEn": "Nio (Buddhism)",
+  "license": "パブリックドメイン"
+ },
+ "unkei-mujaku-seshin": {
+  "artist": "運慶",
+  "title": "無著菩薩立像・世親菩薩立像",
+  "year": "1212年ごろ",
+  "collection": "木造・玉眼 無著 194.7 cm・世親 191.6 cm 興福寺北円堂（奈良） 国宝",
+  "commons": "Mujaku Kofukuji.JPG",
+  "wiki": "無著",
+  "wikiLang": "ja",
+  "wikiEn": "Asanga",
+  "license": "パブリックドメイン"
+ },
+ "den-minamoto-yoritomo": {
+  "artist": "藤原隆信筆と伝わる（帰属に議論あり）",
+  "title": "伝源頼朝像",
+  "year": "鎌倉時代、または14世紀",
+  "collection": "絹本著色 143.0 × 112.8 cm 神護寺（京都） 国宝",
+  "commons": "Minamoto no Yoritomo.jpg",
+  "wiki": "伝源頼朝像",
+  "wikiLang": "ja",
+  "wikiEn": "Minamoto no Yoritomo",
+  "license": "パブリックドメイン"
+ },
+ "jigoku-zoshi": {
+  "artist": "作者不詳",
+  "title": "地獄草紙",
+  "year": "12世紀後半",
+  "collection": "紙本著色 東京国立博物館・奈良国立博物館ほか 国宝",
+  "commons": "Jigoku-zoshi Nara.jpg",
+  "wiki": "地獄草紙",
+  "wikiLang": "ja",
+  "wikiEn": "Hell Scroll",
+  "license": "パブリックドメイン"
+ },
+ "heiji-monogatari-emaki": {
+  "artist": "作者不詳",
+  "title": "平治物語絵巻 三条殿夜討巻",
+  "year": "13世紀後半",
+  "collection": "紙本著色 ボストン美術館 （六波羅行幸巻は東京国立博物館・国宝）",
+  "commons": "Heiji Monogatari Emaki - Sanjo scroll.jpg",
+  "wiki": "平治物語絵巻",
+  "wikiLang": "ja",
+  "wikiEn": "Heiji Monogatari Emaki",
+  "license": "パブリックドメイン"
+ }
+}

@@ -81,6 +81,36 @@
 <script src="assets/js/site.js"></script>
 <script>
 (function () {
+  /* 地図ライブラリが読めなかった場合でも、一覧と本文は必ず表示する */
+  if (typeof L === 'undefined') {
+    var shell = document.querySelector('.mapshell') || document.querySelector('.stage');
+    if (shell) {
+      shell.innerHTML = '<p style="padding:2rem 1.25rem;font-family:var(--sans);font-size:.85rem;'
+        + 'color:var(--ink-3);line-height:1.9">地図を読み込めませんでした。'
+        + 'ネットワークにつながっていないか、地図の配信元に届いていません。'
+        + '下の一覧と Google マップへのリンクはそのままお使いいただけます。</p>';
+    }
+    /* 地図がなくても一覧だけは組み立てる */
+    Promise.all([
+      fetch('data/museums.json').then(function(r){return r.json();}),
+      fetch('data/chapters.json').then(function(r){return r.json();}).catch(function(){return {chapters:[]};})
+    ]).then(function (res) {
+      var all = res[0].museums, chapters = {};
+      (res[1].chapters || []).forEach(function (c) { chapters[c.n] = c; });
+      function e(s){ return String(s).replace(/[&<>"]/g,function(c){return({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c];}); }
+      function g(n, c){ return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(n + ' ' + c); }
+      document.getElementById('count').textContent = all.length + ' 館';
+      document.getElementById('list').innerHTML = all.map(function (m) {
+        var chs = (m.ch || []).map(function (n) { var c = chapters[n];
+          return c ? '<a href="chapters/' + c.slug + '.html">第' + n + '章　' + e(c.title) + '</a>' : ''; }).join('');
+        return '<li class="mrow"><h3>' + e(m.name) + '<span class="city">' + e(m.city) + '</span></h3>' +
+          '<span class="acts"><a href="' + g(m.name, m.city) + '" target="_blank" rel="noopener">Googleマップ</a></span>' +
+          '<span class="for">' + e(m.for) + '</span><span class="why">' + e(m.why) + '</span>' +
+          (chs ? '<span class="chs">' + chs + '</span>' : '') + '</li>';
+      }).join('');
+    });
+    return;
+  }
   var LIGHT = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
   var DARK  = 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
   var ATTR  = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>';

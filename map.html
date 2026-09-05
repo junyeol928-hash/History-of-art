@@ -80,6 +80,17 @@
 <script src="assets/js/site.js"></script>
 <script>
 (function () {
+  /* 地図ライブラリが読めなかった場合でも、一覧と本文は必ず表示する */
+  if (typeof L === 'undefined') {
+    var shell = document.querySelector('.mapshell') || document.querySelector('.stage');
+    if (shell) {
+      shell.innerHTML = '<p style="padding:2rem 1.25rem;font-family:var(--sans);font-size:.85rem;'
+        + 'color:var(--ink-3);line-height:1.9">地図を読み込めませんでした。'
+        + 'ネットワークにつながっていないか、地図の配信元に届いていません。'
+        + '下の一覧と Google マップへのリンクはそのままお使いいただけます。</p>';
+    }
+    return;
+  }
   var LIGHT = 'https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png';
   var DARK  = 'https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png';
   var ATTR  = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>';
