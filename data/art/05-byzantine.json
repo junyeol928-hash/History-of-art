@@ -48,6 +48,34 @@
     "wiki": "至聖三者 (イコン)", "wikiLang": "ja", "wikiEn": "Trinity (Andrei Rublev)",
     "license": "パブリックドメイン"
   },
+  "vladimir-theotokos": {
+    "artist": "作者不詳（コンスタンティノープルの工房）", "title": "ウラジーミルの生神女", "year": "12世紀前半",
+    "collection": "トレチャコフ美術館（モスクワ）",
+    "commons": "Vladimirskaya.jpg",
+    "wiki": "ウラジーミルの生神女", "wikiLang": "ja", "wikiEn": "Theotokos of Vladimir",
+    "license": "パブリックドメイン"
+  },
+  "daphni-pantocrator": {
+    "artist": "作者不詳", "title": "パントクラトール（ダフニ修道院ドーム）", "year": "1100年ごろ",
+    "collection": "ダフニ修道院（アテネ近郊）",
+    "commons": "Meister von Daphni 002.jpg",
+    "wiki": "ダフニ修道院", "wikiLang": "ja", "wikiEn": "Daphni Monastery",
+    "license": "パブリックドメイン"
+  },
+  "monreale-pantocrator": {
+    "artist": "作者不詳（ビザンティンの工房）", "title": "パントクラトール（モンレアーレ大聖堂）", "year": "1180年代",
+    "collection": "モンレアーレ大聖堂（シチリア）",
+    "commons": "Monreale Christus Pantokrator.jpg",
+    "wiki": "モンレアーレ", "wikiLang": "ja", "wikiEn": "Monreale Cathedral",
+    "license": "パブリックドメイン"
+  },
+  "chora-anastasis": {
+    "artist": "作者不詳", "title": "アナスタシス（コーラ修道院）", "year": "1320年ごろ",
+    "collection": "カーリエ・モスク（旧カーリエ博物館／イスタンブール）",
+    "commons": "Chora Church Constantinople 2007 010.jpg",
+    "wiki": "カーリエ博物館", "wikiLang": "ja", "wikiEn": "Chora Church",
+    "license": "パブリックドメイン"
+  },
   "yamashita-rin-portrait": {
     "artist": "写真・作者不詳", "title": "山下りん", "year": "明治期",
     "collection": "—",

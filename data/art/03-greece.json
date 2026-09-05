@@ -62,6 +62,27 @@
     "wiki": "ミロのヴィーナス", "wikiLang": "ja", "wikiEn": "Venus de Milo",
     "license": "パブリックドメイン"
   },
+  "delphi-charioteer": {
+    "artist": "作者不詳", "title": "デルフォイの御者", "year": "前470年頃",
+    "collection": "デルフォイ考古学博物館（ギリシア）",
+    "commons": "Charioteer of Delphi.jpg",
+    "wiki": "デルポイの御者像", "wikiLang": "ja", "wikiEn": "Charioteer of Delphi",
+    "license": "パブリックドメイン"
+  },
+  "discobolus": {
+    "artist": "ミュロン（原作）／ローマ時代の模刻", "title": "ディスコボロス（円盤投げ）", "year": "原作 前450年頃",
+    "collection": "ローマ国立博物館（パラッツォ・マッシモ）ほか",
+    "commons": "Discobolus Palazzo Massimo Rome.jpg",
+    "wiki": "円盤投げ (ミュロン)", "wikiLang": "ja", "wikiEn": "Discobolus",
+    "license": "パブリックドメイン"
+  },
+  "aphrodite-knidos": {
+    "artist": "プラクシテレス（原作）／ローマ時代の模刻", "title": "クニドスのアフロディテ", "year": "原作 前350年頃",
+    "collection": "ヴァチカン美術館（ローマ）ほか",
+    "commons": "Cnidus Aphrodite Altemps Inv8619.jpg",
+    "wiki": "クニドスのアプロディーテー", "wikiLang": "ja", "wikiEn": "Aphrodite of Knidos",
+    "license": "パブリックドメイン"
+  },
   "euphronios-krater": {
     "artist": "エウフロニオス（画家）／エウクシテオス（陶工）", "title": "サルペドンの遺体を運ぶ死と眠り（赤像式クラテル）", "year": "前515年頃",
     "collection": "チェルヴェーテリ国立考古学博物館（イタリア）",
