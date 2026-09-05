@@ -281,9 +281,37 @@
     if (/^[0-9０-９]/.test(t)) p.classList.add('nocap');
   }
 
+  /* 節の番号を、その時代の数え方で書く。
+     ギリシア・ローマとルネサンスはローマ数字、日本と中国は漢数字、
+     イスラームは東アラビア数字、20世紀以降は飾りのない算用数字。
+     内容は変わらない。数字の姿だけが、時代のものになる。 */
+  var ROMAN = ['','I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII','XIII','XIV','XV'];
+  var KANJI = ['','一','二','三','四','五','六','七','八','九','十','十一','十二','十三','十四','十五'];
+  var ARABIC = ['٠','١','٢','٣','٤','٥','٦','٧','٨','٩'];
+  var NUMSET = {
+    classical: 'roman', renaissance: 'roman', rococo: 'roman',
+    japan: 'kanji', china: 'kanji',
+    islam: 'arabic',
+    modern: 'plain', contemp: 'plain'
+  };
+  function sectionNumbers() {
+    var era = (document.body.className.match(/era-([a-z0-9]+)/) || [])[1];
+    var kind = NUMSET[era];
+    if (!kind) return;
+    document.querySelectorAll('.prose h2 .n').forEach(function (el) {
+      var n = parseInt(el.textContent, 10);
+      if (!n || n > 15) return;
+      if (kind === 'roman')  el.textContent = ROMAN[n];
+      else if (kind === 'kanji') el.textContent = KANJI[n];
+      else if (kind === 'plain') el.textContent = String(n);
+      else if (kind === 'arabic') el.textContent = String(n).split('').map(function (d) { return ARABIC[+d]; }).join('');
+    });
+  }
+
   function boot() {
     buildTopbar();
     dropCap();
+    sectionNumbers();
     progress();
     wireGlossary();
     chapterNav();
