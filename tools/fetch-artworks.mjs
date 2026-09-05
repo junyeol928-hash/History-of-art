@@ -13,6 +13,27 @@ const WIDTH = 1800;           // 拡大して筆跡を見るのに耐える幅
 const SMALL = 1300;           // それでも重すぎる場合に落とす幅
 const MAX_BYTES = 1500 * 1024; // 1枚の上限
 const FORCE = process.argv.includes('--force');
+const GOOD_ENOUGH = 1500;     // これだけ幅があれば、それ以上の経路は探さない
+
+/** JPEG/PNG のヘッダから画素幅を読む（外部ライブラリなしで済ませる） */
+async function widthOf(buf) {
+  try {
+    if (buf[0] === 0xff && buf[1] === 0xd8) {              // JPEG
+      let i = 2;
+      while (i < buf.length - 9) {
+        if (buf[i] !== 0xff) { i++; continue; }
+        const marker = buf[i + 1];
+        if (marker >= 0xc0 && marker <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(marker)) {
+          return buf.readUInt16BE(i + 7);
+        }
+        i += 2 + buf.readUInt16BE(i + 2);
+      }
+    } else if (buf.slice(0, 8).toString('hex') === '89504e470d0a1a0a') {  // PNG
+      return buf.readUInt32BE(16);
+    }
+  } catch (e) { /* 読めなければ 0 扱い */ }
+  return 0;
+}
 
 mkdirSync(OUT, { recursive: true });
 
@@ -21,6 +42,7 @@ const ids = Object.keys(manifest).sort();
 
 const ok = [];
 const failed = [];
+const small = [];
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -49,6 +71,29 @@ async function viaCommons(file) {
     }
   }
   throw new Error('Commons にそのファイル名が見つかりません');
+}
+
+/** Commons を作品名で検索して、いちばん大きい画像を拾う。
+    マニフェストのファイル名が外れていても、これで救えることが多い */
+async function viaCommonsSearch(query, limit = 8) {
+  const api = 'https://commons.wikimedia.org/w/api.php?action=query&format=json'
+    + '&generator=search&gsrnamespace=6&gsrlimit=' + limit
+    + '&gsrsearch=' + encodeURIComponent(query)
+    + '&prop=imageinfo&iiprop=url|mime|size&iiurlwidth=' + WIDTH;
+  const d = await getJSON(api);
+  const pages = Object.values(d?.query?.pages ?? {});
+  const cands = [];
+  for (const pg of pages) {
+    const ii = pg.imageinfo?.[0];
+    if (!ii) continue;
+    if (ii.mime && !/^image\/(jpeg|png|webp)$/.test(ii.mime)) continue;
+    // 図表・地図・紋章などを避ける
+    if (/\b(map|logo|coat of arms|diagram|icon|flag)\b/i.test(pg.title)) continue;
+    cands.push({ url: ii.thumburl || ii.url, mime: ii.mime, w: ii.thumbwidth || ii.width || 0 });
+  }
+  if (!cands.length) throw new Error('Commons 検索で画像が見つかりません');
+  cands.sort((a, b) => b.w - a.w);
+  return cands[0];
 }
 
 /** Wikipedia の記事名から、その記事の代表画像を得る */
@@ -109,29 +154,38 @@ for (const id of ids) {
   }
 
   const attempts = [];
-  if (m.commons) attempts.push(['Commons', () => viaCommons(m.commons)]);
-  if (m.wiki)    attempts.push([`${m.wikiLang || 'ja'}.wikipedia`, () => viaWikipedia(m.wikiLang || 'ja', m.wiki)]);
+  if (m.commons) attempts.push(['Commons(名指し)', () => viaCommons(m.commons)]);
+  const q = [m.wikiEn, m.artistEn, m.artist].filter(Boolean).join(' ');
+  if (q) attempts.push(['Commons(検索)', () => viaCommonsSearch(q)]);
   if (m.wikiEn)  attempts.push(['en.wikipedia', () => viaWikipedia('en', m.wikiEn)]);
+  if (m.wiki)    attempts.push([`${m.wikiLang || 'ja'}.wikipedia`, () => viaWikipedia(m.wikiLang || 'ja', m.wiki)]);
 
-  let done = false;
+  // 経路ごとに候補を集め、いちばん大きい画像を採用する。
+  // 小さなサムネイルを先に掴んで満足してしまうのを防ぐため。
   const errors = [];
+  let best = null;   // {buf, url, mime, w, label}
   for (const [label, fn] of attempts) {
     try {
       const got = await fn();
-      const mime = got.mime;
-      const sized = await downloadSized(got.url, mime);
-      const buf = sized.buf;
-      const url = sized.url;
-      const ext = extFor(url, mime);
-      writeFileSync(`${OUT}/${id}.${ext}`, buf);
-      console.log(`✓ ${id}  ${label}  ${(buf.length / 1024).toFixed(0)}KB`);
-      ok.push(id);
-      done = true;
-      break;
+      const sized = await downloadSized(got.url, got.mime);
+      const w = await widthOf(sized.buf);
+      if (!best || w > best.w) best = { ...sized, mime: got.mime, w, label };
+      // 十分な大きさが取れたら、それ以上は探さない
+      if (w >= GOOD_ENOUGH) break;
     } catch (e) {
       errors.push(`${label}: ${e.message}`);
     }
     await sleep(150);
+  }
+
+  const done = !!best;
+  if (best) {
+    const ext = extFor(best.url, best.mime);
+    writeFileSync(`${OUT}/${id}.${ext}`, best.buf);
+    const warn = best.w && best.w < 1200 ? '  ← 小さい' : '';
+    console.log(`✓ ${id}  ${best.label}  ${best.w}px  ${(best.buf.length / 1024).toFixed(0)}KB${warn}`);
+    ok.push(id);
+    if (best.w && best.w < 1200) small.push({ id, w: best.w, artist: m.artist, title: m.title });
   }
   if (!done) {
     console.log(`✗ ${id}  ${m.artist ?? ''}《${m.title ?? ''}》`);
@@ -146,6 +200,12 @@ writeFileSync('data/artworks-baked.json', JSON.stringify(ok.sort(), null, 1));
 console.log(`\n──────────────────────────────`);
 console.log(`取得できた: ${ok.length} / ${ids.length}`);
 console.log(`取得できなかった: ${failed.length}`);
+console.log(`取れたが幅1200px未満: ${small.length}`);
+if (small.length) {
+  console.log(`\n解像度が足りない作品（マニフェストの commons 名を直すと改善します）:`);
+  small.sort((a, b) => a.w - b.w).forEach((s2) =>
+    console.log(`  ${String(s2.w).padStart(4)}px  ${s2.id}  ${s2.artist ?? ''}《${s2.title ?? ''}》`));
+}
 if (failed.length) {
   console.log(`\nマニフェストの commons / wiki / wikiEn を直してください:`);
   failed.forEach((f) => console.log(`  ${f.id}  ${f.artist ?? ''}《${f.title ?? ''}》`));
@@ -156,8 +216,15 @@ if (process.env.GITHUB_STEP_SUMMARY) {
   const lines = [
     `## 作品画像の取得結果`, ``,
     `- 取得できた: **${ok.length} / ${ids.length}**`,
-    `- 取得できなかった: **${failed.length}**`, ``,
+    `- 取得できなかった: **${failed.length}**`,
+    `- 取れたが幅1200px未満: **${small.length}**`, ``,
   ];
+  if (small.length) {
+    lines.push(`### 解像度が足りないもの`, ``, `| 幅 | ID | 作品 |`, `|---|---|---|`);
+    small.sort((a, b) => a.w - b.w).forEach((s2) =>
+      lines.push(`| ${s2.w}px | \`${s2.id}\` | ${s2.artist ?? ''}《${s2.title ?? ''}》 |`));
+    lines.push(``);
+  }
   if (failed.length) {
     lines.push(`### 直すべきマニフェスト`, ``, `| ID | 作品 | 試したこと |`, `|---|---|---|`);
     failed.forEach((f) => lines.push(
