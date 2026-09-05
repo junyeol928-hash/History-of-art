@@ -36,34 +36,33 @@
  .verdict h3{margin:0 0 .5rem;font-size:1rem;color:var(--accent);}
  .verdict p{margin:.5rem 0;font-size:.9rem;color:var(--ink2);}
  .verdict b{color:var(--ink);}
- .yes{color:#4a7c59;font-weight:700;} .no{color:#a8392b;font-weight:700;}
- @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .yes{color:#7fb98f;}
-  :root:not([data-theme="light"]) .no{color:#e07a6c;}}
+ .no{color:#a8392b;font-weight:700;}
+ @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .no{color:#e07a6c;}}
  .sw button{padding:.45rem 1.2rem;font-size:.85rem;}
 </style>
 <div class="wrap">
  <header class="top">
   <h1>音量を決める ─ 中世（ゴシック）</h1>
-  <p class="sub">第7章 光の建築 を3段階の音量で作りました。<strong>ボタンで切り替えて見比べてください。</strong>初期表示は大胆版です。</p>
+  <p class="sub">第7章 光の建築 を3段階の音量で作りました。<strong>ボタンで切り替えて見比べてください。</strong>初期表示は採用案（大胆版）です。</p>
   <div class="verdict">
-   <h3>私の判断</h3>
-   <p><span class="yes">大胆版が正解</span>だと思います。<span class="no">極大版は行きすぎ</span>です。理由は2つ。</p>
-   <p><b>ひとつ、飾りが作品に勝ってしまう。</b>中世の極大版では、ステンドグラスの図版より金の額のほうが目立っています。
-      日本の極大版では、掛軸の表装が作品より面積を取っています。これは、このサイトが一番やってはいけないことです。</p>
-   <p><b>ふたつ、本文が枠に囲まれて分断される。</b>日本の極大版で本文が箱に入り、読む面の静けさが消えました。
-      15分の読み物としては疲れます。</p>
-   <p><b>ただし、極大版から1つだけ採るべきものがあります。──「門」の大きさです。</b>
-      中世の薔薇窓も、日本の全面の料紙も、極大版のほうが明らかに良い。
-      <b>門は通り抜ける場所なので、ここだけは強すぎても害がありません。</b>
-      なので私の推しは<b>「大胆版 ＋ 極大版の章扉」</b>です。</p>
+   <h3>結論 ── 音量ではなく、場所の問題だった</h3>
+   <p>3段階を作って分かったのは、限界は「章扉の大きさ」でも「帯の本数」でもなく、
+      <b>装飾が本文の領域に入った瞬間</b>だということでした。</p>
+   <p><b>採用するのは大胆版。ただし章扉だけは極大版の大きさを採ります。</b>
+      章扉は通り抜ける場所なので、強すぎても害がありません。</p>
+   <p>極大版で壊れたのは、<span class="no">左右の余白を全長にわたって走る飾り</span>（同じ蔦が繰り返されて壁紙になる）、
+      <span class="no">本文の地のテクスチャ</span>（コントラストを守ると見えなくなり、見えるまで上げると本文が痛む）、
+      <span class="no">豪華すぎる額</span>（中世では図版より額のほうが目立ってしまった）、
+      <span class="no">本文を囲む枠</span>（読む面が分断される）── すべて本文の領域に入ったものです。</p>
+   <p>この規則は <b>docs/design/SKIN_RULES.md</b> に文書化しました。残り12時代はこれに従って作ります。</p>
   </div>
   <p class="sub" style="margin-top:1.1rem;font-size:.86rem;color:var(--ink3)">
-   本文は実物の章から一字も変えずに引いています。本文のコントラスト比は3案とも14:1以上（基準7:1）。
+   本文は実物の章から一字も変えずに引いています。コントラスト比は3案とも実測13.6:1以上（基準7:1）。
    作品画像はこの比較ページの環境から取得できないため自作の抽象図ですが、<strong>実サイトには1800pxの本物の写真が入ります</strong>。</p>
  </header>
   <section class="opt">
-    <header class="oh"><h2>中世（ゴシック）</h2><p class="meta">第7章 光の建築</p><p class="what">極大版の<strong>薔薇窓の扉は見事</strong>です。ただし本文に入ると、左右の余白を蔓草飾りが全長にわたって走り、図版が金の豪華な額に飲まれて、ステンドグラスより額のほうが目立ってしまっています。</p>
-      <div class="sw"><button type="button" data-v="q" data-h="3500">控えめ</button><button type="button" data-v="l" data-h="5690" aria-pressed="true">大胆</button><button type="button" data-v="m" data-h="6800">極大</button></div></header>
+    <header class="oh"><h2>中世（ゴシック）</h2><p class="meta">第7章 光の建築</p><p class="what">極大版の<strong>薔薇窓の扉は見事</strong>です。ただし本文に入ると、左右の余白を蔓草飾りが全長にわたって走り、図版が金の額に飲まれて、ステンドグラスより額のほうが目立ってしまっています。</p>
+      <div class="sw"><button type="button" data-v="q" data-h="3500">控えめ</button><button type="button" data-v="l" data-h="5690" aria-pressed="true">大胆</button><button type="button" data-v="m" data-h="6790">極大</button></div></header>
     <div class="stage" data-h="5690"><iframe class="v-q" hidden title="中世（ゴシック） 控えめ" scrolling="no" srcdoc="&lt;!doctype html&gt;&lt;html lang=&quot;ja&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;
   &lt;link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&amp;family=Shippori+Mincho:wght@400;500;600&amp;family=UnifrakturMaguntia&amp;family=Zen+Antique&amp;family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;display=swap&quot;&gt;
   &lt;style&gt;
@@ -7371,7 +7370,7 @@
 &lt;/div&gt;
 &lt;/body&gt;&lt;/html&gt;"></iframe></div>
   </section>
- <footer>「大胆版＋極大版の章扉」で進めてよければ、残り12時代を同じ音量で揃えます。</footer>
+ <footer>この音量で、残り12時代を揃えます。</footer>
 </div>
 <script>
  function fit(){document.querySelectorAll('.stage').forEach(function(st){
@@ -7381,7 +7380,7 @@
  document.querySelectorAll('.sw').forEach(function(sw){
   sw.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;
    sw.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b);});
-   var st=sw.closest('.opt').querySelector('.stage'); st.dataset.h=b.dataset.h;
+   var st=sw.closest('.opt').querySelector('.stage');st.dataset.h=b.dataset.h;
    st.querySelectorAll('iframe').forEach(function(f){f.hidden=!f.classList.contains('v-'+b.dataset.v);});
    fit();});});
  addEventListener('resize',fit);addEventListener('load',fit);fit();
