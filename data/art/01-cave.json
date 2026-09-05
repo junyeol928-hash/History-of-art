@@ -48,6 +48,34 @@
     "wiki": "ヴィレンドルフのヴィーナス", "wikiLang": "ja", "wikiEn": "Venus of Willendorf",
     "license": "パブリックドメイン"
   },
+  "pech-merle-horses": {
+    "artist": "作者不詳", "title": "ペシュ・メルル洞窟「点描の馬」", "year": "約2万5千年前",
+    "collection": "ペシュ・メルル洞窟（フランス・ロット県カブレレ）",
+    "commons": "Pech Merle main et cheval ponctué.jpg",
+    "wiki": "ペシュ・メルル洞窟", "wikiLang": "ja", "wikiEn": "Pech Merle",
+    "license": "パブリックドメイン"
+  },
+  "sulawesi-hand-stencil": {
+    "artist": "作者不詳", "title": "スラウェシ島マロスの手形", "year": "約4万年前",
+    "collection": "マロス＝パンケップのカルスト（インドネシア・南スラウェシ州）",
+    "commons": "Hands in Pettakere Cave.jpg",
+    "wiki": "リアン・テドンゲ", "wikiLang": "ja", "wikiEn": "Maros-Pangkep cave paintings",
+    "license": "パブリックドメイン"
+  },
+  "lion-man-hohlenstein": {
+    "artist": "作者不詳", "title": "ライオンマン（ホーレンシュタイン・シュターデル）", "year": "約4万年前",
+    "collection": "ウルム博物館（ドイツ）",
+    "commons": "Loewenmensch1.jpg",
+    "wiki": "ライオンマン", "wikiLang": "ja", "wikiEn": "Lion-man",
+    "license": "パブリックドメイン"
+  },
+  "venus-of-lespugue": {
+    "artist": "作者不詳", "title": "レスピューグのヴィーナス", "year": "約2万5千年前",
+    "collection": "人類博物館（パリ）",
+    "commons": "Venus of Lespugue (replica).jpg",
+    "wiki": "レスピューグのヴィーナス", "wikiLang": "ja", "wikiEn": "Venus of Lespugue",
+    "license": "パブリックドメイン"
+  },
   "sautuola-portrait": {
     "artist": "作者不詳", "title": "マルセリーノ・サンス・デ・サウトゥオラの肖像", "year": "19世紀",
     "collection": "アルタミラ博物館（スペイン）",
