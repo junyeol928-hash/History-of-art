@@ -151,6 +151,7 @@ function alreadyHave(id) {
    間違った写真は、写真がないことより悪い。だから中身のハッシュで弾く。 */
 const seen = new Map();   // sha1 → 先に取れたID
 const dup = [];
+const miss = [];   // commons を名指ししたのに、その名前では取れなかったもの
 const sha = (b) => createHash('sha1').update(b).digest('hex');
 for (const e of ['jpg', 'png', 'webp', 'svg']) {
   for (const id of ids) {
@@ -220,6 +221,11 @@ for (const id of ids) {
     console.log(`✓ ${id}  ${best.label}  ${best.w}px  ${(best.buf.length / 1024).toFixed(0)}KB${warn}`);
     ok.push(id);
     if (best.w && best.w < 1200) small.push({ id, w: best.w, artist: m.artist, title: m.title });
+    /* 名指しのファイル名が効かなかったものは、別の作品が来ている恐れがある。
+       名前を直すべき候補として控えておく。 */
+    if (m.commons && best.label !== 'Commons(名指し)') {
+      miss.push({ id, label: best.label, commons: m.commons, artist: m.artist, title: m.title });
+    }
   }
   if (!done) {
     console.log(`✗ ${id}  ${m.artist ?? ''}《${m.title ?? ''}》`);
@@ -236,6 +242,11 @@ console.log(`取得できた: ${ok.length} / ${ids.length}`);
 console.log(`取得できなかった: ${failed.length}`);
 console.log(`取れたが幅1200px未満: ${small.length}`);
 console.log(`取り違え（他と同じ写真）: ${dup.length}`);
+console.log(`名指しのファイル名が効かなかった: ${miss.length}`);
+if (miss.length) {
+  console.log(`\n別の作品が来ている恐れがあります（commons 名を直してください）:`);
+  miss.forEach((d) => console.log(`  ${d.id}  ${d.label} で代用  指定は「${d.commons}」  ${d.artist ?? ''}《${d.title ?? ''}》`));
+}
 if (dup.length) {
   console.log(`\n別作品と同じ写真が返ったもの（commons 名を名指しで直してください）:`);
   dup.forEach((d) => console.log(`  ${d.id}  ← ${d.owner} と同一  ${d.artist ?? ''}《${d.title ?? ''}》`));
@@ -258,6 +269,7 @@ if (process.env.GITHUB_STEP_SUMMARY) {
     `- 取得できなかった: **${failed.length}**`,
     `- 取れたが幅1200px未満: **${small.length}**`, ``,
     `- 取り違え（他と同じ写真）: **${dup.length}**`, ``,
+    `- 名指しのファイル名が効かなかった: **${miss.length}**`, ``,
   ];
   if (small.length) {
     lines.push(`### 解像度が足りないもの`, ``, `| 幅 | ID | 作品 |`, `|---|---|---|`);
@@ -268,6 +280,11 @@ if (process.env.GITHUB_STEP_SUMMARY) {
   if (dup.length) {
     lines.push(`### 別作品と同じ写真が返ったもの`, ``, `| ID | 同じだった相手 | 作品 |`, `|---|---|---|`);
     dup.forEach((d) => lines.push(`| \`${d.id}\` | \`${d.owner}\` | ${d.artist ?? ''}《${d.title ?? ''}》 |`));
+    lines.push(``);
+  }
+  if (miss.length) {
+    lines.push(`### 名指しが効かず別経路で取れたもの`, ``, `| ID | 代わりに使った経路 | 指定していた名前 | 作品 |`, `|---|---|---|---|`);
+    miss.forEach((d) => lines.push(`| \`${d.id}\` | ${d.label} | \`${d.commons}\` | ${d.artist ?? ''}《${d.title ?? ''}》 |`));
     lines.push(``);
   }
   if (failed.length) {
