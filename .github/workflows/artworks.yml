@@ -43,7 +43,7 @@ jobs:
           from PIL import Image
           import glob, os
           Image.MAX_IMAGE_PIXELS = None
-          MAXW, Q = 1400, 82
+          MAXW, Q = 1800, 88
           before = after = 0
           for p in sorted(glob.glob('assets/artworks/*')):
               ext = os.path.splitext(p)[1].lower()
@@ -58,7 +58,7 @@ jobs:
                   if im.mode not in ('RGB', 'L'):
                       im = im.convert('RGB'); changed = True
                   out = os.path.splitext(p)[0] + '.jpg'
-                  if changed or b > 700*1024 or ext != '.jpg':
+                  if changed or b > 1500*1024 or ext != '.jpg':
                       im.save(out, 'JPEG', quality=Q, optimize=True, progressive=True)
                       if out != p: os.remove(p)
                   after += os.path.getsize(out)

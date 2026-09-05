@@ -9,9 +9,9 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, statSy
 
 const UA = 'ArtHistoryStaticSite/1.0 (https://github.com/junyeol928-hash/History-of-art; educational)';
 const OUT = 'assets/artworks';
-const WIDTH = 1400;          // 読むには十分で、リポジトリが太らない幅
-const SMALL = 900;           // それでも重い場合に落とす幅
-const MAX_BYTES = 700 * 1024; // 1枚の上限
+const WIDTH = 1800;           // 拡大して筆跡を見るのに耐える幅
+const SMALL = 1300;           // それでも重すぎる場合に落とす幅
+const MAX_BYTES = 1500 * 1024; // 1枚の上限
 const FORCE = process.argv.includes('--force');
 
 mkdirSync(OUT, { recursive: true });

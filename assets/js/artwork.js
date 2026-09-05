@@ -199,9 +199,24 @@
   function close() {
     if (viewer) { viewer.classList.remove('-on'); document.body.style.overflow = ''; }
   }
+  /* 拡大時は、焼き込み済みより大きい画像を取りに行く。
+     筆跡やひび割れを見るための一手間。失敗したら表示中の画像のまま */
+  function bigger(m, fallback) {
+    if (!m || !m.commons) return Promise.resolve(fallback);
+    return fromCommons(m.commons, 3000)
+      .then(tryImage)
+      .catch(function () { return fallback; });
+  }
+
   function openViewer(fig, url, m) {
     var v = ensureViewer();
-    v.querySelector('img').src = url;
+    var img = v.querySelector('img');
+    img.src = url;
+    v.classList.add('-loading');
+    bigger(m, url).then(function (big) {
+      if (v.classList.contains('-on')) img.src = big;
+      v.classList.remove('-loading');
+    });
     var t = (m.artist ? m.artist + '　' : '') + (m.title || '') + (m.year ? '　' + m.year : '');
     var c = m.collection ? '<br>' + m.collection : '';
     v.querySelector('.vcap').innerHTML = t + c;
