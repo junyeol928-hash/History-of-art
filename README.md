@@ -8,7 +8,29 @@
 - 各章末に**「この章の作品を見に行く」**（日本で見られる場所を先に）
 - 大年表・地図・用語辞典・美術館ガイド
 
-ビルド不要の静的サイトです。`index.html` をブラウザで開けば動きます。
+ビルドは要りません。ただし**サーバーは要ります**。
+
+---
+
+## 手元で読む
+
+```bash
+node tools/serve.mjs
+```
+
+出てきた `http://localhost:8080/` をブラウザで開いてください。止めるときは Ctrl+C。
+
+`index.html` をダブルクリックしても開きません。目次も年表も辞典も、
+データを `fetch` で読んでいて、ファイルを直接開いた状態ではブラウザがそれを止めるからです
+（真っ白なページが出ます）。ビルドが要らないのは本当ですが、サーバーは要ります。
+
+```bash
+node tools/serve.mjs 3000    # 番号を変える
+node tools/serve.mjs --lan   # 同じ WiFi のスマホからも見る
+```
+
+`--lan` を付けると、スマホから開くためのアドレスも一緒に表示されます。
+外には出ません。同じ WiFi の中だけです。
 
 ---
 
@@ -81,10 +103,13 @@ node tools/fetch-artworks.mjs --force  # 全部取り直す
 
 ---
 
-## 公開
+## 公開について
 
-`main` に push すると GitHub Pages へ公開されます（`.github/workflows/pages.yml`）。
-リポジトリの Settings → Pages で、Source を **GitHub Actions** にしてください。
+**いまは公開していません。** リポジトリは private で、GitHub Pages も有効にしていません。
+
+公開したくなったら、`.github/workflows/pages.yml` を Actions タブから手で走らせ、
+リポジトリの Settings → Pages で Source を **GitHub Actions** にしてください。
+うっかり公開されないよう、この workflow は push では動かないようにしてあります。
 
 ---
 
