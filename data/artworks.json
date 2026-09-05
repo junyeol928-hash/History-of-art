@@ -53,10 +53,8 @@
   "title": "ラスコー洞窟「井戸の場面」",
   "year": "約1万7千年前",
   "collection": "ラスコー洞窟（フランス・ドルドーニュ県）",
-  "commons": "Lascaux, Scène du Puits.jpg",
-  "wiki": "ラスコー洞窟",
+  "commons": "Lascaux II Scene du Puits.jpg",
   "wikiLang": "ja",
-  "wikiEn": "Lascaux",
   "license": "パブリックドメイン"
  },
  "altamira-bison": {
@@ -3380,7 +3378,6 @@
   "commons": "Praying Dogu, Kazahari site, Hachinohe, Aomori, Jomon period.jpg",
   "wiki": "合掌土偶",
   "wikiLang": "ja",
-  "wikiEn": "Dogū",
   "license": "パブリックドメイン"
  },
  "chuku-dogu": {
@@ -3729,6 +3726,66 @@
   "wiki": "平治物語絵巻",
   "wikiLang": "ja",
   "wikiEn": "Heiji Monogatari Emaki",
+  "license": "パブリックドメイン"
+ },
+ "ippen-shonin-eden": {
+  "chapter": "28-emaki",
+  "artist": "円伊",
+  "title": "一遍上人絵伝（一遍聖絵）",
+  "year": "1299年",
+  "collection": "絹本著色 全12巻 清浄光寺（神奈川・藤沢）・東京国立博物館 国宝",
+  "commons": "Ippen Shonin Eden 2.jpg",
+  "wiki": "一遍上人絵伝",
+  "wikiLang": "ja",
+  "wikiEn": "Ippen Shōnin Eden",
+  "license": "パブリックドメイン"
+ },
+ "moko-shurai-ekotoba": {
+  "chapter": "28-emaki",
+  "artist": "作者不詳（竹崎季長 発注）",
+  "title": "蒙古襲来絵詞",
+  "year": "1293年頃",
+  "collection": "紙本著色 2巻 宮内庁三の丸尚蔵館（東京）",
+  "commons": "Takezaki suenaga ekotoba3.jpg",
+  "wiki": "蒙古襲来絵詞",
+  "wikiLang": "ja",
+  "wikiEn": "Mōko Shūrai Ekotoba",
+  "license": "パブリックドメイン"
+ },
+ "gaki-zoshi": {
+  "chapter": "28-emaki",
+  "artist": "作者不詳",
+  "title": "餓鬼草紙",
+  "year": "12世紀後半",
+  "collection": "紙本著色 東京国立博物館・京都国立博物館 国宝",
+  "commons": "Hungry Ghosts Scroll Kyoto.jpg",
+  "wiki": "餓鬼草紙",
+  "wikiLang": "ja",
+  "wikiEn": "Gaki-zōshi",
+  "license": "パブリックドメイン"
+ },
+ "senmen-hokekyo-sasshi": {
+  "chapter": "28-emaki",
+  "artist": "作者不詳",
+  "title": "扇面法華経冊子",
+  "year": "12世紀後半",
+  "collection": "紙本著色 四天王寺（大阪）・東京国立博物館 国宝",
+  "commons": "Senmen Hokekyo Sasshi.jpg",
+  "wiki": "扇面法華経冊子",
+  "wikiLang": "ja",
+  "wikiEn": "Senmen Hokekyō Sasshi",
+  "license": "パブリックドメイン"
+ },
+ "kasuga-gongen-genki-e": {
+  "chapter": "28-emaki",
+  "artist": "高階隆兼",
+  "title": "春日権現験記絵",
+  "year": "1309年",
+  "collection": "絹本著色 全20巻 宮内庁三の丸尚蔵館（東京）",
+  "commons": "Kasuga Gongen Genki E.jpg",
+  "wiki": "春日権現験記絵",
+  "wikiLang": "ja",
+  "wikiEn": "Kasuga Gongen Genki E",
   "license": "パブリックドメイン"
  },
  "sesshu-shuto-sansui": {
@@ -4913,10 +4970,8 @@
   "title": "大囲壁と円錐の塔（大ジンバブエ）",
   "year": "13 — 15世紀",
   "collection": "花崗岩の空積み　壁の高さ 最大約11 m　全長約250 m　大ジンバブエ遺跡（マスビンゴ近郊、ジンバブエ）　世界文化遺産",
-  "commons": "Great Zimbabwe Great Enclosure.jpg",
-  "wiki": "グレート・ジンバブエ遺跡",
+  "commons": "Great Zimbabwe Great Enclosure and Conical Tower.jpg",
   "wikiLang": "ja",
-  "wikiEn": "Great Zimbabwe",
   "license": "パブリックドメイン"
  },
  "lalibela-bete-giyorgis": {

@@ -15,6 +15,8 @@ const SMALL = 1300;           // それでも重すぎる場合に落とす幅
 const MAX_BYTES = 1500 * 1024; // 1枚の上限
 const FORCE = process.argv.includes('--force');
 const GOOD_ENOUGH = 1500;     // これだけ幅があれば、それ以上の経路は探さない
+const MIN_SEARCH = 400;       // 検索でこれ未満のものは、たいてい図版ではなくアイコンだ
+const MIN_KEEP   = 300;       // これを下回る写真は、額に入れるより自作の図のほうがましだ
 
 /** JPEG/PNG のヘッダから画素幅を読む（外部ライブラリなしで済ませる） */
 async function widthOf(buf) {
@@ -90,7 +92,10 @@ async function viaCommonsSearch(query, limit = 8) {
     if (ii.mime && !/^image\/(jpeg|png|webp)$/.test(ii.mime)) continue;
     // 図表・地図・紋章などを避ける
     if (/\b(map|logo|coat of arms|diagram|icon|flag)\b/i.test(pg.title)) continue;
-    cands.push({ url: ii.thumburl || ii.url, mime: ii.mime, w: ii.thumbwidth || ii.width || 0 });
+    const w = ii.thumbwidth || ii.width || 0;
+    // 小さすぎる版は、額に入れるとかえって見苦しい
+    if (w && w < MIN_SEARCH) continue;
+    cands.push({ url: ii.thumburl || ii.url, mime: ii.mime, w });
   }
   if (!cands.length) throw new Error('Commons 検索で画像が見つかりません');
   cands.sort((a, b) => b.w - a.w);
@@ -172,12 +177,32 @@ for (const id of ids) {
     if (have) { ok.push(id); console.log(`= ${id}  （取得済み .${have}）`); continue; }
   }
 
+  /* 記事名が作家の名前そのものなら、その記事の代表画像は
+     この作品ではなく「その作家のいちばん有名な絵」だ。必ず別の絵が来る。
+     キルヒナーの《兵士としての自画像》に《ポツダム広場》が返ってきたのは、
+     wiki と wikiEn に作家名が入っていたからだった。だからその経路は使わない。
+     日本語側が作家名なら、英語側も作家の記事だとみて間違いない。 */
+  const artistPage = !!(m.wiki && m.artist && m.wiki === m.artist);
+
+  /* 名指しのファイル名は、たとえ実在しなくても、作品をよく説明している。
+     「Ernst Ludwig Kirchner - Selbstbildnis als Soldat」は
+     検索語としてなら、綴りが多少ずれていても正しい一枚に当たる。 */
+  const fromName = String(m.commons || '')
+    .replace(/\.(jpg|jpeg|png|webp|svg|tif|tiff)$/i, '')
+    .replace(/[_-]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+
   const attempts = [];
-  if (m.commons) attempts.push(['Commons(名指し)', () => viaCommons(m.commons)]);
-  const q = [m.titleEn, m.wikiEn, m.artistEn].filter(Boolean).join(' ');
-  if (q) attempts.push(['Commons(検索)', () => viaCommonsSearch(q)]);
-  if (m.wikiEn)  attempts.push(['en.wikipedia', () => viaWikipedia('en', m.wikiEn)]);
-  if (m.wiki)    attempts.push([`${m.wikiLang || 'ja'}.wikipedia`, () => viaWikipedia(m.wikiLang || 'ja', m.wiki)]);
+  if (m.commons)  attempts.push(['Commons(名指し)', () => viaCommons(m.commons)]);
+  if (fromName)   attempts.push(['Commons(名前で検索)', () => viaCommonsSearch(fromName, 12)]);
+  if (m.wikiEn && !artistPage) {
+    attempts.push(['Commons(記事名で検索)', () => viaCommonsSearch(m.wikiEn, 12)]);
+    attempts.push(['en.wikipedia', () => viaWikipedia('en', m.wikiEn)]);
+  }
+  if (m.wiki && !artistPage) {
+    attempts.push([`${m.wikiLang || 'ja'}.wikipedia`, () => viaWikipedia(m.wikiLang || 'ja', m.wiki)]);
+  }
 
   // 経路ごとに候補を集め、いちばん大きい画像を採用する。
   // 小さなサムネイルを先に掴んで満足してしまうのを防ぐため。
@@ -199,6 +224,14 @@ for (const id of ids) {
       errors.push(`${label}: ${e.message}`);
     }
     await sleep(150);
+  }
+
+  /* 122px のカサットが額の中で引き伸ばされているより、
+     こちらで描いた図のほうが、まだ作品の話ができる。 */
+  if (best && best.w && best.w < MIN_KEEP) {
+    console.log(`✗ ${id}  ${best.w}px しか取れなかった（小さすぎるので採らない）`);
+    small.push({ id, w: best.w, artist: m.artist, title: m.title, dropped: true });
+    best = null;
   }
 
   if (best) {
@@ -254,7 +287,7 @@ if (dup.length) {
 if (small.length) {
   console.log(`\n解像度が足りない作品（マニフェストの commons 名を直すと改善します）:`);
   small.sort((a, b) => a.w - b.w).forEach((s2) =>
-    console.log(`  ${String(s2.w).padStart(4)}px  ${s2.id}  ${s2.artist ?? ''}《${s2.title ?? ''}》`));
+    console.log(`  ${String(s2.w).padStart(4)}px  ${s2.id}  ${s2.artist ?? ''}《${s2.title ?? ''}》${s2.dropped ? '  ← 小さすぎるので採らなかった' : ''}`));
 }
 if (failed.length) {
   console.log(`\nマニフェストの commons / wiki / wikiEn を直してください:`);
