@@ -1,8 +1,8 @@
 name: GitHub Pages に公開する
 
-# 手で走らせたときだけ公開する。
-# push で自動に動くと、公開するつもりのないものが世に出る。
 on:
+  push:
+    branches: [ main ]
   workflow_dispatch:
 
 permissions:

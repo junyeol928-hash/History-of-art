@@ -103,13 +103,15 @@ node tools/fetch-artworks.mjs --force  # 全部取り直す
 
 ---
 
-## 公開について
+## 公開
 
-**いまは公開していません。** リポジトリは private で、GitHub Pages も有効にしていません。
+<https://junyeol928-hash.github.io/History-of-art/>
 
-公開したくなったら、`.github/workflows/pages.yml` を Actions タブから手で走らせ、
-リポジトリの Settings → Pages で Source を **GitHub Actions** にしてください。
-うっかり公開されないよう、この workflow は push では動かないようにしてあります。
+`main` に push すると GitHub Pages へ公開されます（`.github/workflows/pages.yml`）。
+Actions タブから手で走らせることもできます。
+
+初回だけ、リポジトリの Settings → Pages で Source を **GitHub Actions** に
+しておく必要があります。
 
 ---
 
