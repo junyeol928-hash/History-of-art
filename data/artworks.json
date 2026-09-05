@@ -1379,6 +1379,66 @@
   "wikiEn": "Landscape with the Fall of Icarus",
   "license": "パブリックドメイン"
  },
+ "rogier-descent-from-the-cross": {
+  "chapter": "10-north",
+  "artist": "ロヒール・ファン・デル・ウェイデン",
+  "title": "十字架降架",
+  "year": "1435年ごろ",
+  "collection": "プラド美術館（マドリード）",
+  "commons": "El Descendimiento, by Rogier van der Weyden, from Prado in Google Earth.jpg",
+  "wiki": "キリスト降架 (ロヒール・ファン・デル・ウェイデン)",
+  "wikiLang": "ja",
+  "wikiEn": "The Descent from the Cross (van der Weyden)",
+  "license": "パブリックドメイン"
+ },
+ "bruegel-netherlandish-proverbs": {
+  "chapter": "10-north",
+  "artist": "ピーテル・ブリューゲル（父）",
+  "title": "ネーデルラントの諺",
+  "year": "1559年",
+  "collection": "絵画館（ベルリン）",
+  "commons": "Pieter Brueghel the Elder - The Dutch Proverbs - Google Art Project.jpg",
+  "wiki": "ネーデルラントの諺",
+  "wikiLang": "ja",
+  "wikiEn": "Netherlandish Proverbs",
+  "license": "パブリックドメイン"
+ },
+ "durer-young-hare": {
+  "chapter": "10-north",
+  "artist": "アルブレヒト・デューラー",
+  "title": "若い野兎",
+  "year": "1502年",
+  "collection": "アルベルティーナ美術館（ウィーン）",
+  "commons": "Albrecht Dürer - Hare, 1502 - Google Art Project.jpg",
+  "wiki": "野兎 (デューラー)",
+  "wikiLang": "ja",
+  "wikiEn": "Young Hare",
+  "license": "パブリックドメイン"
+ },
+ "grunewald-isenheim-altarpiece": {
+  "chapter": "10-north",
+  "artist": "マティアス・グリューネヴァルト",
+  "title": "イーゼンハイム祭壇画",
+  "year": "1512 — 1516年",
+  "collection": "ウンターリンデン美術館（コルマール）",
+  "commons": "Mathis Gothart Grünewald 022.jpg",
+  "wiki": "イーゼンハイムの祭壇画",
+  "wikiLang": "ja",
+  "wikiEn": "Isenheim Altarpiece",
+  "license": "パブリックドメイン"
+ },
+ "holbein-the-ambassadors": {
+  "chapter": "10-north",
+  "artist": "ハンス・ホルバイン（子）",
+  "title": "大使たち",
+  "year": "1533年",
+  "collection": "ナショナル・ギャラリー（ロンドン）",
+  "commons": "Hans Holbein the Younger - The Ambassadors - Google Art Project.jpg",
+  "wiki": "大使たち",
+  "wikiLang": "ja",
+  "wikiEn": "The Ambassadors (Holbein)",
+  "license": "パブリックドメイン"
+ },
  "giorgione-tempest": {
   "chapter": "11-venice",
   "artist": "ジョルジョーネ",
