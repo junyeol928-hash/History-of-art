@@ -9,7 +9,9 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, statSy
 
 const UA = 'ArtHistoryStaticSite/1.0 (https://github.com/junyeol928-hash/History-of-art; educational)';
 const OUT = 'assets/artworks';
-const WIDTH = 1600;
+const WIDTH = 1400;          // 読むには十分で、リポジトリが太らない幅
+const SMALL = 900;           // それでも重い場合に落とす幅
+const MAX_BYTES = 700 * 1024; // 1枚の上限
 const FORCE = process.argv.includes('--force');
 
 mkdirSync(OUT, { recursive: true });
@@ -31,14 +33,20 @@ async function getJSON(url) {
 /** Commons のファイル名から、指定幅のサムネイル URL を得る */
 async function viaCommons(file) {
   const api = 'https://commons.wikimedia.org/w/api.php?action=query&format=json'
-    + '&prop=imageinfo&iiprop=url|mime|extmetadata&iiurlwidth=' + WIDTH
+    + '&prop=imageinfo&iiprop=url|mime|size|extmetadata&iiurlwidth=' + WIDTH
     + '&titles=' + encodeURIComponent('File:' + file);
   const d = await getJSON(api);
   const pages = d?.query?.pages ?? {};
   for (const k of Object.keys(pages)) {
     if (k === '-1') continue;
     const ii = pages[k].imageinfo?.[0];
-    if (ii) return { url: ii.thumburl || ii.url, mime: ii.mime };
+    if (ii) {
+      // thumburl が無いのは SVG など。その場合だけ原寸を使う
+      if (!ii.thumburl && ii.size && ii.size > 4 * 1024 * 1024) {
+        throw new Error('サムネイルが得られず、原寸が大きすぎます');
+      }
+      return { url: ii.thumburl || ii.url, mime: ii.mime };
+    }
   }
   throw new Error('Commons にそのファイル名が見つかりません');
 }
@@ -68,6 +76,21 @@ async function download(url) {
   return buf;
 }
 
+/** 重すぎたら、より小さい幅で取り直す（Wikimedia 側でリサイズしてもらう） */
+async function downloadSized(url, mime) {
+  let buf = await download(url);
+  if (buf.length > MAX_BYTES) {
+    const smaller = url.replace(new RegExp(`/${WIDTH}px-`), `/${SMALL}px-`);
+    if (smaller !== url) {
+      try {
+        const b2 = await download(smaller);
+        if (b2.length < buf.length) return { buf: b2, url: smaller };
+      } catch (e) { /* 取り直せなければ元のまま */ }
+    }
+  }
+  return { buf, url };
+}
+
 function alreadyHave(id) {
   for (const e of ['jpg', 'png', 'webp', 'svg']) {
     const p = `${OUT}/${id}.${e}`;
@@ -94,8 +117,11 @@ for (const id of ids) {
   const errors = [];
   for (const [label, fn] of attempts) {
     try {
-      const { url, mime } = await fn();
-      const buf = await download(url);
+      const got = await fn();
+      const mime = got.mime;
+      const sized = await downloadSized(got.url, mime);
+      const buf = sized.buf;
+      const url = sized.url;
       const ext = extFor(url, mime);
       writeFileSync(`${OUT}/${id}.${ext}`, buf);
       console.log(`✓ ${id}  ${label}  ${(buf.length / 1024).toFixed(0)}KB`);
