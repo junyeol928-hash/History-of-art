@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/* =========================================================================
+   時代スキン ─ 15時代ぶんの「衣装」
+   規則は docs/design/SKIN_RULES.md。原則はひとつだけ:
+
+     装飾は、本文の領域に入らない。それ以外の場所では思い切りやる。
+
+   ここで定義するのは4つだけ:
+     --display-era  見出しと数字の書体
+     --portal-*     章扉（門）の色
+     --orn-*        罫線と区切り飾りの形
+     --frame-*      図版の額
+   本文の書体・サイズ・行間・段落の間隔・地の明度は、どの時代でも同じ。
+   ========================================================================= */
+
+/* ---------- 書体の読み込み ---------- */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Zen+Antique&family=Italiana&family=Marcellus&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,600&family=Jost:wght@300;400;600&family=Archivo:wght@400;700;900&family=Klee+One:wght@400;600&family=Zen+Old+Mincho:wght@400;700;900&family=Shippori+Mincho+B1:wght@500;700;800&display=swap");
+
+/* ---------- 既定（時代指定がないとき） ---------- */
+:root {
+  --display-era: var(--serif);
+  --orn-weight: 1px;
+  --frame-pad: clamp(.6rem, 2vw, 1.4rem);
+  --frame-border: 1px;
+  --bignum-alpha: .13;
+}
+
+/* =========================================================================
+   先史 ─ 赭土。洞窟。輪郭だけが浮かぶ暗がり
+   ========================================================================= */
+.era-prehistory {
+  --display-era: "Zen Old Mincho", var(--serif);
+  --portal-bg: #2b211c;
+  --portal-ink: #e8dcd0; --portal-sub: #b09a8a;
+  --portal-accent: #d98a68; --portal-rule: rgba(232,220,208,.22);
+  --bignum-alpha: .18;
+  --frame-border: 1px;
+}
+
+/* =========================================================================
+   古代オリエント・エジプト ─ エジプシャンブルー。石と砂と、三千年動かない秩序
+   ========================================================================= */
+.era-ancient {
+  --display-era: "Cinzel", "Zen Old Mincho", var(--serif);
+  --portal-bg: #d9c9a3;
+  --portal-ink: #2a2419; --portal-sub: #6b5d43;
+  --portal-accent: #1b6ca8; --portal-rule: rgba(42,36,25,.25);
+  --bignum-alpha: .16;
+}
+
+/* =========================================================================
+   ギリシア・ローマ ─ 辰砂。大理石の白と、赤像式の黒と赤
+   ========================================================================= */
+.era-classical {
+  --display-era: "Cinzel", "Marcellus", var(--serif);
+  --portal-bg: #ece7dd;
+  --portal-ink: #23201b; --portal-sub: #6d675c;
+  --portal-accent: #a8392b; --portal-rule: rgba(35,32,27,.2);
+  --bignum-alpha: .15;
+}
+
+/* =========================================================================
+   中世 ─ ラピスラズリ。金地と青。写本と、鉛桟でつないだ色ガラス
+   ========================================================================= */
+.era-medieval {
+  --display-era: "Zen Antique", "Shippori Mincho B1", var(--serif);
+  --portal-bg: #141a33;
+  --portal-ink: #e9e4d6; --portal-sub: #a8a189;
+  --portal-accent: #c8a44e; --portal-rule: rgba(200,164,78,.4);
+  --bignum-alpha: .22;
+  --frame-border: 2px;
+  --orn-weight: 1px;
+}
+/* 中世だけ、罫線を鉛桟のような二重線にする */
+.era-medieval .prose h2 { border-top-style: double; border-top-width: 3px; }
+
+/* =========================================================================
+   ルネサンス ─ テラヴェルデ。均整。人文主義の端正なローマン体
+   ========================================================================= */
+.era-renaissance {
+  --display-era: "Cormorant Garamond", "EB Garamond", var(--serif);
+  --portal-bg: #e8e3d4;
+  --portal-ink: #262319; --portal-sub: #6a6454;
+  --portal-accent: #4a7c59; --portal-rule: rgba(38,35,25,.2);
+  --bignum-alpha: .15;
+}
+
+/* =========================================================================
+   バロック ─ アンバー。闇と、そこへ差し込む一条の光
+   ========================================================================= */
+.era-baroque {
+  --display-era: "Bodoni Moda", "Shippori Mincho B1", var(--serif);
+  --portal-bg: #17120c;
+  --portal-ink: #e6dcc9; --portal-sub: #9d9179;
+  --portal-accent: #c99356; --portal-rule: rgba(230,220,201,.2);
+  --bignum-alpha: .2;
+  --frame-border: 2px;
+}
+
+/* =========================================================================
+   ロココ ─ ローズマダー。直角が消える。一箇所だけ崩れているから優雅
+   ========================================================================= */
+.era-rococo {
+  --display-era: "Italiana", "Cormorant Garamond", var(--serif);
+  --portal-bg: #f1e6e9;
+  --portal-ink: #2c2226; --portal-sub: #7a6a70;
+  --portal-accent: #b8567f; --portal-rule: rgba(184,86,127,.3);
+  --bignum-alpha: .17;
+}
+/* ロココだけ、囲みの角を一箇所だけ落とす */
+.era-rococo .band.seeit,
+.era-rococo .band.myth { border-radius: 0 14px 0 0; }
+
+/* =========================================================================
+   19世紀 ─ プルシアンブルー。理性と情熱、そしてサロンの壁
+   ========================================================================= */
+.era-19c {
+  --display-era: "Playfair Display", "Shippori Mincho B1", var(--serif);
+  --portal-bg: #1d2733;
+  --portal-ink: #e4e6e8; --portal-sub: #9aa3ad;
+  --portal-accent: #6ba6dd; --portal-rule: rgba(228,230,232,.22);
+  --bignum-alpha: .18;
+}
+
+/* =========================================================================
+   印象派 ─ コバルトヴァイオレット。影が茶色でなくなった
+   ========================================================================= */
+.era-impression {
+  --display-era: "Cormorant Garamond", var(--serif);
+  --portal-bg: #e3e0ee;
+  --portal-ink: #262233; --portal-sub: #6b6580;
+  --portal-accent: #6a5fa8; --portal-rule: rgba(38,34,51,.18);
+  --bignum-alpha: .16;
+}
+
+/* =========================================================================
+   20世紀前衛 ─ カドミウムレッド。幾何学と原色と硬い線
+   ========================================================================= */
+.era-modern {
+  --display-era: "Jost", "Zen Kaku Gothic New", var(--sans);
+  --portal-bg: #f2f1ee;
+  --portal-ink: #16171a; --portal-sub: #5d6066;
+  --portal-accent: #c8352a; --portal-rule: rgba(22,23,26,.3);
+  --bignum-alpha: .2;
+  --orn-weight: 3px;
+  --frame-border: 2px;
+}
+/* 20世紀は罫線を太くする ─ 定規で引いた線 */
+.era-modern .prose h2 { border-top-width: 3px; }
+.era-modern .pull { border-top-width: 3px; border-bottom-width: 3px; }
+
+/* =========================================================================
+   現代 ─ フタロシアニングリーン。白い箱（ホワイトキューブ）
+   ========================================================================= */
+.era-contemp {
+  --display-era: "Archivo", "Zen Kaku Gothic New", var(--sans);
+  --portal-bg: #f7f7f6;
+  --portal-ink: #1a1c1b; --portal-sub: #61665f;
+  --portal-accent: #0f9d8f; --portal-rule: rgba(26,28,27,.22);
+  --bignum-alpha: .14;
+  --orn-weight: 2px;
+}
+
+/* =========================================================================
+   日本 ─ 弁柄。料紙と、余白と、朱の印
+   ========================================================================= */
+.era-japan {
+  --display-era: "Shippori Mincho B1", "Zen Old Mincho", var(--serif);
+  --portal-bg: #efe9dc;
+  --portal-ink: #241f1c; --portal-sub: #6f6559;
+  --portal-accent: #8c2f39; --portal-rule: rgba(140,47,57,.28);
+  --bignum-alpha: .18;
+}
+
+/* =========================================================================
+   中国・東アジア ─ 松煙墨。紙の白と、一筆の速度
+   ========================================================================= */
+.era-china {
+  --display-era: "Zen Old Mincho", "Shippori Mincho B1", var(--serif);
+  --portal-bg: #eceae4;
+  --portal-ink: #1f2224; --portal-sub: #656b6e;
+  --portal-accent: #3a4a52; --portal-rule: rgba(31,34,36,.22);
+  --bignum-alpha: .15;
+}
+
+/* =========================================================================
+   イスラーム ─ トルコ青。幾何学と、かたちなき神
+   ========================================================================= */
+.era-islam {
+  --display-era: "Marcellus", "Zen Old Mincho", var(--serif);
+  --portal-bg: #0e2f33;
+  --portal-ink: #e2ece9; --portal-sub: #93aaa8;
+  --portal-accent: #3ec3c6; --portal-rule: rgba(226,236,233,.24);
+  --bignum-alpha: .2;
+}
+
+/* =========================================================================
+   もうひとつの世界 ─ 黄土。木と土と、太平洋の光
+   ========================================================================= */
+.era-world {
+  --display-era: "Zen Antique", "Zen Old Mincho", var(--serif);
+  --portal-bg: #2e2519;
+  --portal-ink: #ece0c9; --portal-sub: #ad9f83;
+  --portal-accent: #d9b158; --portal-rule: rgba(236,224,201,.22);
+  --bignum-alpha: .2;
+}
+
+/* =========================================================================
+   夜（ダークモード）── 門はもともと濃い時代が多いので、
+   明るい門の時代だけを夜用に沈める。本文側は site.css が面倒を見る。
+   ========================================================================= */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .era-ancient     { --portal-bg:#2a2519; --portal-ink:#e8e0cd; --portal-sub:#a89c80; --portal-rule:rgba(232,224,205,.2); }
+  :root:not([data-theme="light"]) .era-classical   { --portal-bg:#1d1c19; --portal-ink:#e8e4da; --portal-sub:#9a948a; --portal-rule:rgba(232,228,218,.2); }
+  :root:not([data-theme="light"]) .era-renaissance { --portal-bg:#1a1d17; --portal-ink:#e6e4d6; --portal-sub:#98988a; --portal-rule:rgba(230,228,214,.2); }
+  :root:not([data-theme="light"]) .era-rococo      { --portal-bg:#241a1e; --portal-ink:#eddfe3; --portal-sub:#a58f97; --portal-rule:rgba(237,223,227,.2); }
+  :root:not([data-theme="light"]) .era-impression  { --portal-bg:#1a1826; --portal-ink:#e4e0f0; --portal-sub:#9691ac; --portal-rule:rgba(228,224,240,.2); }
+  :root:not([data-theme="light"]) .era-modern      { --portal-bg:#141416; --portal-ink:#ececeb; --portal-sub:#8e908f; --portal-rule:rgba(236,236,235,.22); }
+  :root:not([data-theme="light"]) .era-contemp     { --portal-bg:#131514; --portal-ink:#ececea; --portal-sub:#8b908c; --portal-rule:rgba(236,236,234,.22); }
+  :root:not([data-theme="light"]) .era-japan       { --portal-bg:#1d1917; --portal-ink:#e8e0d4; --portal-sub:#a0958a; --portal-rule:rgba(232,224,212,.2); }
+  :root:not([data-theme="light"]) .era-china       { --portal-bg:#16191a; --portal-ink:#e4e6e6; --portal-sub:#8f9698; --portal-rule:rgba(228,230,230,.2); }
+}
+:root[data-theme="dark"] .era-ancient     { --portal-bg:#2a2519; --portal-ink:#e8e0cd; --portal-sub:#a89c80; --portal-rule:rgba(232,224,205,.2); }
+:root[data-theme="dark"] .era-classical   { --portal-bg:#1d1c19; --portal-ink:#e8e4da; --portal-sub:#9a948a; --portal-rule:rgba(232,228,218,.2); }
+:root[data-theme="dark"] .era-renaissance { --portal-bg:#1a1d17; --portal-ink:#e6e4d6; --portal-sub:#98988a; --portal-rule:rgba(230,228,214,.2); }
+:root[data-theme="dark"] .era-rococo      { --portal-bg:#241a1e; --portal-ink:#eddfe3; --portal-sub:#a58f97; --portal-rule:rgba(237,223,227,.2); }
+:root[data-theme="dark"] .era-impression  { --portal-bg:#1a1826; --portal-ink:#e4e0f0; --portal-sub:#9691ac; --portal-rule:rgba(228,224,240,.2); }
+:root[data-theme="dark"] .era-modern      { --portal-bg:#141416; --portal-ink:#ececeb; --portal-sub:#8e908f; --portal-rule:rgba(236,236,235,.22); }
+:root[data-theme="dark"] .era-contemp     { --portal-bg:#131514; --portal-ink:#ececea; --portal-sub:#8b908c; --portal-rule:rgba(236,236,234,.22); }
+:root[data-theme="dark"] .era-japan       { --portal-bg:#1d1917; --portal-ink:#e8e0d4; --portal-sub:#a0958a; --portal-rule:rgba(232,224,212,.2); }
+:root[data-theme="dark"] .era-china       { --portal-bg:#16191a; --portal-ink:#e4e6e6; --portal-sub:#8f9698; --portal-rule:rgba(228,230,230,.2); }
+
+/* 額の厚みを時代ごとに効かせる */
+figure.plate .mount { border-width: var(--frame-border); padding: var(--frame-pad); }

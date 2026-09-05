@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid slice"><defs><pattern id="ip" width="120" height="120" patternUnits="userSpaceOnUse">
+<g fill="none" stroke="#3ec3c6" stroke-width="1.4" opacity=".55">
+<path d="M60 0l60 60-60 60L0 60z"/><path d="M60 20l40 40-40 40-40-40z"/>
+<path d="M0 0h120v120H0z"/><path d="M0 60h120M60 0v120"/></g></pattern></defs>
+<rect width="1000" height="700" fill="#0e2f33"/>
+<rect width="1000" height="700" fill="url(#ip)"/>
+<g fill="none" stroke="#e0c477" stroke-width="2.5" opacity=".85">
+<path d="M500 130c80 0 145 65 145 145 0 60-36 112-88 134v161H443V409c-52-22-88-74-88-134 0-80 65-145 145-145z"/></g>
+<g fill="none" stroke="#3ec3c6" stroke-width="1.6" opacity=".7">
+<circle cx="500" cy="275" r="96"/><circle cx="500" cy="275" r="62"/>
+<path d="M404 275h192M500 179v192M432 207l136 136M568 207L432 343"/></g></svg>

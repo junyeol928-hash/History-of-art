@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="ng" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#101820"/><stop offset=".6" stop-color="#1d2733"/><stop offset="1" stop-color="#2c3a49"/></linearGradient></defs>
+<rect width="1000" height="700" fill="url(#ng)"/>
+<g fill="#6ba6dd" opacity=".2"><path d="M0 520c120-40 200 20 320-10s200-70 340-30 220 90 340 60v160H0z"/></g>
+<g fill="#e4e6e8" opacity=".12"><circle cx="760" cy="180" r="90"/></g>
+<g fill="none" stroke="#c8552a" stroke-width="3" opacity=".55">
+<path d="M180 560V300M180 300l70-60M180 300l-70-60"/></g>
+<g fill="#c8552a" opacity=".45"><path d="M120 560h140l-16-40h-108z"/></g></svg>

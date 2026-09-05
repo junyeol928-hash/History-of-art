@@ -10,10 +10,12 @@ function merge(dir, out, label) {
     let o;
     try { o = JSON.parse(readFileSync(`${dir}/${f}`, 'utf8')); }
     catch (e) { console.error(`  ✗ ${f} は JSON として壊れています: ${e.message}`); continue; }
+    const from = f.replace(/\.json$/, '');
     for (const [k, v] of Object.entries(o)) {
-      // 同じ用語が複数の章で導入されていたら、初出の章の定義を残す
+      // 同じ項目が複数の章にあれば、初出の章のものを残す
       if (k in all) { dupes.push(`${k}（${f} は初出ではないので採らない）`); continue; }
-      all[k] = v;
+      // どの章のものかを記録しておく（名作ギャラリーが時代で絞り込むのに使う）
+      all[k] = (v && typeof v === 'object' && !Array.isArray(v)) ? { chapter: from, ...v } : v;
     }
   }
   writeFileSync(out, JSON.stringify(all, null, 1));

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>名作ギャラリー ─ 世界美術史</title>
+<meta name="description" content="全時代の名作を横断して並べた一覧。時代で絞り込め、押せばその章へ飛べます。">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/skins.css">
+<style>
+  .chips { display: flex; gap: .35rem; flex-wrap: wrap; margin: 1.6rem 0 .3rem; }
+  .chips button {
+    cursor: pointer; font-family: var(--sans); font-size: .76rem; font-weight: 700;
+    color: var(--ink-2); background: transparent; border: 1px solid var(--rule);
+    padding: .4rem .8rem; min-height: 34px; display: inline-flex; align-items: center; gap: .4rem;
+  }
+  .chips button:hover { border-color: var(--accent-line); color: var(--accent-ink); }
+  .chips button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--mat); }
+  .chips button i { width: 8px; height: 8px; display: inline-block; flex: none; }
+  .chips button .n { font-family: var(--mono); font-size: .68rem; opacity: .7; font-weight: 400; }
+  .count { font-family: var(--mono); font-size: .72rem; color: var(--ink-3); margin: .9rem 0 0; }
+
+  .gal { list-style: none; margin: 1.4rem 0 4rem; padding: 0; display: grid; gap: 1.4rem; }
+  @media (min-width: 560px)  { .gal { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 860px)  { .gal { grid-template-columns: repeat(3, 1fr); } }
+  @media (min-width: 1180px) { .gal { grid-template-columns: repeat(4, 1fr); } }
+  .card { display: flex; flex-direction: column; }
+  .card .mount {
+    background: var(--mat); border: 1px solid var(--frame); padding: .45rem;
+    line-height: 0; position: relative; box-shadow: var(--shadow-s);
+  }
+  .card .mount::before {
+    content: ""; position: absolute; left: 0; right: 0; top: 0; height: 3px; background: var(--era-c, var(--accent));
+  }
+  .card img { width: 100%; height: auto; display: block; cursor: zoom-in; }
+  .card .ph { display: grid; place-items: center; aspect-ratio: 4/3; background: var(--bg-sink);
+              font-family: var(--sans); font-size: .68rem; color: var(--ink-3); padding: 1rem; text-align: center; }
+  .card figcaption { margin-top: .55rem; line-height: 1.7; }
+  .card .artist { display: block; font-family: var(--sans); font-size: .71rem; color: var(--ink-3); }
+  .card .title { display: block; font-size: .92rem; font-weight: 600; margin-top: .05rem; }
+  .card .title .year { font-family: var(--mono); font-weight: 400; font-size: .72rem; color: var(--ink-3); margin-left: .4em; }
+  .card .where { display: block; font-family: var(--sans); font-size: .7rem; color: var(--ink-3); margin-top: .25rem; }
+  .card .toch { display: inline-block; font-family: var(--sans); font-size: .68rem; margin-top: .45rem;
+                text-decoration: none; color: var(--era-c, var(--accent-ink)); border-bottom: 1px solid currentColor; }
+  .card .toch:hover { border-bottom-width: 2px; }
+  .searchbox { display: flex; align-items: center; gap: .55rem; border: 1px solid var(--rule);
+    background: var(--bg-raise); padding: .25rem .85rem; max-width: 22rem; margin: 1.2rem 0 0; }
+  .searchbox:focus-within { border-color: var(--accent-line); }
+  .searchbox input { flex: 1; border: 0; background: transparent; outline: none; min-width: 0;
+    font-family: var(--sans); font-size: .86rem; color: var(--ink); min-height: 34px; }
+  .searchbox svg { width: 15px; height: 15px; color: var(--ink-3); flex: none; }
+  .empty { color: var(--ink-3); font-size: .9rem; padding: 2.5rem 0; }
+</style>
+</head>
+<body class="era-impression">
+
+<div id="progress"></div>
+<header class="topbar" data-where="名作ギャラリー"></header>
+
+<main class="wrap wide">
+  <section style="padding-block:2.5rem 0">
+    <h1 style="font-size:clamp(1.7rem,6vw,2.4rem);margin:0;font-weight:600">名作ギャラリー</h1>
+    <p style="font-size:.96rem;color:var(--ink-2);margin-top:1rem;max-width:44rem">
+      この本に出てくる作品を、時代をまたいで並べました。<strong>どこから見てもかまいません。</strong>
+      気になった一点を押せば、その作品を扱っている章へ飛べます。教科書ではなく、図録のつもりで作りました。
+      作品を押すと拡大します。
+    </p>
+    <div class="searchbox">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+        <circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21" stroke-linecap="round"/>
+      </svg>
+      <input type="search" id="q" placeholder="作家名・作品名でさがす" autocomplete="off">
+    </div>
+  </section>
+
+  <nav class="chips" id="chips" aria-label="時代で絞り込む"></nav>
+  <p class="count" id="count"></p>
+  <ul class="gal" id="gal"></ul>
+</main>
+
+<footer class="foot wrap">
+  <p>掲載はすべて作者の没後70年を超えたパブリックドメイン作品です。画像は Wikimedia Commons から。<br>
+     権利が存続している20〜21世紀の作品は、章の本文で扱い、所蔵先を記しています。</p>
+</footer>
+
+<script src="assets/js/site.js"></script>
+<script src="assets/js/artwork.js"></script>
+<script>
+(function () {
+  var ERA_COLOR = {
+    prehistory:'#9c4a2f', ancient:'#1b6ca8', classical:'#a8392b', medieval:'#2f4a9b',
+    renaissance:'#4a7c59', baroque:'#7a4318', rococo:'#b8567f', '19c':'#1f4e79',
+    impression:'#6a5fa8', modern:'#c8352a', contemp:'#0f9d8f', japan:'#8c2f39',
+    china:'#3a4a52', islam:'#1a8f92', world:'#a8781f'
+  };
+  var ERA_NAME = {
+    prehistory:'先史', ancient:'古代オリエント', classical:'ギリシア・ローマ', medieval:'中世',
+    renaissance:'ルネサンス', baroque:'バロック', rococo:'ロココ', '19c':'19世紀',
+    impression:'印象派', modern:'20世紀', contemp:'現代', japan:'日本',
+    china:'中国・東アジア', islam:'イスラーム', world:'その他の世界'
+  };
+  function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,function(c){return({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c];}); }
+
+  var works = [], chBySlug = {}, filter = 'all', query = '';
+
+  Promise.all([
+    fetch('data/artworks.json').then(function(r){return r.json();}),
+    fetch('data/chapters.json').then(function(r){return r.json();}),
+    fetch('data/artworks-baked.json').then(function(r){return r.json();}).catch(function(){return [];})
+  ]).then(function (res) {
+    var art = res[0], chapters = res[1].chapters, baked = res[2];
+    chapters.forEach(function (c) { chBySlug[c.slug] = c; });
+    var bakedSet = {}; (baked||[]).forEach(function(b){ bakedSet[b] = 1; });
+
+    works = Object.keys(art).map(function (id) {
+      var m = art[id], c = chBySlug[m.chapter] || {};
+      return { id: id, m: m, ch: c, era: c.era || 'world', has: !!bakedSet[id] };
+    }).filter(function (w) { return w.m.title; });
+
+    // 章の順（＝時代順）に並べる
+    works.sort(function (a, b) { return (a.ch.n || 99) - (b.ch.n || 99); });
+
+    buildChips();
+    render();
+    document.getElementById('q').addEventListener('input', function (e) {
+      query = e.target.value.trim(); render();
+    });
+  });
+
+  function buildChips() {
+    var counts = {};
+    works.forEach(function (w) { counts[w.era] = (counts[w.era] || 0) + 1; });
+    var order = Object.keys(ERA_NAME).filter(function (e) { return counts[e]; });
+    var host = document.getElementById('chips');
+    host.innerHTML =
+      '<button type="button" data-e="all" aria-pressed="true">すべて <span class="n">' + works.length + '</span></button>' +
+      order.map(function (e) {
+        return '<button type="button" data-e="' + e + '">' +
+          '<i style="background:' + ERA_COLOR[e] + '"></i>' + esc(ERA_NAME[e]) +
+          ' <span class="n">' + counts[e] + '</span></button>';
+      }).join('');
+    host.addEventListener('click', function (ev) {
+      var b = ev.target.closest('button'); if (!b) return;
+      host.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', x === b); });
+      filter = b.dataset.e; render();
+    });
+  }
+
+  function render() {
+    var hits = works.filter(function (w) {
+      if (filter !== 'all' && w.era !== filter) return false;
+      if (!query) return true;
+      return (w.m.title + ' ' + (w.m.artist || '') + ' ' + (w.m.collection || '')).indexOf(query) >= 0;
+    });
+    document.getElementById('count').textContent =
+      hits.length + ' 点' + (filter !== 'all' ? '（' + ERA_NAME[filter] + '）' : '') + (query ? '　「' + query + '」' : '');
+
+    if (!hits.length) {
+      document.getElementById('gal').innerHTML = '<li class="empty">見つかりませんでした。</li>';
+      return;
+    }
+    document.getElementById('gal').innerHTML = hits.map(function (w) {
+      var c = ERA_COLOR[w.era] || 'var(--accent)';
+      var ch = w.ch.slug
+        ? '<a class="toch" href="chapters/' + w.ch.slug + '.html">第' + w.ch.n + '章　' + esc(w.ch.title) + ' へ</a>'
+        : '';
+      return '<li><figure class="card plate" data-art="' + esc(w.id) + '" style="--era-c:' + c + '">' +
+        '<div class="mount"><div class="ph">' + esc(w.m.artist || '') + '<br>' + esc(w.m.title) + '</div></div>' +
+        '<figcaption>' +
+          '<span class="artist">' + esc(w.m.artist || '') + '</span>' +
+          '<span class="title">' + esc(w.m.title) +
+            (w.m.year ? '<span class="year">' + esc(w.m.year) + '</span>' : '') + '</span>' +
+          (w.m.collection ? '<span class="where">' + esc(w.m.collection) + '</span>' : '') +
+          ch +
+        '</figcaption></figure></li>';
+    }).join('');
+    // 画像の解決は artwork.js に任せる
+    if (window.ArtworkPlates && window.ArtworkPlates.rescan) window.ArtworkPlates.rescan();
+    else document.dispatchEvent(new CustomEvent('artwork:rescan'));
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,5 +1,6 @@
 {
  "lascaux-hall-of-bulls": {
+  "chapter": "01-cave",
   "artist": "作者不詳",
   "title": "ラスコー洞窟「牡牛の広間」",
   "year": "約1万7千年前",
@@ -11,6 +12,7 @@
   "license": "パブリックドメイン"
  },
  "chauvet-horses": {
+  "chapter": "01-cave",
   "artist": "作者不詳",
   "title": "ショーヴェ洞窟「馬のパネル」",
   "year": "約3万6千年前",
@@ -22,6 +24,7 @@
   "license": "パブリックドメイン"
  },
  "chauvet-lions": {
+  "chapter": "01-cave",
   "artist": "作者不詳",
   "title": "ショーヴェ洞窟「ライオンのパネル」",
   "year": "約3万6千年前",
@@ -33,6 +36,7 @@
   "license": "パブリックドメイン"
  },
  "cueva-de-las-manos": {
+  "chapter": "01-cave",
   "artist": "作者不詳",
   "title": "クエバ・デ・ラス・マノス（手の洞窟）",
   "year": "約9千3百年前",
@@ -44,6 +48,7 @@
   "license": "パブリックドメイン"
  },
  "lascaux-shaft-scene": {
+  "chapter": "01-cave",
   "artist": "作者不詳",
   "title": "ラスコー洞窟「井戸の場面」",
   "year": "約1万7千年前",
@@ -55,6 +60,7 @@
   "license": "パブリックドメイン"
  },
  "altamira-bison": {
+  "chapter": "01-cave",
   "artist": "作者不詳",
   "title": "アルタミラ洞窟の天井画（バイソン）",
   "year": "約1万5千年前",
@@ -66,6 +72,7 @@
   "license": "パブリックドメイン"
  },
  "venus-of-willendorf": {
+  "chapter": "01-cave",
   "artist": "作者不詳",
   "title": "ヴィレンドルフのヴィーナス",
   "year": "約2万9千年前",
@@ -77,6 +84,7 @@
   "license": "パブリックドメイン"
  },
  "sautuola-portrait": {
+  "chapter": "01-cave",
   "artist": "作者不詳",
   "title": "マルセリーノ・サンス・デ・サウトゥオラの肖像",
   "year": "19世紀",
@@ -88,6 +96,7 @@
   "license": "パブリックドメイン"
  },
  "nebamun-fowling": {
+  "chapter": "02-nile",
   "artist": "作者不詳（テーベの職人）",
   "title": "ネバムンの墓の壁画　沼地の鳥猟",
   "year": "前1350年ごろ",
@@ -99,6 +108,7 @@
   "license": "パブリックドメイン"
  },
  "egyptian-seated-scribe": {
+  "chapter": "02-nile",
   "artist": "作者不詳（サッカラの工房）",
   "title": "書記座像",
   "year": "前2600 — 前2350年ごろ",
@@ -110,6 +120,7 @@
   "license": "パブリックドメイン"
  },
  "nefertiti-bust": {
+  "chapter": "02-nile",
   "artist": "トトメス（工房）と伝わる",
   "title": "ネフェルティティ胸像",
   "year": "前1345年ごろ",
@@ -121,6 +132,7 @@
   "license": "パブリックドメイン"
  },
  "akhenaten-head": {
+  "chapter": "02-nile",
   "artist": "作者不詳",
   "title": "アクエンアテン像",
   "year": "前1350年ごろ",
@@ -132,6 +144,7 @@
   "license": "パブリックドメイン"
  },
  "akhenaten-family": {
+  "chapter": "02-nile",
   "artist": "作者不詳（アケトアテンの工房）",
   "title": "アクエンアテンとネフェルティティと三人の娘",
   "year": "前1345年ごろ",
@@ -143,6 +156,7 @@
   "license": "パブリックドメイン"
  },
  "tutankhamun-mask": {
+  "chapter": "02-nile",
   "artist": "作者不詳（王家の工房）",
   "title": "ツタンカーメンの黄金のマスク",
   "year": "前1323年ごろ",
@@ -154,6 +168,7 @@
   "license": "パブリックドメイン"
  },
  "standard-of-ur": {
+  "chapter": "02-nile",
   "artist": "作者不詳（シュメールの工人）",
   "title": "ウルのスタンダード",
   "year": "前2600年ごろ",
@@ -165,6 +180,7 @@
   "license": "パブリックドメイン"
  },
  "lamassu": {
+  "chapter": "02-nile",
   "artist": "作者不詳（アッシリアの工房）",
   "title": "人頭有翼牡牛像（ラマッスー）",
   "year": "前710年ごろ",
@@ -176,6 +192,7 @@
   "license": "パブリックドメイン"
  },
  "ishtar-gate": {
+  "chapter": "02-nile",
   "artist": "作者不詳（新バビロニアの工房）",
   "title": "イシュタル門",
   "year": "前575年ごろ",
@@ -187,6 +204,7 @@
   "license": "パブリックドメイン"
  },
  "kouros-anavyssos": {
+  "chapter": "03-greece",
   "artist": "作者不詳（アッティカ）",
   "title": "アナヴィソスのクーロス",
   "year": "前530年頃",
@@ -198,6 +216,7 @@
   "license": "パブリックドメイン"
  },
  "kritios-boy": {
+  "chapter": "03-greece",
   "artist": "作者不詳（クリティオスに帰される）",
   "title": "クリティオスの少年",
   "year": "前480年頃",
@@ -209,6 +228,7 @@
   "license": "パブリックドメイン"
  },
  "doryphoros": {
+  "chapter": "03-greece",
   "artist": "ポリュクレイトス（原作）／ローマ時代の模刻",
   "title": "ドリュフォロス（槍を持つ人）",
   "year": "原作 前440年頃",
@@ -220,6 +240,7 @@
   "license": "パブリックドメイン"
  },
  "parthenon": {
+  "chapter": "03-greece",
   "artist": "イクティノス、カリクラテス（設計）／フェイディアス（彫刻監督）",
   "title": "パルテノン神殿",
   "year": "前447 — 前432年",
@@ -231,6 +252,7 @@
   "license": "撮影者による自由利用許諾（Wikimedia Commons）"
  },
  "parthenon-frieze": {
+  "chapter": "03-greece",
   "artist": "フェイディアス工房",
   "title": "パルテノン神殿フリーズ（パンアテナイア祭の行列）",
   "year": "前442 — 前438年頃",
@@ -242,6 +264,7 @@
   "license": "パブリックドメイン"
  },
  "pheidias-portrait": {
+  "chapter": "03-greece",
   "artist": "作者不詳",
   "title": "フェイディアス（アテナ・パルテノス像の復元）",
   "year": "前5世紀",
@@ -253,6 +276,7 @@
   "license": "パブリックドメイン"
  },
  "nike-samothrace": {
+  "chapter": "03-greece",
   "artist": "作者不詳（ロドス派とされる）",
   "title": "サモトラケのニケ",
   "year": "前190年頃",
@@ -264,6 +288,7 @@
   "license": "パブリックドメイン"
  },
  "laocoon": {
+  "chapter": "03-greece",
   "artist": "アゲサンドロス、アテノドロス、ポリュドロス（ロドス）",
   "title": "ラオコーンとその息子たち",
   "year": "前1世紀頃",
@@ -275,6 +300,7 @@
   "license": "パブリックドメイン"
  },
  "venus-de-milo": {
+  "chapter": "03-greece",
   "artist": "作者不詳（アンティオキアのアレクサンドロスに帰される）",
   "title": "ミロのヴィーナス",
   "year": "前130 — 前100年頃",
@@ -286,6 +312,7 @@
   "license": "パブリックドメイン"
  },
  "euphronios-krater": {
+  "chapter": "03-greece",
   "artist": "エウフロニオス（画家）／エウクシテオス（陶工）",
   "title": "サルペドンの遺体を運ぶ死と眠り（赤像式クラテル）",
   "year": "前515年頃",
@@ -297,6 +324,7 @@
   "license": "パブリックドメイン"
  },
  "etruscan-sarcophagus-spouses": {
+  "chapter": "04-rome",
   "artist": "エトルリアの工房",
   "title": "夫婦の棺（カエレ出土）",
   "year": "前520年頃",
@@ -308,6 +336,7 @@
   "license": "パブリックドメイン"
  },
  "togatus-barberini": {
+  "chapter": "04-rome",
   "artist": "ローマの工房",
   "title": "二つの胸像を持つ男（バルベリーニのトガ像）",
   "year": "前1世紀末頃",
@@ -319,6 +348,7 @@
   "license": "パブリックドメイン"
  },
  "augustus-prima-porta": {
+  "chapter": "04-rome",
   "artist": "ローマの工房",
   "title": "プリマポルタのアウグストゥス",
   "year": "前20年頃の原型／後1世紀の複製",
@@ -330,6 +360,7 @@
   "license": "パブリックドメイン"
  },
  "augustus-bust": {
+  "chapter": "04-rome",
   "artist": "ローマの工房",
   "title": "アウグストゥスの胸像（ベヴィラックア型）",
   "year": "前1世紀末",
@@ -341,6 +372,7 @@
   "license": "パブリックドメイン"
  },
  "pantheon-interior": {
+  "chapter": "04-rome",
   "artist": "ハドリアヌス帝時代の設計者",
   "title": "パンテオン　内部",
   "year": "118 — 128年頃",
@@ -352,6 +384,7 @@
   "license": "写真はウィキメディア・コモンズの自由利用画像"
  },
  "colosseum": {
+  "chapter": "04-rome",
   "artist": "ウェスパシアヌス帝／ティトゥス帝の造営",
   "title": "コロッセウム（フラウィウス円形闘技場）",
   "year": "70 — 80年",
@@ -363,6 +396,7 @@
   "license": "写真はウィキメディア・コモンズの自由利用画像"
  },
  "trajan-column": {
+  "chapter": "04-rome",
   "artist": "ダマスクスのアポロドロスに帰される",
   "title": "トラヤヌス帝記念柱",
   "year": "113年",
@@ -374,6 +408,7 @@
   "license": "写真はウィキメディア・コモンズの自由利用画像"
  },
  "pompeii-villa-mysteries": {
+  "chapter": "04-rome",
   "artist": "ポンペイの壁画工房",
   "title": "秘儀荘の大壁画",
   "year": "前60 — 前50年頃",
@@ -385,6 +420,7 @@
   "license": "パブリックドメイン"
  },
  "fayum-mummy-portrait": {
+  "chapter": "04-rome",
   "artist": "ローマ期エジプトの工房",
   "title": "ミイラ肖像画（ファイユーム出土）",
   "year": "2世紀",
@@ -396,6 +432,7 @@
   "license": "パブリックドメイン"
  },
  "constantine-colossus": {
+  "chapter": "04-rome",
   "artist": "コンスタンティヌス帝時代の工房",
   "title": "コンスタンティヌス帝の巨像（頭部）",
   "year": "312 — 315年頃",
@@ -407,6 +444,7 @@
   "license": "写真はウィキメディア・コモンズの自由利用画像"
  },
  "catacomb-good-shepherd": {
+  "chapter": "05-byzantine",
   "artist": "作者不詳",
   "title": "善き牧者（プリシラのカタコンベ）",
   "year": "3世紀",
@@ -418,6 +456,7 @@
   "license": "パブリックドメイン"
  },
  "galla-placidia-vault": {
+  "chapter": "05-byzantine",
   "artist": "作者不詳",
   "title": "ガラ・プラキディア廟堂 天井のモザイク",
   "year": "425年ごろ",
@@ -429,6 +468,7 @@
   "license": "パブリックドメイン"
  },
  "san-vitale-justinian": {
+  "chapter": "05-byzantine",
   "artist": "作者不詳",
   "title": "ユスティニアヌス帝と随臣",
   "year": "547年ごろ",
@@ -440,6 +480,7 @@
   "license": "パブリックドメイン"
  },
  "san-vitale-theodora": {
+  "chapter": "05-byzantine",
   "artist": "作者不詳",
   "title": "テオドラ皇妃と侍女たち",
   "year": "547年ごろ",
@@ -451,6 +492,7 @@
   "license": "パブリックドメイン"
  },
  "hagia-sophia-interior": {
+  "chapter": "05-byzantine",
   "artist": "アンテミオスとイシドロス（設計）",
   "title": "ハギア・ソフィア 内部",
   "year": "537年",
@@ -462,6 +504,7 @@
   "license": "パブリックドメイン"
  },
  "sinai-pantocrator": {
+  "chapter": "05-byzantine",
   "artist": "作者不詳",
   "title": "全能者ハリストス（パントクラトール）",
   "year": "6世紀",
@@ -473,6 +516,7 @@
   "license": "パブリックドメイン"
  },
  "rublev-trinity": {
+  "chapter": "05-byzantine",
   "artist": "アンドレイ・ルブリョフ",
   "title": "三位一体（至聖三者）",
   "year": "1425年ごろ",
@@ -484,6 +528,7 @@
   "license": "パブリックドメイン"
  },
  "yamashita-rin-portrait": {
+  "chapter": "05-byzantine",
   "artist": "写真・作者不詳",
   "title": "山下りん",
   "year": "明治期",
@@ -495,6 +540,7 @@
   "license": "パブリックドメイン"
  },
  "autun-last-judgment": {
+  "chapter": "06-romanesque",
   "artist": "ギスレベルトゥス（と伝わる）",
   "title": "最後の審判（西正面タンパン）",
   "year": "1130年ごろ",
@@ -506,6 +552,7 @@
   "license": "パブリックドメイン"
  },
  "vezelay-tympanum": {
+  "chapter": "06-romanesque",
   "artist": "作者不詳",
   "title": "聖霊降臨・使徒たちの派遣（内玄関中央タンパン）",
   "year": "1120年代",
@@ -517,6 +564,7 @@
   "license": "パブリックドメイン"
  },
  "moissac-prophet": {
+  "chapter": "06-romanesque",
   "artist": "作者不詳",
   "title": "預言者エレミヤ（南扉口 中央柱）",
   "year": "1120年代",
@@ -528,6 +576,7 @@
   "license": "パブリックドメイン"
  },
  "saint-sernin-nave": {
+  "chapter": "06-romanesque",
   "artist": "作者不詳",
   "title": "サン・セルナン聖堂 身廊",
   "year": "1080年ごろ着工",
@@ -539,6 +588,7 @@
   "license": "パブリックドメイン"
  },
  "conques-sainte-foy": {
+  "chapter": "06-romanesque",
   "artist": "作者不詳",
   "title": "サント・フォワの聖遺物像（マジェスタ）",
   "year": "10世紀ごろ、以後増補",
@@ -550,6 +600,7 @@
   "license": "パブリックドメイン"
  },
  "book-of-kells-chi-rho": {
+  "chapter": "06-romanesque",
   "artist": "アイオナまたはケルズの修道院の写字生",
   "title": "ケルズの書 キリストのモノグラム（fol. 34r）",
   "year": "800年ごろ",
@@ -561,6 +612,7 @@
   "license": "パブリックドメイン"
  },
  "beatus-apocalypse": {
+  "chapter": "06-romanesque",
   "artist": "写字生と彩飾師（工房不詳）",
   "title": "ベアトゥス『黙示録註解』写本の挿絵",
   "year": "10 — 12世紀",
@@ -572,6 +624,7 @@
   "license": "パブリックドメイン"
  },
  "bernard-clairvaux-portrait": {
+  "chapter": "06-romanesque",
   "artist": "ゲオルク・アンドレアス・ヴァスフーバー",
   "title": "クレルヴォーのベルナルドゥス像",
   "year": "17世紀",
@@ -583,6 +636,7 @@
   "license": "パブリックドメイン"
  },
  "bayeux-tapestry": {
+  "chapter": "06-romanesque",
   "artist": "作者不詳（イングランドの工房と推定）",
   "title": "バイユーのタピスリー",
   "year": "1077年ごろ",
@@ -594,6 +648,7 @@
   "license": "パブリックドメイン"
  },
  "sainte-chapelle-interior": {
+  "chapter": "07-gothic",
   "artist": "パリの工房（親方名不詳）",
   "title": "サント・シャペル 上層礼拝堂",
   "year": "1242 — 1248年",
@@ -605,6 +660,7 @@
   "license": "パブリックドメイン"
  },
  "notre-dame-chevet": {
+  "chapter": "07-gothic",
   "artist": "モーリス・ド・シュリー司教の発意にはじまる",
   "title": "ノートルダム・ド・パリ 東側（シュヴェ）の飛梁",
   "year": "1163年着工",
@@ -616,6 +672,7 @@
   "license": "パブリックドメイン"
  },
  "chartres-belle-verriere": {
+  "chapter": "07-gothic",
   "artist": "シャルトルの工房（作者不詳）",
   "title": "美しき絵ガラスの聖母（ノートル・ダム・ド・ラ・ベル・ヴェリエール）",
   "year": "1180年頃",
@@ -627,6 +684,7 @@
   "license": "パブリックドメイン"
  },
  "amiens-nave": {
+  "chapter": "07-gothic",
   "artist": "ロベール・ド・リュザルシュほか",
   "title": "アミアン大聖堂 身廊",
   "year": "1220年着工",
@@ -638,6 +696,7 @@
   "license": "パブリックドメイン"
  },
  "beauvais-choir": {
+  "chapter": "07-gothic",
   "artist": "建設者名は特定されていない",
   "title": "サン・ピエール大聖堂 内陣（ボーヴェ）",
   "year": "1225年着工",
@@ -649,6 +708,7 @@
   "license": "パブリックドメイン"
  },
  "chartres-royal-portal": {
+  "chapter": "07-gothic",
   "artist": "シャルトルの工房（作者不詳）",
   "title": "王の扉口の柱像",
   "year": "1145 — 1155年頃",
@@ -660,6 +720,7 @@
   "license": "パブリックドメイン"
  },
  "reims-smiling-angel": {
+  "chapter": "07-gothic",
   "artist": "ランスの工房（作者不詳）",
   "title": "微笑む天使",
   "year": "1236 — 1245年頃",
@@ -671,6 +732,7 @@
   "license": "パブリックドメイン"
  },
  "tres-riches-heures-fevrier": {
+  "chapter": "07-gothic",
   "artist": "ランブール兄弟",
   "title": "ベリー公のいとも豪華なる時祷書「2月」",
   "year": "1412 — 1416年",
@@ -682,6 +744,7 @@
   "license": "パブリックドメイン"
  },
  "suger-portrait": {
+  "chapter": "07-gothic",
   "artist": "サン・ドニの工房",
   "title": "シュジェール（ステンドグラスの寄進者像）",
   "year": "1140年代",
@@ -693,6 +756,7 @@
   "license": "パブリックドメイン"
  },
  "masaccio-trinity": {
+  "chapter": "08-quattrocento",
   "artist": "マサッチョ",
   "title": "聖三位一体",
   "year": "1427年ごろ",
@@ -704,6 +768,7 @@
   "license": "パブリックドメイン"
  },
  "giotto-kiss-of-judas": {
+  "chapter": "08-quattrocento",
   "artist": "ジョット・ディ・ボンドーネ",
   "title": "ユダの接吻",
   "year": "1305年ごろ",
@@ -715,6 +780,7 @@
   "license": "パブリックドメイン"
  },
  "masaccio-tribute-money": {
+  "chapter": "08-quattrocento",
   "artist": "マサッチョ",
   "title": "貢の銭",
   "year": "1425年ごろ",
@@ -726,6 +792,7 @@
   "license": "パブリックドメイン"
  },
  "masaccio-portrait": {
+  "chapter": "08-quattrocento",
   "artist": "マサッチョ",
   "title": "自画像とされる部分（ブランカッチ礼拝堂）",
   "year": "1425年ごろ",
@@ -737,6 +804,7 @@
   "license": "パブリックドメイン"
  },
  "uccello-san-romano": {
+  "chapter": "08-quattrocento",
   "artist": "パオロ・ウッチェロ",
   "title": "サン・ロマーノの戦い",
   "year": "1435 — 1460年ごろ",
@@ -748,6 +816,7 @@
   "license": "パブリックドメイン"
  },
  "brunelleschi-dome": {
+  "chapter": "08-quattrocento",
   "artist": "フィリッポ・ブルネレスキ",
   "title": "サンタ・マリア・デル・フィオーレ大聖堂クーポラ",
   "year": "1420 — 1436年",
@@ -759,6 +828,7 @@
   "license": "パブリックドメイン"
  },
  "donatello-david": {
+  "chapter": "08-quattrocento",
   "artist": "ドナテッロ",
   "title": "ダヴィデ",
   "year": "1440年代ごろか（諸説あり）",
@@ -770,6 +840,7 @@
   "license": "パブリックドメイン"
  },
  "botticelli-birth-of-venus": {
+  "chapter": "08-quattrocento",
   "artist": "サンドロ・ボッティチェリ",
   "title": "ヴィーナスの誕生",
   "year": "1485年ごろ",
@@ -781,6 +852,7 @@
   "license": "パブリックドメイン"
  },
  "botticelli-primavera": {
+  "chapter": "08-quattrocento",
   "artist": "サンドロ・ボッティチェリ",
   "title": "春（プリマヴェーラ）",
   "year": "1480年ごろ",
@@ -792,6 +864,7 @@
   "license": "パブリックドメイン"
  },
  "leonardo-mona-lisa": {
+  "chapter": "09-cinquecento",
   "artist": "レオナルド・ダ・ヴィンチ",
   "title": "モナ・リザ",
   "year": "1503 — 1519年ごろ",
@@ -803,6 +876,7 @@
   "license": "パブリックドメイン"
  },
  "leonardo-last-supper": {
+  "chapter": "09-cinquecento",
   "artist": "レオナルド・ダ・ヴィンチ",
   "title": "最後の晩餐",
   "year": "1495 — 1498年",
@@ -814,6 +888,7 @@
   "license": "パブリックドメイン"
  },
  "leonardo-vitruvian-man": {
+  "chapter": "09-cinquecento",
   "artist": "レオナルド・ダ・ヴィンチ",
   "title": "ウィトルウィウス的人体図",
   "year": "1490年ごろ",
@@ -825,6 +900,7 @@
   "license": "パブリックドメイン"
  },
  "michelangelo-pieta": {
+  "chapter": "09-cinquecento",
   "artist": "ミケランジェロ・ブオナローティ",
   "title": "ピエタ",
   "year": "1498 — 1499年",
@@ -836,6 +912,7 @@
   "license": "パブリックドメイン"
  },
  "michelangelo-david": {
+  "chapter": "09-cinquecento",
   "artist": "ミケランジェロ・ブオナローティ",
   "title": "ダヴィデ",
   "year": "1501 — 1504年",
@@ -847,6 +924,7 @@
   "license": "パブリックドメイン"
  },
  "michelangelo-creation-of-adam": {
+  "chapter": "09-cinquecento",
   "artist": "ミケランジェロ・ブオナローティ",
   "title": "アダムの創造（システィーナ礼拝堂天井画）",
   "year": "1511 — 1512年",
@@ -858,6 +936,7 @@
   "license": "パブリックドメイン"
  },
  "michelangelo-portrait": {
+  "chapter": "09-cinquecento",
   "artist": "ダニエレ・ダ・ヴォルテラ",
   "title": "ミケランジェロの肖像",
   "year": "1544年ごろ",
@@ -869,6 +948,7 @@
   "license": "パブリックドメイン"
  },
  "raphael-school-of-athens": {
+  "chapter": "09-cinquecento",
   "artist": "ラファエロ・サンツィオ",
   "title": "アテネの学堂",
   "year": "1509 — 1511年",
@@ -880,6 +960,7 @@
   "license": "パブリックドメイン"
  },
  "raphael-madonna-della-seggiola": {
+  "chapter": "09-cinquecento",
   "artist": "ラファエロ・サンツィオ",
   "title": "小椅子の聖母",
   "year": "1513 — 1514年ごろ",
@@ -891,6 +972,7 @@
   "license": "パブリックドメイン"
  },
  "van-eyck-arnolfini": {
+  "chapter": "10-north",
   "artist": "ヤン・ファン・エイク",
   "title": "アルノルフィーニ夫妻像",
   "year": "1434年",
@@ -902,6 +984,7 @@
   "license": "パブリックドメイン"
  },
  "van-eyck-ghent-altarpiece": {
+  "chapter": "10-north",
   "artist": "フーベルト＆ヤン・ファン・エイク",
   "title": "ヘントの祭壇画（神秘の子羊）",
   "year": "1432年",
@@ -913,6 +996,7 @@
   "license": "パブリックドメイン"
  },
  "bosch-garden-earthly-delights": {
+  "chapter": "10-north",
   "artist": "ヒエロニムス・ボス",
   "title": "快楽の園",
   "year": "1490 — 1500年ごろ",
@@ -924,6 +1008,7 @@
   "license": "パブリックドメイン"
  },
  "durer-self-portrait-1498": {
+  "chapter": "10-north",
   "artist": "アルブレヒト・デューラー",
   "title": "自画像",
   "year": "1498年",
@@ -935,6 +1020,7 @@
   "license": "パブリックドメイン"
  },
  "durer-self-portrait-1500": {
+  "chapter": "10-north",
   "artist": "アルブレヒト・デューラー",
   "title": "自画像（毛皮の襟のコートを着た）",
   "year": "1500年",
@@ -946,6 +1032,7 @@
   "license": "パブリックドメイン"
  },
  "durer-melencolia": {
+  "chapter": "10-north",
   "artist": "アルブレヒト・デューラー",
   "title": "メランコリアI",
   "year": "1514年",
@@ -957,6 +1044,7 @@
   "license": "パブリックドメイン"
  },
  "bruegel-hunters-in-snow": {
+  "chapter": "10-north",
   "artist": "ピーテル・ブリューゲル（父）",
   "title": "雪中の狩人",
   "year": "1565年",
@@ -968,6 +1056,7 @@
   "license": "パブリックドメイン"
  },
  "bruegel-tower-of-babel": {
+  "chapter": "10-north",
   "artist": "ピーテル・ブリューゲル（父）",
   "title": "バベルの塔",
   "year": "1568年ごろ",
@@ -979,6 +1068,7 @@
   "license": "パブリックドメイン"
  },
  "bruegel-fall-of-icarus": {
+  "chapter": "10-north",
   "artist": "ピーテル・ブリューゲル（父）に帰属",
   "title": "イカロスの墜落のある風景",
   "year": "1560年代",
@@ -990,6 +1080,7 @@
   "license": "パブリックドメイン"
  },
  "giorgione-tempest": {
+  "chapter": "11-venice",
   "artist": "ジョルジョーネ",
   "title": "嵐",
   "year": "1505 — 1510年ごろ",
@@ -1001,6 +1092,7 @@
   "license": "パブリックドメイン"
  },
  "titian-self-portrait": {
+  "chapter": "11-venice",
   "artist": "ティツィアーノ・ヴェチェッリオ",
   "title": "自画像",
   "year": "1560年ごろ",
@@ -1012,6 +1104,7 @@
   "license": "パブリックドメイン"
  },
  "titian-assunta": {
+  "chapter": "11-venice",
   "artist": "ティツィアーノ・ヴェチェッリオ",
   "title": "聖母被昇天",
   "year": "1516 — 1518年",
@@ -1023,6 +1116,7 @@
   "license": "パブリックドメイン"
  },
  "titian-venus-urbino": {
+  "chapter": "11-venice",
   "artist": "ティツィアーノ・ヴェチェッリオ",
   "title": "ウルビーノのヴィーナス",
   "year": "1538年",
@@ -1034,6 +1128,7 @@
   "license": "パブリックドメイン"
  },
  "tintoretto-last-supper": {
+  "chapter": "11-venice",
   "artist": "ヤコポ・ティントレット",
   "title": "最後の晩餐",
   "year": "1592 — 1594年",
@@ -1045,6 +1140,7 @@
   "license": "パブリックドメイン"
  },
  "veronese-feast-levi": {
+  "chapter": "11-venice",
   "artist": "パオロ・ヴェロネーゼ",
   "title": "レヴィ家の饗宴",
   "year": "1573年",
@@ -1056,6 +1152,7 @@
   "license": "パブリックドメイン"
  },
  "parmigianino-long-neck": {
+  "chapter": "11-venice",
   "artist": "パルミジャニーノ",
   "title": "長い首の聖母",
   "year": "1534 — 1540年",
@@ -1067,6 +1164,7 @@
   "license": "パブリックドメイン"
  },
  "pontormo-deposition": {
+  "chapter": "11-venice",
   "artist": "ヤコポ・ポントルモ",
   "title": "十字架降下",
   "year": "1525 — 1528年",
@@ -1078,6 +1176,7 @@
   "license": "パブリックドメイン"
  },
  "elgreco-orgaz": {
+  "chapter": "11-venice",
   "artist": "エル・グレコ",
   "title": "オルガス伯の埋葬",
   "year": "1586 — 1588年",
@@ -1089,6 +1188,7 @@
   "license": "パブリックドメイン"
  },
  "caravaggio-calling-of-st-matthew": {
+  "chapter": "12-baroque",
   "artist": "カラヴァッジョ",
   "title": "聖マタイの召命",
   "year": "1599 — 1600年",
@@ -1100,6 +1200,7 @@
   "license": "パブリックドメイン"
  },
  "caravaggio-portrait": {
+  "chapter": "12-baroque",
   "artist": "オッタヴィオ・レオーニ",
   "title": "カラヴァッジョの肖像",
   "year": "1621年ごろ",
@@ -1111,6 +1212,7 @@
   "license": "パブリックドメイン"
  },
  "caravaggio-david-goliath": {
+  "chapter": "12-baroque",
   "artist": "カラヴァッジョ",
   "title": "ゴリアテの首を持つダヴィデ",
   "year": "1609 — 1610年ごろ",
@@ -1122,6 +1224,7 @@
   "license": "パブリックドメイン"
  },
  "guercino-aurora": {
+  "chapter": "12-baroque",
   "artist": "グエルチーノ",
   "title": "アウローラ（曙の女神）",
   "year": "1621年",
@@ -1133,6 +1236,7 @@
   "license": "パブリックドメイン"
  },
  "bernini-apollo-daphne": {
+  "chapter": "12-baroque",
   "artist": "ジャン・ロレンツォ・ベルニーニ",
   "title": "アポロとダフネ",
   "year": "1622 — 1625年",
@@ -1144,6 +1248,7 @@
   "license": "パブリックドメイン"
  },
  "bernini-ecstasy-of-st-teresa": {
+  "chapter": "12-baroque",
   "artist": "ジャン・ロレンツォ・ベルニーニ",
   "title": "聖テレジアの法悦（コルナーロ礼拝堂）",
   "year": "1647 — 1652年",
@@ -1155,6 +1260,7 @@
   "license": "パブリックドメイン"
  },
  "gentileschi-judith-holofernes": {
+  "chapter": "12-baroque",
   "artist": "アルテミジア・ジェンティレスキ",
   "title": "ホロフェルネスの首を斬るユディト",
   "year": "1620年ごろ",
@@ -1166,6 +1272,7 @@
   "license": "パブリックドメイン"
  },
  "rubens-descent-from-the-cross": {
+  "chapter": "12-baroque",
   "artist": "ペーテル・パウル・ルーベンス",
   "title": "キリスト降架（三連祭壇画 中央パネル）",
   "year": "1612 — 1614年",
@@ -1177,6 +1284,7 @@
   "license": "パブリックドメイン"
  },
  "velazquez-las-meninas": {
+  "chapter": "12-baroque",
   "artist": "ディエゴ・ベラスケス",
   "title": "ラス・メニーナス",
   "year": "1656年",
@@ -1188,6 +1296,7 @@
   "license": "パブリックドメイン"
  },
  "hals-merry-drinker": {
+  "chapter": "13-dutch",
   "artist": "フランス・ハルス",
   "title": "陽気な酒飲み",
   "year": "1628 — 1630年頃",
@@ -1199,6 +1308,7 @@
   "license": "パブリックドメイン"
  },
  "ruisdael-view-haarlem": {
+  "chapter": "13-dutch",
   "artist": "ヤーコプ・ファン・ライスダール",
   "title": "ハールレムの眺望",
   "year": "1670 — 1675年頃",
@@ -1210,6 +1320,7 @@
   "license": "パブリックドメイン"
  },
  "rembrandt-anatomy-lesson": {
+  "chapter": "13-dutch",
   "artist": "レンブラント・ファン・レイン",
   "title": "テュルプ博士の解剖学講義",
   "year": "1632年",
@@ -1221,6 +1332,7 @@
   "license": "パブリックドメイン"
  },
  "rembrandt-night-watch": {
+  "chapter": "13-dutch",
   "artist": "レンブラント・ファン・レイン",
   "title": "夜警（フランス・バニング・コック隊長の市民隊）",
   "year": "1642年",
@@ -1232,6 +1344,7 @@
   "license": "パブリックドメイン"
  },
  "rembrandt-self-portrait-1669": {
+  "chapter": "13-dutch",
   "artist": "レンブラント・ファン・レイン",
   "title": "63歳の自画像",
   "year": "1669年",
@@ -1243,6 +1356,7 @@
   "license": "パブリックドメイン"
  },
  "vermeer-art-of-painting": {
+  "chapter": "13-dutch",
   "artist": "ヨハネス・フェルメール",
   "title": "絵画芸術",
   "year": "1666 — 1668年ごろ",
@@ -1254,6 +1368,7 @@
   "license": "パブリックドメイン"
  },
  "vermeer-milkmaid": {
+  "chapter": "13-dutch",
   "artist": "ヨハネス・フェルメール",
   "title": "牛乳を注ぐ女",
   "year": "1658 — 1661年頃",
@@ -1265,6 +1380,7 @@
   "license": "パブリックドメイン"
  },
  "vermeer-girl-pearl": {
+  "chapter": "13-dutch",
   "artist": "ヨハネス・フェルメール",
   "title": "真珠の耳飾りの少女",
   "year": "1665年頃",
@@ -1276,6 +1392,7 @@
   "license": "パブリックドメイン"
  },
  "vermeer-view-of-delft": {
+  "chapter": "13-dutch",
   "artist": "ヨハネス・フェルメール",
   "title": "デルフトの眺望",
   "year": "1660 — 1661年頃",
@@ -1287,6 +1404,7 @@
   "license": "パブリックドメイン"
  },
  "steenwijck-vanitas": {
+  "chapter": "13-dutch",
   "artist": "ハルメン・ステーンウェイク",
   "title": "人生の虚しさの寓意",
   "year": "1640年頃",
@@ -1298,6 +1416,7 @@
   "license": "パブリックドメイン"
  },
  "watteau-cythera": {
+  "chapter": "14-rococo",
   "artist": "アントワーヌ・ヴァトー",
   "title": "シテール島への巡礼",
   "year": "1717年",
@@ -1309,6 +1428,7 @@
   "license": "パブリックドメイン"
  },
  "watteau-pierrot": {
+  "chapter": "14-rococo",
   "artist": "アントワーヌ・ヴァトー",
   "title": "ピエロ（かつて「ジル」と呼ばれた）",
   "year": "1718 — 1719年ごろ",
@@ -1320,6 +1440,7 @@
   "license": "パブリックドメイン"
  },
  "soubise-salon-ovale": {
+  "chapter": "14-rococo",
   "artist": "ジェルマン・ボフラン（装飾）",
   "title": "スービーズ館　王女の楕円のサロン",
   "year": "1735 — 1740年ごろ",
@@ -1331,6 +1452,7 @@
   "license": "パブリックドメイン"
  },
  "wieskirche-interior": {
+  "chapter": "14-rococo",
   "artist": "ドミニクス・ツィンマーマン",
   "title": "ヴィースの巡礼教会　内部",
   "year": "1745 — 1754年",
@@ -1342,6 +1464,7 @@
   "license": "パブリックドメイン"
  },
  "drouais-pompadour": {
+  "chapter": "14-rococo",
   "artist": "フランソワ＝ユベール・ドルーエ",
   "title": "刺繍台の前のポンパドゥール夫人",
   "year": "1763 — 1764年",
@@ -1353,6 +1476,7 @@
   "license": "パブリックドメイン"
  },
  "boucher-pompadour": {
+  "chapter": "14-rococo",
   "artist": "フランソワ・ブーシェ",
   "title": "ポンパドゥール夫人",
   "year": "1756年",
@@ -1364,6 +1488,7 @@
   "license": "パブリックドメイン"
  },
  "fragonard-swing": {
+  "chapter": "14-rococo",
   "artist": "ジャン＝オノレ・フラゴナール",
   "title": "ぶらんこ",
   "year": "1767年",
@@ -1375,6 +1500,7 @@
   "license": "パブリックドメイン"
  },
  "meissen-kakiemon": {
+  "chapter": "14-rococo",
   "artist": "マイセン王立磁器工房",
   "title": "柿右衛門様式の彩色磁器",
   "year": "1730年代",
@@ -1386,6 +1512,7 @@
   "license": "パブリックドメイン"
  },
  "chardin-ray": {
+  "chapter": "14-rococo",
   "artist": "ジャン＝バティスト・シメオン・シャルダン",
   "title": "赤エイ",
   "year": "1728年",
@@ -1397,6 +1524,7 @@
   "license": "パブリックドメイン"
  },
  "chardin-benedicite": {
+  "chapter": "14-rococo",
   "artist": "ジャン＝バティスト・シメオン・シャルダン",
   "title": "食前の祈り",
   "year": "1740年",
@@ -1408,6 +1536,7 @@
   "license": "パブリックドメイン"
  },
  "david-oath-horatii": {
+  "chapter": "15-revolution",
   "artist": "ジャック＝ルイ・ダヴィッド",
   "title": "ホラティウス兄弟の誓い",
   "year": "1784年",
@@ -1419,6 +1548,7 @@
   "license": "パブリックドメイン"
  },
  "david-death-of-marat": {
+  "chapter": "15-revolution",
   "artist": "ジャック＝ルイ・ダヴィッド",
   "title": "マラーの死",
   "year": "1793年",
@@ -1430,6 +1560,7 @@
   "license": "パブリックドメイン"
  },
  "david-self-portrait": {
+  "chapter": "15-revolution",
   "artist": "ジャック＝ルイ・ダヴィッド",
   "title": "自画像",
   "year": "1794年",
@@ -1441,6 +1572,7 @@
   "license": "パブリックドメイン"
  },
  "ingres-grande-odalisque": {
+  "chapter": "15-revolution",
   "artist": "ジャン＝オーギュスト＝ドミニク・アングル",
   "title": "グランド・オダリスク",
   "year": "1814年",
@@ -1452,6 +1584,7 @@
   "license": "パブリックドメイン"
  },
  "gericault-raft-medusa": {
+  "chapter": "15-revolution",
   "artist": "テオドール・ジェリコー",
   "title": "メデューズ号の筏",
   "year": "1819年",
@@ -1463,6 +1596,7 @@
   "license": "パブリックドメイン"
  },
  "goya-third-of-may": {
+  "chapter": "15-revolution",
   "artist": "フランシスコ・デ・ゴヤ",
   "title": "1808年5月3日",
   "year": "1814年",
@@ -1474,6 +1608,7 @@
   "license": "パブリックドメイン"
  },
  "goya-saturn": {
+  "chapter": "15-revolution",
   "artist": "フランシスコ・デ・ゴヤ",
   "title": "我が子を食らうサトゥルヌス",
   "year": "1819 — 1823年ごろ",
@@ -1485,6 +1620,7 @@
   "license": "パブリックドメイン"
  },
  "delacroix-liberty": {
+  "chapter": "15-revolution",
   "artist": "ウジェーヌ・ドラクロワ",
   "title": "民衆を導く自由の女神",
   "year": "1830年",
@@ -1496,6 +1632,7 @@
   "license": "パブリックドメイン"
  },
  "turner-rain-steam-speed": {
+  "chapter": "15-revolution",
   "artist": "ジョゼフ・マロード・ウィリアム・ターナー",
   "title": "雨、蒸気、速度 ─ グレート・ウェスタン鉄道",
   "year": "1844年",
@@ -1507,6 +1644,7 @@
   "license": "パブリックドメイン"
  },
  "friedrich-wanderer": {
+  "chapter": "15-revolution",
   "artist": "カスパー・ダーヴィト・フリードリヒ",
   "title": "雲海の上の旅人",
   "year": "1818年ごろ",
@@ -1518,6 +1656,7 @@
   "license": "パブリックドメイン"
  },
  "courbet-burial-ornans": {
+  "chapter": "16-realism",
   "artist": "ギュスターヴ・クールベ",
   "title": "オルナンの埋葬",
   "year": "1849 — 50年",
@@ -1529,6 +1668,7 @@
   "license": "パブリックドメイン"
  },
  "courbet-desperate-man": {
+  "chapter": "16-realism",
   "artist": "ギュスターヴ・クールベ",
   "title": "絶望する男（自画像）",
   "year": "1843 — 45年",
@@ -1540,6 +1680,7 @@
   "license": "パブリックドメイン"
  },
  "courbet-painters-studio": {
+  "chapter": "16-realism",
   "artist": "ギュスターヴ・クールベ",
   "title": "画家のアトリエ",
   "year": "1854 — 55年",
@@ -1551,6 +1692,7 @@
   "license": "パブリックドメイン"
  },
  "millet-gleaners": {
+  "chapter": "16-realism",
   "artist": "ジャン＝フランソワ・ミレー",
   "title": "落穂拾い",
   "year": "1857年",
@@ -1562,6 +1704,7 @@
   "license": "パブリックドメイン"
  },
  "millet-angelus": {
+  "chapter": "16-realism",
   "artist": "ジャン＝フランソワ・ミレー",
   "title": "晩鐘",
   "year": "1857 — 59年",
@@ -1573,6 +1716,7 @@
   "license": "パブリックドメイン"
  },
  "corot-souvenir-mortefontaine": {
+  "chapter": "16-realism",
   "artist": "カミーユ・コロー",
   "title": "モルトフォンテーヌの想い出",
   "year": "1864年",
@@ -1584,6 +1728,7 @@
   "license": "パブリックドメイン"
  },
  "daumier-third-class-carriage": {
+  "chapter": "16-realism",
   "artist": "オノレ・ドーミエ",
   "title": "三等列車",
   "year": "1862 — 64年ごろ",
@@ -1595,6 +1740,7 @@
   "license": "パブリックドメイン"
  },
  "millais-ophelia": {
+  "chapter": "16-realism",
   "artist": "ジョン・エヴァレット・ミレイ",
   "title": "オフィーリア",
   "year": "1851 — 52年",
@@ -1606,6 +1752,7 @@
   "license": "パブリックドメイン"
  },
  "manet-dejeuner-sur-lherbe": {
+  "chapter": "16-realism",
   "artist": "エドゥアール・マネ",
   "title": "草上の昼食",
   "year": "1863年",
@@ -1617,6 +1764,7 @@
   "license": "パブリックドメイン"
  },
  "manet-olympia": {
+  "chapter": "16-realism",
   "artist": "エドゥアール・マネ",
   "title": "オランピア",
   "year": "1863年（1865年サロン出品）",
@@ -1628,6 +1776,7 @@
   "license": "パブリックドメイン"
  },
  "monet-impression-sunrise": {
+  "chapter": "17-impressionism",
   "artist": "クロード・モネ",
   "title": "印象、日の出",
   "year": "1872年",
@@ -1639,6 +1788,7 @@
   "license": "パブリックドメイン"
  },
  "monet-gare-saint-lazare": {
+  "chapter": "17-impressionism",
   "artist": "クロード・モネ",
   "title": "サン＝ラザール駅",
   "year": "1877年",
@@ -1650,6 +1800,7 @@
   "license": "パブリックドメイン"
  },
  "renoir-moulin-galette": {
+  "chapter": "17-impressionism",
   "artist": "ピエール＝オーギュスト・ルノワール",
   "title": "ムーラン・ド・ラ・ギャレットの舞踏会",
   "year": "1876年",
@@ -1661,6 +1812,7 @@
   "license": "パブリックドメイン"
  },
  "renoir-portrait": {
+  "chapter": "17-impressionism",
   "artist": "ピエール＝オーギュスト・ルノワール",
   "title": "自画像",
   "year": "1875年",
@@ -1672,6 +1824,7 @@
   "license": "パブリックドメイン"
  },
  "seurat-grande-jatte": {
+  "chapter": "18-post",
   "artist": "ジョルジュ・スーラ",
   "title": "グランド・ジャット島の日曜日の午後",
   "year": "1884 — 1886年",
@@ -1683,6 +1836,7 @@
   "license": "パブリックドメイン"
  },
  "cezanne-mont-sainte-victoire": {
+  "chapter": "18-post",
   "artist": "ポール・セザンヌ",
   "title": "サント＝ヴィクトワール山",
   "year": "1902 — 1904年頃",
@@ -1694,6 +1848,7 @@
   "license": "パブリックドメイン"
  },
  "cezanne-apples-oranges": {
+  "chapter": "18-post",
   "artist": "ポール・セザンヌ",
   "title": "リンゴとオレンジのある静物",
   "year": "1899年頃",
@@ -1705,6 +1860,7 @@
   "license": "パブリックドメイン"
  },
  "van-gogh-self-portrait-ear": {
+  "chapter": "18-post",
   "artist": "フィンセント・ファン・ゴッホ",
   "title": "包帯をしてパイプをくわえた自画像",
   "year": "1889年",
@@ -1716,6 +1872,7 @@
   "license": "パブリックドメイン"
  },
  "van-gogh-sunflowers": {
+  "chapter": "18-post",
   "artist": "フィンセント・ファン・ゴッホ",
   "title": "ひまわり",
   "year": "1888年",
@@ -1727,6 +1884,7 @@
   "license": "パブリックドメイン"
  },
  "van-gogh-starry-night": {
+  "chapter": "18-post",
   "artist": "フィンセント・ファン・ゴッホ",
   "title": "星月夜",
   "year": "1889年",
@@ -1738,6 +1896,7 @@
   "license": "パブリックドメイン"
  },
  "van-gogh-cafe-terrace": {
+  "chapter": "18-post",
   "artist": "フィンセント・ファン・ゴッホ",
   "title": "夜のカフェテラス",
   "year": "1888年",
@@ -1749,6 +1908,7 @@
   "license": "パブリックドメイン"
  },
  "gauguin-vision-sermon": {
+  "chapter": "18-post",
   "artist": "ポール・ゴーギャン",
   "title": "説教のあとの幻影",
   "year": "1888年",
@@ -1760,6 +1920,7 @@
   "license": "パブリックドメイン"
  },
  "gauguin-where-do-we-come-from": {
+  "chapter": "18-post",
   "artist": "ポール・ゴーギャン",
   "title": "我々はどこから来たのか　我々は何者か　我々はどこへ行くのか",
   "year": "1897 — 1898年",
@@ -1771,6 +1932,7 @@
   "license": "パブリックドメイン"
  },
  "munch-scream": {
+  "chapter": "19-fin-de-siecle",
   "artist": "エドヴァルド・ムンク",
   "title": "叫び",
   "year": "1893年",
@@ -1782,6 +1944,7 @@
   "license": "パブリックドメイン"
  },
  "moreau-apparition": {
+  "chapter": "19-fin-de-siecle",
   "artist": "ギュスターヴ・モロー",
   "title": "出現",
   "year": "1876年ごろ",
@@ -1793,6 +1956,7 @@
   "license": "パブリックドメイン"
  },
  "redon-eye-balloon": {
+  "chapter": "19-fin-de-siecle",
   "artist": "オディロン・ルドン",
   "title": "眼は奇妙な気球のように無限に向かう",
   "year": "1882年",
@@ -1804,6 +1968,7 @@
   "license": "パブリックドメイン"
  },
  "klimt-portrait": {
+  "chapter": "19-fin-de-siecle",
   "artist": "グスタフ・クリムト",
   "title": "クリムトの肖像写真",
   "year": "1914年ごろ",
@@ -1815,6 +1980,7 @@
   "license": "パブリックドメイン"
  },
  "klimt-kiss": {
+  "chapter": "19-fin-de-siecle",
   "artist": "グスタフ・クリムト",
   "title": "接吻",
   "year": "1907 — 08年",
@@ -1826,6 +1992,7 @@
   "license": "パブリックドメイン"
  },
  "klimt-judith": {
+  "chapter": "19-fin-de-siecle",
   "artist": "グスタフ・クリムト",
   "title": "ユディト I",
   "year": "1901年",
@@ -1837,6 +2004,7 @@
   "license": "パブリックドメイン"
  },
  "schiele-self-portrait": {
+  "chapter": "19-fin-de-siecle",
   "artist": "エゴン・シーレ",
   "title": "ほおずきの実のある自画像",
   "year": "1912年",
@@ -1848,6 +2016,7 @@
   "license": "パブリックドメイン"
  },
  "mucha-gismonda": {
+  "chapter": "19-fin-de-siecle",
   "artist": "アルフォンス・ミュシャ",
   "title": "ジスモンダ",
   "year": "1894年",
@@ -1859,6 +2028,7 @@
   "license": "パブリックドメイン"
  },
  "galle-glass": {
+  "chapter": "19-fin-de-siecle",
   "artist": "エミール・ガレ",
   "title": "海藻と貝殻をつかむ手",
   "year": "1904年",
@@ -1870,6 +2040,7 @@
   "license": "パブリックドメイン"
  },
  "gaudi-casa-batllo": {
+  "chapter": "19-fin-de-siecle",
   "artist": "アントニ・ガウディ",
   "title": "カサ・バトリョ",
   "year": "1904 — 06年",
@@ -1881,6 +2052,7 @@
   "license": "パブリックドメイン"
  },
  "rousseau-sleeping-gypsy": {
+  "chapter": "20-fauve-cubism",
   "artist": "アンリ・ルソー",
   "title": "眠るジプシー女",
   "year": "1897年",
@@ -1892,6 +2064,7 @@
   "license": "パブリックドメイン"
  },
  "dama-de-elche": {
+  "chapter": "20-fauve-cubism",
   "artist": "作者不詳（古代イベリア）",
   "title": "エルチェの貴婦人",
   "year": "前4世紀ごろ",
@@ -1903,6 +2076,7 @@
   "license": "パブリックドメイン"
  },
  "cezanne-basket-of-apples": {
+  "chapter": "20-fauve-cubism",
   "artist": "ポール・セザンヌ",
   "title": "リンゴの籠のある静物",
   "year": "1893年ごろ",
@@ -1914,6 +2088,7 @@
   "license": "パブリックドメイン"
  },
  "boccioni-la-citta-che-sale": {
+  "chapter": "20-fauve-cubism",
   "artist": "ウンベルト・ボッチョーニ",
   "title": "都市は起ち上がる",
   "year": "1910 — 11年",
@@ -1925,6 +2100,7 @@
   "license": "パブリックドメイン"
  },
  "marc-blue-horse-i": {
+  "chapter": "21-dada-surreal",
   "artist": "フランツ・マルク",
   "title": "青い馬 I",
   "year": "1911年",
@@ -1936,6 +2112,7 @@
   "license": "パブリックドメイン"
  },
  "kirchner-potsdamer-platz": {
+  "chapter": "21-dada-surreal",
   "artist": "エルンスト・ルートヴィヒ・キルヒナー",
   "title": "ポツダム広場",
   "year": "1914年",
@@ -1947,6 +2124,7 @@
   "license": "パブリックドメイン"
  },
  "kirchner-self-portrait-soldier": {
+  "chapter": "21-dada-surreal",
   "artist": "エルンスト・ルートヴィヒ・キルヒナー",
   "title": "兵士としての自画像",
   "year": "1915年",
@@ -1958,6 +2136,7 @@
   "license": "パブリックドメイン"
  },
  "macke-lady-green-jacket": {
+  "chapter": "21-dada-surreal",
   "artist": "アウグスト・マッケ",
   "title": "緑の上着の婦人",
   "year": "1913年",
@@ -1969,6 +2148,7 @@
   "license": "パブリックドメイン"
  },
  "marc-fate-of-animals": {
+  "chapter": "21-dada-surreal",
   "artist": "フランツ・マルク",
   "title": "動物の運命",
   "year": "1913年",
@@ -1980,6 +2160,7 @@
   "license": "パブリックドメイン"
  },
  "schiele-the-family": {
+  "chapter": "21-dada-surreal",
   "artist": "エゴン・シーレ",
   "title": "家族",
   "year": "1918年",
@@ -1991,6 +2172,7 @@
   "license": "パブリックドメイン"
  },
  "kollwitz-the-parents": {
+  "chapter": "21-dada-surreal",
   "artist": "ケーテ・コルヴィッツ",
   "title": "両親（連作《戦争》より）",
   "year": "1923年",
@@ -2002,6 +2184,7 @@
   "license": "パブリックドメイン"
  },
  "ball-cabaret-voltaire": {
+  "chapter": "21-dada-surreal",
   "artist": "撮影者不詳",
   "title": "音響詩《カラワネ》を朗読するフーゴ・バル",
   "year": "1916年",
@@ -2012,7 +2195,164 @@
   "wikiEn": "Hugo Ball",
   "license": "パブリックドメイン"
  },
+ "jomon-kaen-doki": {
+  "chapter": "26-jomon",
+  "artist": "作者不詳（縄文中期・信濃川流域）",
+  "title": "火焰型土器（笹山遺跡出土 深鉢形土器）",
+  "year": "前3000年ごろ",
+  "collection": "土器 十日町市博物館（新潟） 国宝",
+  "commons": "Flame-rimmed deep bowl, Umataka, Nagaoka, Niigata, Jomon period, 3000-2000 BC, earthenware - Tokyo National Museum - DSC08373.JPG",
+  "wiki": "火焔型土器",
+  "wikiLang": "ja",
+  "wikiEn": "Jōmon pottery",
+  "license": "パブリックドメイン"
+ },
+ "shakoki-dogu": {
+  "chapter": "26-jomon",
+  "artist": "作者不詳（縄文晩期・亀ヶ岡文化）",
+  "title": "遮光器土偶",
+  "year": "前1000 — 前400年ごろ",
+  "collection": "土製 高さ34.2 cm 青森県つがる市 亀ヶ岡遺跡出土 東京国立博物館 重要文化財",
+  "commons": "ShakokiDogu.JPG",
+  "wiki": "遮光器土偶",
+  "wikiLang": "ja",
+  "wikiEn": "Dogū",
+  "license": "パブリックドメイン"
+ },
+ "jomon-venus": {
+  "chapter": "26-jomon",
+  "artist": "作者不詳（縄文中期）",
+  "title": "土偶（縄文のビーナス）",
+  "year": "前3000 — 前2000年ごろ",
+  "collection": "土製 高さ27.0 cm 長野県茅野市 棚畑遺跡出土 尖石縄文考古館（茅野） 国宝",
+  "commons": "Jomon Venus.jpg",
+  "wiki": "縄文のビーナス",
+  "wikiLang": "ja",
+  "wikiEn": "Jōmon Venus",
+  "license": "パブリックドメイン"
+ },
+ "sannai-maruyama": {
+  "chapter": "26-jomon",
+  "artist": "縄文中期の集落（青森市）",
+  "title": "三内丸山遺跡 大型掘立柱建物",
+  "year": "前3000年ごろ",
+  "collection": "クリ材 柱は直径約1 m・柱間4.2 m 特別史跡（現在の建物は復元）",
+  "commons": "Sannai-Maruyama site, restored building.jpg",
+  "wiki": "三内丸山遺跡",
+  "wikiLang": "ja",
+  "wikiEn": "Sannai-Maruyama Site",
+  "license": "パブリックドメイン"
+ },
+ "yayoi-tsubo": {
+  "chapter": "26-jomon",
+  "artist": "作者不詳（弥生時代）",
+  "title": "壺形土器",
+  "year": "前4 — 後3世紀",
+  "collection": "土器 東京国立博物館ほか",
+  "commons": "Yayoi jar, Yayoi period, 1st-3rd century AD, earthenware - Tokyo National Museum - DSC05619.JPG",
+  "wiki": "弥生土器",
+  "wikiLang": "ja",
+  "wikiEn": "Yayoi pottery",
+  "license": "パブリックドメイン"
+ },
+ "dotaku-kesadasuki": {
+  "chapter": "26-jomon",
+  "artist": "作者不詳（弥生時代）",
+  "title": "袈裟襷文銅鐸",
+  "year": "前2 — 後2世紀",
+  "collection": "青銅 東京国立博物館・国立歴史民俗博物館ほか",
+  "commons": "Dotaku bronze bell, Yayoi period, 1st-3rd century AD - Tokyo National Museum - DSC05637.JPG",
+  "wiki": "銅鐸",
+  "wikiLang": "ja",
+  "wikiEn": "Dōtaku",
+  "license": "パブリックドメイン"
+ },
+ "daisenryo-kofun": {
+  "chapter": "26-jomon",
+  "artist": "築造者不詳（宮内庁は仁徳天皇陵として治定）",
+  "title": "大仙陵古墳",
+  "year": "5世紀中ごろ",
+  "collection": "墳丘長486 m 三重の濠を含む全長840 m超 大阪府堺市 世界文化遺産",
+  "commons": "NintokuTomb.jpg",
+  "wiki": "大仙陵古墳",
+  "wikiLang": "ja",
+  "wikiEn": "Daisenryō Kofun",
+  "license": "パブリックドメイン"
+ },
+ "haniwa-keiko-warrior": {
+  "chapter": "26-jomon",
+  "artist": "作者不詳（古墳時代後期）",
+  "title": "埴輪 挂甲の武人",
+  "year": "6世紀",
+  "collection": "土製 高さ130.5 cm 群馬県太田市出土 東京国立博物館 国宝",
+  "commons": "Haniwa Warrior.JPG",
+  "wiki": "埴輪",
+  "wikiLang": "ja",
+  "wikiEn": "Haniwa",
+  "license": "パブリックドメイン"
+ },
+ "otsuka-kofun": {
+  "chapter": "26-jomon",
+  "artist": "築造者不詳（古墳時代後期）",
+  "title": "装飾古墳の彩色（王塚古墳ほか）",
+  "year": "6世紀",
+  "collection": "石室壁面への彩色 福岡県桂川町ほか九州各地 特別史跡",
+  "commons": "Otsuka Kofun Keisen.jpg",
+  "wiki": "王塚古墳",
+  "wikiLang": "ja",
+  "wikiEn": "Decorated kofun",
+  "license": "パブリックドメイン"
+ },
+ "kamen-no-megami": {
+  "chapter": "26-jomon",
+  "artist": "作者不詳（縄文後期）",
+  "title": "仮面の女神",
+  "year": "前2000 — 前1000年ごろ",
+  "collection": "土製 高さ34.0 cm 長野県茅野市 中ッ原遺跡出土 尖石縄文考古館（茅野） 国宝",
+  "commons": "Masked Goddess Dogu Nakappara.jpg",
+  "wiki": "仮面の女神",
+  "wikiLang": "ja",
+  "wikiEn": "Dogū",
+  "license": "パブリックドメイン"
+ },
+ "gassho-dogu": {
+  "chapter": "26-jomon",
+  "artist": "作者不詳（縄文後期）",
+  "title": "合掌土偶",
+  "year": "前2000 — 前1000年ごろ",
+  "collection": "土製 高さ19.8 cm 青森県八戸市 是川石器時代遺跡出土 是川縄文館（八戸） 国宝",
+  "commons": "Gassho Dogu Korekawa.jpg",
+  "wiki": "合掌土偶",
+  "wikiLang": "ja",
+  "wikiEn": "Dogū",
+  "license": "パブリックドメイン"
+ },
+ "chuku-dogu": {
+  "chapter": "26-jomon",
+  "artist": "作者不詳（縄文後期）",
+  "title": "中空土偶",
+  "year": "前2000 — 前1000年ごろ",
+  "collection": "土製 高さ41.5 cm 北海道函館市 著保内野遺跡出土 函館市縄文文化交流センター 国宝",
+  "commons": "Hollow Dogu Chobonaino.jpg",
+  "wiki": "中空土偶",
+  "wikiLang": "ja",
+  "wikiEn": "Dogū",
+  "license": "パブリックドメイン"
+ },
+ "jomon-no-megami": {
+  "chapter": "26-jomon",
+  "artist": "作者不詳（縄文中期）",
+  "title": "縄文の女神",
+  "year": "前3000 — 前2000年ごろ",
+  "collection": "土製 高さ45.0 cm 山形県舟形町 西ノ前遺跡出土 山形県立博物館 国宝",
+  "commons": "Jomon Goddess Nishinomae.jpg",
+  "wiki": "縄文の女神",
+  "wikiLang": "ja",
+  "wikiEn": "Dogū",
+  "license": "パブリックドメイン"
+ },
  "genji-emaki-yadorigi": {
+  "chapter": "28-emaki",
   "artist": "作者不詳（複数の工房による）",
   "title": "源氏物語絵巻",
   "year": "12世紀前半",
@@ -2024,6 +2364,7 @@
   "license": "パブリックドメイン"
  },
  "shigisan-engi-emaki": {
+  "chapter": "28-emaki",
   "artist": "作者不詳（常盤光長筆とも伝わる）",
   "title": "信貴山縁起絵巻",
   "year": "12世紀後半",
@@ -2035,6 +2376,7 @@
   "license": "パブリックドメイン"
  },
  "ban-dainagon-ekotoba": {
+  "chapter": "28-emaki",
   "artist": "作者不詳（常盤光長筆と伝わる）",
   "title": "伴大納言絵詞",
   "year": "12世紀後半",
@@ -2046,6 +2388,7 @@
   "license": "パブリックドメイン"
  },
  "choju-jinbutsu-giga": {
+  "chapter": "28-emaki",
   "artist": "作者不詳（鳥羽僧正覚猷筆と伝わる）",
   "title": "鳥獣人物戯画",
   "year": "12 — 13世紀",
@@ -2057,6 +2400,7 @@
   "license": "パブリックドメイン"
  },
  "todaiji-nio-agyo": {
+  "chapter": "28-emaki",
   "artist": "運慶・快慶と慶派の仏師たち",
   "title": "東大寺南大門 金剛力士像",
   "year": "1203年",
@@ -2068,6 +2412,7 @@
   "license": "パブリックドメイン"
  },
  "unkei-mujaku-seshin": {
+  "chapter": "28-emaki",
   "artist": "運慶",
   "title": "無著菩薩立像・世親菩薩立像",
   "year": "1212年ごろ",
@@ -2079,6 +2424,7 @@
   "license": "パブリックドメイン"
  },
  "den-minamoto-yoritomo": {
+  "chapter": "28-emaki",
   "artist": "藤原隆信筆と伝わる（帰属に議論あり）",
   "title": "伝源頼朝像",
   "year": "鎌倉時代、または14世紀",
@@ -2090,6 +2436,7 @@
   "license": "パブリックドメイン"
  },
  "jigoku-zoshi": {
+  "chapter": "28-emaki",
   "artist": "作者不詳",
   "title": "地獄草紙",
   "year": "12世紀後半",
@@ -2101,6 +2448,7 @@
   "license": "パブリックドメイン"
  },
  "heiji-monogatari-emaki": {
+  "chapter": "28-emaki",
   "artist": "作者不詳",
   "title": "平治物語絵巻 三条殿夜討巻",
   "year": "13世紀後半",
