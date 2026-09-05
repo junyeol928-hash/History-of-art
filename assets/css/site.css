@@ -101,21 +101,40 @@
 .era-world      { --accent:#a8781f; --accent-ink:#8c6319; --accent-soft:#f2e9d8; --accent-line:#d6bd8a; } /* 黄土 */
 
 /* 夜は顔料をそのまま置くと沈むので、明度を上げた同じ色相に差し替える */
-:root[data-theme="dark"] .era-prehistory,  :root:not([data-theme="light"]) .era-prehistory  { --accent:#d98a68; --accent-ink:#e5a184; --accent-soft:#231610; --accent-line:#6b422f; }
-:root[data-theme="dark"] .era-ancient,     :root:not([data-theme="light"]) .era-ancient     { --accent:#5aa8de; --accent-ink:#7dbde8; --accent-soft:#0f1c26; --accent-line:#2c5a7a; }
-:root[data-theme="dark"] .era-classical,   :root:not([data-theme="light"]) .era-classical   { --accent:#e07a6c; --accent-ink:#ec9184; --accent-soft:#241412; --accent-line:#733a33; }
-:root[data-theme="dark"] .era-medieval,    :root:not([data-theme="light"]) .era-medieval    { --accent:#7f8fdb; --accent-ink:#98a6e5; --accent-soft:#14172a; --accent-line:#3e4776; }
-:root[data-theme="dark"] .era-renaissance, :root:not([data-theme="light"]) .era-renaissance { --accent:#7fb98f; --accent-ink:#98c9a5; --accent-soft:#121d16; --accent-line:#3d6349; }
-:root[data-theme="dark"] .era-baroque,     :root:not([data-theme="light"]) .era-baroque     { --accent:#c99356; --accent-ink:#d9a970; --accent-soft:#211810; --accent-line:#6b4d2b; }
-:root[data-theme="dark"] .era-rococo,      :root:not([data-theme="light"]) .era-rococo      { --accent:#dd8cae; --accent-ink:#e8a5c1; --accent-soft:#26161d; --accent-line:#77455b; }
-:root[data-theme="dark"] .era-19c,         :root:not([data-theme="light"]) .era-19c         { --accent:#6ba6dd; --accent-ink:#8bbbe8; --accent-soft:#111c27; --accent-line:#33587a; }
-:root[data-theme="dark"] .era-impression,  :root:not([data-theme="light"]) .era-impression  { --accent:#a297dd; --accent-ink:#b6ade7; --accent-soft:#191627; --accent-line:#514978; }
-:root[data-theme="dark"] .era-modern,      :root:not([data-theme="light"]) .era-modern      { --accent:#e8635a; --accent-ink:#f0827a; --accent-soft:#251311; --accent-line:#7d332d; }
-:root[data-theme="dark"] .era-contemp,     :root:not([data-theme="light"]) .era-contemp     { --accent:#3fc9ba; --accent-ink:#63d6ca; --accent-soft:#0c211f; --accent-line:#1f6d65; }
-:root[data-theme="dark"] .era-japan,       :root:not([data-theme="light"]) .era-japan       { --accent:#d4737f; --accent-ink:#e08d97; --accent-soft:#231317; --accent-line:#73383f; }
-:root[data-theme="dark"] .era-china,       :root:not([data-theme="light"]) .era-china       { --accent:#8fa4ae; --accent-ink:#a8bac2; --accent-soft:#151a1d; --accent-line:#465359; }
-:root[data-theme="dark"] .era-islam,       :root:not([data-theme="light"]) .era-islam       { --accent:#3ec3c6; --accent-ink:#63d1d3; --accent-soft:#0c2021; --accent-line:#1f6a6c; }
-:root[data-theme="dark"] .era-world,       :root:not([data-theme="light"]) .era-world       { --accent:#d9b158; --accent-ink:#e5c377; --accent-soft:#211c11; --accent-line:#6d5a2c; }
+/* 端末の設定が夜のとき */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .era-prehistory { --accent:#d98a68; --accent-ink:#e5a184; --accent-soft:#231610; --accent-line:#6b422f; }
+  :root:not([data-theme="light"]) .era-ancient { --accent:#5aa8de; --accent-ink:#7dbde8; --accent-soft:#0f1c26; --accent-line:#2c5a7a; }
+  :root:not([data-theme="light"]) .era-classical { --accent:#e07a6c; --accent-ink:#ec9184; --accent-soft:#241412; --accent-line:#733a33; }
+  :root:not([data-theme="light"]) .era-medieval { --accent:#7f8fdb; --accent-ink:#98a6e5; --accent-soft:#14172a; --accent-line:#3e4776; }
+  :root:not([data-theme="light"]) .era-renaissance { --accent:#7fb98f; --accent-ink:#98c9a5; --accent-soft:#121d16; --accent-line:#3d6349; }
+  :root:not([data-theme="light"]) .era-baroque { --accent:#c99356; --accent-ink:#d9a970; --accent-soft:#211810; --accent-line:#6b4d2b; }
+  :root:not([data-theme="light"]) .era-rococo { --accent:#dd8cae; --accent-ink:#e8a5c1; --accent-soft:#26161d; --accent-line:#77455b; }
+  :root:not([data-theme="light"]) .era-19c { --accent:#6ba6dd; --accent-ink:#8bbbe8; --accent-soft:#111c27; --accent-line:#33587a; }
+  :root:not([data-theme="light"]) .era-impression { --accent:#a297dd; --accent-ink:#b6ade7; --accent-soft:#191627; --accent-line:#514978; }
+  :root:not([data-theme="light"]) .era-modern { --accent:#e8635a; --accent-ink:#f0827a; --accent-soft:#251311; --accent-line:#7d332d; }
+  :root:not([data-theme="light"]) .era-contemp { --accent:#3fc9ba; --accent-ink:#63d6ca; --accent-soft:#0c211f; --accent-line:#1f6d65; }
+  :root:not([data-theme="light"]) .era-japan { --accent:#d4737f; --accent-ink:#e08d97; --accent-soft:#231317; --accent-line:#73383f; }
+  :root:not([data-theme="light"]) .era-china { --accent:#8fa4ae; --accent-ink:#a8bac2; --accent-soft:#151a1d; --accent-line:#465359; }
+  :root:not([data-theme="light"]) .era-islam { --accent:#3ec3c6; --accent-ink:#63d1d3; --accent-soft:#0c2021; --accent-line:#1f6a6c; }
+  :root:not([data-theme="light"]) .era-world { --accent:#d9b158; --accent-ink:#e5c377; --accent-soft:#211c11; --accent-line:#6d5a2c; }
+}
+/* 手で夜に切り替えたとき */
+:root[data-theme="dark"] .era-prehistory { --accent:#d98a68; --accent-ink:#e5a184; --accent-soft:#231610; --accent-line:#6b422f; }
+:root[data-theme="dark"] .era-ancient { --accent:#5aa8de; --accent-ink:#7dbde8; --accent-soft:#0f1c26; --accent-line:#2c5a7a; }
+:root[data-theme="dark"] .era-classical { --accent:#e07a6c; --accent-ink:#ec9184; --accent-soft:#241412; --accent-line:#733a33; }
+:root[data-theme="dark"] .era-medieval { --accent:#7f8fdb; --accent-ink:#98a6e5; --accent-soft:#14172a; --accent-line:#3e4776; }
+:root[data-theme="dark"] .era-renaissance { --accent:#7fb98f; --accent-ink:#98c9a5; --accent-soft:#121d16; --accent-line:#3d6349; }
+:root[data-theme="dark"] .era-baroque { --accent:#c99356; --accent-ink:#d9a970; --accent-soft:#211810; --accent-line:#6b4d2b; }
+:root[data-theme="dark"] .era-rococo { --accent:#dd8cae; --accent-ink:#e8a5c1; --accent-soft:#26161d; --accent-line:#77455b; }
+:root[data-theme="dark"] .era-19c { --accent:#6ba6dd; --accent-ink:#8bbbe8; --accent-soft:#111c27; --accent-line:#33587a; }
+:root[data-theme="dark"] .era-impression { --accent:#a297dd; --accent-ink:#b6ade7; --accent-soft:#191627; --accent-line:#514978; }
+:root[data-theme="dark"] .era-modern { --accent:#e8635a; --accent-ink:#f0827a; --accent-soft:#251311; --accent-line:#7d332d; }
+:root[data-theme="dark"] .era-contemp { --accent:#3fc9ba; --accent-ink:#63d6ca; --accent-soft:#0c211f; --accent-line:#1f6d65; }
+:root[data-theme="dark"] .era-japan { --accent:#d4737f; --accent-ink:#e08d97; --accent-soft:#231317; --accent-line:#73383f; }
+:root[data-theme="dark"] .era-china { --accent:#8fa4ae; --accent-ink:#a8bac2; --accent-soft:#151a1d; --accent-line:#465359; }
+:root[data-theme="dark"] .era-islam { --accent:#3ec3c6; --accent-ink:#63d1d3; --accent-soft:#0c2021; --accent-line:#1f6a6c; }
+:root[data-theme="dark"] .era-world { --accent:#d9b158; --accent-ink:#e5c377; --accent-soft:#211c11; --accent-line:#6d5a2c; }
 
 /* =========================================================================
    土台
