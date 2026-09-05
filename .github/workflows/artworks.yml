@@ -65,10 +65,34 @@ jobs:
               except Exception as e:
                   print('変換できず:', p, e); after += b
           print(f'{before/1e6:.0f}MB -> {after/1e6:.0f}MB')
+
+          # 顔カードとギャラリーの札は画面上350pxほどしかない。
+          # そこへ原寸を10枚並べると下のほうが出てこないので、縮小版も置く
+          import pathlib
+          pathlib.Path('assets/artworks/thumb').mkdir(parents=True, exist_ok=True)
+          TW, TQ = 720, 80
+          tn = 0
+          for p in sorted(glob.glob('assets/artworks/*.jpg')):
+              out = 'assets/artworks/thumb/' + os.path.basename(p)
+              if os.path.exists(out) and os.path.getmtime(out) >= os.path.getmtime(p):
+                  continue
+              try:
+                  im = Image.open(p); w, h = im.size
+                  if w > TW: im = im.resize((TW, max(1, round(h * TW / w))), Image.LANCZOS)
+                  if im.mode not in ('RGB', 'L'): im = im.convert('RGB')
+                  im.save(out, 'JPEG', quality=TQ, optimize=True, progressive=True)
+                  tn += 1
+              except Exception as e:
+                  print('縮小できず:', p, e)
+          # 元が消えた縮小版は片づける
+          for t in glob.glob('assets/artworks/thumb/*.jpg'):
+              if not os.path.exists('assets/artworks/' + os.path.basename(t)):
+                  os.remove(t)
+          print('縮小版を', tn, '枚作った')
           EOF
           node -e "
             const fs=require('fs');
-            const ids=fs.readdirSync('assets/artworks').map(f=>f.replace(/\.[^.]+$/,'')).sort();
+            const ids=fs.readdirSync('assets/artworks').filter(f=>/\.(jpg|png|webp|svg)$/i.test(f)).map(f=>f.replace(/\.[^.]+$/,'')).sort();
             fs.writeFileSync('data/artworks-baked.json', JSON.stringify([...new Set(ids)], null, 1));
             console.log('baked', ids.length);
           "

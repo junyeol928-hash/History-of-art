@@ -94,20 +94,27 @@
     });
   }
 
-  /* ---------- 1点ぶんの解決 ---------- */
-  function resolve(id) {
-    var cached = cacheGet(id);
-    if (cached) return tryImage(cached).catch(function () { return resolveFresh(id); });
-    return resolveFresh(id);
+  /* ---------- 1点ぶんの解決 ----------
+     small を立てると、まず縮小版を取りに行く。
+     顔カードもギャラリーの札も、画面上では350px幅ほどしかない。
+     そこへ1800px・1.5MBの原寸を10枚並べると、下のほうが延々と出てこない。 */
+  function resolve(id, small) {
+    var key = id + (small ? '@s' : '');
+    var cached = cacheGet(key);
+    if (cached) return tryImage(cached).catch(function () { return resolveFresh(id, small); });
+    return resolveFresh(id, small);
   }
 
-  function resolveFresh(id) {
+  function resolveFresh(id, small) {
     var m = (manifest && manifest[id]) || {};
     var chain = Promise.reject();
 
     // 段1: 焼き込み済み
     if (!baked || baked.indexOf(id) !== -1 || baked.length === 0) {
       var ext = m.ext || 'jpg';
+      if (small) {
+        chain = chain.catch(function () { return tryImage(ROOT + 'assets/artworks/thumb/' + id + '.jpg'); });
+      }
       chain = chain.catch(function () { return tryImage(ROOT + 'assets/artworks/' + id + '.' + ext); });
     }
     // 段2: Commons のファイル名
@@ -124,7 +131,7 @@
         chain = chain.catch(function () { return fromWikipedia('en', m.wikiEn).then(tryImage); });
       }
     }
-    return chain.then(function (url) { cacheSet(id, url); return url; });
+    return chain.then(function (url) { cacheSet(id + (small ? '@s' : ''), url); return url; });
   }
 
   /* ---------- 図版1つを仕上げる ---------- */
@@ -134,8 +141,10 @@
     var mount = fig.querySelector('.mount');
     if (!mount) return;
     mount.classList.add('-loading');
+    // 小さく出す札は、小さい画像で足りる
+    var small = fig.classList.contains('face') || fig.classList.contains('card');
 
-    resolve(id).then(function (url) {
+    resolve(id, small).then(function (url) {
       var m = (manifest && manifest[id]) || {};
       var img = new Image();
       img.src = url;
@@ -201,11 +210,16 @@
   }
   /* 拡大時は、焼き込み済みより大きい画像を取りに行く。
      筆跡やひび割れを見るための一手間。失敗したら表示中の画像のまま */
-  function bigger(m, fallback) {
-    if (!m || !m.commons) return Promise.resolve(fallback);
-    return fromCommons(m.commons, 3000)
-      .then(tryImage)
-      .catch(function () { return fallback; });
+  function bigger(m, fallback, id) {
+    /* 表示に使ったのが縮小版なら、まず焼き込み済みの原寸に戻す。
+       そのうえで、あればもっと大きいものを Commons から取る */
+    var base = id
+      ? tryImage(ROOT + 'assets/artworks/' + id + '.' + ((m && m.ext) || 'jpg')).catch(function () { return fallback; })
+      : Promise.resolve(fallback);
+    return base.then(function (b) {
+      if (!m || !m.commons) return b;
+      return fromCommons(m.commons, 3000).then(tryImage).catch(function () { return b; });
+    });
   }
 
   function openViewer(fig, url, m) {
@@ -213,7 +227,7 @@
     var img = v.querySelector('img');
     img.src = url;
     v.classList.add('-loading');
-    bigger(m, url).then(function (big) {
+    bigger(m, url, fig.dataset.art).then(function (big) {
       if (v.classList.contains('-on')) img.src = big;
       v.classList.remove('-loading');
     });
