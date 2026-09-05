@@ -55,6 +55,34 @@
     "wiki": "秘儀荘", "wikiLang": "ja", "wikiEn": "Villa of the Mysteries",
     "license": "パブリックドメイン"
   },
+  "roman-republican-head": {
+    "artist": "ローマの工房", "title": "共和政期の男の肖像（頭部）", "year": "前1世紀",
+    "collection": "カピトリーノ美術館ほか（ローマ）",
+    "commons": "Patrician Torlonia.jpg",
+    "wiki": "ヴェリズム", "wikiLang": "ja", "wikiEn": "Head of a Roman Patrician",
+    "license": "パブリックドメイン"
+  },
+  "ara-pacis": {
+    "artist": "アウグストゥス帝時代の工房", "title": "アラ・パキス（アウグストゥスの平和の祭壇）", "year": "前13 — 前9年",
+    "collection": "アラ・パキス博物館（ローマ）",
+    "commons": "Ara Pacis Augustae Roma.jpg",
+    "wiki": "アラ・パキス", "wikiLang": "ja", "wikiEn": "Ara Pacis",
+    "license": "パブリックドメイン"
+  },
+  "alexander-mosaic": {
+    "artist": "ヘレニズム期の原画にもとづくモザイク工房", "title": "アレクサンドロス・モザイク", "year": "前100年頃",
+    "collection": "ナポリ国立考古学博物館（イタリア）",
+    "commons": "Battle of Issus mosaic - Museo Archeologico Nazionale - Naples 2013-05-16 16-25-06 BW.jpg",
+    "wiki": "アレクサンドロス・モザイク", "wikiLang": "ja", "wikiEn": "Alexander Mosaic",
+    "license": "パブリックドメイン"
+  },
+  "arch-of-constantine": {
+    "artist": "コンスタンティヌス帝時代の工房", "title": "コンスタンティヌスの凱旋門", "year": "315年",
+    "collection": "ローマ",
+    "commons": "Arch of Constantine (Rome).jpg",
+    "wiki": "コンスタンティヌスの凱旋門", "wikiLang": "ja", "wikiEn": "Arch of Constantine",
+    "license": "写真はウィキメディア・コモンズの自由利用画像"
+  },
   "fayum-mummy-portrait": {
     "artist": "ローマ期エジプトの工房", "title": "ミイラ肖像画（ファイユーム出土）", "year": "2世紀",
     "collection": "大英博物館ほか",
