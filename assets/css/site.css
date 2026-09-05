@@ -223,6 +223,61 @@ a:hover { text-decoration-thickness: 2px; }
 .icon-btn:hover { border-color: var(--accent-line); color: var(--accent-ink); }
 .icon-btn svg { width: 16px; height: 16px; }
 .icon-moon { display: none; }
+
+/* ---------- 目次ボタンと目次 ---------- */
+.toc-btn {
+  appearance: none; border: 1px solid var(--rule); background: transparent;
+  color: var(--ink-2); height: 38px; padding: 0 .7rem; cursor: pointer; flex: none;
+  display: inline-flex; align-items: center; gap: .4rem;
+  font-family: var(--sans); font-size: .78rem; font-weight: 700; letter-spacing: .08em;
+}
+.toc-btn:hover { border-color: var(--accent-line); color: var(--accent-ink); background: var(--accent-soft); }
+.toc-btn svg { width: 15px; height: 15px; }
+@media (max-width: 460px) { .toc-btn span { display: none; } .toc-btn { padding: 0; width: 38px; justify-content: center; } }
+
+.tocpanel {
+  position: fixed; inset: 0; z-index: 70;
+  background: color-mix(in srgb, var(--bg) 72%, transparent);
+  backdrop-filter: blur(3px);
+  display: grid; place-items: start center; padding: 0;
+}
+@media (min-width: 700px) { .tocpanel { padding: 3.5rem 1.5rem; place-items: start center; } }
+.tocsheet {
+  background: var(--bg-raise); border: 1px solid var(--rule);
+  width: 100%; max-width: 44rem; max-height: 100dvh;
+  display: flex; flex-direction: column; box-shadow: var(--shadow-m);
+}
+@media (min-width: 700px) { .tocsheet { max-height: calc(100dvh - 7rem); } }
+.tochead {
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  padding: .9rem 1.1rem; border-bottom: 1px solid var(--rule); flex: none;
+  position: sticky; top: 0; background: var(--bg-raise); z-index: 1;
+}
+.tochead b { font-family: var(--sans); font-size: .8rem; font-weight: 700; letter-spacing: .22em; color: var(--accent-ink); }
+.tocclose {
+  appearance: none; border: 1px solid var(--rule); background: transparent; color: var(--ink-2);
+  font-family: var(--sans); font-size: .74rem; padding: .4rem .8rem; cursor: pointer; min-height: 34px;
+}
+.tocclose:hover { border-color: var(--accent-line); color: var(--accent-ink); }
+.tocbody { overflow-y: auto; padding: .4rem 1.1rem 1.6rem; -webkit-overflow-scrolling: touch; }
+.tocwait { color: var(--ink-3); font-family: var(--sans); font-size: .85rem; padding: 1.4rem 0; }
+.tocpart {
+  font-family: var(--sans); font-size: .68rem; font-weight: 700; letter-spacing: .2em;
+  color: var(--ink-3); margin: 1.5rem 0 .3rem; padding-bottom: .35rem; border-bottom: 1px solid var(--rule-soft);
+}
+.toclist { list-style: none; margin: 0; padding: 0; }
+.toclist a {
+  display: flex; align-items: center; gap: .7rem; text-decoration: none; color: var(--ink);
+  padding: .62rem .3rem; border-bottom: 1px solid var(--rule-soft); line-height: 1.5;
+}
+.toclist a:hover { background: var(--accent-soft); }
+.toclist i { width: 9px; height: 9px; flex: none; background: var(--accent); }
+.toclist b { font-family: var(--mono); font-size: .72rem; font-weight: 400; color: var(--ink-3); width: 1.7rem; flex: none; text-align: right; }
+.toclist span { font-size: .95rem; }
+.toclist a.-here { background: var(--accent-soft); }
+.toclist a.-here span { font-weight: 700; color: var(--accent-ink); }
+.toclist.-tools { display: flex; flex-wrap: wrap; gap: .4rem; padding-top: .6rem; }
+.toclist.-tools a { border: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: .45rem .9rem; }
 :root[data-theme="dark"] .icon-sun { display: none; }
 :root[data-theme="dark"] .icon-moon { display: block; }
 @media (prefers-color-scheme: dark) {
@@ -547,9 +602,12 @@ figure.plate .credit {
    読者はここに留まらず通り抜けるので、思い切り振ってよい。 */
 .portal {
   position: relative;
-  min-height: min(78vh, 620px);
+  min-height: min(86vh, 720px);
   display: grid;
-  align-content: center;
+  /* 銘板をどこに置くかは時代ごとに変える。門の構図そのものが時代の顔になる */
+  align-content: var(--portal-align, center);
+  justify-items: var(--portal-just, center);
+  padding-inline: clamp(1.25rem, 5vw, 4.5rem);
   padding-block: clamp(3rem, 9vw, 6rem);
   margin-bottom: clamp(2rem, 5vw, 3.5rem);
   overflow: hidden;
@@ -563,14 +621,13 @@ figure.plate .credit {
   object-fit: cover; z-index: -1; pointer-events: none;
 }
 .portal .inner {
-  position: relative; max-width: var(--measure); margin-inline: auto;
+  position: relative; width: 100%; max-width: min(var(--measure), var(--portal-w, 40rem));
   padding: clamp(1.6rem, 4vw, 2.4rem) clamp(1.3rem, 3.5vw, 2.2rem);
   background: color-mix(in srgb, var(--portal-bg) 90%, transparent);
   border: 1px solid var(--portal-rule, var(--rule));
   backdrop-filter: blur(3px) saturate(120%);
   -webkit-backdrop-filter: blur(3px) saturate(120%);
 }
-@media (min-width: 720px) { .portal .inner { margin-inline: auto; } }
 /* 門の絵はそのまま見せたい。だが文字は必ず読めないといけない。
    そこで絵を覆うのではなく、文字のほうを「銘板」に載せる。
    中世の聖堂で、ステンドグラスの前に銘板が掛かっているのと同じ考え方。 */

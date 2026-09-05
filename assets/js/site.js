@@ -41,6 +41,7 @@
     var where = bar.dataset.where || '';
     bar.innerHTML =
       '<a class="home" href="' + ROOT + 'index.html">世界美術史</a>' +
+      '<button class="toc-btn" type="button" aria-expanded="false" aria-label="目次をひらく">' + TOCI + '<span>目次</span></button>' +
       '<span class="spacer"></span>' +
       '<nav>' +
         '<a href="' + ROOT + 'gallery.html">作品</a>' +
@@ -52,6 +53,97 @@
       '<span class="where">' + where + '</span>' +
       '<button class="icon-btn" type="button" aria-label="配色を切り替える">' + SUN + MOON + '</button>';
     bar.querySelector('.icon-btn').addEventListener('click', toggleTheme);
+    bar.querySelector('.toc-btn').addEventListener('click', openToc);
+  }
+
+  /* =========================================================================
+     目次 ─ どのページからでも、章へ直接飛べるようにする。
+     トップページまで戻ってスクロールして探す、をなくすためのもの。
+     ========================================================================= */
+  var TOCI = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">'
+    + '<path d="M4 6h16M4 12h16M4 18h10" stroke-linecap="round"/></svg>';
+  var toc = null, tocLoaded = false;
+
+  function ensureToc() {
+    if (toc) return toc;
+    toc = document.createElement('div');
+    toc.className = 'tocpanel';
+    toc.hidden = true;
+    toc.innerHTML =
+      '<div class="tocsheet" role="dialog" aria-modal="true" aria-label="目次">' +
+        '<div class="tochead">' +
+          '<b>目次</b>' +
+          '<button class="tocclose" type="button" aria-label="閉じる">閉じる</button>' +
+        '</div>' +
+        '<div class="tocbody"><p class="tocwait">読み込んでいます…</p></div>' +
+      '</div>';
+    document.body.appendChild(toc);
+    toc.addEventListener('click', function (e) {
+      if (e.target === toc || e.target.closest('.tocclose')) closeToc();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && toc && !toc.hidden) closeToc();
+    });
+    return toc;
+  }
+
+  function fillToc() {
+    if (tocLoaded) return;
+    tocLoaded = true;
+    var here = document.body.dataset.chapter || '';
+    fetch(ROOT + 'data/chapters.json').then(function (r) { return r.json(); }).then(function (d) {
+      var chs = d.chapters || [];
+      /* part は "west" のような識別子なので、parts の表示名に引き当てる */
+      var label = {};
+      (d.parts || []).forEach(function (p) { label[p.id] = p.name; });
+      var parts = [], byPart = {};
+      chs.forEach(function (c) {
+        if (!byPart[c.part]) { byPart[c.part] = []; parts.push(c.part); }
+        byPart[c.part].push(c);
+      });
+      var html = '';
+      parts.forEach(function (id) {
+        html += '<p class="tocpart">' + escapeHTML(label[id] || id) + '</p><ul class="toclist">';
+        byPart[id].forEach(function (c) {
+          var on = c.slug === here;
+          /* 時代の色は点だけに出す。文字まで時代の色を継ぐと、目次の中で読みにくくなる */
+          html += '<li><a' + (on ? ' class="-here" aria-current="page"' : '') +
+            ' href="' + ROOT + 'chapters/' + escapeHTML(c.slug) + '.html">' +
+            '<i class="era-' + escapeHTML(c.era) + '"></i>' +
+            '<b>' + c.n + '</b><span>' + escapeHTML(c.title) + '</span></a></li>';
+        });
+        html += '</ul>';
+      });
+      html += '<p class="tocpart">読むほかに</p><ul class="toclist -tools">' +
+        [['gallery.html','作品'],['timeline.html','年表'],['map.html','地図'],
+         ['museums.html','美術館'],['glossary.html','用語']]
+        .map(function (x) { return '<li><a href="' + ROOT + x[0] + '"><span>' + x[1] + '</span></a></li>'; }).join('') +
+        '</ul>';
+      toc.querySelector('.tocbody').innerHTML = html;
+      var cur = toc.querySelector('.-here');
+      if (cur) cur.scrollIntoView({ block: 'center' });
+    }).catch(function () {
+      toc.querySelector('.tocbody').innerHTML =
+        '<p class="tocwait">目次を読み込めませんでした。<a href="' + ROOT + 'index.html">トップページ</a>からどうぞ。</p>';
+    });
+  }
+
+  function openToc() {
+    ensureToc();
+    fillToc();
+    toc.hidden = false;
+    document.body.style.overflow = 'hidden';
+    var b = document.querySelector('.toc-btn');
+    if (b) b.setAttribute('aria-expanded', 'true');
+    var c = toc.querySelector('.tocclose');
+    if (c) c.focus();
+  }
+  function closeToc() {
+    if (!toc) return;
+    toc.hidden = true;
+    document.body.style.overflow = '';
+    var b = document.querySelector('.toc-btn');
+    if (b) { b.setAttribute('aria-expanded', 'false'); b.focus(); }
   }
 
   /* ---------- 読書進捗 ---------- */
