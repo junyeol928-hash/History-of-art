@@ -44,6 +44,23 @@
     background: transparent; border: 1px solid var(--rule); padding: .6rem 1rem; min-height: 40px; }
   .nav2 button:hover { border-color: var(--accent-line); color: var(--accent-ink); }
   .nav2 button:disabled { opacity: .35; cursor: default; }
+
+  .mapdown { padding: 2rem 1.25rem; font-family: var(--sans); font-size: .85rem;
+             color: var(--ink-3); line-height: 1.9; }
+  /* 地図が出せなかったときの、素の一覧 */
+  .maplist { list-style: none; margin: 0 0 2.5rem; padding: 0; display: grid; gap: 0;
+             border: 1px solid var(--rule); border-top: 0; }
+  .maplist li { padding: 1.5rem 1.3rem; border-top: 1px solid var(--rule-soft); }
+  .maplist li:first-child { border-top: 0; }
+  .maplist .years { font-family: var(--mono); font-size: .74rem; letter-spacing: .1em; color: var(--accent); margin: 0; }
+  .maplist h2 { font-size: 1.3rem; margin: .35rem 0 .1rem; font-weight: 600; line-height: 1.4; }
+  .maplist .region { font-family: var(--sans); font-size: .76rem; color: var(--ink-3); margin: 0; }
+  .maplist .body { font-size: .92rem; line-height: 1.95; margin: 1rem 0 0; color: var(--ink-2); }
+  .maplist .links { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.1rem 0 0; }
+  .maplist .links a { font-family: var(--sans); font-size: .76rem; text-decoration: none;
+    color: var(--accent-ink); border: 1px solid var(--rule); padding: .45rem .8rem; }
+  .maplist .links a:hover { border-color: var(--accent-line); background: var(--accent-soft); }
+  .panel .toch.gmap { margin-top: .5rem; margin-left: .4rem; }
 </style>
 </head>
 <body class="era-renaissance">
@@ -81,15 +98,44 @@
 <script src="assets/js/site.js"></script>
 <script>
 (function () {
-  /* 地図ライブラリが読めなかった場合でも、一覧と本文は必ず表示する */
+  /* その街を Google マップで開く。地図が読めても読めなくても、これは必ず出す */
+  function gmap(s) {
+    return 'https://www.google.com/maps/search/?api=1&query='
+      + encodeURIComponent(s.lat + ',' + s.lng);
+  }
+
+  /* 地図ライブラリが読めなかった場合でも、一覧と本文は必ず表示する。
+     「下の一覧をお使いください」と書いておいて一覧が無いのは、
+     読めないことより悪い。 */
   if (typeof L === 'undefined') {
-    var shell = document.querySelector('.mapshell') || document.querySelector('.stage');
+    var shell = document.querySelector('.stage');
     if (shell) {
-      shell.innerHTML = '<p style="padding:2rem 1.25rem;font-family:var(--sans);font-size:.85rem;'
-        + 'color:var(--ink-3);line-height:1.9">地図を読み込めませんでした。'
+      shell.innerHTML = '<p class="mapdown">地図を読み込めませんでした。'
         + 'ネットワークにつながっていないか、地図の配信元に届いていません。'
         + '下の一覧と Google マップへのリンクはそのままお使いいただけます。</p>';
     }
+    var nav2 = document.querySelector('.nav2'); if (nav2) nav2.remove();
+    Promise.all([
+      fetch('data/capitals.json').then(function(r){return r.json();}),
+      fetch('data/chapters.json').then(function(r){return r.json();}).catch(function(){return {chapters:[]};})
+    ]).then(function (res) {
+      var chs = {};
+      (res[1].chapters || []).forEach(function (c) { chs[c.n] = c; });
+      var t = document.getElementById('track');
+      t.className = 'maplist';
+      t.innerHTML = res[0].stops.map(function (s) {
+        var c = chs[s.ch];
+        return '<li class="era-' + esc(s.era) + '">' +
+          '<p class="years">' + esc(s.years) + '</p>' +
+          '<h2>' + esc(s.place) + '</h2>' +
+          '<p class="region">' + esc(s.region) + '</p>' +
+          '<p class="body">' + esc(s.text) + '</p>' +
+          '<p class="links">' +
+            (c ? '<a href="chapters/' + c.slug + '.html">第' + c.n + '章　' + esc(c.title) + ' へ</a>' : '') +
+            '<a href="' + gmap(s) + '" target="_blank" rel="noopener">Google マップで開く</a>' +
+          '</p></li>';
+      }).join('');
+    });
     return;
   }
   var LIGHT = 'https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png';
@@ -184,7 +230,8 @@
       '<h2>' + esc(s.place) + '</h2>' +
       '<p class="region">' + esc(s.region) + '</p>' +
       '<p>' + esc(s.text) + '</p>' +
-      (ch ? '<a class="toch" href="chapters/' + ch.slug + '.html">第' + ch.n + '章　' + esc(ch.title) + ' へ</a>' : '');
+      (ch ? '<a class="toch" href="chapters/' + ch.slug + '.html">第' + ch.n + '章　' + esc(ch.title) + ' へ</a>' : '') +
+      '<a class="toch gmap" href="' + gmap(s) + '" target="_blank" rel="noopener">Google マップで開く</a>';
 
     map.flyTo([s.lat, s.lng], s.zoom, { duration: instant ? 0 : 1.4 });
     paint();

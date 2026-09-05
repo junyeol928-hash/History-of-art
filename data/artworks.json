@@ -2507,6 +2507,30 @@
   "wikiEn": "Olympia (Manet)",
   "license": "パブリックドメイン"
  },
+ "courbet-stonebreakers": {
+  "chapter": "16-realism",
+  "artist": "ギュスターヴ・クールベ",
+  "title": "石割り人夫",
+  "year": "1849年",
+  "collection": "油彩・カンヴァス 165 × 257 cm 旧ドレスデン国立絵画館（1945年に焼失）",
+  "commons": "Gustave Courbet - The Stonebreakers - WGA05457.jpg",
+  "wiki": "石割り人夫",
+  "wikiLang": "ja",
+  "wikiEn": "The Stone Breakers",
+  "license": "パブリックドメイン"
+ },
+ "bonheur-horse-fair": {
+  "chapter": "16-realism",
+  "artist": "ロサ・ボヌール",
+  "title": "馬市",
+  "year": "1852 — 1855年",
+  "collection": "油彩・カンヴァス 244.5 × 506.7 cm メトロポリタン美術館（ニューヨーク）",
+  "commons": "Rosa Bonheur - The Horse Fair - Google Art Project.jpg",
+  "wiki": "ロサ・ボヌール",
+  "wikiLang": "ja",
+  "wikiEn": "The Horse Fair",
+  "license": "パブリックドメイン"
+ },
  "monet-impression-sunrise": {
   "chapter": "17-impressionism",
   "artist": "クロード・モネ",
