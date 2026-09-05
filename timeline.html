@@ -20,7 +20,7 @@
   .tl-scroll { overflow-x: auto; overflow-y: hidden; border: 1px solid var(--rule);
                background: var(--bg-raise); -webkit-overflow-scrolling: touch; cursor: grab; }
   .tl-scroll.-drag { cursor: grabbing; }
-  .tl-inner { position: relative; height: 560px; }
+  .tl-inner { position: relative; }
 
   .tl-axis { position: absolute; left: 0; right: 0; top: 0; height: 34px; border-bottom: 1px solid var(--rule); }
   .tl-tick { position: absolute; top: 0; height: 100%; border-left: 1px solid var(--rule-soft); padding-left: .35rem;
@@ -85,14 +85,14 @@
   var SEGS = [
     [-40000, -10000,  260],
     [-10000,  -3000,  200],
-    [ -3000,   -500,  520],
-    [  -500,    500,  760],
-    [   500,   1000,  420],
-    [  1000,   1400,  620],
-    [  1400,   1600, 1180],
-    [  1600,   1800, 1180],
-    [  1800,   1900,  980],
-    [  1900,   2000, 1180]
+    [ -3000,   -500,  560],
+    [  -500,    500,  900],
+    [   500,   1000,  460],
+    [  1000,   1400,  860],
+    [  1400,   1600, 2200],
+    [  1600,   1800, 2200],
+    [  1800,   1900, 1700],
+    [  1900,   2000, 2400]
   ];
   var starts = [], acc = 0;
   SEGS.forEach(function (s) { starts.push(acc); acc += s[2]; });
@@ -106,14 +106,20 @@
     }
     return TOTAL - 120;
   }
+  /* 年に桁区切りを打つと「1,400年」になる。年は数量ではないので打たない。
+     ただし一万年より前だけは、桁が読めないので打つ */
   function label(y) {
-    if (y < 0) return '前' + Math.abs(y).toLocaleString();
+    var a = Math.abs(y);
+    var n = a >= 10000 ? a.toLocaleString() : String(a);
+    if (y < 0) return '前' + n;
     if (y === 0) return '紀元';
-    return y.toLocaleString() + '年';
+    return n + '年';
   }
   function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c];}); }
 
-  var TICKS = [-40000,-20000,-10000,-5000,-3000,-2000,-1000,-500,0,500,1000,1200,1400,1500,1600,1700,1800,1850,1900,1950,2000];
+  // 目盛りは、区間を広げたぶんだけ細かくしないと、どこを見ているか分からなくなる
+  var TICKS = [-40000,-20000,-10000,-5000,-3000,-2000,-1000,-500,0,250,500,750,1000,1200,
+               1400,1450,1500,1550,1600,1650,1700,1750,1800,1850,1900,1925,1950,1975,2000];
 
   var data = null, chapters = {}, filter = 'all';
 
@@ -147,9 +153,30 @@
 
   function draw() {
     var inner = document.getElementById('inner');
-    var LANE_H = 124, TOP = 44;
+    var TOP = 44, ROW_H = 30, HEAD = 30, PAD = 14, W = 205;
+
+    /* 先にどの段に置くかを決める。
+       段は帯ごとに必要なだけ使う。西洋は詰まっているので六段、
+       イスラームは二段で足りる。全部を同じ高さにすると、
+       西洋が重なるか、ほかの帯が間延びするかのどちらかになる。 */
+    var placed = data.lanes.map(function (lane) {
+      var evs = data.events.filter(function (e) { return e.lane === lane.id; })
+                           .sort(function (a, b) { return a.y - b.y; });
+      var rows = [];   // 段ごとの「いま埋まっている右端」
+      var list = evs.map(function (e) {
+        var px = x(e.y), r = 0;
+        while (rows[r] !== undefined && rows[r] > px - 6) r++;
+        rows[r] = px + W;
+        return { e: e, px: px, r: r };
+      });
+      return { lane: lane, list: list, rows: Math.max(1, rows.length) };
+    });
+
+    var tops = [], acc2 = TOP;
+    placed.forEach(function (g) { tops.push(acc2); acc2 += HEAD + g.rows * ROW_H + PAD; });
+
     inner.style.width = TOTAL + 'px';
-    inner.style.height = (TOP + LANE_H * data.lanes.length + 20) + 'px';
+    inner.style.height = (acc2 + 20) + 'px';
 
     var html = '<div class="tl-axis">';
     TICKS.forEach(function (t) {
@@ -160,26 +187,19 @@
       html += '<span class="tl-grid" style="left:' + x(t) + 'px"></span>';
     });
 
-    data.lanes.forEach(function (lane, li) {
-      html += '<div class="tl-lane era-' + lane.era + '" style="top:' + (TOP + li * LANE_H) + 'px;height:' + LANE_H + 'px">' +
-              '<span class="lbl">' + esc(lane.name) + '</span></div>';
+    placed.forEach(function (g, li) {
+      var h = HEAD + g.rows * ROW_H + PAD;
+      html += '<div class="tl-lane era-' + g.lane.era + '" style="top:' + tops[li] + 'px;height:' + h + 'px">' +
+              '<span class="lbl">' + esc(g.lane.name) + '</span></div>';
     });
 
-    // 同じ時期に固まった項目が重ならないよう、段をずらす
-    data.lanes.forEach(function (lane, li) {
-      var evs = data.events.filter(function (e) { return e.lane === lane.id; })
-                           .sort(function (a, b) { return a.y - b.y; });
-      var rows = [];  // 各段の「いま埋まっている右端」
-      evs.forEach(function (e) {
-        var px = x(e.y), W = 205, r = 0;
-        while (rows[r] !== undefined && rows[r] > px - 6) r++;
-        rows[r] = px + W;
-        if (r > 2) r = r % 3;      // 3段まで
-        var top = TOP + li * LANE_H + 30 + r * 30;
-        var c = chapters[e.ch];
-        var body = '<span class="yr">' + label(e.y) + '</span>' + esc(e.t);
-        html += '<div class="ev' + (e.key ? ' -key' : '') + '" data-lane="' + lane.id + '"' +
-                ' style="left:' + px + 'px;top:' + top + 'px">' +
+    placed.forEach(function (g, li) {
+      g.list.forEach(function (it) {
+        var top = tops[li] + HEAD + it.r * ROW_H;
+        var c = chapters[it.e.ch];
+        var body = '<span class="yr">' + label(it.e.y) + '</span>' + esc(it.e.t);
+        html += '<div class="ev' + (it.e.key ? ' -key' : '') + '" data-lane="' + g.lane.id + '"' +
+                ' style="left:' + it.px + 'px;top:' + top + 'px">' +
                 '<span class="dot"></span><span class="stem"></span>' +
                 (c ? '<a href="chapters/' + c.slug + '.html" title="第' + c.n + '章　' + esc(c.title) + '">' + body + '</a>'
                    : '<span class="plain">' + body + '</span>') +
