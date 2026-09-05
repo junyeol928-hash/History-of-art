@@ -9,12 +9,74 @@
 <link rel="stylesheet" href="assets/css/site.css">
 <link rel="stylesheet" href="assets/css/skins.css">
 <style>
-  /* トップページだけの組み */
-  .hero { padding-block: clamp(3.5rem, 13vw, 7rem) 2rem; text-align: center; position: relative; }
-  .hero .kicker { font-family: var(--sans); font-size: .68rem; letter-spacing: .32em; color: var(--ink-3); margin: 0 0 1.6rem; }
-  .hero h1 { font-size: clamp(2.2rem, 9vw, 3.6rem); line-height: 1.34; margin: 0; font-weight: 600; letter-spacing: .03em; }
-  .hero .sub { color: var(--ink-2); margin: 1.4rem auto 0; max-width: 32rem; font-size: .96rem; }
-  .hero .rule { width: 40px; height: 1px; background: var(--accent); margin: 2.4rem auto 0; }
+  /* ---- 扉 ── 美術史そのものを壁にして、その前に銘板を掛ける ---- */
+  .hero {
+    position: relative; isolation: isolate; overflow: hidden;
+    min-height: min(94vh, 860px);
+    display: grid; align-content: center; justify-items: center;
+    padding: clamp(3rem, 9vw, 6rem) 1.25rem;
+    margin-bottom: clamp(2rem, 6vw, 4rem);
+    background: var(--bg-sink);
+  }
+  .wall {
+    position: absolute; inset: 0; z-index: -2; margin: 0; padding: 0; list-style: none;
+    display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 1fr;
+  }
+  @media (min-width: 620px)  { .wall { grid-template-columns: repeat(4, 1fr); } }
+  @media (min-width: 1000px) { .wall { grid-template-columns: repeat(6, 1fr); } }
+  .wall li { overflow: hidden; position: relative; }
+  .wall li::after { content: ""; position: absolute; inset: 0; background: var(--accent); opacity: .09; mix-blend-mode: multiply; }
+  .wall img { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(.95); }
+  /* 壁の上に霞をかける。作品は見えていてほしいが、文字は必ず読めないといけない */
+  .hero::after {
+    content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+    background: radial-gradient(90% 70% at 50% 50%,
+      color-mix(in srgb, var(--bg) 60%, transparent) 0%,
+      color-mix(in srgb, var(--bg) 26%, transparent) 60%,
+      color-mix(in srgb, var(--bg) 10%, transparent) 100%);
+  }
+  .hero-plate {
+    position: relative; text-align: center; max-width: 40rem; width: 100%;
+    padding: clamp(1.8rem, 5vw, 3rem) clamp(1.2rem, 4vw, 2.4rem);
+    background: color-mix(in srgb, var(--bg-raise) 88%, transparent);
+    border: 1px solid var(--rule);
+    backdrop-filter: blur(6px) saturate(120%);
+    -webkit-backdrop-filter: blur(6px) saturate(120%);
+    box-shadow: var(--shadow-m);
+  }
+  .hero .kicker { font-family: var(--sans); font-size: .68rem; letter-spacing: .32em; color: var(--ink-3); margin: 0 0 1.4rem; }
+  .hero h1 {
+    font-family: var(--display-era, var(--serif));
+    font-size: clamp(2.4rem, 11vw, 4.2rem); line-height: 1.26; margin: 0;
+    font-weight: 600; letter-spacing: .04em;
+  }
+  .hero .sub { color: var(--ink-2); margin: 1.3rem auto 0; max-width: 30rem; font-size: .95rem; line-height: 1.9; }
+  .hero-go { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center; margin: 2rem 0 0; }
+  .go {
+    font-family: var(--sans); font-size: .8rem; font-weight: 700; letter-spacing: .06em;
+    text-decoration: none; color: var(--ink-2);
+    border: 1px solid var(--rule); padding: .7rem 1.15rem; min-height: 44px;
+    display: inline-flex; align-items: center;
+  }
+  .go:hover { border-color: var(--accent-line); color: var(--accent-ink); background: var(--accent-soft); }
+  .go.-main { background: var(--accent); border-color: var(--accent); color: var(--mat); }
+  .go.-main:hover { background: var(--accent-ink); border-color: var(--accent-ink); color: var(--mat); }
+  .hero-num { font-family: var(--sans); font-size: .72rem; color: var(--ink-3); margin: 1.6rem 0 0; letter-spacing: .06em; }
+  .hero-num b { font-family: var(--mono); font-size: .96rem; color: var(--accent-ink); font-weight: 400; }
+
+  /* ---- 顔料の帯 ---- */
+  .pigments { margin: 0 auto clamp(2.5rem, 7vw, 4rem); }
+  .pigments h2 { font-size: 1.05rem; font-weight: 600; margin: 0 0 .5rem; line-height: 1.7; }
+  .pig-note { font-family: var(--sans); font-size: .78rem; color: var(--ink-3); margin: 0 0 1.2rem; }
+  .pig-row { list-style: none; margin: 0; padding: 0; display: grid; gap: .4rem;
+             grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); }
+  .pig-row a { display: flex; align-items: center; gap: .6rem; text-decoration: none; color: inherit;
+               border: 1px solid var(--rule-soft); padding: .5rem .6rem; }
+  .pig-row a:hover { border-color: var(--accent-line); background: var(--accent-soft); }
+  .pig-row i { width: 22px; height: 22px; flex: none; border: 1px solid rgba(0,0,0,.12); }
+  .pig-row .t { min-width: 0; }
+  .pig-row b { display: block; font-family: var(--sans); font-size: .74rem; letter-spacing: 0; font-weight: 700; line-height: 1.4; }
+  .pig-row span { display: block; font-family: var(--sans); font-size: .66rem; color: var(--ink-3); }
   .intro { font-size: .97rem; color: var(--ink-2); }
   .intro p { margin: 1.1em 0; }
   .intro strong { color: var(--ink); font-weight: 600; }
@@ -63,18 +125,44 @@
 
 <main>
 
-  <section class="hero wrap">
-    <p class="kicker">展覧会が、もっと面白くなる</p>
-    <h1>世界美術史</h1>
-    <p class="sub">洞窟の壁に手を押しつけた誰かから、いまの美術館まで。<br>覚えるためではなく、次の展覧会のために読む美術史。</p>
-    <div class="rule"></div>
+  <section class="hero">
+    <ul class="wall" aria-hidden="true">
+      <li class="era-prehistory"><img src="assets/artworks/thumb/lascaux-hall-of-bulls.jpg" alt="ラスコー洞窟" loading="eager" decoding="async"></li>
+      <li class="era-ancient"><img src="assets/artworks/thumb/nebamun-fowling.jpg" alt="ネバムンの墓の壁画" loading="eager" decoding="async"></li>
+      <li class="era-classical"><img src="assets/artworks/thumb/parthenon.jpg" alt="パルテノン神殿" loading="eager" decoding="async"></li>
+      <li class="era-medieval"><img src="assets/artworks/thumb/chartres-rose-north.jpg" alt="シャルトルのバラ窓" loading="eager" decoding="async"></li>
+      <li class="era-renaissance"><img src="assets/artworks/thumb/botticelli-birth-of-venus.jpg" alt="ヴィーナスの誕生" loading="eager" decoding="async"></li>
+      <li class="era-baroque"><img src="assets/artworks/thumb/rembrandt-night-watch.jpg" alt="夜警" loading="eager" decoding="async"></li>
+      <li class="era-japan"><img src="assets/artworks/thumb/hokusai-great-wave.jpg" alt="神奈川沖浪裏" loading="eager" decoding="async"></li>
+      <li class="era-impression"><img src="assets/artworks/thumb/monet-impression-sunrise.jpg" alt="印象、日の出" loading="eager" decoding="async"></li>
+      <li class="era-china"><img src="assets/artworks/thumb/sesshu-shuto-sansui.jpg" alt="秋冬山水図" loading="eager" decoding="async"></li>
+      <li class="era-islam"><img src="assets/artworks/thumb/alhambra-lions-court.jpg" alt="アルハンブラ宮殿" loading="eager" decoding="async"></li>
+      <li class="era-japan"><img src="assets/artworks/thumb/shakoki-dogu.jpg" alt="遮光器土偶" loading="eager" decoding="async"></li>
+      <li class="era-impression"><img src="assets/artworks/thumb/van-gogh-starry-night.jpg" alt="星月夜" loading="eager" decoding="async"></li>
+    </ul>
+    <div class="hero-plate">
+      <p class="kicker">展覧会が、もっと面白くなる</p>
+      <h1>世界美術史</h1>
+      <p class="sub">洞窟の壁に手を押しつけた誰かから、いまの美術館まで。<br>覚えるためではなく、次の展覧会のために読む美術史。</p>
+      <p class="hero-go">
+        <a class="go -main" href="chapters/01-cave.html">第1章から読む</a>
+        <a class="go" href="#toc">目次を見る</a>
+        <a class="go" id="pick" href="chapters/01-cave.html">どれか一章ひらく</a>
+      </p>
+      <p class="hero-num"><b>38</b>章　<b>438</b>点の作品　<b>276</b>語の用語　<b>58</b>館の案内</p>
+    </div>
+  </section>
+
+  <section class="wrap pigments">
+    <h2>各部の色は、その時代に実際に使われた顔料から取りました</h2>
+    <p class="pig-note">何色を使えたかということ自体が、美術史です。押すと、その色の章へ。</p>
+    <ul class="pig-row" id="pigrow"></ul>
   </section>
 
   <section class="wrap intro">
     <p>美術館は、たぶん世界でいちばん不親切な場所です。壁に絵が掛かっていて、横に小さな札があって、それだけ。<strong>その絵がなぜそう描かれたのかは、どこにも書いていない。</strong></p>
     <p>けれど、たったひとつ知っているだけで見え方が変わることがあります。印象派の絵の影に茶色が使われていない理由。エジプトの人物がなぜ三千年間おなじ角度を向いているのか。金地の背景が空ではないこと。仏像の手の形に意味があること。<strong>知識は、絵を「読める」ようにするのではなく、絵が「見える」ようにします。</strong></p>
     <p>このサイトは、そのための読み物です。試験はありません。1章はだいたい10分から15分。各章の終わりには必ず<strong>「この章の作品を見に行く」</strong>を置きました。日本のどこで見られるかを先に、それから本場を。展覧会に行く前の晩に読んで、帰ってからもう一度読む。そういう使い方を想定しています。</p>
-    <p>各部の色は、その時代に実際に使われていた<strong>顔料</strong>から取りました。先史は地面を掘れば出てくる赭土、古代は世界最初の人工顔料エジプシャンブルー、中世は金より高価だったラピスラズリ、印象派は当時ようやく手に入るようになったコバルトヴァイオレット。<strong>何色を使えたかということ自体が、美術史です。</strong></p>
     <p>西洋を主役に据えきることもしません。ある時代の美術の中心は長安であり、バグダードであり、京都でした。そのときいちばん面白かった場所を、そのつど主役にします。</p>
   </section>
 
@@ -108,7 +196,38 @@
   };
   function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c];}); }
 
+  var ERA_COLOR = {
+    prehistory:'#9c4a2f', ancient:'#1b6ca8', classical:'#a8392b', medieval:'#2f4a9b',
+    renaissance:'#4a7c59', baroque:'#7a4318', rococo:'#b8567f', '19c':'#1f4e79',
+    impression:'#6a5fa8', modern:'#c8352a', contemp:'#0f9d8f', japan:'#8c2f39',
+    china:'#3a4a52', islam:'#1a8f92', world:'#a8781f'
+  };
+  var ERA_LABEL = {
+    prehistory:'先史', ancient:'古代オリエント', classical:'ギリシア・ローマ', medieval:'中世',
+    renaissance:'ルネサンス', baroque:'バロック', rococo:'ロココ', '19c':'19世紀',
+    impression:'印象派', modern:'20世紀', contemp:'現代', japan:'日本',
+    china:'中国・東アジア', islam:'イスラーム', world:'その他の世界'
+  };
+
   fetch('data/chapters.json').then(function(r){return r.json();}).then(function(d){
+    /* 顔料の帯 ── その色を最初に使う章へ飛ばす */
+    var first = {};
+    d.chapters.forEach(function (c) { if (!first[c.era]) first[c.era] = c.slug; });
+    document.getElementById('pigrow').innerHTML =
+      Object.keys(ERA_NAME).filter(function (e) { return first[e]; }).map(function (e) {
+        return '<li><a href="chapters/' + first[e] + '.html">' +
+          '<i style="background:' + ERA_COLOR[e] + '"></i>' +
+          '<span class="t"><b>' + esc(ERA_NAME[e]) + '</b><span>' + esc(ERA_LABEL[e]) + '</span></span></a></li>';
+      }).join('');
+
+    /* どれか一章ひらく ── 読む順番を決められないときのために */
+    var pick = document.getElementById('pick');
+    if (pick) pick.addEventListener('click', function (ev) {
+      ev.preventDefault();
+      var c = d.chapters[Math.floor(Math.random() * d.chapters.length)];
+      location.href = 'chapters/' + c.slug + '.html';
+    });
+
     var host = document.getElementById('toc');
     var byPart = {};
     d.chapters.forEach(function(c){ (byPart[c.part] = byPart[c.part] || []).push(c); });

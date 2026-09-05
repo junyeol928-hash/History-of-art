@@ -710,3 +710,50 @@ body[data-chapter="37-africa"] { --orn: url("data:image/svg+xml,%3Csvg xmlns='ht
 
 /* 38-pacific ── タパ布の、繰り返す文様 */
 body[data-chapter="38-pacific"] { --orn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='16' viewBox='0 0 26 16' fill='black'%3E%3Cpath d='M13 1l5 7-5 7-5-7z' fill='none' stroke='black' stroke-width='1.6'/%3E%3Crect x='0' y='7' width='6' height='2'/%3E%3Crect x='20' y='7' width='6' height='2'/%3E%3C/svg%3E"); --orn-w: 100%; --orn-h: 16px; --orn-color: #8a5a3c; }
+
+
+/* ---- 章ごとの紙の肌 ---- */
+body[data-chapter="01-cave"] { --paper: radial-gradient(circle at 18% 26%, rgba(118,84,56,.20) 0 3px, transparent 5px), radial-gradient(circle at 72% 58%, rgba(118,84,56,.16) 0 5px, transparent 7px), radial-gradient(circle at 41% 81%, rgba(118,84,56,.14) 0 3px, transparent 5px), radial-gradient(circle at 88% 18%, rgba(118,84,56,.12) 0 4px, transparent 6px); }
+body[data-chapter="02-nile"] { --paper: repeating-linear-gradient(0deg, rgba(148,120,60,.16) 0 2px, transparent 2px 30px), repeating-linear-gradient(0deg, rgba(148,120,60,.07) 0 1px, transparent 1px 6px); }
+body[data-chapter="03-greece"] { --paper: repeating-linear-gradient(90deg, rgba(118,112,96,.13) 0 1px, transparent 1px 26px); }
+body[data-chapter="04-rome"] { --paper: radial-gradient(circle at 12% 34%, rgba(90,82,70,.13) 0 3px, transparent 4px), radial-gradient(circle at 63% 12%, rgba(90,82,70,.10) 0 2px, transparent 3px), radial-gradient(circle at 84% 72%, rgba(90,82,70,.12) 0 4px, transparent 5px), radial-gradient(circle at 33% 66%, rgba(90,82,70,.09) 0 2px, transparent 3px); }
+body[data-chapter="05-byzantine"] { --paper: repeating-linear-gradient(0deg, rgba(180,146,70,.14) 0 1px, transparent 1px 16px), repeating-linear-gradient(90deg, rgba(180,146,70,.14) 0 1px, transparent 1px 16px); }
+body[data-chapter="06-romanesque"] { --paper: repeating-linear-gradient(0deg, rgba(150,124,70,.14) 0 3px, transparent 3px 46px), repeating-linear-gradient(90deg, rgba(150,124,70,.08) 0 2px, transparent 2px 92px); }
+body[data-chapter="07-gothic"] { --paper: repeating-linear-gradient(45deg, rgba(47,74,155,.12) 0 1.5px, transparent 1.5px 22px), repeating-linear-gradient(-45deg, rgba(47,74,155,.12) 0 1.5px, transparent 1.5px 22px); }
+body[data-chapter="08-quattrocento"] { --paper: repeating-linear-gradient(60deg, rgba(112,124,96,.10) 0 1px, transparent 1px 30px), repeating-linear-gradient(-60deg, rgba(112,124,96,.10) 0 1px, transparent 1px 30px); }
+body[data-chapter="09-cinquecento"] { --paper: radial-gradient(70% 50% at 50% 30%, rgba(112,124,96,.14), transparent 75%); }
+body[data-chapter="10-north"] { --paper: repeating-linear-gradient(0deg, rgba(112,124,96,.09) 0 1px, transparent 1px 4px), repeating-linear-gradient(90deg, rgba(112,124,96,.09) 0 1px, transparent 1px 4px); }
+body[data-chapter="11-venice"] { --paper: repeating-linear-gradient(0deg, rgba(70,110,120,.10) 0 1px, transparent 1px 9px); }
+body[data-chapter="12-baroque"] { --paper: radial-gradient(110% 75% at 24% 0%, rgba(255,228,170,.20) 0%, transparent 45%), radial-gradient(130% 90% at 50% 55%, transparent 30%, rgba(52,34,14,.34) 100%); }
+body[data-chapter="13-dutch"] { --paper: linear-gradient(112deg, rgba(255,236,190,.18) 0 22%, transparent 46%), repeating-linear-gradient(0deg, rgba(90,70,44,.09) 0 1px, transparent 1px 34px), repeating-linear-gradient(90deg, rgba(90,70,44,.09) 0 1px, transparent 1px 34px); }
+body[data-chapter="14-rococo"] { --paper: repeating-linear-gradient(45deg, rgba(184,86,127,.10) 0 1px, transparent 1px 14px), repeating-linear-gradient(-45deg, rgba(184,86,127,.10) 0 1px, transparent 1px 14px); }
+body[data-chapter="15-revolution"] { --paper: repeating-linear-gradient(90deg, rgba(31,78,121,.11) 0 3px, transparent 3px 54px); }
+body[data-chapter="16-realism"] { --paper: repeating-linear-gradient(0deg, rgba(70,76,84,.09) 0 1px, transparent 1px 3px), repeating-linear-gradient(90deg, rgba(70,76,84,.09) 0 1px, transparent 1px 3px); }
+body[data-chapter="17-impressionism"] { --paper: radial-gradient(55% 38% at 16% 10%, rgba(106,95,168,.22), transparent 70%), radial-gradient(48% 36% at 84% 34%, rgba(226,176,120,.22), transparent 70%), radial-gradient(56% 40% at 34% 82%, rgba(110,168,190,.20), transparent 70%); }
+body[data-chapter="18-post"] { --paper: radial-gradient(circle at 6px 6px, rgba(106,95,168,.16) 0 2.4px, transparent 3px); }
+body[data-chapter="19-fin-de-siecle"] { --paper: repeating-linear-gradient(74deg, rgba(106,95,168,.10) 0 2px, transparent 2px 26px), radial-gradient(60% 40% at 80% 12%, rgba(201,162,74,.16), transparent 70%); }
+body[data-chapter="20-fauve-cubism"] { --paper: repeating-linear-gradient(28deg, rgba(200,53,42,.08) 0 2px, transparent 2px 40px), repeating-linear-gradient(-52deg, rgba(31,78,121,.07) 0 2px, transparent 2px 52px); }
+body[data-chapter="21-dada-surreal"] { --paper: repeating-linear-gradient(3deg, rgba(22,23,26,.06) 0 2px, transparent 2px 38px), repeating-linear-gradient(-6deg, rgba(200,53,42,.05) 0 2px, transparent 2px 62px); }
+body[data-chapter="22-abstraction"] { --paper: repeating-linear-gradient(0deg, rgba(22,23,26,.09) 0 2px, transparent 2px 60px), repeating-linear-gradient(90deg, rgba(22,23,26,.09) 0 2px, transparent 2px 60px); }
+body[data-chapter="23-newyork"] { --paper: linear-gradient(160deg, rgba(22,23,26,.05) 0 40%, transparent 70%); }
+body[data-chapter="24-pop-minimal"] { --paper: radial-gradient(circle at 7px 7px, rgba(15,157,143,.16) 0 3px, transparent 4px); }
+body[data-chapter="25-contemporary"] { --paper: none; }
+body[data-chapter="26-jomon"] { --paper: repeating-linear-gradient(58deg, rgba(140,47,57,.10) 0 2px, transparent 2px 11px), repeating-linear-gradient(-58deg, rgba(140,47,57,.07) 0 2px, transparent 2px 11px); }
+body[data-chapter="27-buddhist"] { --paper: radial-gradient(60% 44% at 50% 22%, rgba(180,146,70,.16), transparent 72%); }
+body[data-chapter="28-emaki"] { --paper: repeating-linear-gradient(0deg, rgba(140,120,84,.10) 0 1px, transparent 1px 40px); }
+body[data-chapter="29-suiboku"] { --paper: radial-gradient(38% 26% at 22% 30%, rgba(40,40,40,.13), transparent 72%), radial-gradient(30% 22% at 74% 62%, rgba(40,40,40,.10), transparent 72%), radial-gradient(26% 18% at 48% 86%, rgba(40,40,40,.08), transparent 72%); }
+body[data-chapter="30-momoyama"] { --paper: repeating-linear-gradient(0deg, rgba(184,145,47,.18) 0 1px, transparent 1px 42px), repeating-linear-gradient(90deg, rgba(184,145,47,.18) 0 1px, transparent 1px 42px); }
+body[data-chapter="31-ukiyoe"] { --paper: repeating-linear-gradient(92deg, rgba(120,96,64,.09) 0 1px, transparent 1px 7px), repeating-linear-gradient(88deg, rgba(120,96,64,.06) 0 2px, transparent 2px 23px); }
+body[data-chapter="32-china-early"] { --paper: radial-gradient(circle at 22% 38%, rgba(72,110,96,.13) 0 6px, transparent 9px), radial-gradient(circle at 68% 18%, rgba(72,110,96,.10) 0 8px, transparent 11px), radial-gradient(circle at 84% 74%, rgba(72,110,96,.11) 0 5px, transparent 8px); }
+body[data-chapter="33-china-shanshui"] { --paper: linear-gradient(180deg, rgba(120,126,130,.14) 0 8%, transparent 26%), linear-gradient(180deg, transparent 44%, rgba(120,126,130,.10) 56%, transparent 70%); }
+body[data-chapter="34-korea"] { --paper: repeating-linear-gradient(37deg, rgba(74,124,106,.09) 0 1px, transparent 1px 19px), repeating-linear-gradient(-63deg, rgba(74,124,106,.09) 0 1px, transparent 1px 23px); }
+body[data-chapter="35-islam"] { --paper: repeating-linear-gradient(45deg, rgba(26,143,146,.13) 0 1.5px, transparent 1.5px 20px), repeating-linear-gradient(-45deg, rgba(26,143,146,.13) 0 1.5px, transparent 1.5px 20px), repeating-linear-gradient(0deg, rgba(26,143,146,.07) 0 1px, transparent 1px 20px), repeating-linear-gradient(90deg, rgba(26,143,146,.07) 0 1px, transparent 1px 20px); }
+body[data-chapter="36-miniature"] { --paper: repeating-linear-gradient(0deg, rgba(184,145,47,.11) 0 1px, transparent 1px 28px), repeating-linear-gradient(90deg, rgba(184,145,47,.11) 0 1px, transparent 1px 28px); }
+body[data-chapter="37-africa"] { --paper: repeating-linear-gradient(60deg, rgba(168,120,31,.12) 0 3px, transparent 3px 16px), repeating-linear-gradient(-60deg, rgba(168,120,31,.12) 0 3px, transparent 3px 16px); }
+body[data-chapter="38-pacific"] { --paper: repeating-linear-gradient(0deg, rgba(138,90,60,.11) 0 2px, transparent 2px 24px), repeating-linear-gradient(72deg, rgba(138,90,60,.09) 0 2px, transparent 2px 28px); }
+
+/* 夜は紙の肌を消す。暗い地に模様を重ねると、文字が読みにくくなる */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) body[data-chapter] { --paper: none; }
+}
+:root[data-theme="dark"] body[data-chapter] { --paper: none; }

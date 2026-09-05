@@ -195,25 +195,41 @@ a:hover { text-decoration-thickness: 2px; }
 /* ---------- ヘッダー ---------- */
 .topbar {
   position: sticky; top: 0; z-index: 50;
-  display: flex; align-items: center; gap: .75rem;
-  padding: .5rem 1rem;
+  /* 折り返さない。章題が長いときは、章題のほうを詰める */
+  display: flex; align-items: center; gap: .6rem; flex-wrap: nowrap;
+  padding: .5rem 1rem; min-height: 52px;
   background: color-mix(in srgb, var(--bg) 88%, transparent);
   backdrop-filter: saturate(150%) blur(10px);
   -webkit-backdrop-filter: saturate(150%) blur(10px);
   border-bottom: 1px solid var(--rule-soft);
   font-family: var(--sans); font-size: .8rem; letter-spacing: .04em;
 }
-.topbar a.home { color: var(--ink-2); text-decoration: none; display: inline-flex; align-items: center; gap: .4rem; }
+.topbar a.home {
+  color: var(--ink-2); text-decoration: none; display: inline-flex; align-items: center; gap: .4rem;
+  white-space: nowrap; flex: none;
+}
 .topbar a.home:hover { color: var(--accent-ink); }
-.topbar .spacer { flex: 1; }
-.topbar .where { color: var(--ink-3); font-size: .74rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.topbar nav { display: flex; gap: .1rem; }
+.topbar .spacer { flex: 1 1 auto; min-width: .25rem; }
+/* 章題は、入りきらなければ「…」で切る。
+   min-width:0 を書かないと、この要素が縮まず、まわりが折り返して崩れる */
+.topbar .where {
+  color: var(--ink-3); font-size: .74rem; white-space: nowrap;
+  overflow: hidden; text-overflow: ellipsis;
+  flex: 0 1 auto; min-width: 0; text-align: right;
+}
+.topbar nav { display: flex; gap: .1rem; flex: none; }
 .topbar nav a {
   color: var(--ink-2); text-decoration: none; font-size: .74rem;
-  padding: .4rem .55rem; border-radius: 2px;
+  padding: .4rem .55rem; border-radius: 2px; white-space: nowrap;
 }
 .topbar nav a:hover { color: var(--accent-ink); background: var(--accent-soft); }
 @media (max-width: 620px) { .topbar nav a.opt { display: none; } }
+/* 狭い画面では、目次ボタンがあるので並びのリンクは畳む。
+   章題だけを残したほうが、いまどこを読んでいるかが分かる */
+@media (max-width: 520px) {
+  .topbar nav { display: none; }
+  .topbar { gap: .5rem; padding-inline: .8rem; }
+}
 
 .icon-btn {
   appearance: none; border: 1px solid var(--rule); background: transparent;
