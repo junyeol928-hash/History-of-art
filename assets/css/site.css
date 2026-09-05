@@ -531,3 +531,125 @@ figure.plate .credit {
 .foot { border-top: 1px solid var(--rule); margin-top: 2rem; padding-block: 2.2rem 3.5rem;
         font-family: var(--sans); font-size: .75rem; color: var(--ink-3); line-height: 1.9; }
 .foot a { color: var(--ink-2); }
+
+/* =========================================================================
+   時代スキン ─ 詳しくは docs/design/SKIN_RULES.md
+   原則: 装飾は本文の領域に入らない。それ以外の場所では思い切りやる。
+   ========================================================================= */
+
+/* ---------- 章扉（門）──────────────────────────────
+   ページを開いた瞬間、その時代しか見えない面。
+   読者はここに留まらず通り抜けるので、思い切り振ってよい。 */
+.portal {
+  position: relative;
+  min-height: min(78vh, 620px);
+  display: grid;
+  align-content: center;
+  padding-block: clamp(3rem, 9vw, 6rem);
+  margin-bottom: clamp(2rem, 5vw, 3.5rem);
+  overflow: hidden;
+  background: var(--portal-bg, var(--bg-sink));
+  color: var(--portal-ink, var(--ink));
+  isolation: isolate;
+}
+/* 門の地に敷く絵。章側で <svg class="portal-art"> を置く */
+.portal-art {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; z-index: -1; pointer-events: none;
+}
+.portal .inner { position: relative; max-width: var(--measure); margin-inline: auto; padding-inline: 1.25rem; }
+.portal .chno {
+  font-family: var(--sans); font-size: .72rem; letter-spacing: .3em;
+  color: var(--portal-accent, var(--accent)); margin: 0 0 1rem;
+}
+.portal h1 {
+  font-family: var(--display-era, var(--serif));
+  font-size: clamp(2rem, 8vw, 3.4rem); line-height: 1.38;
+  margin: 0; font-weight: 600; letter-spacing: .02em;
+}
+.portal .sub {
+  font-family: var(--sans); font-size: .85rem; letter-spacing: .1em;
+  color: var(--portal-sub, var(--ink-3)); margin: 1rem 0 0;
+}
+.portal .lede {
+  margin: 1.8rem 0 0; font-size: 1.02rem; line-height: 1.95;
+  color: var(--portal-ink, var(--ink-2)); max-width: 34rem;
+  padding-top: 1.3rem; border-top: 1px solid var(--portal-rule, var(--rule));
+}
+.portal .meta {
+  display: flex; flex-wrap: wrap; gap: .4rem 1.1rem; margin: 1.5rem 0 0;
+  font-family: var(--sans); font-size: .73rem; color: var(--portal-sub, var(--ink-3));
+}
+.portal .meta b { font-weight: 600; }
+/* 門の中の特大年号 */
+.portal .bignum {
+  position: absolute; right: -.05em; top: 50%; transform: translateY(-50%);
+  font-family: var(--display-era, var(--display)); font-weight: 300;
+  font-size: clamp(6rem, 22vw, 13rem); line-height: .8;
+  color: var(--portal-accent, var(--accent)); opacity: var(--bignum-alpha, .14);
+  pointer-events: none; user-select: none; z-index: -1;
+}
+
+/* ---------- この時代の見分け方 ──────────────────────
+   装飾ではなく本文の一部。美術館の前で実際に使えるように。 */
+.spot { margin: 2.8rem 0; }
+.spot > .band-label { margin-bottom: 1rem; }
+.spot-grid { display: grid; gap: 1rem; }
+@media (min-width: 720px) { .spot-grid { grid-template-columns: repeat(3, 1fr); } }
+.spot-card {
+  border: 1px solid var(--rule); background: var(--bg-raise);
+  padding: 1rem 1rem 1.1rem; display: flex; flex-direction: column; gap: .7rem;
+}
+.spot-card .fig {
+  background: var(--mat); border: 1px solid var(--rule-soft);
+  display: grid; place-items: center; padding: .6rem; min-height: 120px;
+}
+.spot-card .fig svg { width: 100%; height: auto; display: block; }
+.spot-card h4 {
+  font-family: var(--sans); font-size: .95rem; font-weight: 700;
+  margin: 0; color: var(--accent-ink);
+}
+.spot-card h4 .yomi { display: block; font-size: .66rem; font-weight: 400; color: var(--ink-3); letter-spacing: .06em; margin-top: .1rem; }
+.spot-card p { margin: 0; font-size: .86rem; line-height: 1.85; color: var(--ink-2); }
+.spot-card .where {
+  font-family: var(--sans); font-size: .72rem; color: var(--ink-3);
+  margin-top: auto; padding-top: .5rem; border-top: 1px solid var(--rule-soft);
+}
+
+/* ---------- この時代の顔 ────────────────────────────
+   章末の名作ギャラリー。作品そのものを味わうための場所。 */
+.faces { margin: 3rem 0; }
+.faces > .band-label { margin-bottom: 1rem; }
+.faces-grid { display: grid; gap: 1.2rem; }
+@media (min-width: 640px) { .faces-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1000px) { .faces-grid { grid-template-columns: repeat(3, 1fr); } }
+.face { margin: 0; }
+.face .mount {
+  background: var(--mat); border: 1px solid var(--frame); padding: .5rem;
+  line-height: 0; box-shadow: var(--shadow-s), var(--plate-glow); position: relative;
+}
+.face .mount.-loading::after {
+  content: ""; position: absolute; inset: 0; opacity: .5;
+  background: repeating-linear-gradient(-45deg, var(--bg-sink) 0 8px, var(--bg-raise) 8px 16px);
+}
+.face img { width: 100%; height: auto; display: block; cursor: zoom-in; aspect-ratio: auto; }
+.face svg.fallback { width: 100%; height: auto; display: block; }
+.face figcaption { margin-top: .6rem; line-height: 1.7; }
+.face .artist { display: block; font-family: var(--sans); font-size: .72rem; color: var(--ink-3); }
+.face .title { display: block; font-size: .92rem; font-weight: 600; margin-top: .05rem; }
+.face .title .year { font-family: var(--mono); font-weight: 400; font-size: .74rem; color: var(--ink-3); margin-left: .4em; }
+/* 一行の引っかかり ─ 様式の説明ではなく、その一点にしか言えない事実 */
+.face .hook {
+  display: block; font-family: var(--sans); font-size: .82rem; line-height: 1.8;
+  color: var(--ink-2); margin-top: .45rem; padding-left: .7rem;
+  border-left: 2px solid var(--accent-line);
+}
+.face .where { display: block; font-family: var(--sans); font-size: .68rem; color: var(--ink-3); margin-top: .4rem; }
+.face .credit { display: block; font-family: var(--mono); font-size: .58rem; color: var(--ink-3); opacity: .7; margin-top: .3rem; }
+
+/* ---------- 全幅の帯（章に1〜2回まで） ---------- */
+.era-band {
+  width: 100vw; margin-inline: calc(50% - 50vw); margin-block: 3rem;
+  overflow: hidden; line-height: 0;
+}
+.era-band svg { width: 100%; height: auto; display: block; }
