@@ -297,6 +297,11 @@ a:hover { text-decoration-thickness: 2px; }
   float: left; font-family: var(--display); font-size: 3.1em; line-height: .84;
   padding: .1em .12em 0 0; color: var(--accent); font-weight: 400;
 }
+/* 年号で始まる章では、飾り文字が「1874年」を「1」と「874年」に割る */
+.prose p.lead.nocap::first-letter {
+  float: none; font-family: inherit; font-size: inherit; line-height: inherit;
+  padding: 0; color: inherit; font-weight: inherit;
+}
 
 .pull {
   margin: 2.8rem 0; padding: 1.5rem 0;

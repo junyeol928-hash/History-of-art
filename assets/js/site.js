@@ -179,8 +179,19 @@
     });
   }
 
+  /* 章の書き出しが年号で始まると、飾り文字が数字を割ってしまう。
+     「1874年」が「1」と「874年」に見える。
+     数字の頭には飾り文字を置かない。 */
+  function dropCap() {
+    var p = document.querySelector('.prose p.lead');
+    if (!p) return;
+    var t = (p.textContent || '').replace(/^[\s「『（(]+/, '');
+    if (/^[0-9０-９]/.test(t)) p.classList.add('nocap');
+  }
+
   function boot() {
     buildTopbar();
+    dropCap();
     progress();
     wireGlossary();
     chapterNav();

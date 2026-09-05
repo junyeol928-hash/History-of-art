@@ -49,16 +49,16 @@
     "license": "パブリックドメイン"
   },
   "monet-rouen-cathedral": {
-    "artist": "クロード・モネ", "title": "ルーアン大聖堂、西正面、日の光", "year": "1894年",
-    "collection": "ナショナル・ギャラリー・オブ・アート（ワシントン）",
+    "artist": "クロード・モネ", "title": "ルーアン大聖堂（連作より）", "year": "1892 — 1894年",
+    "collection": "連作は各地に分蔵（オルセー、マルモッタン、ワシントンほか）",
     "commons": "Claude Monet - Rouen Cathedral, West Facade, Sunlight - Google Art Project.jpg",
     "wiki": "ルーアン大聖堂 (モネの連作)", "wikiLang": "ja", "wikiEn": "Rouen Cathedral (Monet series)",
     "license": "パブリックドメイン"
   },
   "monet-haystacks": {
-    "artist": "クロード・モネ", "title": "積みわら（真昼）", "year": "1890 — 1891年",
-    "collection": "オーストラリア国立美術館（キャンベラ）",
-    "commons": "Claude Monet - Meules, milieu du jour - Google Art Project.jpg",
+    "artist": "クロード・モネ", "title": "積みわら（夏の終わり）", "year": "1890 — 1891年",
+    "collection": "シカゴ美術館ほか（連作は各地に分蔵）",
+    "commons": "Claude Monet - Wheatstacks (End of Summer) - Google Art Project.jpg",
     "wiki": "積みわら (モネ)", "wikiLang": "ja", "wikiEn": "Haystacks (Monet series)",
     "license": "パブリックドメイン"
   },
@@ -72,8 +72,8 @@
   "degas-letoile": {
     "artist": "エドガー・ドガ", "title": "エトワール（舞台の踊り子）", "year": "1876 — 1877年ごろ",
     "collection": "オルセー美術館（パリ）",
-    "commons": "Edgar Degas - L'Étoile - Google Art Project.jpg",
-    "wiki": "エトワール (ドガ)", "wikiLang": "ja", "wikiEn": "L'Étoile",
+    "commons": "Edgar Degas - L'Etoile danseuse.jpg",
+    "wiki": "エドガー・ドガ", "wikiLang": "ja", "wikiEn": "L'Étoile (Degas)",
     "license": "パブリックドメイン"
   },
   "degas-little-dancer": {
@@ -93,7 +93,7 @@
   "cassatt-in-the-loge": {
     "artist": "メアリー・カサット", "title": "桟敷席にて", "year": "1878年",
     "collection": "ボストン美術館",
-    "commons": "Mary Cassatt - In the Loge - Google Art Project.jpg",
+    "commons": "Mary Cassatt - In the Loge.jpg",
     "wiki": "メアリー・カサット", "wikiLang": "ja", "wikiEn": "In the Loge",
     "license": "パブリックドメイン"
   },

@@ -11,7 +11,16 @@ const idx = existsSync('.fontcache/index.json')
 console.log(`フォントキャッシュ: ${Object.keys(idx).length} 件`);
 
 const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
-for (const [w, h, tag, scheme] of [[1000, 900, 'pc', 'light']]) {
+const COMBOS = (process.env.COMBOS || 'pc-light')
+  .split(',')
+  .map((t) => ({
+    'pc-light':  [1000, 900, 'pc',  'light'],
+    'pc-dark':   [1000, 900, 'pc',  'dark'],
+    'sp-light':  [ 390, 844, 'sp',  'light'],
+    'sp-dark':   [ 390, 844, 'sp',  'dark'],
+  }[t.trim()]))
+  .filter(Boolean);
+for (const [w, h, tag, scheme] of COMBOS) {
   const ctx = await b.newContext({ viewport: { width: w, height: h }, locale: 'ja-JP', colorScheme: scheme });
   await ctx.route('**/*', (route) => {
     const u = route.request().url();
@@ -49,9 +58,10 @@ for (const [w, h, tag, scheme] of [[1000, 900, 'pc', 'light']]) {
         loaded: document.fonts ? document.fonts.size : -1,
       };
     });
-    const name = p.replace(/[/.]/g, '_');
+    const name = tag + '-' + scheme + p.replace(/[/.]/g, '_');
     await page.screenshot({ path: `${OUT}/${name}.png`, fullPage: true });
-    console.log(`${p.padEnd(34)} 高さ${String(r.h).padStart(5)} 幅${r.sw} 書体${r.loaded}種 ${r.fonts.join(' / ')} ${errs.join('|')}`);
+    const over = r.sw > w ? `  ← 横にはみ出している（${r.sw}px）` : '';
+    console.log(`${(tag + '/' + scheme).padEnd(9)}${p.padEnd(32)} 幅${String(r.sw).padStart(5)} 書体${String(r.loaded).padStart(4)}種 ${r.fonts.slice(0,2).join(' / ')}${over} ${errs.join('|')}`);
     await page.close();
   }
   await ctx.close();
