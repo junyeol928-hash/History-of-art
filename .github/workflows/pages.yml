@@ -27,7 +27,10 @@ jobs:
           node-version: '20'
       - name: マニフェストを束ねる
         run: node tools/merge.mjs
+      # Pages 自体もここで有効にする。設定画面を触らなくて済むように
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
