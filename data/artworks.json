@@ -215,6 +215,78 @@
   "wikiEn": "Mask of Tutankhamun",
   "license": "パブリックドメイン"
  },
+ "narmer-palette": {
+  "chapter": "02-nile",
+  "artist": "作者不詳",
+  "title": "ナルメルのパレット",
+  "year": "前3100年ごろ",
+  "collection": "エジプト考古学博物館（カイロ）",
+  "commons": "NarmerPalette ROM-gamma.jpg",
+  "wiki": "ナルメルのパレット",
+  "wikiLang": "ja",
+  "wikiEn": "Narmer Palette",
+  "license": "パブリックドメイン"
+ },
+ "giza-great-pyramid": {
+  "chapter": "02-nile",
+  "artist": "クフ王の時代の建設者たち",
+  "title": "ギザの大ピラミッド",
+  "year": "前2560年ごろ",
+  "collection": "ギザ（エジプト）",
+  "commons": "Kheops-Pyramid.jpg",
+  "wiki": "ギザの大ピラミッド",
+  "wikiLang": "ja",
+  "wikiEn": "Great Pyramid of Giza",
+  "license": "パブリックドメイン"
+ },
+ "khafre-enthroned": {
+  "chapter": "02-nile",
+  "artist": "作者不詳（ギザの工房）",
+  "title": "カフラー王座像",
+  "year": "前2570年ごろ",
+  "collection": "エジプト考古学博物館（カイロ）",
+  "commons": "Khafre statue.jpg",
+  "wiki": "カフラー",
+  "wikiLang": "ja",
+  "wikiEn": "Khafre Enthroned",
+  "license": "パブリックドメイン"
+ },
+ "rahotep-nofret": {
+  "chapter": "02-nile",
+  "artist": "作者不詳（メイドゥームの工房）",
+  "title": "ラーホテプとネフェルトの像",
+  "year": "前2600年ごろ",
+  "collection": "エジプト考古学博物館（カイロ）",
+  "commons": "Rahotep and Nofret.jpg",
+  "wiki": "ラーホテプとネフェルト",
+  "wikiLang": "ja",
+  "wikiEn": "Rahotep and Nofret",
+  "license": "パブリックドメイン"
+ },
+ "book-of-the-dead-ani": {
+  "chapter": "02-nile",
+  "artist": "作者不詳（テーベの書記工房）",
+  "title": "《死者の書》アニのパピルス「心臓の計量」",
+  "year": "前1250年ごろ",
+  "collection": "大英博物館（ロンドン）",
+  "commons": "Papyrus of Ani (Book of the Dead), the weighing of the heart.jpg",
+  "wiki": "死者の書 (古代エジプト)",
+  "wikiLang": "ja",
+  "wikiEn": "Papyrus of Ani",
+  "license": "パブリックドメイン"
+ },
+ "abu-simbel": {
+  "chapter": "02-nile",
+  "artist": "ラメセス2世の時代の石工たち",
+  "title": "アブ・シンベル大神殿",
+  "year": "前1264年ごろ",
+  "collection": "アブ・シンベル（エジプト）",
+  "commons": "Abu Simbel Temple May 30 2007.jpg",
+  "wiki": "アブ・シンベル神殿",
+  "wikiLang": "ja",
+  "wikiEn": "Abu Simbel",
+  "license": "パブリックドメイン"
+ },
  "standard-of-ur": {
   "chapter": "02-nile",
   "artist": "作者不詳（シュメールの工人）",
