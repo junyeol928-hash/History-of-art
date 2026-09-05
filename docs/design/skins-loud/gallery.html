@@ -1,0 +1,846 @@
+<title>作品ギャラリー</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Shippori+Mincho:wght@500;600&display=swap">
+<style>
+ :root{--bg:#f4f1e8;--card:#fbfaf6;--ink:#22201c;--ink2:#5b554d;--ink3:#918a7e;--rule:#ded7c6;--accent:#8c5a35;
+  --sans:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif;
+  --serif:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;}
+ @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#14161b;--card:#1b1e24;--ink:#e9e5db;--ink2:#a49d90;--ink3:#7b7469;--rule:#2c313a;--accent:#cfa06a;}}
+ body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.9;}
+ .wrap{max-width:1080px;margin-inline:auto;padding:0 1.1rem;}
+ header.top{padding:3rem 0 1.4rem;}
+ h1{font-family:var(--serif);font-size:clamp(1.6rem,5vw,2.3rem);margin:0;font-weight:600;letter-spacing:.03em;}
+ .sub{color:var(--ink2);margin:.9rem 0 0;max-width:47rem;font-size:.95rem;}
+ .note{border:1px solid var(--rule);background:var(--card);padding:1rem 1.1rem;margin:1.5rem 0 0;font-size:.87rem;color:var(--ink2);}
+ .note b{color:var(--ink);}
+ .jump{display:flex;gap:.4rem;flex-wrap:wrap;margin:1.4rem 0 0;}
+ .jump a{text-decoration:none;color:var(--ink2);border:1px solid var(--rule);padding:.45rem .85rem;font-size:.82rem;}
+ .jump a:hover{border-color:var(--accent);color:var(--accent);}
+ .opt{margin:3.4rem 0;}
+ .oh{padding-bottom:.9rem;border-bottom:1px solid var(--rule);margin-bottom:1.2rem;}
+ .oh h2{margin:0;font-size:1.22rem;font-weight:700;}
+ .meta{margin:.25rem 0 0;font-size:.8rem;color:var(--accent);}
+ .what{margin:.55rem 0 0;font-size:.9rem;color:var(--ink2);max-width:47rem;}
+ .sw{display:flex;gap:.35rem;margin:.9rem 0 0;}
+ .sw button{cursor:pointer;font-family:var(--sans);font-size:.8rem;font-weight:700;color:var(--ink2);
+   background:transparent;border:1px solid var(--rule);padding:.45rem .95rem;min-height:36px;}
+ .sw button:hover{border-color:var(--accent);color:var(--accent);}
+ .sw button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff;}
+ .stage{position:relative;overflow:hidden;border:1px solid var(--rule);background:#fff;max-width:1000px;margin-inline:auto;}
+ @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .stage{background:#f4f1e8;}}
+ .stage iframe{width:1000px;border:0;display:block;transform-origin:top left;}
+ .stage iframe[hidden]{display:none;}
+ footer{padding:2rem 0 4rem;color:var(--ink3);font-size:.82rem;border-top:1px solid var(--rule);margin-top:3rem;}
+</style>
+<div class="wrap">
+ <header class="top">
+  <h1>作品を、味わう場所をつくる</h1>
+  <p class="sub">いまのサイトは、作品を「様式の証拠」として置いていました。足りないのは<strong>作品そのものを味わう場所</strong>です。新しい部品を2つ提案します。</p>
+  <div class="note">
+   <b>この時代の顔</b> ── 各章の末尾に置く名作の格子。1点ごとに<b>一行の引っかかり</b>を添えます。
+   様式の説明ではなく、その一点にしか言えない事実をひとつだけ。
+   「モネは駅長に頼んで石炭を焚かせた」「この木漏れ日は当時<b>病気の斑</b>と酷評された」のように、読んだ人の目が絵に戻る一行です。<br><br>
+   <b>名作ギャラリー</b> ── 全時代を横断する一覧。時代で絞り込め、押せばその章へ飛べます。
+   教科書ではなく<b>よくできた展覧会の図録</b>の感覚を狙っています。<br><br>
+   ここに並んでいる図は仮のものです。実際には<b>すでに手元にある170点の本物の作品画像</b>が入ります。
+  </div>
+ </header>
+<section class="opt" id="gal">
+    <header class="oh">
+      <h2>作品を、味わう場所をつくる</h2>
+      <p class="meta">新しい部品2つの提案</p>
+      <p class="what">いまのサイトは、作品を「様式の証拠」として置いていました。足りないのは<strong>作品そのものを味わう場所</strong>です。
+        章の末尾に置く<strong>「この時代の顔」</strong>と、全時代を横断する<strong>名作ギャラリー</strong>。
+        ここに並んでいる図は仮のもので、実際には<strong>すでに手元にある170点の本物の作品画像</strong>が入ります。</p>
+    </header>
+    <div class="stage" data-h="5420">
+      <iframe title="作品ギャラリー" scrolling="no" srcdoc="&lt;!doctype html&gt;&lt;html lang=&quot;ja&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&amp;family=Shippori+Mincho:wght@400;500;600&amp;family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;display=swap&quot;&gt;
+  &lt;style&gt;
+    body { margin: 0; }
+    a { color: #59508e; text-decoration: none; }
+    a:hover { color: #6a5fa8; }
+  &lt;/style&gt;
+&lt;style&gt;html,body{margin:0;padding:0;background:transparent}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;
+
+
+&lt;div style=&quot;width:1000px;box-sizing:border-box;background:#f4f1e8;color:#23201b;font-family:&#x27;Shippori Mincho&#x27;,&#x27;Hiragino Mincho ProN&#x27;,&#x27;Yu Mincho&#x27;,YuMincho,&#x27;Noto Serif JP&#x27;,serif;font-size:18px;line-height:2.0;letter-spacing:.02em;&quot;&gt;
+
+&lt;!-- ============================================================ 表紙 --&gt;
+&lt;div style=&quot;height:3px;background:#6a5fa8;&quot;&gt;&lt;/div&gt;
+&lt;header style=&quot;position:relative;overflow:hidden;padding:52px 60px 34px;&quot;&gt;
+  &lt;div aria-hidden=&quot;true&quot; style=&quot;position:absolute;right:44px;top:6px;font-family:&#x27;Cormorant Garamond&#x27;,&#x27;EB Garamond&#x27;,serif;font-weight:300;font-size:170px;line-height:.8;color:#6a5fa8;opacity:.13;letter-spacing:-.02em;&quot;&gt;192&lt;/div&gt;
+  &lt;p style=&quot;position:relative;margin:0;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:12px;letter-spacing:.28em;color:#6a5fa8;&quot;&gt;新しい部品の提案&lt;/p&gt;
+  &lt;h1 style=&quot;position:relative;margin:14px 0 0;font-size:40px;font-weight:600;line-height:1.44;letter-spacing:.01em;&quot;&gt;作品を、味わう場所をつくる&lt;/h1&gt;
+  &lt;p style=&quot;position:relative;margin:14px 0 0;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:14px;letter-spacing:.1em;color:#8b8378;&quot;&gt;部品A　この時代の顔　／　部品B　名作ギャラリー&lt;/p&gt;
+  &lt;div style=&quot;position:relative;margin-top:26px;padding-top:20px;border-top:1px solid #cfc7b6;width:640px;&quot;&gt;
+    &lt;p style=&quot;margin:0;font-size:18px;line-height:1.95;color:#56504a;&quot;&gt;いまのサイトは、作品を様式の証拠として置いています。ここに足すのは、証拠ではなく作品そのものを見るための面です。章の末尾にひとつ、サイト全体にひとつ。&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div style=&quot;position:relative;display:flex;gap:26px;margin-top:22px;padding-top:13px;border-top:1px solid #e0dacb;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:12.5px;letter-spacing:.04em;color:#8b8378;&quot;&gt;
+    &lt;span&gt;&lt;b style=&quot;font-weight:600;color:#56504a;&quot;&gt;題材&lt;/b&gt;　第17章 印象派&lt;/span&gt;
+    &lt;span&gt;&lt;b style=&quot;font-weight:600;color:#56504a;&quot;&gt;手持ちの作品&lt;/b&gt;　192点&lt;/span&gt;
+    &lt;span&gt;&lt;b style=&quot;font-weight:600;color:#56504a;&quot;&gt;図版&lt;/b&gt;　構図と色調を抽象化した自作図&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+
+&lt;!-- ============================================================ 部品A 注記 --&gt;
+&lt;div style=&quot;background:#23201b;color:#f4f1e8;padding:20px 60px 22px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;&quot;&gt;
+  &lt;p style=&quot;margin:0;font-size:11.5px;letter-spacing:.26em;color:#b3add4;&quot;&gt;部品A&lt;/p&gt;
+  &lt;p style=&quot;margin:8px 0 0;font-size:19px;font-weight:700;letter-spacing:.04em;line-height:1.6;&quot;&gt;この時代の顔 ─ 各章の末尾、年表の手前に置く&lt;/p&gt;
+  &lt;p style=&quot;margin:9px 0 0;font-size:13px;line-height:1.9;color:#a49c8e;max-width:760px;&quot;&gt;本文中の図版は「なぜそう描かれたか」の証拠として置かれている。ここは逆に、理屈を全部読み終えた人が、絵だけを見て回るための壁。1点につき文章は一行だけにする。長いと、また読む場所になってしまう。&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;!-- ============================================================ 部品A 実物 --&gt;
+&lt;section style=&quot;padding:44px 60px 52px;&quot;&gt;
+
+  &lt;div style=&quot;display:flex;align-items:baseline;gap:14px;&quot;&gt;
+    &lt;span style=&quot;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11.5px;font-weight:700;letter-spacing:.22em;color:#59508e;&quot;&gt;この時代の顔&lt;/span&gt;
+    &lt;span style=&quot;flex:1;height:1px;background:#cfc7b6;&quot;&gt;&lt;/span&gt;
+    &lt;span style=&quot;font-family:&#x27;Cormorant Garamond&#x27;,&#x27;EB Garamond&#x27;,serif;font-size:17px;letter-spacing:.08em;color:#8b8378;&quot;&gt;1872 &amp;mdash; 1878&lt;/span&gt;
+  &lt;/div&gt;
+
+  &lt;h2 style=&quot;margin:18px 0 0;font-size:27px;font-weight:600;line-height:1.5;letter-spacing:.01em;&quot;&gt;十二年のあいだに、彼らが描いたもの&lt;/h2&gt;
+  &lt;p style=&quot;margin:12px 0 0;width:700px;font-size:17px;line-height:1.95;color:#56504a;&quot;&gt;様式の話はここまで。あとは絵を見てください。ここに並ぶ九点は、八回の展覧会に出た絵と、そのころ同じ空の下で描かれた絵です。&lt;/p&gt;
+
+  &lt;div style=&quot;display:grid;grid-template-columns:repeat(3,276px);gap:34px 26px;margin-top:34px;&quot;&gt;
+
+    &lt;!-- A1 モネ 印象、日の出 --&gt;
+    &lt;div&gt;
+      &lt;div style=&quot;background:#ffffff;border:1px solid #c9c0ad;padding:10px;box-shadow:0 1px 2px rgba(60,50,35,.07);&quot;&gt;
+        &lt;svg viewBox=&quot;0 0 630 480&quot; width=&quot;254&quot; height=&quot;190&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; role=&quot;img&quot; aria-label=&quot;《印象、日の出》の構図図解&quot; style=&quot;display:block&quot;&gt;
+          &lt;defs&gt;&lt;linearGradient id=&quot;ga1&quot; x1=&quot;0&quot; y1=&quot;0&quot; x2=&quot;0&quot; y2=&quot;1&quot;&gt;&lt;stop offset=&quot;0&quot; stop-color=&quot;#8fa0ae&quot;/&gt;&lt;stop offset=&quot;.55&quot; stop-color=&quot;#b9b2a6&quot;/&gt;&lt;stop offset=&quot;1&quot; stop-color=&quot;#8d99a4&quot;/&gt;&lt;/linearGradient&gt;&lt;/defs&gt;
+          &lt;rect width=&quot;630&quot; height=&quot;480&quot; fill=&quot;url(#ga1)&quot;/&gt;
+          &lt;rect y=&quot;300&quot; width=&quot;630&quot; height=&quot;180&quot; fill=&quot;#7e8b96&quot;/&gt;
+          &lt;circle cx=&quot;390&quot; cy=&quot;163&quot; r=&quot;26&quot; fill=&quot;#e2703a&quot;/&gt;
+          &lt;g fill=&quot;#e2703a&quot; opacity=&quot;.85&quot;&gt;&lt;rect x=&quot;372&quot; y=&quot;316&quot; width=&quot;36&quot; height=&quot;7&quot;/&gt;&lt;rect x=&quot;378&quot; y=&quot;338&quot; width=&quot;26&quot; height=&quot;6&quot;/&gt;&lt;rect x=&quot;366&quot; y=&quot;360&quot; width=&quot;44&quot; height=&quot;7&quot;/&gt;&lt;rect x=&quot;380&quot; y=&quot;384&quot; width=&quot;22&quot; height=&quot;6&quot;/&gt;&lt;rect x=&quot;360&quot; y=&quot;408&quot; width=&quot;52&quot; height=&quot;8&quot;/&gt;&lt;/g&gt;
+          &lt;g stroke=&quot;#5c6773&quot; stroke-width=&quot;2&quot; opacity=&quot;.6&quot;&gt;&lt;path d=&quot;M470 300v-52M496 300v-70M524 300v-44M552 300v-64&quot;/&gt;&lt;/g&gt;
+          &lt;path d=&quot;M96 336l58 4-10 16-50-4z&quot; fill=&quot;#3d4650&quot;/&gt;&lt;path d=&quot;M126 336l6-26 8 26&quot; fill=&quot;#3d4650&quot;/&gt;
+          &lt;path d=&quot;M228 352l40 3-7 11-35-3z&quot; fill=&quot;#4a545f&quot;/&gt;
+        &lt;/svg&gt;
+      &lt;/div&gt;
+      &lt;div style=&quot;margin-top:11px;padding-top:9px;border-top:1px solid #e0dacb;&quot;&gt;
+        &lt;div style=&quot;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11.5px;letter-spacing:.06em;color:#56504a;&quot;&gt;クロード・モネ&lt;/div&gt;
+        &lt;div style=&quot;margin-top:2px;font-size:16px;font-weight:600;line-height:1.6;&quot;&gt;印象、日の出&lt;span style=&quot;font-family:&#x27;Cormorant Garamond&#x27;,&#x27;EB Garamond&#x27;,serif;font-size:14px;color:#8b8378;margin-left:.5em;letter-spacing:.04em;&quot;&gt;1872&lt;/span&gt;&lt;/div&gt;
+        &lt;p style=&quot;margin:10px 0 0;padding-left:11px;border-left:2px solid #b3add4;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:12.8px;line-height:1.85;color:#23201b;&quot;&gt;白黒写真に写すと、この太陽は背景に溶けて消えてしまう。&lt;/p&gt;
+        &lt;div style=&quot;margin-top:9px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11px;line-height:1.7;color:#8b8378;&quot;&gt;マルモッタン・モネ美術館（パリ）&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- A2 モネ サン=ラザール駅 --&gt;
+    &lt;div&gt;
+      &lt;div style=&quot;background:#ffffff;border:1px solid #c9c0ad;padding:10px;box-shadow:0 1px 2px rgba(60,50,35,.07);&quot;&gt;
+        &lt;svg viewBox=&quot;0 0 640 460&quot; width=&quot;254&quot; height=&quot;190&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; role=&quot;img&quot; aria-label=&quot;《サン＝ラザール駅》の構図図解&quot; style=&quot;display:block&quot;&gt;
+          &lt;rect width=&quot;640&quot; height=&quot;460&quot; fill=&quot;#cfd3d0&quot;/&gt;
+          &lt;path d=&quot;M0 130L320 40l320 90v40H0z&quot; fill=&quot;#9aa3a6&quot;/&gt;
+          &lt;rect x=&quot;60&quot; y=&quot;170&quot; width=&quot;520&quot; height=&quot;250&quot; fill=&quot;#b9bfbd&quot;/&gt;
+          &lt;ellipse cx=&quot;320&quot; cy=&quot;228&quot; rx=&quot;158&quot; ry=&quot;92&quot; fill=&quot;#e9ebe6&quot; opacity=&quot;.88&quot;/&gt;
+          &lt;ellipse cx=&quot;196&quot; cy=&quot;262&quot; rx=&quot;76&quot; ry=&quot;46&quot; fill=&quot;#eceee9&quot; opacity=&quot;.7&quot;/&gt;
+          &lt;rect x=&quot;268&quot; y=&quot;278&quot; width=&quot;112&quot; height=&quot;124&quot; fill=&quot;#4d5557&quot;/&gt;
+          &lt;g stroke=&quot;#7d8688&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot;&gt;&lt;path d=&quot;M60 170v250M180 170v250M440 170v250M580 170v250&quot;/&gt;&lt;/g&gt;
+          &lt;path d=&quot;M120 420h400l-22 22H142z&quot; fill=&quot;#8b9294&quot;/&gt;
+          &lt;g fill=&quot;#5f6a6c&quot; opacity=&quot;.8&quot;&gt;&lt;rect x=&quot;426&quot; y=&quot;352&quot; width=&quot;14&quot; height=&quot;52&quot;/&gt;&lt;rect x=&quot;470&quot; y=&quot;360&quot; width=&quot;13&quot; height=&quot;44&quot;/&gt;&lt;/g&gt;
+        &lt;/svg&gt;
+      &lt;/div&gt;
+      &lt;div style=&quot;margin-top:11px;padding-top:9px;border-top:1px solid #e0dacb;&quot;&gt;
+        &lt;div style=&quot;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11.5px;letter-spacing:.06em;color:#56504a;&quot;&gt;クロード・モネ&lt;/div&gt;
+        &lt;div style=&quot;margin-top:2px;font-size:16px;font-weight:600;line-height:1.6;&quot;&gt;サン＝ラザール駅&lt;span style=&quot;font-family:&#x27;Cormorant Garamond&#x27;,&#x27;EB Garamond&#x27;,serif;font-size:14px;color:#8b8378;margin-left:.5em;letter-spacing:.04em;&quot;&gt;1877&lt;/span&gt;&lt;/div&gt;
+        &lt;p style=&quot;margin:10px 0 0;padding-left:11px;border-left:2px solid #b3add4;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:12.8px;line-height:1.85;color:#23201b;&quot;&gt;主役は機関車ではなく蒸気。駅長に頼んで石炭を焚かせた。&lt;/p&gt;
+        &lt;div style=&quot;margin-top:9px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11px;line-height:1.7;color:#8b8378;&quot;&gt;オルセー美術館（パリ）&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- A3 ルノワール ムーラン --&gt;
+    &lt;div&gt;
+      &lt;div style=&quot;background:#ffffff;border:1px solid #c9c0ad;padding:10px;box-shadow:0 1px 2px rgba(60,50,35,.07);&quot;&gt;
+        &lt;svg viewBox=&quot;0 0 600 449&quot; width=&quot;254&quot; height=&quot;190&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; role=&quot;img&quot; aria-label=&quot;《ムーラン・ド・ラ・ギャレットの舞踏会》の構図図解&quot; style=&quot;display:block&quot;&gt;
+          &lt;rect width=&quot;600&quot; height=&quot;449&quot; fill=&quot;#8e7f9c&quot;/&gt;
+          &lt;g fill=&quot;#e8d9b8&quot; opacity=&quot;.55&quot;&gt;&lt;ellipse cx=&quot;120&quot; cy=&quot;86&quot; rx=&quot;46&quot; ry=&quot;30&quot;/&gt;&lt;ellipse cx=&quot;300&quot; cy=&quot;58&quot; rx=&quot;60&quot; ry=&quot;34&quot;/&gt;&lt;ellipse cx=&quot;470&quot; cy=&quot;106&quot; rx=&quot;52&quot; ry=&quot;30&quot;/&gt;&lt;ellipse cx=&quot;220&quot; cy=&quot;196&quot; rx=&quot;70&quot; ry=&quot;38&quot;/&gt;&lt;ellipse cx=&quot;424&quot; cy=&quot;236&quot; rx=&quot;58&quot; ry=&quot;32&quot;/&gt;&lt;ellipse cx=&quot;90&quot; cy=&quot;292&quot; rx=&quot;50&quot; ry=&quot;28&quot;/&gt;&lt;/g&gt;
+          &lt;g fill=&quot;#3f3348&quot;&gt;&lt;circle cx=&quot;150&quot; cy=&quot;296&quot; r=&quot;30&quot;/&gt;&lt;circle cx=&quot;252&quot; cy=&quot;326&quot; r=&quot;34&quot;/&gt;&lt;circle cx=&quot;360&quot; cy=&quot;310&quot; r=&quot;30&quot;/&gt;&lt;circle cx=&quot;470&quot; cy=&quot;340&quot; r=&quot;34&quot;/&gt;&lt;/g&gt;
+          &lt;g fill=&quot;#f0e3cc&quot; opacity=&quot;.75&quot;&gt;&lt;circle cx=&quot;206&quot; cy=&quot;272&quot; r=&quot;15&quot;/&gt;&lt;circle cx=&quot;316&quot; cy=&quot;290&quot; r=&quot;14&quot;/&gt;&lt;circle cx=&quot;418&quot; cy=&quot;300&quot; r=&quot;13&quot;/&gt;&lt;/g&gt;
+          &lt;rect y=&quot;388&quot; width=&quot;600&quot; height=&quot;61&quot; fill=&quot;#5a4a63&quot;/&gt;
+        &lt;/svg&gt;
+      &lt;/div&gt;
+      &lt;div style=&quot;margin-top:11px;padding-top:9px;border-top:1px solid #e0dacb;&quot;&gt;
+        &lt;div style=&quot;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11.5px;letter-spacing:.06em;color:#56504a;&quot;&gt;ピエール＝オーギュスト・ルノワール&lt;/div&gt;
+        &lt;div style=&quot;margin-top:2px;font-size:16px;font-weight:600;line-height:1.6;&quot;&gt;ムーラン・ド・ラ・ギャレットの舞踏会&lt;span style=&quot;font-family:&#x27;Cormorant Garamond&#x27;,&#x27;EB Garamond&#x27;,serif;font-size:14px;color:#8b8378;margin-left:.5em;letter-spacing:.04em;&quot;&gt;1876&lt;/span&gt;&lt;/div&gt;
+        &lt;p style=&quot;margin:10px 0 0;padding-left:11px;border-left:2px solid #b3add4;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:12.8px;line-height:1.85;color:#23201b;&quot;&gt;顔の紫の斑点は影ではなく木漏れ日。当時は病気の斑と酷評された。&lt;/p&gt;
+        &lt;div style=&quot;margin-top:9px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11px;line-height:1.7;color:#8b8378;&quot;&gt;オルセー美術館（パリ）&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- A4 ドガ エトワール --&gt;
+    &lt;div&gt;
+      &lt;div style=&quot;background:#ffffff;border:1px solid #c9c0ad;padding:10px;box-shadow:0 1px 2px rgba(60,50,35,.07);&quot;&gt;
+        &lt;svg viewBox=&quot;0 0 420 580&quot; width=&quot;254&quot; height=&quot;190&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; role=&quot;img&quot; aria-label=&quot;《エトワール》の構図図解&quot; style=&quot;display:block&quot;&gt;
+          &lt;rect width=&quot;420&quot; height=&quot;580&quot; fill=&quot;#6d6a4e&quot;/&gt;
+          &lt;path d=&quot;M0 0h420v250L0 330z&quot; fill=&quot;#57603f&quot;/&gt;
+          &lt;path d=&quot;M0 300l420-70v350H0z&quot; fill=&quot;#c2b48c&quot;/&gt;
+          &lt;path d=&quot;M0 250h150l-30 120H0z&quot; fill=&quot;#3f4433&quot; opacity=&quot;.8&quot;/&gt;
+          &lt;path d=&quot;M300 40h120v300H300z&quot; fill=&quot;#4a4f38&quot; opacity=&quot;.7&quot;/&gt;
+          &lt;g&gt;&lt;path d=&quot;M110 356l100-34 96 40-94 40z&quot; fill=&quot;#f6eee2&quot; opacity=&quot;.95&quot;/&gt;
+             &lt;path d=&quot;M196 216c14 0 22 12 22 26s-8 26-16 40l-12 44-14-46c-8-14-14-26-14-38s10-26 24-26z&quot; fill=&quot;#f3e6d6&quot;/&gt;
+             &lt;circle cx=&quot;196&quot; cy=&quot;206&quot; r=&quot;17&quot; fill=&quot;#e8cdb4&quot;/&gt;
+             &lt;path d=&quot;M196 322l-52 18 42 6z&quot; fill=&quot;#e8cdb4&quot;/&gt;
+             &lt;path d=&quot;M212 236l70-40 8 12-70 44z&quot; fill=&quot;#e8cdb4&quot;/&gt;&lt;/g&gt;
+          &lt;g fill=&quot;#f0c3cc&quot; opacity=&quot;.8&quot;&gt;&lt;circle cx=&quot;188&quot; cy=&quot;196&quot; r=&quot;20&quot;/&gt;&lt;/g&gt;
+          &lt;path d=&quot;M14 268l30-6 10 118-32 8z&quot; fill=&quot;#20221c&quot;/&gt;
+          &lt;path d=&quot;M44 262l26-4 12 116-30 8z&quot; fill=&quot;#2a2c24&quot;/&gt;
+        &lt;/svg&gt;
+      &lt;/div&gt;
+      &lt;div style=&quot;margin-top:11px;padding-top:9px;border-top:1px solid #e0dacb;&quot;&gt;
+        &lt;div style=&quot;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11.5px;letter-spacing:.06em;color:#56504a;&quot;&gt;エドガー・ドガ&lt;/div&gt;
+        &lt;div style=&quot;margin-top:2px;font-size:16px;font-weight:600;line-height:1.6;&quot;&gt;エトワール（舞台の踊り子）&lt;span style=&quot;font-family:&#x27;Cormorant Garamond&#x27;,&#x27;EB Garamond&#x27;,serif;font-size:14px;color:#8b8378;margin-left:.5em;letter-spacing:.04em;&quot;&gt;1876 &amp;mdash; 77&lt;/span&gt;&lt;/div&gt;
+        &lt;p style=&quot;margin:10px 0 0;padding-left:11px;border-left:2px solid #b3add4;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:12.8px;line-height:1.85;color:#23201b;&quot;&gt;左の袖に、黒服の男の脚だけが見えている。踊り子の後援者だと言われる。&lt;/p&gt;
+        &lt;div style=&quot;margin-top:9px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11px;line-height:1.7;color:#8b8378;&quot;&gt;オルセー美術館（パリ）&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- A5 ピサロ 赤い屋根 --&gt;
+    &lt;div&gt;
+      &lt;div style=&quot;background:#ffffff;border:1px solid #c9c0ad;padding:10px;box-shadow:0 1px 2px rgba(60,50,35,.07);&quot;&gt;
+        &lt;svg viewBox=&quot;0 0 660 545&quot; width=&quot;254&quot; height=&quot;190&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; role=&quot;img&quot; aria-label=&quot;《赤い屋根、村の一角、冬の印象》の構図図解&quot; style=&quot;display:block&quot;&gt;
+          &lt;rect width=&quot;660&quot; height=&quot;545&quot; fill=&quot;#b9bda4&quot;/&gt;
+          &lt;path d=&quot;M0 0h660v170H0z&quot; fill=&quot;#a9b3ae&quot;/&gt;
+          &lt;path d=&quot;M0 150l180-40 200 34 280-44v120H0z&quot; fill=&quot;#8f9a7c&quot;/&gt;
+          &lt;g fill=&quot;#a8503a&quot;&gt;&lt;path d=&quot;M180 262l90-34 86 30-84 30z&quot;/&gt;&lt;path d=&quot;M370 286l70-26 66 24-64 24z&quot;/&gt;&lt;path d=&quot;M90 300l60-22 56 20-54 20z&quot;/&gt;&lt;/g&gt;
+          &lt;g fill=&quot;#d8cdb2&quot;&gt;&lt;rect x=&quot;196&quot; y=&quot;290&quot; width=&quot;140&quot; height=&quot;70&quot;/&gt;&lt;rect x=&quot;384&quot; y=&quot;310&quot; width=&quot;106&quot; height=&quot;58&quot;/&gt;&lt;rect x=&quot;106&quot; y=&quot;320&quot; width=&quot;86&quot; height=&quot;50&quot;/&gt;&lt;/g&gt;
+          &lt;g fill=&quot;#8f7f63&quot; opacity=&quot;.9&quot;&gt;&lt;rect x=&quot;228&quot; y=&quot;318&quot; width=&quot;20&quot; height=&quot;42&quot;/&gt;&lt;rect x=&quot;286&quot; y=&quot;318&quot; width=&quot;20&quot; height=&quot;42&quot;/&gt;&lt;rect x=&quot;416&quot; y=&quot;332&quot; width=&quot;17&quot; height=&quot;36&quot;/&gt;&lt;/g&gt;
+          &lt;path d=&quot;M0 360l660-40v225H0z&quot; fill=&quot;#9d9c72&quot;/&gt;
+          &lt;g stroke=&quot;#5c4b34&quot; stroke-width=&quot;7&quot; fill=&quot;none&quot; opacity=&quot;.85&quot;&gt;&lt;path d=&quot;M60 545V180M170 545V150M300 545V132M440 545V166M560 545V150&quot;/&gt;&lt;/g&gt;
+          &lt;g stroke=&quot;#6d5b40&quot; stroke-width=&quot;4&quot; fill=&quot;none&quot; opacity=&quot;.8&quot;&gt;&lt;path d=&quot;M60 250l-32-40M60 236l34-44M300 226l-38-46M300 210l40-48M440 246l-34-42M560 226l36-44&quot;/&gt;&lt;/g&gt;
+        &lt;/svg&gt;
+      &lt;/div&gt;
+      &lt;div style=&quot;margin-top:11px;padding-top:9px;border-top:1px solid #e0dacb;&quot;&gt;
+        &lt;div style=&quot;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11.5px;letter-spacing:.06em;color:#56504a;&quot;&gt;カミーユ・ピサロ&lt;/div&gt;
+        &lt;div style=&quot;margin-top:2px;font-size:16px;font-weight:600;line-height:1.6;&quot;&gt;赤い屋根、村の一角、冬の印象&lt;span style=&quot;font-family:&#x27;Cormorant Garamond&#x27;,&#x27;EB Garamond&#x27;,serif;font-size:14px;color:#8b8378;margin-left:.5em;letter-spacing:.04em;&quot;&gt;1877&lt;/span&gt;&lt;/div&gt;
+        &lt;p style=&quot;margin:10px 0 0;padding-left:11px;border-left:2px solid #b3add4;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:12.8px;line-height:1.85;color:#23201b;&quot;&gt;八回の展覧会すべてに出したのは、八人の子を養うこの人だけだった。&lt;/p&gt;
+        &lt;div style=&quot;margin-top:9px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11px;line-height:1.7;color:#8b8378;&quot;&gt;オルセー美術館（パリ）&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- A6 シスレー 洪水 --&gt;
+    &lt;div&gt;
+      &lt;div style=&quot;background:#ffffff;border:1px solid #c9c0ad;padding:10px;box-shadow:0 1px 2px rgba(60,50,35,.07);&quot;&gt;
+        &lt;svg viewBox=&quot;0 0 810 600&quot; width=&quot;254&quot; height=&quot;190&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; role=&quot;img&quot; aria-label=&quot;《ポール＝マルリの洪水》の構図図解&quot; style=&quot;display:block&quot;&gt;
+          &lt;defs&gt;&lt;linearGradient id=&quot;ga6&quot; x1=&quot;0&quot; y1=&quot;0&quot; x2=&quot;0&quot; y2=&quot;1&quot;&gt;&lt;stop offset=&quot;0&quot; stop-color=&quot;#c3d0da&quot;/&gt;&lt;stop offset=&quot;1&quot; stop-color=&quot;#e2dfd0&quot;/&gt;&lt;/linearGradient&gt;&lt;/defs&gt;
+          &lt;rect width=&quot;810&quot; height=&quot;600&quot; fill=&quot;url(#ga6)&quot;/&gt;
+          &lt;g fill=&quot;#eef0ea&quot; opacity=&quot;.8&quot;&gt;&lt;ellipse cx=&quot;180&quot; cy=&quot;120&quot; rx=&quot;130&quot; ry=&quot;50&quot;/&gt;&lt;ellipse cx=&quot;520&quot; cy=&quot;80&quot; rx=&quot;160&quot; ry=&quot;46&quot;/&gt;&lt;ellipse cx=&quot;720&quot; cy=&quot;150&quot; rx=&quot;110&quot; ry=&quot;42&quot;/&gt;&lt;/g&gt;
+          &lt;rect x=&quot;70&quot; y=&quot;180&quot; width=&quot;230&quot; height=&quot;180&quot; fill=&quot;#d9c9a8&quot;/&gt;
+          &lt;path d=&quot;M60 182l125-56 125 56z&quot; fill=&quot;#8d7f6a&quot;/&gt;
+          &lt;g fill=&quot;#7d8e94&quot;&gt;&lt;rect x=&quot;104&quot; y=&quot;216&quot; width=&quot;34&quot; height=&quot;48&quot;/&gt;&lt;rect x=&quot;164&quot; y=&quot;216&quot; width=&quot;34&quot; height=&quot;48&quot;/&gt;&lt;rect x=&quot;224&quot; y=&quot;216&quot; width=&quot;34&quot; height=&quot;48&quot;/&gt;&lt;rect x=&quot;134&quot; y=&quot;292&quot; width=&quot;46&quot; height=&quot;68&quot;/&gt;&lt;/g&gt;
+          &lt;g stroke=&quot;#6f7c5f&quot; stroke-width=&quot;8&quot; fill=&quot;none&quot;&gt;&lt;path d=&quot;M420 360V150M520 360V186M636 360V162M740 360V196&quot;/&gt;&lt;/g&gt;
+          &lt;rect y=&quot;360&quot; width=&quot;810&quot; height=&quot;240&quot; fill=&quot;#9fb0b4&quot;/&gt;
+          &lt;g fill=&quot;#c8cfc9&quot; opacity=&quot;.75&quot;&gt;&lt;rect x=&quot;70&quot; y=&quot;382&quot; width=&quot;240&quot; height=&quot;9&quot;/&gt;&lt;rect x=&quot;120&quot; y=&quot;416&quot; width=&quot;180&quot; height=&quot;8&quot;/&gt;&lt;rect x=&quot;400&quot; y=&quot;396&quot; width=&quot;240&quot; height=&quot;9&quot;/&gt;&lt;rect x=&quot;440&quot; y=&quot;440&quot; width=&quot;300&quot; height=&quot;8&quot;/&gt;&lt;rect x=&quot;90&quot; y=&quot;470&quot; width=&quot;360&quot; height=&quot;9&quot;/&gt;&lt;rect x=&quot;300&quot; y=&quot;520&quot; width=&quot;420&quot; height=&quot;8&quot;/&gt;&lt;/g&gt;
+          &lt;path d=&quot;M470 470h150l-16 26H486z&quot; fill=&quot;#5a5140&quot;/&gt;
+          &lt;path d=&quot;M540 470v-34&quot; stroke=&quot;#5a5140&quot; stroke-width=&quot;5&quot;/&gt;
+        &lt;/svg&gt;
+      &lt;/div&gt;
+      &lt;div style=&quot;margin-top:11px;padding-top:9px;border-top:1px solid #e0dacb;&quot;&gt;
+        &lt;div style=&quot;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11.5px;letter-spacing:.06em;color:#56504a;&quot;&gt;アルフレッド・シスレー&lt;/div&gt;
+        &lt;div style=&quot;margin-top:2px;font-size:16px;font-weight:600;line-height:1.6;&quot;&gt;ポール＝マルリの洪水&lt;span style=&quot;font-family:&#x27;Cormorant Garamond&#x27;,&#x27;EB Garamond&#x27;,serif;font-size:14px;color:#8b8378;margin-left:.5em;letter-spacing:.04em;&quot;&gt;1876&lt;/span&gt;&lt;/div&gt;
+        &lt;p style=&quot;margin:10px 0 0;padding-left:11px;border-left:2px solid #b3add4;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:12.8px;line-height:1.85;color:#23201b;&quot;&gt;災害の絵なのに、水はただ静かで明るい。彼の絵が高く売れたのは死後だった。&lt;/p&gt;
+        &lt;div style=&quot;margin-top:9px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11px;line-height:1.7;color:#8b8378;&quot;&gt;オルセー美術館（パリ）&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- A7 モリゾ ゆりかご --&gt;
+    &lt;div&gt;
+      &lt;div style=&quot;background:#ffffff;border:1px solid #c9c0ad;padding:10px;box-shadow:0 1px 2px rgba(60,50,35,.07);&quot;&gt;
+        &lt;svg viewBox=&quot;0 0 460 560&quot; width=&quot;254&quot; height=&quot;190&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; role=&quot;img&quot; aria-label=&quot;《ゆりかご》の構図図解&quot; style=&quot;display:block&quot;&gt;
+          &lt;rect width=&quot;460&quot; height=&quot;560&quot; fill=&quot;#b4a998&quot;/&gt;
+          &lt;path d=&quot;M0 0h230v560H0z&quot; fill=&quot;#a99c8c&quot;/&gt;
+          &lt;path d=&quot;M300 40l150 60v460H300z&quot; fill=&quot;#5c6a72&quot; opacity=&quot;.55&quot;/&gt;
+          &lt;path d=&quot;M236 90l70-46 22 22-64 60z&quot; fill=&quot;#8b8272&quot;/&gt;
+          &lt;path d=&quot;M250 120c86-20 176 34 200 156l-4 284H188l-4-262c8-92 30-160 66-178z&quot; fill=&quot;#e9e5da&quot; opacity=&quot;.9&quot;/&gt;
+          &lt;path d=&quot;M212 300h250l-8 260H220z&quot; fill=&quot;#f2eee5&quot; opacity=&quot;.85&quot;/&gt;
+          &lt;ellipse cx=&quot;330&quot; cy=&quot;392&quot; rx=&quot;58&quot; ry=&quot;34&quot; fill=&quot;#dcd6c6&quot;/&gt;
+          &lt;path d=&quot;M96 200c40 0 68 32 68 74 0 40-24 66-24 92l-16 194H60l-8-196c0-30-18-52-18-88 0-44 24-76 62-76z&quot; fill=&quot;#3b4048&quot;/&gt;
+          &lt;circle cx=&quot;98&quot; cy=&quot;160&quot; r=&quot;42&quot; fill=&quot;#d8bda6&quot;/&gt;
+          &lt;path d=&quot;M56 148c0-32 20-52 44-52s44 22 44 50c-14-16-30-22-44-22s-32 8-44 24z&quot; fill=&quot;#4a4038&quot;/&gt;
+          &lt;path d=&quot;M138 330l90 44-8 22-92-40z&quot; fill=&quot;#d8bda6&quot;/&gt;
+        &lt;/svg&gt;
+      &lt;/div&gt;
+      &lt;div style=&quot;margin-top:11px;padding-top:9px;border-top:1px solid #e0dacb;&quot;&gt;
+        &lt;div style=&quot;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11.5px;letter-spacing:.06em;color:#56504a;&quot;&gt;ベルト・モリゾ&lt;/div&gt;
+        &lt;div style=&quot;margin-top:2px;font-size:16px;font-weight:600;line-height:1.6;&quot;&gt;ゆりかご&lt;span style=&quot;font-family:&#x27;Cormorant Garamond&#x27;,&#x27;EB Garamond&#x27;,serif;font-size:14px;color:#8b8378;margin-left:.5em;letter-spacing:.04em;&quot;&gt;1872&lt;/span&gt;&lt;/div&gt;
+        &lt;p style=&quot;margin:10px 0 0;padding-left:11px;border-left:2px solid #b3add4;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:12.8px;line-height:1.85;color:#23201b;&quot;&gt;第1回展に出したが買い手はつかず、長く家族の手元に置かれたままだった。&lt;/p&gt;
+        &lt;div style=&quot;margin-top:9px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11px;line-height:1.7;color:#8b8378;&quot;&gt;オルセー美術館（パリ）&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- A8 カサット 青い肘掛け椅子 --&gt;
+    &lt;div&gt;
+      &lt;div style=&quot;background:#ffffff;border:1px solid #c9c0ad;padding:10px;box-shadow:0 1px 2px rgba(60,50,35,.07);&quot;&gt;
+        &lt;svg viewBox=&quot;0 0 650 448&quot; width=&quot;254&quot; height=&quot;190&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; role=&quot;img&quot; aria-label=&quot;《青い肘掛け椅子の少女》の構図図解&quot; style=&quot;display:block&quot;&gt;
+          &lt;rect width=&quot;650&quot; height=&quot;448&quot; fill=&quot;#cbc6ad&quot;/&gt;
+          &lt;path d=&quot;M0 0h650v150H0z&quot; fill=&quot;#b9b49a&quot;/&gt;
+          &lt;g fill=&quot;#3f6d78&quot;&gt;&lt;path d=&quot;M-10 120h230v190H-10z&quot;/&gt;&lt;path d=&quot;M250 96h250v170H250z&quot;/&gt;&lt;path d=&quot;M520 140h150v210H520z&quot;/&gt;&lt;/g&gt;
+          &lt;g fill=&quot;#54818c&quot;&gt;&lt;path d=&quot;M-10 300h250v148H-10z&quot;/&gt;&lt;path d=&quot;M270 250h270v198H270z&quot;/&gt;&lt;/g&gt;
+          &lt;g fill=&quot;#2f5b66&quot; opacity=&quot;.7&quot;&gt;&lt;rect x=&quot;216&quot; y=&quot;120&quot; width=&quot;26&quot; height=&quot;190&quot;/&gt;&lt;rect x=&quot;498&quot; y=&quot;140&quot; width=&quot;24&quot; height=&quot;210&quot;/&gt;&lt;/g&gt;
+          &lt;path d=&quot;M300 250h210v120H300z&quot; fill=&quot;#e8e4d6&quot;/&gt;
+          &lt;path d=&quot;M330 150c50-16 96 12 104 62 6 40-14 60-6 96l-166 8c-8-46 4-84 12-108 8-26 18-48 56-58z&quot; fill=&quot;#f2efe4&quot;/&gt;
+          &lt;circle cx=&quot;372&quot; cy=&quot;126&quot; r=&quot;34&quot; fill=&quot;#e5c4a8&quot;/&gt;
+          &lt;path d=&quot;M338 108c0-24 16-40 36-40s36 16 36 38c-12-12-24-16-36-16s-24 6-36 18z&quot; fill=&quot;#8a6a4a&quot;/&gt;
+          &lt;path d=&quot;M410 226l96 26-6 22-96-24z&quot; fill=&quot;#e5c4a8&quot;/&gt;
+          &lt;ellipse cx=&quot;120&quot; cy=&quot;356&quot; rx=&quot;66&quot; ry=&quot;40&quot; fill=&quot;#6d5a4a&quot;/&gt;
+          &lt;path d=&quot;M76 340c14-22 44-30 68-16&quot; stroke=&quot;#4c3f34&quot; stroke-width=&quot;7&quot; fill=&quot;none&quot;/&gt;
+        &lt;/svg&gt;
+      &lt;/div&gt;
+      &lt;div style=&quot;margin-top:11px;padding-top:9px;border-top:1px solid #e0dacb;&quot;&gt;
+        &lt;div style=&quot;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11.5px;letter-spacing:.06em;color:#56504a;&quot;&gt;メアリー・カサット&lt;/div&gt;
+        &lt;div style=&quot;margin-top:2px;font-size:16px;font-weight:600;line-height:1.6;&quot;&gt;青い肘掛け椅子の少女&lt;span style=&quot;font-family:&#x27;Cormorant Garamond&#x27;,&#x27;EB Garamond&#x27;,serif;font-size:14px;color:#8b8378;margin-left:.5em;letter-spacing:.04em;&quot;&gt;1878&lt;/span&gt;&lt;/div&gt;
+        &lt;p style=&quot;margin:10px 0 0;padding-left:11px;border-left:2px solid #b3add4;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:12.8px;line-height:1.85;color:#23201b;&quot;&gt;背景にはドガが筆を入れている。眠っている犬は、そのドガからの贈り物。&lt;/p&gt;
+        &lt;div style=&quot;margin-top:9px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11px;line-height:1.7;color:#8b8378;&quot;&gt;ナショナル・ギャラリー（ワシントン）&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- A9 カイユボット パリの通り、雨 --&gt;
+    &lt;div&gt;
+      &lt;div style=&quot;background:#ffffff;border:1px solid #c9c0ad;padding:10px;box-shadow:0 1px 2px rgba(60,50,35,.07);&quot;&gt;
+        &lt;svg viewBox=&quot;0 0 690 530&quot; width=&quot;254&quot; height=&quot;190&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; role=&quot;img&quot; aria-label=&quot;《パリの通り、雨》の構図図解&quot; style=&quot;display:block&quot;&gt;
+          &lt;rect width=&quot;690&quot; height=&quot;530&quot; fill=&quot;#b3b2ab&quot;/&gt;
+          &lt;path d=&quot;M0 0h690v210H0z&quot; fill=&quot;#9d9d99&quot;/&gt;
+          &lt;path d=&quot;M250 60h200v230H250z&quot; fill=&quot;#8d8b84&quot;/&gt;
+          &lt;path d=&quot;M250 60l100-40 100 40z&quot; fill=&quot;#7c7a73&quot;/&gt;
+          &lt;path d=&quot;M0 100h250v190H0z&quot; fill=&quot;#a3a29b&quot;/&gt;
+          &lt;path d=&quot;M450 90h240v200H450z&quot; fill=&quot;#a8a79f&quot;/&gt;
+          &lt;g fill=&quot;#7a7972&quot; opacity=&quot;.8&quot;&gt;&lt;rect x=&quot;40&quot; y=&quot;150&quot; width=&quot;30&quot; height=&quot;60&quot;/&gt;&lt;rect x=&quot;110&quot; y=&quot;150&quot; width=&quot;30&quot; height=&quot;60&quot;/&gt;&lt;rect x=&quot;180&quot; y=&quot;150&quot; width=&quot;30&quot; height=&quot;60&quot;/&gt;&lt;rect x=&quot;500&quot; y=&quot;140&quot; width=&quot;30&quot; height=&quot;62&quot;/&gt;&lt;rect x=&quot;580&quot; y=&quot;140&quot; width=&quot;30&quot; height=&quot;62&quot;/&gt;&lt;rect x=&quot;290&quot; y=&quot;120&quot; width=&quot;26&quot; height=&quot;56&quot;/&gt;&lt;rect x=&quot;384&quot; y=&quot;120&quot; width=&quot;26&quot; height=&quot;56&quot;/&gt;&lt;/g&gt;
+          &lt;path d=&quot;M0 290h690v240H0z&quot; fill=&quot;#c0bfb6&quot;/&gt;
+          &lt;path d=&quot;M330 290L120 530h140l100-240z&quot; fill=&quot;#aeada4&quot;/&gt;
+          &lt;path d=&quot;M348 290h6v240h-6z&quot; fill=&quot;#8e8d85&quot;/&gt;
+          &lt;g fill=&quot;#5b5f66&quot;&gt;&lt;ellipse cx=&quot;176&quot; cy=&quot;300&quot; rx=&quot;96&quot; ry=&quot;30&quot;/&gt;&lt;ellipse cx=&quot;512&quot; cy=&quot;278&quot; rx=&quot;80&quot; ry=&quot;26&quot;/&gt;&lt;ellipse cx=&quot;342&quot; cy=&quot;236&quot; rx=&quot;52&quot; ry=&quot;18&quot;/&gt;&lt;/g&gt;
+          &lt;g fill=&quot;#2f3239&quot;&gt;&lt;path d=&quot;M136 300c0-16 16-26 40-26s40 10 40 26l-8 200h-64z&quot;/&gt;&lt;path d=&quot;M480 278c0-14 14-24 34-24s34 10 34 24l-6 180h-56z&quot;/&gt;&lt;/g&gt;
+          &lt;g fill=&quot;#e3d7c4&quot;&gt;&lt;circle cx=&quot;176&quot; cy=&quot;264&quot; r=&quot;18&quot;/&gt;&lt;circle cx=&quot;512&quot; cy=&quot;248&quot; r=&quot;15&quot;/&gt;&lt;/g&gt;
+          &lt;rect x=&quot;620&quot; y=&quot;180&quot; width=&quot;9&quot; height=&quot;180&quot; fill=&quot;#4a4d52&quot;/&gt;
+          &lt;circle cx=&quot;624&quot; cy=&quot;172&quot; r=&quot;14&quot; fill=&quot;#4a4d52&quot;/&gt;
+        &lt;/svg&gt;
+      &lt;/div&gt;
+      &lt;div style=&quot;margin-top:11px;padding-top:9px;border-top:1px solid #e0dacb;&quot;&gt;
+        &lt;div style=&quot;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11.5px;letter-spacing:.06em;color:#56504a;&quot;&gt;ギュスターヴ・カイユボット&lt;/div&gt;
+        &lt;div style=&quot;margin-top:2px;font-size:16px;font-weight:600;line-height:1.6;&quot;&gt;パリの通り、雨&lt;span style=&quot;font-family:&#x27;Cormorant Garamond&#x27;,&#x27;EB Garamond&#x27;,serif;font-size:14px;color:#8b8378;margin-left:.5em;letter-spacing:.04em;&quot;&gt;1877&lt;/span&gt;&lt;/div&gt;
+        &lt;p style=&quot;margin:10px 0 0;padding-left:11px;border-left:2px solid #b3add4;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:12.8px;line-height:1.85;color:#23201b;&quot;&gt;仲間の絵を買い支えた金持ちが、いちばん写真くさい絵を描いていた。&lt;/p&gt;
+        &lt;div style=&quot;margin-top:9px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11px;line-height:1.7;color:#8b8378;&quot;&gt;シカゴ美術館&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+
+  &lt;div style=&quot;margin-top:34px;padding-top:16px;border-top:1px solid #cfc7b6;display:flex;align-items:baseline;justify-content:space-between;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:12.5px;color:#8b8378;&quot;&gt;
+    &lt;span&gt;九点すべて、作者の没後70年を過ぎたパブリックドメインの作品です。&lt;/span&gt;
+    &lt;a href=&quot;../gallery.html&quot; style=&quot;color:#59508e;border:1px solid #b3add4;padding:7px 14px;letter-spacing:.06em;&quot;&gt;名作ギャラリーで、ほかの時代も見る&lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;!-- ============================================================ 部品B 注記 --&gt;
+&lt;div style=&quot;background:#23201b;color:#f4f1e8;padding:20px 60px 22px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;&quot;&gt;
+  &lt;p style=&quot;margin:0;font-size:11.5px;letter-spacing:.26em;color:#b3add4;&quot;&gt;部品B&lt;/p&gt;
+  &lt;p style=&quot;margin:8px 0 0;font-size:19px;font-weight:700;letter-spacing:.04em;line-height:1.6;&quot;&gt;名作ギャラリー ─ 全時代を横断する一覧（上から3〜4スクリーンぶん）&lt;/p&gt;
+  &lt;p style=&quot;margin:9px 0 0;font-size:13px;line-height:1.9;color:#a49c8e;max-width:760px;&quot;&gt;教科書の索引ではなく、よくできた図録の感覚にする。時代順に並べない。どこから見てもよく、一点ずつが章への入口になる。左肩の細い帯がその作品の時代の色で、色だけで時代が読めるようにした。&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;!-- ============================================================ 部品B 実物 --&gt;
+&lt;section style=&quot;padding:44px 60px 56px;&quot;&gt;
+
+  &lt;!-- 見出しと導入 --&gt;
+  &lt;div style=&quot;display:flex;align-items:flex-end;justify-content:space-between;&quot;&gt;
+    &lt;div&gt;
+      &lt;p style=&quot;margin:0;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11.5px;font-weight:700;letter-spacing:.22em;color:#59508e;&quot;&gt;名作ギャラリー&lt;/p&gt;
+      &lt;h2 style=&quot;margin:14px 0 0;font-size:34px;font-weight:600;line-height:1.44;&quot;&gt;どこから見ても、かまいません&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;p style=&quot;margin:0;font-family:&#x27;Cormorant Garamond&#x27;,&#x27;EB Garamond&#x27;,serif;font-size:46px;line-height:1;color:#6a5fa8;opacity:.5;letter-spacing:.02em;&quot;&gt;192&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;p style=&quot;margin:18px 0 0;width:700px;font-size:17.5px;line-height:1.95;color:#56504a;&quot;&gt;美術史は、はじめから順に読まなくてもいい本です。ここは、38章のどこかに掛かっている作品を、時代の壁を外して一枚の壁に並べ直した部屋。気になった一点をつつけば、その絵が置かれている章の入口が開きます。時代で絞り込むこともできますが、まずは何も選ばずに眺めてみてください。&lt;/p&gt;
+
+  &lt;!-- 時代チップ --&gt;
+  &lt;div style=&quot;margin-top:26px;padding-top:18px;border-top:1px solid #cfc7b6;&quot;&gt;
+    &lt;p style=&quot;margin:0 0 12px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11px;letter-spacing:.2em;color:#8b8378;&quot;&gt;時代で絞る&lt;/p&gt;
+    &lt;div style=&quot;display:flex;flex-wrap:wrap;gap:8px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:12.5px;&quot;&gt;
+      &lt;span style=&quot;display:inline-flex;align-items:center;gap:7px;padding:7px 14px;background:#23201b;color:#f4f1e8;letter-spacing:.06em;&quot;&gt;すべて&lt;span style=&quot;font-family:&#x27;Cormorant Garamond&#x27;,&#x27;EB Garamond&#x27;,serif;font-size:13px;opacity:.7;&quot;&gt;192&lt;/span&gt;&lt;/span&gt;
+      &lt;span style=&quot;display:inline-flex;align-items:center;gap:7px;padding:7px 13px;border:1px solid #cfc7b6;color:#56504a;&quot;&gt;&lt;span style=&quot;width:8px;height:8px;background:#9c4a2f;&quot;&gt;&lt;/span&gt;先史&lt;span style=&quot;font-family:&#x27;Cormorant Garamond&#x27;,&#x27;EB Garamond&#x27;,serif;font-size:13px;color:#8b8378;&quot;&gt;8&lt;/span&gt;&lt;/span&gt;
+      &lt;span style=&quot;display:inline-flex;align-items:center;gap:7px;padding:7px 13px;border:1px solid #cfc7b6;color:#56504a;&quot;&gt;&lt;span style=&quot;width:8px;height:8px;background:#1b6ca8;&quot;&gt;&lt;/span&gt;古代オリエント&lt;span style=&quot;font-family:&#x27;Cormorant Garamond&#x27;,&#x27;EB Garamond&#x27;,serif;font-size:13px;color:#8b8378;&quot;&gt;9&lt;/span&gt;&lt;/span&gt;
+      &lt;span style=&quot;display:inline-flex;align-items:center;gap:7px;padding:7px 13px;border:1px solid #cfc7b6;color:#56504a;&quot;&gt;&lt;span style=&quot;width:8px;height:8px;background:#a8392b;&quot;&gt;&lt;/span&gt;ギリシア・ローマ&lt;span style=&quot;font-family:&#x27;Cormorant Garamond&#x27;,&#x27;EB Garamond&#x27;,serif;font-size:13px;color:#8b8378;&quot;&gt;20&lt;/span&gt;&lt;/span&gt;
+      &lt;span style=&quot;display:inline-flex;align-items:center;gap:7px;padding:7px 13px;border:1px solid #cfc7b6;color:#56504a;&quot;&gt;&lt;span style=&quot;width:8px;height:8px;background:#2f4a9b;&quot;&gt;&lt;/span&gt;中世&lt;span style=&quot;font-family:&#x27;Cormorant Garamond&#x27;,&#x27;EB Garamond&#x27;,serif;font-size:13px;color:#8b8378;&quot;&gt;26&lt;/span&gt;&lt;/span&gt;
+      &lt;span style=&quot;display:inline-flex;align-items:center;gap:7px;padding:7px 13px;border:1px solid #cfc7b6;color:#56504a;&quot;&gt;&lt;span style=&quot;width:8px;height:8px;background:#4a7c59;&quot;&gt;&lt;/span&gt;ルネサンス&lt;span style=&quot;font-family:&#x27;Cormorant Garamond&#x27;,&#x27;EB Garamond&#x27;,serif;font-size:13px;color:#8b8378;&quot;&gt;36&lt;/span&gt;&lt;/span&gt;
+      &lt;span style=&quot;display:inline-flex;align-items:center;gap:7px;padding:7px 13px;border:1px solid #cfc7b6;color:#56504a;&quot;&gt;&lt;span style=&quot;width:8px;height:8px;background:#7a4318;&quot;&gt;&lt;/span&gt;バロック&lt;span style=&quot;font-family:&#x27;Cormorant Garamond&#x27;,&#x27;EB Garamond&#x27;,serif;font-size:13px;color:#8b8378;&quot;&gt;19&lt;/span&gt;&lt;/span&gt;
+      &lt;span style=&quot;display:inline-flex;align-items:center;gap:7px;padding:7px 13px;border:1px solid #cfc7b6;color:#56504a;&quot;&gt;&lt;span style=&quot;width:8px;height:8px;background:#b8567f;&quot;&gt;&lt;/span&gt;ロココ&lt;span style=&quot;font-family:&#x27;Cormorant Garamond&#x27;,&#x27;EB Garamond&#x27;,serif;font-size:13px;color:#8b8378;&quot;&gt;10&lt;/span&gt;&lt;/span&gt;
+      &lt;span style=&quot;display:inline-flex;align-items:center;gap:7px;padding:7px 13px;border:1px solid #cfc7b6;color:#56504a;&quot;&gt;&lt;span style=&quot;width:8px;height:8px;background:#1f4e79;&quot;&gt;&lt;/span&gt;19世紀&lt;span style=&quot;font-family:&#x27;Cormorant Garamond&#x27;,&#x27;EB Garamond&#x27;,serif;font-size:13px;color:#8b8378;&quot;&gt;20&lt;/span&gt;&lt;/span&gt;
+      &lt;span style=&quot;display:inline-flex;align-items:center;gap:7px;padding:7px 13px;border:1px solid #b3add4;background:#e9e6f3;color:#59508e;&quot;&gt;&lt;span style=&quot;width:8px;height:8px;background:#6a5fa8;&quot;&gt;&lt;/span&gt;印象派&lt;span style=&quot;font-family:&#x27;Cormorant Garamond&#x27;,&#x27;EB Garamond&#x27;,serif;font-size:13px;&quot;&gt;23&lt;/span&gt;&lt;/span&gt;
+      &lt;span style=&quot;display:inline-flex;align-items:center;gap:7px;padding:7px 13px;border:1px solid #cfc7b6;color:#56504a;&quot;&gt;&lt;span style=&quot;width:8px;height:8px;background:#c8352a;&quot;&gt;&lt;/span&gt;20世紀&lt;span style=&quot;font-family:&#x27;Cormorant Garamond&#x27;,&#x27;EB Garamond&#x27;,serif;font-size:13px;color:#8b8378;&quot;&gt;12&lt;/span&gt;&lt;/span&gt;
+      &lt;span style=&quot;display:inline-flex;align-items:center;gap:7px;padding:7px 13px;border:1px solid #cfc7b6;color:#56504a;&quot;&gt;&lt;span style=&quot;width:8px;height:8px;background:#8c2f39;&quot;&gt;&lt;/span&gt;日本&lt;span style=&quot;font-family:&#x27;Cormorant Garamond&#x27;,&#x27;EB Garamond&#x27;,serif;font-size:13px;color:#8b8378;&quot;&gt;9&lt;/span&gt;&lt;/span&gt;
+      &lt;span style=&quot;display:inline-flex;align-items:center;gap:7px;padding:7px 13px;border:1px dashed #e0dacb;color:#a8a196;&quot;&gt;&lt;span style=&quot;width:8px;height:8px;background:#0f9d8f;opacity:.4;&quot;&gt;&lt;/span&gt;現代&lt;span style=&quot;font-size:11px;&quot;&gt;準備中&lt;/span&gt;&lt;/span&gt;
+      &lt;span style=&quot;display:inline-flex;align-items:center;gap:7px;padding:7px 13px;border:1px dashed #e0dacb;color:#a8a196;&quot;&gt;&lt;span style=&quot;width:8px;height:8px;background:#3a4a52;opacity:.4;&quot;&gt;&lt;/span&gt;中国&lt;span style=&quot;font-size:11px;&quot;&gt;準備中&lt;/span&gt;&lt;/span&gt;
+      &lt;span style=&quot;display:inline-flex;align-items:center;gap:7px;padding:7px 13px;border:1px dashed #e0dacb;color:#a8a196;&quot;&gt;&lt;span style=&quot;width:8px;height:8px;background:#1a8f92;opacity:.4;&quot;&gt;&lt;/span&gt;イスラーム&lt;span style=&quot;font-size:11px;&quot;&gt;準備中&lt;/span&gt;&lt;/span&gt;
+      &lt;span style=&quot;display:inline-flex;align-items:center;gap:7px;padding:7px 13px;border:1px dashed #e0dacb;color:#a8a196;&quot;&gt;&lt;span style=&quot;width:8px;height:8px;background:#a8781f;opacity:.4;&quot;&gt;&lt;/span&gt;アフリカ・太平洋&lt;span style=&quot;font-size:11px;&quot;&gt;準備中&lt;/span&gt;&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- 大きな一点 --&gt;
+  &lt;a href=&quot;chapters/18-post.html&quot; style=&quot;display:block;margin-top:30px;background:#faf8f2;border:1px solid #e0dacb;color:#23201b;box-shadow:0 1px 2px rgba(60,50,35,.06);&quot;&gt;
+    &lt;div style=&quot;height:4px;background:#6a5fa8;&quot;&gt;&lt;/div&gt;
+    &lt;div style=&quot;display:flex;gap:26px;padding:20px;&quot;&gt;
+      &lt;div style=&quot;flex:none;background:#ffffff;border:1px solid #c9c0ad;padding:10px;&quot;&gt;
+        &lt;svg viewBox=&quot;0 0 737 590&quot; width=&quot;440&quot; height=&quot;352&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; role=&quot;img&quot; aria-label=&quot;《星月夜》の構図図解&quot; style=&quot;display:block&quot;&gt;
+          &lt;defs&gt;
+            &lt;radialGradient id=&quot;gs1&quot; cx=&quot;.5&quot; cy=&quot;.5&quot; r=&quot;.5&quot;&gt;&lt;stop offset=&quot;0&quot; stop-color=&quot;#f5e08a&quot;/&gt;&lt;stop offset=&quot;1&quot; stop-color=&quot;#f5e08a&quot; stop-opacity=&quot;0&quot;/&gt;&lt;/radialGradient&gt;
+            &lt;linearGradient id=&quot;gs2&quot; x1=&quot;0&quot; y1=&quot;0&quot; x2=&quot;0&quot; y2=&quot;1&quot;&gt;&lt;stop offset=&quot;0&quot; stop-color=&quot;#16305e&quot;/&gt;&lt;stop offset=&quot;.7&quot; stop-color=&quot;#1f4a86&quot;/&gt;&lt;stop offset=&quot;1&quot; stop-color=&quot;#2a5f96&quot;/&gt;&lt;/linearGradient&gt;
+          &lt;/defs&gt;
+          &lt;rect width=&quot;737&quot; height=&quot;590&quot; fill=&quot;url(#gs2)&quot;/&gt;
+          &lt;g fill=&quot;none&quot; stroke=&quot;#5b86c4&quot; stroke-width=&quot;16&quot; opacity=&quot;.65&quot; stroke-linecap=&quot;round&quot;&gt;
+            &lt;path d=&quot;M120 210c110-90 250-40 300 40s-90 150-190 90&quot;/&gt;
+            &lt;path d=&quot;M300 120c130-60 260 10 300 90&quot;/&gt;
+            &lt;path d=&quot;M80 330c120 60 260 40 360-30&quot;/&gt;
+            &lt;path d=&quot;M420 300c90 60 200 40 280-30&quot;/&gt;
+          &lt;/g&gt;
+          &lt;g fill=&quot;none&quot; stroke=&quot;#9dbde8&quot; stroke-width=&quot;7&quot; opacity=&quot;.7&quot; stroke-linecap=&quot;round&quot;&gt;
+            &lt;path d=&quot;M150 240c90-60 200-24 236 34&quot;/&gt;&lt;path d=&quot;M340 160c96-40 190 6 224 66&quot;/&gt;&lt;path d=&quot;M120 350c110 44 230 26 320-32&quot;/&gt;
+          &lt;/g&gt;
+          &lt;g&gt;&lt;circle cx=&quot;600&quot; cy=&quot;130&quot; r=&quot;80&quot; fill=&quot;url(#gs1)&quot;/&gt;&lt;circle cx=&quot;600&quot; cy=&quot;130&quot; r=&quot;34&quot; fill=&quot;#f2d367&quot;/&gt;&lt;/g&gt;
+          &lt;g fill=&quot;url(#gs1)&quot;&gt;&lt;circle cx=&quot;120&quot; cy=&quot;120&quot; r=&quot;46&quot;/&gt;&lt;circle cx=&quot;270&quot; cy=&quot;80&quot; r=&quot;40&quot;/&gt;&lt;circle cx=&quot;430&quot; cy=&quot;180&quot; r=&quot;36&quot;/&gt;&lt;circle cx=&quot;180&quot; cy=&quot;300&quot; r=&quot;34&quot;/&gt;&lt;circle cx=&quot;530&quot; cy=&quot;290&quot; r=&quot;30&quot;/&gt;&lt;circle cx=&quot;360&quot; cy=&quot;330&quot; r=&quot;28&quot;/&gt;&lt;/g&gt;
+          &lt;g fill=&quot;#f7ecb4&quot;&gt;&lt;circle cx=&quot;120&quot; cy=&quot;120&quot; r=&quot;15&quot;/&gt;&lt;circle cx=&quot;270&quot; cy=&quot;80&quot; r=&quot;13&quot;/&gt;&lt;circle cx=&quot;430&quot; cy=&quot;180&quot; r=&quot;11&quot;/&gt;&lt;circle cx=&quot;180&quot; cy=&quot;300&quot; r=&quot;10&quot;/&gt;&lt;circle cx=&quot;530&quot; cy=&quot;290&quot; r=&quot;9&quot;/&gt;&lt;circle cx=&quot;360&quot; cy=&quot;330&quot; r=&quot;9&quot;/&gt;&lt;/g&gt;
+          &lt;path d=&quot;M0 400c120-30 200 20 300-10s240-50 437 10v190H0z&quot; fill=&quot;#1b3a52&quot;/&gt;
+          &lt;path d=&quot;M0 470c140-24 260 16 380-6s240-24 357 12v114H0z&quot; fill=&quot;#22503f&quot;/&gt;
+          &lt;g fill=&quot;#2d5c46&quot;&gt;&lt;path d=&quot;M120 480l30-40 30 40z&quot;/&gt;&lt;path d=&quot;M300 470l34-46 34 46z&quot;/&gt;&lt;path d=&quot;M560 486l28-38 28 38z&quot;/&gt;&lt;/g&gt;
+          &lt;g fill=&quot;#d9cfa2&quot;&gt;&lt;rect x=&quot;150&quot; y=&quot;486&quot; width=&quot;46&quot; height=&quot;40&quot;/&gt;&lt;rect x=&quot;230&quot; y=&quot;494&quot; width=&quot;40&quot; height=&quot;34&quot;/&gt;&lt;rect x=&quot;330&quot; y=&quot;482&quot; width=&quot;52&quot; height=&quot;44&quot;/&gt;&lt;rect x=&quot;440&quot; y=&quot;496&quot; width=&quot;38&quot; height=&quot;32&quot;/&gt;&lt;rect x=&quot;530&quot; y=&quot;488&quot; width=&quot;46&quot; height=&quot;40&quot;/&gt;&lt;/g&gt;
+          &lt;g fill=&quot;#f0d878&quot;&gt;&lt;rect x=&quot;164&quot; y=&quot;500&quot; width=&quot;14&quot; height=&quot;14&quot;/&gt;&lt;rect x=&quot;244&quot; y=&quot;506&quot; width=&quot;12&quot; height=&quot;12&quot;/&gt;&lt;rect x=&quot;348&quot; y=&quot;498&quot; width=&quot;16&quot; height=&quot;16&quot;/&gt;&lt;rect x=&quot;452&quot; y=&quot;508&quot; width=&quot;12&quot; height=&quot;12&quot;/&gt;&lt;rect x=&quot;546&quot; y=&quot;502&quot; width=&quot;14&quot; height=&quot;14&quot;/&gt;&lt;/g&gt;
+          &lt;path d=&quot;M348 400l-14-120 22-90 26 92-12 118z&quot; fill=&quot;#e0d6a8&quot;/&gt;
+          &lt;path d=&quot;M334 280l22-96 26 98z&quot; fill=&quot;#c9bd8c&quot;/&gt;
+          &lt;path d=&quot;M40 590c-24-130 10-260 66-360 30-54 72-84 92-40 18 40-16 76-40 130-34 78-40 180-24 270z&quot; fill=&quot;#153021&quot;/&gt;
+          &lt;path d=&quot;M64 590c-16-120 12-224 56-306 20-38 44-58 56-36 12 22-8 52-26 92-30 66-40 158-30 250z&quot; fill=&quot;#1e4029&quot; opacity=&quot;.9&quot;/&gt;
+        &lt;/svg&gt;
+      &lt;/div&gt;
+      &lt;div style=&quot;flex:1;padding-top:6px;&quot;&gt;
+        &lt;div style=&quot;display:inline-flex;align-items:center;gap:7px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11px;letter-spacing:.16em;color:#59508e;&quot;&gt;&lt;span style=&quot;width:8px;height:8px;background:#6a5fa8;&quot;&gt;&lt;/span&gt;印象派のあとで&lt;/div&gt;
+        &lt;div style=&quot;margin-top:14px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:12.5px;letter-spacing:.06em;color:#56504a;&quot;&gt;フィンセント・ファン・ゴッホ&lt;/div&gt;
+        &lt;div style=&quot;margin-top:6px;font-size:30px;font-weight:600;line-height:1.5;&quot;&gt;星月夜&lt;span style=&quot;font-family:&#x27;Cormorant Garamond&#x27;,&#x27;EB Garamond&#x27;,serif;font-size:22px;color:#8b8378;margin-left:.5em;letter-spacing:.04em;&quot;&gt;1889&lt;/span&gt;&lt;/div&gt;
+        &lt;p style=&quot;margin:16px 0 0;padding-left:13px;border-left:2px solid #b3add4;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:15px;line-height:1.9;color:#23201b;&quot;&gt;療養院の鉄格子のはまった窓から見た夜。村も糸杉も、あとから描き足されている。&lt;/p&gt;
+        &lt;div style=&quot;margin-top:16px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11.5px;line-height:1.8;color:#8b8378;&quot;&gt;油彩・カンヴァス　73.7 × 92.1 cm　ニューヨーク近代美術館&lt;/div&gt;
+        &lt;div style=&quot;margin-top:26px;padding-top:12px;border-top:1px solid #e0dacb;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:12.5px;color:#59508e;letter-spacing:.04em;&quot;&gt;第18章　印象派のあとで　&amp;rarr;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+
+  &lt;!-- 作品の格子 --&gt;
+  &lt;div style=&quot;display:grid;grid-template-columns:repeat(3,276px);gap:26px;margin-top:26px;&quot;&gt;
+
+    &lt;!-- B1 ラスコー --&gt;
+    &lt;a href=&quot;chapters/01-cave.html&quot; style=&quot;display:block;background:#faf8f2;border:1px solid #e0dacb;color:#23201b;&quot;&gt;
+      &lt;div style=&quot;height:4px;background:#9c4a2f;&quot;&gt;&lt;/div&gt;
+      &lt;div style=&quot;padding:14px;&quot;&gt;
+        &lt;div style=&quot;background:#ffffff;border:1px solid #c9c0ad;padding:8px;&quot;&gt;
+          &lt;svg viewBox=&quot;0 0 640 400&quot; width=&quot;228&quot; height=&quot;150&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; role=&quot;img&quot; aria-label=&quot;ラスコー洞窟「牡牛の広間」の構図図解&quot; style=&quot;display:block&quot;&gt;
+            &lt;rect width=&quot;640&quot; height=&quot;400&quot; fill=&quot;#d8c49a&quot;/&gt;
+            &lt;g fill=&quot;#c9b184&quot; opacity=&quot;.8&quot;&gt;&lt;ellipse cx=&quot;150&quot; cy=&quot;120&quot; rx=&quot;180&quot; ry=&quot;90&quot;/&gt;&lt;ellipse cx=&quot;520&quot; cy=&quot;300&quot; rx=&quot;200&quot; ry=&quot;110&quot;/&gt;&lt;/g&gt;
+            &lt;g fill=&quot;none&quot; stroke=&quot;#3a2a1c&quot; stroke-width=&quot;9&quot; stroke-linejoin=&quot;round&quot;&gt;
+              &lt;path d=&quot;M120 250c20-56 96-76 168-64 40 6 60-30 84-26 20 4 16 34 4 44 44 10 74 40 78 78-30-14-58-8-70 8-30-16-90-18-134-2-40 14-100 6-130-38z&quot;/&gt;
+              &lt;path d=&quot;M212 178c-30-34-58-40-84-30 24-18 62-14 84 12&quot;/&gt;
+              &lt;path d=&quot;M396 168c26-30 56-34 80-24-22-16-58-10-80 10&quot;/&gt;
+            &lt;/g&gt;
+            &lt;g fill=&quot;#8a3a20&quot;&gt;&lt;path d=&quot;M180 214c60-22 150-20 200 6-52-10-142-12-200-6z&quot;/&gt;&lt;/g&gt;
+            &lt;g fill=&quot;none&quot; stroke=&quot;#5c4326&quot; stroke-width=&quot;6&quot;&gt;&lt;path d=&quot;M420 300c40-32 110-34 160-6&quot;/&gt;&lt;path d=&quot;M448 322c34-22 84-24 120-6&quot;/&gt;&lt;/g&gt;
+            &lt;g fill=&quot;#3a2a1c&quot;&gt;&lt;circle cx=&quot;86&quot; cy=&quot;86&quot; r=&quot;8&quot;/&gt;&lt;circle cx=&quot;112&quot; cy=&quot;70&quot; r=&quot;7&quot;/&gt;&lt;circle cx=&quot;138&quot; cy=&quot;88&quot; r=&quot;6&quot;/&gt;&lt;circle cx=&quot;574&quot; cy=&quot;96&quot; r=&quot;8&quot;/&gt;&lt;circle cx=&quot;600&quot; cy=&quot;118&quot; r=&quot;6&quot;/&gt;&lt;/g&gt;
+          &lt;/svg&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;margin-top:11px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11px;letter-spacing:.06em;color:#56504a;&quot;&gt;作者不詳&lt;/div&gt;
+        &lt;div style=&quot;margin-top:2px;font-size:15.5px;font-weight:600;line-height:1.6;&quot;&gt;ラスコー洞窟「牡牛の広間」&lt;span style=&quot;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,sans-serif;font-size:11.5px;color:#8b8378;margin-left:.5em;&quot;&gt;約1万7千年前&lt;/span&gt;&lt;/div&gt;
+        &lt;p style=&quot;margin:9px 0 0;padding-left:11px;border-left:2px solid #d3ab97;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:12.5px;line-height:1.85;color:#23201b;&quot;&gt;入口から遠い、いちばん歩きにくい場所ほど丁寧に描かれている。&lt;/p&gt;
+        &lt;div style=&quot;margin-top:9px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:10.5px;color:#8b8378;&quot;&gt;ラスコー洞窟（フランス）&lt;/div&gt;
+        &lt;div style=&quot;margin-top:11px;padding-top:9px;border-top:1px solid #e0dacb;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11.5px;color:#833d26;&quot;&gt;第1章　洞窟の中の手　&amp;rarr;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+
+    &lt;!-- B2 ツタンカーメン --&gt;
+    &lt;a href=&quot;chapters/02-nile.html&quot; style=&quot;display:block;background:#faf8f2;border:1px solid #e0dacb;color:#23201b;&quot;&gt;
+      &lt;div style=&quot;height:4px;background:#1b6ca8;&quot;&gt;&lt;/div&gt;
+      &lt;div style=&quot;padding:14px;&quot;&gt;
+        &lt;div style=&quot;background:#ffffff;border:1px solid #c9c0ad;padding:8px;&quot;&gt;
+          &lt;svg viewBox=&quot;0 0 400 500&quot; width=&quot;228&quot; height=&quot;150&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; role=&quot;img&quot; aria-label=&quot;ツタンカーメンの黄金のマスクの構図図解&quot; style=&quot;display:block&quot;&gt;
+            &lt;rect width=&quot;400&quot; height=&quot;500&quot; fill=&quot;#2c3138&quot;/&gt;
+            &lt;path d=&quot;M200 40c92 0 130 54 130 130 0 60-10 96-10 130l30 180H50l30-180c0-34-10-70-10-130C70 94 108 40 200 40z&quot; fill=&quot;#d8ab3c&quot;/&gt;
+            &lt;g fill=&quot;#1b6ca8&quot;&gt;&lt;path d=&quot;M74 150h48v290H74z&quot;/&gt;&lt;path d=&quot;M278 150h48v290h-48z&quot;/&gt;&lt;path d=&quot;M92 96h216v22H92z&quot;/&gt;&lt;/g&gt;
+            &lt;g fill=&quot;#d8ab3c&quot;&gt;&lt;path d=&quot;M74 190h48v22H74z&quot;/&gt;&lt;path d=&quot;M74 250h48v22H74z&quot;/&gt;&lt;path d=&quot;M74 310h48v22H74z&quot;/&gt;&lt;path d=&quot;M74 370h48v22H74z&quot;/&gt;&lt;path d=&quot;M278 190h48v22h-48z&quot;/&gt;&lt;path d=&quot;M278 250h48v22h-48z&quot;/&gt;&lt;path d=&quot;M278 310h48v22h-48z&quot;/&gt;&lt;path d=&quot;M278 370h48v22h-48z&quot;/&gt;&lt;/g&gt;
+            &lt;ellipse cx=&quot;200&quot; cy=&quot;222&quot; rx=&quot;72&quot; ry=&quot;92&quot; fill=&quot;#e3bb52&quot;/&gt;
+            &lt;g fill=&quot;#1f242b&quot;&gt;&lt;ellipse cx=&quot;172&quot; cy=&quot;206&quot; rx=&quot;15&quot; ry=&quot;9&quot;/&gt;&lt;ellipse cx=&quot;228&quot; cy=&quot;206&quot; rx=&quot;15&quot; ry=&quot;9&quot;/&gt;&lt;path d=&quot;M152 188c12-12 30-12 40-4-14-2-28 0-40 4z&quot;/&gt;&lt;path d=&quot;M208 184c12-8 30-8 42 4-14-4-28-6-42-4z&quot;/&gt;&lt;/g&gt;
+            &lt;path d=&quot;M188 300h24l10 70h-44z&quot; fill=&quot;#1b6ca8&quot;/&gt;
+            &lt;path d=&quot;M186 96c-16-18-36-22-52-12 18-16 44-14 58 4z&quot; fill=&quot;#2c3138&quot;/&gt;
+            &lt;path d=&quot;M214 96c16-18 40-20 56-8-20-14-44-10-56 8z&quot; fill=&quot;#c8352a&quot;/&gt;
+            &lt;g fill=&quot;#3d8fb8&quot;&gt;&lt;path d=&quot;M120 400h160v20H120z&quot;/&gt;&lt;path d=&quot;M104 430h192v20H104z&quot;/&gt;&lt;/g&gt;
+          &lt;/svg&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;margin-top:11px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11px;letter-spacing:.06em;color:#56504a;&quot;&gt;作者不詳（王家の工房）&lt;/div&gt;
+        &lt;div style=&quot;margin-top:2px;font-size:15.5px;font-weight:600;line-height:1.6;&quot;&gt;ツタンカーメンの黄金のマスク&lt;span style=&quot;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,sans-serif;font-size:11.5px;color:#8b8378;margin-left:.5em;&quot;&gt;前1323年ごろ&lt;/span&gt;&lt;/div&gt;
+        &lt;p style=&quot;margin:9px 0 0;padding-left:11px;border-left:2px solid #9dbdd8;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:12.5px;line-height:1.85;color:#23201b;&quot;&gt;重さ10キロの純金。三千年、誰にも見せる気のなかった顔。&lt;/p&gt;
+        &lt;div style=&quot;margin-top:9px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:10.5px;color:#8b8378;&quot;&gt;大エジプト博物館ほか（エジプト）&lt;/div&gt;
+        &lt;div style=&quot;margin-top:11px;padding-top:9px;border-top:1px solid #e0dacb;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11.5px;color:#155a8c;&quot;&gt;第2章　王のための永遠　&amp;rarr;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+
+    &lt;!-- B3 パルテノン --&gt;
+    &lt;a href=&quot;chapters/03-greece.html&quot; style=&quot;display:block;background:#faf8f2;border:1px solid #e0dacb;color:#23201b;&quot;&gt;
+      &lt;div style=&quot;height:4px;background:#a8392b;&quot;&gt;&lt;/div&gt;
+      &lt;div style=&quot;padding:14px;&quot;&gt;
+        &lt;div style=&quot;background:#ffffff;border:1px solid #c9c0ad;padding:8px;&quot;&gt;
+          &lt;svg viewBox=&quot;0 0 640 420&quot; width=&quot;228&quot; height=&quot;150&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; role=&quot;img&quot; aria-label=&quot;パルテノン神殿の構図図解&quot; style=&quot;display:block&quot;&gt;
+            &lt;defs&gt;&lt;linearGradient id=&quot;gp1&quot; x1=&quot;0&quot; y1=&quot;0&quot; x2=&quot;0&quot; y2=&quot;1&quot;&gt;&lt;stop offset=&quot;0&quot; stop-color=&quot;#7fb3d5&quot;/&gt;&lt;stop offset=&quot;1&quot; stop-color=&quot;#cfe0e6&quot;/&gt;&lt;/linearGradient&gt;&lt;/defs&gt;
+            &lt;rect width=&quot;640&quot; height=&quot;420&quot; fill=&quot;url(#gp1)&quot;/&gt;
+            &lt;path d=&quot;M40 130L320 40l280 90z&quot; fill=&quot;#e2d6bc&quot;/&gt;
+            &lt;path d=&quot;M70 132L320 62l250 70z&quot; fill=&quot;#cbbb9a&quot;/&gt;
+            &lt;g fill=&quot;#a8392b&quot; opacity=&quot;.55&quot;&gt;&lt;circle cx=&quot;240&quot; cy=&quot;106&quot; r=&quot;12&quot;/&gt;&lt;circle cx=&quot;320&quot; cy=&quot;92&quot; r=&quot;14&quot;/&gt;&lt;circle cx=&quot;400&quot; cy=&quot;106&quot; r=&quot;12&quot;/&gt;&lt;/g&gt;
+            &lt;rect x=&quot;40&quot; y=&quot;130&quot; width=&quot;560&quot; height=&quot;34&quot; fill=&quot;#efe6d2&quot;/&gt;
+            &lt;rect x=&quot;40&quot; y=&quot;164&quot; width=&quot;560&quot; height=&quot;16&quot; fill=&quot;#d5c8ac&quot;/&gt;
+            &lt;g fill=&quot;#eae0c8&quot;&gt;&lt;rect x=&quot;60&quot; y=&quot;180&quot; width=&quot;46&quot; height=&quot;184&quot;/&gt;&lt;rect x=&quot;140&quot; y=&quot;180&quot; width=&quot;46&quot; height=&quot;184&quot;/&gt;&lt;rect x=&quot;220&quot; y=&quot;180&quot; width=&quot;46&quot; height=&quot;184&quot;/&gt;&lt;rect x=&quot;300&quot; y=&quot;180&quot; width=&quot;46&quot; height=&quot;184&quot;/&gt;&lt;rect x=&quot;380&quot; y=&quot;180&quot; width=&quot;46&quot; height=&quot;184&quot;/&gt;&lt;rect x=&quot;460&quot; y=&quot;180&quot; width=&quot;46&quot; height=&quot;184&quot;/&gt;&lt;rect x=&quot;534&quot; y=&quot;180&quot; width=&quot;46&quot; height=&quot;184&quot;/&gt;&lt;/g&gt;
+            &lt;g fill=&quot;#c9bb9c&quot; opacity=&quot;.8&quot;&gt;&lt;rect x=&quot;98&quot; y=&quot;180&quot; width=&quot;8&quot; height=&quot;184&quot;/&gt;&lt;rect x=&quot;178&quot; y=&quot;180&quot; width=&quot;8&quot; height=&quot;184&quot;/&gt;&lt;rect x=&quot;258&quot; y=&quot;180&quot; width=&quot;8&quot; height=&quot;184&quot;/&gt;&lt;rect x=&quot;338&quot; y=&quot;180&quot; width=&quot;8&quot; height=&quot;184&quot;/&gt;&lt;rect x=&quot;418&quot; y=&quot;180&quot; width=&quot;8&quot; height=&quot;184&quot;/&gt;&lt;rect x=&quot;498&quot; y=&quot;180&quot; width=&quot;8&quot; height=&quot;184&quot;/&gt;&lt;rect x=&quot;572&quot; y=&quot;180&quot; width=&quot;8&quot; height=&quot;184&quot;/&gt;&lt;/g&gt;
+            &lt;rect x=&quot;30&quot; y=&quot;364&quot; width=&quot;580&quot; height=&quot;20&quot; fill=&quot;#e4dac2&quot;/&gt;
+            &lt;rect x=&quot;16&quot; y=&quot;384&quot; width=&quot;608&quot; height=&quot;36&quot; fill=&quot;#cdbf9f&quot;/&gt;
+          &lt;/svg&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;margin-top:11px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11px;letter-spacing:.06em;color:#56504a;&quot;&gt;イクティノス、カリクラテス（設計）&lt;/div&gt;
+        &lt;div style=&quot;margin-top:2px;font-size:15.5px;font-weight:600;line-height:1.6;&quot;&gt;パルテノン神殿&lt;span style=&quot;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,sans-serif;font-size:11.5px;color:#8b8378;margin-left:.5em;&quot;&gt;前447 &amp;mdash; 前432年&lt;/span&gt;&lt;/div&gt;
+        &lt;p style=&quot;margin:9px 0 0;padding-left:11px;border-left:2px solid #d5a29a;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:12.5px;line-height:1.85;color:#23201b;&quot;&gt;柱はまっすぐではない。目に真っ直ぐ見えるよう、わずかに膨らませてある。&lt;/p&gt;
+        &lt;div style=&quot;margin-top:9px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:10.5px;color:#8b8378;&quot;&gt;アクロポリス（アテネ）&lt;/div&gt;
+        &lt;div style=&quot;margin-top:11px;padding-top:9px;border-top:1px solid #e0dacb;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11.5px;color:#8c2f23;&quot;&gt;第3章　人間が立ちあがる　&amp;rarr;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+
+    &lt;!-- B4 サント・シャペル --&gt;
+    &lt;a href=&quot;chapters/07-gothic.html&quot; style=&quot;display:block;background:#faf8f2;border:1px solid #e0dacb;color:#23201b;&quot;&gt;
+      &lt;div style=&quot;height:4px;background:#2f4a9b;&quot;&gt;&lt;/div&gt;
+      &lt;div style=&quot;padding:14px;&quot;&gt;
+        &lt;div style=&quot;background:#ffffff;border:1px solid #c9c0ad;padding:8px;&quot;&gt;
+          &lt;svg viewBox=&quot;0 0 440 560&quot; width=&quot;228&quot; height=&quot;150&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; role=&quot;img&quot; aria-label=&quot;サント・シャペル上層礼拝堂の構図図解&quot; style=&quot;display:block&quot;&gt;
+            &lt;rect width=&quot;440&quot; height=&quot;560&quot; fill=&quot;#191627&quot;/&gt;
+            &lt;g&gt;
+              &lt;path d=&quot;M40 470V180a52 52 0 0 1 104 0v290z&quot; fill=&quot;#2f4a9b&quot;/&gt;
+              &lt;path d=&quot;M168 470V160a52 52 0 0 1 104 0v310z&quot; fill=&quot;#2f4a9b&quot;/&gt;
+              &lt;path d=&quot;M296 470V180a52 52 0 0 1 104 0v290z&quot; fill=&quot;#2f4a9b&quot;/&gt;
+            &lt;/g&gt;
+            &lt;g fill=&quot;#a8262c&quot; opacity=&quot;.85&quot;&gt;&lt;rect x=&quot;52&quot; y=&quot;230&quot; width=&quot;80&quot; height=&quot;40&quot;/&gt;&lt;rect x=&quot;180&quot; y=&quot;212&quot; width=&quot;80&quot; height=&quot;40&quot;/&gt;&lt;rect x=&quot;308&quot; y=&quot;230&quot; width=&quot;80&quot; height=&quot;40&quot;/&gt;&lt;rect x=&quot;52&quot; y=&quot;330&quot; width=&quot;80&quot; height=&quot;40&quot;/&gt;&lt;rect x=&quot;180&quot; y=&quot;312&quot; width=&quot;80&quot; height=&quot;40&quot;/&gt;&lt;rect x=&quot;308&quot; y=&quot;330&quot; width=&quot;80&quot; height=&quot;40&quot;/&gt;&lt;/g&gt;
+            &lt;g fill=&quot;#d8b23c&quot; opacity=&quot;.8&quot;&gt;&lt;rect x=&quot;52&quot; y=&quot;290&quot; width=&quot;80&quot; height=&quot;20&quot;/&gt;&lt;rect x=&quot;180&quot; y=&quot;272&quot; width=&quot;80&quot; height=&quot;20&quot;/&gt;&lt;rect x=&quot;308&quot; y=&quot;290&quot; width=&quot;80&quot; height=&quot;20&quot;/&gt;&lt;rect x=&quot;52&quot; y=&quot;392&quot; width=&quot;80&quot; height=&quot;20&quot;/&gt;&lt;rect x=&quot;180&quot; y=&quot;374&quot; width=&quot;80&quot; height=&quot;20&quot;/&gt;&lt;rect x=&quot;308&quot; y=&quot;392&quot; width=&quot;80&quot; height=&quot;20&quot;/&gt;&lt;/g&gt;
+            &lt;g fill=&quot;#5a7fd4&quot; opacity=&quot;.7&quot;&gt;&lt;rect x=&quot;52&quot; y=&quot;180&quot; width=&quot;80&quot; height=&quot;34&quot;/&gt;&lt;rect x=&quot;180&quot; y=&quot;160&quot; width=&quot;80&quot; height=&quot;34&quot;/&gt;&lt;rect x=&quot;308&quot; y=&quot;180&quot; width=&quot;80&quot; height=&quot;34&quot;/&gt;&lt;/g&gt;
+            &lt;g fill=&quot;#0f1120&quot;&gt;&lt;rect x=&quot;144&quot; y=&quot;120&quot; width=&quot;26&quot; height=&quot;350&quot;/&gt;&lt;rect x=&quot;272&quot; y=&quot;120&quot; width=&quot;26&quot; height=&quot;350&quot;/&gt;&lt;rect x=&quot;14&quot; y=&quot;140&quot; width=&quot;26&quot; height=&quot;330&quot;/&gt;&lt;rect x=&quot;400&quot; y=&quot;140&quot; width=&quot;26&quot; height=&quot;330&quot;/&gt;&lt;/g&gt;
+            &lt;path d=&quot;M0 100q110-96 220-20 110-76 220 20V0H0z&quot; fill=&quot;#0f1120&quot;/&gt;
+            &lt;rect y=&quot;470&quot; width=&quot;440&quot; height=&quot;90&quot; fill=&quot;#3d3324&quot;/&gt;
+            &lt;g fill=&quot;#2f4a9b&quot; opacity=&quot;.35&quot;&gt;&lt;path d=&quot;M60 470h80l-20 90H60z&quot;/&gt;&lt;path d=&quot;M190 470h80l-16 90h-80z&quot;/&gt;&lt;path d=&quot;M320 470h80l-14 90h-80z&quot;/&gt;&lt;/g&gt;
+          &lt;/svg&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;margin-top:11px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11px;letter-spacing:.06em;color:#56504a;&quot;&gt;パリの工房（親方名不詳）&lt;/div&gt;
+        &lt;div style=&quot;margin-top:2px;font-size:15.5px;font-weight:600;line-height:1.6;&quot;&gt;サント・シャペル 上層礼拝堂&lt;span style=&quot;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,sans-serif;font-size:11.5px;color:#8b8378;margin-left:.5em;&quot;&gt;1242 &amp;mdash; 1248年&lt;/span&gt;&lt;/div&gt;
+        &lt;p style=&quot;margin:9px 0 0;padding-left:11px;border-left:2px solid #a3aed5;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:12.5px;line-height:1.85;color:#23201b;&quot;&gt;壁の面積より窓のほうが広い。石で建てる以上、これは無茶だった。&lt;/p&gt;
+        &lt;div style=&quot;margin-top:9px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:10.5px;color:#8b8378;&quot;&gt;サント・シャペル（パリ・シテ島）&lt;/div&gt;
+        &lt;div style=&quot;margin-top:11px;padding-top:9px;border-top:1px solid #e0dacb;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11.5px;color:#273e82;&quot;&gt;第7章　光の建築　&amp;rarr;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+
+    &lt;!-- B5 ヴィーナスの誕生 --&gt;
+    &lt;a href=&quot;chapters/08-quattrocento.html&quot; style=&quot;display:block;background:#faf8f2;border:1px solid #e0dacb;color:#23201b;&quot;&gt;
+      &lt;div style=&quot;height:4px;background:#4a7c59;&quot;&gt;&lt;/div&gt;
+      &lt;div style=&quot;padding:14px;&quot;&gt;
+        &lt;div style=&quot;background:#ffffff;border:1px solid #c9c0ad;padding:8px;&quot;&gt;
+          &lt;svg viewBox=&quot;0 0 660 420&quot; width=&quot;228&quot; height=&quot;150&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; role=&quot;img&quot; aria-label=&quot;《ヴィーナスの誕生》の構図図解&quot; style=&quot;display:block&quot;&gt;
+            &lt;defs&gt;&lt;linearGradient id=&quot;gv1&quot; x1=&quot;0&quot; y1=&quot;0&quot; x2=&quot;0&quot; y2=&quot;1&quot;&gt;&lt;stop offset=&quot;0&quot; stop-color=&quot;#b8c9b6&quot;/&gt;&lt;stop offset=&quot;1&quot; stop-color=&quot;#8fae9e&quot;/&gt;&lt;/linearGradient&gt;&lt;/defs&gt;
+            &lt;rect width=&quot;660&quot; height=&quot;420&quot; fill=&quot;url(#gv1)&quot;/&gt;
+            &lt;rect y=&quot;250&quot; width=&quot;660&quot; height=&quot;170&quot; fill=&quot;#7ba192&quot;/&gt;
+            &lt;g fill=&quot;#e9e4d2&quot; opacity=&quot;.55&quot;&gt;&lt;path d=&quot;M20 300h180l-14 12H34z&quot;/&gt;&lt;path d=&quot;M240 330h200l-16 12H256z&quot;/&gt;&lt;path d=&quot;M440 290h180l-14 12H454z&quot;/&gt;&lt;/g&gt;
+            &lt;path d=&quot;M330 250c-84 0-150 30-150 30 0 34 68 62 150 62s150-28 150-62c0 0-66-30-150-30z&quot; fill=&quot;#efe3c8&quot;/&gt;
+            &lt;g fill=&quot;#e0cfa8&quot;&gt;&lt;path d=&quot;M180 280c40-6 70 30 150 30s110-36 150-30c-8 30-72 56-150 56s-142-26-150-56z&quot;/&gt;&lt;/g&gt;
+            &lt;g fill=&quot;#d9c9a0&quot; opacity=&quot;.8&quot;&gt;&lt;path d=&quot;M330 250v92M270 262l40 78M390 262l-40 78&quot;/&gt;&lt;/g&gt;
+            &lt;path d=&quot;M330 66c26 0 40 20 40 44 0 18-8 30-8 44l16 96h-96l14-96c0-14-8-26-8-44 0-24 16-44 42-44z&quot; fill=&quot;#e8d3c0&quot;/&gt;
+            &lt;circle cx=&quot;330&quot; cy=&quot;58&quot; r=&quot;26&quot; fill=&quot;#eddcc8&quot;/&gt;
+            &lt;path d=&quot;M300 40c0-22 14-34 30-34s30 14 30 34c6 40-4 90-14 120-6-40-2-90-16-120-6 24-14 74-16 106-8-32-16-72-14-106z&quot; fill=&quot;#c58c3c&quot;/&gt;
+            &lt;g fill=&quot;#6f8f7c&quot; opacity=&quot;.8&quot;&gt;&lt;path d=&quot;M60 60c30-20 66-10 80 20-30-8-58-6-80-20z&quot;/&gt;&lt;path d=&quot;M600 90c-30-18-66-8-78 22 28-10 56-8 78-22z&quot;/&gt;&lt;/g&gt;
+            &lt;g fill=&quot;#c9a24a&quot; opacity=&quot;.7&quot;&gt;&lt;circle cx=&quot;120&quot; cy=&quot;140&quot; r=&quot;8&quot;/&gt;&lt;circle cx=&quot;164&quot; cy=&quot;112&quot; r=&quot;6&quot;/&gt;&lt;circle cx=&quot;200&quot; cy=&quot;150&quot; r=&quot;7&quot;/&gt;&lt;circle cx=&quot;520&quot; cy=&quot;130&quot; r=&quot;7&quot;/&gt;&lt;circle cx=&quot;556&quot; cy=&quot;160&quot; r=&quot;6&quot;/&gt;&lt;/g&gt;
+            &lt;path d=&quot;M470 90c40-16 80 4 96 44 20 52-10 108-52 116 22-40 24-90 8-124-10-22-30-34-52-36z&quot; fill=&quot;#c9705c&quot; opacity=&quot;.85&quot;/&gt;
+          &lt;/svg&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;margin-top:11px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11px;letter-spacing:.06em;color:#56504a;&quot;&gt;サンドロ・ボッティチェリ&lt;/div&gt;
+        &lt;div style=&quot;margin-top:2px;font-size:15.5px;font-weight:600;line-height:1.6;&quot;&gt;ヴィーナスの誕生&lt;span style=&quot;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,sans-serif;font-size:11.5px;color:#8b8378;margin-left:.5em;&quot;&gt;1485年ごろ&lt;/span&gt;&lt;/div&gt;
+        &lt;p style=&quot;margin:9px 0 0;padding-left:11px;border-left:2px solid #a6c2ae;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:12.5px;line-height:1.85;color:#23201b;&quot;&gt;首は解剖学的にありえないほど長い。それでも誰も不自然だと言わない。&lt;/p&gt;
+        &lt;div style=&quot;margin-top:9px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:10.5px;color:#8b8378;&quot;&gt;ウフィツィ美術館（フィレンツェ）&lt;/div&gt;
+        &lt;div style=&quot;margin-top:11px;padding-top:9px;border-top:1px solid #e0dacb;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11.5px;color:#3d6849;&quot;&gt;第8章　空間が生まれた日　&amp;rarr;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+
+    &lt;!-- B6 アルノルフィーニ --&gt;
+    &lt;a href=&quot;chapters/10-north.html&quot; style=&quot;display:block;background:#faf8f2;border:1px solid #e0dacb;color:#23201b;&quot;&gt;
+      &lt;div style=&quot;height:4px;background:#4a7c59;&quot;&gt;&lt;/div&gt;
+      &lt;div style=&quot;padding:14px;&quot;&gt;
+        &lt;div style=&quot;background:#ffffff;border:1px solid #c9c0ad;padding:8px;&quot;&gt;
+          &lt;svg viewBox=&quot;0 0 420 560&quot; width=&quot;228&quot; height=&quot;150&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; role=&quot;img&quot; aria-label=&quot;《アルノルフィーニ夫妻像》の構図図解&quot; style=&quot;display:block&quot;&gt;
+            &lt;rect width=&quot;420&quot; height=&quot;560&quot; fill=&quot;#6d5c46&quot;/&gt;
+            &lt;rect x=&quot;30&quot; y=&quot;30&quot; width=&quot;360&quot; height=&quot;330&quot; fill=&quot;#8b7a5c&quot;/&gt;
+            &lt;rect y=&quot;440&quot; width=&quot;420&quot; height=&quot;120&quot; fill=&quot;#5a4a38&quot;/&gt;
+            &lt;g stroke=&quot;#4a3c2c&quot; stroke-width=&quot;2&quot; fill=&quot;none&quot;&gt;&lt;path d=&quot;M0 470h420M0 500h420M0 530h420M60 440v120M140 440v120M220 440v120M300 440v120&quot;/&gt;&lt;/g&gt;
+            &lt;path d=&quot;M300 60h120v380H300z&quot; fill=&quot;#7a2a2a&quot;/&gt;
+            &lt;path d=&quot;M290 46h130v34H290z&quot; fill=&quot;#8c3333&quot;/&gt;
+            &lt;circle cx=&quot;210&quot; cy=&quot;180&quot; r=&quot;40&quot; fill=&quot;#e6dfc8&quot;/&gt;
+            &lt;circle cx=&quot;210&quot; cy=&quot;180&quot; r=&quot;34&quot; fill=&quot;#3a4a52&quot;/&gt;
+            &lt;circle cx=&quot;210&quot; cy=&quot;180&quot; r=&quot;22&quot; fill=&quot;#7d8e94&quot; opacity=&quot;.8&quot;/&gt;
+            &lt;g fill=&quot;#c9a227&quot;&gt;&lt;circle cx=&quot;210&quot; cy=&quot;180&quot; r=&quot;42&quot; fill=&quot;none&quot; stroke=&quot;#c9a227&quot; stroke-width=&quot;4&quot;/&gt;&lt;/g&gt;
+            &lt;path d=&quot;M92 250c48-18 84 10 92 60 8 46-6 78 4 116l-190 6c6-56 8-98 22-124 14-26 30-46 72-58z&quot; fill=&quot;#3d3a33&quot;/&gt;
+            &lt;circle cx=&quot;128&quot; cy=&quot;216&quot; r=&quot;30&quot; fill=&quot;#e0c4a8&quot;/&gt;
+            &lt;path d=&quot;M96 202c0-30 16-46 34-46 20 0 34 16 34 44-40-24-46-16-68 2z&quot; fill=&quot;#2a2a26&quot;/&gt;
+            &lt;path d=&quot;M100 156h72l16 22H84z&quot; fill=&quot;#241f1a&quot;/&gt;
+            &lt;path d=&quot;M290 260c46-14 78 16 84 66 6 44-4 70 2 106l-172 4c2-52 4-92 16-118 12-28 30-46 70-58z&quot; fill=&quot;#3d6849&quot;/&gt;
+            &lt;path d=&quot;M250 400c40-16 80-16 118 2l-4 34-118 2z&quot; fill=&quot;#4a7c59&quot;/&gt;
+            &lt;circle cx=&quot;316&quot; cy=&quot;222&quot; r=&quot;28&quot; fill=&quot;#e6cbb0&quot;/&gt;
+            &lt;path d=&quot;M282 216c0-26 14-42 34-42 18 0 32 16 32 40-18-18-46-16-66 2z&quot; fill=&quot;#efe6d2&quot;/&gt;
+            &lt;path d=&quot;M186 356l52 20-4 18-52-18z&quot; fill=&quot;#e0c4a8&quot;/&gt;
+            &lt;g stroke=&quot;#c9a227&quot; stroke-width=&quot;4&quot; fill=&quot;none&quot;&gt;&lt;path d=&quot;M150 30v70M210 30v56M270 30v70&quot;/&gt;&lt;path d=&quot;M150 100h120&quot;/&gt;&lt;/g&gt;
+          &lt;/svg&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;margin-top:11px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11px;letter-spacing:.06em;color:#56504a;&quot;&gt;ヤン・ファン・エイク&lt;/div&gt;
+        &lt;div style=&quot;margin-top:2px;font-size:15.5px;font-weight:600;line-height:1.6;&quot;&gt;アルノルフィーニ夫妻像&lt;span style=&quot;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,sans-serif;font-size:11.5px;color:#8b8378;margin-left:.5em;&quot;&gt;1434年&lt;/span&gt;&lt;/div&gt;
+        &lt;p style=&quot;margin:9px 0 0;padding-left:11px;border-left:2px solid #a6c2ae;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:12.5px;line-height:1.85;color:#23201b;&quot;&gt;奥の凸面鏡に、部屋に立つ二人の証人が映っている。ひとりは画家自身。&lt;/p&gt;
+        &lt;div style=&quot;margin-top:9px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:10.5px;color:#8b8378;&quot;&gt;ナショナル・ギャラリー（ロンドン）&lt;/div&gt;
+        &lt;div style=&quot;margin-top:11px;padding-top:9px;border-top:1px solid #e0dacb;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11.5px;color:#3d6849;&quot;&gt;第10章　北方の眼　&amp;rarr;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+
+    &lt;!-- B7 ジェンティレスキ ユディト --&gt;
+    &lt;a href=&quot;chapters/12-baroque.html&quot; style=&quot;display:block;background:#faf8f2;border:1px solid #e0dacb;color:#23201b;&quot;&gt;
+      &lt;div style=&quot;height:4px;background:#7a4318;&quot;&gt;&lt;/div&gt;
+      &lt;div style=&quot;padding:14px;&quot;&gt;
+        &lt;div style=&quot;background:#ffffff;border:1px solid #c9c0ad;padding:8px;&quot;&gt;
+          &lt;svg viewBox=&quot;0 0 460 560&quot; width=&quot;228&quot; height=&quot;150&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; role=&quot;img&quot; aria-label=&quot;《ホロフェルネスの首を斬るユディト》の構図図解&quot; style=&quot;display:block&quot;&gt;
+            &lt;rect width=&quot;460&quot; height=&quot;560&quot; fill=&quot;#1c1611&quot;/&gt;
+            &lt;path d=&quot;M0 0h460v240H0z&quot; fill=&quot;#241c14&quot;/&gt;
+            &lt;path d=&quot;M40 320c120-40 260-40 380 0v240H40z&quot; fill=&quot;#e6e0cf&quot;/&gt;
+            &lt;path d=&quot;M60 340c110-34 240-34 350 0-30 40-100 60-176 60S94 380 60 340z&quot; fill=&quot;#f2ede0&quot;/&gt;
+            &lt;path d=&quot;M110 360c60 24 130 30 200 12l-30 60-150-20z&quot; fill=&quot;#e2d8c2&quot;/&gt;
+            &lt;path d=&quot;M120 180c50-30 96-8 110 44 12 44-2 66 6 100l-160 10c-4-52 0-88 10-110 8-20 16-34 34-44z&quot; fill=&quot;#8c2f39&quot;/&gt;
+            &lt;circle cx=&quot;164&quot; cy=&quot;150&quot; r=&quot;34&quot; fill=&quot;#e0bc9c&quot;/&gt;
+            &lt;path d=&quot;M130 142c0-30 16-48 36-48s36 18 36 46c-22-18-52-16-72 2z&quot; fill=&quot;#3a2a1c&quot;/&gt;
+            &lt;path d=&quot;M300 200c46-20 86 6 96 56 10 46-4 68 4 102l-150 8c-6-52-2-90 10-116 10-24 18-40 40-50z&quot; fill=&quot;#2f4a4a&quot;/&gt;
+            &lt;circle cx=&quot;342&quot; cy=&quot;168&quot; r=&quot;30&quot; fill=&quot;#dcb896&quot;/&gt;
+            &lt;path d=&quot;M312 160c0-26 14-42 32-42s32 16 32 40c-20-16-44-14-64 2z&quot; fill=&quot;#4a3a26&quot;/&gt;
+            &lt;path d=&quot;M196 236l150-56 8 20-150 60z&quot; fill=&quot;#d8d4c8&quot;/&gt;
+            &lt;path d=&quot;M340 176l40-18 10 22-42 18z&quot; fill=&quot;#8b8378&quot;/&gt;
+            &lt;ellipse cx=&quot;232&quot; cy=&quot;300&quot; rx=&quot;46&quot; ry=&quot;36&quot; fill=&quot;#c9a281&quot;/&gt;
+            &lt;path d=&quot;M196 286c8-26 34-40 60-30 22 8 32 30 26 52-16-22-58-32-86-22z&quot; fill=&quot;#33251a&quot;/&gt;
+            &lt;g fill=&quot;#8c2f39&quot;&gt;&lt;path d=&quot;M232 336c14 30 8 66-6 96 22-16 40-52 34-92z&quot;/&gt;&lt;path d=&quot;M262 330c18 34 20 74 8 108 26-30 30-76 6-114z&quot;/&gt;&lt;path d=&quot;M204 340c-10 30-6 62 6 90-22-20-30-58-12-92z&quot;/&gt;&lt;/g&gt;
+          &lt;/svg&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;margin-top:11px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11px;letter-spacing:.06em;color:#56504a;&quot;&gt;アルテミジア・ジェンティレスキ&lt;/div&gt;
+        &lt;div style=&quot;margin-top:2px;font-size:15.5px;font-weight:600;line-height:1.6;&quot;&gt;ホロフェルネスの首を斬るユディト&lt;span style=&quot;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,sans-serif;font-size:11.5px;color:#8b8378;margin-left:.5em;&quot;&gt;1620年ごろ&lt;/span&gt;&lt;/div&gt;
+        &lt;p style=&quot;margin:9px 0 0;padding-left:11px;border-left:2px solid #c6a888;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:12.5px;line-height:1.85;color:#23201b;&quot;&gt;腕まくりをして、女二人で押さえつけて斬る。腕の力の入り方が生々しい。&lt;/p&gt;
+        &lt;div style=&quot;margin-top:9px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:10.5px;color:#8b8378;&quot;&gt;ウフィツィ美術館（フィレンツェ）&lt;/div&gt;
+        &lt;div style=&quot;margin-top:11px;padding-top:9px;border-top:1px solid #e0dacb;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11.5px;color:#653714;&quot;&gt;第12章　劇場としての絵画　&amp;rarr;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+
+    &lt;!-- B8 真珠の耳飾りの少女 --&gt;
+    &lt;a href=&quot;chapters/13-dutch.html&quot; style=&quot;display:block;background:#faf8f2;border:1px solid #e0dacb;color:#23201b;&quot;&gt;
+      &lt;div style=&quot;height:4px;background:#7a4318;&quot;&gt;&lt;/div&gt;
+      &lt;div style=&quot;padding:14px;&quot;&gt;
+        &lt;div style=&quot;background:#ffffff;border:1px solid #c9c0ad;padding:8px;&quot;&gt;
+          &lt;svg viewBox=&quot;0 0 440 500&quot; width=&quot;228&quot; height=&quot;150&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; role=&quot;img&quot; aria-label=&quot;《真珠の耳飾りの少女》の構図図解&quot; style=&quot;display:block&quot;&gt;
+            &lt;rect width=&quot;440&quot; height=&quot;500&quot; fill=&quot;#14161a&quot;/&gt;
+            &lt;path d=&quot;M150 500c0-120 40-176 110-176s110 56 110 176z&quot; fill=&quot;#5a4a34&quot;/&gt;
+            &lt;path d=&quot;M170 470c14-70 46-110 90-110s76 40 90 110z&quot; fill=&quot;#8a7248&quot;/&gt;
+            &lt;path d=&quot;M210 140c62 0 96 42 96 100 0 62-40 106-96 106s-96-44-96-106c0-58 34-100 96-100z&quot; fill=&quot;#e6c6a8&quot;/&gt;
+            &lt;path d=&quot;M112 176c0-70 44-112 100-112s100 42 100 108c0 22-6 34-14 34 4-56-32-92-86-92s-88 36-86 96c-10-4-14-16-14-34z&quot; fill=&quot;#1f4e79&quot;/&gt;
+            &lt;path d=&quot;M112 200c-14 6-24 20-24 38 0 22 16 36 36 30 8-24 4-50-12-68z&quot; fill=&quot;#1f4e79&quot;/&gt;
+            &lt;path d=&quot;M296 130c30-6 50 10 54 40 6 44-16 92-52 122 22-52 26-108 10-136-4-10-8-18-12-26z&quot; fill=&quot;#c9a227&quot;/&gt;
+            &lt;path d=&quot;M300 288c26 30 30 74 16 116 26-26 38-78 20-124z&quot; fill=&quot;#d8b23c&quot;/&gt;
+            &lt;g fill=&quot;#efe6d2&quot;&gt;&lt;path d=&quot;M150 320c40 22 90 22 128-2l14 30c-46 30-112 30-156 4z&quot;/&gt;&lt;/g&gt;
+            &lt;g fill=&quot;#1f242b&quot;&gt;&lt;ellipse cx=&quot;176&quot; cy=&quot;216&quot; rx=&quot;15&quot; ry=&quot;10&quot;/&gt;&lt;ellipse cx=&quot;252&quot; cy=&quot;212&quot; rx=&quot;15&quot; ry=&quot;10&quot;/&gt;&lt;/g&gt;
+            &lt;g fill=&quot;#fff&quot; opacity=&quot;.9&quot;&gt;&lt;circle cx=&quot;180&quot; cy=&quot;214&quot; r=&quot;4&quot;/&gt;&lt;circle cx=&quot;256&quot; cy=&quot;210&quot; r=&quot;4&quot;/&gt;&lt;/g&gt;
+            &lt;path d=&quot;M188 282c16 8 34 8 50-2-12 16-38 18-50 2z&quot; fill=&quot;#b06a5c&quot;/&gt;
+            &lt;circle cx=&quot;272&quot; cy=&quot;290&quot; r=&quot;22&quot; fill=&quot;#c8cfd6&quot;/&gt;
+            &lt;circle cx=&quot;266&quot; cy=&quot;282&quot; r=&quot;8&quot; fill=&quot;#ffffff&quot;/&gt;
+          &lt;/svg&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;margin-top:11px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11px;letter-spacing:.06em;color:#56504a;&quot;&gt;ヨハネス・フェルメール&lt;/div&gt;
+        &lt;div style=&quot;margin-top:2px;font-size:15.5px;font-weight:600;line-height:1.6;&quot;&gt;真珠の耳飾りの少女&lt;span style=&quot;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,sans-serif;font-size:11.5px;color:#8b8378;margin-left:.5em;&quot;&gt;1665年頃&lt;/span&gt;&lt;/div&gt;
+        &lt;p style=&quot;margin:9px 0 0;padding-left:11px;border-left:2px solid #c6a888;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:12.5px;line-height:1.85;color:#23201b;&quot;&gt;これは肖像ではなく顔の習作。モデルが誰かは、いまも分かっていない。&lt;/p&gt;
+        &lt;div style=&quot;margin-top:9px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:10.5px;color:#8b8378;&quot;&gt;マウリッツハイス美術館（デン・ハーグ）&lt;/div&gt;
+        &lt;div style=&quot;margin-top:11px;padding-top:9px;border-top:1px solid #e0dacb;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11.5px;color:#653714;&quot;&gt;第13章　市民たちの絵　&amp;rarr;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+
+    &lt;!-- B9 ぶらんこ --&gt;
+    &lt;a href=&quot;chapters/14-rococo.html&quot; style=&quot;display:block;background:#faf8f2;border:1px solid #e0dacb;color:#23201b;&quot;&gt;
+      &lt;div style=&quot;height:4px;background:#b8567f;&quot;&gt;&lt;/div&gt;
+      &lt;div style=&quot;padding:14px;&quot;&gt;
+        &lt;div style=&quot;background:#ffffff;border:1px solid #c9c0ad;padding:8px;&quot;&gt;
+          &lt;svg viewBox=&quot;0 0 440 560&quot; width=&quot;228&quot; height=&quot;150&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; role=&quot;img&quot; aria-label=&quot;《ぶらんこ》の構図図解&quot; style=&quot;display:block&quot;&gt;
+            &lt;rect width=&quot;440&quot; height=&quot;560&quot; fill=&quot;#3f4a2f&quot;/&gt;
+            &lt;g fill=&quot;#556b38&quot;&gt;&lt;ellipse cx=&quot;90&quot; cy=&quot;120&quot; rx=&quot;130&quot; ry=&quot;110&quot;/&gt;&lt;ellipse cx=&quot;360&quot; cy=&quot;90&quot; rx=&quot;140&quot; ry=&quot;120&quot;/&gt;&lt;ellipse cx=&quot;60&quot; cy=&quot;420&quot; rx=&quot;140&quot; ry=&quot;130&quot;/&gt;&lt;ellipse cx=&quot;380&quot; cy=&quot;440&quot; rx=&quot;130&quot; ry=&quot;120&quot;/&gt;&lt;/g&gt;
+            &lt;g fill=&quot;#7d9448&quot; opacity=&quot;.8&quot;&gt;&lt;ellipse cx=&quot;150&quot; cy=&quot;180&quot; rx=&quot;80&quot; ry=&quot;60&quot;/&gt;&lt;ellipse cx=&quot;300&quot; cy=&quot;220&quot; rx=&quot;70&quot; ry=&quot;52&quot;/&gt;&lt;ellipse cx=&quot;200&quot; cy=&quot;470&quot; rx=&quot;90&quot; ry=&quot;60&quot;/&gt;&lt;/g&gt;
+            &lt;path d=&quot;M180 0c30 90 20 200-10 300&quot; stroke=&quot;#d8cfae&quot; stroke-width=&quot;5&quot; fill=&quot;none&quot;/&gt;
+            &lt;path d=&quot;M300 0c-10 90 0 200 20 290&quot; stroke=&quot;#d8cfae&quot; stroke-width=&quot;5&quot; fill=&quot;none&quot;/&gt;
+            &lt;ellipse cx=&quot;230&quot; cy=&quot;290&quot; rx=&quot;120&quot; ry=&quot;80&quot; fill=&quot;#f2b8cf&quot; opacity=&quot;.95&quot;/&gt;
+            &lt;path d=&quot;M120 300c40-60 200-70 230 0-40-40-180-40-230 0z&quot; fill=&quot;#f7d2e0&quot;/&gt;
+            &lt;path d=&quot;M230 200c26 0 42 20 42 46 0 20-10 32-8 46l-70 4c0-16-8-28-8-48 0-26 18-48 44-48z&quot; fill=&quot;#f7d2e0&quot;/&gt;
+            &lt;circle cx=&quot;230&quot; cy=&quot;184&quot; r=&quot;24&quot; fill=&quot;#f0d8c4&quot;/&gt;
+            &lt;path d=&quot;M204 172c0-22 12-34 26-34 16 0 28 14 28 32-16-12-38-10-54 2z&quot; fill=&quot;#d8cfae&quot;/&gt;
+            &lt;path d=&quot;M330 250l40-30 12 18-46 30z&quot; fill=&quot;#f0d8c4&quot;/&gt;
+            &lt;path d=&quot;M362 200l30-40 16 12-34 42z&quot; fill=&quot;#c9366b&quot;/&gt;
+            &lt;path d=&quot;M380 150l16-20 12 10-18 20z&quot; fill=&quot;#b8567f&quot;/&gt;
+            &lt;path d=&quot;M60 430c40-30 90-24 110 12 12 24 4 48-20 58l-110-10z&quot; fill=&quot;#e8dfc4&quot; opacity=&quot;.9&quot;/&gt;
+            &lt;circle cx=&quot;92&quot; cy=&quot;404&quot; r=&quot;20&quot; fill=&quot;#e8c9ac&quot;/&gt;
+            &lt;g fill=&quot;#c9a227&quot; opacity=&quot;.7&quot;&gt;&lt;circle cx=&quot;110&quot; cy=&quot;150&quot; r=&quot;7&quot;/&gt;&lt;circle cx=&quot;330&quot; cy=&quot;140&quot; r=&quot;6&quot;/&gt;&lt;circle cx=&quot;70&quot; cy=&quot;300&quot; r=&quot;6&quot;/&gt;&lt;/g&gt;
+          &lt;/svg&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;margin-top:11px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11px;letter-spacing:.06em;color:#56504a;&quot;&gt;ジャン＝オノレ・フラゴナール&lt;/div&gt;
+        &lt;div style=&quot;margin-top:2px;font-size:15.5px;font-weight:600;line-height:1.6;&quot;&gt;ぶらんこ&lt;span style=&quot;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,sans-serif;font-size:11.5px;color:#8b8378;margin-left:.5em;&quot;&gt;1767年&lt;/span&gt;&lt;/div&gt;
+        &lt;p style=&quot;margin:9px 0 0;padding-left:11px;border-left:2px solid #dfa8c0;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:12.5px;line-height:1.85;color:#23201b;&quot;&gt;振り上げた靴が飛んでいく。下の茂みには、注文した本人が隠れている。&lt;/p&gt;
+        &lt;div style=&quot;margin-top:9px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:10.5px;color:#8b8378;&quot;&gt;ウォレス・コレクション（ロンドン）&lt;/div&gt;
+        &lt;div style=&quot;margin-top:11px;padding-top:9px;border-top:1px solid #e0dacb;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11.5px;color:#9b4869;&quot;&gt;第14章　雅な遊びと、その終わり　&amp;rarr;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+
+    &lt;!-- B10 民衆を導く自由の女神 --&gt;
+    &lt;a href=&quot;chapters/15-revolution.html&quot; style=&quot;display:block;background:#faf8f2;border:1px solid #e0dacb;color:#23201b;&quot;&gt;
+      &lt;div style=&quot;height:4px;background:#1f4e79;&quot;&gt;&lt;/div&gt;
+      &lt;div style=&quot;padding:14px;&quot;&gt;
+        &lt;div style=&quot;background:#ffffff;border:1px solid #c9c0ad;padding:8px;&quot;&gt;
+          &lt;svg viewBox=&quot;0 0 640 520&quot; width=&quot;228&quot; height=&quot;150&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; role=&quot;img&quot; aria-label=&quot;《民衆を導く自由の女神》の構図図解&quot; style=&quot;display:block&quot;&gt;
+            &lt;rect width=&quot;640&quot; height=&quot;520&quot; fill=&quot;#8f8064&quot;/&gt;
+            &lt;g fill=&quot;#9a8f76&quot;&gt;&lt;ellipse cx=&quot;120&quot; cy=&quot;120&quot; rx=&quot;180&quot; ry=&quot;110&quot;/&gt;&lt;ellipse cx=&quot;500&quot; cy=&quot;90&quot; rx=&quot;200&quot; ry=&quot;120&quot;/&gt;&lt;/g&gt;
+            &lt;path d=&quot;M0 330c120-40 260-40 380-10s180 20 260-10v210H0z&quot; fill=&quot;#5c5240&quot;/&gt;
+            &lt;g fill=&quot;#453d2e&quot;&gt;&lt;path d=&quot;M40 400h120l-20 120H30z&quot;/&gt;&lt;path d=&quot;M470 380h140l20 140H480z&quot;/&gt;&lt;/g&gt;
+            &lt;path d=&quot;M300 60l260-40-6 120-254 30z&quot; fill=&quot;#1f4e79&quot;/&gt;
+            &lt;path d=&quot;M300 60l160-24-4 108-156 26z&quot; fill=&quot;#e6ddd0&quot;/&gt;
+            &lt;path d=&quot;M300 60l80-12-2 96-78 18z&quot; fill=&quot;#c8352a&quot;/&gt;
+            &lt;path d=&quot;M296 60l10 260h-16z&quot; fill=&quot;#4a3f2c&quot;/&gt;
+            &lt;path d=&quot;M230 180c50-10 84 20 92 74 8 52-6 78 4 116l-176 8c-4-58 4-100 16-128 12-30 30-58 64-70z&quot; fill=&quot;#c9b98c&quot;/&gt;
+            &lt;path d=&quot;M200 250c60-20 110-12 150 20l-8 40c-44-28-96-34-148-18z&quot; fill=&quot;#e2d8bc&quot;/&gt;
+            &lt;circle cx=&quot;256&quot; cy=&quot;150&quot; r=&quot;34&quot; fill=&quot;#dcc0a0&quot;/&gt;
+            &lt;path d=&quot;M222 142c0-30 16-48 36-48s36 18 36 46c-22-20-52-18-72 2z&quot; fill=&quot;#5c4630&quot;/&gt;
+            &lt;path d=&quot;M282 170l30-22 10 18-32 24z&quot; fill=&quot;#dcc0a0&quot;/&gt;
+            &lt;path d=&quot;M370 240l90-30 8 20-92 34z&quot; fill=&quot;#c9a281&quot;/&gt;
+            &lt;path d=&quot;M120 300c40-16 70 4 78 44 6 30-4 48 2 74l-120 4c-2-40 0-70 8-88 8-18 14-28 32-34z&quot; fill=&quot;#2f3a30&quot;/&gt;
+            &lt;circle cx=&quot;150&quot; cy=&quot;264&quot; r=&quot;24&quot; fill=&quot;#d8b898&quot;/&gt;
+            &lt;path d=&quot;M126 254c0-20 12-32 26-32s24 12 24 30c-16-12-34-10-50 2z&quot; fill=&quot;#241c14&quot;/&gt;
+            &lt;path d=&quot;M420 300c36-14 64 4 70 40 6 28-2 44 2 68l-108 4c-2-38 0-64 8-80 6-16 12-26 28-32z&quot; fill=&quot;#3a3428&quot;/&gt;
+            &lt;circle cx=&quot;446&quot; cy=&quot;266&quot; r=&quot;22&quot; fill=&quot;#d8b898&quot;/&gt;
+            &lt;path d=&quot;M420 250h56l6 16h-66z&quot; fill=&quot;#1f1c18&quot;/&gt;
+            &lt;g fill=&quot;#6d6250&quot; opacity=&quot;.7&quot;&gt;&lt;ellipse cx=&quot;580&quot; cy=&quot;200&quot; rx=&quot;90&quot; ry=&quot;70&quot;/&gt;&lt;ellipse cx=&quot;60&quot; cy=&quot;220&quot; rx=&quot;80&quot; ry=&quot;60&quot;/&gt;&lt;/g&gt;
+          &lt;/svg&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;margin-top:11px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11px;letter-spacing:.06em;color:#56504a;&quot;&gt;ウジェーヌ・ドラクロワ&lt;/div&gt;
+        &lt;div style=&quot;margin-top:2px;font-size:15.5px;font-weight:600;line-height:1.6;&quot;&gt;民衆を導く自由の女神&lt;span style=&quot;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,sans-serif;font-size:11.5px;color:#8b8378;margin-left:.5em;&quot;&gt;1830年&lt;/span&gt;&lt;/div&gt;
+        &lt;p style=&quot;margin:9px 0 0;padding-left:11px;border-left:2px solid #9ab2c9;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:12.5px;line-height:1.85;color:#23201b;&quot;&gt;シルクハットの男は画家自身だという説がある。三日間の市街戦の絵。&lt;/p&gt;
+        &lt;div style=&quot;margin-top:9px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:10.5px;color:#8b8378;&quot;&gt;ルーヴル美術館（パリ）&lt;/div&gt;
+        &lt;div style=&quot;margin-top:11px;padding-top:9px;border-top:1px solid #e0dacb;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11.5px;color:#194164;&quot;&gt;第15章　理性と情熱　&amp;rarr;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+
+    &lt;!-- B11 眠るジプシー女 --&gt;
+    &lt;a href=&quot;chapters/20-fauve-cubism.html&quot; style=&quot;display:block;background:#faf8f2;border:1px solid #e0dacb;color:#23201b;&quot;&gt;
+      &lt;div style=&quot;height:4px;background:#c8352a;&quot;&gt;&lt;/div&gt;
+      &lt;div style=&quot;padding:14px;&quot;&gt;
+        &lt;div style=&quot;background:#ffffff;border:1px solid #c9c0ad;padding:8px;&quot;&gt;
+          &lt;svg viewBox=&quot;0 0 660 420&quot; width=&quot;228&quot; height=&quot;150&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; role=&quot;img&quot; aria-label=&quot;《眠るジプシー女》の構図図解&quot; style=&quot;display:block&quot;&gt;
+            &lt;defs&gt;&lt;linearGradient id=&quot;gr1&quot; x1=&quot;0&quot; y1=&quot;0&quot; x2=&quot;0&quot; y2=&quot;1&quot;&gt;&lt;stop offset=&quot;0&quot; stop-color=&quot;#122744&quot;/&gt;&lt;stop offset=&quot;1&quot; stop-color=&quot;#26466b&quot;/&gt;&lt;/linearGradient&gt;&lt;/defs&gt;
+            &lt;rect width=&quot;660&quot; height=&quot;420&quot; fill=&quot;url(#gr1)&quot;/&gt;
+            &lt;circle cx=&quot;520&quot; cy=&quot;80&quot; r=&quot;34&quot; fill=&quot;#f0e7c0&quot;/&gt;
+            &lt;g fill=&quot;#f0e7c0&quot; opacity=&quot;.6&quot;&gt;&lt;circle cx=&quot;120&quot; cy=&quot;60&quot; r=&quot;4&quot;/&gt;&lt;circle cx=&quot;200&quot; cy=&quot;100&quot; r=&quot;3&quot;/&gt;&lt;circle cx=&quot;300&quot; cy=&quot;50&quot; r=&quot;3.5&quot;/&gt;&lt;circle cx=&quot;420&quot; cy=&quot;110&quot; r=&quot;3&quot;/&gt;&lt;circle cx=&quot;600&quot; cy=&quot;150&quot; r=&quot;3.5&quot;/&gt;&lt;/g&gt;
+            &lt;path d=&quot;M0 250h660v170H0z&quot; fill=&quot;#c9a86a&quot;/&gt;
+            &lt;path d=&quot;M0 250c120-20 240 10 340-6s220-24 320 6z&quot; fill=&quot;#8d7f5c&quot;/&gt;
+            &lt;path d=&quot;M0 340c160 20 300-14 440 6s160 16 220 4v70H0z&quot; fill=&quot;#b89858&quot;/&gt;
+            &lt;path d=&quot;M120 300h300l-10 40H130z&quot; fill=&quot;#a8874c&quot; opacity=&quot;.6&quot;/&gt;
+            &lt;g&gt;&lt;path d=&quot;M130 300c0-24 20-40 46-40h230c26 0 44 16 44 40 0 20-18 34-44 34H176c-26 0-46-14-46-34z&quot; fill=&quot;#e8e2d0&quot;/&gt;
+               &lt;g fill=&quot;#c8352a&quot;&gt;&lt;path d=&quot;M160 262h28v72h-28z&quot;/&gt;&lt;path d=&quot;M216 262h28v72h-28z&quot;/&gt;&lt;path d=&quot;M272 262h28v72h-28z&quot;/&gt;&lt;path d=&quot;M328 262h28v72h-28z&quot;/&gt;&lt;path d=&quot;M384 262h26v72h-26z&quot;/&gt;&lt;/g&gt;
+               &lt;g fill=&quot;#1a8f92&quot; opacity=&quot;.8&quot;&gt;&lt;path d=&quot;M188 262h28v72h-28z&quot;/&gt;&lt;path d=&quot;M244 262h28v72h-28z&quot;/&gt;&lt;path d=&quot;M300 262h28v72h-28z&quot;/&gt;&lt;path d=&quot;M356 262h28v72h-28z&quot;/&gt;&lt;/g&gt;
+            &lt;/g&gt;
+            &lt;circle cx=&quot;132&quot; cy=&quot;248&quot; r=&quot;34&quot; fill=&quot;#6d4a32&quot;/&gt;
+            &lt;path d=&quot;M104 244c0-30 16-46 34-46s34 18 34 44c-22-16-46-14-68 2z&quot; fill=&quot;#241c14&quot;/&gt;
+            &lt;path d=&quot;M420 250l60-6-4 30-60 4z&quot; fill=&quot;#8b5a2b&quot;/&gt;
+            &lt;path d=&quot;M440 244l40-30 12 14-40 30z&quot; fill=&quot;#c9a227&quot;/&gt;
+            &lt;path d=&quot;M430 300c60-30 120-24 160 20-30-6-70-10-104 4-22 8-40 6-56-24z&quot; fill=&quot;#a8781f&quot;/&gt;
+            &lt;path d=&quot;M540 296c30-14 66-8 84 22-24-8-56-12-84-22z&quot; fill=&quot;#c8a05c&quot;/&gt;
+            &lt;circle cx=&quot;596&quot; cy=&quot;300&quot; r=&quot;26&quot; fill=&quot;#b8934c&quot;/&gt;
+            &lt;path d=&quot;M572 292c0-16 10-26 24-26s24 10 24 24c-16-8-32-6-48 2z&quot; fill=&quot;#8a6a34&quot;/&gt;
+            &lt;g fill=&quot;#241c14&quot;&gt;&lt;circle cx=&quot;588&quot; cy=&quot;298&quot; r=&quot;4&quot;/&gt;&lt;circle cx=&quot;606&quot; cy=&quot;298&quot; r=&quot;4&quot;/&gt;&lt;/g&gt;
+          &lt;/svg&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;margin-top:11px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11px;letter-spacing:.06em;color:#56504a;&quot;&gt;アンリ・ルソー&lt;/div&gt;
+        &lt;div style=&quot;margin-top:2px;font-size:15.5px;font-weight:600;line-height:1.6;&quot;&gt;眠るジプシー女&lt;span style=&quot;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,sans-serif;font-size:11.5px;color:#8b8378;margin-left:.5em;&quot;&gt;1897年&lt;/span&gt;&lt;/div&gt;
+        &lt;p style=&quot;margin:9px 0 0;padding-left:11px;border-left:2px solid #e0a29c;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:12.5px;line-height:1.85;color:#23201b;&quot;&gt;税関の職員が休みの日に描いた。砂漠も獅子も、パリを出ずに描かれた。&lt;/p&gt;
+        &lt;div style=&quot;margin-top:9px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:10.5px;color:#8b8378;&quot;&gt;ニューヨーク近代美術館&lt;/div&gt;
+        &lt;div style=&quot;margin-top:11px;padding-top:9px;border-top:1px solid #e0dacb;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11.5px;color:#a72c23;&quot;&gt;第20章　色と形の解放　&amp;rarr;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+
+    &lt;!-- B12 鳥獣人物戯画 --&gt;
+    &lt;a href=&quot;chapters/28-emaki.html&quot; style=&quot;display:block;background:#faf8f2;border:1px solid #e0dacb;color:#23201b;&quot;&gt;
+      &lt;div style=&quot;height:4px;background:#8c2f39;&quot;&gt;&lt;/div&gt;
+      &lt;div style=&quot;padding:14px;&quot;&gt;
+        &lt;div style=&quot;background:#ffffff;border:1px solid #c9c0ad;padding:8px;&quot;&gt;
+          &lt;svg viewBox=&quot;0 0 660 300&quot; width=&quot;228&quot; height=&quot;150&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; role=&quot;img&quot; aria-label=&quot;鳥獣人物戯画の構図図解&quot; style=&quot;display:block&quot;&gt;
+            &lt;rect width=&quot;660&quot; height=&quot;300&quot; fill=&quot;#e6dcc0&quot;/&gt;
+            &lt;g fill=&quot;#dbcfae&quot; opacity=&quot;.7&quot;&gt;&lt;rect y=&quot;0&quot; width=&quot;660&quot; height=&quot;10&quot;/&gt;&lt;rect y=&quot;290&quot; width=&quot;660&quot; height=&quot;10&quot;/&gt;&lt;/g&gt;
+            &lt;g stroke=&quot;#c9b78e&quot; stroke-width=&quot;1.5&quot;&gt;&lt;path d=&quot;M220 0v300M440 0v300&quot;/&gt;&lt;/g&gt;
+            &lt;g fill=&quot;none&quot; stroke=&quot;#2a241c&quot; stroke-width=&quot;6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;
+              &lt;path d=&quot;M84 216c-16-30-6-64 20-78 16-8 26-30 18-48 20 10 26 34 16 52 24 8 38 34 30 60&quot;/&gt;
+              &lt;path d=&quot;M96 96c-8-30 0-52 12-58 4 20 2 40-4 54&quot;/&gt;
+              &lt;path d=&quot;M126 92c6-30 20-46 32-46-6 20-14 36-22 48&quot;/&gt;
+              &lt;path d=&quot;M104 216l-10 40M148 214l12 42&quot;/&gt;
+              &lt;path d=&quot;M290 210c-20-26-16-62 8-80 18-14 22-40 10-58 24 14 30 42 16 62 26 12 38 44 26 72&quot;/&gt;
+              &lt;path d=&quot;M298 216l-14 40M336 214l16 40&quot;/&gt;
+              &lt;path d=&quot;M284 100c-14-6-24-22-20-38 12 10 20 24 24 36&quot;/&gt;
+              &lt;path d=&quot;M334 96c10-14 26-22 40-18-14 8-28 16-36 26&quot;/&gt;
+              &lt;path d=&quot;M170 150c30-16 62-16 90 2&quot;/&gt;
+              &lt;path d=&quot;M480 220c-14-30-2-64 22-74 18-8 24-30 14-46 22 12 26 36 14 54 24 10 34 40 24 66&quot;/&gt;
+              &lt;path d=&quot;M492 220l-12 40M540 218l14 40&quot;/&gt;
+              &lt;path d=&quot;M470 128c-16-10-24-28-18-44 12 12 18 28 22 42&quot;/&gt;
+              &lt;path d=&quot;M540 124c12-16 30-24 44-18-16 8-32 16-42 28&quot;/&gt;
+            &lt;/g&gt;
+            &lt;g fill=&quot;#2a241c&quot; opacity=&quot;.9&quot;&gt;&lt;circle cx=&quot;106&quot; cy=&quot;112&quot; r=&quot;4&quot;/&gt;&lt;circle cx=&quot;134&quot; cy=&quot;110&quot; r=&quot;4&quot;/&gt;&lt;circle cx=&quot;300&quot; cy=&quot;116&quot; r=&quot;4&quot;/&gt;&lt;circle cx=&quot;326&quot; cy=&quot;114&quot; r=&quot;4&quot;/&gt;&lt;circle cx=&quot;492&quot; cy=&quot;138&quot; r=&quot;4&quot;/&gt;&lt;circle cx=&quot;520&quot; cy=&quot;136&quot; r=&quot;4&quot;/&gt;&lt;/g&gt;
+            &lt;g fill=&quot;#8c2f39&quot; opacity=&quot;.5&quot;&gt;&lt;rect x=&quot;602&quot; y=&quot;34&quot; width=&quot;34&quot; height=&quot;34&quot;/&gt;&lt;/g&gt;
+          &lt;/svg&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;margin-top:11px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11px;letter-spacing:.06em;color:#56504a;&quot;&gt;作者不詳（鳥羽僧正覚猷筆と伝わる）&lt;/div&gt;
+        &lt;div style=&quot;margin-top:2px;font-size:15.5px;font-weight:600;line-height:1.6;&quot;&gt;鳥獣人物戯画&lt;span style=&quot;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,sans-serif;font-size:11.5px;color:#8b8378;margin-left:.5em;&quot;&gt;12 &amp;mdash; 13世紀&lt;/span&gt;&lt;/div&gt;
+        &lt;p style=&quot;margin:9px 0 0;padding-left:11px;border-left:2px solid #cc9ba1;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:12.5px;line-height:1.85;color:#23201b;&quot;&gt;兎と蛙が相撲を取る。詞書がなく、何の話なのか誰にも分からない。&lt;/p&gt;
+        &lt;div style=&quot;margin-top:9px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:10.5px;color:#8b8378;&quot;&gt;高山寺（京都）　国宝&lt;/div&gt;
+        &lt;div style=&quot;margin-top:11px;padding-top:9px;border-top:1px solid #e0dacb;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11.5px;color:#74262f;&quot;&gt;第28章　物語を絵にする　&amp;rarr;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+
+  &lt;/div&gt;
+
+  &lt;!-- 続きの合図 --&gt;
+  &lt;div style=&quot;margin-top:30px;padding:18px 22px;border:1px solid #cfc7b6;background:#ebe6d9;display:flex;align-items:center;justify-content:space-between;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;&quot;&gt;
+    &lt;div&gt;
+      &lt;p style=&quot;margin:0;font-size:13.5px;color:#56504a;line-height:1.9;&quot;&gt;この下に、あと179点。並び順は毎日入れ替わります。&lt;/p&gt;
+      &lt;p style=&quot;margin:4px 0 0;font-size:11.5px;color:#8b8378;&quot;&gt;同じ画面をひたすら下へ。区切りも見出しも置かない ─ 図録をめくる速さのまま読ませる。&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;span style=&quot;font-family:&#x27;Cormorant Garamond&#x27;,&#x27;EB Garamond&#x27;,serif;font-size:34px;color:#6a5fa8;opacity:.7;letter-spacing:.06em;&quot;&gt;&amp;darr;&lt;/span&gt;
+  &lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;!-- ============================================================ 脚注 --&gt;
+&lt;div style=&quot;border-top:1px solid #cfc7b6;padding:26px 60px 40px;font-family:&#x27;Zen Kaku Gothic New&#x27;,&#x27;Hiragino Kaku Gothic ProN&#x27;,&#x27;Yu Gothic&#x27;,YuGothic,&#x27;Noto Sans JP&#x27;,system-ui,sans-serif;font-size:11.5px;line-height:1.95;color:#8b8378;&quot;&gt;
+  &lt;p style=&quot;margin:0;&quot;&gt;作品画像はこの環境から取得できないため、構図と色調を抽象化した自作の図に置き換えています。実装時は既存の figure.plate と同じ仕組みで Wikimedia Commons の画像を読み込み、この図は取得できなかったときの控えとして残ります。&lt;/p&gt;
+  &lt;p style=&quot;margin:8px 0 0;&quot;&gt;掲載はすべて作者の没後70年を過ぎたパブリックドメインの作品に限りました。権利の生きている20世紀の作家は、この一覧には出しません。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div style=&quot;height:3px;background:#6a5fa8;&quot;&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;"></iframe>
+    </div>
+  </section>
+ <footer>掲載はすべて作者の没後70年を超えたパブリックドメイン作品です。</footer>
+</div>
+<script>
+ function fit(){document.querySelectorAll('.stage').forEach(function(st){
+  var h=+st.dataset.h, s=Math.min(1,st.clientWidth/1000);
+  st.querySelectorAll('iframe').forEach(function(f){ f.style.height=h+'px'; f.style.transform='scale('+s+')'; });
+  st.style.height=Math.round(h*s)+'px';});}
+ document.querySelectorAll('.sw').forEach(function(sw){
+  sw.addEventListener('click',function(e){
+   var b=e.target.closest('button'); if(!b) return;
+   sw.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed', x===b);});
+   var st=sw.closest('.opt').querySelector('.stage');
+   st.dataset.h=b.dataset.h;
+   st.querySelector('.v-q').hidden = b.dataset.v!=='q';
+   st.querySelector('.v-l').hidden = b.dataset.v!=='l';
+   fit();
+  });});
+ addEventListener('resize',fit); addEventListener('load',fit); fit();
+</script>

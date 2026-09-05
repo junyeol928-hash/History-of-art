@@ -1,0 +1,470 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+  <style>
+    body { margin: 0; }
+    a { color: #a72c23; }
+    a:hover { color: #c8352a; }
+  </style>
+</helmet>
+
+<div style="width:1000px;box-sizing:border-box;background:#f2f1ee;color:#23201b;font-family:'Shippori Mincho','Hiragino Mincho ProN','Yu Mincho',YuMincho,'Noto Serif JP',serif;font-size:18px;line-height:2.0;letter-spacing:.02em;line-break:strict;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;padding-bottom:72px;">
+
+  <!-- ══════════════════════════════════════════════════════════
+       章扉（門）　1000 × 880
+       具象（緑の木）が、原色の帯に切られて幾何学に砕けていく面
+       ══════════════════════════════════════════════════════════ -->
+  <div style="width:1000px;">
+
+    <!-- 上端 -->
+    <div style="height:12px;background:#14120f;"></div>
+
+    <!-- 面の構成（420px） -->
+    <svg viewBox="0 0 1000 420" role="img" aria-label="具象の木が原色の帯に切られて幾何学の面に砕けていく図" style="display:block;width:1000px;height:420px;">
+      <defs>
+        <clipPath id="lvS1"><rect x="280" y="110" width="50" height="320"/></clipPath>
+        <clipPath id="lvS2"><rect x="330" y="110" width="50" height="320"/></clipPath>
+        <clipPath id="lvS3"><rect x="380" y="110" width="50" height="320"/></clipPath>
+        <clipPath id="lvS4"><rect x="430" y="110" width="50" height="320"/></clipPath>
+        <clipPath id="lvS5"><rect x="480" y="110" width="50" height="320"/></clipPath>
+        <clipPath id="lvS6"><rect x="530" y="110" width="50" height="320"/></clipPath>
+      </defs>
+
+      <rect width="1000" height="420" fill="#eceae5"/>
+
+      <!-- 原色の面 -->
+      <rect x="744" y="0" width="256" height="140" fill="#c8352a"/>
+      <rect x="880" y="272" width="120" height="148" fill="#e0a52a"/>
+      <rect x="0" y="300" width="186" height="120" fill="#2f4a8c"/>
+      <rect x="0" y="0" width="186" height="64" fill="#14120f"/>
+      <rect x="72" y="176" width="42" height="42" fill="#c8352a"/>
+
+      <!-- 黒の直線グリッド -->
+      <rect x="186" y="0" width="10" height="420" fill="#14120f"/>
+      <rect x="738" y="0" width="10" height="420" fill="#14120f"/>
+      <rect x="874" y="140" width="6" height="280" fill="#14120f"/>
+      <rect x="196" y="140" width="804" height="10" fill="#14120f"/>
+      <rect x="0" y="292" width="186" height="8" fill="#14120f"/>
+
+      <!-- 帯1：具象のまま（緑の葉と茶の幹） -->
+      <g clip-path="url(#lvS1)">
+        <ellipse cx="430" cy="252" rx="150" ry="104" fill="#3d6b3f"/>
+        <rect x="414" y="250" width="38" height="96" fill="#6b4a2e"/>
+      </g>
+      <!-- 帯2：色は残るが、面になる -->
+      <g clip-path="url(#lvS2)">
+        <ellipse cx="430" cy="252" rx="150" ry="104" fill="#3d6b3f"/>
+        <rect x="414" y="250" width="38" height="96" fill="#3d6b3f"/>
+      </g>
+      <!-- 帯3以降：色が対象から離れ、面がずれていく -->
+      <g transform="translate(0,-16)" clip-path="url(#lvS3)">
+        <ellipse cx="430" cy="252" rx="150" ry="104" fill="#2f4a8c"/>
+        <rect x="414" y="250" width="38" height="96" fill="#2f4a8c"/>
+      </g>
+      <g transform="translate(6,24)" clip-path="url(#lvS4)">
+        <ellipse cx="430" cy="252" rx="150" ry="104" fill="#c8352a"/>
+        <rect x="414" y="250" width="38" height="96" fill="#c8352a"/>
+      </g>
+      <g transform="translate(14,-38)" clip-path="url(#lvS5)">
+        <ellipse cx="430" cy="252" rx="150" ry="104" fill="#e0a52a"/>
+        <rect x="414" y="250" width="38" height="96" fill="#e0a52a"/>
+      </g>
+      <g transform="translate(28,46)" clip-path="url(#lvS6)">
+        <ellipse cx="430" cy="252" rx="150" ry="104" fill="#14120f"/>
+        <rect x="414" y="250" width="38" height="96" fill="#14120f"/>
+      </g>
+
+      <!-- 砕けた先：もはや木ではなく、ただの面 -->
+      <rect x="600" y="186" width="52" height="150" fill="#c8352a"/>
+      <rect x="666" y="222" width="60" height="114" fill="#2f4a8c"/>
+      <rect x="600" y="352" width="126" height="10" fill="#14120f"/>
+
+      <!-- 稜線：まだ動いていない具象の側に、面への分解がはじまっている -->
+      <g stroke="#14120f" stroke-width="2.5" fill="none">
+        <path d="M296 208l62 44M292 280l66-40M332 178l36 54M300 258h58"/>
+      </g>
+
+      <!-- 地面：途中で消える -->
+      <rect x="196" y="342" width="334" height="8" fill="#14120f"/>
+      <rect x="546" y="342" width="18" height="8" fill="#14120f"/>
+      <rect x="578" y="342" width="10" height="8" fill="#14120f"/>
+    </svg>
+
+    <!-- 黒の題名板（170px） -->
+    <div style="height:170px;background:#14120f;display:flex;align-items:center;justify-content:space-between;padding:0 68px;box-sizing:border-box;">
+      <div>
+        <div style="display:inline-block;background:#c8352a;color:#ffffff;font-family:'Jost','Zen Kaku Gothic New','Hiragino Kaku Gothic ProN','Noto Sans JP',system-ui,sans-serif;font-size:12px;font-weight:600;letter-spacing:.34em;line-height:1;padding:9px 12px 9px 15px;">第 20 章</div>
+        <h1 style="margin:14px 0 0;font-family:'Jost','Zen Kaku Gothic New','Hiragino Kaku Gothic ProN','Noto Sans JP',system-ui,sans-serif;font-weight:700;font-size:76px;line-height:1;letter-spacing:.02em;color:#ffffff;">色と形の解放</h1>
+      </div>
+      <div style="font-family:'Jost','Zen Kaku Gothic New',system-ui,sans-serif;font-weight:500;font-size:104px;line-height:.8;letter-spacing:-.04em;color:#e0a52a;">1907</div>
+    </div>
+
+    <!-- 白の導入（278px） -->
+    <div style="background:#f2f1ee;padding:26px 68px 32px;box-sizing:border-box;">
+      <p style="margin:0;font-family:'Jost','Zen Kaku Gothic New','Hiragino Kaku Gothic ProN','Noto Sans JP',system-ui,sans-serif;font-size:14px;font-weight:600;letter-spacing:.16em;color:#a72c23;line-height:1.6;">フォーヴィスム・キュビスム・未来派　1905 — 1918年</p>
+      <p style="margin:20px 0 0;padding-top:22px;border-top:8px solid #14120f;font-size:22px;line-height:1.85;letter-spacing:.01em;color:#23201b;max-width:800px;">十年たらずのあいだに、絵は「何かに似ていること」をやめた。誰も命令していないのに、ヨーロッパじゅうで同時に起きた。</p>
+      <div style="display:flex;margin:22px 0 0;padding-top:14px;border-top:2px solid #14120f;font-family:'Jost','Zen Kaku Gothic New','Hiragino Kaku Gothic ProN','Noto Sans JP',system-ui,sans-serif;font-size:12px;letter-spacing:.06em;color:#56504a;line-height:1.6;">
+        <span style="padding-right:22px;"><b style="font-weight:600;color:#23201b;">舞台</b>　パリ、モンマルトル</span>
+        <span style="padding:0 22px;border-left:2px solid #14120f;"><b style="font-weight:600;color:#23201b;">材料</b>　新聞紙と糊</span>
+        <span style="padding:0 22px;border-left:2px solid #14120f;"><b style="font-weight:600;color:#23201b;">読了</b>　約14分</span>
+      </div>
+    </div>
+
+  </div>
+  <!-- ═════ 章扉ここまで ═════ -->
+
+
+  <!-- ══════════════════════════════════════════════════════════
+       この時代の見分け方
+       ══════════════════════════════════════════════════════════ -->
+  <div style="padding:44px 40px 0;">
+
+    <div style="display:flex;align-items:flex-end;gap:16px;padding-bottom:14px;border-bottom:10px solid #14120f;">
+      <h2 style="margin:0;font-family:'Jost','Zen Kaku Gothic New','Hiragino Kaku Gothic ProN','Noto Sans JP',system-ui,sans-serif;font-weight:700;font-size:30px;line-height:1.2;letter-spacing:.06em;color:#23201b;">この時代の見分け方</h2>
+      <span style="font-family:'Jost','Zen Kaku Gothic New','Hiragino Kaku Gothic ProN','Noto Sans JP',system-ui,sans-serif;font-size:13px;font-weight:500;letter-spacing:.1em;color:#56504a;padding-bottom:5px;">展示室で、この三つを探す</span>
+      <span style="flex:1;"></span>
+      <div style="display:flex;gap:6px;padding-bottom:6px;">
+        <div style="width:18px;height:18px;background:#c8352a;"></div>
+        <div style="width:18px;height:18px;background:#2f4a8c;"></div>
+        <div style="width:18px;height:18px;background:#e0a52a;"></div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:20px;">
+
+      <!-- しるし 01 -->
+      <div style="background:#ffffff;border:3px solid #14120f;">
+        <div style="height:12px;background:#c8352a;"></div>
+        <div style="line-height:0;border-bottom:3px solid #14120f;">
+          <svg viewBox="0 0 260 190" role="img" aria-label="同じ木を二つ並べ、左は見えたとおりの緑と茶、右は画家が置いた赤・橙・青、影は青紫で描いた対比図" style="display:block;width:100%;height:auto;">
+            <rect width="260" height="190" fill="#f7f6f3"/>
+
+            <g font-family="'Jost','Zen Kaku Gothic New','Hiragino Kaku Gothic ProN',sans-serif" font-size="11" fill="#56504a">
+              <text x="8" y="18">見えた色</text>
+              <text x="140" y="18">画家が置いた色</text>
+            </g>
+
+            <!-- 左：見えたとおりの木。影は「暗くした同じ色」 -->
+            <ellipse cx="92" cy="157" rx="26" ry="6" fill="#9a9384"/>
+            <rect x="8" y="150" width="112" height="4" fill="#14120f"/>
+            <rect x="57" y="82" width="14" height="68" fill="#6b4a2e"/>
+            <circle cx="64" cy="86" r="40" fill="#3d6b3f"/>
+            <g fill="none" stroke="#14120f" stroke-width="3">
+              <circle cx="64" cy="86" r="40"/>
+              <path d="M57 88v62M71 88v62"/>
+            </g>
+
+            <!-- 仕切り -->
+            <rect x="126" y="8" width="4" height="174" fill="#14120f"/>
+
+            <!-- 右：画面が必要とした色。影は別の色（青紫） -->
+            <ellipse cx="224" cy="157" rx="26" ry="6" fill="#6a4a9c"/>
+            <rect x="140" y="150" width="112" height="4" fill="#14120f"/>
+            <rect x="189" y="82" width="14" height="68" fill="#2f4a8c"/>
+            <circle cx="196" cy="86" r="40" fill="#c8352a"/>
+            <path d="M196 46a40 40 0 0 1 0 80z" fill="#e0752a"/>
+            <g fill="none" stroke="#14120f" stroke-width="3">
+              <circle cx="196" cy="86" r="40"/>
+              <path d="M189 88v62M203 88v62"/>
+            </g>
+
+            <g font-family="'Jost','Zen Kaku Gothic New','Hiragino Kaku Gothic ProN',sans-serif" font-size="10" fill="#56504a">
+              <text x="8" y="182">影は暗い同色</text>
+              <text x="140" y="182">影は別の色</text>
+            </g>
+          </svg>
+        </div>
+        <div style="padding:16px 16px 20px;">
+          <span style="display:block;font-family:'Jost',system-ui,sans-serif;font-size:13px;font-weight:700;letter-spacing:.14em;color:#c8352a;">01</span>
+          <h3 style="margin:6px 0 0;font-family:'Jost','Zen Kaku Gothic New','Hiragino Kaku Gothic ProN','Noto Sans JP',system-ui,sans-serif;font-weight:700;font-size:19px;line-height:1.5;letter-spacing:.03em;color:#23201b;">色が対象から離れる</h3>
+          <span style="display:block;font-family:'Jost','Zen Kaku Gothic New','Hiragino Kaku Gothic ProN','Noto Sans JP',system-ui,sans-serif;font-size:11.5px;letter-spacing:.1em;color:#56504a;margin-top:4px;">フォーヴィスム</span>
+          <p style="margin:12px 0 0;font-size:18px;line-height:1.9;letter-spacing:.01em;color:#23201b;">影の色を見る。暗くした同色でなく別の色なら、色は対象から切れている。</p>
+        </div>
+      </div>
+
+      <!-- しるし 02 -->
+      <div style="background:#ffffff;border:3px solid #14120f;">
+        <div style="height:12px;background:#2f4a8c;"></div>
+        <div style="line-height:0;border-bottom:3px solid #14120f;">
+          <svg viewBox="0 0 260 190" role="img" aria-label="ひとつの器に真上からの口と正面からの縁が同居する図" style="display:block;width:100%;height:auto;">
+            <rect width="260" height="190" fill="#f7f6f3"/>
+            <g stroke="#8b8378" stroke-width="1.4" stroke-dasharray="5 5" fill="none">
+              <path d="M132 20v26M40 108h34"/>
+            </g>
+            <g font-family="'Jost','Zen Kaku Gothic New','Hiragino Kaku Gothic ProN',sans-serif" font-size="11" fill="#56504a">
+              <text x="98" y="16">真上から</text>
+              <text x="14" y="96">正面から</text>
+            </g>
+            <path d="M100 62l64-8 26 46-12 82H92l-14-78z" fill="#dedad2"/>
+            <path d="M100 62l30 42-10 78H92l-14-78z" fill="#c5c0b5"/>
+            <path d="M164 54l26 46-40 22-20-18z" fill="#c8352a"/>
+            <path d="M120 104l70 16-8 62h-72z" fill="#e8e5de"/>
+            <g fill="none" stroke="#14120f" stroke-width="3">
+              <path d="M100 62l64-8 26 46-12 82H92l-14-78z"/>
+              <path d="M100 62l30 42-10 78M164 54l-34 50 60 16M78 104h114"/>
+            </g>
+            <ellipse cx="132" cy="58" rx="34" ry="15" fill="none" stroke="#14120f" stroke-width="3"/>
+            <path d="M98 58h68" stroke="#c8352a" stroke-width="3.5"/>
+            <path d="M190 100c18 4 16 40-6 38" fill="none" stroke="#14120f" stroke-width="3"/>
+          </svg>
+        </div>
+        <div style="padding:16px 16px 20px;">
+          <span style="display:block;font-family:'Jost',system-ui,sans-serif;font-size:13px;font-weight:700;letter-spacing:.14em;color:#2f4a8c;">02</span>
+          <h3 style="margin:6px 0 0;font-family:'Jost','Zen Kaku Gothic New','Hiragino Kaku Gothic ProN','Noto Sans JP',system-ui,sans-serif;font-weight:700;font-size:19px;line-height:1.5;letter-spacing:.03em;color:#23201b;">視点がひとつではない</h3>
+          <span style="display:block;font-family:'Jost','Zen Kaku Gothic New','Hiragino Kaku Gothic ProN','Noto Sans JP',system-ui,sans-serif;font-size:11.5px;letter-spacing:.1em;color:#56504a;margin-top:4px;">キュビスム</span>
+          <p style="margin:12px 0 0;font-size:18px;line-height:1.9;letter-spacing:.01em;color:#23201b;">器の口が真上から、縁が正面から。ひとつの物に視点が二つ以上あればキュビスム。</p>
+        </div>
+      </div>
+
+      <!-- しるし 03 -->
+      <div style="background:#ffffff;border:3px solid #14120f;">
+        <div style="height:12px;background:#e0a52a;"></div>
+        <div style="line-height:0;border-bottom:3px solid #14120f;">
+          <svg viewBox="0 0 260 190" role="img" aria-label="描かれた画面に本物の新聞紙と木目紙が貼られている図" style="display:block;width:100%;height:auto;">
+            <rect width="260" height="190" fill="#f7f6f3"/>
+            <rect x="22" y="18" width="216" height="154" fill="#e6e3dc"/>
+            <g fill="none" stroke="#4a453c" stroke-width="2">
+              <path d="M62 132c14-38 44-52 88-42"/>
+              <ellipse cx="96" cy="118" rx="38" ry="14"/>
+              <path d="M150 96c16 4 14 34-6 32"/>
+            </g>
+            <g transform="rotate(-7 92 96)">
+              <rect x="44" y="46" width="86" height="98" fill="#dedbd0"/>
+              <rect x="44" y="46" width="86" height="16" fill="#14120f"/>
+              <g stroke="#8b8378" stroke-width="2.4">
+                <path d="M52 76h70M52 88h70M52 100h54M52 112h70M52 124h60"/>
+              </g>
+              <rect x="44" y="46" width="86" height="98" fill="none" stroke="#14120f" stroke-width="2.5"/>
+            </g>
+            <g transform="rotate(9 168 106)">
+              <rect x="140" y="58" width="60" height="98" fill="#a87a44"/>
+              <g stroke="#7d5628" stroke-width="2.4">
+                <path d="M148 58v98M160 58v98M172 58v98M184 58v98M196 58v98"/>
+              </g>
+              <rect x="140" y="58" width="60" height="98" fill="none" stroke="#14120f" stroke-width="2.5"/>
+            </g>
+            <rect x="22" y="18" width="216" height="154" fill="none" stroke="#14120f" stroke-width="4"/>
+            <g font-family="'Jost','Zen Kaku Gothic New','Hiragino Kaku Gothic ProN',sans-serif" font-size="11" fill="#a72c23">
+              <text x="24" y="14">貼った紙</text>
+            </g>
+            <path d="M84 5v13" stroke="#c8352a" stroke-width="2.5"/>
+          </svg>
+        </div>
+        <div style="padding:16px 16px 20px;">
+          <span style="display:block;font-family:'Jost',system-ui,sans-serif;font-size:13px;font-weight:700;letter-spacing:.14em;color:#a7791a;">03</span>
+          <h3 style="margin:6px 0 0;font-family:'Jost','Zen Kaku Gothic New','Hiragino Kaku Gothic ProN','Noto Sans JP',system-ui,sans-serif;font-weight:700;font-size:19px;line-height:1.5;letter-spacing:.03em;color:#23201b;">現実のモノが貼られる</h3>
+          <span style="display:block;font-family:'Jost','Zen Kaku Gothic New','Hiragino Kaku Gothic ProN','Noto Sans JP',system-ui,sans-serif;font-size:11.5px;letter-spacing:.1em;color:#56504a;margin-top:4px;">パピエ・コレ</span>
+          <p style="margin:12px 0 0;font-size:18px;line-height:1.9;letter-spacing:.01em;color:#23201b;">画面でいちばん現実に近い一点を探す。文字や木目や新聞なら、絵は物になっている。</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════════════
+       本文
+       ══════════════════════════════════════════════════════════ -->
+  <div style="padding:0 68px;">
+    <div style="width:768px;margin:0 auto;">
+
+      <p style="margin:76px 0 0;font-size:18px;line-height:2.0;letter-spacing:.02em;color:#23201b;"><span style="float:left;display:flex;align-items:center;justify-content:center;width:92px;height:92px;margin:10px 20px 4px 0;background:#c8352a;color:#ffffff;font-family:'Jost','Zen Kaku Gothic New',system-ui,sans-serif;font-weight:700;font-size:62px;line-height:1;">1</span>900年に生まれた子どもが十八歳になるまでのあいだに、西洋絵画は五百年ぶんの前提を捨てた。空間は奥へ引っ込むのをやめ、色は物から離れ、机の上の物は正面と真上から同時に見られるようになり、最後には本物の新聞紙が画面に貼りつけられた。そのすべてが、1905年から1918年までのあいだに起きている。</p>
+
+      <!-- ── 節 01 ── -->
+      <div style="margin:52px 0 24px;padding-top:22px;border-top:10px solid #14120f;display:flex;align-items:center;gap:16px;">
+        <span style="flex:none;width:44px;height:44px;background:#c8352a;color:#ffffff;font-family:'Jost',system-ui,sans-serif;font-size:17px;font-weight:700;letter-spacing:.04em;display:grid;place-items:center;">01</span>
+        <h2 style="margin:0;font-family:'Jost','Zen Kaku Gothic New','Hiragino Kaku Gothic ProN','Noto Sans JP',system-ui,sans-serif;font-weight:700;font-size:26px;line-height:1.4;letter-spacing:.04em;color:#23201b;">檻の中のドナテッロ</h2>
+      </div>
+
+      <p style="margin:27px 0;">1905年10月、パリのグラン・パレ。第3回サロン・ドートンヌの第7室に入った客は、たいてい足を止めて笑うか、怒った。壁を埋めていたのはマティス、ドラン、ヴラマンク、マルケらの絵で、顔は緑や朱で塗られ、木は赤く、影は水色だった。</p>
+
+      <p style="margin:27px 0;">その部屋の中央に、たまたま、アルベール・マルクという彫刻家のルネサンス風の子どもの胸像が置かれていた。おとなしい、よくできた、十五世紀のような彫刻である。批評家ルイ・ヴォークセルは『ジル・ブラース』紙にこう書いた——<strong style="font-weight:700;background:linear-gradient(transparent 60%,#f7c9c4 60%);">「野獣たちの檻の中の、ドナテッロ」</strong>。</p>
+
+      <p style="margin:27px 0;">気づいた人がいるはずです。第17章とまったく同じ構造がここにある。「印象派」はルロワの嘲笑から生まれた名前だった。<span style="border-bottom:2px solid #e0a29c;">フォーヴィスム</span>（fauve＝野獣）も、悪口である。しかも話はここで終わらない。この同じヴォークセルが三年後にもう一度、別の悪口を発明する。それが「キュビスム」になる。二十世紀の二大運動は、どちらも一人の批評家の皮肉に名前を借りているのだ。</p>
+
+      <p style="margin:27px 0;">悪口が定着するのは、たいていそれが的を射ているからだ。この部屋の画家たちは、確かに何かを野蛮に扱っていた。扱われていたのは色である。</p>
+
+      <!-- ── 節 02 ── -->
+      <div style="margin:52px 0 24px;padding-top:22px;border-top:10px solid #14120f;display:flex;align-items:center;gap:16px;">
+        <span style="flex:none;width:44px;height:44px;background:#c8352a;color:#ffffff;font-family:'Jost',system-ui,sans-serif;font-size:17px;font-weight:700;letter-spacing:.04em;display:grid;place-items:center;">02</span>
+        <h2 style="margin:0;font-family:'Jost','Zen Kaku Gothic New','Hiragino Kaku Gothic ProN','Noto Sans JP',system-ui,sans-serif;font-weight:700;font-size:26px;line-height:1.4;letter-spacing:.04em;color:#23201b;">木は緑でなくてもいい</h2>
+      </div>
+
+      <p style="margin:27px 0;">それまでの五百年、色には決まった役目があった。ものの色を記録することだ。木の葉は緑、空は青、肌は肌色。印象派は「その色は光と時刻で変わる」と言って役目を広げたが、色が対象の記録であることは変えなかった（第17章）。</p>
+
+      <p style="margin:27px 0;">フォーヴィスムがやったのは、その紐を切ることだった。1905年の夏、マティスとドランは地中海に面したコリウールという小さな漁村で一緒に描いている。そこで彼らが決めたのは、乱暴に言えば<strong style="font-weight:700;background:linear-gradient(transparent 60%,#f7c9c4 60%);">「見えた色ではなく、画面が必要としている色を置く」</strong>ということだった。海が朱色のほうが画面が生きるなら、海は朱色になる。木の幹が緑でも構わない。</p>
+
+      <p style="margin:27px 0;">翌1906年の《緑の筋のあるマティス夫人》は、妻の顔の真ん中に額から顎へ緑の帯を一本引いた絵だ（コペンハーゲンの国立美術館）。あれは「緑色の人」を描いたのではない。顔の右半分と左半分が受けている光の差を、明暗ではなく<strong style="font-weight:700;background:linear-gradient(transparent 60%,#f7c9c4 60%);">色そのもの</strong>で表す、という実験である。左は薔薇色、右は黄土、境目は緑。理屈だけ聞けば冷静な設計だが、当時の客は「妻の顔にペンキを塗った」と受け取った。</p>
+
+
+      <!-- ══════════ 図版 ══════════ -->
+      <figure style="margin:40px -48px 0;">
+
+        <div style="height:12px;background:#c8352a;"></div>
+        <div style="background:#ffffff;border:4px solid #14120f;border-top:0;padding:18px;line-height:0;">
+          <svg viewBox="0 0 800 516" role="img" aria-label="《眠るジプシー女》の構図図解" style="display:block;width:100%;height:auto;">
+            <defs>
+              <linearGradient id="lvSky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#15213a"/>
+                <stop offset="1" stop-color="#3a5273"/>
+              </linearGradient>
+              <clipPath id="lvRobe"><rect x="212" y="330" width="316" height="62" rx="31"/></clipPath>
+            </defs>
+            <rect width="800" height="516" fill="#15213a"/>
+            <rect width="800" height="298" fill="url(#lvSky)"/>
+            <circle cx="176" cy="78" r="34" fill="#f4eeda"/>
+            <path d="M0 298v-32c96-26 186-8 268 6 92 16 168-14 246-30 84-18 200-4 286 22v34z" fill="#26374f"/>
+            <rect y="284" width="800" height="14" fill="#5d7191"/>
+            <rect y="298" width="800" height="218" fill="#c9b285"/>
+            <rect y="472" width="800" height="44" fill="#bda677"/>
+            <g>
+              <rect x="524" y="286" width="24" height="68" fill="#b78e3e"/>
+              <rect x="566" y="290" width="22" height="64" fill="#b78e3e"/>
+              <rect x="646" y="286" width="24" height="68" fill="#b78e3e"/>
+              <rect x="688" y="290" width="22" height="64" fill="#b78e3e"/>
+              <path d="M714 262c46-16 56-58 34-82" fill="none" stroke="#c9a24a" stroke-width="9"/>
+              <circle cx="744" cy="176" r="13" fill="#8a6234"/>
+              <ellipse cx="602" cy="268" rx="118" ry="48" fill="#c9a24a"/>
+              <circle cx="462" cy="198" r="13" fill="#a87f36"/>
+              <circle cx="526" cy="198" r="13" fill="#a87f36"/>
+              <circle cx="494" cy="238" r="54" fill="#b78e3e"/>
+              <circle cx="494" cy="242" r="33" fill="#dcb862"/>
+              <circle cx="481" cy="231" r="5" fill="#2b1f18"/>
+              <circle cx="509" cy="231" r="5" fill="#2b1f18"/>
+              <ellipse cx="494" cy="257" rx="13" ry="9" fill="#8a6234"/>
+            </g>
+            <g>
+              <circle cx="530" cy="374" r="17" fill="#8a5a3c"/>
+              <rect x="212" y="330" width="316" height="62" rx="31" fill="#b8452f"/>
+              <g clip-path="url(#lvRobe)">
+                <rect x="236" y="330" width="22" height="62" fill="#e6dcc2"/>
+                <rect x="278" y="330" width="22" height="62" fill="#c9a24a"/>
+                <rect x="320" y="330" width="22" height="62" fill="#e6dcc2"/>
+                <rect x="362" y="330" width="22" height="62" fill="#2f7d63"/>
+                <rect x="404" y="330" width="22" height="62" fill="#e6dcc2"/>
+                <rect x="446" y="330" width="22" height="62" fill="#3a6bb5"/>
+                <rect x="488" y="330" width="22" height="62" fill="#e6dcc2"/>
+              </g>
+              <circle cx="196" cy="352" r="35" fill="#8a5a3c"/>
+              <path d="M196 317a35 35 0 0 0 0 70z" fill="#241a14"/>
+            </g>
+            <g>
+              <path d="M216 436 L322 414" stroke="#8a6234" stroke-width="9"/>
+              <ellipse cx="170" cy="444" rx="52" ry="34" fill="#c9a24a"/>
+              <circle cx="170" cy="444" r="11" fill="#7a5326"/>
+            </g>
+            <path d="M40 472c-10-44 8-60 26-60s28 16 18 60z" fill="#7a6a52"/>
+            <rect x="56" y="400" width="12" height="14" fill="#7a6a52"/>
+          </svg>
+        </div>
+
+        <figcaption style="margin-top:16px;padding-top:14px;border-top:6px solid #14120f;display:grid;grid-template-columns:296px 1fr;gap:28px;">
+          <div>
+            <span style="display:block;font-family:'Jost','Zen Kaku Gothic New','Hiragino Kaku Gothic ProN','Noto Sans JP',system-ui,sans-serif;font-size:12px;font-weight:600;letter-spacing:.14em;color:#a72c23;line-height:1.6;">アンリ・ルソー</span>
+            <span style="display:block;font-size:19px;font-weight:600;line-height:1.6;margin-top:6px;color:#23201b;">眠るジプシー女<span style="display:block;font-family:'Jost',system-ui,sans-serif;font-weight:500;font-size:14px;letter-spacing:.06em;color:#56504a;margin-top:2px;">1897年</span></span>
+            <span style="display:block;font-family:'Jost','Zen Kaku Gothic New','Hiragino Kaku Gothic ProN','Noto Sans JP',system-ui,sans-serif;font-size:11.5px;letter-spacing:.03em;color:#56504a;margin-top:12px;line-height:1.85;">油彩・カンヴァス　129.5 × 200.7 cm　ニューヨーク近代美術館</span>
+          </div>
+          <span style="display:block;font-family:'Jost','Zen Kaku Gothic New','Hiragino Kaku Gothic ProN','Noto Sans JP',system-ui,sans-serif;font-size:13px;color:#23201b;line-height:1.95;padding-left:16px;border-left:8px solid #c8352a;">ここを見る ─ ライオンの脚と地面の関係。影がほとんどなく、動物が地面に「乗って」いない。この不安定さこそ、前衛の画家たちが「まだ汚れていない目」と呼んで羨ましがったものでした。</span>
+        </figcaption>
+
+      </figure>
+
+    </div>
+  </div>
+
+
+  <!-- ══════════ 全幅の帯（章に一度だけ）：黒い太罫と点の連なり ══════════ -->
+  <div style="margin:52px 0 0;">
+    <div style="height:14px;background:#14120f;"></div>
+    <div style="height:38px;display:flex;align-items:center;gap:20px;padding:0 40px;">
+      <div style="width:16px;height:16px;background:#c8352a;"></div>
+      <div style="width:16px;height:16px;background:#14120f;"></div>
+      <div style="width:16px;height:16px;background:#14120f;"></div>
+      <div style="width:16px;height:16px;background:#2f4a8c;"></div>
+      <div style="width:16px;height:16px;background:#14120f;"></div>
+      <div style="width:16px;height:16px;background:#14120f;"></div>
+      <div style="width:16px;height:16px;background:#e0a52a;"></div>
+      <div style="width:16px;height:16px;background:#14120f;"></div>
+      <div style="width:16px;height:16px;background:#14120f;"></div>
+      <div style="width:16px;height:16px;background:#14120f;"></div>
+      <div style="flex:1;height:4px;background:#14120f;"></div>
+      <div style="width:16px;height:16px;background:#c8352a;"></div>
+    </div>
+    <div style="height:5px;background:#14120f;"></div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════════════
+       年表
+       ══════════════════════════════════════════════════════════ -->
+  <div style="padding:0 68px;">
+    <div style="width:864px;margin:0 auto;">
+
+      <span style="display:block;margin:36px 0 12px;font-family:'Jost','Zen Kaku Gothic New','Hiragino Kaku Gothic ProN','Noto Sans JP',system-ui,sans-serif;font-size:12px;font-weight:700;letter-spacing:.28em;color:#a72c23;">この章の年表</span>
+
+      <div style="background:#14120f;padding:8px;display:grid;grid-template-columns:repeat(4,1fr);gap:3px;">
+
+        <div style="background:#f2f1ee;padding:14px 14px 18px;">
+          <div style="height:7px;background:#c8352a;"></div>
+          <div style="font-family:'Jost',system-ui,sans-serif;font-size:32px;font-weight:700;letter-spacing:-.01em;line-height:1;margin-top:12px;color:#c8352a;">1905</div>
+          <p style="margin:10px 0 0;font-size:12.5px;line-height:1.85;letter-spacing:.01em;color:#23201b;">サロン・ドートンヌ第7室。ヴォークセルが「野獣たちの檻の中のドナテッロ」と書き、フォーヴィスムの名が生まれる</p>
+        </div>
+
+        <div style="background:#f2f1ee;padding:14px 14px 18px;">
+          <div style="height:7px;background:#cfc7b6;"></div>
+          <div style="font-family:'Jost',system-ui,sans-serif;font-size:32px;font-weight:700;letter-spacing:-.01em;line-height:1;margin-top:12px;color:#23201b;">1906</div>
+          <p style="margin:10px 0 0;font-size:12.5px;line-height:1.85;letter-spacing:.01em;color:#56504a;">セザンヌ死去。翌年のサロン・ドートンヌで大回顧展が開かれ、若い画家たちが押し寄せる</p>
+        </div>
+
+        <div style="background:#f2f1ee;padding:14px 14px 18px;">
+          <div style="height:7px;background:#c8352a;"></div>
+          <div style="font-family:'Jost',system-ui,sans-serif;font-size:32px;font-weight:700;letter-spacing:-.01em;line-height:1;margin-top:12px;color:#c8352a;">1907</div>
+          <p style="margin:10px 0 0;font-size:12.5px;line-height:1.85;letter-spacing:.01em;color:#23201b;">ピカソ《アヴィニヨンの娘たち》。トロカデロ民族誌博物館での「衝撃」もこの年</p>
+        </div>
+
+        <div style="background:#f2f1ee;padding:14px 14px 18px;">
+          <div style="height:7px;background:#cfc7b6;"></div>
+          <div style="font-family:'Jost',system-ui,sans-serif;font-size:32px;font-weight:700;letter-spacing:-.01em;line-height:1;margin-top:12px;color:#23201b;">1908</div>
+          <p style="margin:10px 0 0;font-size:12.5px;line-height:1.85;letter-spacing:.01em;color:#56504a;">ヴォークセル、ブラックの風景を「立方体」と評す。二度目の悪口が、運動の名前になる</p>
+        </div>
+
+        <div style="background:#f2f1ee;padding:14px 14px 18px;">
+          <div style="height:7px;background:#c8352a;"></div>
+          <div style="font-family:'Jost',system-ui,sans-serif;font-size:32px;font-weight:700;letter-spacing:-.01em;line-height:1;margin-top:12px;color:#c8352a;">1909</div>
+          <p style="margin:10px 0 0;font-size:12.5px;line-height:1.85;letter-spacing:.01em;color:#23201b;">『フィガロ』一面にマリネッティ「未来派創立宣言」。速度と機械と戦争の賛美</p>
+        </div>
+
+        <div style="background:#f2f1ee;padding:14px 14px 18px;">
+          <div style="height:7px;background:#cfc7b6;"></div>
+          <div style="font-family:'Jost',system-ui,sans-serif;font-size:32px;font-weight:700;letter-spacing:-.01em;line-height:1;margin-top:12px;color:#23201b;">1911</div>
+          <p style="margin:10px 0 0;font-size:12.5px;line-height:1.85;letter-spacing:.01em;color:#56504a;">アンデパンダン展第41室でサロン・キュビストが大騒動。ルーヴル盗品事件でピカソが取り調べを受ける</p>
+        </div>
+
+        <div style="background:#f2f1ee;padding:14px 14px 18px;">
+          <div style="height:7px;background:#c8352a;"></div>
+          <div style="font-family:'Jost',system-ui,sans-serif;font-size:32px;font-weight:700;letter-spacing:-.01em;line-height:1;margin-top:12px;color:#c8352a;">1912</div>
+          <p style="margin:10px 0 0;font-size:12.5px;line-height:1.85;letter-spacing:.01em;color:#23201b;">ピカソ《籐椅子のある静物》、ブラックの最初のパピエ・コレ。現実の紙が画面に入る</p>
+        </div>
+
+        <div style="background:#f2f1ee;padding:14px 14px 18px;">
+          <div style="height:7px;background:#cfc7b6;"></div>
+          <div style="font-family:'Jost',system-ui,sans-serif;font-size:32px;font-weight:700;letter-spacing:-.01em;line-height:1;margin-top:12px;color:#23201b;">1914</div>
+          <p style="margin:10px 0 0;font-size:12.5px;line-height:1.85;letter-spacing:.01em;color:#56504a;">第一次世界大戦。ブラック、ドランらが動員され、共同作業としてのキュビスムは終わる</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>
