@@ -34,6 +34,8 @@
     content: ""; position: absolute; left: 0; right: 0; top: 0; height: 3px; background: var(--era-c, var(--accent));
   }
   .card img { width: 100%; height: auto; display: block; cursor: zoom-in; }
+  /* 写真が入ったら、名前だけの仮置きは引っ込める */
+  .card.-real .ph { display: none; }
   .card .ph { display: grid; place-items: center; aspect-ratio: 4/3; background: var(--bg-sink);
               font-family: var(--sans); font-size: .68rem; color: var(--ink-3); padding: 1rem; text-align: center; }
   .card figcaption { margin-top: .55rem; line-height: 1.7; }

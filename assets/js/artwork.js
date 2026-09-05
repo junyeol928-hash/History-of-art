@@ -275,20 +275,52 @@
   }
 
   /* ---------- 起動 ---------- */
-  function boot() {
-    var plates = Array.prototype.slice.call(document.querySelectorAll('figure.plate[data-art]'));
-    if (!plates.length) return;
-
-    Promise.all([
+  /* 図版は数が多い。ギャラリーでは400点を超える。
+     いちどに全部取りに行くと回線が詰まり、どれも出てこない。
+     だから画面に近づいたものから順に解決する。 */
+  var ready = null;
+  function load() {
+    if (ready) return ready;
+    ready = Promise.all([
       getJSON(ROOT + 'data/artworks.json').catch(function () { return {}; }),
       getJSON(ROOT + 'data/artworks-baked.json').catch(function () { return []; })
     ]).then(function (r) {
       manifest = r[0] || {};
       baked = Array.isArray(r[1]) ? r[1] : [];
-      plates.forEach(function (fig) { mountPlate(fig); mountSpots(fig); });
+    });
+    return ready;
+  }
+
+  var io = ('IntersectionObserver' in window)
+    ? new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (!en.isIntersecting) return;
+          io.unobserve(en.target);
+          mountPlate(en.target);
+        });
+      }, { rootMargin: '900px 0px' })
+    : null;
+
+  /* あとから差し込まれた図版も拾う。
+     ギャラリーは JSON を読んでから中身を作るので、
+     最初の走査では一枚も見つからない。 */
+  function scan() {
+    var plates = Array.prototype.slice.call(
+      document.querySelectorAll('figure.plate[data-art]:not([data-mounted])')
+    );
+    if (!plates.length) return;
+    load().then(function () {
+      plates.forEach(function (fig) {
+        fig.dataset.mounted = '1';
+        mountSpots(fig);
+        if (io) io.observe(fig); else mountPlate(fig);
+      });
     });
   }
 
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
-  else boot();
+  window.ArtworkPlates = { rescan: scan };
+  document.addEventListener('artwork:rescan', scan);
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', scan);
+  else scan();
 })();
