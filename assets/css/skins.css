@@ -1,234 +1,524 @@
 @charset "UTF-8";
 /* =========================================================================
-   時代スキン ─ 15時代ぶんの「衣装」
-   規則は docs/design/SKIN_RULES.md。原則はひとつだけ:
+   時代スキン ─ 15時代ぶんの「部屋」
 
-     装飾は、本文の領域に入らない。それ以外の場所では思い切りやる。
+   前の版はここで章扉の色しか変えていなかった。
+   その結果、本文まで下がると38章がどれも同じ顔をしていた。
+   読む時間の大半は本文の側にあるのだから、それでは時代を感じようがない。
 
-   ここで定義するのは4つだけ:
-     --display-era  見出しと数字の書体
-     --portal-*     章扉（門）の色
-     --orn-*        罫線と区切り飾りの形
-     --frame-*      図版の額
-   本文の書体・サイズ・行間・段落の間隔・地の明度は、どの時代でも同じ。
+   だから規則を書き直す:
+
+     読む列（文字の大きさ・行間・字送り）は動かさない。
+     その外側 ── 地の色、紙の肌、罫線、見出しの形、額、飾り ── は、
+     その時代のものにする。思い切って。
+
+   時代が変わったことは、色ではなく「形」で分かるようにする。
+   古代は枠に囲われた見出し、ギリシアは雷文、中世は二重の金線、
+   ルネサンスは中央揃え、ロココは片側だけ崩れた曲線、
+   20世紀は定規で引いた太い線、日本は掛軸の一本線。
+
+   ここで定義するもの:
+     --display-era 見出しと数字の書体      --body-face   本文の書体
+     --h2-face     見出しの書体            --paper       紙の肌
+     --portal-*    章扉の色                --orn / --orn-w / --orn-h  罫の上の飾り
+     --frame-*     図版の額                地の色一式（--bg ほか）
    ========================================================================= */
 
-/* ---------- 書体の読み込み ---------- */
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Zen+Antique&family=Italiana&family=Marcellus&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,600&family=Jost:wght@300;400;600&family=Archivo:wght@400;700;900&family=Klee+One:wght@400;600&family=Zen+Old+Mincho:wght@400;700;900&family=Shippori+Mincho+B1:wght@500;700;800&display=swap");
 
-/* ---------- 既定（時代指定がないとき） ---------- */
+/* ---------- 既定 ---------- */
 :root {
   --display-era: var(--serif);
-  --orn-weight: 1px;
-  --frame-pad: clamp(.6rem, 2vw, 1.4rem);
+  --body-face:   var(--serif);
+  --h2-face:     var(--sans);
+  --h2-align:    left;
+  --h2-rule-w:   1px;
+  --h2-rule-style: solid;
+  --h2-pad:      1.4rem;
+  --orn:         none;
+  --orn-w:       0px;
+  --orn-h:       6px;
+  --orn-x:       0px;
+  --paper:       none;
+  --orn-weight:  1px;
+  --frame-pad:   clamp(.6rem, 2vw, 1.4rem);
   --frame-border: 1px;
   --bignum-alpha: .13;
+  --band-edge:   3px;
 }
 
 /* =========================================================================
-   先史 ─ 赭土。洞窟。輪郭だけが浮かぶ暗がり
+   仕掛け ─ 上のトークンを実際に効かせるところ。ここだけが本文に触れる
+   ========================================================================= */
+body { background-image: var(--paper); background-attachment: fixed; }
+.prose { font-family: var(--body-face); }
+
+.prose h2 {
+  position: relative;
+  font-family: var(--h2-face);
+  text-align: var(--h2-align);
+  justify-content: var(--h2-just, flex-start);
+  align-items: var(--h2-items, baseline);
+  padding-top: var(--h2-pad);
+  border-top: var(--h2-rule-w) var(--h2-rule-style) var(--rule);
+}
+/* 罫の上にのせる、時代ごとの標（しるし） */
+.prose h2::after {
+  content: ""; position: absolute; top: calc(-1 * var(--orn-h) / 2 - 1px);
+  left: var(--orn-x); width: var(--orn-w); height: var(--orn-h);
+  background: var(--accent);
+  -webkit-mask-image: var(--orn); mask-image: var(--orn);
+  -webkit-mask-repeat: repeat-x;  mask-repeat: repeat-x;
+  -webkit-mask-size: auto 100%;   mask-size: auto 100%;
+  transform: translateX(var(--orn-tx, 0));
+  pointer-events: none;
+}
+figure.plate .mount { border-width: var(--frame-border); padding: var(--frame-pad); }
+
+/* 中央に据える時代は、番号を見出しの上へ回す */
+.prose h2 { --h2-items: baseline; }
+
+
+/* =========================================================================
+   先史 ─ 赭土。洞窟。壁のざらつきと、輪郭だけが浮かぶ暗がり
    ========================================================================= */
 .era-prehistory {
   --display-era: "Zen Old Mincho", var(--serif);
-  --portal-bg: #2b211c;
-  --portal-ink: #e8dcd0; --portal-sub: #b09a8a;
+  --body-face: var(--serif);
+  --h2-face: var(--display-era);
+  --h2-just: flex-start;
+  --h2-align: left;
+  --h2-rule-w: 2px; --h2-rule-style: solid; --h2-pad: 1.5rem;
+  --orn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='10' viewBox='0 0 64 10' fill='black'%3E%3Ccircle cx='6' cy='5' r='3.4'/%3E%3Ccircle cx='20' cy='5' r='2.2'/%3E%3Ccircle cx='31' cy='5' r='4'/%3E%3Ccircle cx='45' cy='5' r='2.6'/%3E%3Ccircle cx='57' cy='5' r='3'/%3E%3C/svg%3E"); --orn-w: 112px; --orn-h: 10px;
+  --orn-x: 0px; --orn-tx: 0;
+  --paper: radial-gradient(circle at 12% 22%, rgba(120,86,58,.09) 0 2px, transparent 3px), radial-gradient(circle at 68% 61%, rgba(120,86,58,.07) 0 3px, transparent 4px), radial-gradient(circle at 37% 84%, rgba(120,86,58,.06) 0 2px, transparent 3px);
+  --bg: #e8e2d6; --bg-raise: #f1ece1; --bg-sink: #dcd4c5;
+  --rule: #bdb3a1; --rule-soft: #d5cdbe; --mat: #f3efe6; --frame: #a89880;
+  --ink: #211b14; --ink-2: #4f4438; --ink-3: #847a68;
+  --portal-bg: #2b211c; --portal-ink: #e8dcd0; --portal-sub: #b09a8a;
   --portal-accent: #d98a68; --portal-rule: rgba(232,220,208,.22);
-  --bignum-alpha: .18;
-  --frame-border: 1px;
+  --bignum-alpha: .18; --frame-border: 0; --frame-pad: 0px;
 }
+/* 壁に直に描く。額を持たない */
+.era-prehistory figure.plate .mount { border: 0; background: transparent; box-shadow: none; }
+.era-prehistory .prose h2 { border-top-color: var(--accent-line); }
 
 /* =========================================================================
    古代オリエント・エジプト ─ エジプシャンブルー。石と砂と、三千年動かない秩序
    ========================================================================= */
 .era-ancient {
   --display-era: "Cinzel", "Zen Old Mincho", var(--serif);
-  --portal-bg: #d9c9a3;
-  --portal-ink: #2a2419; --portal-sub: #6b5d43;
+  --body-face: var(--serif);
+  --h2-face: var(--display-era);
+  --h2-just: flex-start;
+  --h2-align: left;
+  --h2-rule-w: 3px; --h2-rule-style: double; --h2-pad: 1.5rem;
+  --orn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12' fill='black'%3E%3Crect x='0' y='0' width='3' height='12'/%3E%3Crect x='8' y='2' width='2' height='8'/%3E%3Crect x='15' y='0' width='3' height='12'/%3E%3C/svg%3E"); --orn-w: 144px; --orn-h: 12px;
+  --orn-x: 0px; --orn-tx: 0;
+  --paper: repeating-linear-gradient(0deg, rgba(150,126,74,.07) 0 1px, transparent 1px 26px);
+  --bg: #f6ecc9; --bg-raise: #fdf7dd; --bg-sink: #eaddaf;
+  --rule: #cdba82; --rule-soft: #e4d5a4; --mat: #fdf9e6; --frame: #b59a55;
+  --ink: #241f11; --ink-2: #544a30; --ink-3: #8a7e58;
+  --portal-bg: #d9c9a3; --portal-ink: #2a2419; --portal-sub: #6b5d43;
   --portal-accent: #1b6ca8; --portal-rule: rgba(42,36,25,.25);
-  --bignum-alpha: .16;
+  --bignum-alpha: .16; --frame-border: 1px; --frame-pad: clamp(.5rem,1.6vw,1rem);
 }
+/* 見出しをカルトゥーシュ（王名を囲む輪）に入れる */
+.era-ancient .prose h2 {
+  border: 1px solid var(--accent-line); border-left-width: 4px;
+  background: color-mix(in srgb, var(--accent-soft) 60%, transparent);
+  padding: 1rem 1rem 1rem 1.1rem; margin-top: 3.4rem;
+}
+.era-ancient .prose h2::after { top: auto; bottom: -6px; left: 1.1rem; }
 
 /* =========================================================================
    ギリシア・ローマ ─ 辰砂。大理石の白と、赤像式の黒と赤
    ========================================================================= */
 .era-classical {
   --display-era: "Cinzel", "Marcellus", var(--serif);
-  --portal-bg: #ece7dd;
-  --portal-ink: #23201b; --portal-sub: #6d675c;
+  --body-face: var(--serif);
+  --h2-face: var(--display-era);
+  --h2-just: center;
+  --h2-align: center;
+  --h2-rule-w: 1px; --h2-rule-style: solid; --h2-pad: 1.6rem;
+  --orn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='13' viewBox='0 0 18 13' fill='black'%3E%3Cpath d='M0 12h18M2.5 12V2.5h11V9H7' fill='none' stroke='black' stroke-width='2.2'/%3E%3C/svg%3E"); --orn-w: 162px; --orn-h: 13px;
+  --orn-x: 50%; --orn-tx: -50%;
+  --paper: repeating-linear-gradient(90deg, rgba(120,116,102,.05) 0 1px, transparent 1px 34px);
+  --bg: #f3f1ea; --bg-raise: #fbfaf5; --bg-sink: #e7e4d9;
+  --rule: #cbc7b8; --rule-soft: #e2ded1; --mat: #ffffff; --frame: #c4bfae;
+  --ink: #211f1a; --ink-2: #4f4c44; --ink-3: #88847a;
+  --portal-bg: #ece7dd; --portal-ink: #23201b; --portal-sub: #6d675c;
   --portal-accent: #a8392b; --portal-rule: rgba(35,32,27,.2);
-  --bignum-alpha: .15;
+  --bignum-alpha: .15; --frame-border: 1px; --frame-pad: clamp(.6rem,2vw,1.4rem);
 }
+/* 中央に据える。左右の釣り合いがこの時代の主題そのもの */
+.era-classical .prose h2 .n { order: -1; }
+.era-classical .prose h2 { flex-direction: column; align-items: center; gap: .5rem; }
 
 /* =========================================================================
    中世 ─ ラピスラズリ。金地と青。写本と、鉛桟でつないだ色ガラス
    ========================================================================= */
 .era-medieval {
   --display-era: "Zen Antique", "Shippori Mincho B1", var(--serif);
-  --portal-bg: #141a33;
-  --portal-ink: #e9e4d6; --portal-sub: #a8a189;
+  --body-face: var(--serif);
+  --h2-face: var(--display-era);
+  --h2-just: flex-start;
+  --h2-align: left;
+  --h2-rule-w: 3px; --h2-rule-style: double; --h2-pad: 1.5rem;
+  --orn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='12' viewBox='0 0 22 12' fill='black'%3E%3Cpath d='M11 .8l4.6 5.2-4.6 5.2L6.4 6z'/%3E%3Ccircle cx='1.6' cy='6' r='1.5'/%3E%3Ccircle cx='20.4' cy='6' r='1.5'/%3E%3C/svg%3E"); --orn-w: 154px; --orn-h: 12px;
+  --orn-x: 0px; --orn-tx: 0;
+  --paper: repeating-linear-gradient(0deg, rgba(160,130,70,.05) 0 1px, transparent 1px 30px), repeating-linear-gradient(90deg, rgba(160,130,70,.05) 0 1px, transparent 1px 30px);
+  --bg: #f0e7d0; --bg-raise: #f9f2df; --bg-sink: #e2d5b6;
+  --rule: #c3ad7d; --rule-soft: #ddd0ae; --mat: #fcf7ea; --frame: #a98c47;
+  --ink: #211c12; --ink-2: #4d4534; --ink-3: #877c62;
+  --portal-bg: #141a33; --portal-ink: #e9e4d6; --portal-sub: #a8a189;
   --portal-accent: #c8a44e; --portal-rule: rgba(200,164,78,.4);
-  --bignum-alpha: .22;
-  --frame-border: 2px;
-  --orn-weight: 1px;
+  --bignum-alpha: .22; --frame-border: 2px; --frame-pad: clamp(.7rem,2.2vw,1.5rem);
 }
-/* 中世だけ、罫線を鉛桟のような二重線にする */
-.era-medieval .prose h2 { border-top-style: double; border-top-width: 3px; }
+/* 鉛桟の二重線と、欄外を飾る金 */
+.era-medieval .prose h2 { border-top-color: var(--frame); }
+.era-medieval .prose p.lead::first-letter { color: #a98c47; }
+.era-medieval figure.plate .mount { border-color: var(--frame); }
 
 /* =========================================================================
-   ルネサンス ─ テラヴェルデ。均整。人文主義の端正なローマン体
+   ルネサンス ─ テラヴェルデ。均整。左右が釣り合っていること自体が主題
    ========================================================================= */
 .era-renaissance {
   --display-era: "Cormorant Garamond", "EB Garamond", var(--serif);
-  --portal-bg: #e8e3d4;
-  --portal-ink: #262319; --portal-sub: #6a6454;
+  --body-face: var(--serif);
+  --h2-face: var(--display-era);
+  --h2-just: center;
+  --h2-align: center;
+  --h2-rule-w: 1px; --h2-rule-style: solid; --h2-pad: 1.7rem;
+  --orn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='10' viewBox='0 0 48 10' fill='black'%3E%3Cpath d='M24 1l4 4-4 4-4-4z'/%3E%3Crect x='0' y='4.4' width='18' height='1.2'/%3E%3Crect x='30' y='4.4' width='18' height='1.2'/%3E%3C/svg%3E"); --orn-w: 190px; --orn-h: 10px;
+  --orn-x: 50%; --orn-tx: -50%;
+  --paper: repeating-linear-gradient(135deg, rgba(120,112,88,.035) 0 1px, transparent 1px 12px);
+  --bg: #eceee3; --bg-raise: #f6f8ef; --bg-sink: #dde0d2;
+  --rule: #bcc2b0; --rule-soft: #d6dacc; --mat: #fbfcf7; --frame: #a3ab97;
+  --ink: #1f221c; --ink-2: #4b5046; --ink-3: #83897c;
+  --portal-bg: #e8e3d4; --portal-ink: #262319; --portal-sub: #6a6454;
   --portal-accent: #4a7c59; --portal-rule: rgba(38,35,25,.2);
-  --bignum-alpha: .15;
+  --bignum-alpha: .15; --frame-border: 1px; --frame-pad: clamp(.6rem,2vw,1.4rem);
 }
+/* 破風（ペディメント）のように、見出しを中央へ */
+.era-renaissance .prose h2 { flex-direction: column; align-items: center; gap: .45rem; }
+.era-renaissance .prose h2 .n { order: -1; }
 
 /* =========================================================================
    バロック ─ アンバー。闇と、そこへ差し込む一条の光
    ========================================================================= */
 .era-baroque {
   --display-era: "Bodoni Moda", "Shippori Mincho B1", var(--serif);
-  --portal-bg: #17120c;
-  --portal-ink: #e6dcc9; --portal-sub: #9d9179;
+  --body-face: var(--serif);
+  --h2-face: var(--display-era);
+  --h2-just: flex-start;
+  --h2-align: left;
+  --h2-rule-w: 2px; --h2-rule-style: solid; --h2-pad: 1.6rem;
+  --orn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='12' viewBox='0 0 40 12' fill='black'%3E%3Cpath d='M0 8c6 0 6-5 12-5s6 5 12 5 6-5 12-5v2c-5 0-5 5-11 5s-7-5-13-5-6 5-12 5z'/%3E%3C/svg%3E"); --orn-w: 160px; --orn-h: 12px;
+  --orn-x: 0px; --orn-tx: 0;
+  --paper: radial-gradient(120% 80% at 50% 0%, transparent 40%, rgba(60,42,20,.16) 100%);
+  --bg: #e9e0cd; --bg-raise: #f4ecd9; --bg-sink: #dbcfb5;
+  --rule: #b8a682; --rule-soft: #d2c4a6; --mat: #fbf4e4; --frame: #8f7546;
+  --ink: #1e1a12; --ink-2: #4a4234; --ink-3: #867a63;
+  --portal-bg: #17120c; --portal-ink: #e6dcc9; --portal-sub: #9d9179;
   --portal-accent: #c99356; --portal-rule: rgba(230,220,201,.2);
-  --bignum-alpha: .2;
-  --frame-border: 2px;
+  --bignum-alpha: .2; --frame-border: 3px; --frame-pad: clamp(.8rem,2.4vw,1.6rem);
 }
+/* 闇のほうが広い。図版だけが明るく浮かぶ */
+.era-baroque figure.plate .mount { box-shadow: var(--shadow-m); }
+.era-baroque .prose h2 { border-top-color: var(--frame); }
 
 /* =========================================================================
    ロココ ─ ローズマダー。直角が消える。一箇所だけ崩れているから優雅
    ========================================================================= */
 .era-rococo {
   --display-era: "Italiana", "Cormorant Garamond", var(--serif);
-  --portal-bg: #f1e6e9;
-  --portal-ink: #2c2226; --portal-sub: #7a6a70;
+  --body-face: var(--serif);
+  --h2-face: var(--display-era);
+  --h2-just: flex-start;
+  --h2-align: left;
+  --h2-rule-w: 1px; --h2-rule-style: solid; --h2-pad: 1.6rem;
+  --orn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='14' viewBox='0 0 56 14' fill='black'%3E%3Cpath d='M2 12c0-7 5-10 12-10 6 0 8 4 8 6 0 3-3 4-4 2-1-1 1-2 1-3 0-2-2-3-4-3-5 0-9 3-9 8z'/%3E%3Crect x='24' y='10.6' width='30' height='1.3'/%3E%3C/svg%3E"); --orn-w: 168px; --orn-h: 14px;
+  --orn-x: 0px; --orn-tx: 0;
+  --paper: repeating-linear-gradient(45deg, rgba(184,86,127,.045) 0 1px, transparent 1px 16px), repeating-linear-gradient(-45deg, rgba(184,86,127,.045) 0 1px, transparent 1px 16px);
+  --bg: #f7eff1; --bg-raise: #fdf7f8; --bg-sink: #eddfe3;
+  --rule: #d8c3ca; --rule-soft: #ebdde1; --mat: #ffffff; --frame: #cbb0b9;
+  --ink: #262022; --ink-2: #544a4e; --ink-3: #8d8286;
+  --portal-bg: #f1e6e9; --portal-ink: #2c2226; --portal-sub: #7a6a70;
   --portal-accent: #b8567f; --portal-rule: rgba(184,86,127,.3);
-  --bignum-alpha: .17;
+  --bignum-alpha: .17; --frame-border: 1px; --frame-pad: clamp(.6rem,2vw,1.4rem);
 }
-/* ロココだけ、囲みの角を一箇所だけ落とす */
-.era-rococo .band.seeit,
-.era-rococo .band.myth { border-radius: 0 14px 0 0; }
+/* 直角をひとつだけ落とす。全部落とすと、ただ丸いだけになる */
+.era-rococo .band.seeit, .era-rococo .band.myth, .era-rococo .band.person { border-radius: 0 16px 0 0; }
+.era-rococo .prose h2 { padding-left: .2rem; }
+.era-rococo figure.plate .mount { border-radius: 0 12px 0 0; }
 
 /* =========================================================================
    19世紀 ─ プルシアンブルー。理性と情熱、そしてサロンの壁
    ========================================================================= */
 .era-19c {
-  --display-era: "Playfair Display", "Shippori Mincho B1", var(--serif);
-  --portal-bg: #1d2733;
-  --portal-ink: #e4e6e8; --portal-sub: #9aa3ad;
+  --display-era: "Bodoni Moda", "Shippori Mincho B1", var(--serif);
+  --body-face: var(--serif);
+  --h2-face: var(--display-era);
+  --h2-just: flex-start;
+  --h2-align: left;
+  --h2-rule-w: 1px; --h2-rule-style: solid; --h2-pad: 1.5rem;
+  --orn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8' fill='black'%3E%3Crect x='0' y='1' width='8' height='1.3'/%3E%3Crect x='0' y='5' width='8' height='1.3'/%3E%3C/svg%3E"); --orn-w: 200px; --orn-h: 8px;
+  --orn-x: 0px; --orn-tx: 0;
+  --paper: linear-gradient(180deg, rgba(31,78,121,.05), transparent 30%);
+  --bg: #ecedef; --bg-raise: #f7f8f9; --bg-sink: #dfe1e5;
+  --rule: #bec3ca; --rule-soft: #dadde1; --mat: #ffffff; --frame: #a9b0b9;
+  --ink: #1c1e21; --ink-2: #484d53; --ink-3: #7f858d;
+  --portal-bg: #1d2733; --portal-ink: #e4e6e8; --portal-sub: #9aa3ad;
   --portal-accent: #6ba6dd; --portal-rule: rgba(228,230,232,.22);
-  --bignum-alpha: .18;
+  --bignum-alpha: .18; --frame-border: 2px; --frame-pad: clamp(.7rem,2.2vw,1.5rem);
 }
+/* サロンの壁。額が主張する */
+.era-19c figure.plate .mount { border-color: var(--frame); box-shadow: var(--shadow-m); }
 
 /* =========================================================================
-   印象派 ─ コバルトヴァイオレット。影が茶色でなくなった
+   印象派 ─ コバルトヴァイオレット。影から黒が消えた。だから罫線からも黒を抜く
    ========================================================================= */
 .era-impression {
   --display-era: "Cormorant Garamond", var(--serif);
-  --portal-bg: #e3e0ee;
-  --portal-ink: #262233; --portal-sub: #6b6580;
+  --body-face: var(--serif);
+  --h2-face: var(--display-era);
+  --h2-just: flex-start;
+  --h2-align: left;
+  --h2-rule-w: 1px; --h2-rule-style: solid; --h2-pad: 1.4rem;
+  --orn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='12' viewBox='0 0 30 12' fill='black'%3E%3Cellipse cx='4' cy='6' rx='2.6' ry='4' transform='rotate%2820 4 6%29'/%3E%3Cellipse cx='13' cy='6' rx='2.6' ry='4' transform='rotate%28-15 13 6%29'/%3E%3Cellipse cx='23' cy='6' rx='2.6' ry='4' transform='rotate%2828 23 6%29'/%3E%3C/svg%3E"); --orn-w: 150px; --orn-h: 12px;
+  --orn-x: 0px; --orn-tx: 0;
+  --paper: radial-gradient(60% 40% at 18% 12%, rgba(106,95,168,.10), transparent 70%), radial-gradient(50% 40% at 82% 38%, rgba(214,168,120,.10), transparent 70%), radial-gradient(60% 40% at 30% 82%, rgba(120,170,190,.09), transparent 70%);
+  --bg: #eeecf5; --bg-raise: #f8f7fc; --bg-sink: #e0dded;
+  --rule: #c2bddb; --rule-soft: #dedaee; --mat: #ffffff; --frame: #b0a9d0;
+  --ink: #242030; --ink-2: #4e4960; --ink-3: #867fa0;
+  --portal-bg: #e3e0ee; --portal-ink: #262233; --portal-sub: #6b6580;
   --portal-accent: #6a5fa8; --portal-rule: rgba(38,34,51,.18);
-  --bignum-alpha: .16;
+  --bignum-alpha: .16; --frame-border: 1px; --frame-pad: clamp(.5rem,1.8vw,1.2rem);
 }
+/* 影から黒が消えた時代なので、罫線からも黒を抜く */
+.era-impression .prose h2 { border-top-color: var(--accent-line); }
+.era-impression .band, .era-impression .chrono { border-color: var(--accent-line); }
+.era-impression figure.plate .mount { border-color: var(--accent-line); }
 
 /* =========================================================================
-   20世紀前衛 ─ カドミウムレッド。幾何学と原色と硬い線
+   20世紀前衛 ─ カドミウムレッド。幾何学と原色と硬い線。本文まで角ゴシックにする
    ========================================================================= */
 .era-modern {
   --display-era: "Jost", "Zen Kaku Gothic New", var(--sans);
-  --portal-bg: #f2f1ee;
-  --portal-ink: #16171a; --portal-sub: #5d6066;
+  --body-face: var(--sans);
+  --h2-face: var(--display-era);
+  --h2-just: flex-start;
+  --h2-align: left;
+  --h2-rule-w: 4px; --h2-rule-style: solid; --h2-pad: 1.3rem;
+  --orn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8' viewBox='0 0 10 8' fill='black'%3E%3Crect x='0' y='0' width='10' height='8'/%3E%3C/svg%3E"); --orn-w: 96px; --orn-h: 8px;
+  --orn-x: 0px; --orn-tx: 0;
+  --paper: none;
+  --bg: #f4f4f2; --bg-raise: #ffffff; --bg-sink: #e8e8e4;
+  --rule: #c6c6c0; --rule-soft: #e2e2dd; --mat: #ffffff; --frame: #1a1a18;
+  --ink: #151516; --ink-2: #4a4a4c; --ink-3: #828287;
+  --portal-bg: #f2f1ee; --portal-ink: #16171a; --portal-sub: #5d6066;
   --portal-accent: #c8352a; --portal-rule: rgba(22,23,26,.3);
-  --bignum-alpha: .2;
-  --orn-weight: 3px;
-  --frame-border: 2px;
+  --bignum-alpha: .2; --frame-border: 0; --frame-pad: 0px;
 }
-/* 20世紀は罫線を太くする ─ 定規で引いた線 */
-.era-modern .prose h2 { border-top-width: 3px; }
-.era-modern .pull { border-top-width: 3px; border-bottom-width: 3px; }
+/* 定規で引いた線。額は捨てる。本文まで角ゴシックにする */
+.era-modern .prose h2 { border-top-color: var(--ink); letter-spacing: .01em; font-weight: 700; }
+.era-modern .pull { border-top-width: 4px; border-bottom-width: 4px; border-color: var(--ink); }
+.era-modern figure.plate .mount { border: 0; background: transparent; box-shadow: none; }
+.era-modern .prose p.lead::first-letter { font-family: var(--display-era); }
 
 /* =========================================================================
-   現代 ─ フタロシアニングリーン。白い箱（ホワイトキューブ）
+   現代 ─ フタロシアニングリーン。白い箱（ホワイトキューブ）。線を引かない
    ========================================================================= */
 .era-contemp {
   --display-era: "Archivo", "Zen Kaku Gothic New", var(--sans);
-  --portal-bg: #f7f7f6;
-  --portal-ink: #1a1c1b; --portal-sub: #61665f;
+  --body-face: var(--sans);
+  --h2-face: var(--display-era);
+  --h2-just: flex-start;
+  --h2-align: left;
+  --h2-rule-w: 0px; --h2-rule-style: solid; --h2-pad: 2.2rem;
+  --orn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='4' viewBox='0 0 40 4' fill='black'%3E%3Crect x='0' y='1' width='24' height='1.4'/%3E%3C/svg%3E"); --orn-w: 120px; --orn-h: 4px;
+  --orn-x: 0px; --orn-tx: 0;
+  --paper: none;
+  --bg: #f2f2f1; --bg-raise: #fbfbfa; --bg-sink: #e7e7e5;
+  --rule: #cdcdc9; --rule-soft: #e4e4e1; --mat: #ffffff; --frame: #d6d6d2;
+  --ink: #191b1a; --ink-2: #4b4f4c; --ink-3: #848985;
+  --portal-bg: #f7f7f6; --portal-ink: #1a1c1b; --portal-sub: #61665f;
   --portal-accent: #0f9d8f; --portal-rule: rgba(26,28,27,.22);
-  --bignum-alpha: .14;
-  --orn-weight: 2px;
+  --bignum-alpha: .14; --frame-border: 0; --frame-pad: 0px;
 }
+/* 白い箱。線を引かず、余白だけで区切る */
+.era-contemp .prose h2 { border-top: 0; letter-spacing: .16em; font-size: .95rem; text-transform: none; }
+.era-contemp .prose h2 .n { letter-spacing: .3em; }
+.era-contemp figure.plate .mount { border: 0; background: transparent; box-shadow: none; }
+.era-contemp .prose p.lead::first-letter { float: none; font-size: inherit; padding: 0; color: inherit; }
 
 /* =========================================================================
-   日本 ─ 弁柄。料紙と、余白と、朱の印
+   日本 ─ 弁柄。料紙と、余白と、朱の印。掛軸のように左に一本立てる
    ========================================================================= */
 .era-japan {
   --display-era: "Shippori Mincho B1", "Zen Old Mincho", var(--serif);
-  --portal-bg: #efe9dc;
-  --portal-ink: #241f1c; --portal-sub: #6f6559;
+  --body-face: "Zen Old Mincho", var(--serif);
+  --h2-face: var(--display-era);
+  --h2-just: flex-start;
+  --h2-align: left;
+  --h2-rule-w: 0px; --h2-rule-style: solid; --h2-pad: 1.4rem;
+  --orn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='10' viewBox='0 0 60 10' fill='black'%3E%3Crect x='0' y='0' width='60' height='3'/%3E%3Crect x='0' y='6' width='38' height='1.4'/%3E%3C/svg%3E"); --orn-w: 120px; --orn-h: 10px;
+  --orn-x: 0px; --orn-tx: 0;
+  --paper: repeating-linear-gradient(74deg, rgba(140,120,90,.05) 0 1px, transparent 1px 9px);
+  --bg: #f5f1e6; --bg-raise: #fcf9f1; --bg-sink: #eae4d5;
+  --rule: #d2cab5; --rule-soft: #e6e0d1; --mat: #fdfbf5; --frame: #cdc3ad;
+  --ink: #221e18; --ink-2: #4e473e; --ink-3: #867e6e;
+  --portal-bg: #efe9dc; --portal-ink: #241f1c; --portal-sub: #6f6559;
   --portal-accent: #8c2f39; --portal-rule: rgba(140,47,57,.28);
-  --bignum-alpha: .18;
+  --bignum-alpha: .18; --frame-border: 0; --frame-pad: 0px;
 }
+/* 掛軸。天地に一本ずつ、左に一本 */
+.era-japan .prose h2 {
+  border-top: 0; border-left: 4px solid var(--accent);
+  padding: .2rem 0 .2rem .9rem; margin-top: 3.4rem;
+}
+.era-japan .prose h2::after { top: auto; bottom: -.5rem; left: .9rem; }
+.era-japan figure.plate .mount { border: 0; background: var(--mat); padding: clamp(.9rem,3vw,2rem); box-shadow: none; }
 
 /* =========================================================================
-   中国・東アジア ─ 松煙墨。紙の白と、一筆の速度
+   中国・東アジア ─ 松煙墨。紙の白と、一筆の速度。落款だけが朱い
    ========================================================================= */
 .era-china {
   --display-era: "Zen Old Mincho", "Shippori Mincho B1", var(--serif);
-  --portal-bg: #eceae4;
-  --portal-ink: #1f2224; --portal-sub: #656b6e;
+  --body-face: "Zen Old Mincho", var(--serif);
+  --h2-face: var(--display-era);
+  --h2-just: flex-start;
+  --h2-align: left;
+  --h2-rule-w: 1px; --h2-rule-style: solid; --h2-pad: 1.5rem;
+  --orn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewBox='0 0 16 12' fill='black'%3E%3Crect x='0' y='0' width='12' height='12' rx='1'/%3E%3C/svg%3E"); --orn-w: 32px; --orn-h: 12px;
+  --orn-x: 0px; --orn-tx: 0;
+  --paper: repeating-linear-gradient(0deg, rgba(90,96,100,.035) 0 1px, transparent 1px 7px);
+  --bg: #f0efe9; --bg-raise: #f9f8f4; --bg-sink: #e4e2d9;
+  --rule: #c6c4b8; --rule-soft: #dedcd2; --mat: #fdfcf8; --frame: #b6b4a7;
+  --ink: #1d1f20; --ink-2: #484c4e; --ink-3: #7e8386;
+  --portal-bg: #eceae4; --portal-ink: #1f2224; --portal-sub: #656b6e;
   --portal-accent: #3a4a52; --portal-rule: rgba(31,34,36,.22);
-  --bignum-alpha: .15;
+  --bignum-alpha: .15; --frame-border: 0; --frame-pad: 0px;
 }
+/* 落款だけが朱い。あとは墨と紙 */
+.era-china .prose h2 { border-top-color: var(--rule); }
+.era-china .prose h2::after { background: #9c3a2c; }
+.era-china figure.plate .mount { border: 0; background: var(--mat); box-shadow: none; }
 
 /* =========================================================================
-   イスラーム ─ トルコ青。幾何学と、かたちなき神
+   イスラーム ─ トルコ青。幾何学と、かたちなき神。地に繰り返しの紋を敷く
    ========================================================================= */
 .era-islam {
   --display-era: "Marcellus", "Zen Old Mincho", var(--serif);
-  --portal-bg: #0e2f33;
-  --portal-ink: #e2ece9; --portal-sub: #93aaa8;
+  --body-face: var(--serif);
+  --h2-face: var(--display-era);
+  --h2-just: center;
+  --h2-align: center;
+  --h2-rule-w: 1px; --h2-rule-style: solid; --h2-pad: 1.6rem;
+  --orn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='14' viewBox='0 0 24 14' fill='black'%3E%3Cpath d='M12 0l2.6 6.4L21 4l-2.6 6.4L24 13H0l5.6-2.6L3 4l6.4 2.4z'/%3E%3C/svg%3E"); --orn-w: 168px; --orn-h: 14px;
+  --orn-x: 50%; --orn-tx: -50%;
+  --paper: repeating-linear-gradient(45deg, rgba(26,143,146,.06) 0 1px, transparent 1px 18px), repeating-linear-gradient(-45deg, rgba(26,143,146,.06) 0 1px, transparent 1px 18px);
+  --bg: #ecf2f0; --bg-raise: #f7fbfa; --bg-sink: #dde8e5;
+  --rule: #b8ccc8; --rule-soft: #d7e4e1; --mat: #ffffff; --frame: #9dbcb7;
+  --ink: #17211f; --ink-2: #42504d; --ink-3: #7a8b88;
+  --portal-bg: #0e2f33; --portal-ink: #e2ece9; --portal-sub: #93aaa8;
   --portal-accent: #3ec3c6; --portal-rule: rgba(226,236,233,.24);
-  --bignum-alpha: .2;
+  --bignum-alpha: .2; --frame-border: 2px; --frame-pad: clamp(.7rem,2.2vw,1.5rem);
 }
+/* 繰り返しがそのまま装飾になる。中央に据える */
+.era-islam .prose h2 { flex-direction: column; align-items: center; gap: .5rem; }
+.era-islam .prose h2 .n { order: -1; }
+.era-islam figure.plate .mount { border-color: var(--frame); }
 
 /* =========================================================================
    もうひとつの世界 ─ 黄土。木と土と、太平洋の光
    ========================================================================= */
 .era-world {
   --display-era: "Zen Antique", "Zen Old Mincho", var(--serif);
-  --portal-bg: #2e2519;
-  --portal-ink: #ece0c9; --portal-sub: #ad9f83;
+  --body-face: var(--serif);
+  --h2-face: var(--display-era);
+  --h2-just: flex-start;
+  --h2-align: left;
+  --h2-rule-w: 2px; --h2-rule-style: solid; --h2-pad: 1.5rem;
+  --orn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12' fill='black'%3E%3Cpath d='M0 10l6-8 6 8 6-8 6 8v2l-6-8-6 8-6-8-6 8z'/%3E%3C/svg%3E"); --orn-w: 144px; --orn-h: 12px;
+  --orn-x: 0px; --orn-tx: 0;
+  --paper: repeating-linear-gradient(60deg, rgba(168,120,31,.05) 0 2px, transparent 2px 14px), repeating-linear-gradient(-60deg, rgba(168,120,31,.05) 0 2px, transparent 2px 14px);
+  --bg: #f0e4d2; --bg-raise: #faf1e2; --bg-sink: #e2d2b8;
+  --rule: #c5ac8a; --rule-soft: #dbc9ac; --mat: #fbf3e6; --frame: #ab8b5e;
+  --ink: #241a12; --ink-2: #524334; --ink-3: #8a7862;
+  --portal-bg: #2e2519; --portal-ink: #ece0c9; --portal-sub: #ad9f83;
   --portal-accent: #d9b158; --portal-rule: rgba(236,224,201,.22);
-  --bignum-alpha: .2;
+  --bignum-alpha: .2; --frame-border: 1px; --frame-pad: clamp(.6rem,2vw,1.4rem);
 }
+/* 織りと編み。線が交差する */
+.era-world .prose h2 { border-top-color: var(--accent-line); }
+
 
 /* =========================================================================
-   夜（ダークモード）── 門はもともと濃い時代が多いので、
-   明るい門の時代だけを夜用に沈める。本文側は site.css が面倒を見る。
+   夜 ── 閉館後の展示室。時代の色は、地の底にだけ残す
    ========================================================================= */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .era-ancient     { --portal-bg:#2a2519; --portal-ink:#e8e0cd; --portal-sub:#a89c80; --portal-rule:rgba(232,224,205,.2); }
-  :root:not([data-theme="light"]) .era-classical   { --portal-bg:#1d1c19; --portal-ink:#e8e4da; --portal-sub:#9a948a; --portal-rule:rgba(232,228,218,.2); }
-  :root:not([data-theme="light"]) .era-renaissance { --portal-bg:#1a1d17; --portal-ink:#e6e4d6; --portal-sub:#98988a; --portal-rule:rgba(230,228,214,.2); }
-  :root:not([data-theme="light"]) .era-rococo      { --portal-bg:#241a1e; --portal-ink:#eddfe3; --portal-sub:#a58f97; --portal-rule:rgba(237,223,227,.2); }
-  :root:not([data-theme="light"]) .era-impression  { --portal-bg:#1a1826; --portal-ink:#e4e0f0; --portal-sub:#9691ac; --portal-rule:rgba(228,224,240,.2); }
-  :root:not([data-theme="light"]) .era-modern      { --portal-bg:#141416; --portal-ink:#ececeb; --portal-sub:#8e908f; --portal-rule:rgba(236,236,235,.22); }
-  :root:not([data-theme="light"]) .era-contemp     { --portal-bg:#131514; --portal-ink:#ececea; --portal-sub:#8b908c; --portal-rule:rgba(236,236,234,.22); }
-  :root:not([data-theme="light"]) .era-japan       { --portal-bg:#1d1917; --portal-ink:#e8e0d4; --portal-sub:#a0958a; --portal-rule:rgba(232,224,212,.2); }
-  :root:not([data-theme="light"]) .era-china       { --portal-bg:#16191a; --portal-ink:#e4e6e6; --portal-sub:#8f9698; --portal-rule:rgba(228,230,230,.2); }
-}
-:root[data-theme="dark"] .era-ancient     { --portal-bg:#2a2519; --portal-ink:#e8e0cd; --portal-sub:#a89c80; --portal-rule:rgba(232,224,205,.2); }
-:root[data-theme="dark"] .era-classical   { --portal-bg:#1d1c19; --portal-ink:#e8e4da; --portal-sub:#9a948a; --portal-rule:rgba(232,228,218,.2); }
-:root[data-theme="dark"] .era-renaissance { --portal-bg:#1a1d17; --portal-ink:#e6e4d6; --portal-sub:#98988a; --portal-rule:rgba(230,228,214,.2); }
-:root[data-theme="dark"] .era-rococo      { --portal-bg:#241a1e; --portal-ink:#eddfe3; --portal-sub:#a58f97; --portal-rule:rgba(237,223,227,.2); }
-:root[data-theme="dark"] .era-impression  { --portal-bg:#1a1826; --portal-ink:#e4e0f0; --portal-sub:#9691ac; --portal-rule:rgba(228,224,240,.2); }
-:root[data-theme="dark"] .era-modern      { --portal-bg:#141416; --portal-ink:#ececeb; --portal-sub:#8e908f; --portal-rule:rgba(236,236,235,.22); }
-:root[data-theme="dark"] .era-contemp     { --portal-bg:#131514; --portal-ink:#ececea; --portal-sub:#8b908c; --portal-rule:rgba(236,236,234,.22); }
-:root[data-theme="dark"] .era-japan       { --portal-bg:#1d1917; --portal-ink:#e8e0d4; --portal-sub:#a0958a; --portal-rule:rgba(232,224,212,.2); }
-:root[data-theme="dark"] .era-china       { --portal-bg:#16191a; --portal-ink:#e4e6e6; --portal-sub:#8f9698; --portal-rule:rgba(228,230,230,.2); }
 
-/* 額の厚みを時代ごとに効かせる */
-figure.plate .mount { border-width: var(--frame-border); padding: var(--frame-pad); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .era-prehistory { --bg:#100c09; --bg-raise:#171210; --bg-sink:#0a0706; --rule:#332720; --rule-soft:#211a15; --mat:#191310; --frame:#8a6a4c; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; }
+  :root:not([data-theme="light"]) .era-prehistory { --paper: none; }
+  :root:not([data-theme="light"]) .era-ancient { --bg:#0c0f13; --bg-raise:#131820; --bg-sink:#080a0d; --rule:#26313d; --rule-soft:#171d25; --mat:#141a22; --frame:#7f96ad; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; --portal-bg:#0c0f13; --portal-ink:#e8e3d8; --portal-sub:#9a9488; --portal-rule:rgba(232,227,216,.2); }
+  :root:not([data-theme="light"]) .era-ancient { --paper: none; }
+  :root:not([data-theme="light"]) .era-classical { --bg:#100f0d; --bg-raise:#171614; --bg-sink:#0a0908; --rule:#302d28; --rule-soft:#1e1c19; --mat:#1a1815; --frame:#a08c72; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; --portal-bg:#100f0d; --portal-ink:#e8e3d8; --portal-sub:#9a9488; --portal-rule:rgba(232,227,216,.2); }
+  :root:not([data-theme="light"]) .era-classical { --paper: none; }
+  :root:not([data-theme="light"]) .era-medieval { --bg:#0a0c16; --bg-raise:#10131f; --bg-sink:#07080f; --rule:#262c47; --rule-soft:#171b2b; --mat:#141827; --frame:#b08f4a; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; }
+  :root:not([data-theme="light"]) .era-medieval { --paper: none; }
+  :root:not([data-theme="light"]) .era-renaissance { --bg:#0d0f0c; --bg-raise:#141712; --bg-sink:#080a08; --rule:#2a2f26; --rule-soft:#191c16; --mat:#161a14; --frame:#8d9a80; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; --portal-bg:#0d0f0c; --portal-ink:#e8e3d8; --portal-sub:#9a9488; --portal-rule:rgba(232,227,216,.2); }
+  :root:not([data-theme="light"]) .era-renaissance { --paper: none; }
+  :root:not([data-theme="light"]) .era-baroque { --bg:#0c0906; --bg-raise:#13100b; --bg-sink:#080605; --rule:#2e2519; --rule-soft:#1d1710; --mat:#191309; --frame:#a8875a; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; }
+  :root:not([data-theme="light"]) .era-baroque { --paper: none; }
+  :root:not([data-theme="light"]) .era-rococo { --bg:#120d0f; --bg-raise:#191316; --bg-sink:#0b0809; --rule:#352a2e; --rule-soft:#20191c; --mat:#1c1418; --frame:#c295a6; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; --portal-bg:#120d0f; --portal-ink:#e8e3d8; --portal-sub:#9a9488; --portal-rule:rgba(232,227,216,.2); }
+  :root:not([data-theme="light"]) .era-rococo { --paper: none; }
+  :root:not([data-theme="light"]) .era-19c { --bg:#0a0d11; --bg-raise:#111519; --bg-sink:#06080b; --rule:#242c34; --rule-soft:#161c22; --mat:#131920; --frame:#8fa2b3; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; }
+  :root:not([data-theme="light"]) .era-19c { --paper: none; }
+  :root:not([data-theme="light"]) .era-impression { --bg:#0d0c14; --bg-raise:#14131d; --bg-sink:#08080d; --rule:#2b2840; --rule-soft:#1a1827; --mat:#161426; --frame:#9d94c8; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; --portal-bg:#0d0c14; --portal-ink:#e8e3d8; --portal-sub:#9a9488; --portal-rule:rgba(232,227,216,.2); }
+  :root:not([data-theme="light"]) .era-impression { --paper: none; }
+  :root:not([data-theme="light"]) .era-modern { --bg:#0d0d0e; --bg-raise:#141416; --bg-sink:#080809; --rule:#2c2c2f; --rule-soft:#1a1a1c; --mat:#161618; --frame:#d8d8d4; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; --portal-bg:#0d0d0e; --portal-ink:#e8e3d8; --portal-sub:#9a9488; --portal-rule:rgba(232,227,216,.2); }
+  :root:not([data-theme="light"]) .era-modern { --paper: none; }
+  :root:not([data-theme="light"]) .era-contemp { --bg:#0c0e0d; --bg-raise:#131514; --bg-sink:#070908; --rule:#292d2b; --rule-soft:#191c1a; --mat:#151816; --frame:#7f8a86; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; --portal-bg:#0c0e0d; --portal-ink:#e8e3d8; --portal-sub:#9a9488; --portal-rule:rgba(232,227,216,.2); }
+  :root:not([data-theme="light"]) .era-contemp { --paper: none; }
+  :root:not([data-theme="light"]) .era-japan { --bg:#100d0a; --bg-raise:#171310; --bg-sink:#090706; --rule:#312720; --rule-soft:#1e1815; --mat:#1a1512; --frame:#b09a7c; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; --portal-bg:#100d0a; --portal-ink:#e8e3d8; --portal-sub:#9a9488; --portal-rule:rgba(232,227,216,.2); }
+  :root:not([data-theme="light"]) .era-japan { --paper: none; }
+  :root:not([data-theme="light"]) .era-china { --bg:#0d0f10; --bg-raise:#141618; --bg-sink:#080909; --rule:#2a2e30; --rule-soft:#191c1d; --mat:#151819; --frame:#8f9698; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; --portal-bg:#0d0f10; --portal-ink:#e8e3d8; --portal-sub:#9a9488; --portal-rule:rgba(232,227,216,.2); }
+  :root:not([data-theme="light"]) .era-china { --paper: none; }
+  :root:not([data-theme="light"]) .era-islam { --bg:#08110f; --bg-raise:#0d1917; --bg-sink:#050b0a; --rule:#1e332f; --rule-soft:#12211f; --mat:#0f1c1a; --frame:#4f8f8b; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; }
+  :root:not([data-theme="light"]) .era-islam { --paper: none; }
+  :root:not([data-theme="light"]) .era-world { --bg:#100d07; --bg-raise:#17130c; --bg-sink:#090705; --rule:#332a1b; --rule-soft:#1f1a11; --mat:#1a1509; --frame:#b09355; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; }
+  :root:not([data-theme="light"]) .era-world { --paper: none; }
+}
+
+:root[data-theme="dark"] .era-prehistory { --bg:#100c09; --bg-raise:#171210; --bg-sink:#0a0706; --rule:#332720; --rule-soft:#211a15; --mat:#191310; --frame:#8a6a4c; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; }
+:root[data-theme="dark"] .era-prehistory { --paper: none; }
+:root[data-theme="dark"] .era-ancient { --bg:#0c0f13; --bg-raise:#131820; --bg-sink:#080a0d; --rule:#26313d; --rule-soft:#171d25; --mat:#141a22; --frame:#7f96ad; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; --portal-bg:#0c0f13; --portal-ink:#e8e3d8; --portal-sub:#9a9488; --portal-rule:rgba(232,227,216,.2); }
+:root[data-theme="dark"] .era-ancient { --paper: none; }
+:root[data-theme="dark"] .era-classical { --bg:#100f0d; --bg-raise:#171614; --bg-sink:#0a0908; --rule:#302d28; --rule-soft:#1e1c19; --mat:#1a1815; --frame:#a08c72; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; --portal-bg:#100f0d; --portal-ink:#e8e3d8; --portal-sub:#9a9488; --portal-rule:rgba(232,227,216,.2); }
+:root[data-theme="dark"] .era-classical { --paper: none; }
+:root[data-theme="dark"] .era-medieval { --bg:#0a0c16; --bg-raise:#10131f; --bg-sink:#07080f; --rule:#262c47; --rule-soft:#171b2b; --mat:#141827; --frame:#b08f4a; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; }
+:root[data-theme="dark"] .era-medieval { --paper: none; }
+:root[data-theme="dark"] .era-renaissance { --bg:#0d0f0c; --bg-raise:#141712; --bg-sink:#080a08; --rule:#2a2f26; --rule-soft:#191c16; --mat:#161a14; --frame:#8d9a80; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; --portal-bg:#0d0f0c; --portal-ink:#e8e3d8; --portal-sub:#9a9488; --portal-rule:rgba(232,227,216,.2); }
+:root[data-theme="dark"] .era-renaissance { --paper: none; }
+:root[data-theme="dark"] .era-baroque { --bg:#0c0906; --bg-raise:#13100b; --bg-sink:#080605; --rule:#2e2519; --rule-soft:#1d1710; --mat:#191309; --frame:#a8875a; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; }
+:root[data-theme="dark"] .era-baroque { --paper: none; }
+:root[data-theme="dark"] .era-rococo { --bg:#120d0f; --bg-raise:#191316; --bg-sink:#0b0809; --rule:#352a2e; --rule-soft:#20191c; --mat:#1c1418; --frame:#c295a6; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; --portal-bg:#120d0f; --portal-ink:#e8e3d8; --portal-sub:#9a9488; --portal-rule:rgba(232,227,216,.2); }
+:root[data-theme="dark"] .era-rococo { --paper: none; }
+:root[data-theme="dark"] .era-19c { --bg:#0a0d11; --bg-raise:#111519; --bg-sink:#06080b; --rule:#242c34; --rule-soft:#161c22; --mat:#131920; --frame:#8fa2b3; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; }
+:root[data-theme="dark"] .era-19c { --paper: none; }
+:root[data-theme="dark"] .era-impression { --bg:#0d0c14; --bg-raise:#14131d; --bg-sink:#08080d; --rule:#2b2840; --rule-soft:#1a1827; --mat:#161426; --frame:#9d94c8; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; --portal-bg:#0d0c14; --portal-ink:#e8e3d8; --portal-sub:#9a9488; --portal-rule:rgba(232,227,216,.2); }
+:root[data-theme="dark"] .era-impression { --paper: none; }
+:root[data-theme="dark"] .era-modern { --bg:#0d0d0e; --bg-raise:#141416; --bg-sink:#080809; --rule:#2c2c2f; --rule-soft:#1a1a1c; --mat:#161618; --frame:#d8d8d4; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; --portal-bg:#0d0d0e; --portal-ink:#e8e3d8; --portal-sub:#9a9488; --portal-rule:rgba(232,227,216,.2); }
+:root[data-theme="dark"] .era-modern { --paper: none; }
+:root[data-theme="dark"] .era-contemp { --bg:#0c0e0d; --bg-raise:#131514; --bg-sink:#070908; --rule:#292d2b; --rule-soft:#191c1a; --mat:#151816; --frame:#7f8a86; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; --portal-bg:#0c0e0d; --portal-ink:#e8e3d8; --portal-sub:#9a9488; --portal-rule:rgba(232,227,216,.2); }
+:root[data-theme="dark"] .era-contemp { --paper: none; }
+:root[data-theme="dark"] .era-japan { --bg:#100d0a; --bg-raise:#171310; --bg-sink:#090706; --rule:#312720; --rule-soft:#1e1815; --mat:#1a1512; --frame:#b09a7c; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; --portal-bg:#100d0a; --portal-ink:#e8e3d8; --portal-sub:#9a9488; --portal-rule:rgba(232,227,216,.2); }
+:root[data-theme="dark"] .era-japan { --paper: none; }
+:root[data-theme="dark"] .era-china { --bg:#0d0f10; --bg-raise:#141618; --bg-sink:#080909; --rule:#2a2e30; --rule-soft:#191c1d; --mat:#151819; --frame:#8f9698; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; --portal-bg:#0d0f10; --portal-ink:#e8e3d8; --portal-sub:#9a9488; --portal-rule:rgba(232,227,216,.2); }
+:root[data-theme="dark"] .era-china { --paper: none; }
+:root[data-theme="dark"] .era-islam { --bg:#08110f; --bg-raise:#0d1917; --bg-sink:#050b0a; --rule:#1e332f; --rule-soft:#12211f; --mat:#0f1c1a; --frame:#4f8f8b; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; }
+:root[data-theme="dark"] .era-islam { --paper: none; }
+:root[data-theme="dark"] .era-world { --bg:#100d07; --bg-raise:#17130c; --bg-sink:#090705; --rule:#332a1b; --rule-soft:#1f1a11; --mat:#1a1509; --frame:#b09355; --ink:#e8e3d8; --ink-2:#a49c8e; --ink-3:#6f6a60; }
+:root[data-theme="dark"] .era-world { --paper: none; }

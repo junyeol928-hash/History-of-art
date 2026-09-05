@@ -307,7 +307,9 @@
      最初の走査では一枚も見つからない。 */
   function scan() {
     var plates = Array.prototype.slice.call(
-      document.querySelectorAll('figure.plate[data-art]:not([data-mounted])')
+      /* 図版だけでなく「この時代の顔」も写真を出す。
+         face を数えていなかったせいで、374枚が全部フォールバックの図のままだった */
+      document.querySelectorAll('figure.plate[data-art]:not([data-mounted]), figure.face[data-art]:not([data-mounted])')
     );
     if (!plates.length) return;
     load().then(function () {
