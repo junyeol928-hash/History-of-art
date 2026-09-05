@@ -43,6 +43,7 @@
       '<a class="home" href="' + ROOT + 'index.html">世界美術史</a>' +
       '<span class="spacer"></span>' +
       '<nav>' +
+        '<a href="' + ROOT + 'gallery.html">作品</a>' +
         '<a class="opt" href="' + ROOT + 'timeline.html">年表</a>' +
         '<a class="opt" href="' + ROOT + 'map.html">地図</a>' +
         '<a class="opt" href="' + ROOT + 'museums.html">美術館</a>' +
