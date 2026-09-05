@@ -26,6 +26,15 @@
     text-decoration: none; color: var(--accent-ink); border: 1px solid var(--accent-line); padding: .25rem .55rem; }
   .gl-item .from:hover { background: var(--accent-soft); }
   .empty { color: var(--ink-3); font-size: .9rem; padding: 2rem 0; }
+  .gl-item .yomi { font-family: var(--sans); font-weight: 400; font-size: .72rem;
+    color: var(--ink-3); margin-left: .6rem; }
+  /* 行の頭へ飛ぶ索引。上に貼りついたまま残る */
+  .gl-index { position: sticky; top: 0; z-index: 4; display: flex; flex-wrap: wrap; gap: .2rem;
+    background: var(--bg); border-bottom: 1px solid var(--rule); padding: .5rem 0; margin: .8rem 0 0; }
+  .gl-index a { font-family: var(--sans); font-size: .78rem; text-decoration: none; color: var(--ink-2);
+    border: 1px solid var(--rule); padding: .3rem .6rem; min-width: 2.1rem; text-align: center; }
+  .gl-index a:hover { border-color: var(--accent-line); color: var(--accent-ink); background: var(--accent-soft); }
+  .gl-head { scroll-margin-top: 3.4rem; }
 </style>
 </head>
 <body class="era-baroque">
@@ -48,6 +57,7 @@
     </svg>
     <input type="search" id="q" placeholder="用語をさがす（例：遠近法、印象）" autocomplete="off">
   </div>
+  <nav class="gl-index" id="index" aria-label="行で飛ぶ"></nav>
   <p class="count" id="count"></p>
   <div class="gl" id="gl"></div>
 </main>
@@ -61,17 +71,21 @@
 
   /* かな・カナ・英字をまとめて見出しにする */
   var ROWS = [
-    ['あ', 'あいうえおアイウエオ'], ['か', 'かきくけこがぎぐげごカキクケコガギグゲゴ'],
+    ['あ', 'あいうえおアイウエオヴゔ'], ['か', 'かきくけこがぎぐげごカキクケコガギグゲゴ'],
     ['さ', 'さしすせそざじずぜぞサシスセソザジズゼゾ'], ['た', 'たちつてとだぢづでどタチツテトダヂヅデド'],
     ['な', 'なにぬねのナニヌネノ'], ['は', 'はひふへほばびぶべぼぱぴぷぺぽハヒフヘホバビブベボパピプペポ'],
     ['ま', 'まみむめもマミムメモ'], ['や', 'やゆよヤユヨ'], ['ら', 'らりるれろラリルレロ'],
     ['わ', 'わをんワヲン'], ['A–Z', 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz']
   ];
-  function rowOf(term) {
-    var c = term.charAt(0);
+  /* 見出しは漢字で立てるが、並べるのは読みで並べる。
+     読みを持たない語は、見出しそのものが読みになっている。 */
+  function key(t) { return t.yomi || t.term; }
+  function rowOf(t) {
+    var c = key(t).charAt(0);
     for (var i = 0; i < ROWS.length; i++) if (ROWS[i][1].indexOf(c) >= 0) return ROWS[i][0];
     return 'その他';
   }
+  function rowId(r) { return 'row-' + ROWS.map(function (x) { return x[0]; }).indexOf(r); }
 
   var terms = [], chapters = {};
 
@@ -81,15 +95,26 @@
   ]).then(function (res) {
     (res[1].chapters || []).forEach(function (c) { chapters[c.slug] = c; });
     terms = Object.keys(res[0]).map(function (k) {
-      return { term: k, def: res[0][k].short || res[0][k].def || '', ch: res[0][k].chapter };
-    }).sort(function (a, b) { return a.term.localeCompare(b.term, 'ja'); });
+      return { term: k, yomi: res[0][k].yomi || '', def: res[0][k].short || res[0][k].def || '', ch: res[0][k].chapter };
+    }).sort(function (a, b) { return key(a).localeCompare(key(b), 'ja'); });
+    buildIndex();
     render('');
     document.getElementById('q').addEventListener('input', function (e) { render(e.target.value.trim()); });
   });
 
+  /* 276語を上から順に読む人はいない。行の頭へ飛べるようにする */
+  function buildIndex() {
+    var have = {};
+    terms.forEach(function (t) { have[rowOf(t)] = 1; });
+    var host = document.getElementById('index');
+    host.innerHTML = ROWS.filter(function (r) { return have[r[0]]; })
+      .map(function (r) { return '<a href="#' + rowId(r[0]) + '">' + r[0] + '</a>'; }).join('') +
+      (have['その他'] ? '<a href="#row--1">その他</a>' : '');
+  }
+
   function render(q) {
     var hits = q ? terms.filter(function (t) {
-      return t.term.indexOf(q) >= 0 || t.def.indexOf(q) >= 0;
+      return t.term.indexOf(q) >= 0 || t.yomi.indexOf(q) >= 0 || t.def.indexOf(q) >= 0;
     }) : terms;
 
     document.getElementById('count').textContent = hits.length + ' 語' + (q ? '（「' + q + '」で絞り込み）' : '');
@@ -99,10 +124,11 @@
     }
     var out = '', row = null;
     hits.forEach(function (t) {
-      var r = rowOf(t.term);
-      if (r !== row && !q) { out += '<p class="gl-head">' + r + '</p>'; row = r; }
+      var r = rowOf(t);
+      if (r !== row && !q) { out += '<p class="gl-head" id="' + rowId(r) + '">' + r + '</p>'; row = r; }
       var c = chapters[t.ch];
-      out += '<dl class="gl-item"><dt>' + esc(t.term) + '</dt><dd>' + esc(t.def) +
+      out += '<dl class="gl-item"><dt>' + esc(t.term) +
+        (t.yomi ? '<span class="yomi">' + esc(t.yomi) + '</span>' : '') + '</dt><dd>' + esc(t.def) +
         (c ? '<br><a class="from" href="chapters/' + c.slug + '.html">第' + c.n + '章　' + esc(c.title) + '</a>' : '') +
         '</dd></dl>';
     });
