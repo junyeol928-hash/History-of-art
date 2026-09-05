@@ -296,6 +296,7 @@
         entries.forEach(function (en) {
           if (!en.isIntersecting) return;
           io.unobserve(en.target);
+          mountSpots(en.target);
           mountPlate(en.target);
         });
       }, { rootMargin: '900px 0px' })
@@ -312,8 +313,9 @@
     load().then(function () {
       plates.forEach(function (fig) {
         fig.dataset.mounted = '1';
-        mountSpots(fig);
-        if (io) io.observe(fig); else mountPlate(fig);
+        // 注釈の番号だけが先に浮かんでいると、何の上の番号か分からない。
+        // 写真と同時に出す
+        if (io) io.observe(fig); else { mountSpots(fig); mountPlate(fig); }
       });
     });
   }
