@@ -55,6 +55,34 @@
     "wiki": "ベリー公のいとも豪華なる時祷書", "wikiLang": "ja", "wikiEn": "Très Riches Heures",
     "license": "パブリックドメイン"
   },
+  "saint-denis-ambulatory": {
+    "artist": "シュジェール（発注）／棟梁名不詳", "title": "サン・ドニ修道院教会 内陣と周歩廊", "year": "1144年献堂",
+    "collection": "サン・ドニ大聖堂（パリ北郊）",
+    "commons": "Saint Denis Ambulatory.jpg",
+    "wiki": "サン=ドニ大聖堂", "wikiLang": "ja", "wikiEn": "Basilica of Saint-Denis",
+    "license": "パブリックドメイン"
+  },
+  "chartres-rose-north": {
+    "artist": "シャルトルの工房（親方名不詳）", "title": "北のバラ窓（シャルトル大聖堂）", "year": "1235年ごろ",
+    "collection": "シャルトル大聖堂（フランス）",
+    "commons": "Chartres - cathédrale - rose nord.jpg",
+    "wiki": "シャルトル大聖堂", "wikiLang": "ja", "wikiEn": "Chartres Cathedral",
+    "license": "パブリックドメイン"
+  },
+  "naumburg-uta": {
+    "artist": "ナウムブルクの親方（作者不詳）", "title": "ウタ像（ナウムブルク大聖堂 西内陣）", "year": "1250年ごろ",
+    "collection": "ナウムブルク大聖堂（ドイツ）",
+    "commons": "Uta von Naumburg.jpg",
+    "wiki": "ナウムブルク大聖堂", "wikiLang": "ja", "wikiEn": "Uta of Naumburg",
+    "license": "パブリックドメイン"
+  },
+  "cologne-cathedral": {
+    "artist": "ゲルハルト親方ほか（設計）", "title": "ケルン大聖堂 西正面", "year": "1248年起工／1880年竣工",
+    "collection": "ケルン大聖堂（ドイツ）",
+    "commons": "Kölner Dom.jpg",
+    "wiki": "ケルン大聖堂", "wikiLang": "ja", "wikiEn": "Cologne Cathedral",
+    "license": "パブリックドメイン"
+  },
   "suger-portrait": {
     "artist": "サン・ドニの工房", "title": "シュジェール（ステンドグラスの寄進者像）", "year": "1140年代",
     "collection": "サン・ドニ大聖堂（パリ近郊）",

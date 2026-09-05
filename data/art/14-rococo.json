@@ -1,72 +1,145 @@
 {
-  "watteau-cythera": {
-    "artist": "アントワーヌ・ヴァトー", "title": "シテール島への巡礼", "year": "1717年",
-    "collection": "ルーヴル美術館（パリ）",
-    "commons": "L'Embarquement pour Cythere, by Antoine Watteau, from C2RMF retouched.jpg",
-    "wiki": "シテール島の巡礼", "wikiLang": "ja", "wikiEn": "Pilgrimage to Cythera",
-    "license": "パブリックドメイン"
-  },
-  "watteau-pierrot": {
-    "artist": "アントワーヌ・ヴァトー", "title": "ピエロ（かつて「ジル」と呼ばれた）", "year": "1718 — 1719年ごろ",
-    "collection": "ルーヴル美術館（パリ）",
-    "commons": "Jean-Antoine Watteau - Pierrot, dit autrefois Gilles.jpg",
-    "wiki": "ピエロ (ヴァトー)", "wikiLang": "ja", "wikiEn": "Pierrot (Watteau)",
-    "license": "パブリックドメイン"
-  },
-  "soubise-salon-ovale": {
-    "artist": "ジェルマン・ボフラン（装飾）", "title": "スービーズ館　王女の楕円のサロン", "year": "1735 — 1740年ごろ",
-    "collection": "パリ国立古文書館（パリ）",
-    "commons": "Hotel de Soubise salon de la princesse.jpg",
-    "wiki": "スービーズ館", "wikiLang": "ja", "wikiEn": "Hôtel de Soubise",
-    "license": "パブリックドメイン"
-  },
-  "wieskirche-interior": {
-    "artist": "ドミニクス・ツィンマーマン", "title": "ヴィースの巡礼教会　内部", "year": "1745 — 1754年",
-    "collection": "シュタインガーデン（ドイツ・バイエルン）",
-    "commons": "Wieskirche Innenraum.jpg",
-    "wiki": "ヴィースの巡礼教会", "wikiLang": "ja", "wikiEn": "Pilgrimage Church of Wies",
-    "license": "パブリックドメイン"
-  },
-  "drouais-pompadour": {
-    "artist": "フランソワ＝ユベール・ドルーエ", "title": "刺繍台の前のポンパドゥール夫人", "year": "1763 — 1764年",
-    "collection": "ナショナル・ギャラリー（ロンドン）",
-    "commons": "François-Hubert Drouais - Madame de Pompadour at her Tambour Frame - Google Art Project.jpg",
-    "wiki": "ポンパドゥール夫人", "wikiLang": "ja", "wikiEn": "Madame de Pompadour at her Tambour Frame",
-    "license": "パブリックドメイン"
-  },
-  "boucher-pompadour": {
-    "artist": "フランソワ・ブーシェ", "title": "ポンパドゥール夫人", "year": "1756年",
-    "collection": "アルテ・ピナコテーク（ミュンヘン）",
-    "commons": "Boucher Marquise de Pompadour 1756.jpg",
-    "wiki": "フランソワ・ブーシェ", "wikiLang": "ja", "wikiEn": "Madame de Pompadour",
-    "license": "パブリックドメイン"
-  },
-  "fragonard-swing": {
-    "artist": "ジャン＝オノレ・フラゴナール", "title": "ぶらんこ", "year": "1767年",
-    "collection": "ウォレス・コレクション（ロンドン）",
-    "commons": "Fragonard, The Swing.jpg",
-    "wiki": "ぶらんこ (フラゴナール)", "wikiLang": "ja", "wikiEn": "The Swing (Fragonard)",
-    "license": "パブリックドメイン"
-  },
-  "meissen-kakiemon": {
-    "artist": "マイセン王立磁器工房", "title": "柿右衛門様式の彩色磁器", "year": "1730年代",
-    "collection": "各地の美術館蔵",
-    "commons": "Meissen porcelain figures.jpg",
-    "wiki": "マイセン磁器", "wikiLang": "ja", "wikiEn": "Meissen porcelain",
-    "license": "パブリックドメイン"
-  },
-  "chardin-ray": {
-    "artist": "ジャン＝バティスト・シメオン・シャルダン", "title": "赤エイ", "year": "1728年",
-    "collection": "ルーヴル美術館（パリ）",
-    "commons": "Jean-Baptiste-Siméon Chardin - La Raie - Google Art Project.jpg",
-    "wiki": "赤エイ (シャルダン)", "wikiLang": "ja", "wikiEn": "The Ray (Chardin)",
-    "license": "パブリックドメイン"
-  },
-  "chardin-benedicite": {
-    "artist": "ジャン＝バティスト・シメオン・シャルダン", "title": "食前の祈り", "year": "1740年",
-    "collection": "ルーヴル美術館（パリ）",
-    "commons": "Jean-Baptiste Siméon Chardin - Le Bénédicité.jpg",
-    "wiki": "食前の祈り (シャルダン)", "wikiLang": "ja", "wikiEn": "Saying Grace (Chardin)",
-    "license": "パブリックドメイン"
-  }
+ "watteau-cythera": {
+  "artist": "アントワーヌ・ヴァトー",
+  "title": "シテール島への巡礼",
+  "year": "1717年",
+  "collection": "ルーヴル美術館（パリ）",
+  "commons": "L'Embarquement pour Cythere, by Antoine Watteau, from C2RMF retouched.jpg",
+  "wiki": "シテール島の巡礼",
+  "wikiLang": "ja",
+  "wikiEn": "Pilgrimage to Cythera",
+  "license": "パブリックドメイン"
+ },
+ "watteau-pierrot": {
+  "artist": "アントワーヌ・ヴァトー",
+  "title": "ピエロ（かつて「ジル」と呼ばれた）",
+  "year": "1718 — 1719年ごろ",
+  "collection": "ルーヴル美術館（パリ）",
+  "commons": "Jean-Antoine Watteau - Pierrot, dit autrefois Gilles.jpg",
+  "wiki": "ピエロ (ヴァトー)",
+  "wikiLang": "ja",
+  "wikiEn": "Pierrot (Watteau)",
+  "license": "パブリックドメイン"
+ },
+ "soubise-salon-ovale": {
+  "artist": "ジェルマン・ボフラン（装飾）",
+  "title": "スービーズ館　王女の楕円のサロン",
+  "year": "1735 — 1740年ごろ",
+  "collection": "パリ国立古文書館（パリ）",
+  "commons": "Hotel de Soubise salon de la princesse.jpg",
+  "wiki": "スービーズ館",
+  "wikiLang": "ja",
+  "wikiEn": "Hôtel de Soubise",
+  "license": "パブリックドメイン"
+ },
+ "wieskirche-interior": {
+  "artist": "ドミニクス・ツィンマーマン",
+  "title": "ヴィースの巡礼教会　内部",
+  "year": "1745 — 1754年",
+  "collection": "シュタインガーデン（ドイツ・バイエルン）",
+  "commons": "Wieskirche Innenraum.jpg",
+  "wiki": "ヴィースの巡礼教会",
+  "wikiLang": "ja",
+  "wikiEn": "Pilgrimage Church of Wies",
+  "license": "パブリックドメイン"
+ },
+ "drouais-pompadour": {
+  "artist": "フランソワ＝ユベール・ドルーエ",
+  "title": "刺繍台の前のポンパドゥール夫人",
+  "year": "1763 — 1764年",
+  "collection": "ナショナル・ギャラリー（ロンドン）",
+  "commons": "François-Hubert Drouais - Madame de Pompadour at her Tambour Frame - Google Art Project.jpg",
+  "wiki": "ポンパドゥール夫人",
+  "wikiLang": "ja",
+  "wikiEn": "Madame de Pompadour at her Tambour Frame",
+  "license": "パブリックドメイン"
+ },
+ "boucher-pompadour": {
+  "artist": "フランソワ・ブーシェ",
+  "title": "ポンパドゥール夫人",
+  "year": "1756年",
+  "collection": "アルテ・ピナコテーク（ミュンヘン）",
+  "commons": "Boucher Marquise de Pompadour 1756.jpg",
+  "wiki": "フランソワ・ブーシェ",
+  "wikiLang": "ja",
+  "wikiEn": "Madame de Pompadour",
+  "license": "パブリックドメイン"
+ },
+ "fragonard-swing": {
+  "artist": "ジャン＝オノレ・フラゴナール",
+  "title": "ぶらんこ",
+  "year": "1767年",
+  "collection": "ウォレス・コレクション（ロンドン）",
+  "commons": "Fragonard, The Swing.jpg",
+  "wiki": "ぶらんこ (フラゴナール)",
+  "wikiLang": "ja",
+  "wikiEn": "The Swing (Fragonard)",
+  "license": "パブリックドメイン"
+ },
+ "meissen-kakiemon": {
+  "artist": "マイセン王立磁器工房",
+  "title": "柿右衛門様式の彩色磁器",
+  "year": "1730年代",
+  "collection": "各地の美術館蔵",
+  "commons": "Meissen porcelain figures.jpg",
+  "wiki": "マイセン磁器",
+  "wikiLang": "ja",
+  "wikiEn": "Meissen porcelain",
+  "license": "パブリックドメイン"
+ },
+ "chardin-ray": {
+  "artist": "ジャン＝バティスト・シメオン・シャルダン",
+  "title": "赤エイ",
+  "year": "1728年",
+  "collection": "ルーヴル美術館（パリ）",
+  "commons": "Jean-Baptiste-Siméon Chardin - La Raie - Google Art Project.jpg",
+  "wiki": "赤エイ (シャルダン)",
+  "wikiLang": "ja",
+  "wikiEn": "The Ray (Chardin)",
+  "license": "パブリックドメイン"
+ },
+ "chardin-benedicite": {
+  "artist": "ジャン＝バティスト・シメオン・シャルダン",
+  "title": "食前の祈り",
+  "year": "1740年",
+  "collection": "ルーヴル美術館（パリ）",
+  "commons": "Jean-Baptiste Siméon Chardin - Le Bénédicité.jpg",
+  "wiki": "食前の祈り (シャルダン)",
+  "wikiLang": "ja",
+  "wikiEn": "Saying Grace (Chardin)",
+  "license": "パブリックドメイン"
+ },
+ "vigee-lebrun-marie-antoinette": {
+  "artist": "エリザベート＝ルイーズ・ヴィジェ＝ルブラン",
+  "title": "マリー・アントワネットと子どもたち",
+  "year": "1787年",
+  "collection": "油彩・カンヴァス 275 × 216.5 cm ヴェルサイユ宮殿",
+  "commons": "Marie Antoinette and her Children by Élisabeth Vigée-Lebrun.jpg",
+  "wiki": "マリー・アントワネットと子どもたち",
+  "wikiLang": "ja",
+  "wikiEn": "Marie Antoinette and Her Children",
+  "license": "パブリックドメイン"
+ },
+ "tiepolo-wurzburg": {
+  "artist": "ジョヴァンニ・バッティスタ・ティエポロ",
+  "title": "ヴュルツブルク宮殿　階段の間の天井画",
+  "year": "1752 — 1753年",
+  "collection": "フレスコ ヴュルツブルク・レジデンツ（ドイツ）",
+  "commons": "Giovanni Battista Tiepolo - Apollo and the Continents - WGA22343.jpg",
+  "wiki": "ヴュルツブルクのレジデンツ",
+  "wikiLang": "ja",
+  "wikiEn": "Würzburg Residence",
+  "license": "パブリックドメイン"
+ },
+ "hogarth-marriage-settlement": {
+  "artist": "ウィリアム・ホガース",
+  "title": "当世風の結婚　第1場「結婚の契約」",
+  "year": "1743 — 1745年",
+  "collection": "油彩・カンヴァス 69.9 × 90.8 cm ナショナル・ギャラリー（ロンドン）",
+  "commons": "Marriage A-la-Mode 1, The Marriage Settlement - William Hogarth.jpg",
+  "wiki": "当世風の結婚",
+  "wikiLang": "ja",
+  "wikiEn": "Marriage A-la-Mode (Hogarth)",
+  "license": "パブリックドメイン"
+ }
 }

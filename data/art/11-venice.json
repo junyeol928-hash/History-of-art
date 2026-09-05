@@ -1,101 +1,156 @@
 {
- "giorgione-tempest": {
-  "artist": "ジョルジョーネ",
-  "title": "嵐",
-  "year": "1505 — 1510年ごろ",
-  "collection": "油彩・カンヴァス 83 × 73 cm アカデミア美術館（ヴェネツィア）",
-  "commons": "Giorgione - The Tempest - Google Art Project.jpg",
-  "wiki": "嵐 (ジョルジョーネ)",
-  "wikiLang": "ja",
-  "wikiEn": "The Tempest (Giorgione)",
-  "license": "パブリックドメイン"
- },
- "titian-self-portrait": {
-  "artist": "ティツィアーノ・ヴェチェッリオ",
-  "title": "自画像",
-  "year": "1560年ごろ",
-  "collection": "プラド美術館（マドリード）",
-  "commons": "Tiziano, autoritratto (Prado).jpg",
-  "wiki": "ティツィアーノ・ヴェチェッリオ",
-  "wikiLang": "ja",
-  "wikiEn": "Titian",
-  "license": "パブリックドメイン"
- },
- "titian-assunta": {
-  "artist": "ティツィアーノ・ヴェチェッリオ",
-  "title": "聖母被昇天",
-  "year": "1516 — 1518年",
-  "collection": "油彩・板 690 × 360 cm サンタ・マリア・グロリオーザ・デイ・フラーリ聖堂（ヴェネツィア）",
-  "commons": "Tizian 041.jpg",
-  "wiki": "聖母被昇天 (ティツィアーノ)",
-  "wikiLang": "ja",
-  "wikiEn": "Assumption of the Virgin (Titian)",
-  "license": "パブリックドメイン"
- },
- "titian-venus-urbino": {
-  "artist": "ティツィアーノ・ヴェチェッリオ",
-  "title": "ウルビーノのヴィーナス",
-  "year": "1538年",
-  "collection": "油彩・カンヴァス 119 × 165 cm ウフィツィ美術館（フィレンツェ）",
-  "commons": "Tiziano - Venere di Urbino - Google Art Project.jpg",
-  "wiki": "ウルビーノのヴィーナス",
-  "wikiLang": "ja",
-  "wikiEn": "Venus of Urbino",
-  "license": "パブリックドメイン"
- },
- "tintoretto-last-supper": {
-  "artist": "ヤコポ・ティントレット",
-  "title": "最後の晩餐",
-  "year": "1592 — 1594年",
-  "collection": "油彩・カンヴァス 365 × 568 cm サン・ジョルジョ・マッジョーレ聖堂（ヴェネツィア）",
-  "commons": "Jacopo Tintoretto - The Last Supper - WGA22673.jpg",
-  "wiki": "最後の晩餐 (ティントレット)",
-  "wikiLang": "ja",
-  "wikiEn": "The Last Supper (Tintoretto)",
-  "license": "パブリックドメイン"
- },
- "veronese-feast-levi": {
-  "artist": "パオロ・ヴェロネーゼ",
-  "title": "レヴィ家の饗宴",
-  "year": "1573年",
-  "collection": "油彩・カンヴァス 555 × 1280 cm アカデミア美術館（ヴェネツィア）",
-  "commons": "Paolo Veronese, The Feast in the House of Levi - Accademia - Venice 2016.jpg",
-  "wiki": "レヴィ家の饗宴",
-  "wikiLang": "ja",
-  "wikiEn": "The Feast in the House of Levi",
-  "license": "パブリックドメイン"
- },
- "parmigianino-long-neck": {
-  "artist": "パルミジャニーノ",
-  "title": "長い首の聖母",
-  "year": "1534 — 1540年",
-  "collection": "油彩・板 216 × 132 cm ウフィツィ美術館（フィレンツェ）",
-  "commons": "Parmigianino - Madonna dal collo lungo - Google Art Project.jpg",
-  "wiki": "長い首の聖母",
-  "wikiLang": "ja",
-  "wikiEn": "Madonna with the Long Neck",
-  "license": "パブリックドメイン"
- },
- "pontormo-deposition": {
-  "artist": "ヤコポ・ポントルモ",
-  "title": "十字架降下",
-  "year": "1525 — 1528年",
-  "collection": "油彩・板 313 × 192 cm サンタ・フェリチタ聖堂カッポーニ礼拝堂（フィレンツェ）",
-  "commons": "Pontormo - Deposition - WGA18103.jpg",
-  "wiki": "十字架降下 (ポントルモ)",
-  "wikiLang": "ja",
-  "wikiEn": "Deposition from the Cross (Pontormo)",
-  "license": "パブリックドメイン"
- },
- "elgreco-orgaz": {
-  "artist": "エル・グレコ",
-  "title": "オルガス伯の埋葬",
-  "year": "1586 — 1588年",
-  "collection": "油彩・カンヴァス 480 × 360 cm サント・トメ教会（トレド）",
-  "commons": "El Greco - The Burial of the Count of Orgaz.JPG",
-  "wiki": "オルガス伯の埋葬",
-  "wikiLang": "ja",
-  "wikiEn": "The Burial of the Count of Orgaz",
-  "license": "パブリックドメイン"
- }
+  "giorgione-tempest": {
+    "artist": "ジョルジョーネ",
+    "title": "嵐",
+    "year": "1505 — 1510年ごろ",
+    "collection": "油彩・カンヴァス 83 × 73 cm アカデミア美術館（ヴェネツィア）",
+    "commons": "Giorgione - The Tempest - Google Art Project.jpg",
+    "wiki": "嵐 (ジョルジョーネ)",
+    "wikiLang": "ja",
+    "wikiEn": "The Tempest (Giorgione)",
+    "license": "パブリックドメイン"
+  },
+  "titian-self-portrait": {
+    "artist": "ティツィアーノ・ヴェチェッリオ",
+    "title": "自画像",
+    "year": "1560年ごろ",
+    "collection": "プラド美術館（マドリード）",
+    "commons": "Tiziano, autoritratto (Prado).jpg",
+    "wiki": "ティツィアーノ・ヴェチェッリオ",
+    "wikiLang": "ja",
+    "wikiEn": "Titian",
+    "license": "パブリックドメイン"
+  },
+  "titian-assunta": {
+    "artist": "ティツィアーノ・ヴェチェッリオ",
+    "title": "聖母被昇天",
+    "year": "1516 — 1518年",
+    "collection": "油彩・板 690 × 360 cm サンタ・マリア・グロリオーザ・デイ・フラーリ聖堂（ヴェネツィア）",
+    "commons": "Tizian 041.jpg",
+    "wiki": "聖母被昇天 (ティツィアーノ)",
+    "wikiLang": "ja",
+    "wikiEn": "Assumption of the Virgin (Titian)",
+    "license": "パブリックドメイン"
+  },
+  "titian-venus-urbino": {
+    "artist": "ティツィアーノ・ヴェチェッリオ",
+    "title": "ウルビーノのヴィーナス",
+    "year": "1538年",
+    "collection": "油彩・カンヴァス 119 × 165 cm ウフィツィ美術館（フィレンツェ）",
+    "commons": "Tiziano - Venere di Urbino - Google Art Project.jpg",
+    "wiki": "ウルビーノのヴィーナス",
+    "wikiLang": "ja",
+    "wikiEn": "Venus of Urbino",
+    "license": "パブリックドメイン"
+  },
+  "tintoretto-last-supper": {
+    "artist": "ヤコポ・ティントレット",
+    "title": "最後の晩餐",
+    "year": "1592 — 1594年",
+    "collection": "油彩・カンヴァス 365 × 568 cm サン・ジョルジョ・マッジョーレ聖堂（ヴェネツィア）",
+    "commons": "Jacopo Tintoretto - The Last Supper - WGA22673.jpg",
+    "wiki": "最後の晩餐 (ティントレット)",
+    "wikiLang": "ja",
+    "wikiEn": "The Last Supper (Tintoretto)",
+    "license": "パブリックドメイン"
+  },
+  "veronese-feast-levi": {
+    "artist": "パオロ・ヴェロネーゼ",
+    "title": "レヴィ家の饗宴",
+    "year": "1573年",
+    "collection": "油彩・カンヴァス 555 × 1280 cm アカデミア美術館（ヴェネツィア）",
+    "commons": "Paolo Veronese, The Feast in the House of Levi - Accademia - Venice 2016.jpg",
+    "wiki": "レヴィ家の饗宴",
+    "wikiLang": "ja",
+    "wikiEn": "The Feast in the House of Levi",
+    "license": "パブリックドメイン"
+  },
+  "parmigianino-long-neck": {
+    "artist": "パルミジャニーノ",
+    "title": "長い首の聖母",
+    "year": "1534 — 1540年",
+    "collection": "油彩・板 216 × 132 cm ウフィツィ美術館（フィレンツェ）",
+    "commons": "Parmigianino - Madonna dal collo lungo - Google Art Project.jpg",
+    "wiki": "長い首の聖母",
+    "wikiLang": "ja",
+    "wikiEn": "Madonna with the Long Neck",
+    "license": "パブリックドメイン"
+  },
+  "pontormo-deposition": {
+    "artist": "ヤコポ・ポントルモ",
+    "title": "十字架降下",
+    "year": "1525 — 1528年",
+    "collection": "油彩・板 313 × 192 cm サンタ・フェリチタ聖堂カッポーニ礼拝堂（フィレンツェ）",
+    "commons": "Pontormo - Deposition - WGA18103.jpg",
+    "wiki": "十字架降下 (ポントルモ)",
+    "wikiLang": "ja",
+    "wikiEn": "Deposition from the Cross (Pontormo)",
+    "license": "パブリックドメイン"
+  },
+  "elgreco-orgaz": {
+    "artist": "エル・グレコ",
+    "title": "オルガス伯の埋葬",
+    "year": "1586 — 1588年",
+    "collection": "油彩・カンヴァス 480 × 360 cm サント・トメ教会（トレド）",
+    "commons": "El Greco - The Burial of the Count of Orgaz.JPG",
+    "wiki": "オルガス伯の埋葬",
+    "wikiLang": "ja",
+    "wikiEn": "The Burial of the Count of Orgaz",
+    "license": "パブリックドメイン"
+  },
+  "bellini-san-zaccaria": {
+    "artist": "ジョヴァンニ・ベッリーニ",
+    "title": "サン・ザッカリア祭壇画",
+    "year": "1505年",
+    "collection": "サン・ザッカリア聖堂（ヴェネツィア）",
+    "commons": "Giovanni Bellini - San Zaccaria Altarpiece - WGA01679.jpg",
+    "wiki": "サン・ザッカリア祭壇画",
+    "wikiLang": "ja",
+    "wikiEn": "San Zaccaria Altarpiece",
+    "license": "パブリックドメイン"
+  },
+  "giorgione-sleeping-venus": {
+    "artist": "ジョルジョーネ",
+    "title": "眠れるヴィーナス",
+    "year": "1508 — 1510年ごろ",
+    "collection": "アルテ・マイスター絵画館（ドレスデン）",
+    "commons": "Giorgione - Sleeping Venus - Google Art Project 2.jpg",
+    "wiki": "眠れるヴィーナス",
+    "wikiLang": "ja",
+    "wikiEn": "Sleeping Venus",
+    "license": "パブリックドメイン"
+  },
+  "titian-charles-v-muhlberg": {
+    "artist": "ティツィアーノ・ヴェチェッリオ",
+    "title": "ミュールベルクのカール5世",
+    "year": "1548年",
+    "collection": "プラド美術館（マドリード）",
+    "commons": "Carlos V en la batalla de Mühlberg, by Titian, from Prado in Google Earth.jpg",
+    "wiki": "カール5世騎馬像",
+    "wikiLang": "ja",
+    "wikiEn": "Equestrian Portrait of Charles V",
+    "license": "パブリックドメイン"
+  },
+  "carpaccio-miracle-relic-cross": {
+    "artist": "ヴィットーレ・カルパッチョ",
+    "title": "リアルト橋における聖十字架遺物の奇跡",
+    "year": "1494年ごろ",
+    "collection": "アカデミア美術館（ヴェネツィア）",
+    "commons": "Vittore Carpaccio - The Healing of the Madman - WGA04380.jpg",
+    "wiki": "リアルト橋での聖十字架の遺物の奇跡",
+    "wikiLang": "ja",
+    "wikiEn": "Miracle of the Relic of the Cross at the Ponte di Rialto",
+    "license": "パブリックドメイン"
+  },
+  "palladio-villa-rotonda": {
+    "artist": "アンドレーア・パラーディオ",
+    "title": "ヴィラ・ロトンダ（ヴィラ・アルメリコ・カプラ）",
+    "year": "1567年着工",
+    "collection": "ヴィチェンツァ郊外（イタリア）",
+    "commons": "Villa Rotonda side.jpg",
+    "wiki": "ヴィラ・アルメリコ・カプラ",
+    "wikiLang": "ja",
+    "wikiEn": "Villa La Rotonda",
+    "license": "パブリックドメイン"
+  }
 }

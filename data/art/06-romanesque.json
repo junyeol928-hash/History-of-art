@@ -55,6 +55,41 @@
     "wiki": "ベルナルドゥス (クレルヴォーの)", "wikiLang": "ja", "wikiEn": "Bernard of Clairvaux",
     "license": "パブリックドメイン"
   },
+  "taull-pantocrator": {
+    "artist": "タウイの画家（作者不詳）", "title": "全能のキリスト（サン・クレメンテ・デ・タウイ 後陣）", "year": "1123年ごろ",
+    "collection": "カタルーニャ美術館 MNAC（バルセロナ）",
+    "commons": "Pantocrator Sant Climent de Taull.jpg",
+    "wiki": "サン・クリメン・デ・タウイ教会", "wikiLang": "ja", "wikiEn": "Sant Climent de Taüll",
+    "license": "パブリックドメイン"
+  },
+  "batllo-majesty": {
+    "artist": "作者不詳（カタルーニャ）", "title": "マヘスタ・バトリョ（着衣のキリスト磔刑像）", "year": "12世紀中ごろ",
+    "collection": "カタルーニャ美術館 MNAC（バルセロナ）",
+    "commons": "Majestat Batlló.jpg",
+    "wiki": "マヘスタ・バトリョ", "wikiLang": "ja", "wikiEn": "Batlló Majesty",
+    "license": "パブリックドメイン"
+  },
+  "durham-cathedral": {
+    "artist": "作者不詳（ノルマンの棟梁）", "title": "ダラム大聖堂 身廊", "year": "1093 — 1133年",
+    "collection": "ダラム大聖堂（イングランド）",
+    "commons": "Durham Cathedral Nave.jpg",
+    "wiki": "ダラム大聖堂", "wikiLang": "ja", "wikiEn": "Durham Cathedral",
+    "license": "パブリックドメイン"
+  },
+  "pisa-cathedral": {
+    "artist": "ブスケトゥスほか（設計）", "title": "ピサ大聖堂と鐘楼（斜塔）", "year": "1063年起工／鐘楼1173年起工",
+    "collection": "ドゥオモ広場（ピサ）",
+    "commons": "Pisa Duomo.jpg",
+    "wiki": "ピサ大聖堂", "wikiLang": "ja", "wikiEn": "Pisa Cathedral",
+    "license": "パブリックドメイン"
+  },
+  "speyer-cathedral": {
+    "artist": "作者不詳（皇帝コンラート2世の造営）", "title": "シュパイアー大聖堂", "year": "1030年起工",
+    "collection": "シュパイアー（ドイツ）",
+    "commons": "Speyer Dom.jpg",
+    "wiki": "シュパイアー大聖堂", "wikiLang": "ja", "wikiEn": "Speyer Cathedral",
+    "license": "パブリックドメイン"
+  },
   "bayeux-tapestry": {
     "artist": "作者不詳（イングランドの工房と推定）", "title": "バイユーのタピスリー", "year": "1077年ごろ",
     "collection": "バイユー・タピスリー美術館（バイユー）",

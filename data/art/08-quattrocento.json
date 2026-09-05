@@ -48,6 +48,41 @@
     "wiki": "ダヴィデ像 (ドナテッロ)", "wikiLang": "ja", "wikiEn": "David (Donatello)",
     "license": "パブリックドメイン"
   },
+  "ghiberti-gates-of-paradise": {
+    "artist": "ロレンツォ・ギベルティ", "title": "天国の門（サン・ジョヴァンニ洗礼堂 東扉）", "year": "1425 — 1452年",
+    "collection": "ドゥオモ付属美術館（フィレンツェ）",
+    "commons": "Porta del Paradiso.jpg",
+    "wiki": "サン・ジョヴァンニ洗礼堂", "wikiLang": "ja", "wikiEn": "Florence Baptistery",
+    "license": "パブリックドメイン"
+  },
+  "fra-angelico-annunciation": {
+    "artist": "フラ・アンジェリコ", "title": "受胎告知（サン・マルコ修道院）", "year": "1440年代",
+    "collection": "サン・マルコ美術館（フィレンツェ）",
+    "commons": "Fra Angelico - The Annunciation - WGA00542.jpg",
+    "wiki": "受胎告知 (フラ・アンジェリコ)", "wikiLang": "ja", "wikiEn": "Annunciation (Fra Angelico, San Marco)",
+    "license": "パブリックドメイン"
+  },
+  "piero-baptism": {
+    "artist": "ピエロ・デッラ・フランチェスカ", "title": "キリストの洗礼", "year": "1440年代",
+    "collection": "ナショナル・ギャラリー（ロンドン）",
+    "commons": "Piero della Francesca - Baptism of Christ - WGA17595.jpg",
+    "wiki": "キリストの洗礼 (ピエロ・デラ・フランチェスカ)", "wikiLang": "ja", "wikiEn": "The Baptism of Christ (Piero della Francesca)",
+    "license": "パブリックドメイン"
+  },
+  "donatello-magdalene": {
+    "artist": "ドナテッロ", "title": "マグダラのマリア", "year": "1450年代",
+    "collection": "ドゥオモ付属美術館（フィレンツェ）",
+    "commons": "Maddalena penitente (Donatello).jpg",
+    "wiki": "マグダラのマリア (ドナテッロ)", "wikiLang": "ja", "wikiEn": "Penitent Magdalene (Donatello)",
+    "license": "パブリックドメイン"
+  },
+  "mantegna-dead-christ": {
+    "artist": "アンドレア・マンテーニャ", "title": "死せるキリスト", "year": "1480年ごろ",
+    "collection": "ブレラ絵画館（ミラノ）",
+    "commons": "The dead Christ and three mourners, by Andrea Mantegna.jpg",
+    "wiki": "死せるキリスト", "wikiLang": "ja", "wikiEn": "Lamentation of Christ (Mantegna)",
+    "license": "パブリックドメイン"
+  },
   "botticelli-birth-of-venus": {
     "artist": "サンドロ・ボッティチェリ", "title": "ヴィーナスの誕生", "year": "1485年ごろ",
     "collection": "ウフィツィ美術館（フィレンツェ）",

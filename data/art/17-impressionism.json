@@ -6,6 +6,20 @@
     "wiki": "印象・日の出", "wikiLang": "ja", "wikiEn": "Impression, Sunrise",
     "license": "パブリックドメイン"
   },
+  "monet-la-grenouillere": {
+    "artist": "クロード・モネ", "title": "ラ・グルヌイエールの水浴", "year": "1869年",
+    "collection": "ナショナル・ギャラリー（ロンドン）",
+    "commons": "Claude Monet - Bathers at La Grenouillère - Google Art Project.jpg",
+    "wiki": "ラ・グルヌイエール", "wikiLang": "ja", "wikiEn": "Bathers at La Grenouillère",
+    "license": "パブリックドメイン"
+  },
+  "caillebotte-paris-street-rainy-day": {
+    "artist": "ギュスターヴ・カイユボット", "title": "パリの通り、雨", "year": "1877年",
+    "collection": "シカゴ美術館",
+    "commons": "Gustave Caillebotte - Paris Street; Rainy Day - Google Art Project.jpg",
+    "wiki": "パリの通り、雨", "wikiLang": "ja", "wikiEn": "Paris Street; Rainy Day",
+    "license": "パブリックドメイン"
+  },
   "monet-gare-saint-lazare": {
     "artist": "クロード・モネ", "title": "サン＝ラザール駅", "year": "1877年",
     "collection": "オルセー美術館（パリ）",
@@ -20,11 +34,81 @@
     "wiki": "ムーラン・ド・ラ・ギャレットの舞踏会", "wikiLang": "ja", "wikiEn": "Bal du moulin de la Galette",
     "license": "パブリックドメイン"
   },
+  "renoir-luncheon-boating-party": {
+    "artist": "ピエール＝オーギュスト・ルノワール", "title": "舟遊びの人々の昼食", "year": "1880 — 1881年",
+    "collection": "フィリップス・コレクション（ワシントン）",
+    "commons": "Pierre-Auguste Renoir - Luncheon of the Boating Party - Google Art Project.jpg",
+    "wiki": "舟遊びをする人々の昼食", "wikiLang": "ja", "wikiEn": "Luncheon of the Boating Party",
+    "license": "パブリックドメイン"
+  },
   "renoir-portrait": {
     "artist": "ピエール＝オーギュスト・ルノワール", "title": "自画像", "year": "1875年",
     "collection": "クラーク美術館（ウィリアムズタウン）",
     "commons": "Pierre-Auguste Renoir - Self-Portrait - Google Art Project.jpg",
     "wiki": "ピエール＝オーギュスト・ルノワール", "wikiLang": "ja", "wikiEn": "Pierre-Auguste Renoir",
+    "license": "パブリックドメイン"
+  },
+  "monet-rouen-cathedral": {
+    "artist": "クロード・モネ", "title": "ルーアン大聖堂、西正面、日の光", "year": "1894年",
+    "collection": "ナショナル・ギャラリー・オブ・アート（ワシントン）",
+    "commons": "Claude Monet - Rouen Cathedral, West Facade, Sunlight - Google Art Project.jpg",
+    "wiki": "ルーアン大聖堂 (モネの連作)", "wikiLang": "ja", "wikiEn": "Rouen Cathedral (Monet series)",
+    "license": "パブリックドメイン"
+  },
+  "monet-haystacks": {
+    "artist": "クロード・モネ", "title": "積みわら（真昼）", "year": "1890 — 1891年",
+    "collection": "オーストラリア国立美術館（キャンベラ）",
+    "commons": "Claude Monet - Meules, milieu du jour - Google Art Project.jpg",
+    "wiki": "積みわら (モネ)", "wikiLang": "ja", "wikiEn": "Haystacks (Monet series)",
+    "license": "パブリックドメイン"
+  },
+  "monet-water-lilies": {
+    "artist": "クロード・モネ", "title": "睡蓮", "year": "1906年",
+    "collection": "シカゴ美術館",
+    "commons": "Claude Monet - Water Lilies - 1906, Ryerson.jpg",
+    "wiki": "睡蓮 (絵画)", "wikiLang": "ja", "wikiEn": "Water Lilies (Monet series)",
+    "license": "パブリックドメイン"
+  },
+  "degas-letoile": {
+    "artist": "エドガー・ドガ", "title": "エトワール（舞台の踊り子）", "year": "1876 — 1877年ごろ",
+    "collection": "オルセー美術館（パリ）",
+    "commons": "Edgar Degas - L'Étoile - Google Art Project.jpg",
+    "wiki": "エトワール (ドガ)", "wikiLang": "ja", "wikiEn": "L'Étoile",
+    "license": "パブリックドメイン"
+  },
+  "degas-little-dancer": {
+    "artist": "エドガー・ドガ", "title": "14歳の小さな踊り子", "year": "1878 — 1881年（原型）",
+    "collection": "オルセー美術館ほか（没後の鋳造）",
+    "commons": "Degas - Petite danseuse de quatorze ans.jpg",
+    "wiki": "14歳の小さな踊り子", "wikiLang": "ja", "wikiEn": "Little Dancer of Fourteen Years",
+    "license": "パブリックドメイン"
+  },
+  "morisot-le-berceau": {
+    "artist": "ベルト・モリゾ", "title": "ゆりかご", "year": "1872年",
+    "collection": "オルセー美術館（パリ）",
+    "commons": "Berthe Morisot - The Cradle - Google Art Project.jpg",
+    "wiki": "ゆりかご (モリゾの絵画)", "wikiLang": "ja", "wikiEn": "The Cradle (Morisot)",
+    "license": "パブリックドメイン"
+  },
+  "cassatt-in-the-loge": {
+    "artist": "メアリー・カサット", "title": "桟敷席にて", "year": "1878年",
+    "collection": "ボストン美術館",
+    "commons": "Mary Cassatt - In the Loge - Google Art Project.jpg",
+    "wiki": "メアリー・カサット", "wikiLang": "ja", "wikiEn": "In the Loge",
+    "license": "パブリックドメイン"
+  },
+  "pissarro-boulevard-montmartre": {
+    "artist": "カミーユ・ピサロ", "title": "モンマルトル大通り、夜", "year": "1897年",
+    "collection": "ナショナル・ギャラリー（ロンドン）",
+    "commons": "Camille Pissarro - The Boulevard Montmartre at Night - Google Art Project.jpg",
+    "wiki": "カミーユ・ピサロ", "wikiLang": "ja", "wikiEn": "The Boulevard Montmartre at Night",
+    "license": "パブリックドメイン"
+  },
+  "manet-bar-folies-bergere": {
+    "artist": "エドゥアール・マネ", "title": "フォリー・ベルジェールのバー", "year": "1882年",
+    "collection": "コートールド美術館（ロンドン）",
+    "commons": "Edouard Manet, A Bar at the Folies-Bergère.jpg",
+    "wiki": "フォリー・ベルジェールのバー", "wikiLang": "ja", "wikiEn": "A Bar at the Folies-Bergère",
     "license": "パブリックドメイン"
   }
 }

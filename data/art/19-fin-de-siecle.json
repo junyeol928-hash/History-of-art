@@ -108,5 +108,60 @@
   "wikiLang": "ja",
   "wikiEn": "Casa Batlló",
   "license": "パブリックドメイン"
+ },
+ "munch-madonna": {
+  "artist": "エドヴァルド・ムンク",
+  "title": "マドンナ",
+  "year": "1894 — 1895年",
+  "collection": "油彩・カンヴァス 90 × 68 cm ノルウェー国立美術館／ムンク美術館（オスロ）",
+  "commons": "Edvard Munch - Madonna - Google Art Project.jpg",
+  "wiki": "マドンナ (ムンク)",
+  "wikiLang": "ja",
+  "wikiEn": "Madonna (Munch painting)",
+  "license": "パブリックドメイン"
+ },
+ "klimt-beethoven-frieze": {
+  "artist": "グスタフ・クリムト",
+  "title": "ベートーヴェン・フリーズ",
+  "year": "1902年",
+  "collection": "カゼイン絵具・金彩ほか 高さ約2.15 m 全長約34 m セセッション館（ウィーン）",
+  "commons": "Beethovenfries Klimt.jpg",
+  "wiki": "ベートーヴェン・フリーズ",
+  "wikiLang": "ja",
+  "wikiEn": "Beethoven Frieze",
+  "license": "パブリックドメイン"
+ },
+ "rodin-thinker": {
+  "artist": "オーギュスト・ロダン",
+  "title": "考える人",
+  "year": "1880 — 1904年",
+  "collection": "ブロンズ 高さ約186 cm（拡大作） 国立西洋美術館 前庭ほか",
+  "commons": "The Thinker, Rodin.jpg",
+  "wiki": "考える人",
+  "wikiLang": "ja",
+  "wikiEn": "The Thinker",
+  "license": "パブリックドメイン"
+ },
+ "rodin-gates-of-hell": {
+  "artist": "オーギュスト・ロダン",
+  "title": "地獄の門",
+  "year": "1880 — 1917年",
+  "collection": "ブロンズ 約635 × 400 × 85 cm 国立西洋美術館 前庭ほか",
+  "commons": "La Porte de l'Enfer - Musée Rodin.jpg",
+  "wiki": "地獄の門",
+  "wikiLang": "ja",
+  "wikiEn": "The Gates of Hell",
+  "license": "パブリックドメイン"
+ },
+ "gaudi-sagrada-familia": {
+  "artist": "アントニ・ガウディ",
+  "title": "サグラダ・ファミリア聖堂",
+  "year": "1882年着工",
+  "collection": "石造・鉄筋コンクリート バルセロナ",
+  "commons": "Sagrada Familia 01.jpg",
+  "wiki": "サグラダ・ファミリア",
+  "wikiLang": "ja",
+  "wikiEn": "Sagrada Família",
+  "license": "パブリックドメイン（建築の外観撮影）"
  }
 }

@@ -887,6 +887,66 @@
   "wikiEn": "Bernard of Clairvaux",
   "license": "パブリックドメイン"
  },
+ "taull-pantocrator": {
+  "chapter": "06-romanesque",
+  "artist": "タウイの画家（作者不詳）",
+  "title": "全能のキリスト（サン・クレメンテ・デ・タウイ 後陣）",
+  "year": "1123年ごろ",
+  "collection": "カタルーニャ美術館 MNAC（バルセロナ）",
+  "commons": "Pantocrator Sant Climent de Taull.jpg",
+  "wiki": "サン・クリメン・デ・タウイ教会",
+  "wikiLang": "ja",
+  "wikiEn": "Sant Climent de Taüll",
+  "license": "パブリックドメイン"
+ },
+ "batllo-majesty": {
+  "chapter": "06-romanesque",
+  "artist": "作者不詳（カタルーニャ）",
+  "title": "マヘスタ・バトリョ（着衣のキリスト磔刑像）",
+  "year": "12世紀中ごろ",
+  "collection": "カタルーニャ美術館 MNAC（バルセロナ）",
+  "commons": "Majestat Batlló.jpg",
+  "wiki": "マヘスタ・バトリョ",
+  "wikiLang": "ja",
+  "wikiEn": "Batlló Majesty",
+  "license": "パブリックドメイン"
+ },
+ "durham-cathedral": {
+  "chapter": "06-romanesque",
+  "artist": "作者不詳（ノルマンの棟梁）",
+  "title": "ダラム大聖堂 身廊",
+  "year": "1093 — 1133年",
+  "collection": "ダラム大聖堂（イングランド）",
+  "commons": "Durham Cathedral Nave.jpg",
+  "wiki": "ダラム大聖堂",
+  "wikiLang": "ja",
+  "wikiEn": "Durham Cathedral",
+  "license": "パブリックドメイン"
+ },
+ "pisa-cathedral": {
+  "chapter": "06-romanesque",
+  "artist": "ブスケトゥスほか（設計）",
+  "title": "ピサ大聖堂と鐘楼（斜塔）",
+  "year": "1063年起工／鐘楼1173年起工",
+  "collection": "ドゥオモ広場（ピサ）",
+  "commons": "Pisa Duomo.jpg",
+  "wiki": "ピサ大聖堂",
+  "wikiLang": "ja",
+  "wikiEn": "Pisa Cathedral",
+  "license": "パブリックドメイン"
+ },
+ "speyer-cathedral": {
+  "chapter": "06-romanesque",
+  "artist": "作者不詳（皇帝コンラート2世の造営）",
+  "title": "シュパイアー大聖堂",
+  "year": "1030年起工",
+  "collection": "シュパイアー（ドイツ）",
+  "commons": "Speyer Dom.jpg",
+  "wiki": "シュパイアー大聖堂",
+  "wikiLang": "ja",
+  "wikiEn": "Speyer Cathedral",
+  "license": "パブリックドメイン"
+ },
  "bayeux-tapestry": {
   "chapter": "06-romanesque",
   "artist": "作者不詳（イングランドの工房と推定）",
@@ -995,6 +1055,54 @@
   "wikiEn": "Très Riches Heures",
   "license": "パブリックドメイン"
  },
+ "saint-denis-ambulatory": {
+  "chapter": "07-gothic",
+  "artist": "シュジェール（発注）／棟梁名不詳",
+  "title": "サン・ドニ修道院教会 内陣と周歩廊",
+  "year": "1144年献堂",
+  "collection": "サン・ドニ大聖堂（パリ北郊）",
+  "commons": "Saint Denis Ambulatory.jpg",
+  "wiki": "サン=ドニ大聖堂",
+  "wikiLang": "ja",
+  "wikiEn": "Basilica of Saint-Denis",
+  "license": "パブリックドメイン"
+ },
+ "chartres-rose-north": {
+  "chapter": "07-gothic",
+  "artist": "シャルトルの工房（親方名不詳）",
+  "title": "北のバラ窓（シャルトル大聖堂）",
+  "year": "1235年ごろ",
+  "collection": "シャルトル大聖堂（フランス）",
+  "commons": "Chartres - cathédrale - rose nord.jpg",
+  "wiki": "シャルトル大聖堂",
+  "wikiLang": "ja",
+  "wikiEn": "Chartres Cathedral",
+  "license": "パブリックドメイン"
+ },
+ "naumburg-uta": {
+  "chapter": "07-gothic",
+  "artist": "ナウムブルクの親方（作者不詳）",
+  "title": "ウタ像（ナウムブルク大聖堂 西内陣）",
+  "year": "1250年ごろ",
+  "collection": "ナウムブルク大聖堂（ドイツ）",
+  "commons": "Uta von Naumburg.jpg",
+  "wiki": "ナウムブルク大聖堂",
+  "wikiLang": "ja",
+  "wikiEn": "Uta of Naumburg",
+  "license": "パブリックドメイン"
+ },
+ "cologne-cathedral": {
+  "chapter": "07-gothic",
+  "artist": "ゲルハルト親方ほか（設計）",
+  "title": "ケルン大聖堂 西正面",
+  "year": "1248年起工／1880年竣工",
+  "collection": "ケルン大聖堂（ドイツ）",
+  "commons": "Kölner Dom.jpg",
+  "wiki": "ケルン大聖堂",
+  "wikiLang": "ja",
+  "wikiEn": "Cologne Cathedral",
+  "license": "パブリックドメイン"
+ },
  "suger-portrait": {
   "chapter": "07-gothic",
   "artist": "サン・ドニの工房",
@@ -1089,6 +1197,66 @@
   "wiki": "ダヴィデ像 (ドナテッロ)",
   "wikiLang": "ja",
   "wikiEn": "David (Donatello)",
+  "license": "パブリックドメイン"
+ },
+ "ghiberti-gates-of-paradise": {
+  "chapter": "08-quattrocento",
+  "artist": "ロレンツォ・ギベルティ",
+  "title": "天国の門（サン・ジョヴァンニ洗礼堂 東扉）",
+  "year": "1425 — 1452年",
+  "collection": "ドゥオモ付属美術館（フィレンツェ）",
+  "commons": "Porta del Paradiso.jpg",
+  "wiki": "サン・ジョヴァンニ洗礼堂",
+  "wikiLang": "ja",
+  "wikiEn": "Florence Baptistery",
+  "license": "パブリックドメイン"
+ },
+ "fra-angelico-annunciation": {
+  "chapter": "08-quattrocento",
+  "artist": "フラ・アンジェリコ",
+  "title": "受胎告知（サン・マルコ修道院）",
+  "year": "1440年代",
+  "collection": "サン・マルコ美術館（フィレンツェ）",
+  "commons": "Fra Angelico - The Annunciation - WGA00542.jpg",
+  "wiki": "受胎告知 (フラ・アンジェリコ)",
+  "wikiLang": "ja",
+  "wikiEn": "Annunciation (Fra Angelico, San Marco)",
+  "license": "パブリックドメイン"
+ },
+ "piero-baptism": {
+  "chapter": "08-quattrocento",
+  "artist": "ピエロ・デッラ・フランチェスカ",
+  "title": "キリストの洗礼",
+  "year": "1440年代",
+  "collection": "ナショナル・ギャラリー（ロンドン）",
+  "commons": "Piero della Francesca - Baptism of Christ - WGA17595.jpg",
+  "wiki": "キリストの洗礼 (ピエロ・デラ・フランチェスカ)",
+  "wikiLang": "ja",
+  "wikiEn": "The Baptism of Christ (Piero della Francesca)",
+  "license": "パブリックドメイン"
+ },
+ "donatello-magdalene": {
+  "chapter": "08-quattrocento",
+  "artist": "ドナテッロ",
+  "title": "マグダラのマリア",
+  "year": "1450年代",
+  "collection": "ドゥオモ付属美術館（フィレンツェ）",
+  "commons": "Maddalena penitente (Donatello).jpg",
+  "wiki": "マグダラのマリア (ドナテッロ)",
+  "wikiLang": "ja",
+  "wikiEn": "Penitent Magdalene (Donatello)",
+  "license": "パブリックドメイン"
+ },
+ "mantegna-dead-christ": {
+  "chapter": "08-quattrocento",
+  "artist": "アンドレア・マンテーニャ",
+  "title": "死せるキリスト",
+  "year": "1480年ごろ",
+  "collection": "ブレラ絵画館（ミラノ）",
+  "commons": "The dead Christ and three mourners, by Andrea Mantegna.jpg",
+  "wiki": "死せるキリスト",
+  "wikiLang": "ja",
+  "wikiEn": "Lamentation of Christ (Mantegna)",
   "license": "パブリックドメイン"
  },
  "botticelli-birth-of-venus": {
@@ -1257,18 +1425,6 @@
   "wiki": "テンピエット",
   "wikiLang": "ja",
   "wikiEn": "Tempietto",
-  "license": "パブリックドメイン"
- },
- "parmigianino-madonna-long-neck": {
-  "chapter": "09-cinquecento",
-  "artist": "パルミジャニーノ",
-  "title": "長い首の聖母",
-  "year": "1534 — 1540年",
-  "collection": "ウフィツィ美術館（フィレンツェ）",
-  "commons": "Parmigianino - Madonna dal collo lungo - Google Art Project.jpg",
-  "wiki": "長い首の聖母",
-  "wikiLang": "ja",
-  "wikiEn": "Madonna with the Long Neck",
   "license": "パブリックドメイン"
  },
  "van-eyck-arnolfini": {
@@ -1547,6 +1703,66 @@
   "wikiEn": "The Burial of the Count of Orgaz",
   "license": "パブリックドメイン"
  },
+ "bellini-san-zaccaria": {
+  "chapter": "11-venice",
+  "artist": "ジョヴァンニ・ベッリーニ",
+  "title": "サン・ザッカリア祭壇画",
+  "year": "1505年",
+  "collection": "サン・ザッカリア聖堂（ヴェネツィア）",
+  "commons": "Giovanni Bellini - San Zaccaria Altarpiece - WGA01679.jpg",
+  "wiki": "サン・ザッカリア祭壇画",
+  "wikiLang": "ja",
+  "wikiEn": "San Zaccaria Altarpiece",
+  "license": "パブリックドメイン"
+ },
+ "giorgione-sleeping-venus": {
+  "chapter": "11-venice",
+  "artist": "ジョルジョーネ",
+  "title": "眠れるヴィーナス",
+  "year": "1508 — 1510年ごろ",
+  "collection": "アルテ・マイスター絵画館（ドレスデン）",
+  "commons": "Giorgione - Sleeping Venus - Google Art Project 2.jpg",
+  "wiki": "眠れるヴィーナス",
+  "wikiLang": "ja",
+  "wikiEn": "Sleeping Venus",
+  "license": "パブリックドメイン"
+ },
+ "titian-charles-v-muhlberg": {
+  "chapter": "11-venice",
+  "artist": "ティツィアーノ・ヴェチェッリオ",
+  "title": "ミュールベルクのカール5世",
+  "year": "1548年",
+  "collection": "プラド美術館（マドリード）",
+  "commons": "Carlos V en la batalla de Mühlberg, by Titian, from Prado in Google Earth.jpg",
+  "wiki": "カール5世騎馬像",
+  "wikiLang": "ja",
+  "wikiEn": "Equestrian Portrait of Charles V",
+  "license": "パブリックドメイン"
+ },
+ "carpaccio-miracle-relic-cross": {
+  "chapter": "11-venice",
+  "artist": "ヴィットーレ・カルパッチョ",
+  "title": "リアルト橋における聖十字架遺物の奇跡",
+  "year": "1494年ごろ",
+  "collection": "アカデミア美術館（ヴェネツィア）",
+  "commons": "Vittore Carpaccio - The Healing of the Madman - WGA04380.jpg",
+  "wiki": "リアルト橋での聖十字架の遺物の奇跡",
+  "wikiLang": "ja",
+  "wikiEn": "Miracle of the Relic of the Cross at the Ponte di Rialto",
+  "license": "パブリックドメイン"
+ },
+ "palladio-villa-rotonda": {
+  "chapter": "11-venice",
+  "artist": "アンドレーア・パラーディオ",
+  "title": "ヴィラ・ロトンダ（ヴィラ・アルメリコ・カプラ）",
+  "year": "1567年着工",
+  "collection": "ヴィチェンツァ郊外（イタリア）",
+  "commons": "Villa Rotonda side.jpg",
+  "wiki": "ヴィラ・アルメリコ・カプラ",
+  "wikiLang": "ja",
+  "wikiEn": "Villa La Rotonda",
+  "license": "パブリックドメイン"
+ },
  "caravaggio-calling-of-st-matthew": {
   "chapter": "12-baroque",
   "artist": "カラヴァッジョ",
@@ -1653,6 +1869,66 @@
   "wiki": "ラス・メニーナス",
   "wikiLang": "ja",
   "wikiEn": "Las Meninas",
+  "license": "パブリックドメイン"
+ },
+ "caravaggio-judith-holofernes": {
+  "chapter": "12-baroque",
+  "artist": "カラヴァッジョ",
+  "title": "ホロフェルネスの首を斬るユディト",
+  "year": "1599 — 1602年ごろ",
+  "collection": "バルベリーニ宮国立古代美術館（ローマ）",
+  "commons": "Caravaggio Judith Beheading Holofernes.jpg",
+  "wiki": "ホロフェルネスの首を斬るユディト (カラヴァッジョ)",
+  "wikiLang": "ja",
+  "wikiEn": "Judith Beheading Holofernes (Caravaggio)",
+  "license": "パブリックドメイン"
+ },
+ "borromini-san-carlino": {
+  "chapter": "12-baroque",
+  "artist": "フランチェスコ・ボッロミーニ",
+  "title": "サン・カルロ・アッレ・クアットロ・フォンターネ聖堂",
+  "year": "1638 — 1667年",
+  "collection": "ローマ",
+  "commons": "San Carlo alle Quattro Fontane, Rome.jpg",
+  "wiki": "サン・カルロ・アッレ・クアットロ・フォンターネ聖堂",
+  "wikiLang": "ja",
+  "wikiEn": "San Carlo alle Quattro Fontane",
+  "license": "パブリックドメイン"
+ },
+ "rubens-leucippus": {
+  "chapter": "12-baroque",
+  "artist": "ペーテル・パウル・ルーベンス",
+  "title": "レウキッポスの娘たちの略奪",
+  "year": "1618年ごろ",
+  "collection": "アルテ・ピナコテーク（ミュンヘン）",
+  "commons": "Peter Paul Rubens - The Rape of the Daughters of Leucippus.jpg",
+  "wiki": "レウキッポスの娘たちの略奪",
+  "wikiLang": "ja",
+  "wikiEn": "The Rape of the Daughters of Leucippus",
+  "license": "パブリックドメイン"
+ },
+ "velazquez-surrender-of-breda": {
+  "chapter": "12-baroque",
+  "artist": "ディエゴ・ベラスケス",
+  "title": "ブレダの開城",
+  "year": "1634 — 1635年",
+  "collection": "プラド美術館（マドリード）",
+  "commons": "Velázquez - de Breda o Las Lanzas (Museo del Prado, 1634-35).jpg",
+  "wiki": "ブレダの開城",
+  "wikiLang": "ja",
+  "wikiEn": "The Surrender of Breda",
+  "license": "パブリックドメイン"
+ },
+ "zurbaran-agnus-dei": {
+  "chapter": "12-baroque",
+  "artist": "フランシスコ・デ・スルバラン",
+  "title": "神の子羊",
+  "year": "1635 — 1640年ごろ",
+  "collection": "プラド美術館（マドリード）",
+  "commons": "Zurbarán Agnus Dei.jpg",
+  "wiki": "神の子羊 (スルバラン)",
+  "wikiLang": "ja",
+  "wikiEn": "Agnus Dei (Zurbarán)",
   "license": "パブリックドメイン"
  },
  "hals-merry-drinker": {
@@ -1775,6 +2051,54 @@
   "wikiEn": "Vanitas",
   "license": "パブリックドメイン"
  },
+ "hals-laughing-cavalier": {
+  "chapter": "13-dutch",
+  "artist": "フランス・ハルス",
+  "title": "笑う騎士",
+  "year": "1624年",
+  "collection": "油彩・カンヴァス 83 × 67.3 cm ウォレス・コレクション（ロンドン）",
+  "commons": "Frans Hals - The Laughing Cavalier.jpg",
+  "wiki": "笑う騎士",
+  "wikiLang": "ja",
+  "wikiEn": "Laughing Cavalier",
+  "license": "パブリックドメイン"
+ },
+ "de-hooch-courtyard-delft": {
+  "chapter": "13-dutch",
+  "artist": "ピーテル・デ・ホーホ",
+  "title": "デルフトの家の中庭",
+  "year": "1658年",
+  "collection": "油彩・カンヴァス 73.5 × 60 cm ナショナル・ギャラリー（ロンドン）",
+  "commons": "Pieter de Hooch - The Courtyard of a House in Delft.jpg",
+  "wiki": "ピーテル・デ・ホーホ",
+  "wikiLang": "ja",
+  "wikiEn": "The Courtyard of a House in Delft",
+  "license": "パブリックドメイン"
+ },
+ "ruisdael-jewish-cemetery": {
+  "chapter": "13-dutch",
+  "artist": "ヤーコプ・ファン・ライスダール",
+  "title": "ユダヤ人墓地",
+  "year": "1650年代後半",
+  "collection": "油彩・カンヴァス 142.2 × 189.2 cm デトロイト美術館",
+  "commons": "Jacob van Ruisdael - The Jewish Cemetery - Google Art Project.jpg",
+  "wiki": "ヤーコプ・ファン・ロイスダール",
+  "wikiLang": "ja",
+  "wikiEn": "The Jewish Cemetery",
+  "license": "パブリックドメイン"
+ },
+ "heda-still-life": {
+  "chapter": "13-dutch",
+  "artist": "ウィレム・クラースゾーン・ヘダ",
+  "title": "金杯のある静物",
+  "year": "1635年",
+  "collection": "油彩・板 88 × 113 cm アムステルダム国立美術館",
+  "commons": "Willem Claeszoon Heda - Still Life with a Gilt Cup - Google Art Project.jpg",
+  "wiki": "ウィレム・クラースゾーン・ヘダ",
+  "wikiLang": "ja",
+  "wikiEn": "Willem Claeszoon Heda",
+  "license": "パブリックドメイン"
+ },
  "watteau-cythera": {
   "chapter": "14-rococo",
   "artist": "アントワーヌ・ヴァトー",
@@ -1895,6 +2219,42 @@
   "wikiEn": "Saying Grace (Chardin)",
   "license": "パブリックドメイン"
  },
+ "vigee-lebrun-marie-antoinette": {
+  "chapter": "14-rococo",
+  "artist": "エリザベート＝ルイーズ・ヴィジェ＝ルブラン",
+  "title": "マリー・アントワネットと子どもたち",
+  "year": "1787年",
+  "collection": "油彩・カンヴァス 275 × 216.5 cm ヴェルサイユ宮殿",
+  "commons": "Marie Antoinette and her Children by Élisabeth Vigée-Lebrun.jpg",
+  "wiki": "マリー・アントワネットと子どもたち",
+  "wikiLang": "ja",
+  "wikiEn": "Marie Antoinette and Her Children",
+  "license": "パブリックドメイン"
+ },
+ "tiepolo-wurzburg": {
+  "chapter": "14-rococo",
+  "artist": "ジョヴァンニ・バッティスタ・ティエポロ",
+  "title": "ヴュルツブルク宮殿　階段の間の天井画",
+  "year": "1752 — 1753年",
+  "collection": "フレスコ ヴュルツブルク・レジデンツ（ドイツ）",
+  "commons": "Giovanni Battista Tiepolo - Apollo and the Continents - WGA22343.jpg",
+  "wiki": "ヴュルツブルクのレジデンツ",
+  "wikiLang": "ja",
+  "wikiEn": "Würzburg Residence",
+  "license": "パブリックドメイン"
+ },
+ "hogarth-marriage-settlement": {
+  "chapter": "14-rococo",
+  "artist": "ウィリアム・ホガース",
+  "title": "当世風の結婚　第1場「結婚の契約」",
+  "year": "1743 — 1745年",
+  "collection": "油彩・カンヴァス 69.9 × 90.8 cm ナショナル・ギャラリー（ロンドン）",
+  "commons": "Marriage A-la-Mode 1, The Marriage Settlement - William Hogarth.jpg",
+  "wiki": "当世風の結婚",
+  "wikiLang": "ja",
+  "wikiEn": "Marriage A-la-Mode (Hogarth)",
+  "license": "パブリックドメイン"
+ },
  "david-oath-horatii": {
   "chapter": "15-revolution",
   "artist": "ジャック＝ルイ・ダヴィッド",
@@ -2013,6 +2373,18 @@
   "wiki": "雲海の上の旅人",
   "wikiLang": "ja",
   "wikiEn": "Wanderer above the Sea of Fog",
+  "license": "パブリックドメイン"
+ },
+ "constable-hay-wain": {
+  "chapter": "15-revolution",
+  "artist": "ジョン・コンスタブル",
+  "title": "干草車",
+  "year": "1821年",
+  "collection": "油彩・カンヴァス 130.2 × 185.4 cm ナショナル・ギャラリー（ロンドン）",
+  "commons": "John Constable The Hay Wain.jpg",
+  "wiki": "干草車",
+  "wikiLang": "ja",
+  "wikiEn": "The Hay Wain",
   "license": "パブリックドメイン"
  },
  "courbet-burial-ornans": {
@@ -2147,6 +2519,30 @@
   "wikiEn": "Impression, Sunrise",
   "license": "パブリックドメイン"
  },
+ "monet-la-grenouillere": {
+  "chapter": "17-impressionism",
+  "artist": "クロード・モネ",
+  "title": "ラ・グルヌイエールの水浴",
+  "year": "1869年",
+  "collection": "ナショナル・ギャラリー（ロンドン）",
+  "commons": "Claude Monet - Bathers at La Grenouillère - Google Art Project.jpg",
+  "wiki": "ラ・グルヌイエール",
+  "wikiLang": "ja",
+  "wikiEn": "Bathers at La Grenouillère",
+  "license": "パブリックドメイン"
+ },
+ "caillebotte-paris-street-rainy-day": {
+  "chapter": "17-impressionism",
+  "artist": "ギュスターヴ・カイユボット",
+  "title": "パリの通り、雨",
+  "year": "1877年",
+  "collection": "シカゴ美術館",
+  "commons": "Gustave Caillebotte - Paris Street; Rainy Day - Google Art Project.jpg",
+  "wiki": "パリの通り、雨",
+  "wikiLang": "ja",
+  "wikiEn": "Paris Street; Rainy Day",
+  "license": "パブリックドメイン"
+ },
  "monet-gare-saint-lazare": {
   "chapter": "17-impressionism",
   "artist": "クロード・モネ",
@@ -2171,6 +2567,18 @@
   "wikiEn": "Bal du moulin de la Galette",
   "license": "パブリックドメイン"
  },
+ "renoir-luncheon-boating-party": {
+  "chapter": "17-impressionism",
+  "artist": "ピエール＝オーギュスト・ルノワール",
+  "title": "舟遊びの人々の昼食",
+  "year": "1880 — 1881年",
+  "collection": "フィリップス・コレクション（ワシントン）",
+  "commons": "Pierre-Auguste Renoir - Luncheon of the Boating Party - Google Art Project.jpg",
+  "wiki": "舟遊びをする人々の昼食",
+  "wikiLang": "ja",
+  "wikiEn": "Luncheon of the Boating Party",
+  "license": "パブリックドメイン"
+ },
  "renoir-portrait": {
   "chapter": "17-impressionism",
   "artist": "ピエール＝オーギュスト・ルノワール",
@@ -2181,6 +2589,114 @@
   "wiki": "ピエール＝オーギュスト・ルノワール",
   "wikiLang": "ja",
   "wikiEn": "Pierre-Auguste Renoir",
+  "license": "パブリックドメイン"
+ },
+ "monet-rouen-cathedral": {
+  "chapter": "17-impressionism",
+  "artist": "クロード・モネ",
+  "title": "ルーアン大聖堂、西正面、日の光",
+  "year": "1894年",
+  "collection": "ナショナル・ギャラリー・オブ・アート（ワシントン）",
+  "commons": "Claude Monet - Rouen Cathedral, West Facade, Sunlight - Google Art Project.jpg",
+  "wiki": "ルーアン大聖堂 (モネの連作)",
+  "wikiLang": "ja",
+  "wikiEn": "Rouen Cathedral (Monet series)",
+  "license": "パブリックドメイン"
+ },
+ "monet-haystacks": {
+  "chapter": "17-impressionism",
+  "artist": "クロード・モネ",
+  "title": "積みわら（真昼）",
+  "year": "1890 — 1891年",
+  "collection": "オーストラリア国立美術館（キャンベラ）",
+  "commons": "Claude Monet - Meules, milieu du jour - Google Art Project.jpg",
+  "wiki": "積みわら (モネ)",
+  "wikiLang": "ja",
+  "wikiEn": "Haystacks (Monet series)",
+  "license": "パブリックドメイン"
+ },
+ "monet-water-lilies": {
+  "chapter": "17-impressionism",
+  "artist": "クロード・モネ",
+  "title": "睡蓮",
+  "year": "1906年",
+  "collection": "シカゴ美術館",
+  "commons": "Claude Monet - Water Lilies - 1906, Ryerson.jpg",
+  "wiki": "睡蓮 (絵画)",
+  "wikiLang": "ja",
+  "wikiEn": "Water Lilies (Monet series)",
+  "license": "パブリックドメイン"
+ },
+ "degas-letoile": {
+  "chapter": "17-impressionism",
+  "artist": "エドガー・ドガ",
+  "title": "エトワール（舞台の踊り子）",
+  "year": "1876 — 1877年ごろ",
+  "collection": "オルセー美術館（パリ）",
+  "commons": "Edgar Degas - L'Étoile - Google Art Project.jpg",
+  "wiki": "エトワール (ドガ)",
+  "wikiLang": "ja",
+  "wikiEn": "L'Étoile",
+  "license": "パブリックドメイン"
+ },
+ "degas-little-dancer": {
+  "chapter": "17-impressionism",
+  "artist": "エドガー・ドガ",
+  "title": "14歳の小さな踊り子",
+  "year": "1878 — 1881年（原型）",
+  "collection": "オルセー美術館ほか（没後の鋳造）",
+  "commons": "Degas - Petite danseuse de quatorze ans.jpg",
+  "wiki": "14歳の小さな踊り子",
+  "wikiLang": "ja",
+  "wikiEn": "Little Dancer of Fourteen Years",
+  "license": "パブリックドメイン"
+ },
+ "morisot-le-berceau": {
+  "chapter": "17-impressionism",
+  "artist": "ベルト・モリゾ",
+  "title": "ゆりかご",
+  "year": "1872年",
+  "collection": "オルセー美術館（パリ）",
+  "commons": "Berthe Morisot - The Cradle - Google Art Project.jpg",
+  "wiki": "ゆりかご (モリゾの絵画)",
+  "wikiLang": "ja",
+  "wikiEn": "The Cradle (Morisot)",
+  "license": "パブリックドメイン"
+ },
+ "cassatt-in-the-loge": {
+  "chapter": "17-impressionism",
+  "artist": "メアリー・カサット",
+  "title": "桟敷席にて",
+  "year": "1878年",
+  "collection": "ボストン美術館",
+  "commons": "Mary Cassatt - In the Loge - Google Art Project.jpg",
+  "wiki": "メアリー・カサット",
+  "wikiLang": "ja",
+  "wikiEn": "In the Loge",
+  "license": "パブリックドメイン"
+ },
+ "pissarro-boulevard-montmartre": {
+  "chapter": "17-impressionism",
+  "artist": "カミーユ・ピサロ",
+  "title": "モンマルトル大通り、夜",
+  "year": "1897年",
+  "collection": "ナショナル・ギャラリー（ロンドン）",
+  "commons": "Camille Pissarro - The Boulevard Montmartre at Night - Google Art Project.jpg",
+  "wiki": "カミーユ・ピサロ",
+  "wikiLang": "ja",
+  "wikiEn": "The Boulevard Montmartre at Night",
+  "license": "パブリックドメイン"
+ },
+ "manet-bar-folies-bergere": {
+  "chapter": "17-impressionism",
+  "artist": "エドゥアール・マネ",
+  "title": "フォリー・ベルジェールのバー",
+  "year": "1882年",
+  "collection": "コートールド美術館（ロンドン）",
+  "commons": "Edouard Manet, A Bar at the Folies-Bergère.jpg",
+  "wiki": "フォリー・ベルジェールのバー",
+  "wikiLang": "ja",
+  "wikiEn": "A Bar at the Folies-Bergère",
   "license": "パブリックドメイン"
  },
  "seurat-grande-jatte": {
@@ -2289,6 +2805,54 @@
   "wiki": "われわれはどこから来たのか われわれは何者か われわれはどこへ行くのか",
   "wikiLang": "ja",
   "wikiEn": "Where Do We Come From? What Are We? Where Are We Going?",
+  "license": "パブリックドメイン"
+ },
+ "signac-port-saint-tropez": {
+  "chapter": "18-post",
+  "artist": "ポール・シニャック",
+  "title": "サン＝トロペの港",
+  "year": "1901 — 1902年",
+  "collection": "油彩・カンヴァス 131 × 161.5 cm 国立西洋美術館（東京）松方コレクション",
+  "commons": "Paul Signac - Le port de Saint-Tropez.jpg",
+  "wiki": "ポール・シニャック",
+  "wikiLang": "ja",
+  "wikiEn": "Paul Signac",
+  "license": "パブリックドメイン"
+ },
+ "cezanne-large-bathers": {
+  "chapter": "18-post",
+  "artist": "ポール・セザンヌ",
+  "title": "大水浴図",
+  "year": "1900 — 1906年",
+  "collection": "油彩・カンヴァス 210.5 × 250.8 cm フィラデルフィア美術館",
+  "commons": "Paul Cézanne - The Large Bathers - Google Art Project.jpg",
+  "wiki": "大水浴図",
+  "wikiLang": "ja",
+  "wikiEn": "The Large Bathers",
+  "license": "パブリックドメイン"
+ },
+ "van-gogh-bedroom": {
+  "chapter": "18-post",
+  "artist": "フィンセント・ファン・ゴッホ",
+  "title": "アルルの寝室",
+  "year": "1888年",
+  "collection": "油彩・カンヴァス 72 × 90 cm ファン・ゴッホ美術館（アムステルダム）",
+  "commons": "Vincent van Gogh - De slaapkamer - Google Art Project.jpg",
+  "wiki": "アルルの寝室",
+  "wikiLang": "ja",
+  "wikiEn": "Bedroom in Arles",
+  "license": "パブリックドメイン"
+ },
+ "toulouse-lautrec-moulin-rouge": {
+  "chapter": "18-post",
+  "artist": "アンリ・ド・トゥールーズ＝ロートレック",
+  "title": "ムーラン・ルージュ ─ ラ・グーリュ",
+  "year": "1891年",
+  "collection": "多色刷リトグラフ（ポスター） 191 × 117 cm 各国美術館の版画部門",
+  "commons": "Henri de Toulouse-Lautrec - Moulin Rouge - La Goulue.jpg",
+  "wiki": "アンリ・ド・トゥールーズ＝ロートレック",
+  "wikiLang": "ja",
+  "wikiEn": "Moulin Rouge: La Goulue",
   "license": "パブリックドメイン"
  },
  "munch-scream": {
@@ -2410,6 +2974,66 @@
   "wikiLang": "ja",
   "wikiEn": "Casa Batlló",
   "license": "パブリックドメイン"
+ },
+ "munch-madonna": {
+  "chapter": "19-fin-de-siecle",
+  "artist": "エドヴァルド・ムンク",
+  "title": "マドンナ",
+  "year": "1894 — 1895年",
+  "collection": "油彩・カンヴァス 90 × 68 cm ノルウェー国立美術館／ムンク美術館（オスロ）",
+  "commons": "Edvard Munch - Madonna - Google Art Project.jpg",
+  "wiki": "マドンナ (ムンク)",
+  "wikiLang": "ja",
+  "wikiEn": "Madonna (Munch painting)",
+  "license": "パブリックドメイン"
+ },
+ "klimt-beethoven-frieze": {
+  "chapter": "19-fin-de-siecle",
+  "artist": "グスタフ・クリムト",
+  "title": "ベートーヴェン・フリーズ",
+  "year": "1902年",
+  "collection": "カゼイン絵具・金彩ほか 高さ約2.15 m 全長約34 m セセッション館（ウィーン）",
+  "commons": "Beethovenfries Klimt.jpg",
+  "wiki": "ベートーヴェン・フリーズ",
+  "wikiLang": "ja",
+  "wikiEn": "Beethoven Frieze",
+  "license": "パブリックドメイン"
+ },
+ "rodin-thinker": {
+  "chapter": "19-fin-de-siecle",
+  "artist": "オーギュスト・ロダン",
+  "title": "考える人",
+  "year": "1880 — 1904年",
+  "collection": "ブロンズ 高さ約186 cm（拡大作） 国立西洋美術館 前庭ほか",
+  "commons": "The Thinker, Rodin.jpg",
+  "wiki": "考える人",
+  "wikiLang": "ja",
+  "wikiEn": "The Thinker",
+  "license": "パブリックドメイン"
+ },
+ "rodin-gates-of-hell": {
+  "chapter": "19-fin-de-siecle",
+  "artist": "オーギュスト・ロダン",
+  "title": "地獄の門",
+  "year": "1880 — 1917年",
+  "collection": "ブロンズ 約635 × 400 × 85 cm 国立西洋美術館 前庭ほか",
+  "commons": "La Porte de l'Enfer - Musée Rodin.jpg",
+  "wiki": "地獄の門",
+  "wikiLang": "ja",
+  "wikiEn": "The Gates of Hell",
+  "license": "パブリックドメイン"
+ },
+ "gaudi-sagrada-familia": {
+  "chapter": "19-fin-de-siecle",
+  "artist": "アントニ・ガウディ",
+  "title": "サグラダ・ファミリア聖堂",
+  "year": "1882年着工",
+  "collection": "石造・鉄筋コンクリート バルセロナ",
+  "commons": "Sagrada Familia 01.jpg",
+  "wiki": "サグラダ・ファミリア",
+  "wikiLang": "ja",
+  "wikiEn": "Sagrada Família",
+  "license": "パブリックドメイン（建築の外観撮影）"
  },
  "rousseau-sleeping-gypsy": {
   "chapter": "20-fauve-cubism",

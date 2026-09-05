@@ -97,5 +97,49 @@
   "wikiLang": "ja",
   "wikiEn": "Where Do We Come From? What Are We? Where Are We Going?",
   "license": "パブリックドメイン"
+ },
+ "signac-port-saint-tropez": {
+  "artist": "ポール・シニャック",
+  "title": "サン＝トロペの港",
+  "year": "1901 — 1902年",
+  "collection": "油彩・カンヴァス 131 × 161.5 cm 国立西洋美術館（東京）松方コレクション",
+  "commons": "Paul Signac - Le port de Saint-Tropez.jpg",
+  "wiki": "ポール・シニャック",
+  "wikiLang": "ja",
+  "wikiEn": "Paul Signac",
+  "license": "パブリックドメイン"
+ },
+ "cezanne-large-bathers": {
+  "artist": "ポール・セザンヌ",
+  "title": "大水浴図",
+  "year": "1900 — 1906年",
+  "collection": "油彩・カンヴァス 210.5 × 250.8 cm フィラデルフィア美術館",
+  "commons": "Paul Cézanne - The Large Bathers - Google Art Project.jpg",
+  "wiki": "大水浴図",
+  "wikiLang": "ja",
+  "wikiEn": "The Large Bathers",
+  "license": "パブリックドメイン"
+ },
+ "van-gogh-bedroom": {
+  "artist": "フィンセント・ファン・ゴッホ",
+  "title": "アルルの寝室",
+  "year": "1888年",
+  "collection": "油彩・カンヴァス 72 × 90 cm ファン・ゴッホ美術館（アムステルダム）",
+  "commons": "Vincent van Gogh - De slaapkamer - Google Art Project.jpg",
+  "wiki": "アルルの寝室",
+  "wikiLang": "ja",
+  "wikiEn": "Bedroom in Arles",
+  "license": "パブリックドメイン"
+ },
+ "toulouse-lautrec-moulin-rouge": {
+  "artist": "アンリ・ド・トゥールーズ＝ロートレック",
+  "title": "ムーラン・ルージュ ─ ラ・グーリュ",
+  "year": "1891年",
+  "collection": "多色刷リトグラフ（ポスター） 191 × 117 cm 各国美術館の版画部門",
+  "commons": "Henri de Toulouse-Lautrec - Moulin Rouge - La Goulue.jpg",
+  "wiki": "アンリ・ド・トゥールーズ＝ロートレック",
+  "wikiLang": "ja",
+  "wikiEn": "Moulin Rouge: La Goulue",
+  "license": "パブリックドメイン"
  }
 }

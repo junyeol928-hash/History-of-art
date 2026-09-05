@@ -1,101 +1,156 @@
 {
- "caravaggio-calling-of-st-matthew": {
-  "artist": "カラヴァッジョ",
-  "title": "聖マタイの召命",
-  "year": "1599 — 1600年",
-  "collection": "油彩・カンヴァス 約322 × 340 cm サン・ルイジ・デイ・フランチェージ教会 コンタレッリ礼拝堂（ローマ）",
-  "commons": "The Calling of Saint Matthew-Caravaggo (1599-1600).jpg",
-  "wiki": "聖マタイの召命",
-  "wikiLang": "ja",
-  "wikiEn": "The Calling of Saint Matthew",
-  "license": "パブリックドメイン"
- },
- "caravaggio-portrait": {
-  "artist": "オッタヴィオ・レオーニ",
-  "title": "カラヴァッジョの肖像",
-  "year": "1621年ごろ",
-  "collection": "マルチェッリアーナ図書館（フィレンツェ）",
-  "commons": "Bild-Ottavio Leoni, Caravaggio.jpg",
-  "wiki": "カラヴァッジョ",
-  "wikiLang": "ja",
-  "wikiEn": "Caravaggio",
-  "license": "パブリックドメイン"
- },
- "caravaggio-david-goliath": {
-  "artist": "カラヴァッジョ",
-  "title": "ゴリアテの首を持つダヴィデ",
-  "year": "1609 — 1610年ごろ",
-  "collection": "油彩・カンヴァス 125 × 101 cm ボルゲーゼ美術館（ローマ）",
-  "commons": "Caravaggio - David con la testa di Golia.jpg",
-  "wiki": "ゴリアテの首を持つダビデ (ボルゲーゼ美術館)",
-  "wikiLang": "ja",
-  "wikiEn": "David with the Head of Goliath (Caravaggio), Rome",
-  "license": "パブリックドメイン"
- },
- "guercino-aurora": {
-  "artist": "グエルチーノ",
-  "title": "アウローラ（曙の女神）",
-  "year": "1621年",
-  "collection": "フレスコ 天井画 ヴィラ・ルドヴィージ カジーノ・ルドヴィージ（ローマ・個人所有）",
-  "commons": "Guercino Aurora.jpg",
-  "wiki": "グエルチーノ",
-  "wikiLang": "ja",
-  "wikiEn": "Guercino",
-  "license": "パブリックドメイン"
- },
- "bernini-apollo-daphne": {
-  "artist": "ジャン・ロレンツォ・ベルニーニ",
-  "title": "アポロとダフネ",
-  "year": "1622 — 1625年",
-  "collection": "大理石 高さ約243 cm ボルゲーゼ美術館（ローマ）",
-  "commons": "Apollo and Daphne (Bernini) (cropped).jpg",
-  "wiki": "アポロとダフネ (ベルニーニ)",
-  "wikiLang": "ja",
-  "wikiEn": "Apollo and Daphne (Bernini)",
-  "license": "パブリックドメイン"
- },
- "bernini-ecstasy-of-st-teresa": {
-  "artist": "ジャン・ロレンツォ・ベルニーニ",
-  "title": "聖テレジアの法悦（コルナーロ礼拝堂）",
-  "year": "1647 — 1652年",
-  "collection": "大理石・金メッキ青銅・彩色大理石 サンタ・マリア・デッラ・ヴィットーリア聖堂（ローマ）",
-  "commons": "Ecstasy of Saint Teresa September 2015-2a.jpg",
-  "wiki": "聖テレサの法悦",
-  "wikiLang": "ja",
-  "wikiEn": "Ecstasy of Saint Teresa",
-  "license": "パブリックドメイン"
- },
- "gentileschi-judith-holofernes": {
-  "artist": "アルテミジア・ジェンティレスキ",
-  "title": "ホロフェルネスの首を斬るユディト",
-  "year": "1620年ごろ",
-  "collection": "油彩・カンヴァス 199 × 162 cm ウフィツィ美術館（フィレンツェ）",
-  "commons": "Artemisia Gentileschi - Judith Beheading Holofernes - Google Art Project.jpg",
-  "wiki": "ホロフェルネスの首を斬るユディト (アルテミジア・ジェンティレスキ、ウフィツィ美術館)",
-  "wikiLang": "ja",
-  "wikiEn": "Judith Slaying Holofernes (Artemisia Gentileschi, Florence)",
-  "license": "パブリックドメイン"
- },
- "rubens-descent-from-the-cross": {
-  "artist": "ペーテル・パウル・ルーベンス",
-  "title": "キリスト降架（三連祭壇画 中央パネル）",
-  "year": "1612 — 1614年",
-  "collection": "油彩・板 中央パネル約421 × 311 cm ノートルダム大聖堂（アントウェルペン）",
-  "commons": "Peter Paul Rubens - Descent from the Cross - WGA20211.jpg",
-  "wiki": "キリスト降架 (ルーベンス)",
-  "wikiLang": "ja",
-  "wikiEn": "The Descent from the Cross (Rubens)",
-  "license": "パブリックドメイン"
- },
- "velazquez-las-meninas": {
-  "artist": "ディエゴ・ベラスケス",
-  "title": "ラス・メニーナス",
-  "year": "1656年",
-  "collection": "油彩・カンヴァス 318 × 276 cm プラド美術館（マドリード）",
-  "commons": "Las Meninas, by Diego Velázquez, from Prado in Google Earth.jpg",
-  "wiki": "ラス・メニーナス",
-  "wikiLang": "ja",
-  "wikiEn": "Las Meninas",
-  "license": "パブリックドメイン"
- }
+  "caravaggio-calling-of-st-matthew": {
+    "artist": "カラヴァッジョ",
+    "title": "聖マタイの召命",
+    "year": "1599 — 1600年",
+    "collection": "油彩・カンヴァス 約322 × 340 cm サン・ルイジ・デイ・フランチェージ教会 コンタレッリ礼拝堂（ローマ）",
+    "commons": "The Calling of Saint Matthew-Caravaggo (1599-1600).jpg",
+    "wiki": "聖マタイの召命",
+    "wikiLang": "ja",
+    "wikiEn": "The Calling of Saint Matthew",
+    "license": "パブリックドメイン"
+  },
+  "caravaggio-portrait": {
+    "artist": "オッタヴィオ・レオーニ",
+    "title": "カラヴァッジョの肖像",
+    "year": "1621年ごろ",
+    "collection": "マルチェッリアーナ図書館（フィレンツェ）",
+    "commons": "Bild-Ottavio Leoni, Caravaggio.jpg",
+    "wiki": "カラヴァッジョ",
+    "wikiLang": "ja",
+    "wikiEn": "Caravaggio",
+    "license": "パブリックドメイン"
+  },
+  "caravaggio-david-goliath": {
+    "artist": "カラヴァッジョ",
+    "title": "ゴリアテの首を持つダヴィデ",
+    "year": "1609 — 1610年ごろ",
+    "collection": "油彩・カンヴァス 125 × 101 cm ボルゲーゼ美術館（ローマ）",
+    "commons": "Caravaggio - David con la testa di Golia.jpg",
+    "wiki": "ゴリアテの首を持つダビデ (ボルゲーゼ美術館)",
+    "wikiLang": "ja",
+    "wikiEn": "David with the Head of Goliath (Caravaggio), Rome",
+    "license": "パブリックドメイン"
+  },
+  "guercino-aurora": {
+    "artist": "グエルチーノ",
+    "title": "アウローラ（曙の女神）",
+    "year": "1621年",
+    "collection": "フレスコ 天井画 ヴィラ・ルドヴィージ カジーノ・ルドヴィージ（ローマ・個人所有）",
+    "commons": "Guercino Aurora.jpg",
+    "wiki": "グエルチーノ",
+    "wikiLang": "ja",
+    "wikiEn": "Guercino",
+    "license": "パブリックドメイン"
+  },
+  "bernini-apollo-daphne": {
+    "artist": "ジャン・ロレンツォ・ベルニーニ",
+    "title": "アポロとダフネ",
+    "year": "1622 — 1625年",
+    "collection": "大理石 高さ約243 cm ボルゲーゼ美術館（ローマ）",
+    "commons": "Apollo and Daphne (Bernini) (cropped).jpg",
+    "wiki": "アポロとダフネ (ベルニーニ)",
+    "wikiLang": "ja",
+    "wikiEn": "Apollo and Daphne (Bernini)",
+    "license": "パブリックドメイン"
+  },
+  "bernini-ecstasy-of-st-teresa": {
+    "artist": "ジャン・ロレンツォ・ベルニーニ",
+    "title": "聖テレジアの法悦（コルナーロ礼拝堂）",
+    "year": "1647 — 1652年",
+    "collection": "大理石・金メッキ青銅・彩色大理石 サンタ・マリア・デッラ・ヴィットーリア聖堂（ローマ）",
+    "commons": "Ecstasy of Saint Teresa September 2015-2a.jpg",
+    "wiki": "聖テレサの法悦",
+    "wikiLang": "ja",
+    "wikiEn": "Ecstasy of Saint Teresa",
+    "license": "パブリックドメイン"
+  },
+  "gentileschi-judith-holofernes": {
+    "artist": "アルテミジア・ジェンティレスキ",
+    "title": "ホロフェルネスの首を斬るユディト",
+    "year": "1620年ごろ",
+    "collection": "油彩・カンヴァス 199 × 162 cm ウフィツィ美術館（フィレンツェ）",
+    "commons": "Artemisia Gentileschi - Judith Beheading Holofernes - Google Art Project.jpg",
+    "wiki": "ホロフェルネスの首を斬るユディト (アルテミジア・ジェンティレスキ、ウフィツィ美術館)",
+    "wikiLang": "ja",
+    "wikiEn": "Judith Slaying Holofernes (Artemisia Gentileschi, Florence)",
+    "license": "パブリックドメイン"
+  },
+  "rubens-descent-from-the-cross": {
+    "artist": "ペーテル・パウル・ルーベンス",
+    "title": "キリスト降架（三連祭壇画 中央パネル）",
+    "year": "1612 — 1614年",
+    "collection": "油彩・板 中央パネル約421 × 311 cm ノートルダム大聖堂（アントウェルペン）",
+    "commons": "Peter Paul Rubens - Descent from the Cross - WGA20211.jpg",
+    "wiki": "キリスト降架 (ルーベンス)",
+    "wikiLang": "ja",
+    "wikiEn": "The Descent from the Cross (Rubens)",
+    "license": "パブリックドメイン"
+  },
+  "velazquez-las-meninas": {
+    "artist": "ディエゴ・ベラスケス",
+    "title": "ラス・メニーナス",
+    "year": "1656年",
+    "collection": "油彩・カンヴァス 318 × 276 cm プラド美術館（マドリード）",
+    "commons": "Las Meninas, by Diego Velázquez, from Prado in Google Earth.jpg",
+    "wiki": "ラス・メニーナス",
+    "wikiLang": "ja",
+    "wikiEn": "Las Meninas",
+    "license": "パブリックドメイン"
+  },
+  "caravaggio-judith-holofernes": {
+    "artist": "カラヴァッジョ",
+    "title": "ホロフェルネスの首を斬るユディト",
+    "year": "1599 — 1602年ごろ",
+    "collection": "バルベリーニ宮国立古代美術館（ローマ）",
+    "commons": "Caravaggio Judith Beheading Holofernes.jpg",
+    "wiki": "ホロフェルネスの首を斬るユディト (カラヴァッジョ)",
+    "wikiLang": "ja",
+    "wikiEn": "Judith Beheading Holofernes (Caravaggio)",
+    "license": "パブリックドメイン"
+  },
+  "borromini-san-carlino": {
+    "artist": "フランチェスコ・ボッロミーニ",
+    "title": "サン・カルロ・アッレ・クアットロ・フォンターネ聖堂",
+    "year": "1638 — 1667年",
+    "collection": "ローマ",
+    "commons": "San Carlo alle Quattro Fontane, Rome.jpg",
+    "wiki": "サン・カルロ・アッレ・クアットロ・フォンターネ聖堂",
+    "wikiLang": "ja",
+    "wikiEn": "San Carlo alle Quattro Fontane",
+    "license": "パブリックドメイン"
+  },
+  "rubens-leucippus": {
+    "artist": "ペーテル・パウル・ルーベンス",
+    "title": "レウキッポスの娘たちの略奪",
+    "year": "1618年ごろ",
+    "collection": "アルテ・ピナコテーク（ミュンヘン）",
+    "commons": "Peter Paul Rubens - The Rape of the Daughters of Leucippus.jpg",
+    "wiki": "レウキッポスの娘たちの略奪",
+    "wikiLang": "ja",
+    "wikiEn": "The Rape of the Daughters of Leucippus",
+    "license": "パブリックドメイン"
+  },
+  "velazquez-surrender-of-breda": {
+    "artist": "ディエゴ・ベラスケス",
+    "title": "ブレダの開城",
+    "year": "1634 — 1635年",
+    "collection": "プラド美術館（マドリード）",
+    "commons": "Velázquez - de Breda o Las Lanzas (Museo del Prado, 1634-35).jpg",
+    "wiki": "ブレダの開城",
+    "wikiLang": "ja",
+    "wikiEn": "The Surrender of Breda",
+    "license": "パブリックドメイン"
+  },
+  "zurbaran-agnus-dei": {
+    "artist": "フランシスコ・デ・スルバラン",
+    "title": "神の子羊",
+    "year": "1635 — 1640年ごろ",
+    "collection": "プラド美術館（マドリード）",
+    "commons": "Zurbarán Agnus Dei.jpg",
+    "wiki": "神の子羊 (スルバラン)",
+    "wikiLang": "ja",
+    "wikiEn": "Agnus Dei (Zurbarán)",
+    "license": "パブリックドメイン"
+  }
 }
