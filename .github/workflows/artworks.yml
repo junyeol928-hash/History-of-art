@@ -36,6 +36,43 @@ jobs:
       - name: Wikimedia から画像を取得する
         run: node tools/fetch-artworks.mjs ${{ inputs.force && '--force' || '' }}
 
+      - name: 画像の幅と画質をそろえる
+        run: |
+          python3 -m pip install --quiet Pillow
+          python3 - <<'EOF'
+          from PIL import Image
+          import glob, os
+          Image.MAX_IMAGE_PIXELS = None
+          MAXW, Q = 1400, 82
+          before = after = 0
+          for p in sorted(glob.glob('assets/artworks/*')):
+              ext = os.path.splitext(p)[1].lower()
+              b = os.path.getsize(p); before += b
+              if ext == '.svg':
+                  after += b; continue
+              try:
+                  im = Image.open(p); w, h = im.size
+                  changed = False
+                  if w > MAXW:
+                      im = im.resize((MAXW, round(h * MAXW / w)), Image.LANCZOS); changed = True
+                  if im.mode not in ('RGB', 'L'):
+                      im = im.convert('RGB'); changed = True
+                  out = os.path.splitext(p)[0] + '.jpg'
+                  if changed or b > 700*1024 or ext != '.jpg':
+                      im.save(out, 'JPEG', quality=Q, optimize=True, progressive=True)
+                      if out != p: os.remove(p)
+                  after += os.path.getsize(out)
+              except Exception as e:
+                  print('変換できず:', p, e); after += b
+          print(f'{before/1e6:.0f}MB -> {after/1e6:.0f}MB')
+          EOF
+          node -e "
+            const fs=require('fs');
+            const ids=fs.readdirSync('assets/artworks').map(f=>f.replace(/\.[^.]+$/,'')).sort();
+            fs.writeFileSync('data/artworks-baked.json', JSON.stringify([...new Set(ids)], null, 1));
+            console.log('baked', ids.length);
+          "
+
       - name: 取得した画像をコミットする
         run: |
           git config user.name  "github-actions[bot]"
