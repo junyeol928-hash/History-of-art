@@ -6,6 +6,7 @@
      node tools/fetch-artworks.mjs --force   … 全部取り直す
    ========================================================================= */
 import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, statSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 
 const UA = 'ArtHistoryStaticSite/1.0 (https://github.com/junyeol928-hash/History-of-art; educational)';
 const OUT = 'assets/artworks';
@@ -144,6 +145,23 @@ function alreadyHave(id) {
   return null;
 }
 
+/* 別々の作品なのに同じ写真が返ってくることがある。
+   ファイル名が違っていて、記事の代表画像に落ちたときだ。
+   縄文の土偶5点が全部おなじ遮光器土偶になっていた。
+   間違った写真は、写真がないことより悪い。だから中身のハッシュで弾く。 */
+const seen = new Map();   // sha1 → 先に取れたID
+const dup = [];
+const sha = (b) => createHash('sha1').update(b).digest('hex');
+for (const e of ['jpg', 'png', 'webp', 'svg']) {
+  for (const id of ids) {
+    const p = `${OUT}/${id}.${e}`;
+    if (existsSync(p) && statSync(p).size > 3000) {
+      const h = sha(readFileSync(p));
+      if (!seen.has(h)) seen.set(h, id);
+    }
+  }
+}
+
 console.log(`マニフェスト ${ids.length} 件\n`);
 
 for (const id of ids) {
@@ -155,7 +173,7 @@ for (const id of ids) {
 
   const attempts = [];
   if (m.commons) attempts.push(['Commons(名指し)', () => viaCommons(m.commons)]);
-  const q = [m.wikiEn, m.artistEn, m.artist].filter(Boolean).join(' ');
+  const q = [m.titleEn, m.wikiEn, m.artistEn].filter(Boolean).join(' ');
   if (q) attempts.push(['Commons(検索)', () => viaCommonsSearch(q)]);
   if (m.wikiEn)  attempts.push(['en.wikipedia', () => viaWikipedia('en', m.wikiEn)]);
   if (m.wiki)    attempts.push([`${m.wikiLang || 'ja'}.wikipedia`, () => viaWikipedia(m.wikiLang || 'ja', m.wiki)]);
@@ -170,12 +188,28 @@ for (const id of ids) {
       const sized = await downloadSized(got.url, got.mime);
       const w = await widthOf(sized.buf);
       if (!best || w > best.w) best = { ...sized, mime: got.mime, w, label };
+      /* 名指しのファイルが十分な大きさで取れたら、そこで打ち切る。
+         検索は「その作家の代表作」を返してくるので、名指しより大きいことがある。
+         大きさで選ぶと、別の作品にすり替わる。名指しのほうが常に正しい。 */
+      if (label === 'Commons(名指し)' && w >= 1200) break;
       // 十分な大きさが取れたら、それ以上は探さない
       if (w >= GOOD_ENOUGH) break;
     } catch (e) {
       errors.push(`${label}: ${e.message}`);
     }
     await sleep(150);
+  }
+
+  if (best) {
+    const h = sha(best.buf);
+    const owner = seen.get(h);
+    if (owner && owner !== id) {
+      console.log(`✗ ${id}  ${owner} と同じ写真が返った（取り違え）`);
+      dup.push({ id, owner, artist: m.artist, title: m.title });
+      best = null;
+    } else {
+      seen.set(h, id);
+    }
   }
 
   const done = !!best;
@@ -201,6 +235,11 @@ console.log(`\n─────────────────────�
 console.log(`取得できた: ${ok.length} / ${ids.length}`);
 console.log(`取得できなかった: ${failed.length}`);
 console.log(`取れたが幅1200px未満: ${small.length}`);
+console.log(`取り違え（他と同じ写真）: ${dup.length}`);
+if (dup.length) {
+  console.log(`\n別作品と同じ写真が返ったもの（commons 名を名指しで直してください）:`);
+  dup.forEach((d) => console.log(`  ${d.id}  ← ${d.owner} と同一  ${d.artist ?? ''}《${d.title ?? ''}》`));
+}
 if (small.length) {
   console.log(`\n解像度が足りない作品（マニフェストの commons 名を直すと改善します）:`);
   small.sort((a, b) => a.w - b.w).forEach((s2) =>
@@ -218,11 +257,17 @@ if (process.env.GITHUB_STEP_SUMMARY) {
     `- 取得できた: **${ok.length} / ${ids.length}**`,
     `- 取得できなかった: **${failed.length}**`,
     `- 取れたが幅1200px未満: **${small.length}**`, ``,
+    `- 取り違え（他と同じ写真）: **${dup.length}**`, ``,
   ];
   if (small.length) {
     lines.push(`### 解像度が足りないもの`, ``, `| 幅 | ID | 作品 |`, `|---|---|---|`);
     small.sort((a, b) => a.w - b.w).forEach((s2) =>
       lines.push(`| ${s2.w}px | \`${s2.id}\` | ${s2.artist ?? ''}《${s2.title ?? ''}》 |`));
+    lines.push(``);
+  }
+  if (dup.length) {
+    lines.push(`### 別作品と同じ写真が返ったもの`, ``, `| ID | 同じだった相手 | 作品 |`, `|---|---|---|`);
+    dup.forEach((d) => lines.push(`| \`${d.id}\` | \`${d.owner}\` | ${d.artist ?? ''}《${d.title ?? ''}》 |`));
     lines.push(``);
   }
   if (failed.length) {
