@@ -1,145 +1,145 @@
 {
- "mihrab-imami": {
-  "artist": "作者不詳（イスファハーンのタイル工房）",
-  "title": "ミフラーブ（マドラサ・イマーミー旧蔵）",
-  "year": "1354 — 1355年",
-  "collection": "モザイクタイル 高さ約343 cm メトロポリタン美術館（ニューヨーク）",
-  "commons": "Mihrab Metropolitan Museum.jpg",
-  "wiki": "ミフラーブ",
-  "wikiLang": "ja",
-  "wikiEn": "Mihrab",
-  "license": "パブリックドメイン"
- },
- "iznik-rustem-pasha": {
-  "artist": "作者不詳（イズニックの陶工）",
-  "title": "リュステム・パシャ・モスクのタイル壁面",
-  "year": "1561 — 1563年",
-  "collection": "イズニック陶タイル イスタンブール（トルコ）",
-  "commons": "Rüstem Pasha Mosque tiles.jpg",
-  "wiki": "イズニック陶器",
-  "wikiLang": "ja",
-  "wikiEn": "Rüstem Pasha Mosque",
-  "license": "パブリックドメイン"
- },
- "blue-quran": {
-  "artist": "作者不詳（マグリブまたはイベリアの写本工房）",
-  "title": "青のクルアーン（ブルー・クルアーン）",
-  "year": "9 — 10世紀",
-  "collection": "藍染羊皮紙・金 クーフィー体 各地に分蔵（バルドー博物館ほか）",
-  "commons": "Blue Quran.jpg",
-  "wiki": "クルアーン",
-  "wikiLang": "ja",
-  "wikiEn": "Blue Qur'an",
-  "license": "パブリックドメイン"
- },
- "ibn-bawwab-quran": {
-  "artist": "イブン・アル＝バウワーブ",
-  "title": "クルアーン写本",
-  "year": "1000 — 1001年",
-  "collection": "紙本・墨・金 チェスター・ビーティー・ライブラリー（ダブリン）",
-  "commons": "Ibn al-Bawwab Quran.jpg",
-  "wiki": "イブン・アル＝バウワーブ",
-  "wikiLang": "ja",
-  "wikiEn": "Ibn al-Bawwab",
-  "license": "パブリックドメイン"
- },
- "alhambra-two-sisters": {
-  "artist": "作者不詳（ナスル朝の宮廷工房）",
-  "title": "アルハンブラ宮殿 二姉妹の間 ムカルナス天井",
-  "year": "1360年代",
-  "collection": "漆喰・木 グラナダ（スペイン）",
-  "commons": "Sala de Dos Hermanas, Alhambra, Granada.jpg",
-  "wiki": "アルハンブラ宮殿",
-  "wikiLang": "ja",
-  "wikiEn": "Alhambra",
-  "license": "パブリックドメイン"
- },
- "alhambra-lions-court": {
-  "artist": "ムハンマド5世の造営（ナスル朝）",
-  "title": "アルハンブラ宮殿 ライオンの中庭",
-  "year": "1362 — 1391年",
-  "collection": "大理石の細柱124本 グラナダ（スペイン）",
-  "commons": "Patio de los Leones, Alhambra, Granada.jpg",
-  "wiki": "アルハンブラ宮殿",
-  "wikiLang": "ja",
-  "wikiEn": "Court of the Lions",
-  "license": "パブリックドメイン"
- },
- "dome-of-the-rock": {
-  "artist": "カリフ・アブドゥルマリクの造営（ウマイヤ朝）",
-  "title": "岩のドーム",
-  "year": "691年",
-  "collection": "石造・木造ドーム 外径約20 m エルサレム",
-  "commons": "Jerusalem-2013(2)-Temple Mount-Dome of the Rock (SE exposure).jpg",
-  "wiki": "岩のドーム",
-  "wikiLang": "ja",
-  "wikiEn": "Dome of the Rock",
-  "license": "パブリックドメイン"
- },
- "mezquita-cordoba": {
-  "artist": "アブド・アッラフマーン1世 以下四代の造営",
-  "title": "コルドバの大モスク（メスキータ）内部",
-  "year": "785年 — 10世紀末",
-  "collection": "石造 二重アーチの列柱 現存約850本 コルドバ（スペイン）",
-  "commons": "Mosque Cordoba.jpg",
-  "wiki": "メスキータ",
-  "wikiLang": "ja",
-  "wikiEn": "Mosque–Cathedral of Córdoba",
-  "license": "パブリックドメイン"
- },
- "suleymaniye-mosque": {
-  "artist": "ミマール・シナン",
-  "title": "スレイマニエ・モスク",
-  "year": "1550 — 1557年",
-  "collection": "石造 主ドーム径約26.5 m 頂高約53 m イスタンブール（トルコ）",
-  "commons": "Suleymaniye Mosque Istanbul.jpg",
-  "wiki": "スレイマニエ・モスク",
-  "wikiLang": "ja",
-  "wikiEn": "Süleymaniye Mosque",
-  "license": "パブリックドメイン"
- },
- "sinan-selimiye": {
-  "artist": "ミマール・シナン",
-  "title": "セリミエ・モスク",
-  "year": "1568 — 1575年",
-  "collection": "石造 主ドーム径約31.3 m エディルネ（トルコ）",
-  "commons": "Selimiye Mosque Edirne.jpg",
-  "wiki": "セリミエ・モスク",
-  "wikiLang": "ja",
-  "wikiEn": "Selimiye Mosque",
-  "license": "パブリックドメイン"
- },
- "lustre-bowl-kashan": {
-  "artist": "作者不詳（カーシャーンの陶工）",
-  "title": "ラスター彩鉢",
-  "year": "13世紀初頭",
-  "collection": "フリット陶・ラスター彩 径約20 cm",
-  "commons": "Lustre bowl Kashan.jpg",
-  "wiki": "ラスター彩",
-  "wikiLang": "ja",
-  "wikiEn": "Lustreware",
-  "license": "パブリックドメイン"
- },
- "iznik-mosque-lamp": {
-  "artist": "作者不詳（イズニックの陶工）",
-  "title": "モスク・ランプ（岩のドーム伝来）",
-  "year": "1549年",
-  "collection": "フリット陶 高さ約38 cm 大英博物館（ロンドン）",
-  "commons": "Iznik mosque lamp British Museum.jpg",
-  "wiki": "イズニック陶器",
-  "wikiLang": "ja",
-  "wikiEn": "İznik pottery",
-  "license": "パブリックドメイン"
- },
- "ardabil-carpet": {
-  "artist": "マクスード・カーシャーニー（銘）",
-  "title": "アルデビール絨毯",
-  "year": "1539 — 1540年",
-  "collection": "絹の経に羊毛の結び 約10.5 × 5.3 m ヴィクトリア・アンド・アルバート博物館（ロンドン）",
-  "commons": "Ardabil Carpet.jpg",
-  "wiki": "アルデビール絨毯",
-  "wikiLang": "ja",
-  "wikiEn": "Ardabil Carpet",
-  "license": "パブリックドメイン"
- }
+  "mihrab-imami": {
+    "artist": "作者不詳（イスファハーンのタイル工房）",
+    "title": "ミフラーブ（マドラサ・イマーミー旧蔵）",
+    "year": "1354 — 1355年",
+    "collection": "モザイクタイル 高さ約343 cm メトロポリタン美術館（ニューヨーク）",
+    "commons": "Mihrab (Prayer Niche) dated 755 AH (1354–55 CE) Madrasa Imami, Isfahan (Abu Ishaq, Injuid period). Metropolitan Museum of Art.jpg",
+    "wiki": "ミフラーブ",
+    "wikiLang": "ja",
+    "wikiEn": "Mihrab",
+    "license": "パブリックドメイン"
+  },
+  "iznik-rustem-pasha": {
+    "artist": "作者不詳（イズニックの陶工）",
+    "title": "リュステム・パシャ・モスクのタイル壁面",
+    "year": "1561 — 1563年",
+    "collection": "イズニック陶タイル イスタンブール（トルコ）",
+    "commons": "Rüstem Pasha Mosque tiles.jpg",
+    "wiki": "イズニック陶器",
+    "wikiLang": "ja",
+    "wikiEn": "Rüstem Pasha Mosque",
+    "license": "パブリックドメイン"
+  },
+  "blue-quran": {
+    "artist": "作者不詳（マグリブまたはイベリアの写本工房）",
+    "title": "青のクルアーン（ブルー・クルアーン）",
+    "year": "9 — 10世紀",
+    "collection": "藍染羊皮紙・金 クーフィー体 各地に分蔵（バルドー博物館ほか）",
+    "commons": "Blue Quran.jpg",
+    "wiki": "クルアーン",
+    "wikiLang": "ja",
+    "wikiEn": "Blue Qur'an",
+    "license": "パブリックドメイン"
+  },
+  "ibn-bawwab-quran": {
+    "artist": "イブン・アル＝バウワーブ",
+    "title": "クルアーン写本",
+    "year": "1000 — 1001年",
+    "collection": "紙本・墨・金 チェスター・ビーティー・ライブラリー（ダブリン）",
+    "commons": "Ibn al-Bawwab - Qurʾan f. 278v-279r.jpg",
+    "wiki": "イブン・アル＝バウワーブ",
+    "wikiLang": "ja",
+    "wikiEn": "Ibn al-Bawwab",
+    "license": "パブリックドメイン"
+  },
+  "alhambra-two-sisters": {
+    "artist": "作者不詳（ナスル朝の宮廷工房）",
+    "title": "アルハンブラ宮殿 二姉妹の間 ムカルナス天井",
+    "year": "1360年代",
+    "collection": "漆喰・木 グラナダ（スペイン）",
+    "commons": "Cúpula de la sala de las Dos Hermanas (Alhambra, Granada).jpg",
+    "wiki": "アルハンブラ宮殿",
+    "wikiLang": "ja",
+    "wikiEn": "Alhambra",
+    "license": "パブリックドメイン"
+  },
+  "alhambra-lions-court": {
+    "artist": "ムハンマド5世の造営（ナスル朝）",
+    "title": "アルハンブラ宮殿 ライオンの中庭",
+    "year": "1362 — 1391年",
+    "collection": "大理石の細柱124本 グラナダ（スペイン）",
+    "commons": "Patio de los Leones, Alhambra, Granada.jpg",
+    "wiki": "アルハンブラ宮殿",
+    "wikiLang": "ja",
+    "wikiEn": "Court of the Lions",
+    "license": "パブリックドメイン"
+  },
+  "dome-of-the-rock": {
+    "artist": "カリフ・アブドゥルマリクの造営（ウマイヤ朝）",
+    "title": "岩のドーム",
+    "year": "691年",
+    "collection": "石造・木造ドーム 外径約20 m エルサレム",
+    "commons": "Jerusalem-2013(2)-Temple Mount-Dome of the Rock (SE exposure).jpg",
+    "wiki": "岩のドーム",
+    "wikiLang": "ja",
+    "wikiEn": "Dome of the Rock",
+    "license": "パブリックドメイン"
+  },
+  "mezquita-cordoba": {
+    "artist": "アブド・アッラフマーン1世 以下四代の造営",
+    "title": "コルドバの大モスク（メスキータ）内部",
+    "year": "785年 — 10世紀末",
+    "collection": "石造 二重アーチの列柱 現存約850本 コルドバ（スペイン）",
+    "commons": "Mosque Cordoba.jpg",
+    "wiki": "メスキータ",
+    "wikiLang": "ja",
+    "wikiEn": "Mosque–Cathedral of Córdoba",
+    "license": "パブリックドメイン"
+  },
+  "suleymaniye-mosque": {
+    "artist": "ミマール・シナン",
+    "title": "スレイマニエ・モスク",
+    "year": "1550 — 1557年",
+    "collection": "石造 主ドーム径約26.5 m 頂高約53 m イスタンブール（トルコ）",
+    "commons": "Suleymaniye Mosque Istanbul.jpg",
+    "wiki": "スレイマニエ・モスク",
+    "wikiLang": "ja",
+    "wikiEn": "Süleymaniye Mosque",
+    "license": "パブリックドメイン"
+  },
+  "sinan-selimiye": {
+    "artist": "ミマール・シナン",
+    "title": "セリミエ・モスク",
+    "year": "1568 — 1575年",
+    "collection": "石造 主ドーム径約31.3 m エディルネ（トルコ）",
+    "commons": "Selimiye camii panorama.jpg",
+    "wiki": "セリミエ・モスク",
+    "wikiLang": "ja",
+    "wikiEn": "Selimiye Mosque",
+    "license": "パブリックドメイン"
+  },
+  "lustre-bowl-kashan": {
+    "artist": "作者不詳（カーシャーンの陶工）",
+    "title": "ラスター彩鉢",
+    "year": "13世紀初頭",
+    "collection": "フリット陶・ラスター彩 径約20 cm",
+    "commons": "Bowl with horse and rider from Kashan, Iran, late 12th to early 13th century, HAA.JPG",
+    "wiki": "ラスター彩",
+    "wikiLang": "ja",
+    "wikiEn": "Lustreware",
+    "license": "パブリックドメイン"
+  },
+  "iznik-mosque-lamp": {
+    "artist": "作者不詳（イズニックの陶工）",
+    "title": "モスク・ランプ（岩のドーム伝来）",
+    "year": "1549年",
+    "collection": "フリット陶 高さ約38 cm 大英博物館（ロンドン）",
+    "commons": "Iznik mosque lamp dated 1549.jpg",
+    "wiki": "イズニック陶器",
+    "wikiLang": "ja",
+    "wikiEn": "İznik pottery",
+    "license": "パブリックドメイン"
+  },
+  "ardabil-carpet": {
+    "artist": "マクスード・カーシャーニー（銘）",
+    "title": "アルデビール絨毯",
+    "year": "1539 — 1540年",
+    "collection": "絹の経に羊毛の結び 約10.5 × 5.3 m ヴィクトリア・アンド・アルバート博物館（ロンドン）",
+    "commons": "Ardabil Carpet.jpg",
+    "wiki": "アルデビール絨毯",
+    "wikiLang": "ja",
+    "wikiEn": "Ardabil Carpet",
+    "license": "パブリックドメイン"
+  }
 }

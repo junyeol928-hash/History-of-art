@@ -1,101 +1,101 @@
 {
- "loos-looshaus": {
-  "artist": "アドルフ・ロース",
-  "title": "ロースハウス",
-  "year": "1910 — 1912年",
-  "collection": "店舗併用建築　ミヒャエル広場（ウィーン）　現存・内部は銀行として公開",
-  "commons": "Wien - Looshaus.JPG",
-  "wiki": "ロースハウス",
-  "wikiLang": "ja",
-  "wikiEn": "Looshaus",
-  "license": "パブリックドメイン（設計者没後70年経過）"
- },
- "behrens-aeg-turbine": {
-  "artist": "ペーター・ベーレンス",
-  "title": "AEGタービン工場",
-  "year": "1909年",
-  "collection": "鉄骨・ガラス・コンクリート　ベルリン・モアビート地区（現存）",
-  "commons": "AEG Turbinenfabrik.jpg",
-  "wiki": "AEGタービン工場",
-  "wikiLang": "ja",
-  "wikiEn": "AEG turbine factory",
-  "license": "パブリックドメイン（設計者没後70年経過）"
- },
- "gropius-fagus-factory": {
-  "artist": "ヴァルター・グロピウス／アドルフ・マイヤー",
-  "title": "ファグス靴型工場",
-  "year": "1911年",
-  "collection": "鉄骨・ガラス・煉瓦　アルフェルト（ドイツ）　ユネスコ世界遺産",
-  "commons": "Fagus Gropius Hauptgebaeude 200705 wiki front.jpg",
-  "wiki": "ファグス靴工場",
-  "wikiLang": "ja",
-  "wikiEn": "Fagus Factory",
-  "license": "屋外の建築物（自由利用）"
- },
- "doesburg-counter-composition-v": {
-  "artist": "テオ・ファン・ドゥースブルフ",
-  "title": "反構成 V",
-  "year": "1924年",
-  "collection": "油彩・カンヴァス　116 × 116 cm　アムステルダム市立美術館（オランダ）",
-  "commons": "Theo van Doesburg Counter-CompositionV (1924).jpg",
-  "wiki": "テオ・ファン・ドゥースブルフ",
-  "wikiLang": "ja",
-  "wikiEn": "Theo van Doesburg",
-  "license": "パブリックドメイン（作者1931年没）"
- },
- "rietveld-schroder-house": {
-  "artist": "ヘリット・リートフェルト",
-  "title": "シュレーダー邸",
-  "year": "1924年",
-  "collection": "住宅建築　ユトレヒト（オランダ）　ユネスコ世界遺産・予約制で内部見学可",
-  "commons": "Rietveld-SchroderhuisUtrechttheNetherlands.jpg",
-  "wiki": "シュレーダー邸",
-  "wikiLang": "ja",
-  "wikiEn": "Rietveld Schröder House",
-  "license": "屋外の建築物（自由利用）"
- },
- "tatlin-tower-model": {
-  "artist": "ウラジーミル・タトリン",
-  "title": "第三インターナショナル記念塔（模型）",
-  "year": "1920年",
-  "collection": "木・鉄・針金による模型　高さ約5メートル　1920年にペトログラードとモスクワで公開（現存する模型は各地の再制作）",
-  "commons": "Tatlin's Tower maket 1919 year.jpg",
-  "wiki": "第三インターナショナル記念塔",
-  "wikiLang": "ja",
-  "wikiEn": "Tatlin's Tower",
-  "license": "パブリックドメイン"
- },
- "lissitzky-red-wedge": {
-  "artist": "エル・リシツキー",
-  "title": "赤い楔で白を撃て",
-  "year": "1919年",
-  "collection": "リトグラフによるポスター　約53 × 71 cm　ヴィテブスクで制作。各国の美術館に刷りが分蔵",
-  "commons": "Klinom krasnym bej belych.png",
-  "wiki": "エル・リシツキー",
-  "wikiLang": "ja",
-  "wikiEn": "Beat the Whites with the Red Wedge",
-  "license": "パブリックドメイン"
- },
- "lissitzky-proun": {
-  "artist": "エル・リシツキー",
-  "title": "プロウン",
-  "year": "1920 — 1923年",
-  "collection": "油彩・厚紙ほか　アムステルダム市立美術館、トレチャコフ美術館ほか",
-  "commons": "Lissitzky Proun 19D.jpg",
-  "wiki": "プロウン",
-  "wikiLang": "ja",
-  "wikiEn": "Proun",
-  "license": "パブリックドメイン"
- },
- "bauhaus-dessau-building": {
-  "artist": "ヴァルター・グロピウス",
-  "title": "バウハウス・デッサウ校舎",
-  "year": "1926年",
-  "collection": "鉄筋コンクリート・ガラス　デッサウ（ドイツ）　ユネスコ世界遺産・見学および宿泊が可能",
-  "commons": "Bauhaus-Dessau main building.jpg",
-  "wiki": "バウハウス",
-  "wikiLang": "ja",
-  "wikiEn": "Bauhaus Dessau Foundation",
-  "license": "屋外の建築物（自由利用）"
- }
+  "loos-looshaus": {
+    "artist": "アドルフ・ロース",
+    "title": "ロースハウス",
+    "year": "1910 — 1912年",
+    "collection": "店舗併用建築　ミヒャエル広場（ウィーン）　現存・内部は銀行として公開",
+    "commons": "Wien - Looshaus.JPG",
+    "wiki": "ロースハウス",
+    "wikiLang": "ja",
+    "wikiEn": "Looshaus",
+    "license": "パブリックドメイン（設計者没後70年経過）"
+  },
+  "behrens-aeg-turbine": {
+    "artist": "ペーター・ベーレンス",
+    "title": "AEGタービン工場",
+    "year": "1909年",
+    "collection": "鉄骨・ガラス・コンクリート　ベルリン・モアビート地区（現存）",
+    "commons": "AEG Turbinenfabrik.jpg",
+    "wiki": "AEGタービン工場",
+    "wikiLang": "ja",
+    "wikiEn": "AEG turbine factory",
+    "license": "パブリックドメイン（設計者没後70年経過）"
+  },
+  "gropius-fagus-factory": {
+    "artist": "ヴァルター・グロピウス／アドルフ・マイヤー",
+    "title": "ファグス靴型工場",
+    "year": "1911年",
+    "collection": "鉄骨・ガラス・煉瓦　アルフェルト（ドイツ）　ユネスコ世界遺産",
+    "commons": "Fagus Gropius Hauptgebaeude 200705 wiki front.jpg",
+    "wiki": "ファグス靴工場",
+    "wikiLang": "ja",
+    "wikiEn": "Fagus Factory",
+    "license": "屋外の建築物（自由利用）"
+  },
+  "doesburg-counter-composition-v": {
+    "artist": "テオ・ファン・ドゥースブルフ",
+    "title": "反構成 V",
+    "year": "1924年",
+    "collection": "油彩・カンヴァス　116 × 116 cm　アムステルダム市立美術館（オランダ）",
+    "commons": "Theo van Doesburg Counter-CompositionV (1924).jpg",
+    "wiki": "テオ・ファン・ドゥースブルフ",
+    "wikiLang": "ja",
+    "wikiEn": "Theo van Doesburg",
+    "license": "パブリックドメイン（作者1931年没）"
+  },
+  "rietveld-schroder-house": {
+    "artist": "ヘリット・リートフェルト",
+    "title": "シュレーダー邸",
+    "year": "1924年",
+    "collection": "住宅建築　ユトレヒト（オランダ）　ユネスコ世界遺産・予約制で内部見学可",
+    "commons": "Rietveld-SchroderhuisUtrechttheNetherlands.jpg",
+    "wiki": "シュレーダー邸",
+    "wikiLang": "ja",
+    "wikiEn": "Rietveld Schröder House",
+    "license": "屋外の建築物（自由利用）"
+  },
+  "tatlin-tower-model": {
+    "artist": "ウラジーミル・タトリン",
+    "title": "第三インターナショナル記念塔（模型）",
+    "year": "1920年",
+    "collection": "木・鉄・針金による模型　高さ約5メートル　1920年にペトログラードとモスクワで公開（現存する模型は各地の再制作）",
+    "commons": "Tatlin's Tower maket 1919 year.jpg",
+    "wiki": "第三インターナショナル記念塔",
+    "wikiLang": "ja",
+    "wikiEn": "Tatlin's Tower",
+    "license": "パブリックドメイン"
+  },
+  "lissitzky-red-wedge": {
+    "artist": "エル・リシツキー",
+    "title": "赤い楔で白を撃て",
+    "year": "1919年",
+    "collection": "リトグラフによるポスター　約53 × 71 cm　ヴィテブスクで制作。各国の美術館に刷りが分蔵",
+    "commons": "Klinom krasnym bej belych.png",
+    "wiki": "エル・リシツキー",
+    "wikiLang": "ja",
+    "wikiEn": "Beat the Whites with the Red Wedge",
+    "license": "パブリックドメイン"
+  },
+  "lissitzky-proun": {
+    "artist": "エル・リシツキー",
+    "title": "プロウン",
+    "year": "1920 — 1923年",
+    "collection": "油彩・厚紙ほか　アムステルダム市立美術館、トレチャコフ美術館ほか",
+    "commons": "El Lissitzky - Proun 5A.jpg",
+    "wiki": "プロウン",
+    "wikiLang": "ja",
+    "wikiEn": "Proun",
+    "license": "パブリックドメイン"
+  },
+  "bauhaus-dessau-building": {
+    "artist": "ヴァルター・グロピウス",
+    "title": "バウハウス・デッサウ校舎",
+    "year": "1926年",
+    "collection": "鉄筋コンクリート・ガラス　デッサウ（ドイツ）　ユネスコ世界遺産・見学および宿泊が可能",
+    "commons": "Bauhaus-Dessau main building.jpg",
+    "wiki": "バウハウス",
+    "wikiLang": "ja",
+    "wikiEn": "Bauhaus Dessau Foundation",
+    "license": "屋外の建築物（自由利用）"
+  }
 }

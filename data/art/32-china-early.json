@@ -1,112 +1,112 @@
 {
- "houmuwu-ding": {
-  "artist": "作者不詳（殷王室の工房）",
-  "title": "后母戊鼎（司母戊鼎）",
-  "year": "前13 — 前11世紀",
-  "collection": "青銅 高 133 cm 重量 832.84 kg 中国国家博物館（北京）",
-  "commons": "Houmuwu ding.jpg",
-  "wiki": "司母戊鼎",
-  "wikiLang": "ja",
-  "wikiEn": "Houmuwu ding",
-  "license": "パブリックドメイン"
- },
- "tiger-you-sennoku": {
-  "artist": "作者不詳（殷後期の工房）",
-  "title": "虎卣",
-  "year": "前12 — 前11世紀",
-  "collection": "青銅 高 35.7 cm 泉屋博古館（京都）",
-  "commons": "Tiger You Sen-oku Hakuko Kan.jpg",
-  "wiki": "虎卣",
-  "wikiLang": "ja",
-  "wikiEn": "Tiger You",
-  "license": "パブリックドメイン"
- },
- "terracotta-army": {
-  "artist": "秦の官営工房",
-  "title": "秦始皇帝陵 兵馬俑",
-  "year": "前3世紀後半",
-  "collection": "灰陶 等身大（170 — 200 cm） 約8000体 秦始皇帝陵博物院（西安）",
-  "commons": "Terracotta Army, View of Pit 1.jpg",
-  "wiki": "兵馬俑",
-  "wikiLang": "ja",
-  "wikiEn": "Terracotta Army",
-  "license": "パブリックドメイン"
- },
- "mawangdui-t-banner": {
-  "artist": "作者不詳",
-  "title": "馬王堆一号漢墓 T字形帛画",
-  "year": "前2世紀",
-  "collection": "絹本著色 縦 205 cm 湖南博物院（長沙）",
-  "commons": "Mawangdui silk banner from tomb no1.jpg",
-  "wiki": "馬王堆漢墓",
-  "wikiLang": "ja",
-  "wikiEn": "Mawangdui Han tombs site",
-  "license": "パブリックドメイン"
- },
- "lantingxu-fengchengsu": {
-  "artist": "王羲之（原本）／馮承素 模と伝わる",
-  "title": "蘭亭序 神龍半印本",
-  "year": "原本 353年／模本 7世紀",
-  "collection": "紙本墨書 24.5 × 69.9 cm 故宮博物院（北京）",
-  "commons": "Lantingji Xu by Feng Chengsu.jpg",
-  "wiki": "蘭亭序",
-  "wikiLang": "ja",
-  "wikiEn": "Lantingji Xu",
-  "license": "パブリックドメイン"
- },
- "nushi-zhen-tu": {
-  "artist": "顧愷之に帰せられる（唐代の模本）",
-  "title": "女史箴図巻",
-  "year": "原本 4世紀末／模本 7 — 8世紀",
-  "collection": "絹本著色 24.4 × 343.8 cm 大英博物館（ロンドン）",
-  "commons": "Admonitions Scroll Scene 4.jpg",
-  "wiki": "女史箴図",
-  "wikiLang": "ja",
-  "wikiEn": "Admonitions Scroll",
-  "license": "パブリックドメイン"
- },
- "yungang-cave20": {
-  "artist": "北魏の石工たち（曇曜の主導と伝わる）",
-  "title": "雲岡石窟 第20窟 露天大仏",
-  "year": "460年代",
-  "collection": "砂岩の彫成 坐像高 13.7 m 雲岡石窟（山西省大同）",
-  "commons": "Yungang Grottoes Cave 20.jpg",
-  "wiki": "雲崗石窟",
-  "wikiLang": "ja",
-  "wikiEn": "Yungang Grottoes",
-  "license": "パブリックドメイン"
- },
- "longmen-vairocana": {
-  "artist": "唐の石工たち",
-  "title": "龍門石窟 奉先寺 盧舎那仏",
-  "year": "675年",
-  "collection": "石灰岩の彫成 坐像高 17.14 m 龍門石窟（河南省洛陽）",
-  "commons": "Longmen Grottoes Vairocana Buddha.jpg",
-  "wiki": "龍門洞窟",
-  "wikiLang": "ja",
-  "wikiEn": "Longmen Grottoes",
-  "license": "パブリックドメイン"
- },
- "yan-zhenqing-jizhi": {
-  "artist": "顔真卿",
-  "title": "祭姪文稿",
-  "year": "758年",
-  "collection": "紙本墨書 28.2 × 75.5 cm 國立故宮博物院（台北）",
-  "commons": "Yan Zhenqing Ji Zhi Wen Gao.jpg",
-  "wiki": "祭姪文稿",
-  "wikiLang": "ja",
-  "wikiEn": "Draft of a Requiem to My Nephew",
-  "license": "パブリックドメイン"
- },
- "tang-sancai-camel": {
-  "artist": "作者不詳（唐の官営窯）",
-  "title": "三彩 駱駝載楽俑",
-  "year": "8世紀前半",
-  "collection": "鉛釉陶 高 約58 — 66 cm 中国国家博物館ほか（西安出土）",
-  "commons": "Tang Sancai camel.jpg",
-  "wiki": "唐三彩",
-  "wikiLang": "ja",
-  "wikiEn": "Sancai",
-  "license": "パブリックドメイン"
- }
+  "houmuwu-ding": {
+    "artist": "作者不詳（殷王室の工房）",
+    "title": "后母戊鼎（司母戊鼎）",
+    "year": "前13 — 前11世紀",
+    "collection": "青銅 高 133 cm 重量 832.84 kg 中国国家博物館（北京）",
+    "commons": "Houmuwu ding.jpg",
+    "wiki": "司母戊鼎",
+    "wikiLang": "ja",
+    "wikiEn": "Houmuwu ding",
+    "license": "パブリックドメイン"
+  },
+  "tiger-you-sennoku": {
+    "artist": "作者不詳（殷後期の工房）",
+    "title": "虎卣",
+    "year": "前12 — 前11世紀",
+    "collection": "青銅 高 35.7 cm 泉屋博古館（京都）",
+    "wiki": "虎卣",
+    "wikiLang": "ja",
+    "wikiEn": "Tiger You",
+    "license": "パブリックドメイン",
+    "noPhoto": "泉屋博古館の虎卣の写真がCommonsに無い。検索するとトラの写真が来る"
+  },
+  "terracotta-army": {
+    "artist": "秦の官営工房",
+    "title": "秦始皇帝陵 兵馬俑",
+    "year": "前3世紀後半",
+    "collection": "灰陶 等身大（170 — 200 cm） 約8000体 秦始皇帝陵博物院（西安）",
+    "commons": "Terracotta Army, View of Pit 1.jpg",
+    "wiki": "兵馬俑",
+    "wikiLang": "ja",
+    "wikiEn": "Terracotta Army",
+    "license": "パブリックドメイン"
+  },
+  "mawangdui-t-banner": {
+    "artist": "作者不詳",
+    "title": "馬王堆一号漢墓 T字形帛画",
+    "year": "前2世紀",
+    "collection": "絹本著色 縦 205 cm 湖南博物院（長沙）",
+    "commons": "Mawangdui silk banner from tomb no1.jpg",
+    "wiki": "馬王堆漢墓",
+    "wikiLang": "ja",
+    "wikiEn": "Mawangdui Han tombs site",
+    "license": "パブリックドメイン"
+  },
+  "lantingxu-fengchengsu": {
+    "artist": "王羲之（原本）／馮承素 模と伝わる",
+    "title": "蘭亭序 神龍半印本",
+    "year": "原本 353年／模本 7世紀",
+    "collection": "紙本墨書 24.5 × 69.9 cm 故宮博物院（北京）",
+    "commons": "神龍蘭亭序全.JPG",
+    "wiki": "蘭亭序",
+    "wikiLang": "ja",
+    "wikiEn": "Lantingji Xu",
+    "license": "パブリックドメイン"
+  },
+  "nushi-zhen-tu": {
+    "artist": "顧愷之に帰せられる（唐代の模本）",
+    "title": "女史箴図巻",
+    "year": "原本 4世紀末／模本 7 — 8世紀",
+    "collection": "絹本著色 24.4 × 343.8 cm 大英博物館（ロンドン）",
+    "commons": "Admonitions Scroll Scene 4.jpg",
+    "wiki": "女史箴図",
+    "wikiLang": "ja",
+    "wikiEn": "Admonitions Scroll",
+    "license": "パブリックドメイン"
+  },
+  "yungang-cave20": {
+    "artist": "北魏の石工たち（曇曜の主導と伝わる）",
+    "title": "雲岡石窟 第20窟 露天大仏",
+    "year": "460年代",
+    "collection": "砂岩の彫成 坐像高 13.7 m 雲岡石窟（山西省大同）",
+    "commons": "Yungang Grottoes Cave 20.jpg",
+    "wiki": "雲崗石窟",
+    "wikiLang": "ja",
+    "wikiEn": "Yungang Grottoes",
+    "license": "パブリックドメイン"
+  },
+  "longmen-vairocana": {
+    "artist": "唐の石工たち",
+    "title": "龍門石窟 奉先寺 盧舎那仏",
+    "year": "675年",
+    "collection": "石灰岩の彫成 坐像高 17.14 m 龍門石窟（河南省洛陽）",
+    "commons": "Longmen Grottoes Vairocana Buddha.jpg",
+    "wiki": "龍門洞窟",
+    "wikiLang": "ja",
+    "wikiEn": "Longmen Grottoes",
+    "license": "パブリックドメイン"
+  },
+  "yan-zhenqing-jizhi": {
+    "artist": "顔真卿",
+    "title": "祭姪文稿",
+    "year": "758年",
+    "collection": "紙本墨書 28.2 × 75.5 cm 國立故宮博物院（台北）",
+    "commons": "Yan Zhenqing Ji Zhi Wen Gao.jpg",
+    "wiki": "祭姪文稿",
+    "wikiLang": "ja",
+    "wikiEn": "Draft of a Requiem to My Nephew",
+    "license": "パブリックドメイン"
+  },
+  "tang-sancai-camel": {
+    "artist": "作者不詳（唐の官営窯）",
+    "title": "三彩 駱駝載楽俑",
+    "year": "8世紀前半",
+    "collection": "鉛釉陶 高 約58 — 66 cm 中国国家博物館ほか（西安出土）",
+    "commons": "20241025 Tri-Color Glazed Foreigner Figurine and Yellow Glazed Camel, Tang Dynasty.jpg",
+    "wiki": "唐三彩",
+    "wikiLang": "ja",
+    "wikiEn": "Sancai",
+    "license": "パブリックドメイン"
+  }
 }

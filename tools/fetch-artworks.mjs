@@ -31,7 +31,7 @@
    ・同じ Commons ファイルを二つの作品に配らない。
    ・報告は毎回すべてのIDについて出す。
    ========================================================================= */
-import { readFileSync, writeFileSync, existsSync, mkdirSync, statSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, mkdirSync, statSync, rmSync } from 'node:fs';
 
 const UA = 'ArtHistoryStaticSite/1.0 (https://github.com/junyeol928-hash/History-of-art; educational)';
 const OUT = 'assets/artworks';
@@ -280,9 +280,15 @@ const clash = [];
    以前は sha1 で弾いていたが、解像度が1段違うだけで別物になるので
    素通りしていた。等伯の《楓図》と《松林図》、パカル王の《翡翠の仮面》と
    《石棺蓋》が同じ写真になっていたのはこれだ。出所の名前で照合する。 */
+/* Commons はファイル名の下線と空白を同じものとして扱う。
+   en.wikipedia は下線つき、Commons は空白つきで返してくるので、
+   そろえないと同じ一枚を別ものと数えてしまう。
+   ラリベラの二つの岩窟教会に同じ写真が入っていたのがこれだった。 */
+const norm = (f) => String(f || '').replace(/_/g, ' ').trim();
+
 const usedFile = new Map();
 for (const id of ids) {
-  const f = prov[id]?.file;
+  const f = norm(prov[id]?.file);
   if (f && !usedFile.has(f)) usedFile.set(f, id);
 }
 
@@ -302,6 +308,23 @@ for (const id of targets) {
     if (!have) console.log(`✗ ${id}  画像なし`);
     else if (!p) console.log(`? ${id}  .${have} はあるが取得の記録がない（出所不明）`);
     else console.log(`= ${id}  .${have}  ${p.via}  ${p.file}`);
+    continue;
+  }
+
+  /* noPhoto は「Commons に使える写真が無いと確かめた」しるし。
+     commons を消しただけでは wiki 経由で別の写真が入ってくる。
+     虎卣（青銅器）に本物のトラが戻ってきたのはこれだった。
+     しるしがあるものは取りにいかず、前に入っていた写真も消す。
+     章に書かれた自作の図がそのまま出る。 */
+  if (m.noPhoto) {
+    for (const e of ['jpg', 'png', 'webp', 'svg']) {
+      const p = `${OUT}/${id}.${e}`;
+      if (existsSync(p)) rmSync(p);
+      const t = `${OUT}/thumb/${id}.${e}`;
+      if (existsSync(t)) rmSync(t);
+    }
+    delete prov[id];
+    console.log(`− ${id}  写真を使わない（${m.noPhoto}）`);
     continue;
   }
 
@@ -352,7 +375,7 @@ for (const id of targets) {
   }
 
   if (got) {
-    const owner = usedFile.get(got.file);
+    const owner = usedFile.get(norm(got.file));
     if (owner && owner !== id) {
       console.log(`✗ ${id}  ${owner} と同じファイル（${got.file}）が返った`);
       clash.push({ id, owner, file: got.file, artist: m.artist, title: m.title });
@@ -367,8 +390,8 @@ for (const id of targets) {
     // Aを直したあとも A の旧ファイルが台帳に残り、
     // そのファイルを正しく使うはずの B が「重複」として拒まれる
     const before = prov[id]?.file;
-    if (before && before !== got.file && usedFile.get(before) === id) usedFile.delete(before);
-    usedFile.set(got.file, id);
+    if (before && norm(before) !== norm(got.file) && usedFile.get(norm(before)) === id) usedFile.delete(norm(before));
+    usedFile.set(norm(got.file), id);
     prov[id] = { via: got.via, file: got.file, width: got.w, at: new Date().toISOString().slice(0, 10) };
     const warn = got.w && got.w < 1200 ? '  ← 小さい' : '';
     console.log(`✓ ${id}  ${got.via}  ${got.w}px  ${(got.buf.length / 1024).toFixed(0)}KB  ${got.file}${warn}`);

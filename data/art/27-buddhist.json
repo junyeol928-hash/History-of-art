@@ -1,145 +1,145 @@
 {
- "horyuji-shaka-triad": {
-  "artist": "鞍作止利（止利仏師）",
-  "title": "法隆寺金堂 釈迦三尊像",
-  "year": "623年",
-  "collection": "銅造鍍金 中尊像高 87.5 cm 法隆寺（奈良） 国宝",
-  "commons": "Shaka Triad of Horyuji.JPG",
-  "wiki": "法隆寺金堂釈迦三尊像",
-  "wikiLang": "ja",
-  "wikiEn": "Shaka Triad",
-  "license": "パブリックドメイン"
- },
- "kudara-kannon": {
-  "artist": "作者不詳",
-  "title": "木造観音菩薩立像（百済観音）",
-  "year": "7世紀",
-  "collection": "木造（クスノキ一材） 像高 約210 cm 法隆寺 大宝蔵院（奈良） 国宝",
-  "commons": "Kudara Kannon.jpg",
-  "wiki": "百済観音",
-  "wikiLang": "ja",
-  "wikiEn": "Kudara Kannon",
-  "license": "パブリックドメイン"
- },
- "koryuji-miroku": {
-  "artist": "作者不詳",
-  "title": "弥勒菩薩半跏思惟像（宝冠弥勒）",
-  "year": "7世紀",
-  "collection": "木造（アカマツ一材） 像高 123.3 cm 広隆寺 霊宝殿（京都） 国宝",
-  "commons": "Miroku Bosatsu Koryuji.JPG",
-  "wiki": "弥勒菩薩半跏思惟像 (広隆寺)",
-  "wikiLang": "ja",
-  "wikiEn": "Miroku Bosatsu (Kōryū-ji)",
-  "license": "パブリックドメイン"
- },
- "kofukuji-butsuto": {
-  "artist": "作者不詳",
-  "title": "銅造仏頭（旧山田寺講堂本尊）",
-  "year": "685年",
-  "collection": "銅造 像高 98.3 cm 興福寺 国宝館（奈良） 国宝",
-  "commons": "Kofukuji Buddha head.jpg",
-  "wiki": "銅造仏頭",
-  "wikiLang": "ja",
-  "wikiEn": "Kōfuku-ji",
-  "license": "パブリックドメイン"
- },
- "yakushiji-yakushi-triad": {
-  "artist": "作者不詳",
-  "title": "薬師寺金堂 薬師三尊像",
-  "year": "7世紀末 — 8世紀初",
-  "collection": "銅造 薬師如来坐像 像高 254.7 cm 薬師寺（奈良） 国宝",
-  "commons": "Yakushi Triad Yakushiji.JPG",
-  "wiki": "薬師寺",
-  "wikiLang": "ja",
-  "wikiEn": "Yakushi-ji",
-  "license": "パブリックドメイン"
- },
- "todaiji-daibutsu": {
-  "artist": "国中連公麻呂ら",
-  "title": "東大寺 盧舎那仏坐像（奈良の大仏）",
-  "year": "752年開眼",
-  "collection": "銅造 像高 約15 m 東大寺 金堂（奈良） 国宝",
-  "commons": "Todaiji18st3200.jpg",
-  "wiki": "東大寺盧舎那仏像",
-  "wikiLang": "ja",
-  "wikiEn": "Great Buddha of Nara",
-  "license": "パブリックドメイン"
- },
- "kofukuji-ashura": {
-  "artist": "作者不詳（興福寺西金堂の造仏所）",
-  "title": "興福寺 阿修羅像（八部衆立像のうち）",
-  "year": "734年",
-  "collection": "脱活乾漆造 像高 153.4 cm 興福寺 国宝館（奈良） 国宝",
-  "commons": "Ashura Kofukuji.JPG",
-  "wiki": "阿修羅像 (興福寺)",
-  "wikiLang": "ja",
-  "wikiEn": "Ashura (Kōfuku-ji)",
-  "license": "パブリックドメイン"
- },
- "ganjin-wajo": {
-  "artist": "作者不詳（弟子の忍基が造らせたと伝わる）",
-  "title": "唐招提寺 鑑真和上坐像",
-  "year": "763年ごろ",
-  "collection": "脱活乾漆造 像高 80.1 cm 唐招提寺（奈良） 国宝",
-  "commons": "Ganjin wajyo portrait.JPG",
-  "wiki": "鑑真",
-  "wikiLang": "ja",
-  "wikiEn": "Jianzhen",
-  "license": "パブリックドメイン"
- },
- "toji-fudo-myoo": {
-  "artist": "作者不詳（空海の構想による）",
-  "title": "東寺 講堂 不動明王坐像（立体曼荼羅のうち）",
-  "year": "839年",
-  "collection": "木造 東寺（教王護国寺・京都） 国宝",
-  "commons": "Fudo Myoo Toji.jpg",
-  "wiki": "不動明王",
-  "wikiLang": "ja",
-  "wikiEn": "Acala",
-  "license": "パブリックドメイン"
- },
- "toji-taishakuten": {
-  "artist": "作者不詳",
-  "title": "東寺 講堂 帝釈天騎象像",
-  "year": "839年",
-  "collection": "木造 像高 105.0 cm 東寺（教王護国寺・京都） 国宝",
-  "commons": "Taishakuten Toji.jpg",
-  "wiki": "帝釈天",
-  "wikiLang": "ja",
-  "wikiEn": "Shakra (Buddhism)",
-  "license": "パブリックドメイン"
- },
- "jocho-amida-byodoin": {
-  "artist": "定朝",
-  "title": "平等院鳳凰堂 阿弥陀如来坐像",
-  "year": "1053年",
-  "collection": "木造（寄木造）漆箔 像高 277.2 cm 平等院（京都・宇治） 国宝",
-  "commons": "Byodo-in Amida Nyorai.jpg",
-  "wiki": "平等院鳳凰堂阿弥陀如来坐像",
-  "wikiLang": "ja",
-  "wikiEn": "Jōchō",
-  "license": "パブリックドメイン"
- },
- "amida-raigo-koyasan": {
-  "artist": "作者不詳",
-  "title": "阿弥陀聖衆来迎図",
-  "year": "11世紀",
-  "collection": "絹本著色 三幅 有志八幡講十八箇院（高野山・和歌山） 国宝",
-  "commons": "Amida Raigo Koyasan.jpg",
-  "wiki": "阿弥陀聖衆来迎図",
-  "wikiLang": "ja",
-  "wikiEn": "Raigō",
-  "license": "パブリックドメイン"
- },
- "chusonji-konjikido": {
-  "artist": "奥州藤原氏の造営",
-  "title": "中尊寺 金色堂",
-  "year": "1124年",
-  "collection": "木造漆箔・螺鈿 中尊寺（岩手・平泉） 国宝",
-  "commons": "Konjikido Chusonji.jpg",
-  "wiki": "中尊寺金色堂",
-  "wikiLang": "ja",
-  "wikiEn": "Chūson-ji",
-  "license": "パブリックドメイン"
- }
+  "horyuji-shaka-triad": {
+    "artist": "鞍作止利（止利仏師）",
+    "title": "法隆寺金堂 釈迦三尊像",
+    "year": "623年",
+    "collection": "銅造鍍金 中尊像高 87.5 cm 法隆寺（奈良） 国宝",
+    "commons": "Shaka Triad of Horyuji.JPG",
+    "wiki": "法隆寺金堂釈迦三尊像",
+    "wikiLang": "ja",
+    "wikiEn": "Shaka Triad",
+    "license": "パブリックドメイン"
+  },
+  "kudara-kannon": {
+    "artist": "作者不詳",
+    "title": "木造観音菩薩立像（百済観音）",
+    "year": "7世紀",
+    "collection": "木造（クスノキ一材） 像高 約210 cm 法隆寺 大宝蔵院（奈良） 国宝",
+    "commons": "Kudara Kannon.jpg",
+    "wiki": "百済観音",
+    "wikiLang": "ja",
+    "wikiEn": "Kudara Kannon",
+    "license": "パブリックドメイン"
+  },
+  "koryuji-miroku": {
+    "artist": "作者不詳",
+    "title": "弥勒菩薩半跏思惟像（宝冠弥勒）",
+    "year": "7世紀",
+    "collection": "木造（アカマツ一材） 像高 123.3 cm 広隆寺 霊宝殿（京都） 国宝",
+    "commons": "Miroku Bosatsu Koryuji.JPG",
+    "wiki": "弥勒菩薩半跏思惟像 (広隆寺)",
+    "wikiLang": "ja",
+    "wikiEn": "Miroku Bosatsu (Kōryū-ji)",
+    "license": "パブリックドメイン"
+  },
+  "kofukuji-butsuto": {
+    "artist": "作者不詳",
+    "title": "銅造仏頭（旧山田寺講堂本尊）",
+    "year": "685年",
+    "collection": "銅造 像高 98.3 cm 興福寺 国宝館（奈良） 国宝",
+    "commons": "Buddha Head Yamadadera.JPG",
+    "wiki": "銅造仏頭",
+    "wikiLang": "ja",
+    "wikiEn": "Kōfuku-ji",
+    "license": "パブリックドメイン"
+  },
+  "yakushiji-yakushi-triad": {
+    "artist": "作者不詳",
+    "title": "薬師寺金堂 薬師三尊像",
+    "year": "7世紀末 — 8世紀初",
+    "collection": "銅造 薬師如来坐像 像高 254.7 cm 薬師寺（奈良） 国宝",
+    "commons": "Triad of Yakushi Nyorai.JPG",
+    "wiki": "薬師寺",
+    "wikiLang": "ja",
+    "wikiEn": "Yakushi-ji",
+    "license": "パブリックドメイン"
+  },
+  "todaiji-daibutsu": {
+    "artist": "国中連公麻呂ら",
+    "title": "東大寺 盧舎那仏坐像（奈良の大仏）",
+    "year": "752年開眼",
+    "collection": "銅造 像高 約15 m 東大寺 金堂（奈良） 国宝",
+    "commons": "Daibutsu Grand bouddha - Tōdai-ji - Nara.jpg",
+    "wiki": "東大寺盧舎那仏像",
+    "wikiLang": "ja",
+    "wikiEn": "Great Buddha of Nara",
+    "license": "パブリックドメイン"
+  },
+  "kofukuji-ashura": {
+    "artist": "作者不詳（興福寺西金堂の造仏所）",
+    "title": "興福寺 阿修羅像（八部衆立像のうち）",
+    "year": "734年",
+    "collection": "脱活乾漆造 像高 153.4 cm 興福寺 国宝館（奈良） 国宝",
+    "commons": "Ashura Kofukuji.JPG",
+    "wiki": "阿修羅像 (興福寺)",
+    "wikiLang": "ja",
+    "wikiEn": "Ashura (Kōfuku-ji)",
+    "license": "パブリックドメイン"
+  },
+  "ganjin-wajo": {
+    "artist": "作者不詳（弟子の忍基が造らせたと伝わる）",
+    "title": "唐招提寺 鑑真和上坐像",
+    "year": "763年ごろ",
+    "collection": "脱活乾漆造 像高 80.1 cm 唐招提寺（奈良） 国宝",
+    "commons": "Ganjin wajyo portrait.JPG",
+    "wiki": "鑑真",
+    "wikiLang": "ja",
+    "wikiEn": "Jianzhen",
+    "license": "パブリックドメイン"
+  },
+  "toji-fudo-myoo": {
+    "artist": "作者不詳（空海の構想による）",
+    "title": "東寺 講堂 不動明王坐像（立体曼荼羅のうち）",
+    "year": "839年",
+    "collection": "木造 東寺（教王護国寺・京都） 国宝",
+    "commons": "Fudo Myoo Toji.jpg",
+    "wiki": "不動明王",
+    "wikiLang": "ja",
+    "wikiEn": "Acala",
+    "license": "パブリックドメイン"
+  },
+  "toji-taishakuten": {
+    "artist": "作者不詳",
+    "title": "東寺 講堂 帝釈天騎象像",
+    "year": "839年",
+    "collection": "木造 像高 105.0 cm 東寺（教王護国寺・京都） 国宝",
+    "commons": "Taishakuten Toji.jpg",
+    "wiki": "帝釈天",
+    "wikiLang": "ja",
+    "wikiEn": "Shakra (Buddhism)",
+    "license": "パブリックドメイン"
+  },
+  "jocho-amida-byodoin": {
+    "artist": "定朝",
+    "title": "平等院鳳凰堂 阿弥陀如来坐像",
+    "year": "1053年",
+    "collection": "木造（寄木造）漆箔 像高 277.2 cm 平等院（京都・宇治） 国宝",
+    "commons": "Byodo-in Amida Nyorai.jpg",
+    "wiki": "平等院鳳凰堂阿弥陀如来坐像",
+    "wikiLang": "ja",
+    "wikiEn": "Jōchō",
+    "license": "パブリックドメイン"
+  },
+  "amida-raigo-koyasan": {
+    "artist": "作者不詳",
+    "title": "阿弥陀聖衆来迎図",
+    "year": "11世紀",
+    "collection": "絹本著色 三幅 有志八幡講十八箇院（高野山・和歌山） 国宝",
+    "commons": "Amida Raigo Koyasan.jpg",
+    "wiki": "阿弥陀聖衆来迎図",
+    "wikiLang": "ja",
+    "wikiEn": "Raigō",
+    "license": "パブリックドメイン"
+  },
+  "chusonji-konjikido": {
+    "artist": "奥州藤原氏の造営",
+    "title": "中尊寺 金色堂",
+    "year": "1124年",
+    "collection": "木造漆箔・螺鈿 中尊寺（岩手・平泉） 国宝",
+    "wiki": "中尊寺金色堂",
+    "wikiLang": "ja",
+    "wikiEn": "Chūson-ji",
+    "license": "パブリックドメイン",
+    "noPhoto": "金色堂は覆堂の中にあり堂内撮影も禁じられているため、Commonsに金色堂そのものの写真がない"
+  }
 }

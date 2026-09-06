@@ -1,57 +1,57 @@
 {
- "rousseau-sleeping-gypsy": {
-  "artist": "アンリ・ルソー",
-  "title": "眠るジプシー女",
-  "year": "1897年",
-  "collection": "油彩・カンヴァス 129.5 × 200.7 cm ニューヨーク近代美術館",
-  "commons": "Henri Rousseau - The Sleeping Gypsy.jpg",
-  "wiki": "眠るジプシー女",
-  "wikiLang": "ja",
-  "wikiEn": "The Sleeping Gypsy",
-  "license": "パブリックドメイン"
- },
- "dama-de-elche": {
-  "artist": "作者不詳（古代イベリア）",
-  "title": "エルチェの貴婦人",
-  "year": "前4世紀ごろ",
-  "collection": "石灰岩 高さ56 cm 国立考古学博物館（マドリード）",
-  "commons": "Dama de Elche.jpg",
-  "wiki": "エルチェの貴婦人",
-  "wikiLang": "ja",
-  "wikiEn": "Lady of Elche",
-  "license": "パブリックドメイン"
- },
- "cezanne-basket-of-apples": {
-  "artist": "ポール・セザンヌ",
-  "title": "リンゴの籠のある静物",
-  "year": "1893年ごろ",
-  "collection": "油彩・カンヴァス 65 × 80 cm シカゴ美術館",
-  "commons": "Paul Cézanne, The Basket of Apples, c. 1893.jpg",
-  "wiki": "ポール・セザンヌ",
-  "wikiLang": "ja",
-  "wikiEn": "The Basket of Apples",
-  "license": "パブリックドメイン"
- },
- "boccioni-la-citta-che-sale": {
-  "artist": "ウンベルト・ボッチョーニ",
-  "title": "都市は起ち上がる",
-  "year": "1910 — 1911年",
-  "collection": "油彩・カンヴァス 199.3 × 301 cm ニューヨーク近代美術館",
-  "commons": "Umberto Boccioni, 1910-11, La città che sale (The City Rises), oil on canvas, 199.3 x 301 cm, Museum of Modern Art, New York.jpg",
-  "wiki": "ウンベルト・ボッチョーニ",
-  "wikiLang": "ja",
-  "wikiEn": "Umberto Boccioni",
-  "license": "パブリックドメイン"
- },
- "modigliani-jeanne-hebuterne": {
-  "artist": "アメデオ・モディリアーニ",
-  "title": "ジャンヌ・エビュテルヌの肖像",
-  "year": "1918年ごろ",
-  "collection": "油彩・カンヴァス 大原美術館（岡山・倉敷）",
-  "commons": "Amedeo Modigliani - Portrait of Jeanne Hebuterne.jpg",
-  "wiki": "アメデオ・モディリアーニ",
-  "wikiLang": "ja",
-  "wikiEn": "Amedeo Modigliani",
-  "license": "パブリックドメイン（作者は1920年没）"
- }
+  "rousseau-sleeping-gypsy": {
+    "artist": "アンリ・ルソー",
+    "title": "眠るジプシー女",
+    "year": "1897年",
+    "collection": "油彩・カンヴァス 129.5 × 200.7 cm ニューヨーク近代美術館",
+    "commons": "Henri Rousseau - The Sleeping Gypsy.jpg",
+    "wiki": "眠るジプシー女",
+    "wikiLang": "ja",
+    "wikiEn": "The Sleeping Gypsy",
+    "license": "パブリックドメイン"
+  },
+  "dama-de-elche": {
+    "artist": "作者不詳（古代イベリア）",
+    "title": "エルチェの貴婦人",
+    "year": "前4世紀ごろ",
+    "collection": "石灰岩 高さ56 cm 国立考古学博物館（マドリード）",
+    "commons": "Dama de Elche.jpg",
+    "wiki": "エルチェの貴婦人",
+    "wikiLang": "ja",
+    "wikiEn": "Lady of Elche",
+    "license": "パブリックドメイン"
+  },
+  "cezanne-basket-of-apples": {
+    "artist": "ポール・セザンヌ",
+    "title": "リンゴの籠のある静物",
+    "year": "1893年ごろ",
+    "collection": "油彩・カンヴァス 65 × 80 cm シカゴ美術館",
+    "commons": "Paul Cézanne - The Basket of Apples - 1926.252 - Art Institute of Chicago.jpg",
+    "wiki": "ポール・セザンヌ",
+    "wikiLang": "ja",
+    "wikiEn": "The Basket of Apples",
+    "license": "パブリックドメイン"
+  },
+  "boccioni-la-citta-che-sale": {
+    "artist": "ウンベルト・ボッチョーニ",
+    "title": "都市は起ち上がる",
+    "year": "1910 — 1911年",
+    "collection": "油彩・カンヴァス 199.3 × 301 cm ニューヨーク近代美術館",
+    "commons": "The City Rises by Umberto Boccioni 1910.jpg",
+    "wiki": "ウンベルト・ボッチョーニ",
+    "wikiLang": "ja",
+    "wikiEn": "Umberto Boccioni",
+    "license": "パブリックドメイン"
+  },
+  "modigliani-jeanne-hebuterne": {
+    "artist": "アメデオ・モディリアーニ",
+    "title": "ジャンヌ・エビュテルヌの肖像",
+    "year": "1918年ごろ",
+    "collection": "油彩・カンヴァス 大原美術館（岡山・倉敷）",
+    "commons": "Amedeo Modigliani - Portrait of Jeanne Hebuterne.jpg",
+    "wiki": "アメデオ・モディリアーニ",
+    "wikiLang": "ja",
+    "wikiEn": "Amedeo Modigliani",
+    "license": "パブリックドメイン（作者は1920年没）"
+  }
 }

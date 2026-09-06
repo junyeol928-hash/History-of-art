@@ -122,6 +122,12 @@
     var chain = Promise.reject();
     var key = id + (small ? '@s' : '');
 
+    /* noPhoto は「Commons に使える写真が無いと確かめた」しるし。
+       ここで外を探しにいくと、また関係のない写真を掴んでくる。
+       《虎卣》を頼んで本物のトラが来たのがそれだった。
+       章に書かれた自作の図に、そのままゆだねる。 */
+    if (m.noPhoto) return Promise.reject();
+
     // 段1: 焼き込み済み
     if (!baked || baked.indexOf(id) !== -1 || baked.length === 0) {
       var ext = m.ext || 'jpg';
