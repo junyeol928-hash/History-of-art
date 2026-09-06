@@ -8,7 +8,9 @@
 (function () {
   'use strict';
 
-  var CACHE_KEY = 'artcache.v1';
+  /* v1 のキャッシュには、取り違えた画像のURLが入っている恐れがある。
+     鍵を変えて、前に配ってしまったURLを一度すべて捨てる。 */
+  var CACHE_KEY = 'artcache.v2';
   var CACHE_TTL = 1000 * 60 * 60 * 24 * 30; // 30日
   var manifest = null;
   var baked = null;
@@ -98,16 +100,27 @@
      small を立てると、まず縮小版を取りに行く。
      顔カードもギャラリーの札も、画面上では350px幅ほどしかない。
      そこへ1800px・1.5MBの原寸を10枚並べると、下のほうが延々と出てこない。 */
+  /* キャッシュは「外から取ってきたURL」を覚えておくためのもので、
+     焼き込み画像より先に立たせてはいけない。先に立たせると、
+     こちらが焼き込みを差し替えても、前に見た人の手元では
+     古いURLが30日ぶん生き残ってしまう。焼き込みは常に最初に試す。 */
   function resolve(id, small) {
-    var key = id + (small ? '@s' : '');
-    var cached = cacheGet(key);
-    if (cached) return tryImage(cached).catch(function () { return resolveFresh(id, small); });
     return resolveFresh(id, small);
+  }
+
+  /* 記事名が作者の名前そのものなら、その記事の代表画像は
+     この作品ではなく、その作家の代表作か本人の顔写真だ。
+     取得スクリプト（tools/fetch-artworks.mjs）と同じ規則をここでも守る。
+     取得時だけ塞いで実行時に開いていると、焼き込みが無い作品で
+     ブラウザが作者の顔写真を額に入れてしまう。 */
+  function isArtistPage(m) {
+    return !!(m.wiki && m.artist && m.wiki === m.artist);
   }
 
   function resolveFresh(id, small) {
     var m = (manifest && manifest[id]) || {};
     var chain = Promise.reject();
+    var key = id + (small ? '@s' : '');
 
     // 段1: 焼き込み済み
     if (!baked || baked.indexOf(id) !== -1 || baked.length === 0) {
@@ -117,21 +130,26 @@
       }
       chain = chain.catch(function () { return tryImage(ROOT + 'assets/artworks/' + id + '.' + ext); });
     }
-    // 段2: Commons のファイル名
+    // 段2: 前に外から取れたURLを覚えていれば、それを先に試す
+    var cached = cacheGet(key);
+    if (cached) {
+      chain = chain.catch(function () { return tryImage(cached); });
+    }
+    // 段3: Commons のファイル名
     if (m.commons) {
       chain = chain.catch(function () {
         return fromCommons(m.commons, m.width || 1600).then(tryImage);
       });
     }
-    // 段2の予備: Wikipedia 記事
-    if (m.wiki) {
+    // 段3の予備: Wikipedia の「作品の」記事
+    if (m.wiki && !isArtistPage(m)) {
       var lang = m.wikiLang || 'ja';
       chain = chain.catch(function () { return fromWikipedia(lang, m.wiki).then(tryImage); });
       if (lang !== 'en' && m.wikiEn) {
         chain = chain.catch(function () { return fromWikipedia('en', m.wikiEn).then(tryImage); });
       }
     }
-    return chain.then(function (url) { cacheSet(id + (small ? '@s' : ''), url); return url; });
+    return chain.then(function (url) { cacheSet(key, url); return url; });
   }
 
   /* ---------- 図版1つを仕上げる ---------- */
@@ -188,6 +206,7 @@
      拡大ビューア
      ========================================================================= */
   var viewer = null;
+  var viewerTicket = 0;
   function ensureViewer() {
     if (viewer) return viewer;
     viewer = document.createElement('div');
@@ -206,6 +225,7 @@
     return viewer;
   }
   function close() {
+    viewerTicket += 1;   // 取得中の拡大画像を無効にする
     if (viewer) { viewer.classList.remove('-on'); document.body.style.overflow = ''; }
   }
   /* 拡大時は、焼き込み済みより大きい画像を取りに行く。
@@ -222,13 +242,21 @@
     });
   }
 
+  /* 拡大画像の取得は非同期なので、Aを閉じてBを開いたあとにAのぶんが
+     返ってくることがある。「開いているか」だけを見ていると、
+     そのときBの額にAの絵が入り、説明文だけBのまま残る。
+     開くたびに番号を振って、いま開いているものの結果だけを容れる。 */
+
+
   function openViewer(fig, url, m) {
     var v = ensureViewer();
     var img = v.querySelector('img');
+    var mine = ++viewerTicket;
     img.src = url;
     v.classList.add('-loading');
     bigger(m, url, fig.dataset.art).then(function (big) {
-      if (v.classList.contains('-on')) img.src = big;
+      if (mine !== viewerTicket || !v.classList.contains('-on')) return;
+      img.src = big;
       v.classList.remove('-loading');
     });
     var t = (m.artist ? m.artist + '　' : '') + (m.title || '') + (m.year ? '　' + m.year : '');

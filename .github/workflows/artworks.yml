@@ -90,18 +90,34 @@ jobs:
                   os.remove(t)
           print('縮小版を', tn, '枚作った')
           EOF
+
+      # 掲載済みの一覧は fetch-artworks.mjs が「マニフェストにあり、かつ
+      # 画像が実在するID」から作る。ここでディレクトリを走査して作り直していたので、
+      # マニフェストから外したIDが画像ファイルごと復活していた
+      # （dotaku-kesadasuki・jomon-kaen-doki・todaiji-fukukensaku-kannon・yayoi-tsubo の4件）。
+      # だから作り直さず、突き合わせて食い違いを報せるだけにする。
+      - name: マニフェストと画像の食い違いを調べる
+        run: |
           node -e "
             const fs=require('fs');
-            const ids=fs.readdirSync('assets/artworks').filter(f=>/\.(jpg|png|webp|svg)$/i.test(f)).map(f=>f.replace(/\.[^.]+$/,'')).sort();
-            fs.writeFileSync('data/artworks-baked.json', JSON.stringify([...new Set(ids)], null, 1));
-            console.log('baked', ids.length);
+            const man=JSON.parse(fs.readFileSync('data/artworks.json','utf8'));
+            const baked=JSON.parse(fs.readFileSync('data/artworks-baked.json','utf8'));
+            const files=new Set(fs.readdirSync('assets/artworks')
+              .filter(f=>/[.](jpg|png|webp|svg)$/i.test(f)).map(f=>f.replace(/[.][^.]+$/,'')));
+            const orphan=[...files].filter(i=>!(i in man)).sort();
+            const nofile=Object.keys(man).filter(i=>!files.has(i)).sort();
+            console.log('マニフェスト', Object.keys(man).length, '／掲載済み', baked.length);
+            if(orphan.length) console.log('マニフェストに無い画像:', orphan.join(', '));
+            if(nofile.length) console.log('画像が無い作品:', nofile.join(', '));
+            const bad=baked.filter(i=>!(i in man));
+            if(bad.length){ console.error('掲載済み一覧にマニフェスト外のIDがあります:', bad.join(', ')); process.exit(1); }
           "
 
       - name: 取得した画像をコミットする
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/artworks data/artworks.json data/artworks-baked.json data/glossary.json
+          git add assets/artworks data/artworks.json data/artworks-baked.json data/glossary.json data/artworks-provenance.json
           if git diff --staged --quiet; then
             echo "変更なし"
           else

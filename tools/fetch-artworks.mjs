@@ -102,10 +102,17 @@ function widthOf(buf) {
       while (i < buf.length - 9) {
         if (buf[i] !== 0xff) { i++; continue; }
         const marker = buf[i + 1];
+        // 0xff が続くのは詰め物。読み飛ばさないと、次の2バイトを
+        // セグメント長と読み違えて、あらぬところへ跳ぶ
+        if (marker === 0xff) { i += 1; continue; }
+        // 長さを持たないマーカー（SOI/EOI/RSTn/TEM）
+        if (marker === 0x01 || (marker >= 0xd0 && marker <= 0xd9)) { i += 2; continue; }
         if (marker >= 0xc0 && marker <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(marker)) {
           return buf.readUInt16BE(i + 7);
         }
-        i += 2 + buf.readUInt16BE(i + 2);
+        const len = buf.readUInt16BE(i + 2);
+        if (len < 2) return 0;             // 壊れている
+        i += 2 + len;
       }
     } else if (buf.slice(0, 8).toString('hex') === '89504e470d0a1a0a') {  // PNG
       return buf.readUInt32BE(16);
@@ -356,6 +363,11 @@ for (const id of targets) {
   if (got) {
     const ext = extFor(got.url, got.mime);
     writeFileSync(`${OUT}/${id}.${ext}`, got.buf);
+    // このIDが前に使っていたファイルの登録を外す。外さないと、
+    // Aを直したあとも A の旧ファイルが台帳に残り、
+    // そのファイルを正しく使うはずの B が「重複」として拒まれる
+    const before = prov[id]?.file;
+    if (before && before !== got.file && usedFile.get(before) === id) usedFile.delete(before);
     usedFile.set(got.file, id);
     prov[id] = { via: got.via, file: got.file, width: got.w, at: new Date().toISOString().slice(0, 10) };
     const warn = got.w && got.w < 1200 ? '  ← 小さい' : '';

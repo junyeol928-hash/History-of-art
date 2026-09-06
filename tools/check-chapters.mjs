@@ -67,3 +67,6 @@ for (const c of chapters) {
   }
 }
 console.log(`\n合格 ${ok} / 要修正 ${bad}`);
+
+/* 指摘があっても終了コードが0だと、公開の前に置いても素通りしてしまう */
+if (bad) process.exit(1);

@@ -3,6 +3,14 @@ name: GitHub Pages に公開する
 on:
   push:
     branches: [ main ]
+  # 画像取得のワークフローが自分でコミットしても、
+  # 標準の GITHUB_TOKEN による push は別のワークフローを起こさない。
+  # そのままだと、取得したての画像が次の人手の push まで公開されない。
+  # だから取得の完了そのものを合図にする。
+  workflow_run:
+    workflows: [ "作品画像を取得する" ]
+    types: [ completed ]
+    branches: [ main ]
   workflow_dispatch:
 
 permissions:
@@ -16,17 +24,27 @@ concurrency:
 
 jobs:
   deploy:
+    # 取得が失敗した回では公開しない
+    if: >-
+      github.event_name != 'workflow_run' ||
+      github.event.workflow_run.conclusion == 'success'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      # workflow_run のときは、取得ワークフローが押したコミットまで含んだ
+      # main の先頭を取りにいく（既定のままだと合図もとのコミットに戻ってしまう）
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
       - name: マニフェストを束ねる
         run: node tools/merge.mjs
+      - name: 章と作品の対応を確かめる
+        run: node tools/check-chapters.mjs
       # Pages 自体もここで有効にする。設定画面を触らなくて済むように
       - uses: actions/configure-pages@v5
         with:
