@@ -31,7 +31,7 @@
    ・同じ Commons ファイルを二つの作品に配らない。
    ・報告は毎回すべてのIDについて出す。
    ========================================================================= */
-import { readFileSync, writeFileSync, existsSync, mkdirSync, statSync, rmSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, mkdirSync, statSync, rmSync, renameSync } from 'node:fs';
 
 const UA = 'ArtHistoryStaticSite/1.0 (https://github.com/junyeol928-hash/History-of-art; educational)';
 const OUT = 'assets/artworks';
@@ -236,7 +236,8 @@ async function download(url) {
   const r = await fetch(url, { headers: { 'User-Agent': UA } });
   if (!r.ok) throw new Error(`ダウンロード失敗 HTTP ${r.status}`);
   const buf = Buffer.from(await r.arrayBuffer());
-  if (buf.length < 3000) throw new Error(`小さすぎます（${buf.length} バイト）`);
+  const bad = looksLikeImage(buf);
+  if (bad) throw new Error(`${bad}（${buf.length} バイト）`);
   return buf;
 }
 
@@ -259,6 +260,35 @@ async function downloadSized(url) {
     } catch { /* この段が無ければ次の段へ */ }
   }
   return { buf, url };
+}
+
+/* HTTP が 200 で返り、それなりの大きさがあるというだけでは、
+   画像であることの保証にならない。切れた画像や、画像でないものが
+   そのまま焼き込まれうる。頭と尻尾を見て、通しで読めることを確かめる。 */
+function looksLikeImage(buf) {
+  if (buf.length < 3000) return '小さすぎます';
+  // JPEG: FFD8 で始まり FFD9 で終わる
+  if (buf[0] === 0xff && buf[1] === 0xd8) {
+    const tail = buf.subarray(Math.max(0, buf.length - 32));
+    if (tail.indexOf(Buffer.from([0xff, 0xd9])) < 0) return 'JPEGが途中で切れています';
+    return null;
+  }
+  // PNG: 署名で始まり IEND で終わる
+  if (buf.subarray(0, 8).toString('hex') === '89504e470d0a1a0a') {
+    if (buf.subarray(Math.max(0, buf.length - 12)).indexOf('IEND') < 0) return 'PNGが途中で切れています';
+    return null;
+  }
+  if (buf.subarray(0, 4).toString() === 'RIFF' && buf.subarray(8, 12).toString() === 'WEBP') return null;
+  if (buf.subarray(0, 200).toString().includes('<svg')) return null;
+  return '画像として読めません';
+}
+
+/* 書きかけのファイルを残さない。いったん別名で書いてから置き換える。
+   途中で止まると、壊れたファイルが「取得済み」として居座ってしまう。 */
+function writeAtomic(path, buf) {
+  const tmp = `${path}.tmp-${process.pid}`;
+  writeFileSync(tmp, buf);
+  renameSync(tmp, path);
 }
 
 function haveExt(id) {
@@ -385,7 +415,7 @@ for (const id of targets) {
 
   if (got) {
     const ext = extFor(got.url, got.mime);
-    writeFileSync(`${OUT}/${id}.${ext}`, got.buf);
+    writeAtomic(`${OUT}/${id}.${ext}`, got.buf);
     // このIDが前に使っていたファイルの登録を外す。外さないと、
     // Aを直したあとも A の旧ファイルが台帳に残り、
     // そのファイルを正しく使うはずの B が「重複」として拒まれる

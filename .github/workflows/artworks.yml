@@ -45,7 +45,8 @@ jobs:
           Image.MAX_IMAGE_PIXELS = None
           MAXW, Q = 1800, 88
           before = after = 0
-          for p in sorted(glob.glob('assets/artworks/*')):
+          for p in sorted(glob.glob("assets/artworks/*")):
+              if os.path.isdir(p): continue
               ext = os.path.splitext(p)[1].lower()
               b = os.path.getsize(p); before += b
               if ext == '.svg':
@@ -70,12 +71,26 @@ jobs:
           # そこへ原寸を10枚並べると下のほうが出てこないので、縮小版も置く
           import pathlib
           pathlib.Path('assets/artworks/thumb').mkdir(parents=True, exist_ok=True)
+          # 作り直すかどうかは、更新時刻ではなく中身のハッシュで決める。
+          # checkout の時刻は画像の版を表さないので、原寸を差し替えても
+          # 縮小版が古いまま残ることがあった。
+          import hashlib, json as _json
+          STAMP = 'assets/artworks/thumb/.source-hash.json'
+          stamps = _json.load(open(STAMP)) if os.path.exists(STAMP) else {}
+          def sha(path):
+              h = hashlib.sha1()
+              with open(path, 'rb') as f:
+                  for chunk in iter(lambda: f.read(1 << 20), b''): h.update(chunk)
+              return h.hexdigest()
           TW, TQ = 720, 80
           tn = 0
           for p in sorted(glob.glob('assets/artworks/*.jpg')):
               out = 'assets/artworks/thumb/' + os.path.basename(p)
-              if os.path.exists(out) and os.path.getmtime(out) >= os.path.getmtime(p):
+              key = os.path.basename(p)
+              digest = sha(p)
+              if os.path.exists(out) and stamps.get(key) == digest:
                   continue
+              stamps[key] = digest
               try:
                   im = Image.open(p); w, h = im.size
                   if w > TW: im = im.resize((TW, max(1, round(h * TW / w))), Image.LANCZOS)
@@ -88,6 +103,8 @@ jobs:
           for t in glob.glob('assets/artworks/thumb/*.jpg'):
               if not os.path.exists('assets/artworks/' + os.path.basename(t)):
                   os.remove(t)
+                  stamps.pop(os.path.basename(t), None)
+          _json.dump(stamps, open(STAMP, 'w'), indent=1, sort_keys=True)
           print('縮小版を', tn, '枚作った')
           EOF
 
@@ -120,7 +137,16 @@ jobs:
           git add assets/artworks data/artworks.json data/artworks-baked.json data/glossary.json data/artworks-provenance.json
           if git diff --staged --quiet; then
             echo "変更なし"
-          else
-            git commit -m "作品画像を取得（自動）"
-            git push
+            exit 0
           fi
+          git commit -m "作品画像を取得（自動）"
+          # 取得のあいだに誰かが同じブランチへ push していると、
+          # ここが non-fast-forward で弾かれる。取り直してから載せ直す。
+          # 強制 push はしない。人の仕事を消すことになる。
+          for i in 1 2 3; do
+            if git push; then exit 0; fi
+            echo "push が弾かれました（$i 回目）。取り直します。"
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || exit 1
+          done
+          echo "3回試しても push できませんでした。" >&2
+          exit 1
