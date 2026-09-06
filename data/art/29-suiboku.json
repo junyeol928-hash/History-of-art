@@ -37,11 +37,11 @@
     "title": "四季山水図巻（山水長巻）",
     "year": "1486年",
     "collection": "紙本墨画淡彩 約 40 × 1600 cm 毛利博物館（山口・防府） 国宝",
-    "commons": "Sesshu - Landscape of the Four Seasons (Long Landscape Scroll).jpg",
     "wiki": "四季山水図巻",
     "wikiLang": "ja",
     "wikiEn": "Landscape of the Four Seasons (Sesshu)",
-    "license": "パブリックドメイン"
+    "license": "パブリックドメイン",
+    "noPhoto": "同じく巻子全体の画像しかなく、細長すぎて何も読めない"
   },
   "sesshu-eka-danpi": {
     "artist": "雪舟等楊",
@@ -114,7 +114,7 @@
     "title": "慈照寺 東求堂 同仁斎",
     "year": "1486年",
     "collection": "木造 四畳半 慈照寺・銀閣寺（京都） 国宝",
-    "commons": "Ginkaku-ji Togudo.jpg",
+    "commons": "Ginkakuji-Togudo-M1992.jpg",
     "wiki": "慈照寺",
     "wikiLang": "ja",
     "wikiEn": "Ginkaku-ji",

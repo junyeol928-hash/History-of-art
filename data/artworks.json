@@ -87,7 +87,7 @@
   "title": "ペシュ・メルル洞窟「点描の馬」",
   "year": "約2万5千年前",
   "collection": "ペシュ・メルル洞窟（フランス・ロット県カブレレ）",
-  "commons": "Pech Merle main et cheval ponctué.jpg",
+  "commons": "Chevaux ponctués de la grotte du Pech Merle.jpg",
   "wiki": "ペシュ・メルル洞窟",
   "wikiLang": "ja",
   "wikiEn": "Pech Merle",
@@ -663,7 +663,7 @@
   "title": "ガラ・プラキディア廟堂 天井のモザイク",
   "year": "425年ごろ",
   "collection": "ガラ・プラキディア廟堂（ラヴェンナ）",
-  "commons": "Mausoleum of Galla Placidia ceiling mosaic.jpg",
+  "commons": "Mausoleo di Galla Placidia, mosaici - panoramio (2).jpg",
   "wiki": "ガッラ・プラキディア廟堂",
   "wikiLang": "ja",
   "wikiEn": "Mausoleum of Galla Placidia",
@@ -1011,7 +1011,7 @@
   "title": "サン・ピエール大聖堂 内陣（ボーヴェ）",
   "year": "1225年着工",
   "collection": "ボーヴェ大聖堂（フランス）",
-  "commons": "Beauvais Cathedral Choir.jpg",
+  "commons": "Beauvais - La Cathédrale Saint-Pierre de Beauvais - Ambulatory East of the Choir - View WNW & Up into the Choir.jpg",
   "wiki": "ボーヴェ大聖堂",
   "wikiLang": "ja",
   "wikiEn": "Beauvais Cathedral",
@@ -2127,11 +2127,11 @@
   "title": "スービーズ館　王女の楕円のサロン",
   "year": "1735 — 1740年ごろ",
   "collection": "パリ国立古文書館（パリ）",
-  "commons": "Plafond van de ovale salon van de prinses van Rohan in Hôtel de Soubise, RP-P-OB-40.375.jpg",
   "wiki": "スービーズ館",
   "wikiLang": "ja",
   "wikiEn": "Hôtel de Soubise",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "noPhoto": "楕円のサロンそのものの自由な写真がCommonsに無い。天井の版画しか出てこない"
  },
  "wieskirche-interior": {
   "chapter": "14-rococo",
@@ -3159,11 +3159,11 @@
   "title": "緑の上着の婦人",
   "year": "1913年",
   "collection": "油彩・カンヴァス 44 × 43.5 cm ルートヴィヒ美術館（ケルン）",
-  "commons": "August Macke 006.jpg",
   "wiki": "アウグスト・マッケ",
   "wikiLang": "ja",
   "wikiEn": "August Macke",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "noPhoto": "《緑の上着の婦人》がCommonsに無い。マッケの別作品しか出てこない"
  },
  "marc-fate-of-animals": {
   "chapter": "21-dada-surreal",
@@ -3626,11 +3626,11 @@
   "title": "源氏物語絵巻",
   "year": "12世紀前半",
   "collection": "紙本著色 紙高 約21.8 cm 徳川美術館（名古屋）・五島美術館（東京） 国宝",
-  "commons": "Genji emaki 01003 002.jpg",
   "wiki": "源氏物語絵巻",
   "wikiLang": "ja",
   "wikiEn": "The Tale of Genji Scroll",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "noPhoto": "Commonsにあるのは東京藝術大学日本画研究室による現状模写で、透かしも入っており、パブリックドメインとして扱えない"
  },
  "shigisan-engi-emaki": {
   "chapter": "28-emaki",
@@ -3830,11 +3830,11 @@
   "title": "四季山水図巻（山水長巻）",
   "year": "1486年",
   "collection": "紙本墨画淡彩 約 40 × 1600 cm 毛利博物館（山口・防府） 国宝",
-  "commons": "Sesshu - Landscape of the Four Seasons (Long Landscape Scroll).jpg",
   "wiki": "四季山水図巻",
   "wikiLang": "ja",
   "wikiEn": "Landscape of the Four Seasons (Sesshu)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "noPhoto": "同じく巻子全体の画像しかなく、細長すぎて何も読めない"
  },
  "sesshu-eka-danpi": {
   "chapter": "29-suiboku",
@@ -3914,7 +3914,7 @@
   "title": "慈照寺 東求堂 同仁斎",
   "year": "1486年",
   "collection": "木造 四畳半 慈照寺・銀閣寺（京都） 国宝",
-  "commons": "Ginkaku-ji Togudo.jpg",
+  "commons": "Ginkakuji-Togudo-M1992.jpg",
   "wiki": "慈照寺",
   "wikiLang": "ja",
   "wikiEn": "Ginkaku-ji",
@@ -4166,11 +4166,11 @@
   "title": "落葉",
   "year": "1909年",
   "collection": "紙本著色 六曲一双屏風 永青文庫（東京） 重要文化財",
-  "commons": "Hishida Shunso - Fallen Leaves.jpg",
   "wiki": "落葉 (菱田春草)",
   "wikiLang": "ja",
   "wikiEn": "Hishida Shunsō",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "noPhoto": "《落葉》（永青文庫）の複製がCommonsに無い。菱田春草の別作品か本人の写真しか出てこない"
  },
  "kishida-reiko": {
   "chapter": "31-ukiyoe",
@@ -4274,7 +4274,7 @@
   "title": "龍門石窟 奉先寺 盧舎那仏",
   "year": "675年",
   "collection": "石灰岩の彫成 坐像高 17.14 m 龍門石窟（河南省洛陽）",
-  "commons": "Longmen Grottoes Vairocana Buddha.jpg",
+  "commons": "Ancient Buddhist Grottoes at Longmen- Fengxian Temple Grand Buddha Niche with Colossal Statue of Vairocana Buddha.jpg",
   "wiki": "龍門洞窟",
   "wikiLang": "ja",
   "wikiEn": "Longmen Grottoes",
@@ -4358,11 +4358,11 @@
   "title": "渓山清遠図",
   "year": "13世紀初め",
   "collection": "紙本墨画 手巻 國立故宮博物院（台北）",
-  "commons": "Xia Gui - Pure and Remote View of Streams and Mountains.jpg",
   "wiki": "夏珪",
   "wikiLang": "ja",
   "wikiEn": "Xia Gui",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "noPhoto": "巻子全体を1枚に収めた画像しかなく、細長すぎて何も読めない"
  },
  "zhao-mengfu-quehua": {
   "chapter": "33-china-shanshui",
@@ -4430,11 +4430,11 @@
   "title": "江西大墓 玄武図",
   "year": "6世紀末 — 7世紀初",
   "collection": "花崗岩に直接彩色 玄室北壁 江西三墓（平安南道南浦） 世界遺産",
-  "commons": "Goguryeo tomb mural Hyeonmu.jpg",
   "wiki": "江西三墓",
   "wikiLang": "ja",
   "wikiEn": "Gangseo Great Tomb",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "noPhoto": "江西大墓の玄武図の複製がCommonsに無い。博物館の解説パネルの写真しか出てこない"
  },
  "goguryeo-muyongchong-hunting": {
   "chapter": "34-korea",
@@ -4442,11 +4442,11 @@
   "title": "舞踊塚 狩猟図",
   "year": "5世紀",
   "collection": "石室壁画 舞踊塚（中国吉林省集安） 世界遺産",
-  "commons": "Goguryeo tomb mural hunting.jpg",
   "wiki": "高句麗古墳群",
   "wikiLang": "ja",
   "wikiEn": "Goguryeo tomb murals",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "noPhoto": "舞踊塚の狩猟図の複製がCommonsに無い。古墳の外観しか出てこない"
  },
  "pensive-bodhisattva-83": {
   "chapter": "34-korea",
@@ -4502,7 +4502,7 @@
   "title": "キジル石窟 天井壁画",
   "year": "3 — 8世紀",
   "collection": "石窟壁画 キジル石窟（新疆・クチャ） 一部はベルリンほかに散在",
-  "commons": "Kizil Caves.jpg",
+  "commons": "A cave at Kizil (entrance lunette detail).jpg",
   "wiki": "キジル石窟",
   "wikiLang": "ja",
   "wikiEn": "Kizil Caves",
@@ -4562,11 +4562,11 @@
   "title": "舞童（檀園風俗図帖のうち）",
   "year": "18世紀後半",
   "collection": "紙本淡彩 檀園風俗図帖 韓国国立中央博物館（ソウル） 韓国宝物",
-  "commons": "Kim Hong-do-Muyong.jpg",
   "wiki": "金弘道",
   "wikiLang": "ja",
   "wikiEn": "Kim Hong-do Muyong dancing boy",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "noPhoto": "《舞童》の複製がCommonsに無い。金弘道の別作品しか出てこない"
  },
  "minhwa-tiger-magpie": {
   "chapter": "34-korea",
@@ -4754,11 +4754,11 @@
   "title": "ユースフとズライハ（サアディー《ブースターン》より）",
   "year": "1488年",
   "collection": "紙本着色・金　エジプト国立図書館（カイロ）",
-  "commons": "Yusuf and Zulaikha by Bihzad.jpg",
   "wiki": "ビフザード",
   "wikiLang": "ja",
   "wikiEn": "Kamāl ud-Dīn Behzād",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "noPhoto": "ビフザードの《ユースフとズライハ》がCommonsに無い。同じ画家の別作品しか出てこない"
  },
  "akbarnama-hawai": {
   "chapter": "36-miniature",
@@ -4838,7 +4838,7 @@
   "title": "回廊レリーフ　ボロブドゥール",
   "year": "9世紀初め",
   "collection": "安山岩の浮彫　下層の回廊に約1,460面　ボロブドゥール（インドネシア・中部ジャワ）　世界文化遺産",
-  "commons": "Borobudur Ship.jpg",
+  "commons": "007 E A Buddha Serenaded by an Orchestra (28941638616).jpg",
   "wiki": "ボロブドゥール遺跡",
   "wikiLang": "ja",
   "wikiEn": "Borobudur",
@@ -4958,7 +4958,7 @@
   "title": "大ジンバブエの石鳥",
   "year": "13 — 15世紀",
   "collection": "滑石（ソープストーン）　高さ約40 cm　台座の柱に据えられていた　大ジンバブエ遺跡博物館ほか",
-  "commons": "Zimbabwe Bird.jpg",
+  "commons": "Soapstone birds on pedestals.jpg",
   "wiki": "グレート・ジンバブエ遺跡",
   "wikiLang": "ja",
   "wikiEn": "Zimbabwe Bird",
@@ -5196,11 +5196,11 @@
   "title": "スキデゲイトの家柱とトーテムポール",
   "year": "19世紀（写真は1878年）",
   "collection": "スギ材 ハイダ・グワイ（ブリティッシュコロンビア、カナダ）",
-  "commons": "Haida village Skidegate 1878.jpg",
   "wiki": "トーテムポール",
   "wikiLang": "ja",
   "wikiEn": "Totem pole",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "noPhoto": "1878年のスキデゲイトの記録写真がCommonsに無い。現代のトーテムポールしか出てこない"
  },
  "lapita-pottery": {
   "chapter": "38-pacific",
@@ -5208,7 +5208,7 @@
   "title": "ラピタ土器（押捺文の土器）",
   "year": "前1350 — 前750年ごろ",
   "collection": "土器 ニューカレドニア・バヌアツ・トンガほか出土",
-  "commons": "Lapita pottery.jpg",
+  "commons": "Decorated piece of Lapita pottery from the Bourewa site in Fiji.jpg",
   "wiki": "ラピタ人",
   "wikiLang": "ja",
   "wikiEn": "Lapita culture",
@@ -5232,7 +5232,7 @@
   "title": "彫刻された高床の倉（パタカ）",
   "year": "19世紀",
   "collection": "トタラ材 オークランド戦争記念博物館ほか（ニュージーランド）",
-  "commons": "Pataka Te Puawai o Te Arawa.jpg",
+  "commons": "Auckland War Memorial Museum, Maori storehouse, 2016-01-21.jpg",
   "wiki": "マオリ",
   "wikiLang": "ja",
   "wikiEn": "Pātaka",

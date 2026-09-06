@@ -4,22 +4,22 @@
     "title": "江西大墓 玄武図",
     "year": "6世紀末 — 7世紀初",
     "collection": "花崗岩に直接彩色 玄室北壁 江西三墓（平安南道南浦） 世界遺産",
-    "commons": "Goguryeo tomb mural Hyeonmu.jpg",
     "wiki": "江西三墓",
     "wikiLang": "ja",
     "wikiEn": "Gangseo Great Tomb",
-    "license": "パブリックドメイン"
+    "license": "パブリックドメイン",
+    "noPhoto": "江西大墓の玄武図の複製がCommonsに無い。博物館の解説パネルの写真しか出てこない"
   },
   "goguryeo-muyongchong-hunting": {
     "artist": "作者不詳（高句麗の画工）",
     "title": "舞踊塚 狩猟図",
     "year": "5世紀",
     "collection": "石室壁画 舞踊塚（中国吉林省集安） 世界遺産",
-    "commons": "Goguryeo tomb mural hunting.jpg",
     "wiki": "高句麗古墳群",
     "wikiLang": "ja",
     "wikiEn": "Goguryeo tomb murals",
-    "license": "パブリックドメイン"
+    "license": "パブリックドメイン",
+    "noPhoto": "舞踊塚の狩猟図の複製がCommonsに無い。古墳の外観しか出てこない"
   },
   "pensive-bodhisattva-83": {
     "artist": "作者不詳（三国時代）",
@@ -70,7 +70,7 @@
     "title": "キジル石窟 天井壁画",
     "year": "3 — 8世紀",
     "collection": "石窟壁画 キジル石窟（新疆・クチャ） 一部はベルリンほかに散在",
-    "commons": "Kizil Caves.jpg",
+    "commons": "A cave at Kizil (entrance lunette detail).jpg",
     "wiki": "キジル石窟",
     "wikiLang": "ja",
     "wikiEn": "Kizil Caves",
@@ -125,11 +125,11 @@
     "title": "舞童（檀園風俗図帖のうち）",
     "year": "18世紀後半",
     "collection": "紙本淡彩 檀園風俗図帖 韓国国立中央博物館（ソウル） 韓国宝物",
-    "commons": "Kim Hong-do-Muyong.jpg",
     "wiki": "金弘道",
     "wikiLang": "ja",
     "wikiEn": "Kim Hong-do Muyong dancing boy",
-    "license": "パブリックドメイン"
+    "license": "パブリックドメイン",
+    "noPhoto": "《舞童》の複製がCommonsに無い。金弘道の別作品しか出てこない"
   },
   "minhwa-tiger-magpie": {
     "artist": "無名の絵師たち",
