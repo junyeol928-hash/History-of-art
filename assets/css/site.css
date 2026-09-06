@@ -483,8 +483,20 @@ figure.plate .credit {
 .band-label {
   font-family: var(--sans); font-size: .65rem; font-weight: 700;
   letter-spacing: .22em; color: var(--accent-ink);
-  display: block; margin-bottom: .7rem;
+  display: block; margin: 0 0 .7rem;
 }
+
+/* 画面には出さず、読み上げにだけ渡す見出し。
+   比較の箱が節の先頭に来る章で、h1 から h3 へ飛ぶのを防ぐ */
+.sr-only {
+  /* .prose h2 のほうが詳細度が高く、position と余白を奪って
+     見えないまま高さだけ取ってしまう。読み上げ専用の札は
+     どの時代スキンの下でも確実に消えていてほしいので、ここだけ強く書く。 */
+  position: absolute !important; width: 1px !important; height: 1px !important;
+  padding: 0 !important; margin: -1px !important; border: 0 !important;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
+}
+.sr-only::before, .sr-only::after { content: none !important; }
 
 /* 用語ツールチップ */
 .term { border-bottom: 1px dotted var(--accent-line); cursor: help; }
@@ -523,7 +535,7 @@ figure.plate .credit {
 .compare { display: grid; gap: 1rem; }
 @media (min-width: 640px) { .compare { grid-template-columns: 1fr 1fr; } }
 .compare > div { border: 1px solid var(--rule); padding: 1rem; background: var(--bg-raise); }
-.compare h4 { font-family: var(--sans); font-size: .88rem; margin: 0 0 .5rem; color: var(--accent-ink); }
+.compare h3 { font-family: var(--sans); font-size: .88rem; margin: 0 0 .5rem; color: var(--accent-ink); }
 .compare p { margin: .4em 0; font-size: .88rem; }
 
 /* 通説チェック */
@@ -551,13 +563,13 @@ figure.plate .credit {
 
 /* 同時代の世界 */
 .meanwhile { background: var(--accent-soft); padding: 1.2rem 1.15rem; font-size: .92rem; }
-.meanwhile h4 { font-family: var(--sans); font-size: .92rem; margin: 1.1rem 0 .3rem; font-weight: 700; }
-.meanwhile h4:first-of-type { margin-top: 0; }
+.meanwhile h3 { font-family: var(--sans); font-size: .92rem; margin: 1.1rem 0 .3rem; font-weight: 700; }
+.meanwhile h3:first-of-type { margin-top: 0; }
 
 /* 美術館で見る */
 .seeit { border: 1px solid var(--accent-line); padding: 1.3rem 1.2rem; font-size: .92rem; }
-.seeit h4 { font-family: var(--sans); font-size: .92rem; margin: 1.2rem 0 .4rem; font-weight: 700; color: var(--accent-ink); }
-.seeit h4:first-of-type { margin-top: 0; }
+.seeit h3 { font-family: var(--sans); font-size: .92rem; margin: 1.2rem 0 .4rem; font-weight: 700; color: var(--accent-ink); }
+.seeit h3:first-of-type { margin-top: 0; }
 .seeit ul { list-style: none; margin: .4rem 0 0; padding: 0; display: grid; gap: .5rem; }
 .seeit li { display: grid; grid-template-columns: 1fr auto; gap: .5rem; align-items: baseline;
             padding-bottom: .5rem; border-bottom: 1px solid var(--rule-soft); }
@@ -701,11 +713,11 @@ figure.plate .credit {
   display: grid; place-items: center; padding: .6rem; min-height: 120px;
 }
 .spot-card .fig svg { width: 100%; height: auto; display: block; }
-.spot-card h4 {
+.spot-card h3 {
   font-family: var(--sans); font-size: .95rem; font-weight: 700;
   margin: 0; color: var(--accent-ink);
 }
-.spot-card h4 .yomi { display: block; font-size: .66rem; font-weight: 400; color: var(--ink-3); letter-spacing: .06em; margin-top: .1rem; }
+.spot-card h3 .yomi { display: block; font-size: .66rem; font-weight: 400; color: var(--ink-3); letter-spacing: .06em; margin-top: .1rem; }
 .spot-card p { margin: 0; font-size: .86rem; line-height: 1.85; color: var(--ink-2); }
 .spot-card .where {
   font-family: var(--sans); font-size: .72rem; color: var(--ink-3);

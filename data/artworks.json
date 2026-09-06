@@ -1,6 +1,5 @@
 {
  "lascaux-hall-of-bulls": {
-  "chapter": "01-cave",
   "artist": "作者不詳",
   "title": "ラスコー洞窟「牡牛の広間」",
   "year": "約1万7千年前",
@@ -9,10 +8,10 @@
   "wiki": "ラスコー洞窟",
   "wikiLang": "ja",
   "wikiEn": "Lascaux",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "01-cave"
  },
  "chauvet-horses": {
-  "chapter": "01-cave",
   "artist": "作者不詳",
   "title": "ショーヴェ洞窟「馬のパネル」",
   "year": "約3万6千年前",
@@ -21,10 +20,10 @@
   "wiki": "ショーヴェ洞窟",
   "wikiLang": "ja",
   "wikiEn": "Chauvet Cave",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "01-cave"
  },
  "chauvet-lions": {
-  "chapter": "01-cave",
   "artist": "作者不詳",
   "title": "ショーヴェ洞窟「ライオンのパネル」",
   "year": "約3万6千年前",
@@ -33,10 +32,10 @@
   "wiki": "ショーヴェ洞窟",
   "wikiLang": "ja",
   "wikiEn": "Chauvet Cave",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "01-cave"
  },
  "cueva-de-las-manos": {
-  "chapter": "01-cave",
   "artist": "作者不詳",
   "title": "クエバ・デ・ラス・マノス（手の洞窟）",
   "year": "約9千3百年前",
@@ -45,20 +44,20 @@
   "wiki": "クエバ・デ・ラス・マノス",
   "wikiLang": "ja",
   "wikiEn": "Cueva de las Manos",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "01-cave"
  },
  "lascaux-shaft-scene": {
-  "chapter": "01-cave",
   "artist": "作者不詳",
   "title": "ラスコー洞窟「井戸の場面」",
   "year": "約1万7千年前",
   "collection": "ラスコー洞窟（フランス・ドルドーニュ県）",
   "wikiLang": "ja",
   "license": "パブリックドメイン",
-  "noPhoto": "ラスコーの写真はCommonsに無い（洞窟は非公開で写真の権利も残る）"
+  "noPhoto": "ラスコーの写真はCommonsに無い（洞窟は非公開で写真の権利も残る）",
+  "chapter": "01-cave"
  },
  "altamira-bison": {
-  "chapter": "01-cave",
   "artist": "作者不詳",
   "title": "アルタミラ洞窟の天井画（バイソン）",
   "year": "約1万5千年前",
@@ -67,10 +66,10 @@
   "wiki": "アルタミラ洞窟",
   "wikiLang": "ja",
   "wikiEn": "Cave of Altamira",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "01-cave"
  },
  "venus-of-willendorf": {
-  "chapter": "01-cave",
   "artist": "作者不詳",
   "title": "ヴィレンドルフのヴィーナス",
   "year": "約2万9千年前",
@@ -79,10 +78,10 @@
   "wiki": "ヴィレンドルフのヴィーナス",
   "wikiLang": "ja",
   "wikiEn": "Venus of Willendorf",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "01-cave"
  },
  "pech-merle-horses": {
-  "chapter": "01-cave",
   "artist": "作者不詳",
   "title": "ペシュ・メルル洞窟「点描の馬」",
   "year": "約2万5千年前",
@@ -91,10 +90,10 @@
   "wiki": "ペシュ・メルル洞窟",
   "wikiLang": "ja",
   "wikiEn": "Pech Merle",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "01-cave"
  },
  "sulawesi-hand-stencil": {
-  "chapter": "01-cave",
   "artist": "作者不詳",
   "title": "スラウェシ島マロスの手形",
   "year": "約4万年前",
@@ -103,10 +102,10 @@
   "wiki": "リアン・テドンゲ",
   "wikiLang": "ja",
   "wikiEn": "Maros-Pangkep cave paintings",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "01-cave"
  },
  "lion-man-hohlenstein": {
-  "chapter": "01-cave",
   "artist": "作者不詳",
   "title": "ライオンマン（ホーレンシュタイン・シュターデル）",
   "year": "約4万年前",
@@ -115,10 +114,10 @@
   "wiki": "ライオンマン",
   "wikiLang": "ja",
   "wikiEn": "Lion-man",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "01-cave"
  },
  "venus-of-lespugue": {
-  "chapter": "01-cave",
   "artist": "作者不詳",
   "title": "レスピューグのヴィーナス",
   "year": "約2万5千年前",
@@ -127,10 +126,10 @@
   "wiki": "レスピューグのヴィーナス",
   "wikiLang": "ja",
   "wikiEn": "Venus of Lespugue",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "01-cave"
  },
  "sautuola-portrait": {
-  "chapter": "01-cave",
   "artist": "作者不詳",
   "title": "マルセリーノ・サンス・デ・サウトゥオラの肖像",
   "year": "19世紀",
@@ -139,10 +138,10 @@
   "wiki": "マルセリーノ・サンス・デ・サウトゥオラ",
   "wikiLang": "ja",
   "wikiEn": "Marcelino Sanz de Sautuola",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "01-cave"
  },
  "nebamun-fowling": {
-  "chapter": "02-nile",
   "artist": "作者不詳（テーベの職人）",
   "title": "ネバムンの墓の壁画　沼地の鳥猟",
   "year": "前1350年ごろ",
@@ -151,10 +150,10 @@
   "wiki": "ネバムンの墓",
   "wikiLang": "ja",
   "wikiEn": "Tomb of Nebamun",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "02-nile"
  },
  "egyptian-seated-scribe": {
-  "chapter": "02-nile",
   "artist": "作者不詳（サッカラの工房）",
   "title": "書記座像",
   "year": "前2600 — 前2350年ごろ",
@@ -163,10 +162,10 @@
   "wiki": "書記座像",
   "wikiLang": "ja",
   "wikiEn": "The Seated Scribe",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "02-nile"
  },
  "nefertiti-bust": {
-  "chapter": "02-nile",
   "artist": "トトメス（工房）と伝わる",
   "title": "ネフェルティティ胸像",
   "year": "前1345年ごろ",
@@ -175,10 +174,10 @@
   "wiki": "ネフェルティティの胸像",
   "wikiLang": "ja",
   "wikiEn": "Nefertiti Bust",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "02-nile"
  },
  "akhenaten-head": {
-  "chapter": "02-nile",
   "artist": "作者不詳",
   "title": "アクエンアテン像",
   "year": "前1350年ごろ",
@@ -187,10 +186,10 @@
   "wiki": "アクエンアテン",
   "wikiLang": "ja",
   "wikiEn": "Akhenaten",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "02-nile"
  },
  "akhenaten-family": {
-  "chapter": "02-nile",
   "artist": "作者不詳（アケトアテンの工房）",
   "title": "アクエンアテンとネフェルティティと三人の娘",
   "year": "前1345年ごろ",
@@ -199,10 +198,10 @@
   "wiki": "アマルナ時代",
   "wikiLang": "ja",
   "wikiEn": "Amarna art",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "02-nile"
  },
  "tutankhamun-mask": {
-  "chapter": "02-nile",
   "artist": "作者不詳（王家の工房）",
   "title": "ツタンカーメンの黄金のマスク",
   "year": "前1323年ごろ",
@@ -211,10 +210,10 @@
   "wiki": "ツタンカーメンの黄金のマスク",
   "wikiLang": "ja",
   "wikiEn": "Mask of Tutankhamun",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "02-nile"
  },
  "narmer-palette": {
-  "chapter": "02-nile",
   "artist": "作者不詳",
   "title": "ナルメルのパレット",
   "year": "前3100年ごろ",
@@ -223,10 +222,10 @@
   "wiki": "ナルメルのパレット",
   "wikiLang": "ja",
   "wikiEn": "Narmer Palette",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "02-nile"
  },
  "giza-great-pyramid": {
-  "chapter": "02-nile",
   "artist": "クフ王の時代の建設者たち",
   "title": "ギザの大ピラミッド",
   "year": "前2560年ごろ",
@@ -235,10 +234,10 @@
   "wiki": "ギザの大ピラミッド",
   "wikiLang": "ja",
   "wikiEn": "Great Pyramid of Giza",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "02-nile"
  },
  "khafre-enthroned": {
-  "chapter": "02-nile",
   "artist": "作者不詳（ギザの工房）",
   "title": "カフラー王座像",
   "year": "前2570年ごろ",
@@ -247,10 +246,10 @@
   "wiki": "カフラー",
   "wikiLang": "ja",
   "wikiEn": "Khafre Enthroned",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "02-nile"
  },
  "rahotep-nofret": {
-  "chapter": "02-nile",
   "artist": "作者不詳（メイドゥームの工房）",
   "title": "ラーホテプとネフェルトの像",
   "year": "前2600年ごろ",
@@ -259,10 +258,10 @@
   "wiki": "ラーホテプとネフェルト",
   "wikiLang": "ja",
   "wikiEn": "Rahotep and Nofret",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "02-nile"
  },
  "book-of-the-dead-ani": {
-  "chapter": "02-nile",
   "artist": "作者不詳（テーベの書記工房）",
   "title": "《死者の書》アニのパピルス「心臓の計量」",
   "year": "前1250年ごろ",
@@ -271,10 +270,10 @@
   "wiki": "死者の書 (古代エジプト)",
   "wikiLang": "ja",
   "wikiEn": "Papyrus of Ani",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "02-nile"
  },
  "abu-simbel": {
-  "chapter": "02-nile",
   "artist": "ラメセス2世の時代の石工たち",
   "title": "アブ・シンベル大神殿",
   "year": "前1264年ごろ",
@@ -283,10 +282,10 @@
   "wiki": "アブ・シンベル神殿",
   "wikiLang": "ja",
   "wikiEn": "Abu Simbel",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "02-nile"
  },
  "standard-of-ur": {
-  "chapter": "02-nile",
   "artist": "作者不詳（シュメールの工人）",
   "title": "ウルのスタンダード",
   "year": "前2600年ごろ",
@@ -295,10 +294,10 @@
   "wiki": "ウルのスタンダード",
   "wikiLang": "ja",
   "wikiEn": "Standard of Ur",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "02-nile"
  },
  "lamassu": {
-  "chapter": "02-nile",
   "artist": "作者不詳（アッシリアの工房）",
   "title": "人頭有翼牡牛像（ラマッスー）",
   "year": "前710年ごろ",
@@ -307,10 +306,10 @@
   "wiki": "ラマッス",
   "wikiLang": "ja",
   "wikiEn": "Lamassu",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "02-nile"
  },
  "ishtar-gate": {
-  "chapter": "02-nile",
   "artist": "作者不詳（新バビロニアの工房）",
   "title": "イシュタル門",
   "year": "前575年ごろ",
@@ -319,10 +318,10 @@
   "wiki": "イシュタル門",
   "wikiLang": "ja",
   "wikiEn": "Ishtar Gate",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "02-nile"
  },
  "kouros-anavyssos": {
-  "chapter": "03-greece",
   "artist": "作者不詳（アッティカ）",
   "title": "アナヴィソスのクーロス",
   "year": "前530年ごろ",
@@ -331,10 +330,10 @@
   "wiki": "クーロス",
   "wikiLang": "ja",
   "wikiEn": "Anavyssos Kouros",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "03-greece"
  },
  "kritios-boy": {
-  "chapter": "03-greece",
   "artist": "作者不詳（クリティオスに帰される）",
   "title": "クリティオスの少年",
   "year": "前480年ごろ",
@@ -343,10 +342,10 @@
   "wiki": "クリティオスの少年",
   "wikiLang": "ja",
   "wikiEn": "Kritios Boy",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "03-greece"
  },
  "doryphoros": {
-  "chapter": "03-greece",
   "artist": "ポリュクレイトス（原作）／ローマ時代の模刻",
   "title": "ドリュフォロス（槍を持つ人）",
   "year": "原作 前440年ごろ",
@@ -355,10 +354,10 @@
   "wiki": "ドリュフォロス",
   "wikiLang": "ja",
   "wikiEn": "Doryphoros",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "03-greece"
  },
  "parthenon": {
-  "chapter": "03-greece",
   "artist": "イクティノス、カリクラテス（設計）／フェイディアス（彫刻監督）",
   "title": "パルテノン神殿",
   "year": "前447 — 前432年",
@@ -367,10 +366,10 @@
   "wiki": "パルテノン神殿",
   "wikiLang": "ja",
   "wikiEn": "Parthenon",
-  "license": "撮影者による自由利用許諾（Wikimedia Commons）"
+  "license": "撮影者による自由利用許諾（Wikimedia Commons）",
+  "chapter": "03-greece"
  },
  "parthenon-frieze": {
-  "chapter": "03-greece",
   "artist": "フェイディアス工房",
   "title": "パルテノン神殿フリーズ（パンアテナイア祭の行列）",
   "year": "前442 — 前438年ごろ",
@@ -379,10 +378,10 @@
   "wiki": "エルギン・マーブル",
   "wikiLang": "ja",
   "wikiEn": "Elgin Marbles",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "03-greece"
  },
  "pheidias-portrait": {
-  "chapter": "03-greece",
   "artist": "作者不詳",
   "title": "フェイディアス（アテナ・パルテノス像の復元）",
   "year": "前5世紀",
@@ -391,10 +390,10 @@
   "wiki": "フェイディアス",
   "wikiLang": "ja",
   "wikiEn": "Phidias",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "03-greece"
  },
  "nike-samothrace": {
-  "chapter": "03-greece",
   "artist": "作者不詳（ロドス派とされる）",
   "title": "サモトラケのニケ",
   "year": "前190年ごろ",
@@ -403,10 +402,10 @@
   "wiki": "サモトラケのニケ",
   "wikiLang": "ja",
   "wikiEn": "Winged Victory of Samothrace",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "03-greece"
  },
  "laocoon": {
-  "chapter": "03-greece",
   "artist": "アゲサンドロス、アテノドロス、ポリュドロス（ロドス）",
   "title": "ラオコーンとその息子たち",
   "year": "前1世紀頃",
@@ -415,10 +414,10 @@
   "wiki": "ラオコーン像",
   "wikiLang": "ja",
   "wikiEn": "Laocoön and His Sons",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "03-greece"
  },
  "venus-de-milo": {
-  "chapter": "03-greece",
   "artist": "作者不詳（アンティオキアのアレクサンドロスに帰される）",
   "title": "ミロのヴィーナス",
   "year": "前130 — 前100年ごろ",
@@ -427,10 +426,10 @@
   "wiki": "ミロのヴィーナス",
   "wikiLang": "ja",
   "wikiEn": "Venus de Milo",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "03-greece"
  },
  "delphi-charioteer": {
-  "chapter": "03-greece",
   "artist": "作者不詳",
   "title": "デルフォイの御者",
   "year": "前470年ごろ",
@@ -439,10 +438,10 @@
   "wiki": "デルポイの御者像",
   "wikiLang": "ja",
   "wikiEn": "Charioteer of Delphi",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "03-greece"
  },
  "discobolus": {
-  "chapter": "03-greece",
   "artist": "ミュロン（原作）／ローマ時代の模刻",
   "title": "ディスコボロス（円盤投げ）",
   "year": "原作 前450年ごろ",
@@ -451,10 +450,10 @@
   "wiki": "円盤投げ (ミュロン)",
   "wikiLang": "ja",
   "wikiEn": "Discobolus",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "03-greece"
  },
  "aphrodite-knidos": {
-  "chapter": "03-greece",
   "artist": "プラクシテレス（原作）／ローマ時代の模刻",
   "title": "クニドスのアフロディテ",
   "year": "原作 前350年ごろ",
@@ -463,10 +462,10 @@
   "wiki": "クニドスのアプロディーテー",
   "wikiLang": "ja",
   "wikiEn": "Aphrodite of Knidos",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "03-greece"
  },
  "euphronios-krater": {
-  "chapter": "03-greece",
   "artist": "エウフロニオス（画家）／エウクシテオス（陶工）",
   "title": "サルペドンの遺体を運ぶ死と眠り（赤像式クラテル）",
   "year": "前515年ごろ",
@@ -475,10 +474,10 @@
   "wiki": "エウフロニオス",
   "wikiLang": "ja",
   "wikiEn": "Euphronios Krater",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "03-greece"
  },
  "etruscan-sarcophagus-spouses": {
-  "chapter": "04-rome",
   "artist": "エトルリアの工房",
   "title": "夫婦の棺（カエレ出土）",
   "year": "前520年ごろ",
@@ -487,10 +486,10 @@
   "wiki": "夫婦の棺",
   "wikiLang": "ja",
   "wikiEn": "Sarcophagus of the Spouses",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "04-rome"
  },
  "togatus-barberini": {
-  "chapter": "04-rome",
   "artist": "ローマの工房",
   "title": "二つの胸像を持つ男（バルベリーニのトガ像）",
   "year": "前1世紀末頃",
@@ -499,10 +498,10 @@
   "wiki": "バルベリーニのトガ像",
   "wikiLang": "ja",
   "wikiEn": "Togatus Barberini",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "04-rome"
  },
  "augustus-prima-porta": {
-  "chapter": "04-rome",
   "artist": "ローマの工房",
   "title": "プリマポルタのアウグストゥス",
   "year": "前20年ごろの原型／後1世紀の複製",
@@ -511,10 +510,10 @@
   "wiki": "プリマポルタのアウグストゥス",
   "wikiLang": "ja",
   "wikiEn": "Augustus of Prima Porta",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "04-rome"
  },
  "augustus-bust": {
-  "chapter": "04-rome",
   "artist": "ローマの工房",
   "title": "アウグストゥスの胸像（ベヴィラックア型）",
   "year": "前1世紀末",
@@ -523,10 +522,10 @@
   "wiki": "アウグストゥス",
   "wikiLang": "ja",
   "wikiEn": "Augustus",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "04-rome"
  },
  "pantheon-interior": {
-  "chapter": "04-rome",
   "artist": "ハドリアヌス帝時代の設計者",
   "title": "パンテオン　内部",
   "year": "118 — 128年ごろ",
@@ -535,10 +534,10 @@
   "wiki": "パンテオン (ローマ)",
   "wikiLang": "ja",
   "wikiEn": "Pantheon, Rome",
-  "license": "写真はウィキメディア・コモンズの自由利用画像"
+  "license": "写真はウィキメディア・コモンズの自由利用画像",
+  "chapter": "04-rome"
  },
  "colosseum": {
-  "chapter": "04-rome",
   "artist": "ウェスパシアヌス帝／ティトゥス帝の造営",
   "title": "コロッセウム（フラウィウス円形闘技場）",
   "year": "70 — 80年",
@@ -547,10 +546,10 @@
   "wiki": "コロッセオ",
   "wikiLang": "ja",
   "wikiEn": "Colosseum",
-  "license": "写真はウィキメディア・コモンズの自由利用画像"
+  "license": "写真はウィキメディア・コモンズの自由利用画像",
+  "chapter": "04-rome"
  },
  "trajan-column": {
-  "chapter": "04-rome",
   "artist": "ダマスクスのアポロドロスに帰される",
   "title": "トラヤヌス帝記念柱",
   "year": "113年",
@@ -559,10 +558,10 @@
   "wiki": "トラヤヌスの記念柱",
   "wikiLang": "ja",
   "wikiEn": "Trajan's Column",
-  "license": "写真はウィキメディア・コモンズの自由利用画像"
+  "license": "写真はウィキメディア・コモンズの自由利用画像",
+  "chapter": "04-rome"
  },
  "pompeii-villa-mysteries": {
-  "chapter": "04-rome",
   "artist": "ポンペイの壁画工房",
   "title": "秘儀荘の大壁画",
   "year": "前60 — 前50年ごろ",
@@ -571,10 +570,10 @@
   "wiki": "秘儀荘",
   "wikiLang": "ja",
   "wikiEn": "Villa of the Mysteries",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "04-rome"
  },
  "roman-republican-head": {
-  "chapter": "04-rome",
   "artist": "ローマの工房",
   "title": "共和政期の男の肖像（頭部）",
   "year": "前1世紀",
@@ -583,10 +582,10 @@
   "wiki": "ヴェリズム",
   "wikiLang": "ja",
   "wikiEn": "Head of a Roman Patrician",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "04-rome"
  },
  "ara-pacis": {
-  "chapter": "04-rome",
   "artist": "アウグストゥス帝時代の工房",
   "title": "アラ・パキス（アウグストゥスの平和の祭壇）",
   "year": "前13 — 前9年",
@@ -595,10 +594,10 @@
   "wiki": "アラ・パキス",
   "wikiLang": "ja",
   "wikiEn": "Ara Pacis",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "04-rome"
  },
  "alexander-mosaic": {
-  "chapter": "04-rome",
   "artist": "ヘレニズム期の原画にもとづくモザイク工房",
   "title": "アレクサンドロス・モザイク",
   "year": "前100年ごろ",
@@ -607,10 +606,10 @@
   "wiki": "アレクサンドロス・モザイク",
   "wikiLang": "ja",
   "wikiEn": "Alexander Mosaic",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "04-rome"
  },
  "arch-of-constantine": {
-  "chapter": "04-rome",
   "artist": "コンスタンティヌス帝時代の工房",
   "title": "コンスタンティヌスの凱旋門",
   "year": "315年",
@@ -619,10 +618,10 @@
   "wiki": "コンスタンティヌスの凱旋門",
   "wikiLang": "ja",
   "wikiEn": "Arch of Constantine",
-  "license": "写真はウィキメディア・コモンズの自由利用画像"
+  "license": "写真はウィキメディア・コモンズの自由利用画像",
+  "chapter": "04-rome"
  },
  "fayum-mummy-portrait": {
-  "chapter": "04-rome",
   "artist": "ローマ期エジプトの工房",
   "title": "ミイラ肖像画（ファイユーム出土）",
   "year": "2世紀",
@@ -631,10 +630,10 @@
   "wiki": "ミイラ肖像画",
   "wikiLang": "ja",
   "wikiEn": "Fayum mummy portraits",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "04-rome"
  },
  "constantine-colossus": {
-  "chapter": "04-rome",
   "artist": "コンスタンティヌス帝時代の工房",
   "title": "コンスタンティヌス帝の巨像（頭部）",
   "year": "312 — 315年ごろ",
@@ -643,10 +642,10 @@
   "wiki": "コンスタンティヌスの巨像",
   "wikiLang": "ja",
   "wikiEn": "Colossus of Constantine",
-  "license": "写真はウィキメディア・コモンズの自由利用画像"
+  "license": "写真はウィキメディア・コモンズの自由利用画像",
+  "chapter": "04-rome"
  },
  "catacomb-good-shepherd": {
-  "chapter": "05-byzantine",
   "artist": "作者不詳",
   "title": "善き牧者（プリシラのカタコンベ）",
   "year": "3世紀",
@@ -655,10 +654,10 @@
   "wiki": "カタコンベ",
   "wikiLang": "ja",
   "wikiEn": "Catacomb of Priscilla",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "05-byzantine"
  },
  "galla-placidia-vault": {
-  "chapter": "05-byzantine",
   "artist": "作者不詳",
   "title": "ガラ・プラキディア廟堂 天井のモザイク",
   "year": "425年ごろ",
@@ -667,10 +666,10 @@
   "wiki": "ガッラ・プラキディア廟堂",
   "wikiLang": "ja",
   "wikiEn": "Mausoleum of Galla Placidia",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "05-byzantine"
  },
  "san-vitale-justinian": {
-  "chapter": "05-byzantine",
   "artist": "作者不詳",
   "title": "ユスティニアヌス帝と随臣",
   "year": "547年ごろ",
@@ -679,10 +678,10 @@
   "wiki": "サン・ヴィターレ聖堂",
   "wikiLang": "ja",
   "wikiEn": "Basilica of San Vitale",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "05-byzantine"
  },
  "san-vitale-theodora": {
-  "chapter": "05-byzantine",
   "artist": "作者不詳",
   "title": "テオドラ皇妃と侍女たち",
   "year": "547年ごろ",
@@ -691,10 +690,10 @@
   "wiki": "テオドラ (6世紀)",
   "wikiLang": "ja",
   "wikiEn": "Theodora (wife of Justinian I)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "05-byzantine"
  },
  "hagia-sophia-interior": {
-  "chapter": "05-byzantine",
   "artist": "アンテミオスとイシドロス（設計）",
   "title": "ハギア・ソフィア 内部",
   "year": "537年",
@@ -703,10 +702,10 @@
   "wiki": "アヤソフィア",
   "wikiLang": "ja",
   "wikiEn": "Hagia Sophia",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "05-byzantine"
  },
  "sinai-pantocrator": {
-  "chapter": "05-byzantine",
   "artist": "作者不詳",
   "title": "全能者ハリストス（パントクラトール）",
   "year": "6世紀",
@@ -715,10 +714,10 @@
   "wiki": "全能者ハリストス",
   "wikiLang": "ja",
   "wikiEn": "Christ Pantocrator (Sinai)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "05-byzantine"
  },
  "rublev-trinity": {
-  "chapter": "05-byzantine",
   "artist": "アンドレイ・ルブリョフ",
   "title": "三位一体（至聖三者）",
   "year": "1425年ごろ",
@@ -727,10 +726,10 @@
   "wiki": "至聖三者 (イコン)",
   "wikiLang": "ja",
   "wikiEn": "Trinity (Andrei Rublev)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "05-byzantine"
  },
  "vladimir-theotokos": {
-  "chapter": "05-byzantine",
   "artist": "作者不詳（コンスタンティノープルの工房）",
   "title": "ウラジーミルの生神女",
   "year": "12世紀前半",
@@ -739,10 +738,10 @@
   "wiki": "ウラジーミルの生神女",
   "wikiLang": "ja",
   "wikiEn": "Theotokos of Vladimir",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "05-byzantine"
  },
  "daphni-pantocrator": {
-  "chapter": "05-byzantine",
   "artist": "作者不詳",
   "title": "パントクラトール（ダフニ修道院ドーム）",
   "year": "1100年ごろ",
@@ -751,10 +750,10 @@
   "wiki": "ダフニ修道院",
   "wikiLang": "ja",
   "wikiEn": "Daphni Monastery",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "05-byzantine"
  },
  "monreale-pantocrator": {
-  "chapter": "05-byzantine",
   "artist": "作者不詳（ビザンティンの工房）",
   "title": "パントクラトール（モンレアーレ大聖堂）",
   "year": "1180年代",
@@ -763,10 +762,10 @@
   "wiki": "モンレアーレ",
   "wikiLang": "ja",
   "wikiEn": "Monreale Cathedral",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "05-byzantine"
  },
  "chora-anastasis": {
-  "chapter": "05-byzantine",
   "artist": "作者不詳",
   "title": "アナスタシス（コーラ修道院）",
   "year": "1320年ごろ",
@@ -775,10 +774,10 @@
   "wiki": "カーリエ博物館",
   "wikiLang": "ja",
   "wikiEn": "Chora Church",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "05-byzantine"
  },
  "yamashita-rin-portrait": {
-  "chapter": "05-byzantine",
   "artist": "写真・作者不詳",
   "title": "山下りん",
   "year": "明治期",
@@ -787,10 +786,10 @@
   "wiki": "山下りん",
   "wikiLang": "ja",
   "wikiEn": "Rin Yamashita",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "05-byzantine"
  },
  "autun-last-judgment": {
-  "chapter": "06-romanesque",
   "artist": "ギスレベルトゥス（と伝わる）",
   "title": "最後の審判（西正面タンパン）",
   "year": "1130年ごろ",
@@ -799,10 +798,10 @@
   "wiki": "オータン大聖堂",
   "wikiLang": "ja",
   "wikiEn": "Gislebertus",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "06-romanesque"
  },
  "vezelay-tympanum": {
-  "chapter": "06-romanesque",
   "artist": "作者不詳",
   "title": "聖霊降臨・使徒たちの派遣（内玄関中央タンパン）",
   "year": "1120年代",
@@ -811,10 +810,10 @@
   "wiki": "ヴェズレーの教会と丘",
   "wikiLang": "ja",
   "wikiEn": "Vézelay Abbey",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "06-romanesque"
  },
  "moissac-prophet": {
-  "chapter": "06-romanesque",
   "artist": "作者不詳",
   "title": "預言者エレミヤ（南扉口 中央柱）",
   "year": "1120年代",
@@ -823,10 +822,10 @@
   "wiki": "モワサック",
   "wikiLang": "ja",
   "wikiEn": "Moissac Abbey",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "06-romanesque"
  },
  "saint-sernin-nave": {
-  "chapter": "06-romanesque",
   "artist": "作者不詳",
   "title": "サン・セルナン聖堂 身廊",
   "year": "1080年ごろ着工",
@@ -835,10 +834,10 @@
   "wiki": "サン・セルナン聖堂",
   "wikiLang": "ja",
   "wikiEn": "Basilica of Saint-Sernin, Toulouse",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "06-romanesque"
  },
  "conques-sainte-foy": {
-  "chapter": "06-romanesque",
   "artist": "作者不詳",
   "title": "サント・フォワの聖遺物像（マジェスタ）",
   "year": "10世紀ごろ、以後増補",
@@ -847,10 +846,10 @@
   "wiki": "コンク (アヴェロン県)",
   "wikiLang": "ja",
   "wikiEn": "Reliquary of Sainte-Foy",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "06-romanesque"
  },
  "book-of-kells-chi-rho": {
-  "chapter": "06-romanesque",
   "artist": "アイオナまたはケルズの修道院の写字生",
   "title": "ケルズの書 キリストのモノグラム（fol. 34r）",
   "year": "800年ごろ",
@@ -859,10 +858,10 @@
   "wiki": "ケルズの書",
   "wikiLang": "ja",
   "wikiEn": "Book of Kells",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "06-romanesque"
  },
  "beatus-apocalypse": {
-  "chapter": "06-romanesque",
   "artist": "写字生と彩飾師（工房不詳）",
   "title": "ベアトゥス『黙示録註解』写本の挿絵",
   "year": "10 — 12世紀",
@@ -871,10 +870,10 @@
   "wiki": "ベアトゥス写本",
   "wikiLang": "ja",
   "wikiEn": "Beatus of Liébana",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "06-romanesque"
  },
  "bernard-clairvaux-portrait": {
-  "chapter": "06-romanesque",
   "artist": "ゲオルク・アンドレアス・ヴァスフーバー",
   "title": "クレルヴォーのベルナルドゥス像",
   "year": "17世紀",
@@ -883,10 +882,10 @@
   "wiki": "ベルナルドゥス (クレルヴォーの)",
   "wikiLang": "ja",
   "wikiEn": "Bernard of Clairvaux",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "06-romanesque"
  },
  "taull-pantocrator": {
-  "chapter": "06-romanesque",
   "artist": "タウイの画家（作者不詳）",
   "title": "全能のキリスト（サン・クレメンテ・デ・タウイ 後陣）",
   "year": "1123年ごろ",
@@ -895,10 +894,10 @@
   "wiki": "サン・クリメン・デ・タウイ教会",
   "wikiLang": "ja",
   "wikiEn": "Sant Climent de Taüll",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "06-romanesque"
  },
  "batllo-majesty": {
-  "chapter": "06-romanesque",
   "artist": "作者不詳（カタルーニャ）",
   "title": "マヘスタ・バトリョ（着衣のキリスト磔刑像）",
   "year": "12世紀中ごろ",
@@ -907,10 +906,10 @@
   "wiki": "マヘスタ・バトリョ",
   "wikiLang": "ja",
   "wikiEn": "Batlló Majesty",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "06-romanesque"
  },
  "durham-cathedral": {
-  "chapter": "06-romanesque",
   "artist": "作者不詳（ノルマンの棟梁）",
   "title": "ダラム大聖堂 身廊",
   "year": "1093 — 1133年",
@@ -919,10 +918,10 @@
   "wiki": "ダラム大聖堂",
   "wikiLang": "ja",
   "wikiEn": "Durham Cathedral",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "06-romanesque"
  },
  "pisa-cathedral": {
-  "chapter": "06-romanesque",
   "artist": "ブスケトゥスほか（設計）",
   "title": "ピサ大聖堂と鐘楼（斜塔）",
   "year": "1063年起工／鐘楼1173年起工",
@@ -931,10 +930,10 @@
   "wiki": "ピサ大聖堂",
   "wikiLang": "ja",
   "wikiEn": "Pisa Cathedral",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "06-romanesque"
  },
  "speyer-cathedral": {
-  "chapter": "06-romanesque",
   "artist": "作者不詳（皇帝コンラート2世の造営）",
   "title": "シュパイアー大聖堂",
   "year": "1030年起工",
@@ -943,10 +942,10 @@
   "wiki": "シュパイアー大聖堂",
   "wikiLang": "ja",
   "wikiEn": "Speyer Cathedral",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "06-romanesque"
  },
  "bayeux-tapestry": {
-  "chapter": "06-romanesque",
   "artist": "作者不詳（イングランドの工房と推定）",
   "title": "バイユーのタピスリー",
   "year": "1077年ごろ",
@@ -955,10 +954,10 @@
   "wiki": "バイユーのタペストリー",
   "wikiLang": "ja",
   "wikiEn": "Bayeux Tapestry",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "06-romanesque"
  },
  "sainte-chapelle-interior": {
-  "chapter": "07-gothic",
   "artist": "パリの工房（親方名不詳）",
   "title": "サント・シャペル 上層礼拝堂",
   "year": "1242 — 1248年",
@@ -967,10 +966,10 @@
   "wiki": "サント・シャペル",
   "wikiLang": "ja",
   "wikiEn": "Sainte-Chapelle",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "07-gothic"
  },
  "notre-dame-chevet": {
-  "chapter": "07-gothic",
   "artist": "モーリス・ド・シュリー司教の発意にはじまる",
   "title": "ノートルダム・ド・パリ 東側（シュヴェ）の飛梁",
   "year": "1163年着工",
@@ -979,10 +978,10 @@
   "wiki": "フライング・バットレス",
   "wikiLang": "ja",
   "wikiEn": "Flying buttress",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "07-gothic"
  },
  "chartres-belle-verriere": {
-  "chapter": "07-gothic",
   "artist": "シャルトルの工房（作者不詳）",
   "title": "美しき絵ガラスの聖母（ノートル・ダム・ド・ラ・ベル・ヴェリエール）",
   "year": "1180年ごろ",
@@ -991,10 +990,10 @@
   "wiki": "シャルトル大聖堂のステンドグラス",
   "wikiLang": "ja",
   "wikiEn": "Notre-Dame de la Belle-Verrière",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "07-gothic"
  },
  "amiens-nave": {
-  "chapter": "07-gothic",
   "artist": "ロベール・ド・リュザルシュほか",
   "title": "アミアン大聖堂 身廊",
   "year": "1220年着工",
@@ -1003,10 +1002,10 @@
   "wiki": "アミアン大聖堂",
   "wikiLang": "ja",
   "wikiEn": "Amiens Cathedral",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "07-gothic"
  },
  "beauvais-choir": {
-  "chapter": "07-gothic",
   "artist": "建設者名は特定されていない",
   "title": "サン・ピエール大聖堂 内陣（ボーヴェ）",
   "year": "1225年着工",
@@ -1015,10 +1014,10 @@
   "wiki": "ボーヴェ大聖堂",
   "wikiLang": "ja",
   "wikiEn": "Beauvais Cathedral",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "07-gothic"
  },
  "chartres-royal-portal": {
-  "chapter": "07-gothic",
   "artist": "シャルトルの工房（作者不詳）",
   "title": "王の扉口の柱像",
   "year": "1145 — 1155年ごろ",
@@ -1027,10 +1026,10 @@
   "wiki": "シャルトル大聖堂",
   "wikiLang": "ja",
   "wikiEn": "Royal Portal",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "07-gothic"
  },
  "reims-smiling-angel": {
-  "chapter": "07-gothic",
   "artist": "ランスの工房（作者不詳）",
   "title": "微笑む天使",
   "year": "1236 — 1245年ごろ",
@@ -1039,10 +1038,10 @@
   "wiki": "ランス大聖堂",
   "wikiLang": "ja",
   "wikiEn": "Smiling Angel",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "07-gothic"
  },
  "tres-riches-heures-fevrier": {
-  "chapter": "07-gothic",
   "artist": "ランブール兄弟",
   "title": "ベリー公のいとも豪華なる時祷書「2月」",
   "year": "1412 — 1416年",
@@ -1051,10 +1050,10 @@
   "wiki": "ベリー公のいとも豪華なる時祷書",
   "wikiLang": "ja",
   "wikiEn": "Très Riches Heures",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "07-gothic"
  },
  "saint-denis-ambulatory": {
-  "chapter": "07-gothic",
   "artist": "シュジェール（発注）／棟梁名不詳",
   "title": "サン・ドニ修道院教会 内陣と周歩廊",
   "year": "1144年献堂",
@@ -1063,10 +1062,10 @@
   "wiki": "サン=ドニ大聖堂",
   "wikiLang": "ja",
   "wikiEn": "Basilica of Saint-Denis",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "07-gothic"
  },
  "chartres-rose-north": {
-  "chapter": "07-gothic",
   "artist": "シャルトルの工房（親方名不詳）",
   "title": "北のバラ窓（シャルトル大聖堂）",
   "year": "1235年ごろ",
@@ -1075,10 +1074,10 @@
   "wiki": "シャルトル大聖堂",
   "wikiLang": "ja",
   "wikiEn": "Chartres Cathedral",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "07-gothic"
  },
  "naumburg-uta": {
-  "chapter": "07-gothic",
   "artist": "ナウムブルクの親方（作者不詳）",
   "title": "ウタ像（ナウムブルク大聖堂 西内陣）",
   "year": "1250年ごろ",
@@ -1087,10 +1086,10 @@
   "wiki": "ナウムブルク大聖堂",
   "wikiLang": "ja",
   "wikiEn": "Uta of Naumburg",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "07-gothic"
  },
  "cologne-cathedral": {
-  "chapter": "07-gothic",
   "artist": "ゲルハルト親方ほか（設計）",
   "title": "ケルン大聖堂 西正面",
   "year": "1248年起工／1880年竣工",
@@ -1099,10 +1098,10 @@
   "wiki": "ケルン大聖堂",
   "wikiLang": "ja",
   "wikiEn": "Cologne Cathedral",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "07-gothic"
  },
  "suger-portrait": {
-  "chapter": "07-gothic",
   "artist": "サン・ドニの工房",
   "title": "シュジェール（ステンドグラスの寄進者像）",
   "year": "1140年代",
@@ -1111,10 +1110,10 @@
   "wiki": "シュジェール",
   "wikiLang": "ja",
   "wikiEn": "Suger",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "07-gothic"
  },
  "masaccio-trinity": {
-  "chapter": "08-quattrocento",
   "artist": "マサッチョ",
   "title": "聖三位一体",
   "year": "1427年ごろ",
@@ -1123,10 +1122,10 @@
   "wiki": "聖三位一体 (マサッチョ)",
   "wikiLang": "ja",
   "wikiEn": "Holy Trinity (Masaccio)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "08-quattrocento"
  },
  "giotto-kiss-of-judas": {
-  "chapter": "08-quattrocento",
   "artist": "ジョット・ディ・ボンドーネ",
   "title": "ユダの接吻",
   "year": "1305年ごろ",
@@ -1135,10 +1134,10 @@
   "wiki": "ユダの接吻 (ジョット)",
   "wikiLang": "ja",
   "wikiEn": "Kiss of Judas (Giotto)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "08-quattrocento"
  },
  "masaccio-tribute-money": {
-  "chapter": "08-quattrocento",
   "artist": "マサッチョ",
   "title": "貢の銭",
   "year": "1425年ごろ",
@@ -1147,10 +1146,10 @@
   "wiki": "貢の銭",
   "wikiLang": "ja",
   "wikiEn": "The Tribute Money (Masaccio)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "08-quattrocento"
  },
  "masaccio-portrait": {
-  "chapter": "08-quattrocento",
   "artist": "マサッチョ",
   "title": "自画像とされる部分（ブランカッチ礼拝堂）",
   "year": "1425年ごろ",
@@ -1159,10 +1158,10 @@
   "wiki": "マサッチオ",
   "wikiLang": "ja",
   "wikiEn": "Masaccio",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "08-quattrocento"
  },
  "uccello-san-romano": {
-  "chapter": "08-quattrocento",
   "artist": "パオロ・ウッチェロ",
   "title": "サン・ロマーノの戦い",
   "year": "1435 — 1460年ごろ",
@@ -1171,10 +1170,10 @@
   "wiki": "サン・ロマーノの戦い",
   "wikiLang": "ja",
   "wikiEn": "The Battle of San Romano",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "08-quattrocento"
  },
  "brunelleschi-dome": {
-  "chapter": "08-quattrocento",
   "artist": "フィリッポ・ブルネレスキ",
   "title": "サンタ・マリア・デル・フィオーレ大聖堂クーポラ",
   "year": "1420 — 1436年",
@@ -1183,10 +1182,10 @@
   "wiki": "サンタ・マリア・デル・フィオーレ大聖堂",
   "wikiLang": "ja",
   "wikiEn": "Florence Cathedral",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "08-quattrocento"
  },
  "donatello-david": {
-  "chapter": "08-quattrocento",
   "artist": "ドナテッロ",
   "title": "ダヴィデ",
   "year": "1440年代ごろか（諸説あり）",
@@ -1195,10 +1194,10 @@
   "wiki": "ダヴィデ像 (ドナテッロ)",
   "wikiLang": "ja",
   "wikiEn": "David (Donatello)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "08-quattrocento"
  },
  "ghiberti-gates-of-paradise": {
-  "chapter": "08-quattrocento",
   "artist": "ロレンツォ・ギベルティ",
   "title": "天国の門（サン・ジョヴァンニ洗礼堂 東扉）",
   "year": "1425 — 1452年",
@@ -1207,10 +1206,10 @@
   "wiki": "サン・ジョヴァンニ洗礼堂",
   "wikiLang": "ja",
   "wikiEn": "Florence Baptistery",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "08-quattrocento"
  },
  "fra-angelico-annunciation": {
-  "chapter": "08-quattrocento",
   "artist": "フラ・アンジェリコ",
   "title": "受胎告知（サン・マルコ修道院）",
   "year": "1440年代",
@@ -1219,10 +1218,10 @@
   "wiki": "受胎告知 (フラ・アンジェリコ)",
   "wikiLang": "ja",
   "wikiEn": "Annunciation (Fra Angelico, San Marco)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "08-quattrocento"
  },
  "piero-baptism": {
-  "chapter": "08-quattrocento",
   "artist": "ピエロ・デッラ・フランチェスカ",
   "title": "キリストの洗礼",
   "year": "1440年代",
@@ -1231,10 +1230,10 @@
   "wiki": "キリストの洗礼 (ピエロ・デラ・フランチェスカ)",
   "wikiLang": "ja",
   "wikiEn": "The Baptism of Christ (Piero della Francesca)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "08-quattrocento"
  },
  "donatello-magdalene": {
-  "chapter": "08-quattrocento",
   "artist": "ドナテッロ",
   "title": "マグダラのマリア",
   "year": "1450年代",
@@ -1243,10 +1242,10 @@
   "wiki": "マグダラのマリア (ドナテッロ)",
   "wikiLang": "ja",
   "wikiEn": "Penitent Magdalene (Donatello)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "08-quattrocento"
  },
  "mantegna-dead-christ": {
-  "chapter": "08-quattrocento",
   "artist": "アンドレア・マンテーニャ",
   "title": "死せるキリスト",
   "year": "1480年ごろ",
@@ -1255,10 +1254,10 @@
   "wiki": "死せるキリスト",
   "wikiLang": "ja",
   "wikiEn": "Lamentation of Christ (Mantegna)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "08-quattrocento"
  },
  "botticelli-birth-of-venus": {
-  "chapter": "08-quattrocento",
   "artist": "サンドロ・ボッティチェリ",
   "title": "ヴィーナスの誕生",
   "year": "1485年ごろ",
@@ -1267,10 +1266,10 @@
   "wiki": "ヴィーナスの誕生",
   "wikiLang": "ja",
   "wikiEn": "The Birth of Venus",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "08-quattrocento"
  },
  "botticelli-primavera": {
-  "chapter": "08-quattrocento",
   "artist": "サンドロ・ボッティチェリ",
   "title": "春（プリマヴェーラ）",
   "year": "1480年ごろ",
@@ -1279,10 +1278,10 @@
   "wiki": "プリマヴェーラ (ボッティチェリ)",
   "wikiLang": "ja",
   "wikiEn": "Primavera (Botticelli)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "08-quattrocento"
  },
  "leonardo-mona-lisa": {
-  "chapter": "09-cinquecento",
   "artist": "レオナルド・ダ・ヴィンチ",
   "title": "モナ・リザ",
   "year": "1503 — 1519年ごろ",
@@ -1291,10 +1290,10 @@
   "wiki": "モナ・リザ",
   "wikiLang": "ja",
   "wikiEn": "Mona Lisa",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "09-cinquecento"
  },
  "leonardo-last-supper": {
-  "chapter": "09-cinquecento",
   "artist": "レオナルド・ダ・ヴィンチ",
   "title": "最後の晩餐",
   "year": "1495 — 1498年",
@@ -1303,10 +1302,10 @@
   "wiki": "最後の晩餐 (レオナルド)",
   "wikiLang": "ja",
   "wikiEn": "The Last Supper (Leonardo)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "09-cinquecento"
  },
  "leonardo-vitruvian-man": {
-  "chapter": "09-cinquecento",
   "artist": "レオナルド・ダ・ヴィンチ",
   "title": "ウィトルウィウス的人体図",
   "year": "1490年ごろ",
@@ -1315,10 +1314,10 @@
   "wiki": "ウィトルウィウス的人体図",
   "wikiLang": "ja",
   "wikiEn": "Vitruvian Man",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "09-cinquecento"
  },
  "michelangelo-pieta": {
-  "chapter": "09-cinquecento",
   "artist": "ミケランジェロ・ブオナローティ",
   "title": "ピエタ",
   "year": "1498 — 1499年",
@@ -1327,10 +1326,10 @@
   "wiki": "ピエタ (ミケランジェロ)",
   "wikiLang": "ja",
   "wikiEn": "Pietà (Michelangelo)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "09-cinquecento"
  },
  "michelangelo-david": {
-  "chapter": "09-cinquecento",
   "artist": "ミケランジェロ・ブオナローティ",
   "title": "ダヴィデ",
   "year": "1501 — 1504年",
@@ -1339,10 +1338,10 @@
   "wiki": "ダヴィデ像",
   "wikiLang": "ja",
   "wikiEn": "David (Michelangelo)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "09-cinquecento"
  },
  "michelangelo-creation-of-adam": {
-  "chapter": "09-cinquecento",
   "artist": "ミケランジェロ・ブオナローティ",
   "title": "アダムの創造（システィーナ礼拝堂天井画）",
   "year": "1511 — 1512年",
@@ -1351,10 +1350,10 @@
   "wiki": "アダムの創造",
   "wikiLang": "ja",
   "wikiEn": "The Creation of Adam",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "09-cinquecento"
  },
  "michelangelo-portrait": {
-  "chapter": "09-cinquecento",
   "artist": "ダニエレ・ダ・ヴォルテラ",
   "title": "ミケランジェロの肖像",
   "year": "1544年ごろ",
@@ -1363,10 +1362,10 @@
   "wiki": "ミケランジェロ・ブオナローティ",
   "wikiLang": "ja",
   "wikiEn": "Michelangelo",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "09-cinquecento"
  },
  "raphael-school-of-athens": {
-  "chapter": "09-cinquecento",
   "artist": "ラファエロ・サンツィオ",
   "title": "アテネの学堂",
   "year": "1509 — 1511年",
@@ -1375,10 +1374,10 @@
   "wiki": "アテナイの学堂",
   "wikiLang": "ja",
   "wikiEn": "The School of Athens",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "09-cinquecento"
  },
  "raphael-madonna-della-seggiola": {
-  "chapter": "09-cinquecento",
   "artist": "ラファエロ・サンツィオ",
   "title": "小椅子の聖母",
   "year": "1513 — 1514年ごろ",
@@ -1387,10 +1386,10 @@
   "wiki": "小椅子の聖母",
   "wikiLang": "ja",
   "wikiEn": "Madonna della seggiola",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "09-cinquecento"
  },
  "leonardo-virgin-of-the-rocks": {
-  "chapter": "09-cinquecento",
   "artist": "レオナルド・ダ・ヴィンチ",
   "title": "岩窟の聖母",
   "year": "1483 — 1486年ごろ",
@@ -1399,10 +1398,10 @@
   "wiki": "岩窟の聖母",
   "wikiLang": "ja",
   "wikiEn": "Virgin of the Rocks",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "09-cinquecento"
  },
  "michelangelo-last-judgment": {
-  "chapter": "09-cinquecento",
   "artist": "ミケランジェロ・ブオナローティ",
   "title": "最後の審判",
   "year": "1536 — 1541年",
@@ -1411,10 +1410,10 @@
   "wiki": "最後の審判 (ミケランジェロ)",
   "wikiLang": "ja",
   "wikiEn": "The Last Judgment (Michelangelo)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "09-cinquecento"
  },
  "bramante-tempietto": {
-  "chapter": "09-cinquecento",
   "artist": "ドナト・ブラマンテ",
   "title": "テンピエット",
   "year": "1502年ごろ",
@@ -1423,10 +1422,10 @@
   "wiki": "テンピエット",
   "wikiLang": "ja",
   "wikiEn": "Tempietto",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "09-cinquecento"
  },
  "van-eyck-arnolfini": {
-  "chapter": "10-north",
   "artist": "ヤン・ファン・エイク",
   "title": "アルノルフィーニ夫妻像",
   "year": "1434年",
@@ -1435,10 +1434,10 @@
   "wiki": "アルノルフィーニ夫妻像",
   "wikiLang": "ja",
   "wikiEn": "Arnolfini Portrait",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "10-north"
  },
  "van-eyck-ghent-altarpiece": {
-  "chapter": "10-north",
   "artist": "フーベルト＆ヤン・ファン・エイク",
   "title": "ヘントの祭壇画（神秘の子羊）",
   "year": "1432年",
@@ -1447,10 +1446,10 @@
   "wiki": "ヘントの祭壇画",
   "wikiLang": "ja",
   "wikiEn": "Ghent Altarpiece",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "10-north"
  },
  "bosch-garden-earthly-delights": {
-  "chapter": "10-north",
   "artist": "ヒエロニムス・ボス",
   "title": "快楽の園",
   "year": "1490 — 1500年ごろ",
@@ -1459,10 +1458,10 @@
   "wiki": "快楽の園",
   "wikiLang": "ja",
   "wikiEn": "The Garden of Earthly Delights",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "10-north"
  },
  "durer-self-portrait-1498": {
-  "chapter": "10-north",
   "artist": "アルブレヒト・デューラー",
   "title": "自画像",
   "year": "1498年",
@@ -1471,10 +1470,10 @@
   "wiki": "アルブレヒト・デューラー",
   "wikiLang": "ja",
   "wikiEn": "Albrecht Dürer",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "10-north"
  },
  "durer-self-portrait-1500": {
-  "chapter": "10-north",
   "artist": "アルブレヒト・デューラー",
   "title": "自画像（毛皮の襟のコートを着た）",
   "year": "1500年",
@@ -1483,10 +1482,10 @@
   "wiki": "自画像 (デューラー、1500年)",
   "wikiLang": "ja",
   "wikiEn": "Self-Portrait (Dürer, Munich)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "10-north"
  },
  "durer-melencolia": {
-  "chapter": "10-north",
   "artist": "アルブレヒト・デューラー",
   "title": "メランコリアI",
   "year": "1514年",
@@ -1495,10 +1494,10 @@
   "wiki": "メランコリアI",
   "wikiLang": "ja",
   "wikiEn": "Melencolia I",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "10-north"
  },
  "bruegel-hunters-in-snow": {
-  "chapter": "10-north",
   "artist": "ピーテル・ブリューゲル（父）",
   "title": "雪中の狩人",
   "year": "1565年",
@@ -1507,10 +1506,10 @@
   "wiki": "雪中の狩人",
   "wikiLang": "ja",
   "wikiEn": "The Hunters in the Snow",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "10-north"
  },
  "bruegel-tower-of-babel": {
-  "chapter": "10-north",
   "artist": "ピーテル・ブリューゲル（父）",
   "title": "バベルの塔",
   "year": "1568年ごろ",
@@ -1519,10 +1518,10 @@
   "wiki": "バベルの塔 (絵画)",
   "wikiLang": "ja",
   "wikiEn": "The Tower of Babel (Bruegel)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "10-north"
  },
  "bruegel-fall-of-icarus": {
-  "chapter": "10-north",
   "artist": "ピーテル・ブリューゲル（父）に帰属",
   "title": "イカロスの墜落のある風景",
   "year": "1560年代",
@@ -1531,10 +1530,10 @@
   "wiki": "イカロスの墜落のある風景",
   "wikiLang": "ja",
   "wikiEn": "Landscape with the Fall of Icarus",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "10-north"
  },
  "rogier-descent-from-the-cross": {
-  "chapter": "10-north",
   "artist": "ロヒール・ファン・デル・ウェイデン",
   "title": "十字架降架",
   "year": "1435年ごろ",
@@ -1543,10 +1542,10 @@
   "wiki": "キリスト降架 (ロヒール・ファン・デル・ウェイデン)",
   "wikiLang": "ja",
   "wikiEn": "The Descent from the Cross (van der Weyden)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "10-north"
  },
  "bruegel-netherlandish-proverbs": {
-  "chapter": "10-north",
   "artist": "ピーテル・ブリューゲル（父）",
   "title": "ネーデルラントの諺",
   "year": "1559年",
@@ -1555,10 +1554,10 @@
   "wiki": "ネーデルラントの諺",
   "wikiLang": "ja",
   "wikiEn": "Netherlandish Proverbs",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "10-north"
  },
  "durer-young-hare": {
-  "chapter": "10-north",
   "artist": "アルブレヒト・デューラー",
   "title": "若い野兎",
   "year": "1502年",
@@ -1567,10 +1566,10 @@
   "wiki": "野兎 (デューラー)",
   "wikiLang": "ja",
   "wikiEn": "Young Hare",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "10-north"
  },
  "grunewald-isenheim-altarpiece": {
-  "chapter": "10-north",
   "artist": "マティアス・グリューネヴァルト",
   "title": "イーゼンハイム祭壇画",
   "year": "1512 — 1516年",
@@ -1579,10 +1578,10 @@
   "wiki": "イーゼンハイムの祭壇画",
   "wikiLang": "ja",
   "wikiEn": "Isenheim Altarpiece",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "10-north"
  },
  "holbein-the-ambassadors": {
-  "chapter": "10-north",
   "artist": "ハンス・ホルバイン（子）",
   "title": "大使たち",
   "year": "1533年",
@@ -1591,10 +1590,10 @@
   "wiki": "大使たち",
   "wikiLang": "ja",
   "wikiEn": "The Ambassadors (Holbein)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "10-north"
  },
  "giorgione-tempest": {
-  "chapter": "11-venice",
   "artist": "ジョルジョーネ",
   "title": "嵐",
   "year": "1505 — 1510年ごろ",
@@ -1603,10 +1602,10 @@
   "wiki": "嵐 (ジョルジョーネ)",
   "wikiLang": "ja",
   "wikiEn": "The Tempest (Giorgione)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "11-venice"
  },
  "titian-self-portrait": {
-  "chapter": "11-venice",
   "artist": "ティツィアーノ・ヴェチェッリオ",
   "title": "自画像",
   "year": "1560年ごろ",
@@ -1615,10 +1614,10 @@
   "wiki": "ティツィアーノ・ヴェチェッリオ",
   "wikiLang": "ja",
   "wikiEn": "Titian",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "11-venice"
  },
  "titian-assunta": {
-  "chapter": "11-venice",
   "artist": "ティツィアーノ・ヴェチェッリオ",
   "title": "聖母被昇天",
   "year": "1516 — 1518年",
@@ -1627,10 +1626,10 @@
   "wiki": "聖母被昇天 (ティツィアーノ)",
   "wikiLang": "ja",
   "wikiEn": "Assumption of the Virgin (Titian)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "11-venice"
  },
  "titian-venus-urbino": {
-  "chapter": "11-venice",
   "artist": "ティツィアーノ・ヴェチェッリオ",
   "title": "ウルビーノのヴィーナス",
   "year": "1538年",
@@ -1639,10 +1638,10 @@
   "wiki": "ウルビーノのヴィーナス",
   "wikiLang": "ja",
   "wikiEn": "Venus of Urbino",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "11-venice"
  },
  "tintoretto-last-supper": {
-  "chapter": "11-venice",
   "artist": "ヤコポ・ティントレット",
   "title": "最後の晩餐",
   "year": "1592 — 1594年",
@@ -1651,10 +1650,10 @@
   "wiki": "最後の晩餐 (ティントレット)",
   "wikiLang": "ja",
   "wikiEn": "The Last Supper (Tintoretto)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "11-venice"
  },
  "veronese-feast-levi": {
-  "chapter": "11-venice",
   "artist": "パオロ・ヴェロネーゼ",
   "title": "レヴィ家の饗宴",
   "year": "1573年",
@@ -1663,10 +1662,10 @@
   "wiki": "レヴィ家の饗宴",
   "wikiLang": "ja",
   "wikiEn": "The Feast in the House of Levi",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "11-venice"
  },
  "parmigianino-long-neck": {
-  "chapter": "11-venice",
   "artist": "パルミジャニーノ",
   "title": "長い首の聖母",
   "year": "1534 — 1540年",
@@ -1675,10 +1674,10 @@
   "wiki": "長い首の聖母",
   "wikiLang": "ja",
   "wikiEn": "Madonna with the Long Neck",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "11-venice"
  },
  "pontormo-deposition": {
-  "chapter": "11-venice",
   "artist": "ヤコポ・ポントルモ",
   "title": "十字架降下",
   "year": "1525 — 1528年",
@@ -1687,10 +1686,10 @@
   "wiki": "十字架降下 (ポントルモ)",
   "wikiLang": "ja",
   "wikiEn": "Deposition from the Cross (Pontormo)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "11-venice"
  },
  "elgreco-orgaz": {
-  "chapter": "11-venice",
   "artist": "エル・グレコ",
   "title": "オルガス伯の埋葬",
   "year": "1586 — 1588年",
@@ -1699,10 +1698,10 @@
   "wiki": "オルガス伯の埋葬",
   "wikiLang": "ja",
   "wikiEn": "The Burial of the Count of Orgaz",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "11-venice"
  },
  "bellini-san-zaccaria": {
-  "chapter": "11-venice",
   "artist": "ジョヴァンニ・ベッリーニ",
   "title": "サン・ザッカリア祭壇画",
   "year": "1505年",
@@ -1711,10 +1710,10 @@
   "wiki": "サン・ザッカリア祭壇画",
   "wikiLang": "ja",
   "wikiEn": "San Zaccaria Altarpiece",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "11-venice"
  },
  "giorgione-sleeping-venus": {
-  "chapter": "11-venice",
   "artist": "ジョルジョーネ",
   "title": "眠れるヴィーナス",
   "year": "1508 — 1510年ごろ",
@@ -1723,10 +1722,10 @@
   "wiki": "眠れるヴィーナス",
   "wikiLang": "ja",
   "wikiEn": "Sleeping Venus",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "11-venice"
  },
  "titian-charles-v-muhlberg": {
-  "chapter": "11-venice",
   "artist": "ティツィアーノ・ヴェチェッリオ",
   "title": "ミュールベルクのカール5世",
   "year": "1548年",
@@ -1735,10 +1734,10 @@
   "wiki": "カール5世騎馬像",
   "wikiLang": "ja",
   "wikiEn": "Equestrian Portrait of Charles V",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "11-venice"
  },
  "carpaccio-miracle-relic-cross": {
-  "chapter": "11-venice",
   "artist": "ヴィットーレ・カルパッチョ",
   "title": "リアルト橋における聖十字架遺物の奇跡",
   "year": "1494年ごろ",
@@ -1747,10 +1746,10 @@
   "wiki": "リアルト橋での聖十字架の遺物の奇跡",
   "wikiLang": "ja",
   "wikiEn": "Miracle of the Relic of the Cross at the Ponte di Rialto",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "11-venice"
  },
  "palladio-villa-rotonda": {
-  "chapter": "11-venice",
   "artist": "アンドレーア・パラーディオ",
   "title": "ヴィラ・ロトンダ（ヴィラ・アルメリコ・カプラ）",
   "year": "1567年着工",
@@ -1759,10 +1758,10 @@
   "wiki": "ヴィラ・アルメリコ・カプラ",
   "wikiLang": "ja",
   "wikiEn": "Villa La Rotonda",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "11-venice"
  },
  "caravaggio-calling-of-st-matthew": {
-  "chapter": "12-baroque",
   "artist": "カラヴァッジョ",
   "title": "聖マタイの召命",
   "year": "1599 — 1600年",
@@ -1771,10 +1770,10 @@
   "wiki": "聖マタイの召命",
   "wikiLang": "ja",
   "wikiEn": "The Calling of Saint Matthew",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "12-baroque"
  },
  "caravaggio-portrait": {
-  "chapter": "12-baroque",
   "artist": "オッタヴィオ・レオーニ",
   "title": "カラヴァッジョの肖像",
   "year": "1621年ごろ",
@@ -1783,10 +1782,10 @@
   "wiki": "カラヴァッジョ",
   "wikiLang": "ja",
   "wikiEn": "Caravaggio",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "12-baroque"
  },
  "caravaggio-david-goliath": {
-  "chapter": "12-baroque",
   "artist": "カラヴァッジョ",
   "title": "ゴリアテの首を持つダヴィデ",
   "year": "1609 — 1610年ごろ",
@@ -1795,10 +1794,10 @@
   "wiki": "ゴリアテの首を持つダビデ (ボルゲーゼ美術館)",
   "wikiLang": "ja",
   "wikiEn": "David with the Head of Goliath (Caravaggio), Rome",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "12-baroque"
  },
  "guercino-aurora": {
-  "chapter": "12-baroque",
   "artist": "グエルチーノ",
   "title": "アウローラ（曙の女神）",
   "year": "1621年",
@@ -1807,10 +1806,10 @@
   "wiki": "グエルチーノ",
   "wikiLang": "ja",
   "wikiEn": "Guercino",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "12-baroque"
  },
  "bernini-apollo-daphne": {
-  "chapter": "12-baroque",
   "artist": "ジャン・ロレンツォ・ベルニーニ",
   "title": "アポロとダフネ",
   "year": "1622 — 1625年",
@@ -1819,10 +1818,10 @@
   "wiki": "アポロとダフネ (ベルニーニ)",
   "wikiLang": "ja",
   "wikiEn": "Apollo and Daphne (Bernini)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "12-baroque"
  },
  "bernini-ecstasy-of-st-teresa": {
-  "chapter": "12-baroque",
   "artist": "ジャン・ロレンツォ・ベルニーニ",
   "title": "聖テレジアの法悦（コルナーロ礼拝堂）",
   "year": "1647 — 1652年",
@@ -1831,10 +1830,10 @@
   "wiki": "聖テレサの法悦",
   "wikiLang": "ja",
   "wikiEn": "Ecstasy of Saint Teresa",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "12-baroque"
  },
  "gentileschi-judith-holofernes": {
-  "chapter": "12-baroque",
   "artist": "アルテミジア・ジェンティレスキ",
   "title": "ホロフェルネスの首を斬るユディト",
   "year": "1620年ごろ",
@@ -1843,10 +1842,10 @@
   "wiki": "ホロフェルネスの首を斬るユディト (アルテミジア・ジェンティレスキ、ウフィツィ美術館)",
   "wikiLang": "ja",
   "wikiEn": "Judith Slaying Holofernes (Artemisia Gentileschi, Florence)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "12-baroque"
  },
  "rubens-descent-from-the-cross": {
-  "chapter": "12-baroque",
   "artist": "ペーテル・パウル・ルーベンス",
   "title": "キリスト降架（三連祭壇画 中央パネル）",
   "year": "1612 — 1614年",
@@ -1855,10 +1854,10 @@
   "wiki": "キリスト降架 (ルーベンス)",
   "wikiLang": "ja",
   "wikiEn": "The Descent from the Cross (Rubens)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "12-baroque"
  },
  "velazquez-las-meninas": {
-  "chapter": "12-baroque",
   "artist": "ディエゴ・ベラスケス",
   "title": "ラス・メニーナス",
   "year": "1656年",
@@ -1867,10 +1866,10 @@
   "wiki": "ラス・メニーナス",
   "wikiLang": "ja",
   "wikiEn": "Las Meninas",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "12-baroque"
  },
  "caravaggio-judith-holofernes": {
-  "chapter": "12-baroque",
   "artist": "カラヴァッジョ",
   "title": "ホロフェルネスの首を斬るユディト",
   "year": "1599 — 1602年ごろ",
@@ -1879,10 +1878,10 @@
   "wiki": "ホロフェルネスの首を斬るユディト (カラヴァッジョ)",
   "wikiLang": "ja",
   "wikiEn": "Judith Beheading Holofernes (Caravaggio)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "12-baroque"
  },
  "borromini-san-carlino": {
-  "chapter": "12-baroque",
   "artist": "フランチェスコ・ボッロミーニ",
   "title": "サン・カルロ・アッレ・クアットロ・フォンターネ聖堂",
   "year": "1638 — 1667年",
@@ -1891,10 +1890,10 @@
   "wiki": "サン・カルロ・アッレ・クアットロ・フォンターネ聖堂",
   "wikiLang": "ja",
   "wikiEn": "San Carlo alle Quattro Fontane",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "12-baroque"
  },
  "rubens-leucippus": {
-  "chapter": "12-baroque",
   "artist": "ペーテル・パウル・ルーベンス",
   "title": "レウキッポスの娘たちの略奪",
   "year": "1618年ごろ",
@@ -1903,10 +1902,10 @@
   "wiki": "レウキッポスの娘たちの略奪",
   "wikiLang": "ja",
   "wikiEn": "The Rape of the Daughters of Leucippus",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "12-baroque"
  },
  "velazquez-surrender-of-breda": {
-  "chapter": "12-baroque",
   "artist": "ディエゴ・ベラスケス",
   "title": "ブレダの開城",
   "year": "1634 — 1635年",
@@ -1915,10 +1914,10 @@
   "wiki": "ブレダの開城",
   "wikiLang": "ja",
   "wikiEn": "The Surrender of Breda",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "12-baroque"
  },
  "zurbaran-agnus-dei": {
-  "chapter": "12-baroque",
   "artist": "フランシスコ・デ・スルバラン",
   "title": "神の子羊",
   "year": "1635 — 1640年ごろ",
@@ -1927,10 +1926,10 @@
   "wiki": "神の子羊 (スルバラン)",
   "wikiLang": "ja",
   "wikiEn": "Agnus Dei (Zurbarán)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "12-baroque"
  },
  "hals-merry-drinker": {
-  "chapter": "13-dutch",
   "artist": "フランス・ハルス",
   "title": "陽気な酒飲み",
   "year": "1628 — 1630年ごろ",
@@ -1939,10 +1938,10 @@
   "wiki": "フランス・ハルス",
   "wikiLang": "ja",
   "wikiEn": "Frans Hals",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "13-dutch"
  },
  "ruisdael-view-haarlem": {
-  "chapter": "13-dutch",
   "artist": "ヤーコプ・ファン・ライスダール",
   "title": "ハールレムの眺望",
   "year": "1670 — 1675年ごろ",
@@ -1951,10 +1950,10 @@
   "wiki": "ヤーコプ・ファン・ロイスダール",
   "wikiLang": "ja",
   "wikiEn": "Jacob van Ruisdael",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "13-dutch"
  },
  "rembrandt-anatomy-lesson": {
-  "chapter": "13-dutch",
   "artist": "レンブラント・ファン・レイン",
   "title": "テュルプ博士の解剖学講義",
   "year": "1632年",
@@ -1963,10 +1962,10 @@
   "wiki": "トゥルプ博士の解剖学講義",
   "wikiLang": "ja",
   "wikiEn": "The Anatomy Lesson of Dr. Nicolaes Tulp",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "13-dutch"
  },
  "rembrandt-night-watch": {
-  "chapter": "13-dutch",
   "artist": "レンブラント・ファン・レイン",
   "title": "夜警（フランス・バニング・コック隊長の市民隊）",
   "year": "1642年",
@@ -1975,10 +1974,10 @@
   "wiki": "夜警 (レンブラント)",
   "wikiLang": "ja",
   "wikiEn": "Night Watch (Rembrandt)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "13-dutch"
  },
  "rembrandt-self-portrait-1669": {
-  "chapter": "13-dutch",
   "artist": "レンブラント・ファン・レイン",
   "title": "63歳の自画像",
   "year": "1669年",
@@ -1987,10 +1986,10 @@
   "wiki": "レンブラント・ファン・レイン",
   "wikiLang": "ja",
   "wikiEn": "Rembrandt",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "13-dutch"
  },
  "vermeer-art-of-painting": {
-  "chapter": "13-dutch",
   "artist": "ヨハネス・フェルメール",
   "title": "絵画芸術",
   "year": "1666 — 1668年ごろ",
@@ -1999,10 +1998,10 @@
   "wiki": "絵画芸術",
   "wikiLang": "ja",
   "wikiEn": "The Art of Painting",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "13-dutch"
  },
  "vermeer-milkmaid": {
-  "chapter": "13-dutch",
   "artist": "ヨハネス・フェルメール",
   "title": "牛乳を注ぐ女",
   "year": "1658 — 1661年ごろ",
@@ -2011,10 +2010,10 @@
   "wiki": "牛乳を注ぐ女",
   "wikiLang": "ja",
   "wikiEn": "The Milkmaid (Vermeer)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "13-dutch"
  },
  "vermeer-girl-pearl": {
-  "chapter": "13-dutch",
   "artist": "ヨハネス・フェルメール",
   "title": "真珠の耳飾りの少女",
   "year": "1665年ごろ",
@@ -2023,10 +2022,10 @@
   "wiki": "真珠の耳飾りの少女",
   "wikiLang": "ja",
   "wikiEn": "Girl with a Pearl Earring",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "13-dutch"
  },
  "vermeer-view-of-delft": {
-  "chapter": "13-dutch",
   "artist": "ヨハネス・フェルメール",
   "title": "デルフトの眺望",
   "year": "1660 — 1661年ごろ",
@@ -2035,10 +2034,10 @@
   "wiki": "デルフトの眺望",
   "wikiLang": "ja",
   "wikiEn": "View of Delft",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "13-dutch"
  },
  "steenwijck-vanitas": {
-  "chapter": "13-dutch",
   "artist": "ハルメン・ステーンウェイク",
   "title": "人生の虚しさの寓意",
   "year": "1640年ごろ",
@@ -2047,10 +2046,10 @@
   "wiki": "ヴァニタス",
   "wikiLang": "ja",
   "wikiEn": "Vanitas",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "13-dutch"
  },
  "hals-laughing-cavalier": {
-  "chapter": "13-dutch",
   "artist": "フランス・ハルス",
   "title": "笑う騎士",
   "year": "1624年",
@@ -2059,10 +2058,10 @@
   "wiki": "笑う騎士",
   "wikiLang": "ja",
   "wikiEn": "Laughing Cavalier",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "13-dutch"
  },
  "de-hooch-courtyard-delft": {
-  "chapter": "13-dutch",
   "artist": "ピーテル・デ・ホーホ",
   "title": "デルフトの家の中庭",
   "year": "1658年",
@@ -2071,10 +2070,10 @@
   "wiki": "ピーテル・デ・ホーホ",
   "wikiLang": "ja",
   "wikiEn": "The Courtyard of a House in Delft",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "13-dutch"
  },
  "ruisdael-jewish-cemetery": {
-  "chapter": "13-dutch",
   "artist": "ヤーコプ・ファン・ライスダール",
   "title": "ユダヤ人墓地",
   "year": "1650年代後半",
@@ -2083,10 +2082,10 @@
   "wiki": "ヤーコプ・ファン・ロイスダール",
   "wikiLang": "ja",
   "wikiEn": "The Jewish Cemetery",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "13-dutch"
  },
  "heda-still-life": {
-  "chapter": "13-dutch",
   "artist": "ウィレム・クラースゾーン・ヘダ",
   "title": "金杯のある静物",
   "year": "1635年",
@@ -2095,10 +2094,10 @@
   "wiki": "ウィレム・クラースゾーン・ヘダ",
   "wikiLang": "ja",
   "wikiEn": "Willem Claeszoon Heda",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "13-dutch"
  },
  "watteau-cythera": {
-  "chapter": "14-rococo",
   "artist": "アントワーヌ・ヴァトー",
   "title": "シテール島への巡礼",
   "year": "1717年",
@@ -2107,10 +2106,10 @@
   "wiki": "シテール島の巡礼",
   "wikiLang": "ja",
   "wikiEn": "Pilgrimage to Cythera",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "14-rococo"
  },
  "watteau-pierrot": {
-  "chapter": "14-rococo",
   "artist": "アントワーヌ・ヴァトー",
   "title": "ピエロ（かつて「ジル」と呼ばれた）",
   "year": "1718 — 1719年ごろ",
@@ -2119,10 +2118,10 @@
   "wiki": "ピエロ (ヴァトー)",
   "wikiLang": "ja",
   "wikiEn": "Pierrot (Watteau)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "14-rococo"
  },
  "soubise-salon-ovale": {
-  "chapter": "14-rococo",
   "artist": "ジェルマン・ボフラン（装飾）",
   "title": "スービーズ館　王女の楕円のサロン",
   "year": "1735 — 1740年ごろ",
@@ -2131,10 +2130,10 @@
   "wikiLang": "ja",
   "wikiEn": "Hôtel de Soubise",
   "license": "パブリックドメイン",
-  "noPhoto": "楕円のサロンそのものの自由な写真がCommonsに無い。天井の版画しか出てこない"
+  "noPhoto": "楕円のサロンそのものの自由な写真がCommonsに無い。天井の版画しか出てこない",
+  "chapter": "14-rococo"
  },
  "wieskirche-interior": {
-  "chapter": "14-rococo",
   "artist": "ドミニクス・ツィンマーマン",
   "title": "ヴィースの巡礼教会　内部",
   "year": "1745 — 1754年",
@@ -2143,10 +2142,10 @@
   "wiki": "ヴィースの巡礼教会",
   "wikiLang": "ja",
   "wikiEn": "Pilgrimage Church of Wies",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "14-rococo"
  },
  "drouais-pompadour": {
-  "chapter": "14-rococo",
   "artist": "フランソワ＝ユベール・ドルーエ",
   "title": "刺繍台の前のポンパドゥール夫人",
   "year": "1763 — 1764年",
@@ -2155,10 +2154,10 @@
   "wiki": "ポンパドゥール夫人",
   "wikiLang": "ja",
   "wikiEn": "Madame de Pompadour at her Tambour Frame",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "14-rococo"
  },
  "boucher-pompadour": {
-  "chapter": "14-rococo",
   "artist": "フランソワ・ブーシェ",
   "title": "ポンパドゥール夫人",
   "year": "1756年",
@@ -2167,10 +2166,10 @@
   "wiki": "フランソワ・ブーシェ",
   "wikiLang": "ja",
   "wikiEn": "Madame de Pompadour",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "14-rococo"
  },
  "fragonard-swing": {
-  "chapter": "14-rococo",
   "artist": "ジャン＝オノレ・フラゴナール",
   "title": "ぶらんこ",
   "year": "1767年",
@@ -2179,10 +2178,10 @@
   "wiki": "ぶらんこ (フラゴナール)",
   "wikiLang": "ja",
   "wikiEn": "The Swing (Fragonard)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "14-rococo"
  },
  "meissen-kakiemon": {
-  "chapter": "14-rococo",
   "artist": "マイセン王立磁器工房",
   "title": "柿右衛門様式の彩色磁器",
   "year": "1730年代",
@@ -2191,10 +2190,10 @@
   "wiki": "マイセン磁器",
   "wikiLang": "ja",
   "wikiEn": "Meissen porcelain",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "14-rococo"
  },
  "chardin-ray": {
-  "chapter": "14-rococo",
   "artist": "ジャン＝バティスト・シメオン・シャルダン",
   "title": "赤エイ",
   "year": "1728年",
@@ -2203,10 +2202,10 @@
   "wiki": "赤エイ (シャルダン)",
   "wikiLang": "ja",
   "wikiEn": "The Ray (Chardin)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "14-rococo"
  },
  "chardin-benedicite": {
-  "chapter": "14-rococo",
   "artist": "ジャン＝バティスト・シメオン・シャルダン",
   "title": "食前の祈り",
   "year": "1740年",
@@ -2215,10 +2214,10 @@
   "wiki": "食前の祈り (シャルダン)",
   "wikiLang": "ja",
   "wikiEn": "Saying Grace (Chardin)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "14-rococo"
  },
  "vigee-lebrun-marie-antoinette": {
-  "chapter": "14-rococo",
   "artist": "エリザベート＝ルイーズ・ヴィジェ＝ルブラン",
   "title": "マリー・アントワネットと子どもたち",
   "year": "1787年",
@@ -2227,10 +2226,10 @@
   "wiki": "マリー・アントワネットと子どもたち",
   "wikiLang": "ja",
   "wikiEn": "Marie Antoinette and Her Children",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "14-rococo"
  },
  "tiepolo-wurzburg": {
-  "chapter": "14-rococo",
   "artist": "ジョヴァンニ・バッティスタ・ティエポロ",
   "title": "ヴュルツブルク宮殿　階段の間の天井画",
   "year": "1752 — 1753年",
@@ -2239,10 +2238,10 @@
   "wiki": "ヴュルツブルクのレジデンツ",
   "wikiLang": "ja",
   "wikiEn": "Würzburg Residence",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "14-rococo"
  },
  "hogarth-marriage-settlement": {
-  "chapter": "14-rococo",
   "artist": "ウィリアム・ホガース",
   "title": "当世風の結婚　第1場「結婚の契約」",
   "year": "1743 — 1745年",
@@ -2251,10 +2250,10 @@
   "wiki": "当世風の結婚",
   "wikiLang": "ja",
   "wikiEn": "Marriage A-la-Mode (Hogarth)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "14-rococo"
  },
  "david-oath-horatii": {
-  "chapter": "15-revolution",
   "artist": "ジャック＝ルイ・ダヴィッド",
   "title": "ホラティウス兄弟の誓い",
   "year": "1784年",
@@ -2263,10 +2262,10 @@
   "wiki": "ホラティウス兄弟の誓い",
   "wikiLang": "ja",
   "wikiEn": "Oath of the Horatii",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "15-revolution"
  },
  "david-death-of-marat": {
-  "chapter": "15-revolution",
   "artist": "ジャック＝ルイ・ダヴィッド",
   "title": "マラーの死",
   "year": "1793年",
@@ -2275,10 +2274,10 @@
   "wiki": "マラーの死",
   "wikiLang": "ja",
   "wikiEn": "The Death of Marat",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "15-revolution"
  },
  "david-self-portrait": {
-  "chapter": "15-revolution",
   "artist": "ジャック＝ルイ・ダヴィッド",
   "title": "自画像",
   "year": "1794年",
@@ -2287,10 +2286,10 @@
   "wiki": "ジャック＝ルイ・ダヴィッド",
   "wikiLang": "ja",
   "wikiEn": "Jacques-Louis David",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "15-revolution"
  },
  "ingres-grande-odalisque": {
-  "chapter": "15-revolution",
   "artist": "ジャン＝オーギュスト＝ドミニク・アングル",
   "title": "グランド・オダリスク",
   "year": "1814年",
@@ -2299,10 +2298,10 @@
   "wiki": "グランド・オダリスク",
   "wikiLang": "ja",
   "wikiEn": "Grande Odalisque",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "15-revolution"
  },
  "gericault-raft-medusa": {
-  "chapter": "15-revolution",
   "artist": "テオドール・ジェリコー",
   "title": "メデューズ号の筏",
   "year": "1819年",
@@ -2311,10 +2310,10 @@
   "wiki": "メデューズ号の筏",
   "wikiLang": "ja",
   "wikiEn": "The Raft of the Medusa",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "15-revolution"
  },
  "goya-third-of-may": {
-  "chapter": "15-revolution",
   "artist": "フランシスコ・デ・ゴヤ",
   "title": "1808年5月3日",
   "year": "1814年",
@@ -2323,10 +2322,10 @@
   "wiki": "1808年5月3日",
   "wikiLang": "ja",
   "wikiEn": "The Third of May 1808",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "15-revolution"
  },
  "goya-saturn": {
-  "chapter": "15-revolution",
   "artist": "フランシスコ・デ・ゴヤ",
   "title": "我が子を食らうサトゥルヌス",
   "year": "1819 — 1823年ごろ",
@@ -2335,10 +2334,10 @@
   "wiki": "我が子を食らうサトゥルヌス",
   "wikiLang": "ja",
   "wikiEn": "Saturn Devouring His Son",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "15-revolution"
  },
  "delacroix-liberty": {
-  "chapter": "15-revolution",
   "artist": "ウジェーヌ・ドラクロワ",
   "title": "民衆を導く自由の女神",
   "year": "1830年",
@@ -2347,10 +2346,10 @@
   "wiki": "民衆を導く自由の女神",
   "wikiLang": "ja",
   "wikiEn": "Liberty Leading the People",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "15-revolution"
  },
  "turner-rain-steam-speed": {
-  "chapter": "15-revolution",
   "artist": "ジョゼフ・マロード・ウィリアム・ターナー",
   "title": "雨、蒸気、速度 ─ グレート・ウェスタン鉄道",
   "year": "1844年",
@@ -2359,10 +2358,10 @@
   "wiki": "雨、蒸気、速度",
   "wikiLang": "ja",
   "wikiEn": "Rain, Steam and Speed – The Great Western Railway",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "15-revolution"
  },
  "friedrich-wanderer": {
-  "chapter": "15-revolution",
   "artist": "カスパー・ダーヴィト・フリードリヒ",
   "title": "雲海の上の旅人",
   "year": "1818年ごろ",
@@ -2371,10 +2370,10 @@
   "wiki": "雲海の上の旅人",
   "wikiLang": "ja",
   "wikiEn": "Wanderer above the Sea of Fog",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "15-revolution"
  },
  "constable-hay-wain": {
-  "chapter": "15-revolution",
   "artist": "ジョン・コンスタブル",
   "title": "干草車",
   "year": "1821年",
@@ -2383,10 +2382,10 @@
   "wiki": "干草車",
   "wikiLang": "ja",
   "wikiEn": "The Hay Wain",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "15-revolution"
  },
  "courbet-burial-ornans": {
-  "chapter": "16-realism",
   "artist": "ギュスターヴ・クールベ",
   "title": "オルナンの埋葬",
   "year": "1849 — 1850年",
@@ -2395,10 +2394,10 @@
   "wiki": "オルナンの埋葬",
   "wikiLang": "ja",
   "wikiEn": "A Burial At Ornans",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "16-realism"
  },
  "courbet-desperate-man": {
-  "chapter": "16-realism",
   "artist": "ギュスターヴ・クールベ",
   "title": "絶望する男（自画像）",
   "year": "1843 — 1845年",
@@ -2407,10 +2406,10 @@
   "wiki": "ギュスターヴ・クールベ",
   "wikiLang": "ja",
   "wikiEn": "Gustave Courbet",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "16-realism"
  },
  "courbet-painters-studio": {
-  "chapter": "16-realism",
   "artist": "ギュスターヴ・クールベ",
   "title": "画家のアトリエ",
   "year": "1854 — 1855年",
@@ -2419,10 +2418,10 @@
   "wiki": "画家のアトリエ",
   "wikiLang": "ja",
   "wikiEn": "The Painter's Studio",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "16-realism"
  },
  "millet-gleaners": {
-  "chapter": "16-realism",
   "artist": "ジャン＝フランソワ・ミレー",
   "title": "落穂拾い",
   "year": "1857年",
@@ -2431,10 +2430,10 @@
   "wiki": "落穂拾い",
   "wikiLang": "ja",
   "wikiEn": "The Gleaners",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "16-realism"
  },
  "millet-angelus": {
-  "chapter": "16-realism",
   "artist": "ジャン＝フランソワ・ミレー",
   "title": "晩鐘",
   "year": "1857 — 1859年",
@@ -2443,10 +2442,10 @@
   "wiki": "晩鐘 (絵画)",
   "wikiLang": "ja",
   "wikiEn": "L'Angélus",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "16-realism"
  },
  "corot-souvenir-mortefontaine": {
-  "chapter": "16-realism",
   "artist": "カミーユ・コロー",
   "title": "モルトフォンテーヌの想い出",
   "year": "1864年",
@@ -2455,10 +2454,10 @@
   "wiki": "カミーユ・コロー",
   "wikiLang": "ja",
   "wikiEn": "Jean-Baptiste-Camille Corot",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "16-realism"
  },
  "daumier-third-class-carriage": {
-  "chapter": "16-realism",
   "artist": "オノレ・ドーミエ",
   "title": "三等列車",
   "year": "1862 — 1864年ごろ",
@@ -2467,10 +2466,10 @@
   "wiki": "三等列車",
   "wikiLang": "ja",
   "wikiEn": "The Third-Class Carriage",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "16-realism"
  },
  "millais-ophelia": {
-  "chapter": "16-realism",
   "artist": "ジョン・エヴァレット・ミレイ",
   "title": "オフィーリア",
   "year": "1851 — 1852年",
@@ -2479,10 +2478,10 @@
   "wiki": "オフィーリア (ミレーの絵画)",
   "wikiLang": "ja",
   "wikiEn": "Ophelia (painting)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "16-realism"
  },
  "manet-dejeuner-sur-lherbe": {
-  "chapter": "16-realism",
   "artist": "エドゥアール・マネ",
   "title": "草上の昼食",
   "year": "1863年",
@@ -2491,10 +2490,10 @@
   "wiki": "草上の昼食",
   "wikiLang": "ja",
   "wikiEn": "Le Déjeuner sur l'herbe",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "16-realism"
  },
  "manet-olympia": {
-  "chapter": "16-realism",
   "artist": "エドゥアール・マネ",
   "title": "オランピア",
   "year": "1863年（1865年サロン出品）",
@@ -2503,10 +2502,10 @@
   "wiki": "オランピア (マネ)",
   "wikiLang": "ja",
   "wikiEn": "Olympia (Manet)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "16-realism"
  },
  "courbet-stonebreakers": {
-  "chapter": "16-realism",
   "artist": "ギュスターヴ・クールベ",
   "title": "石割り人夫",
   "year": "1849年",
@@ -2515,10 +2514,10 @@
   "wiki": "石割り人夫",
   "wikiLang": "ja",
   "wikiEn": "The Stone Breakers",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "16-realism"
  },
  "bonheur-horse-fair": {
-  "chapter": "16-realism",
   "artist": "ローザ・ボヌール",
   "title": "馬市",
   "year": "1852 — 1855年",
@@ -2527,10 +2526,10 @@
   "wiki": "ローザ・ボヌール",
   "wikiLang": "ja",
   "wikiEn": "The Horse Fair",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "16-realism"
  },
  "monet-impression-sunrise": {
-  "chapter": "17-impressionism",
   "artist": "クロード・モネ",
   "title": "印象、日の出",
   "year": "1872年",
@@ -2539,10 +2538,10 @@
   "wiki": "印象・日の出",
   "wikiLang": "ja",
   "wikiEn": "Impression, Sunrise",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "17-impressionism"
  },
  "monet-la-grenouillere": {
-  "chapter": "17-impressionism",
   "artist": "クロード・モネ",
   "title": "ラ・グルヌイエールの水浴",
   "year": "1869年",
@@ -2551,10 +2550,10 @@
   "wiki": "ラ・グルヌイエール",
   "wikiLang": "ja",
   "wikiEn": "Bathers at La Grenouillère",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "17-impressionism"
  },
  "caillebotte-paris-street-rainy-day": {
-  "chapter": "17-impressionism",
   "artist": "ギュスターヴ・カイユボット",
   "title": "パリの通り、雨",
   "year": "1877年",
@@ -2563,10 +2562,10 @@
   "wiki": "パリの通り、雨",
   "wikiLang": "ja",
   "wikiEn": "Paris Street; Rainy Day",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "17-impressionism"
  },
  "monet-gare-saint-lazare": {
-  "chapter": "17-impressionism",
   "artist": "クロード・モネ",
   "title": "サン＝ラザール駅",
   "year": "1877年",
@@ -2575,10 +2574,10 @@
   "wiki": "サン＝ラザール駅 (絵画)",
   "wikiLang": "ja",
   "wikiEn": "The Gare Saint-Lazare",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "17-impressionism"
  },
  "renoir-moulin-galette": {
-  "chapter": "17-impressionism",
   "artist": "ピエール＝オーギュスト・ルノワール",
   "title": "ムーラン・ド・ラ・ギャレットの舞踏会",
   "year": "1876年",
@@ -2587,10 +2586,10 @@
   "wiki": "ムーラン・ド・ラ・ギャレットの舞踏会",
   "wikiLang": "ja",
   "wikiEn": "Bal du moulin de la Galette",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "17-impressionism"
  },
  "renoir-luncheon-boating-party": {
-  "chapter": "17-impressionism",
   "artist": "ピエール＝オーギュスト・ルノワール",
   "title": "舟遊びの人々の昼食",
   "year": "1880 — 1881年",
@@ -2599,10 +2598,10 @@
   "wiki": "舟遊びをする人々の昼食",
   "wikiLang": "ja",
   "wikiEn": "Luncheon of the Boating Party",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "17-impressionism"
  },
  "renoir-portrait": {
-  "chapter": "17-impressionism",
   "artist": "ピエール＝オーギュスト・ルノワール",
   "title": "自画像",
   "year": "1875年",
@@ -2611,10 +2610,10 @@
   "wiki": "ピエール＝オーギュスト・ルノワール",
   "wikiLang": "ja",
   "wikiEn": "Pierre-Auguste Renoir",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "17-impressionism"
  },
  "monet-rouen-cathedral": {
-  "chapter": "17-impressionism",
   "artist": "クロード・モネ",
   "title": "ルーアン大聖堂（連作より）",
   "year": "1892 — 1894年",
@@ -2623,10 +2622,10 @@
   "wiki": "ルーアン大聖堂 (モネの連作)",
   "wikiLang": "ja",
   "wikiEn": "Rouen Cathedral (Monet series)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "17-impressionism"
  },
  "monet-haystacks": {
-  "chapter": "17-impressionism",
   "artist": "クロード・モネ",
   "title": "積みわら（夏の終わり）",
   "year": "1890 — 1891年",
@@ -2635,10 +2634,10 @@
   "wiki": "積みわら (モネ)",
   "wikiLang": "ja",
   "wikiEn": "Haystacks (Monet series)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "17-impressionism"
  },
  "monet-water-lilies": {
-  "chapter": "17-impressionism",
   "artist": "クロード・モネ",
   "title": "睡蓮",
   "year": "1906年",
@@ -2647,10 +2646,10 @@
   "wiki": "睡蓮 (絵画)",
   "wikiLang": "ja",
   "wikiEn": "Water Lilies (Monet series)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "17-impressionism"
  },
  "degas-letoile": {
-  "chapter": "17-impressionism",
   "artist": "エドガー・ドガ",
   "title": "エトワール（舞台の踊り子）",
   "year": "1876 — 1877年ごろ",
@@ -2659,10 +2658,10 @@
   "wiki": "エドガー・ドガ",
   "wikiLang": "ja",
   "wikiEn": "L'Étoile (Degas)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "17-impressionism"
  },
  "degas-little-dancer": {
-  "chapter": "17-impressionism",
   "artist": "エドガー・ドガ",
   "title": "14歳の小さな踊り子",
   "year": "1878 — 1881年（原型）",
@@ -2671,10 +2670,10 @@
   "wiki": "14歳の小さな踊り子",
   "wikiLang": "ja",
   "wikiEn": "Little Dancer of Fourteen Years",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "17-impressionism"
  },
  "morisot-le-berceau": {
-  "chapter": "17-impressionism",
   "artist": "ベルト・モリゾ",
   "title": "ゆりかご",
   "year": "1872年",
@@ -2683,10 +2682,10 @@
   "wiki": "ゆりかご (モリゾの絵画)",
   "wikiLang": "ja",
   "wikiEn": "The Cradle (Morisot)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "17-impressionism"
  },
  "cassatt-in-the-loge": {
-  "chapter": "17-impressionism",
   "artist": "メアリー・カサット",
   "title": "桟敷席にて",
   "year": "1878年",
@@ -2695,10 +2694,10 @@
   "wiki": "メアリー・カサット",
   "wikiLang": "ja",
   "wikiEn": "In the Loge",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "17-impressionism"
  },
  "pissarro-boulevard-montmartre": {
-  "chapter": "17-impressionism",
   "artist": "カミーユ・ピサロ",
   "title": "モンマルトル大通り、夜",
   "year": "1897年",
@@ -2707,10 +2706,10 @@
   "wiki": "カミーユ・ピサロ",
   "wikiLang": "ja",
   "wikiEn": "The Boulevard Montmartre at Night",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "17-impressionism"
  },
  "manet-bar-folies-bergere": {
-  "chapter": "17-impressionism",
   "artist": "エドゥアール・マネ",
   "title": "フォリー・ベルジェールのバー",
   "year": "1882年",
@@ -2719,10 +2718,10 @@
   "wiki": "フォリー・ベルジェールのバー",
   "wikiLang": "ja",
   "wikiEn": "A Bar at the Folies-Bergère",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "17-impressionism"
  },
  "seurat-grande-jatte": {
-  "chapter": "18-post",
   "artist": "ジョルジュ・スーラ",
   "title": "グランド・ジャット島の日曜日の午後",
   "year": "1884 — 1886年",
@@ -2731,10 +2730,10 @@
   "wiki": "グランド・ジャット島の日曜日の午後",
   "wikiLang": "ja",
   "wikiEn": "A Sunday Afternoon on the Island of La Grande Jatte",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "18-post"
  },
  "cezanne-mont-sainte-victoire": {
-  "chapter": "18-post",
   "artist": "ポール・セザンヌ",
   "title": "サント＝ヴィクトワール山",
   "year": "1902 — 1904年ごろ",
@@ -2743,10 +2742,10 @@
   "wiki": "サント＝ヴィクトワール山 (セザンヌ)",
   "wikiLang": "ja",
   "wikiEn": "Mont Sainte-Victoire (Cézanne)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "18-post"
  },
  "cezanne-apples-oranges": {
-  "chapter": "18-post",
   "artist": "ポール・セザンヌ",
   "title": "リンゴとオレンジのある静物",
   "year": "1899年ごろ",
@@ -2755,10 +2754,10 @@
   "wiki": "ポール・セザンヌ",
   "wikiLang": "ja",
   "wikiEn": "Paul Cézanne",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "18-post"
  },
  "van-gogh-self-portrait-ear": {
-  "chapter": "18-post",
   "artist": "フィンセント・ファン・ゴッホ",
   "title": "包帯をしてパイプをくわえた自画像",
   "year": "1889年",
@@ -2767,10 +2766,10 @@
   "wiki": "フィンセント・ファン・ゴッホ",
   "wikiLang": "ja",
   "wikiEn": "Vincent van Gogh",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "18-post"
  },
  "van-gogh-sunflowers": {
-  "chapter": "18-post",
   "artist": "フィンセント・ファン・ゴッホ",
   "title": "ひまわり",
   "year": "1888年",
@@ -2779,10 +2778,10 @@
   "wiki": "ひまわり (絵画)",
   "wikiLang": "ja",
   "wikiEn": "Sunflowers (Van Gogh series)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "18-post"
  },
  "van-gogh-starry-night": {
-  "chapter": "18-post",
   "artist": "フィンセント・ファン・ゴッホ",
   "title": "星月夜",
   "year": "1889年",
@@ -2791,10 +2790,10 @@
   "wiki": "星月夜",
   "wikiLang": "ja",
   "wikiEn": "The Starry Night",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "18-post"
  },
  "van-gogh-cafe-terrace": {
-  "chapter": "18-post",
   "artist": "フィンセント・ファン・ゴッホ",
   "title": "夜のカフェテラス",
   "year": "1888年",
@@ -2803,10 +2802,10 @@
   "wiki": "夜のカフェテラス",
   "wikiLang": "ja",
   "wikiEn": "Café Terrace at Night",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "18-post"
  },
  "gauguin-vision-sermon": {
-  "chapter": "18-post",
   "artist": "ポール・ゴーギャン",
   "title": "説教のあとの幻影",
   "year": "1888年",
@@ -2815,10 +2814,10 @@
   "wiki": "説教のあとの幻影",
   "wikiLang": "ja",
   "wikiEn": "Vision After the Sermon",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "18-post"
  },
  "gauguin-where-do-we-come-from": {
-  "chapter": "18-post",
   "artist": "ポール・ゴーギャン",
   "title": "我々はどこから来たのか　我々は何者か　我々はどこへ行くのか",
   "year": "1897 — 1898年",
@@ -2827,10 +2826,10 @@
   "wiki": "われわれはどこから来たのか われわれは何者か われわれはどこへ行くのか",
   "wikiLang": "ja",
   "wikiEn": "Where Do We Come From? What Are We? Where Are We Going?",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "18-post"
  },
  "signac-port-saint-tropez": {
-  "chapter": "18-post",
   "artist": "ポール・シニャック",
   "title": "サン＝トロペの港",
   "year": "1901 — 1902年",
@@ -2839,10 +2838,10 @@
   "wiki": "ポール・シニャック",
   "wikiLang": "ja",
   "wikiEn": "Paul Signac",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "18-post"
  },
  "cezanne-large-bathers": {
-  "chapter": "18-post",
   "artist": "ポール・セザンヌ",
   "title": "大水浴図",
   "year": "1900 — 1906年",
@@ -2851,10 +2850,10 @@
   "wiki": "大水浴図",
   "wikiLang": "ja",
   "wikiEn": "The Large Bathers",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "18-post"
  },
  "van-gogh-bedroom": {
-  "chapter": "18-post",
   "artist": "フィンセント・ファン・ゴッホ",
   "title": "アルルの寝室",
   "year": "1888年",
@@ -2863,10 +2862,10 @@
   "wiki": "アルルの寝室",
   "wikiLang": "ja",
   "wikiEn": "Bedroom in Arles",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "18-post"
  },
  "toulouse-lautrec-moulin-rouge": {
-  "chapter": "18-post",
   "artist": "アンリ・ド・トゥールーズ＝ロートレック",
   "title": "ムーラン・ルージュ ─ ラ・グーリュ",
   "year": "1891年",
@@ -2875,10 +2874,10 @@
   "wiki": "アンリ・ド・トゥールーズ＝ロートレック",
   "wikiLang": "ja",
   "wikiEn": "Moulin Rouge: La Goulue",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "18-post"
  },
  "munch-scream": {
-  "chapter": "19-fin-de-siecle",
   "artist": "エドヴァルド・ムンク",
   "title": "叫び",
   "year": "1893年",
@@ -2887,10 +2886,10 @@
   "wiki": "叫び (ムンク)",
   "wikiLang": "ja",
   "wikiEn": "The Scream",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "19-fin-de-siecle"
  },
  "moreau-apparition": {
-  "chapter": "19-fin-de-siecle",
   "artist": "ギュスターヴ・モロー",
   "title": "出現",
   "year": "1876年ごろ",
@@ -2899,10 +2898,10 @@
   "wiki": "ギュスターヴ・モロー",
   "wikiLang": "ja",
   "wikiEn": "Gustave Moreau",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "19-fin-de-siecle"
  },
  "redon-eye-balloon": {
-  "chapter": "19-fin-de-siecle",
   "artist": "オディロン・ルドン",
   "title": "眼は奇妙な気球のように無限に向かう",
   "year": "1882年",
@@ -2911,10 +2910,10 @@
   "wiki": "オディロン・ルドン",
   "wikiLang": "ja",
   "wikiEn": "Odilon Redon",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "19-fin-de-siecle"
  },
  "klimt-portrait": {
-  "chapter": "19-fin-de-siecle",
   "artist": "グスタフ・クリムト",
   "title": "クリムトの肖像写真",
   "year": "1914年ごろ",
@@ -2923,10 +2922,10 @@
   "wiki": "グスタフ・クリムト",
   "wikiLang": "ja",
   "wikiEn": "Gustav Klimt",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "19-fin-de-siecle"
  },
  "klimt-kiss": {
-  "chapter": "19-fin-de-siecle",
   "artist": "グスタフ・クリムト",
   "title": "接吻",
   "year": "1907 — 1908年",
@@ -2935,10 +2934,10 @@
   "wiki": "接吻 (クリムト)",
   "wikiLang": "ja",
   "wikiEn": "The Kiss (Klimt)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "19-fin-de-siecle"
  },
  "klimt-judith": {
-  "chapter": "19-fin-de-siecle",
   "artist": "グスタフ・クリムト",
   "title": "ユディト I",
   "year": "1901年",
@@ -2947,10 +2946,10 @@
   "wiki": "ユディトI",
   "wikiLang": "ja",
   "wikiEn": "Judith and the Head of Holofernes",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "19-fin-de-siecle"
  },
  "schiele-self-portrait": {
-  "chapter": "19-fin-de-siecle",
   "artist": "エゴン・シーレ",
   "title": "ほおずきの実のある自画像",
   "year": "1912年",
@@ -2959,10 +2958,10 @@
   "wiki": "エゴン・シーレ",
   "wikiLang": "ja",
   "wikiEn": "Egon Schiele",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "19-fin-de-siecle"
  },
  "mucha-gismonda": {
-  "chapter": "19-fin-de-siecle",
   "artist": "アルフォンス・ミュシャ",
   "title": "ジスモンダ",
   "year": "1894年",
@@ -2971,10 +2970,10 @@
   "wiki": "アルフォンス・ミュシャ",
   "wikiLang": "ja",
   "wikiEn": "Alphonse Mucha",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "19-fin-de-siecle"
  },
  "galle-glass": {
-  "chapter": "19-fin-de-siecle",
   "artist": "エミール・ガレ",
   "title": "海藻と貝殻をつかむ手",
   "year": "1904年",
@@ -2983,10 +2982,10 @@
   "wiki": "エミール・ガレ",
   "wikiLang": "ja",
   "wikiEn": "Émile Gallé",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "19-fin-de-siecle"
  },
  "gaudi-casa-batllo": {
-  "chapter": "19-fin-de-siecle",
   "artist": "アントニ・ガウディ",
   "title": "カサ・バトリョ",
   "year": "1904 — 1906年",
@@ -2995,10 +2994,10 @@
   "wiki": "カサ・バトリョ",
   "wikiLang": "ja",
   "wikiEn": "Casa Batlló",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "19-fin-de-siecle"
  },
  "munch-madonna": {
-  "chapter": "19-fin-de-siecle",
   "artist": "エドヴァルド・ムンク",
   "title": "マドンナ",
   "year": "1894 — 1895年",
@@ -3007,10 +3006,10 @@
   "wiki": "マドンナ (ムンク)",
   "wikiLang": "ja",
   "wikiEn": "Madonna (Munch painting)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "19-fin-de-siecle"
  },
  "klimt-beethoven-frieze": {
-  "chapter": "19-fin-de-siecle",
   "artist": "グスタフ・クリムト",
   "title": "ベートーヴェン・フリーズ",
   "year": "1902年",
@@ -3019,10 +3018,10 @@
   "wiki": "ベートーヴェン・フリーズ",
   "wikiLang": "ja",
   "wikiEn": "Beethoven Frieze",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "19-fin-de-siecle"
  },
  "rodin-thinker": {
-  "chapter": "19-fin-de-siecle",
   "artist": "オーギュスト・ロダン",
   "title": "考える人",
   "year": "1880 — 1904年",
@@ -3031,10 +3030,10 @@
   "wiki": "考える人",
   "wikiLang": "ja",
   "wikiEn": "The Thinker",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "19-fin-de-siecle"
  },
  "rodin-gates-of-hell": {
-  "chapter": "19-fin-de-siecle",
   "artist": "オーギュスト・ロダン",
   "title": "地獄の門",
   "year": "1880 — 1917年",
@@ -3043,10 +3042,10 @@
   "wiki": "地獄の門",
   "wikiLang": "ja",
   "wikiEn": "The Gates of Hell",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "19-fin-de-siecle"
  },
  "gaudi-sagrada-familia": {
-  "chapter": "19-fin-de-siecle",
   "artist": "アントニ・ガウディ",
   "title": "サグラダ・ファミリア聖堂",
   "year": "1882年着工",
@@ -3055,10 +3054,10 @@
   "wiki": "サグラダ・ファミリア",
   "wikiLang": "ja",
   "wikiEn": "Sagrada Família",
-  "license": "パブリックドメイン（建築の外観撮影）"
+  "license": "パブリックドメイン（建築の外観撮影）",
+  "chapter": "19-fin-de-siecle"
  },
  "rousseau-sleeping-gypsy": {
-  "chapter": "20-fauve-cubism",
   "artist": "アンリ・ルソー",
   "title": "眠るジプシー女",
   "year": "1897年",
@@ -3067,10 +3066,10 @@
   "wiki": "眠るジプシー女",
   "wikiLang": "ja",
   "wikiEn": "The Sleeping Gypsy",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "20-fauve-cubism"
  },
  "dama-de-elche": {
-  "chapter": "20-fauve-cubism",
   "artist": "作者不詳（古代イベリア）",
   "title": "エルチェの貴婦人",
   "year": "前4世紀ごろ",
@@ -3079,10 +3078,10 @@
   "wiki": "エルチェの貴婦人",
   "wikiLang": "ja",
   "wikiEn": "Lady of Elche",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "20-fauve-cubism"
  },
  "cezanne-basket-of-apples": {
-  "chapter": "20-fauve-cubism",
   "artist": "ポール・セザンヌ",
   "title": "リンゴの籠のある静物",
   "year": "1893年ごろ",
@@ -3091,10 +3090,10 @@
   "wiki": "ポール・セザンヌ",
   "wikiLang": "ja",
   "wikiEn": "The Basket of Apples",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "20-fauve-cubism"
  },
  "boccioni-la-citta-che-sale": {
-  "chapter": "20-fauve-cubism",
   "artist": "ウンベルト・ボッチョーニ",
   "title": "都市は起ち上がる",
   "year": "1910 — 1911年",
@@ -3103,10 +3102,10 @@
   "wiki": "ウンベルト・ボッチョーニ",
   "wikiLang": "ja",
   "wikiEn": "Umberto Boccioni",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "20-fauve-cubism"
  },
  "modigliani-jeanne-hebuterne": {
-  "chapter": "20-fauve-cubism",
   "artist": "アメデオ・モディリアーニ",
   "title": "ジャンヌ・エビュテルヌの肖像",
   "year": "1918年ごろ",
@@ -3115,10 +3114,10 @@
   "wiki": "アメデオ・モディリアーニ",
   "wikiLang": "ja",
   "wikiEn": "Amedeo Modigliani",
-  "license": "パブリックドメイン（作者は1920年没）"
+  "license": "パブリックドメイン（作者は1920年没）",
+  "chapter": "20-fauve-cubism"
  },
  "marc-blue-horse-i": {
-  "chapter": "21-dada-surreal",
   "artist": "フランツ・マルク",
   "title": "青い馬 I",
   "year": "1911年",
@@ -3127,10 +3126,10 @@
   "wiki": "フランツ・マルク",
   "wikiLang": "ja",
   "wikiEn": "Franz Marc",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "21-dada-surreal"
  },
  "kirchner-potsdamer-platz": {
-  "chapter": "21-dada-surreal",
   "artist": "エルンスト・ルートヴィヒ・キルヒナー",
   "title": "ポツダム広場",
   "year": "1914年",
@@ -3139,10 +3138,10 @@
   "wiki": "エルンスト・ルートヴィヒ・キルヒナー",
   "wikiLang": "ja",
   "wikiEn": "Ernst Ludwig Kirchner",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "21-dada-surreal"
  },
  "kirchner-self-portrait-soldier": {
-  "chapter": "21-dada-surreal",
   "artist": "エルンスト・ルートヴィヒ・キルヒナー",
   "title": "兵士としての自画像",
   "year": "1915年",
@@ -3151,10 +3150,10 @@
   "wiki": "エルンスト・ルートヴィヒ・キルヒナー",
   "wikiLang": "ja",
   "wikiEn": "Ernst Ludwig Kirchner",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "21-dada-surreal"
  },
  "macke-lady-green-jacket": {
-  "chapter": "21-dada-surreal",
   "artist": "アウグスト・マッケ",
   "title": "緑の上着の婦人",
   "year": "1913年",
@@ -3163,10 +3162,10 @@
   "wikiLang": "ja",
   "wikiEn": "August Macke",
   "license": "パブリックドメイン",
-  "noPhoto": "《緑の上着の婦人》がCommonsに無い。マッケの別作品しか出てこない"
+  "noPhoto": "《緑の上着の婦人》がCommonsに無い。マッケの別作品しか出てこない",
+  "chapter": "21-dada-surreal"
  },
  "marc-fate-of-animals": {
-  "chapter": "21-dada-surreal",
   "artist": "フランツ・マルク",
   "title": "動物の運命",
   "year": "1913年",
@@ -3175,10 +3174,10 @@
   "wiki": "フランツ・マルク",
   "wikiLang": "ja",
   "wikiEn": "Franz Marc",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "21-dada-surreal"
  },
  "schiele-the-family": {
-  "chapter": "21-dada-surreal",
   "artist": "エゴン・シーレ",
   "title": "家族",
   "year": "1918年",
@@ -3187,10 +3186,10 @@
   "wiki": "エゴン・シーレ",
   "wikiLang": "ja",
   "wikiEn": "Egon Schiele",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "21-dada-surreal"
  },
  "kollwitz-the-parents": {
-  "chapter": "21-dada-surreal",
   "artist": "ケーテ・コルヴィッツ",
   "title": "両親（連作《戦争》より）",
   "year": "1923年",
@@ -3199,10 +3198,10 @@
   "wiki": "ケーテ・コルヴィッツ",
   "wikiLang": "ja",
   "wikiEn": "Käthe Kollwitz",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "21-dada-surreal"
  },
  "ball-cabaret-voltaire": {
-  "chapter": "21-dada-surreal",
   "artist": "撮影者不詳",
   "title": "音響詩《カラワネ》を朗読するフーゴ・バル",
   "year": "1916年",
@@ -3211,10 +3210,10 @@
   "wiki": "フーゴ・バル",
   "wikiLang": "ja",
   "wikiEn": "Hugo Ball",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "21-dada-surreal"
  },
  "loos-looshaus": {
-  "chapter": "22-abstraction",
   "artist": "アドルフ・ロース",
   "title": "ロースハウス",
   "year": "1910 — 1912年",
@@ -3223,10 +3222,10 @@
   "wiki": "ロースハウス",
   "wikiLang": "ja",
   "wikiEn": "Looshaus",
-  "license": "パブリックドメイン（設計者没後70年経過）"
+  "license": "パブリックドメイン（設計者没後70年経過）",
+  "chapter": "22-abstraction"
  },
  "behrens-aeg-turbine": {
-  "chapter": "22-abstraction",
   "artist": "ペーター・ベーレンス",
   "title": "AEGタービン工場",
   "year": "1909年",
@@ -3235,10 +3234,10 @@
   "wiki": "AEGタービン工場",
   "wikiLang": "ja",
   "wikiEn": "AEG turbine factory",
-  "license": "パブリックドメイン（設計者没後70年経過）"
+  "license": "パブリックドメイン（設計者没後70年経過）",
+  "chapter": "22-abstraction"
  },
  "gropius-fagus-factory": {
-  "chapter": "22-abstraction",
   "artist": "ヴァルター・グロピウス／アドルフ・マイヤー",
   "title": "ファグス靴型工場",
   "year": "1911年",
@@ -3247,10 +3246,10 @@
   "wiki": "ファグス靴工場",
   "wikiLang": "ja",
   "wikiEn": "Fagus Factory",
-  "license": "屋外の建築物（自由利用）"
+  "license": "屋外の建築物（自由利用）",
+  "chapter": "22-abstraction"
  },
  "doesburg-counter-composition-v": {
-  "chapter": "22-abstraction",
   "artist": "テオ・ファン・ドゥースブルフ",
   "title": "反構成 V",
   "year": "1924年",
@@ -3259,10 +3258,10 @@
   "wiki": "テオ・ファン・ドゥースブルフ",
   "wikiLang": "ja",
   "wikiEn": "Theo van Doesburg",
-  "license": "パブリックドメイン（作者1931年没）"
+  "license": "パブリックドメイン（作者1931年没）",
+  "chapter": "22-abstraction"
  },
  "rietveld-schroder-house": {
-  "chapter": "22-abstraction",
   "artist": "ヘリット・リートフェルト",
   "title": "シュレーダー邸",
   "year": "1924年",
@@ -3271,10 +3270,10 @@
   "wiki": "シュレーダー邸",
   "wikiLang": "ja",
   "wikiEn": "Rietveld Schröder House",
-  "license": "屋外の建築物（自由利用）"
+  "license": "屋外の建築物（自由利用）",
+  "chapter": "22-abstraction"
  },
  "tatlin-tower-model": {
-  "chapter": "22-abstraction",
   "artist": "ウラジーミル・タトリン",
   "title": "第三インターナショナル記念塔（模型）",
   "year": "1920年",
@@ -3283,10 +3282,10 @@
   "wiki": "第三インターナショナル記念塔",
   "wikiLang": "ja",
   "wikiEn": "Tatlin's Tower",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "22-abstraction"
  },
  "lissitzky-red-wedge": {
-  "chapter": "22-abstraction",
   "artist": "エル・リシツキー",
   "title": "赤い楔で白を撃て",
   "year": "1919年",
@@ -3295,10 +3294,10 @@
   "wiki": "エル・リシツキー",
   "wikiLang": "ja",
   "wikiEn": "Beat the Whites with the Red Wedge",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "22-abstraction"
  },
  "lissitzky-proun": {
-  "chapter": "22-abstraction",
   "artist": "エル・リシツキー",
   "title": "プロウン",
   "year": "1920 — 1923年",
@@ -3307,10 +3306,10 @@
   "wiki": "プロウン",
   "wikiLang": "ja",
   "wikiEn": "Proun",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "22-abstraction"
  },
  "bauhaus-dessau-building": {
-  "chapter": "22-abstraction",
   "artist": "ヴァルター・グロピウス",
   "title": "バウハウス・デッサウ校舎",
   "year": "1926年",
@@ -3319,10 +3318,10 @@
   "wiki": "バウハウス",
   "wikiLang": "ja",
   "wikiEn": "Bauhaus Dessau Foundation",
-  "license": "屋外の建築物（自由利用）"
+  "license": "屋外の建築物（自由利用）",
+  "chapter": "22-abstraction"
  },
  "kaen-doki-sasayama": {
-  "chapter": "26-jomon",
   "artist": "作者不詳（信濃川流域の縄文人）",
   "title": "深鉢形土器（火焰型土器）",
   "year": "前3000年ごろ",
@@ -3331,10 +3330,10 @@
   "wiki": "火焔型土器",
   "wikiLang": "ja",
   "wikiEn": "Jōmon pottery",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "26-jomon"
  },
  "sannai-maruyama-pillars": {
-  "chapter": "26-jomon",
   "artist": "縄文中期の集落（青森市）",
   "title": "三内丸山遺跡 大型掘立柱建物跡",
   "year": "前3000年ごろ",
@@ -3343,10 +3342,10 @@
   "wiki": "三内丸山遺跡",
   "wikiLang": "ja",
   "wikiEn": "Sannai-Maruyama Site",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "26-jomon"
  },
  "jomon-venus": {
-  "chapter": "26-jomon",
   "artist": "作者不詳（縄文中期の八ヶ岳山麓）",
   "title": "土偶（縄文のビーナス）",
   "year": "前3000年ごろ",
@@ -3355,10 +3354,10 @@
   "wiki": "縄文のビーナス",
   "wikiLang": "ja",
   "wikiEn": "Jōmon Venus",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "26-jomon"
  },
  "kamen-no-megami": {
-  "chapter": "26-jomon",
   "artist": "作者不詳（縄文後期の八ヶ岳山麓）",
   "title": "土偶（仮面の女神）",
   "year": "前2000年ごろ",
@@ -3367,10 +3366,10 @@
   "wiki": "仮面の女神",
   "wikiLang": "ja",
   "wikiEn": "Masked Goddess",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "26-jomon"
  },
  "gassho-dogu": {
-  "chapter": "26-jomon",
   "artist": "作者不詳（縄文後期の北奥）",
   "title": "土偶（合掌土偶）",
   "year": "前1500年ごろ",
@@ -3378,10 +3377,10 @@
   "commons": "Late Jomon clay statue Kazahari I Aomoriken 1500BCE - 1000BCE.jpg",
   "wiki": "合掌土偶",
   "wikiLang": "ja",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "26-jomon"
  },
  "chuku-dogu": {
-  "chapter": "26-jomon",
   "artist": "作者不詳（縄文後期の南茅部）",
   "title": "土偶（中空土偶）",
   "year": "前1500年ごろ",
@@ -3390,10 +3389,10 @@
   "wiki": "中空土偶",
   "wikiLang": "ja",
   "wikiEn": "Hollow Dogū",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "26-jomon"
  },
  "jomon-no-megami": {
-  "chapter": "26-jomon",
   "artist": "作者不詳（縄文中期の最上川流域）",
   "title": "土偶（縄文の女神）",
   "year": "前2500年ごろ",
@@ -3402,10 +3401,10 @@
   "wiki": "縄文の女神",
   "wikiLang": "ja",
   "wikiEn": "Jōmon Goddess",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "26-jomon"
  },
  "shakoki-dogu": {
-  "chapter": "26-jomon",
   "artist": "作者不詳（縄文晩期の津軽）",
   "title": "遮光器土偶",
   "year": "前1000 — 前400年",
@@ -3414,10 +3413,10 @@
   "wiki": "遮光器土偶",
   "wikiLang": "ja",
   "wikiEn": "Dogū",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "26-jomon"
  },
  "yayoi-tsubo-hongo": {
-  "chapter": "26-jomon",
   "artist": "作者不詳（弥生の関東）",
   "title": "壺形土器（本郷弥生町出土）",
   "year": "前1世紀 — 後1世紀ごろ",
@@ -3426,10 +3425,10 @@
   "wiki": "弥生土器",
   "wikiLang": "ja",
   "wikiEn": "Yayoi pottery",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "26-jomon"
  },
  "dotaku-sakuragaoka": {
-  "chapter": "26-jomon",
   "artist": "作者不詳（弥生の近畿）",
   "title": "桜ヶ丘銅鐸",
   "year": "前2 — 前1世紀ごろ",
@@ -3438,10 +3437,10 @@
   "wiki": "銅鐸",
   "wikiLang": "ja",
   "wikiEn": "Dōtaku",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "26-jomon"
  },
  "daisenryo-kofun": {
-  "chapter": "26-jomon",
   "artist": "被葬者不詳（宮内庁は仁徳天皇陵として管理）",
   "title": "大仙陵古墳",
   "year": "5世紀中ごろ",
@@ -3450,10 +3449,10 @@
   "wiki": "大仙陵古墳",
   "wikiLang": "ja",
   "wikiEn": "Daisenryō Kofun",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "26-jomon"
  },
  "haniwa-keiko-warrior": {
-  "chapter": "26-jomon",
   "artist": "作者不詳（東国の埴輪工人）",
   "title": "埴輪 挂甲の武人",
   "year": "6世紀",
@@ -3462,10 +3461,10 @@
   "wiki": "埴輪",
   "wikiLang": "ja",
   "wikiEn": "Haniwa",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "26-jomon"
  },
  "horyuji-shaka-triad": {
-  "chapter": "27-buddhist",
   "artist": "鞍作止利（止利仏師）",
   "title": "法隆寺金堂 釈迦三尊像",
   "year": "623年",
@@ -3474,10 +3473,10 @@
   "wiki": "法隆寺金堂釈迦三尊像",
   "wikiLang": "ja",
   "wikiEn": "Shaka Triad",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "27-buddhist"
  },
  "kudara-kannon": {
-  "chapter": "27-buddhist",
   "artist": "作者不詳",
   "title": "木造観音菩薩立像（百済観音）",
   "year": "7世紀",
@@ -3486,10 +3485,10 @@
   "wiki": "百済観音",
   "wikiLang": "ja",
   "wikiEn": "Kudara Kannon",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "27-buddhist"
  },
  "koryuji-miroku": {
-  "chapter": "27-buddhist",
   "artist": "作者不詳",
   "title": "弥勒菩薩半跏思惟像（宝冠弥勒）",
   "year": "7世紀",
@@ -3498,10 +3497,10 @@
   "wiki": "弥勒菩薩半跏思惟像 (広隆寺)",
   "wikiLang": "ja",
   "wikiEn": "Miroku Bosatsu (Kōryū-ji)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "27-buddhist"
  },
  "kofukuji-butsuto": {
-  "chapter": "27-buddhist",
   "artist": "作者不詳",
   "title": "銅造仏頭（旧山田寺講堂本尊）",
   "year": "685年",
@@ -3510,10 +3509,10 @@
   "wiki": "銅造仏頭",
   "wikiLang": "ja",
   "wikiEn": "Kōfuku-ji",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "27-buddhist"
  },
  "yakushiji-yakushi-triad": {
-  "chapter": "27-buddhist",
   "artist": "作者不詳",
   "title": "薬師寺金堂 薬師三尊像",
   "year": "7世紀末 — 8世紀初",
@@ -3522,10 +3521,10 @@
   "wiki": "薬師寺",
   "wikiLang": "ja",
   "wikiEn": "Yakushi-ji",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "27-buddhist"
  },
  "todaiji-daibutsu": {
-  "chapter": "27-buddhist",
   "artist": "国中連公麻呂ら",
   "title": "東大寺 盧舎那仏坐像（奈良の大仏）",
   "year": "752年開眼",
@@ -3534,10 +3533,10 @@
   "wiki": "東大寺盧舎那仏像",
   "wikiLang": "ja",
   "wikiEn": "Great Buddha of Nara",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "27-buddhist"
  },
  "kofukuji-ashura": {
-  "chapter": "27-buddhist",
   "artist": "作者不詳（興福寺西金堂の造仏所）",
   "title": "興福寺 阿修羅像（八部衆立像のうち）",
   "year": "734年",
@@ -3546,10 +3545,10 @@
   "wiki": "阿修羅像 (興福寺)",
   "wikiLang": "ja",
   "wikiEn": "Ashura (Kōfuku-ji)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "27-buddhist"
  },
  "ganjin-wajo": {
-  "chapter": "27-buddhist",
   "artist": "作者不詳（弟子の忍基が造らせたと伝わる）",
   "title": "唐招提寺 鑑真和上坐像",
   "year": "763年ごろ",
@@ -3558,10 +3557,10 @@
   "wiki": "鑑真",
   "wikiLang": "ja",
   "wikiEn": "Jianzhen",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "27-buddhist"
  },
  "toji-fudo-myoo": {
-  "chapter": "27-buddhist",
   "artist": "作者不詳（空海の構想による）",
   "title": "東寺 講堂 不動明王坐像（立体曼荼羅のうち）",
   "year": "839年",
@@ -3570,10 +3569,10 @@
   "wiki": "不動明王",
   "wikiLang": "ja",
   "wikiEn": "Acala",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "27-buddhist"
  },
  "toji-taishakuten": {
-  "chapter": "27-buddhist",
   "artist": "作者不詳",
   "title": "東寺 講堂 帝釈天騎象像",
   "year": "839年",
@@ -3582,10 +3581,10 @@
   "wiki": "帝釈天",
   "wikiLang": "ja",
   "wikiEn": "Shakra (Buddhism)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "27-buddhist"
  },
  "jocho-amida-byodoin": {
-  "chapter": "27-buddhist",
   "artist": "定朝",
   "title": "平等院鳳凰堂 阿弥陀如来坐像",
   "year": "1053年",
@@ -3594,10 +3593,10 @@
   "wiki": "平等院鳳凰堂阿弥陀如来坐像",
   "wikiLang": "ja",
   "wikiEn": "Jōchō",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "27-buddhist"
  },
  "amida-raigo-koyasan": {
-  "chapter": "27-buddhist",
   "artist": "作者不詳",
   "title": "阿弥陀聖衆来迎図",
   "year": "11世紀",
@@ -3606,10 +3605,10 @@
   "wiki": "阿弥陀聖衆来迎図",
   "wikiLang": "ja",
   "wikiEn": "Raigō",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "27-buddhist"
  },
  "chusonji-konjikido": {
-  "chapter": "27-buddhist",
   "artist": "奥州藤原氏の造営",
   "title": "中尊寺 金色堂",
   "year": "1124年",
@@ -3618,10 +3617,10 @@
   "wikiLang": "ja",
   "wikiEn": "Chūson-ji",
   "license": "パブリックドメイン",
-  "noPhoto": "金色堂は覆堂の中にあり堂内撮影も禁じられているため、Commonsに金色堂そのものの写真がない"
+  "noPhoto": "金色堂は覆堂の中にあり堂内撮影も禁じられているため、Commonsに金色堂そのものの写真がない",
+  "chapter": "27-buddhist"
  },
  "genji-emaki-yadorigi": {
-  "chapter": "28-emaki",
   "artist": "作者不詳（複数の工房による）",
   "title": "源氏物語絵巻",
   "year": "12世紀前半",
@@ -3630,10 +3629,10 @@
   "wikiLang": "ja",
   "wikiEn": "The Tale of Genji Scroll",
   "license": "パブリックドメイン",
-  "noPhoto": "Commonsにあるのは東京藝術大学日本画研究室による現状模写で、透かしも入っており、パブリックドメインとして扱えない"
+  "noPhoto": "Commonsにあるのは東京藝術大学日本画研究室による現状模写で、透かしも入っており、パブリックドメインとして扱えない",
+  "chapter": "28-emaki"
  },
  "shigisan-engi-emaki": {
-  "chapter": "28-emaki",
   "artist": "作者不詳",
   "title": "信貴山縁起絵巻",
   "year": "12世紀後半",
@@ -3642,10 +3641,10 @@
   "wiki": "信貴山縁起",
   "wikiLang": "ja",
   "wikiEn": "Shigisan Engi",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "28-emaki"
  },
  "ban-dainagon-ekotoba": {
-  "chapter": "28-emaki",
   "artist": "作者不詳（常盤光長筆と伝わる）",
   "title": "伴大納言絵詞",
   "year": "12世紀後半",
@@ -3654,10 +3653,10 @@
   "wiki": "伴大納言絵詞",
   "wikiLang": "ja",
   "wikiEn": "Ban Dainagon Ekotoba",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "28-emaki"
  },
  "choju-jinbutsu-giga": {
-  "chapter": "28-emaki",
   "artist": "作者不詳（鳥羽僧正覚猷筆と伝わる）",
   "title": "鳥獣人物戯画",
   "year": "12 — 13世紀",
@@ -3666,10 +3665,10 @@
   "wiki": "鳥獣人物戯画",
   "wikiLang": "ja",
   "wikiEn": "Chōjū-jinbutsu-giga",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "28-emaki"
  },
  "todaiji-nio-agyo": {
-  "chapter": "28-emaki",
   "artist": "運慶・快慶と慶派の仏師たち",
   "title": "東大寺南大門 金剛力士像",
   "year": "1203年",
@@ -3678,10 +3677,10 @@
   "wiki": "金剛力士",
   "wikiLang": "ja",
   "wikiEn": "Nio (Buddhism)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "28-emaki"
  },
  "unkei-mujaku-seshin": {
-  "chapter": "28-emaki",
   "artist": "運慶",
   "title": "無著菩薩立像・世親菩薩立像",
   "year": "1212年ごろ",
@@ -3690,10 +3689,10 @@
   "wiki": "無著",
   "wikiLang": "ja",
   "wikiEn": "Asanga",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "28-emaki"
  },
  "den-minamoto-yoritomo": {
-  "chapter": "28-emaki",
   "artist": "藤原隆信筆と伝わる（帰属に議論あり）",
   "title": "伝源頼朝像",
   "year": "鎌倉時代、または14世紀",
@@ -3702,10 +3701,10 @@
   "wiki": "伝源頼朝像",
   "wikiLang": "ja",
   "wikiEn": "Minamoto no Yoritomo",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "28-emaki"
  },
  "jigoku-zoshi": {
-  "chapter": "28-emaki",
   "artist": "作者不詳",
   "title": "地獄草紙",
   "year": "12世紀後半",
@@ -3714,10 +3713,10 @@
   "wiki": "地獄草紙",
   "wikiLang": "ja",
   "wikiEn": "Hell Scroll",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "28-emaki"
  },
  "heiji-monogatari-emaki": {
-  "chapter": "28-emaki",
   "artist": "作者不詳",
   "title": "平治物語絵巻 三条殿夜討巻",
   "year": "13世紀後半",
@@ -3726,10 +3725,10 @@
   "wiki": "平治物語絵巻",
   "wikiLang": "ja",
   "wikiEn": "Heiji Monogatari Emaki",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "28-emaki"
  },
  "ippen-shonin-eden": {
-  "chapter": "28-emaki",
   "artist": "円伊",
   "title": "一遍上人絵伝（一遍聖絵）",
   "year": "1299年",
@@ -3738,10 +3737,10 @@
   "wiki": "一遍上人絵伝",
   "wikiLang": "ja",
   "wikiEn": "Ippen Shōnin Eden",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "28-emaki"
  },
  "moko-shurai-ekotoba": {
-  "chapter": "28-emaki",
   "artist": "作者不詳（竹崎季長 発注）",
   "title": "蒙古襲来絵詞",
   "year": "1293年ごろ",
@@ -3750,10 +3749,10 @@
   "wiki": "蒙古襲来絵詞",
   "wikiLang": "ja",
   "wikiEn": "Mōko Shūrai Ekotoba",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "28-emaki"
  },
  "gaki-zoshi": {
-  "chapter": "28-emaki",
   "artist": "作者不詳",
   "title": "餓鬼草紙",
   "year": "12世紀後半",
@@ -3762,10 +3761,10 @@
   "wiki": "餓鬼草紙",
   "wikiLang": "ja",
   "wikiEn": "Gaki-zōshi",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "28-emaki"
  },
  "senmen-hokekyo-sasshi": {
-  "chapter": "28-emaki",
   "artist": "作者不詳",
   "title": "扇面法華経冊子",
   "year": "12世紀後半",
@@ -3774,10 +3773,10 @@
   "wiki": "扇面法華経冊子",
   "wikiLang": "ja",
   "wikiEn": "Senmen Hokekyō Sasshi",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "28-emaki"
  },
  "kasuga-gongen-genki-e": {
-  "chapter": "28-emaki",
   "artist": "高階隆兼",
   "title": "春日権現験記絵",
   "year": "1309年",
@@ -3786,10 +3785,10 @@
   "wiki": "春日権現験記絵",
   "wikiLang": "ja",
   "wikiEn": "Kasuga Gongen Genki E",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "28-emaki"
  },
  "sesshu-shuto-sansui": {
-  "chapter": "29-suiboku",
   "artist": "雪舟等楊",
   "title": "秋冬山水図（冬景）",
   "year": "15世紀後半",
@@ -3798,10 +3797,10 @@
   "wiki": "秋冬山水図",
   "wikiLang": "ja",
   "wikiEn": "Winter Landscape (Sesshu)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "29-suiboku"
  },
  "josetsu-hyonenzu": {
-  "chapter": "29-suiboku",
   "artist": "如拙",
   "title": "瓢鮎図",
   "year": "1415年ごろ",
@@ -3810,10 +3809,10 @@
   "wiki": "瓢鮎図",
   "wikiLang": "ja",
   "wikiEn": "Catching a Catfish with a Gourd",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "29-suiboku"
  },
  "mokkei-gyoson-sekisho": {
-  "chapter": "29-suiboku",
   "artist": "牧谿（法常）",
   "title": "漁村夕照図",
   "year": "13世紀",
@@ -3822,10 +3821,10 @@
   "wiki": "瀟湘八景図",
   "wikiLang": "ja",
   "wikiEn": "Muqi",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "29-suiboku"
  },
  "sesshu-sansui-chokan": {
-  "chapter": "29-suiboku",
   "artist": "雪舟等楊",
   "title": "四季山水図巻（山水長巻）",
   "year": "1486年",
@@ -3834,10 +3833,10 @@
   "wikiLang": "ja",
   "wikiEn": "Landscape of the Four Seasons (Sesshu)",
   "license": "パブリックドメイン",
-  "noPhoto": "同じく巻子全体の画像しかなく、細長すぎて何も読めない"
+  "noPhoto": "同じく巻子全体の画像しかなく、細長すぎて何も読めない",
+  "chapter": "29-suiboku"
  },
  "sesshu-eka-danpi": {
-  "chapter": "29-suiboku",
   "artist": "雪舟等楊",
   "title": "慧可断臂図",
   "year": "1496年",
@@ -3846,10 +3845,10 @@
   "wiki": "慧可断臂図",
   "wikiLang": "ja",
   "wikiEn": "Huike Offering His Arm to Bodhidharma",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "29-suiboku"
  },
  "sesshu-amanohashidate": {
-  "chapter": "29-suiboku",
   "artist": "雪舟等楊",
   "title": "天橋立図",
   "year": "1501 — 1506年ごろ",
@@ -3858,10 +3857,10 @@
   "wiki": "天橋立図",
   "wikiLang": "ja",
   "wikiEn": "View of Ama-no-Hashidate",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "29-suiboku"
  },
  "ryoanji-sekitei": {
-  "chapter": "29-suiboku",
   "artist": "作庭者不詳（諸説あり）",
   "title": "龍安寺 方丈庭園",
   "year": "15世紀末 — 16世紀ごろ",
@@ -3870,10 +3869,10 @@
   "wiki": "龍安寺",
   "wikiLang": "ja",
   "wikiEn": "Ryōan-ji",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "29-suiboku"
  },
  "yohen-tenmoku": {
-  "chapter": "29-suiboku",
   "artist": "中国・建窯",
   "title": "曜変天目茶碗（稲葉天目）",
   "year": "12 — 13世紀（南宋）",
@@ -3882,10 +3881,10 @@
   "wiki": "曜変天目茶碗",
   "wikiLang": "ja",
   "wikiEn": "Jian ware",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "29-suiboku"
  },
  "kano-masanobu-shumoshuku": {
-  "chapter": "29-suiboku",
   "artist": "狩野正信",
   "title": "周茂叔愛蓮図",
   "year": "15世紀後半",
@@ -3894,10 +3893,10 @@
   "wiki": "周茂叔愛蓮図",
   "wikiLang": "ja",
   "wikiEn": "Zhou Maoshu Appreciating Lotuses",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "29-suiboku"
  },
  "shubun-suishoku-ranko": {
-  "chapter": "29-suiboku",
   "artist": "伝 周文",
   "title": "水色巒光図",
   "year": "1445年の賛",
@@ -3906,10 +3905,10 @@
   "wiki": "周文",
   "wikiLang": "ja",
   "wikiEn": "Tenshō Shūbun",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "29-suiboku"
  },
  "ginkakuji-togudo": {
-  "chapter": "29-suiboku",
   "artist": "足利義政の東山山荘",
   "title": "慈照寺 東求堂 同仁斎",
   "year": "1486年",
@@ -3918,10 +3917,10 @@
   "wiki": "慈照寺",
   "wikiLang": "ja",
   "wikiEn": "Ginkaku-ji",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "29-suiboku"
  },
  "kano-eitoku-karajishi": {
-  "chapter": "30-momoyama",
   "artist": "狩野永徳",
   "title": "唐獅子図屏風",
   "year": "16世紀後半",
@@ -3930,10 +3929,10 @@
   "wiki": "唐獅子図屏風",
   "wikiLang": "ja",
   "wikiEn": "Kanō Eitoku",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "30-momoyama"
  },
  "kano-eitoku-rakuchu-rakugai": {
-  "chapter": "30-momoyama",
   "artist": "狩野永徳",
   "title": "洛中洛外図屏風（上杉本）",
   "year": "1565年ごろ",
@@ -3942,10 +3941,10 @@
   "wiki": "洛中洛外図",
   "wikiLang": "ja",
   "wikiEn": "Rakuchū rakugai zu",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "30-momoyama"
  },
  "hasegawa-tohaku-shorinzu": {
-  "chapter": "30-momoyama",
   "artist": "長谷川等伯",
   "title": "松林図屏風",
   "year": "16世紀末",
@@ -3954,10 +3953,10 @@
   "wiki": "松林図",
   "wikiLang": "ja",
   "wikiEn": "Pine Trees screen",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "30-momoyama"
  },
  "hasegawa-tohaku-kaede": {
-  "chapter": "30-momoyama",
   "artist": "長谷川等伯",
   "title": "楓図（旧祥雲寺障壁画）",
   "year": "1592 — 1593年",
@@ -3966,10 +3965,10 @@
   "wiki": "長谷川等伯",
   "wikiLang": "ja",
   "wikiEn": "Hasegawa Tōhaku",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "30-momoyama"
  },
  "tawaraya-sotatsu-fujin-raijin": {
-  "chapter": "30-momoyama",
   "artist": "俵屋宗達",
   "title": "風神雷神図屏風",
   "year": "17世紀前半",
@@ -3978,10 +3977,10 @@
   "wiki": "風神雷神図",
   "wikiLang": "ja",
   "wikiEn": "Wind God and Thunder God",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "30-momoyama"
  },
  "ogata-korin-kakitsubata": {
-  "chapter": "30-momoyama",
   "artist": "尾形光琳",
   "title": "燕子花図屏風",
   "year": "18世紀初頭",
@@ -3990,10 +3989,10 @@
   "wiki": "燕子花図",
   "wikiLang": "ja",
   "wikiEn": "Irises screen",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "30-momoyama"
  },
  "ogata-korin-kohakubai": {
-  "chapter": "30-momoyama",
   "artist": "尾形光琳",
   "title": "紅白梅図屏風",
   "year": "18世紀前半",
@@ -4002,10 +4001,10 @@
   "wiki": "紅白梅図屏風",
   "wikiLang": "ja",
   "wikiEn": "Red and White Plum Blossoms",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "30-momoyama"
  },
  "sakai-hoitsu-natsuakikusa": {
-  "chapter": "30-momoyama",
   "artist": "酒井抱一",
   "title": "夏秋草図屏風",
   "year": "1821年ごろ",
@@ -4014,10 +4013,10 @@
   "wiki": "夏秋草図屏風",
   "wikiLang": "ja",
   "wikiEn": "Sakai Hōitsu",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "30-momoyama"
  },
  "honami-koetsu-funabashi": {
-  "chapter": "30-momoyama",
   "artist": "本阿弥光悦",
   "title": "舟橋蒔絵硯箱",
   "year": "17世紀前半",
@@ -4026,10 +4025,10 @@
   "wiki": "舟橋蒔絵硯箱",
   "wikiLang": "ja",
   "wikiEn": "Hon'ami Kōetsu",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "30-momoyama"
  },
  "ogata-kenzan-ume-zara": {
-  "chapter": "30-momoyama",
   "artist": "尾形乾山・尾形光琳",
   "title": "銹絵染付梅図角皿",
   "year": "18世紀初頭",
@@ -4038,10 +4037,10 @@
   "wiki": "尾形乾山",
   "wikiLang": "ja",
   "wikiEn": "Ogata Kenzan",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "30-momoyama"
  },
  "harunobu-lovers-snow": {
-  "chapter": "31-ukiyoe",
   "artist": "鈴木春信",
   "title": "雪中相合傘",
   "year": "1760年代後半",
@@ -4050,10 +4049,10 @@
   "wiki": "鈴木春信",
   "wikiLang": "ja",
   "wikiEn": "Suzuki Harunobu",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "31-ukiyoe"
  },
  "tsutaya-juzaburo": {
-  "chapter": "31-ukiyoe",
   "artist": "作者不詳",
   "title": "蔦屋重三郎像",
   "year": "18世紀後半",
@@ -4062,10 +4061,10 @@
   "wiki": "蔦屋重三郎",
   "wikiLang": "ja",
   "wikiEn": "Tsutaya Jūzaburō",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "31-ukiyoe"
  },
  "sharaku-otani-oniji": {
-  "chapter": "31-ukiyoe",
   "artist": "東洲斎写楽",
   "title": "三代目大谷鬼次の奴江戸兵衛",
   "year": "1794年",
@@ -4074,10 +4073,10 @@
   "wiki": "三代目大谷鬼次の奴江戸兵衛",
   "wikiLang": "ja",
   "wikiEn": "Ōtani Oniji III as Yakko Edobei",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "31-ukiyoe"
  },
  "utamaro-three-beauties": {
-  "chapter": "31-ukiyoe",
   "artist": "喜多川歌麿",
   "title": "当時三美人（寛政三美人）",
   "year": "1793年ごろ",
@@ -4086,10 +4085,10 @@
   "wiki": "当時三美人",
   "wikiLang": "ja",
   "wikiEn": "Three Beauties of the Present Day",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "31-ukiyoe"
  },
  "hokusai-great-wave": {
-  "chapter": "31-ukiyoe",
   "artist": "葛飾北斎",
   "title": "富嶽三十六景　神奈川沖浪裏",
   "year": "1831年ごろ",
@@ -4098,10 +4097,10 @@
   "wiki": "神奈川沖浪裏",
   "wikiLang": "ja",
   "wikiEn": "The Great Wave off Kanagawa",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "31-ukiyoe"
  },
  "hokusai-red-fuji": {
-  "chapter": "31-ukiyoe",
   "artist": "葛飾北斎",
   "title": "富嶽三十六景　凱風快晴",
   "year": "1831年ごろ",
@@ -4110,10 +4109,10 @@
   "wiki": "凱風快晴",
   "wikiLang": "ja",
   "wikiEn": "Fine Wind, Clear Morning",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "31-ukiyoe"
  },
  "hiroshige-ohashi-atake": {
-  "chapter": "31-ukiyoe",
   "artist": "歌川広重",
   "title": "名所江戸百景　大はしあたけの夕立",
   "year": "1857年",
@@ -4122,10 +4121,10 @@
   "wiki": "名所江戸百景",
   "wikiLang": "ja",
   "wikiEn": "Sudden Shower over Shin-Ōhashi Bridge and Atake",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "31-ukiyoe"
  },
  "hiroshige-shono": {
-  "chapter": "31-ukiyoe",
   "artist": "歌川広重",
   "title": "東海道五十三次　庄野　白雨",
   "year": "1833年ごろ",
@@ -4134,10 +4133,10 @@
   "wiki": "東海道五十三次 (浮世絵)",
   "wikiLang": "ja",
   "wikiEn": "The Fifty-three Stations of the Tōkaidō",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "31-ukiyoe"
  },
  "kuroda-lakeside": {
-  "chapter": "31-ukiyoe",
   "artist": "黒田清輝",
   "title": "湖畔",
   "year": "1897年",
@@ -4146,10 +4145,10 @@
   "wiki": "湖畔 (黒田清輝)",
   "wikiLang": "ja",
   "wikiEn": "Lakeside (Kuroda Seiki)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "31-ukiyoe"
  },
  "aoki-umi-no-sachi": {
-  "chapter": "31-ukiyoe",
   "artist": "青木繁",
   "title": "海の幸",
   "year": "1904年",
@@ -4158,10 +4157,10 @@
   "wiki": "海の幸 (絵画)",
   "wikiLang": "ja",
   "wikiEn": "Aoki Shigeru",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "31-ukiyoe"
  },
  "hishida-ochiba": {
-  "chapter": "31-ukiyoe",
   "artist": "菱田春草",
   "title": "落葉",
   "year": "1909年",
@@ -4170,10 +4169,10 @@
   "wikiLang": "ja",
   "wikiEn": "Hishida Shunsō",
   "license": "パブリックドメイン",
-  "noPhoto": "《落葉》（永青文庫）の複製がCommonsに無い。菱田春草の別作品か本人の写真しか出てこない"
+  "noPhoto": "《落葉》（永青文庫）の複製がCommonsに無い。菱田春草の別作品か本人の写真しか出てこない",
+  "chapter": "31-ukiyoe"
  },
  "kishida-reiko": {
-  "chapter": "31-ukiyoe",
   "artist": "岸田劉生",
   "title": "麗子微笑",
   "year": "1921年",
@@ -4182,10 +4181,10 @@
   "wiki": "麗子像",
   "wikiLang": "ja",
   "wikiEn": "Portrait of Reiko",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "31-ukiyoe"
  },
  "houmuwu-ding": {
-  "chapter": "32-china-early",
   "artist": "作者不詳（殷王室の工房）",
   "title": "后母戊鼎（司母戊鼎）",
   "year": "前13 — 前11世紀",
@@ -4194,10 +4193,10 @@
   "wiki": "司母戊鼎",
   "wikiLang": "ja",
   "wikiEn": "Houmuwu ding",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "32-china-early"
  },
  "tiger-you-sennoku": {
-  "chapter": "32-china-early",
   "artist": "作者不詳（殷後期の工房）",
   "title": "虎卣",
   "year": "前12 — 前11世紀",
@@ -4206,10 +4205,10 @@
   "wikiLang": "ja",
   "wikiEn": "Tiger You",
   "license": "パブリックドメイン",
-  "noPhoto": "泉屋博古館の虎卣の写真がCommonsに無い。検索するとトラの写真が来る"
+  "noPhoto": "泉屋博古館の虎卣の写真がCommonsに無い。検索するとトラの写真が来る",
+  "chapter": "32-china-early"
  },
  "terracotta-army": {
-  "chapter": "32-china-early",
   "artist": "秦の官営工房",
   "title": "秦始皇帝陵 兵馬俑",
   "year": "前3世紀後半",
@@ -4218,10 +4217,10 @@
   "wiki": "兵馬俑",
   "wikiLang": "ja",
   "wikiEn": "Terracotta Army",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "32-china-early"
  },
  "mawangdui-t-banner": {
-  "chapter": "32-china-early",
   "artist": "作者不詳",
   "title": "馬王堆一号漢墓 T字形帛画",
   "year": "前2世紀",
@@ -4230,10 +4229,10 @@
   "wiki": "馬王堆漢墓",
   "wikiLang": "ja",
   "wikiEn": "Mawangdui Han tombs site",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "32-china-early"
  },
  "lantingxu-fengchengsu": {
-  "chapter": "32-china-early",
   "artist": "王羲之（原本）／馮承素 模と伝わる",
   "title": "蘭亭序 神龍半印本",
   "year": "原本 353年／模本 7世紀",
@@ -4242,10 +4241,10 @@
   "wiki": "蘭亭序",
   "wikiLang": "ja",
   "wikiEn": "Lantingji Xu",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "32-china-early"
  },
  "nushi-zhen-tu": {
-  "chapter": "32-china-early",
   "artist": "顧愷之に帰せられる（唐代の模本）",
   "title": "女史箴図巻",
   "year": "原本 4世紀末／模本 7 — 8世紀",
@@ -4254,10 +4253,10 @@
   "wiki": "女史箴図",
   "wikiLang": "ja",
   "wikiEn": "Admonitions Scroll",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "32-china-early"
  },
  "yungang-cave20": {
-  "chapter": "32-china-early",
   "artist": "北魏の石工たち（曇曜の主導と伝わる）",
   "title": "雲岡石窟 第20窟 露天大仏",
   "year": "460年代",
@@ -4266,10 +4265,10 @@
   "wiki": "雲崗石窟",
   "wikiLang": "ja",
   "wikiEn": "Yungang Grottoes",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "32-china-early"
  },
  "longmen-vairocana": {
-  "chapter": "32-china-early",
   "artist": "唐の石工たち",
   "title": "龍門石窟 奉先寺 盧舎那仏",
   "year": "675年",
@@ -4278,10 +4277,10 @@
   "wiki": "龍門洞窟",
   "wikiLang": "ja",
   "wikiEn": "Longmen Grottoes",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "32-china-early"
  },
  "yan-zhenqing-jizhi": {
-  "chapter": "32-china-early",
   "artist": "顔真卿",
   "title": "祭姪文稿",
   "year": "758年",
@@ -4290,10 +4289,10 @@
   "wiki": "祭姪文稿",
   "wikiLang": "ja",
   "wikiEn": "Draft of a Requiem to My Nephew",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "32-china-early"
  },
  "tang-sancai-camel": {
-  "chapter": "32-china-early",
   "artist": "作者不詳（唐の官営窯）",
   "title": "三彩 駱駝載楽俑",
   "year": "8世紀前半",
@@ -4302,10 +4301,10 @@
   "wiki": "唐三彩",
   "wikiLang": "ja",
   "wikiEn": "Sancai",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "32-china-early"
  },
  "fanquan-travelers": {
-  "chapter": "33-china-shanshui",
   "artist": "范寛",
   "title": "谿山行旅図",
   "year": "11世紀初め",
@@ -4314,10 +4313,10 @@
   "wiki": "谿山行旅図",
   "wikiLang": "ja",
   "wikiEn": "Travelers Among Mountains and Streams",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "33-china-shanshui"
  },
  "guoxi-early-spring": {
-  "chapter": "33-china-shanshui",
   "artist": "郭熙",
   "title": "早春図",
   "year": "1072年",
@@ -4326,10 +4325,10 @@
   "wiki": "早春図",
   "wikiLang": "ja",
   "wikiEn": "Early Spring (painting)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "33-china-shanshui"
  },
  "zhang-zeduan-qingming": {
-  "chapter": "33-china-shanshui",
   "artist": "張択端",
   "title": "清明上河図",
   "year": "12世紀初め",
@@ -4338,10 +4337,10 @@
   "wiki": "清明上河図",
   "wikiLang": "ja",
   "wikiEn": "Along the River During the Qingming Festival",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "33-china-shanshui"
  },
  "mayuan-solitary-angler": {
-  "chapter": "33-china-shanshui",
   "artist": "伝 馬遠",
   "title": "寒江独釣図",
   "year": "13世紀初め",
@@ -4350,10 +4349,10 @@
   "wiki": "馬遠",
   "wikiLang": "ja",
   "wikiEn": "Ma Yuan (painter)",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "33-china-shanshui"
  },
  "xiagui-pure-remote": {
-  "chapter": "33-china-shanshui",
   "artist": "夏珪",
   "title": "渓山清遠図",
   "year": "13世紀初め",
@@ -4362,10 +4361,10 @@
   "wikiLang": "ja",
   "wikiEn": "Xia Gui",
   "license": "パブリックドメイン",
-  "noPhoto": "巻子全体を1枚に収めた画像しかなく、細長すぎて何も読めない"
+  "noPhoto": "巻子全体を1枚に収めた画像しかなく、細長すぎて何も読めない",
+  "chapter": "33-china-shanshui"
  },
  "zhao-mengfu-quehua": {
-  "chapter": "33-china-shanshui",
   "artist": "趙孟頫",
   "title": "鵲華秋色図",
   "year": "1295年",
@@ -4374,10 +4373,10 @@
   "wiki": "鵲華秋色図",
   "wikiLang": "ja",
   "wikiEn": "Autumn Colors on the Qiao and Hua Mountains",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "33-china-shanshui"
  },
  "huang-gongwang-fuchun": {
-  "chapter": "33-china-shanshui",
   "artist": "黄公望",
   "title": "富春山居図",
   "year": "1350年ごろ",
@@ -4386,10 +4385,10 @@
   "wiki": "富春山居図",
   "wikiLang": "ja",
   "wikiEn": "Dwelling in the Fuchun Mountains",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "33-china-shanshui"
  },
  "nizan-rongxi": {
-  "chapter": "33-china-shanshui",
   "artist": "倪瓚",
   "title": "容膝斎図",
   "year": "1372年",
@@ -4398,10 +4397,10 @@
   "wiki": "倪瓚",
   "wikiLang": "ja",
   "wikiEn": "Ni Zan",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "33-china-shanshui"
  },
  "bada-shanren-fish": {
-  "chapter": "33-china-shanshui",
   "artist": "八大山人（朱耷）",
   "title": "魚（『安晩帖』のうち）",
   "year": "17世紀末",
@@ -4410,10 +4409,10 @@
   "wiki": "八大山人",
   "wikiLang": "ja",
   "wikiEn": "Bada Shanren",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "33-china-shanshui"
  },
  "shitao-lushan": {
-  "chapter": "33-china-shanshui",
   "artist": "石濤",
   "title": "廬山観瀑図",
   "year": "17世紀末",
@@ -4422,10 +4421,10 @@
   "wikiLang": "ja",
   "wikiEn": "Shitao",
   "license": "パブリックドメイン",
-  "noPhoto": "石濤《廬山観瀑図》は181pxしか無い"
+  "noPhoto": "石濤《廬山観瀑図》は181pxしか無い",
+  "chapter": "33-china-shanshui"
  },
  "goguryeo-gangseo-hyeonmu": {
-  "chapter": "34-korea",
   "artist": "作者不詳（高句麗の画工）",
   "title": "江西大墓 玄武図",
   "year": "6世紀末 — 7世紀初",
@@ -4434,10 +4433,10 @@
   "wikiLang": "ja",
   "wikiEn": "Gangseo Great Tomb",
   "license": "パブリックドメイン",
-  "noPhoto": "江西大墓の玄武図の複製がCommonsに無い。博物館の解説パネルの写真しか出てこない"
+  "noPhoto": "江西大墓の玄武図の複製がCommonsに無い。博物館の解説パネルの写真しか出てこない",
+  "chapter": "34-korea"
  },
  "goguryeo-muyongchong-hunting": {
-  "chapter": "34-korea",
   "artist": "作者不詳（高句麗の画工）",
   "title": "舞踊塚 狩猟図",
   "year": "5世紀",
@@ -4446,10 +4445,10 @@
   "wikiLang": "ja",
   "wikiEn": "Goguryeo tomb murals",
   "license": "パブリックドメイン",
-  "noPhoto": "舞踊塚の狩猟図の複製がCommonsに無い。古墳の外観しか出てこない"
+  "noPhoto": "舞踊塚の狩猟図の複製がCommonsに無い。古墳の外観しか出てこない",
+  "chapter": "34-korea"
  },
  "pensive-bodhisattva-83": {
-  "chapter": "34-korea",
   "artist": "作者不詳（三国時代）",
   "title": "金銅弥勒菩薩半跏思惟像（国宝83号）",
   "year": "7世紀前半",
@@ -4458,10 +4457,10 @@
   "wiki": "半跏思惟像",
   "wikiLang": "ja",
   "wikiEn": "Bangasayusang",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "34-korea"
  },
  "seokguram-buddha": {
-  "chapter": "34-korea",
   "artist": "統一新羅の石工たち（金大城の発願と伝わる）",
   "title": "石窟庵 本尊如来坐像",
   "year": "8世紀後半",
@@ -4470,10 +4469,10 @@
   "wiki": "石窟庵",
   "wikiLang": "ja",
   "wikiEn": "Seokguram",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "34-korea"
  },
  "silla-gold-crown": {
-  "chapter": "34-korea",
   "artist": "新羅王室の工房",
   "title": "金冠",
   "year": "5 — 6世紀",
@@ -4482,10 +4481,10 @@
   "wiki": "新羅の金冠",
   "wikiLang": "ja",
   "wikiEn": "Gold crown of Silla",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "34-korea"
  },
  "afrasiab-ambassadors": {
-  "chapter": "34-korea",
   "artist": "作者不詳（ソグドの画工）",
   "title": "アフラシャブ壁画「大使の間」",
   "year": "7世紀半ば",
@@ -4494,10 +4493,10 @@
   "wiki": "アフラシアブ",
   "wikiLang": "ja",
   "wikiEn": "Afrasiab painting",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "34-korea"
  },
  "kizil-caves": {
-  "chapter": "34-korea",
   "artist": "クチャの画工たち",
   "title": "キジル石窟 天井壁画",
   "year": "3 — 8世紀",
@@ -4506,10 +4505,10 @@
   "wiki": "キジル石窟",
   "wikiLang": "ja",
   "wikiEn": "Kizil Caves",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "34-korea"
  },
  "celadon-inlaid-maebyeong": {
-  "chapter": "34-korea",
   "artist": "康津または扶安の窯",
   "title": "青磁象嵌雲鶴文梅瓶",
   "year": "12 — 13世紀",
@@ -4518,10 +4517,10 @@
   "wiki": "高麗青磁",
   "wikiLang": "ja",
   "wikiEn": "Goryeo celadon maebyeong",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "34-korea"
  },
  "goryeo-water-moon-avalokitesvara": {
-  "chapter": "34-korea",
   "artist": "高麗宮廷の画員（多くは無記名）",
   "title": "水月観音図（楊柳観音像）",
   "year": "14世紀",
@@ -4530,10 +4529,10 @@
   "wiki": "高麗仏画",
   "wikiLang": "ja",
   "wikiEn": "Water-moon Avalokitesvara Goryeo painting",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "34-korea"
  },
  "joseon-moon-jar": {
-  "chapter": "34-korea",
   "artist": "広州・分院の窯（作者不詳）",
   "title": "白磁大壺（満月壺）",
   "year": "17世紀後半 — 18世紀",
@@ -4542,10 +4541,10 @@
   "wiki": "白磁",
   "wikiLang": "ja",
   "wikiEn": "Moon jar",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "34-korea"
  },
  "jeongseon-inwangjesaekdo": {
-  "chapter": "34-korea",
   "artist": "鄭敾（チョン・ソン、謙斎）",
   "title": "仁王霽色図",
   "year": "1751年",
@@ -4554,10 +4553,10 @@
   "wiki": "鄭敾",
   "wikiLang": "ja",
   "wikiEn": "Inwang jesaekdo",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "34-korea"
  },
  "kim-hongdo-dance": {
-  "chapter": "34-korea",
   "artist": "金弘道（キム・ホンド、檀園）",
   "title": "舞童（檀園風俗図帖のうち）",
   "year": "18世紀後半",
@@ -4566,10 +4565,10 @@
   "wikiLang": "ja",
   "wikiEn": "Kim Hong-do Muyong dancing boy",
   "license": "パブリックドメイン",
-  "noPhoto": "《舞童》の複製がCommonsに無い。金弘道の別作品しか出てこない"
+  "noPhoto": "《舞童》の複製がCommonsに無い。金弘道の別作品しか出てこない",
+  "chapter": "34-korea"
  },
  "minhwa-tiger-magpie": {
-  "chapter": "34-korea",
   "artist": "無名の絵師たち",
   "title": "虎鵲図（民画）",
   "year": "19世紀",
@@ -4578,10 +4577,10 @@
   "wiki": "民画",
   "wikiLang": "ja",
   "wikiEn": "Magpie and Tiger",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "34-korea"
  },
  "mihrab-imami": {
-  "chapter": "35-islam",
   "artist": "作者不詳（イスファハーンのタイル工房）",
   "title": "ミフラーブ（マドラサ・イマーミー旧蔵）",
   "year": "1354 — 1355年",
@@ -4590,10 +4589,10 @@
   "wiki": "ミフラーブ",
   "wikiLang": "ja",
   "wikiEn": "Mihrab",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "35-islam"
  },
  "iznik-rustem-pasha": {
-  "chapter": "35-islam",
   "artist": "作者不詳（イズニックの陶工）",
   "title": "リュステム・パシャ・モスクのタイル壁面",
   "year": "1561 — 1563年",
@@ -4602,10 +4601,10 @@
   "wiki": "イズニック陶器",
   "wikiLang": "ja",
   "wikiEn": "Rüstem Pasha Mosque",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "35-islam"
  },
  "blue-quran": {
-  "chapter": "35-islam",
   "artist": "作者不詳（マグリブまたはイベリアの写本工房）",
   "title": "青のクルアーン（ブルー・クルアーン）",
   "year": "9 — 10世紀",
@@ -4614,10 +4613,10 @@
   "wiki": "クルアーン",
   "wikiLang": "ja",
   "wikiEn": "Blue Qur'an",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "35-islam"
  },
  "ibn-bawwab-quran": {
-  "chapter": "35-islam",
   "artist": "イブン・アル＝バウワーブ",
   "title": "クルアーン写本",
   "year": "1000 — 1001年",
@@ -4626,10 +4625,10 @@
   "wiki": "イブン・アル＝バウワーブ",
   "wikiLang": "ja",
   "wikiEn": "Ibn al-Bawwab",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "35-islam"
  },
  "alhambra-two-sisters": {
-  "chapter": "35-islam",
   "artist": "作者不詳（ナスル朝の宮廷工房）",
   "title": "アルハンブラ宮殿 二姉妹の間 ムカルナス天井",
   "year": "1360年代",
@@ -4638,10 +4637,10 @@
   "wiki": "アルハンブラ宮殿",
   "wikiLang": "ja",
   "wikiEn": "Alhambra",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "35-islam"
  },
  "alhambra-lions-court": {
-  "chapter": "35-islam",
   "artist": "ムハンマド5世の造営（ナスル朝）",
   "title": "アルハンブラ宮殿 ライオンの中庭",
   "year": "1362 — 1391年",
@@ -4650,10 +4649,10 @@
   "wiki": "アルハンブラ宮殿",
   "wikiLang": "ja",
   "wikiEn": "Court of the Lions",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "35-islam"
  },
  "dome-of-the-rock": {
-  "chapter": "35-islam",
   "artist": "カリフ・アブドゥルマリクの造営（ウマイヤ朝）",
   "title": "岩のドーム",
   "year": "691年",
@@ -4662,10 +4661,10 @@
   "wiki": "岩のドーム",
   "wikiLang": "ja",
   "wikiEn": "Dome of the Rock",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "35-islam"
  },
  "mezquita-cordoba": {
-  "chapter": "35-islam",
   "artist": "アブド・アッラフマーン1世 以下四代の造営",
   "title": "コルドバの大モスク（メスキータ）内部",
   "year": "785年 — 10世紀末",
@@ -4674,10 +4673,10 @@
   "wiki": "メスキータ",
   "wikiLang": "ja",
   "wikiEn": "Mosque–Cathedral of Córdoba",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "35-islam"
  },
  "suleymaniye-mosque": {
-  "chapter": "35-islam",
   "artist": "ミマール・シナン",
   "title": "スレイマニエ・モスク",
   "year": "1550 — 1557年",
@@ -4686,10 +4685,10 @@
   "wiki": "スレイマニエ・モスク",
   "wikiLang": "ja",
   "wikiEn": "Süleymaniye Mosque",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "35-islam"
  },
  "sinan-selimiye": {
-  "chapter": "35-islam",
   "artist": "ミマール・シナン",
   "title": "セリミエ・モスク",
   "year": "1568 — 1575年",
@@ -4698,10 +4697,10 @@
   "wiki": "セリミエ・モスク",
   "wikiLang": "ja",
   "wikiEn": "Selimiye Mosque",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "35-islam"
  },
  "lustre-bowl-kashan": {
-  "chapter": "35-islam",
   "artist": "作者不詳（カーシャーンの陶工）",
   "title": "ラスター彩鉢",
   "year": "13世紀初頭",
@@ -4710,10 +4709,10 @@
   "wiki": "ラスター彩",
   "wikiLang": "ja",
   "wikiEn": "Lustreware",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "35-islam"
  },
  "iznik-mosque-lamp": {
-  "chapter": "35-islam",
   "artist": "作者不詳（イズニックの陶工）",
   "title": "モスク・ランプ（岩のドーム伝来）",
   "year": "1549年",
@@ -4722,10 +4721,10 @@
   "wiki": "イズニック陶器",
   "wikiLang": "ja",
   "wikiEn": "İznik pottery",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "35-islam"
  },
  "ardabil-carpet": {
-  "chapter": "35-islam",
   "artist": "マクスード・カーシャーニー（銘）",
   "title": "アルデビール絨毯",
   "year": "1539 — 1540年",
@@ -4734,10 +4733,10 @@
   "wiki": "アルデビール絨毯",
   "wikiLang": "ja",
   "wikiEn": "Ardabil Carpet",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "35-islam"
  },
  "shahnama-gayumars": {
-  "chapter": "36-miniature",
   "artist": "スルターン・ムハンマド",
   "title": "ガユーマルス王の宮廷（タフマースプ王の《シャー・ナーメ》より）",
   "year": "1522 — 1525年ごろ",
@@ -4746,10 +4745,10 @@
   "wiki": "シャー・ナーメ",
   "wikiLang": "ja",
   "wikiEn": "Shahnameh of Shah Tahmasp",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "36-miniature"
  },
  "bihzad-yusuf-zulaykha": {
-  "chapter": "36-miniature",
   "artist": "ビフザード（カマール・アッディーン・ビフザード）",
   "title": "ユースフとズライハ（サアディー《ブースターン》より）",
   "year": "1488年",
@@ -4758,10 +4757,10 @@
   "wikiLang": "ja",
   "wikiEn": "Kamāl ud-Dīn Behzād",
   "license": "パブリックドメイン",
-  "noPhoto": "ビフザードの《ユースフとズライハ》がCommonsに無い。同じ画家の別作品しか出てこない"
+  "noPhoto": "ビフザードの《ユースフとズライハ》がCommonsに無い。同じ画家の別作品しか出てこない",
+  "chapter": "36-miniature"
  },
  "akbarnama-hawai": {
-  "chapter": "36-miniature",
   "artist": "バサーワンとチェタル（下絵と彩色）",
   "title": "暴れ象ハワーイーを乗りこなすアクバル（《アクバル・ナーマ》より）",
   "year": "1590年ごろ",
@@ -4770,10 +4769,10 @@
   "wiki": "アクバル・ナーマ",
   "wikiLang": "ja",
   "wikiEn": "Akbarnama",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "36-miniature"
  },
  "mansur-turkey": {
-  "chapter": "36-miniature",
   "artist": "ウスタード・マンスール",
   "title": "七面鳥",
   "year": "1612年ごろ",
@@ -4782,10 +4781,10 @@
   "wikiLang": "ja",
   "wikiEn": "Ustad Mansur",
   "license": "パブリックドメイン",
-  "noPhoto": "マンスールの《七面鳥》の良い複製がCommonsに無い"
+  "noPhoto": "マンスールの《七面鳥》の良い複製がCommonsに無い",
+  "chapter": "36-miniature"
  },
  "jahangir-hourglass": {
-  "chapter": "36-miniature",
   "artist": "ビチトル",
   "title": "諸王よりスーフィーの聖者を選ぶジャハーンギール",
   "year": "1615 — 1618年ごろ",
@@ -4794,10 +4793,10 @@
   "wiki": "ジャハーンギール",
   "wikiLang": "ja",
   "wikiEn": "Jahangir Preferring a Sufi Shaikh to Kings",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "36-miniature"
  },
  "pahari-gita-govinda": {
-  "chapter": "36-miniature",
   "artist": "作者不詳（パンジャーブ山地の工房）",
   "title": "『ギータ・ゴーヴィンダ』より　クリシュナとラーダー",
   "year": "18世紀",
@@ -4806,10 +4805,10 @@
   "wiki": "ギータ・ゴーヴィンダ",
   "wikiLang": "ja",
   "wikiEn": "Gita Govinda",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "36-miniature"
  },
  "ajanta-padmapani": {
-  "chapter": "36-miniature",
   "artist": "作者不詳（ヴァーカータカ朝の工人）",
   "title": "蓮華手菩薩（パドマパーニ）　アジャンター第1窟壁画",
   "year": "5世紀後半",
@@ -4818,10 +4817,10 @@
   "wiki": "アジャンター石窟群",
   "wikiLang": "ja",
   "wikiEn": "Ajanta Caves",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "36-miniature"
  },
  "chola-nataraja": {
-  "chapter": "36-miniature",
   "artist": "作者不詳（チョーラ朝の鋳造工房）",
   "title": "踊るシヴァ（ナタラージャ）",
   "year": "11世紀ごろ",
@@ -4830,10 +4829,10 @@
   "wiki": "ナタラージャ",
   "wikiLang": "ja",
   "wikiEn": "Nataraja",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "36-miniature"
  },
  "borobudur-relief": {
-  "chapter": "36-miniature",
   "artist": "作者不詳（シャイレーンドラ朝の石工）",
   "title": "回廊レリーフ　ボロブドゥール",
   "year": "9世紀初め",
@@ -4842,10 +4841,10 @@
   "wiki": "ボロブドゥール遺跡",
   "wikiLang": "ja",
   "wikiEn": "Borobudur",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "36-miniature"
  },
  "angkor-churning": {
-  "chapter": "36-miniature",
   "artist": "作者不詳（アンコール朝の石工）",
   "title": "乳海攪拌　アンコール・ワット第一回廊 東面レリーフ",
   "year": "12世紀前半",
@@ -4854,10 +4853,10 @@
   "wiki": "乳海攪拌",
   "wikiLang": "ja",
   "wikiEn": "Samudra manthan",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "36-miniature"
  },
  "nok-terracotta-head": {
-  "chapter": "37-africa",
   "artist": "作者不詳（ノク文化）",
   "title": "テラコッタ頭部",
   "year": "前500 — 後200年ごろ",
@@ -4866,10 +4865,10 @@
   "wiki": "ノク文化",
   "wikiLang": "ja",
   "wikiEn": "Nok culture",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "37-africa"
  },
  "ife-bronze-head": {
-  "chapter": "37-africa",
   "artist": "作者不詳（イフェの王室工房）",
   "title": "銅合金の頭部（オオニの肖像と伝わる）",
   "year": "12 — 15世紀",
@@ -4878,10 +4877,10 @@
   "wiki": "イフェ",
   "wikiLang": "ja",
   "wikiEn": "Ife Head",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "37-africa"
  },
  "benin-plaque-oba": {
-  "chapter": "37-africa",
   "artist": "作者不詳（ベニン王室の鋳造ギルド イグン・エロンムウォン）",
   "title": "真鍮板 ─ オバと従者",
   "year": "16 — 17世紀",
@@ -4890,10 +4889,10 @@
   "wiki": "ベニン・ブロンズ",
   "wikiLang": "ja",
   "wikiEn": "Benin Bronzes",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "37-africa"
  },
  "benin-queen-mother-idia": {
-  "chapter": "37-africa",
   "artist": "作者不詳（ベニン王室の鋳造ギルド イグン・エロンムウォン）",
   "title": "王母（イヨバ）の頭像",
   "year": "16世紀前半",
@@ -4902,10 +4901,10 @@
   "wiki": "イディア",
   "wikiLang": "ja",
   "wikiEn": "Idia",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "37-africa"
  },
  "bamana-chiwara": {
-  "chapter": "37-africa",
   "artist": "作者不詳（バマナの彫刻家）",
   "title": "チワラ（耕作の被り物）",
   "year": "19 — 20世紀初頭",
@@ -4914,10 +4913,10 @@
   "wiki": "チワラ",
   "wikiLang": "ja",
   "wikiEn": "Chiwara",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "37-africa"
  },
  "nkisi-nkondi": {
-  "chapter": "37-africa",
   "artist": "作者不詳（コンゴの彫刻家とンガンガ）",
   "title": "ンキシ・ンコンディ（釘の像）",
   "year": "19世紀",
@@ -4926,10 +4925,10 @@
   "wiki": "ンキシ",
   "wikiLang": "ja",
   "wikiEn": "Nkisi",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "37-africa"
  },
  "olowe-ikere-door": {
-  "chapter": "37-africa",
   "artist": "オロウェ・オブ・イセ",
   "title": "王宮の扉（イケレ＝エキティ）",
   "year": "1910 — 1914年ごろ",
@@ -4938,10 +4937,10 @@
   "wiki": "オロウェ・オブ・イセ",
   "wikiLang": "ja",
   "wikiEn": "Olowe of Ise",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "37-africa"
  },
  "olowe-of-ise": {
-  "chapter": "37-africa",
   "artist": "オロウェ・オブ・イセ",
   "title": "玉座の王を支える柱（ヴェランダ・ポスト）",
   "year": "1910 — 1914年ごろ",
@@ -4950,10 +4949,10 @@
   "wiki": "オロウェ・オブ・イセ",
   "wikiLang": "ja",
   "wikiEn": "Olowe of Ise",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "37-africa"
  },
  "great-zimbabwe-bird": {
-  "chapter": "37-africa",
   "artist": "作者不詳（ショナの石工）",
   "title": "大ジンバブエの石鳥",
   "year": "13 — 15世紀",
@@ -4962,20 +4961,20 @@
   "wiki": "グレート・ジンバブエ遺跡",
   "wikiLang": "ja",
   "wikiEn": "Zimbabwe Bird",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "37-africa"
  },
  "great-zimbabwe-ruler": {
-  "chapter": "37-africa",
   "artist": "作者不詳（ショナの石工）",
   "title": "大囲壁と円錐の塔（大ジンバブエ）",
   "year": "13 — 15世紀",
   "collection": "花崗岩の空積み　壁の高さ 最大約11 m　全長約250 m　大ジンバブエ遺跡（マスビンゴ近郊、ジンバブエ）　世界文化遺産",
   "commons": "Great Zimbabwe Great Enclosure and Conical Tower.jpg",
   "wikiLang": "ja",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "37-africa"
  },
  "lalibela-bete-giyorgis": {
-  "chapter": "37-africa",
   "artist": "作者不詳（ラリベラ王の時代の石工）",
   "title": "聖ゲオルギオス教会（ベテ・ギヨルギス）",
   "year": "12世紀末 — 13世紀初",
@@ -4984,10 +4983,10 @@
   "wiki": "ラリベラの岩窟教会群",
   "wikiLang": "ja",
   "wikiEn": "Church of Saint George, Lalibela",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "37-africa"
  },
  "king-lalibela": {
-  "chapter": "37-africa",
   "artist": "作者不詳（ラリベラ王の時代の石工）",
   "title": "聖救世主教会（ベテ・メドハネ・アレム）",
   "year": "12世紀末 — 13世紀初",
@@ -4996,10 +4995,10 @@
   "wiki": "ラリベラの岩窟教会群",
   "wikiLang": "ja",
   "wikiEn": "Bete Medhane Alem",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "37-africa"
  },
  "obalufon-mask": {
-  "chapter": "37-africa",
   "artist": "作者不詳（イフェの王室工房）",
   "title": "銅の仮面（オバルフォン2世と伝わる）",
   "year": "12 — 15世紀",
@@ -5008,10 +5007,10 @@
   "wiki": "イフェ",
   "wikiLang": "ja",
   "wikiEn": "Obalufon",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "37-africa"
  },
  "oba-ewuare": {
-  "chapter": "37-africa",
   "artist": "作者不詳（ベニン王室の鋳造ギルド イグン・エロンムウォン）",
   "title": "オバ（王）の記念頭像",
   "year": "16世紀",
@@ -5020,10 +5019,10 @@
   "wiki": "ベニン王国",
   "wikiLang": "ja",
   "wikiEn": "Benin Bronzes",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "37-africa"
  },
  "oba-ovonramwen": {
-  "chapter": "37-africa",
   "artist": "撮影者不詳（1897年の記録写真）",
   "title": "廃位後のオバ・オヴォンラムウェン",
   "year": "1897年",
@@ -5032,10 +5031,10 @@
   "wiki": "ベニン王国",
   "wikiLang": "ja",
   "wikiEn": "Ovonramwen",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "37-africa"
  },
  "olmec-colossal-head": {
-  "chapter": "38-pacific",
   "artist": "作者不詳（オルメカの石工）",
   "title": "巨石人頭像",
   "year": "前1200 — 前900年ごろ",
@@ -5044,10 +5043,10 @@
   "wiki": "オルメカ",
   "wikiLang": "ja",
   "wikiEn": "Olmec colossal heads",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "38-pacific"
  },
  "teotihuacan-sun-pyramid": {
-  "chapter": "38-pacific",
   "artist": "作者不詳（テオティワカンの建設者）",
   "title": "太陽のピラミッド",
   "year": "後100 — 200年ごろ",
@@ -5056,10 +5055,10 @@
   "wiki": "テオティワカン",
   "wikiLang": "ja",
   "wikiEn": "Pyramid of the Sun",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "38-pacific"
  },
  "pakal-sarcophagus-lid": {
-  "chapter": "38-pacific",
   "artist": "作者不詳（パレンケの石工）",
   "title": "パカル王の石棺蓋",
   "year": "683年ごろ",
@@ -5068,10 +5067,10 @@
   "wikiLang": "ja",
   "wikiEn": "K'inich Janaab' Pakal I",
   "license": "パブリックドメイン",
-  "noPhoto": "パカル王の石棺蓋の写真がCommonsに無い（神殿の外観しか出ない）"
+  "noPhoto": "パカル王の石棺蓋の写真がCommonsに無い（神殿の外観しか出ない）",
+  "chapter": "38-pacific"
  },
  "bonampak-murals": {
-  "chapter": "38-pacific",
   "artist": "作者不詳（マヤの絵師たち）",
   "title": "ボナンパック壁画（第2室）",
   "year": "790年ごろ",
@@ -5080,10 +5079,10 @@
   "wiki": "ボナンパック",
   "wikiLang": "ja",
   "wikiEn": "Bonampak",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "38-pacific"
  },
  "pakal-jade-mask": {
-  "chapter": "38-pacific",
   "artist": "作者不詳（パレンケの玉工）",
   "title": "パカル王の翡翠の仮面",
   "year": "683年ごろ",
@@ -5092,10 +5091,10 @@
   "wiki": "パカル",
   "wikiLang": "ja",
   "wikiEn": "K'inich Janaab' Pakal I",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "38-pacific"
  },
  "aztec-sun-stone": {
-  "chapter": "38-pacific",
   "artist": "作者不詳（メシカの石工）",
   "title": "太陽の石（アステカの暦石）",
   "year": "1512年ごろ",
@@ -5104,10 +5103,10 @@
   "wiki": "アステカの暦石",
   "wikiLang": "ja",
   "wikiEn": "Aztec sun stone",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "38-pacific"
  },
  "coatlicue-statue": {
-  "chapter": "38-pacific",
   "artist": "作者不詳（メシカの石工）",
   "title": "コアトリクエ像",
   "year": "1500年ごろ",
@@ -5116,10 +5115,10 @@
   "wiki": "コアトリクエ",
   "wikiLang": "ja",
   "wikiEn": "Coatlicue",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "38-pacific"
  },
  "moctezuma-headdress": {
-  "chapter": "38-pacific",
   "artist": "作者不詳（アマンテカ＝羽根細工師）",
   "title": "羽根冠（いわゆるモクテスマの冠）",
   "year": "1500年ごろ",
@@ -5128,10 +5127,10 @@
   "wiki": "モクテスマ2世",
   "wikiLang": "ja",
   "wikiEn": "Moctezuma's headdress",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "38-pacific"
  },
  "paracas-textile": {
-  "chapter": "38-pacific",
   "artist": "作者不詳（パラカスの織師・刺繍師）",
   "title": "刺繍のマント（パラカスの織物）",
   "year": "前300 — 後200年ごろ",
@@ -5140,10 +5139,10 @@
   "wiki": "パラカス文化",
   "wikiLang": "ja",
   "wikiEn": "Paracas textiles",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "38-pacific"
  },
  "moche-portrait-vessel": {
-  "chapter": "38-pacific",
   "artist": "作者不詳（モチェの土器工）",
   "title": "肖像鐙形壺",
   "year": "後100 — 700年ごろ",
@@ -5152,10 +5151,10 @@
   "wiki": "モチェ文化",
   "wikiLang": "ja",
   "wikiEn": "Moche portrait vessel",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "38-pacific"
  },
  "sipan-lord-ornament": {
-  "chapter": "38-pacific",
   "artist": "作者不詳（モチェの金工）",
   "title": "シパンの王の副葬品",
   "year": "後250年ごろ",
@@ -5164,10 +5163,10 @@
   "wiki": "シパン",
   "wikiLang": "ja",
   "wikiEn": "Lord of Sipán",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "38-pacific"
  },
  "tiwanaku-sun-gate": {
-  "chapter": "38-pacific",
   "artist": "作者不詳（ティワナクの石工）",
   "title": "太陽の門",
   "year": "後500 — 900年ごろ",
@@ -5176,10 +5175,10 @@
   "wiki": "ティワナク",
   "wikiLang": "ja",
   "wikiEn": "Gate of the Sun",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "38-pacific"
  },
  "machu-picchu-masonry": {
-  "chapter": "38-pacific",
   "artist": "作者不詳（インカの石工）",
   "title": "マチュ・ピチュ",
   "year": "1450年ごろ",
@@ -5188,10 +5187,10 @@
   "wiki": "マチュ・ピチュ",
   "wikiLang": "ja",
   "wikiEn": "Machu Picchu",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "38-pacific"
  },
  "haida-totem-skidegate": {
-  "chapter": "38-pacific",
   "artist": "作者不詳（ハイダの彫師たち）",
   "title": "スキデゲイトの家柱とトーテムポール",
   "year": "19世紀（写真は1878年）",
@@ -5200,10 +5199,10 @@
   "wikiLang": "ja",
   "wikiEn": "Totem pole",
   "license": "パブリックドメイン",
-  "noPhoto": "1878年のスキデゲイトの記録写真がCommonsに無い。現代のトーテムポールしか出てこない"
+  "noPhoto": "1878年のスキデゲイトの記録写真がCommonsに無い。現代のトーテムポールしか出てこない",
+  "chapter": "38-pacific"
  },
  "lapita-pottery": {
-  "chapter": "38-pacific",
   "artist": "作者不詳（ラピタの土器工）",
   "title": "ラピタ土器（押捺文の土器）",
   "year": "前1350 — 前750年ごろ",
@@ -5212,10 +5211,10 @@
   "wiki": "ラピタ人",
   "wikiLang": "ja",
   "wikiEn": "Lapita culture",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "38-pacific"
  },
  "moai-rano-raraku": {
-  "chapter": "38-pacific",
   "artist": "作者不詳（ラパ・ヌイの彫師たち）",
   "title": "モアイ",
   "year": "1250 — 1500年ごろ",
@@ -5224,10 +5223,10 @@
   "wiki": "モアイ",
   "wikiLang": "ja",
   "wikiEn": "Moai",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "38-pacific"
  },
  "maori-pataka": {
-  "chapter": "38-pacific",
   "artist": "マオリの彫師（19世紀）",
   "title": "彫刻された高床の倉（パタカ）",
   "year": "19世紀",
@@ -5236,10 +5235,10 @@
   "wiki": "マオリ",
   "wikiLang": "ja",
   "wikiEn": "Pātaka",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "38-pacific"
  },
  "arnhem-xray-rock-art": {
-  "chapter": "38-pacific",
   "artist": "作者不詳（西アーネムランドの絵師たち）",
   "title": "X線画法の岩絵",
   "year": "約2000年前 — 現在",
@@ -5248,6 +5247,7 @@
   "wiki": "カカドゥ国立公園",
   "wikiLang": "ja",
   "wikiEn": "Ubirr",
-  "license": "パブリックドメイン"
+  "license": "パブリックドメイン",
+  "chapter": "38-pacific"
  }
 }

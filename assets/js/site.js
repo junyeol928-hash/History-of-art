@@ -201,9 +201,16 @@
       .catch(function () { return {}; })
       .then(function (g) {
         glossary = g || {};
+        var here = document.body.dataset.chapter || '';
         terms.forEach(function (el) {
           var key = el.dataset.term;
           var entry = glossary[key];
+          /* 同じ語を複数の章が書き分けていることがある。
+             いま読んでいる章の版があれば、そちらを出す。
+             用語辞典（glossary.html）の見出しは初出の章の版のまま。 */
+          if (entry && entry.byChapter && entry.byChapter[here]) {
+            entry = entry.byChapter[here];
+          }
           var def = entry ? (entry.short || entry.def || '') : (el.dataset.def || '');
           if (!def) return;
           var show = function () { showTip(el, key, def); };

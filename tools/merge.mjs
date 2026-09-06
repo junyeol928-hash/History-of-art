@@ -18,10 +18,26 @@ function merge(dir, out, label) {
     }
     const from = f.replace(/\.json$/, '');
     for (const [k, v] of Object.entries(o)) {
-      // 同じ項目が複数の章にあれば、初出の章のものを残す
-      if (k in all) { dupes.push(`${k}（${f} は初出ではないので採らない）`); continue; }
+      const obj = (v && typeof v === 'object' && !Array.isArray(v));
+      if (k in all) {
+        /* 同じ語を複数の章が定義している。用語辞典の見出しは初出の章のものを
+           使うが、後の章の書き分けを捨てない。フレスコは第11章で
+           「湿気に弱く、ヴェネツィアでは保たなかった」と書かれ、補色は
+           第18章で「ゴッホが手紙で繰り返し論じている」と書かれている。
+           以前はこれを黙って捨てていたので、その章を読んでいても
+           別の章の説明が出ていた。章ごとの版として持たせ、
+           本文のツールチップはその章の版を先に使う。 */
+        if (obj && all[k] && typeof all[k] === 'object') {
+          (all[k].byChapter ||= {})[from] = { ...v, chapter: from };
+          dupes.push(`${k}（${from} の版も残した）`);
+        } else {
+          dupes.push(`${k}（${f} は初出ではないので採らない）`);
+        }
+        continue;
+      }
       // どの章のものかを記録しておく（名作ギャラリーが時代で絞り込むのに使う）
-      all[k] = (v && typeof v === 'object' && !Array.isArray(v)) ? { chapter: from, ...v } : v;
+      // v 側に chapter が書かれていても、置かれているファイルの章を正とする
+      all[k] = obj ? { ...v, chapter: from } : v;
     }
   }
   /* 壊れたJSONを読み飛ばしたまま書き出すと、欠けた状態で公開されてしまう。
