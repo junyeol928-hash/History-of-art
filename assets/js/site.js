@@ -172,10 +172,13 @@
     document.body.appendChild(tip);
     return tip;
   }
+  var tipOwner = null;      // いまツールチップを出している語
   function showTip(el, term, def) {
     var t = ensureTip();
     t.innerHTML = '<b>' + escapeHTML(term) + '</b>' + escapeHTML(def);
     t.hidden = false;
+    tipOwner = el;
+    el.setAttribute('aria-expanded', 'true');
     var r = el.getBoundingClientRect();
     var w = t.offsetWidth, h = t.offsetHeight;
     var left = Math.min(Math.max(8, r.left + r.width / 2 - w / 2), window.innerWidth - w - 8);
@@ -184,7 +187,11 @@
     t.style.left = (left + window.scrollX) + 'px';
     t.style.top = (top + window.scrollY) + 'px';
   }
-  function hideTip() { if (tip) tip.hidden = true; }
+  function hideTip() {
+    if (tip) tip.hidden = true;
+    if (tipOwner) tipOwner.setAttribute('aria-expanded', 'false');
+    tipOwner = null;
+  }
 
   function wireGlossary() {
     var terms = document.querySelectorAll('.term[data-term]');
@@ -200,17 +207,38 @@
           var def = entry ? (entry.short || entry.def || '') : (el.dataset.def || '');
           if (!def) return;
           var show = function () { showTip(el, key, def); };
-          el.addEventListener('mouseenter', show);
-          el.addEventListener('focus', show);
-          el.addEventListener('mouseleave', hideTip);
-          el.addEventListener('blur', hideTip);
+
+          /* 指で触ると mouseenter や focus が click より先に来る。
+             以前はそこで出したものを、直後の click が「出ているから」という
+             理由だけで引っ込めていた。最初のタップでは何も読めない。
+             だから、ホバーで出すのはマウスのときだけにして、
+             タップとキー操作は「この語のものが出ていたら閉じる」で切り替える。 */
+          if (window.PointerEvent) {
+            el.addEventListener('pointerenter', function (e) {
+              if (e.pointerType === 'mouse') show();
+            });
+            el.addEventListener('pointerleave', function (e) {
+              if (e.pointerType === 'mouse' && tipOwner === el) hideTip();
+            });
+          } else {
+            el.addEventListener('mouseenter', show);
+            el.addEventListener('mouseleave', function () { if (tipOwner === el) hideTip(); });
+          }
+          el.addEventListener('blur', function () { if (tipOwner === el) hideTip(); });
           el.addEventListener('click', function (e) {
             e.preventDefault();
-            if (tip && !tip.hidden) hideTip(); else show();
+            if (tipOwner === el) hideTip(); else show();
+          });
+          el.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); if (tipOwner === el) hideTip(); else show(); }
+            if (e.key === 'Escape' && tipOwner === el) hideTip();
           });
           el.tabIndex = 0;
+          el.setAttribute('role', 'button');
+          el.setAttribute('aria-expanded', 'false');
         });
         document.addEventListener('scroll', hideTip, { passive: true });
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape') hideTip(); });
       });
   }
 

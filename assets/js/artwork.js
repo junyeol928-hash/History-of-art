@@ -176,7 +176,15 @@
       mount.classList.remove('-loading');
       fig.classList.add('-real');
       addCredit(fig, m, url);
+      /* 拡大はマウスだけのものにしない。画像そのものをボタンにして、
+         Tab で辿り着けるようにする */
+      img.tabIndex = 0;
+      img.setAttribute('role', 'button');
+      img.setAttribute('aria-label', (m.title || '図版') + 'を拡大する');
       img.addEventListener('click', function () { openViewer(fig, url, m); });
+      img.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openViewer(fig, url, m); }
+      });
     }).catch(function () {
       // 三段目：章に書かれた自作SVGをそのまま見せる
       mount.classList.remove('-loading');
