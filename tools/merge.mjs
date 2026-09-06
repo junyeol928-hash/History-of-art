@@ -53,3 +53,9 @@ function merge(dir, out, label) {
 
 merge('data/art', 'data/artworks.json', '作品');
 merge('data/terms', 'data/glossary.json', '用語');
+
+/* ファイルから直に開いても読めるように、同じ中身を JavaScript にも書き出す。
+   ここで一緒に作らないと、データだけ新しくて同梱が古い状態が生まれる。 */
+await import('node:child_process').then(({ execFileSync }) => {
+  execFileSync(process.execPath, ['tools/bundle.mjs'], { stdio: 'inherit' });
+});
