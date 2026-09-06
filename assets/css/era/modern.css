@@ -1,0 +1,150 @@
+/* =========================================================================
+   20世紀 ── 第20〜22章
+   フォーヴ・キュビスム／ダダ・シュルレアリスム／抽象・バウハウス
+
+   この時代の美術は、中央にきちんと収まった一枚の絵をやめた。
+   だから紙面も、中央の一本列をやめる。
+
+   足すのは三つ。
+     1. 段落の連なりを、大小・傾きの違う紙片として散らす
+     2. 原色の面を、文章の下に敷く
+     3. 見出しを紙面の構造物として立てる
+
+   守ること（WORLD_BRIEF.md）：
+   ・stage.js が動かなければ .run が付かず、まっすぐ一列で読める
+   ・散らしても読む順番を迷わせない（上から下の順序は崩さない）
+   ・傾きは 1.4 度まで。読めなくなる角度にはしない
+   ========================================================================= */
+
+/* ---------- 紙 ── 方眼と、刷りの見当 ──────────────────── */
+.era-modern {
+  --paper:
+    repeating-linear-gradient(0deg,  rgba(21,21,22,.055) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(90deg, rgba(21,21,22,.055) 0 1px, transparent 1px 32px);
+  --red:   #c8352a;
+  --blue:  #23408e;
+  --yellow:#e0aa1e;
+  --plane-a: rgba(200,53,42,.10);
+  --plane-b: rgba(35,64,142,.09);
+  --plane-c: rgba(224,170,30,.12);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .era-modern {
+    --paper:
+      repeating-linear-gradient(0deg,  rgba(232,227,216,.05) 0 1px, transparent 1px 32px),
+      repeating-linear-gradient(90deg, rgba(232,227,216,.05) 0 1px, transparent 1px 32px);
+    --plane-a: rgba(200,53,42,.16);
+    --plane-b: rgba(70,105,200,.14);
+    --plane-c: rgba(224,170,30,.14);
+  }
+}
+:root[data-theme="dark"] .era-modern {
+  --paper:
+    repeating-linear-gradient(0deg,  rgba(232,227,216,.05) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(90deg, rgba(232,227,216,.05) 0 1px, transparent 1px 32px);
+  --plane-a: rgba(200,53,42,.16);
+  --plane-b: rgba(70,105,200,.14);
+  --plane-c: rgba(224,170,30,.14);
+}
+
+/* ---------- 本文 ── 紙片として散らす ────────────────────
+   中央の一本列を解体する。ただし上から下の順序は崩さない。
+   崩すのは位置と幅であって、読む順番ではない。 */
+@media (min-width: 900px) {
+  .era-modern .prose .run {
+    position: relative;
+    padding: 1.5rem 1.7rem;
+    box-sizing: border-box;
+    background: var(--bg-raise);
+    box-shadow: 0 1px 0 rgba(21,21,22,.1), 0 18px 40px -30px rgba(21,21,22,.55);
+  }
+
+  /* 紙片ごとに、幅・寄り・傾きを変える */
+  .era-modern .prose .run:nth-of-type(4n+1) {
+    width: calc(100% + 5rem); margin-left: -5rem;
+    transform: rotate(-.5deg);
+  }
+  .era-modern .prose .run:nth-of-type(4n+2) {
+    width: calc(100% - 3rem); margin-left: 3rem;
+    transform: rotate(.7deg);
+    background:
+      linear-gradient(105deg, var(--plane-a) 0 42%, transparent 42%),
+      var(--bg-raise);
+  }
+  .era-modern .prose .run:nth-of-type(4n+3) {
+    width: calc(100% + 7rem); margin-left: -3.5rem;
+    transform: rotate(.35deg);
+  }
+  .era-modern .prose .run:nth-of-type(4n) {
+    width: calc(100% - 1.5rem);
+    transform: rotate(-.9deg);
+    background:
+      linear-gradient(255deg, var(--plane-b) 0 38%, transparent 38%),
+      var(--bg-raise);
+  }
+
+  /* 節の書き出しは、原色の面を大きく背負う */
+  .era-modern .prose .run.-opens {
+    background:
+      linear-gradient(180deg, var(--plane-c) 0 5.2rem, transparent 5.2rem),
+      var(--bg-raise);
+    border-left: 6px solid var(--red);
+  }
+  .era-modern .prose .run.-first {
+    width: calc(100% + 9rem); margin-left: -4.5rem;
+    transform: rotate(0deg);
+    border-top: 10px solid var(--red);
+    background: var(--bg-raise);
+  }
+}
+
+.era-modern .prose .run > p { margin: 1.1em 0; }
+
+/* 節の頭の一字を、赤い活字の塊にする */
+.era-modern .prose .run.-opens > p:first-child::first-letter {
+  float: left;
+  font-family: var(--display-era);
+  font-weight: 700;
+  font-size: 3.1em;
+  line-height: .82;
+  margin: .04em .18em 0 0;
+  padding: .06em .18em;
+  background: var(--red);
+  color: #fff;
+}
+
+/* ---------- 見出し ── 紙面の構造物 ──────────────────────── */
+.era-modern .prose h2 {
+  font-size: 1.9rem;
+  letter-spacing: -.01em;
+  border-top-width: 10px;
+  padding-top: 1rem;
+}
+
+/* ---------- 図版 ── 額を外し、面として置く ──────────────── */
+.era-modern figure.plate .mount {
+  border: 0;
+  background: var(--mat);
+  box-shadow: 14px 14px 0 var(--red);
+}
+body[data-chapter="22-abstraction"] figure.plate .mount { box-shadow: 14px 14px 0 var(--blue); }
+body[data-chapter="21-dada-surreal"] figure.plate .mount { box-shadow: 14px 14px 0 var(--yellow); }
+
+/* ---------- 細部 ──────────────────────────────────────── */
+.era-modern ::selection { background: rgba(200,53,42,.26); }
+
+/* ---------- 狭い画面 ────────────────────────────────────
+   紙片の散らしは狭い画面で成立しない。傾きと寄りを外す。 */
+@media (max-width: 899px) {
+  .era-modern .prose .run {
+    transform: none;
+    width: auto;
+    margin-left: 0;
+    padding: 1rem 1.1rem;
+  }
+}
+
+/* 動きを減らす設定では、傾きも外す */
+@media (prefers-reduced-motion: reduce) {
+  .era-modern .prose .run { transform: none; }
+}

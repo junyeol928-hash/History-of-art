@@ -1,0 +1,179 @@
+/* =========================================================================
+   日本 ── 第26〜31章
+   縄文／仏教彫刻／絵巻／水墨／金碧／浮世絵
+
+   skins.css がすでに色・紙肌・見出し・章扉を変数で持っている。
+   ここはそれと戦わない。**上に一層だけ足す。**
+
+   足すのは二つ。
+     1. 本文を縦組みにする（右から左へ読む）
+     2. 図版を掛軸の表装で囲む
+
+   章扉で縦の題を見せておいて、本文で横組みに戻すのは約束を破ることだ。
+   三度そうしてきたので、今回は本文に手を入れる。
+
+   守ること（WORLD_BRIEF.md）：
+   ・stage.js が動かなければ .run が付かず、ふつうの横組みで全文読める
+   ・ページ全体は縦スクロールのまま。横送りに閉じ込めない
+   ・色は既存の変数から取る。暗色テーマでもそのまま成立する
+   ========================================================================= */
+
+/* ---------- 紙をもう一段濃くする ────────────────────────────
+   既存は繊維一本ぶんの薄い斜線。そこに料紙の継ぎ目と、金の砂子を足す。 */
+.era-japan {
+  --paper:
+    repeating-linear-gradient(74deg, rgba(138,116,84,.10) 0 1px, transparent 1px 9px),
+    repeating-linear-gradient(6deg,  rgba(138,116,84,.06) 0 1px, transparent 1px 13px),
+    radial-gradient(circle at 18% 12%, rgba(201,162,39,.22) 0 2px, transparent 3px),
+    radial-gradient(circle at 71% 34%, rgba(201,162,39,.18) 0 3px, transparent 4px),
+    radial-gradient(circle at 44% 78%, rgba(201,162,39,.16) 0 2px, transparent 3px),
+    radial-gradient(circle at 88% 62%, rgba(201,162,39,.14) 0 2px, transparent 3px);
+  --kinpaku: #c9a227;
+  --run-face: rgba(255,253,246,.62);   /* 縦組みの塊が載る料紙 */
+  --run-edge: rgba(138,116,84,.28);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .era-japan {
+    --paper:
+      repeating-linear-gradient(74deg, rgba(210,190,150,.05) 0 1px, transparent 1px 9px),
+      radial-gradient(circle at 18% 12%, rgba(201,162,39,.14) 0 2px, transparent 3px),
+      radial-gradient(circle at 71% 34%, rgba(201,162,39,.11) 0 3px, transparent 4px);
+    --run-face: rgba(255,240,214,.045);
+    --run-edge: rgba(201,162,39,.26);
+  }
+}
+:root[data-theme="dark"] .era-japan {
+  --paper:
+    repeating-linear-gradient(74deg, rgba(210,190,150,.05) 0 1px, transparent 1px 9px),
+    radial-gradient(circle at 18% 12%, rgba(201,162,39,.14) 0 2px, transparent 3px),
+    radial-gradient(circle at 71% 34%, rgba(201,162,39,.11) 0 3px, transparent 4px);
+  --run-face: rgba(255,240,214,.045);
+  --run-edge: rgba(201,162,39,.26);
+}
+
+/* ---------- 本文 ── 縦組み ────────────────────────────────
+   .run は stage.js が付ける「段落の連なり」。
+   読み幅の外へ出して、画面いっぱいの料紙として置く。
+   縦組みは列が左へ伸びるので、狭い列に入れると窮屈になる。 */
+.era-japan .prose .run {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+
+  /* 読み幅を破って広げる。
+     100vw は縦スクロールバーのぶんだけページを横にはみ出させるので使わない。
+     サイトが図版を逃がすのに使っている rem の作法にそろえる。
+
+     注意：縦組みでは論理プロパティの軸が入れ替わる。
+     margin-block は左右に、margin-inline は上下に効く。
+     ここは物理プロパティで書く。 */
+  padding: 2.2rem 1.6rem 2.4rem;
+  box-sizing: border-box;
+
+  height: min(76vh, 40em);
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;   /* ページのスクロールを奪わない */
+
+  margin: 3rem 0;
+  background: var(--run-face);
+  border-top: 1px solid var(--run-edge);
+  border-bottom: 1px solid var(--run-edge);
+  scrollbar-color: var(--accent-line) transparent;
+}
+
+.era-japan .prose .run > p {
+  margin: 0 0 0 2em;          /* 縦組みでは列と列の間隔になる */
+  line-height: 2.1;
+  letter-spacing: .07em;
+  text-indent: 1em;
+  font-family: var(--body-face);
+}
+.era-japan .prose .run > p:first-child { text-indent: 0; }
+
+/* 節の書き出しは、頭の一字を朱で大きく起こす */
+.era-japan .prose .run.-opens > p:first-child::first-letter,
+.era-japan .prose .run.-first > p:first-child::first-letter {
+  color: var(--accent);
+  font-size: 2.1em;
+  font-weight: 600;
+}
+
+/* 導入の一段だけ、ひときわ長い料紙にする */
+.era-japan .prose .run.-first { height: min(82vh, 46em); }
+.era-japan .prose .run.-first > p.lead {
+  font-size: 1.1rem;
+  letter-spacing: .12em;
+}
+
+/* 縦組みの中では、線の向きが変わる */
+.era-japan .prose .run strong {
+  background: none;
+  box-shadow: inset -.32em 0 0 var(--accent-soft);
+}
+.era-japan .prose .run .term {
+  border-bottom: 0;
+  border-right: 1px dotted var(--accent-line);
+}
+.era-japan .prose .run .pull {
+  border: 0;
+  border-right: 4px double var(--accent-line);
+  padding: 0 1.1rem 0 0;
+  margin-left: 2em;
+  text-align: start;
+}
+
+/* ---------- 図版 ── 掛軸の表装 ────────────────────────────
+   一文字と中廻し。額ではなく裂で囲む。 */
+.era-japan figure.plate .mount {
+  border: 0;
+  padding: clamp(.9rem, 3vw, 1.6rem);
+  background:
+    linear-gradient(180deg, var(--frame) 0 8px, transparent 8px),
+    linear-gradient(0deg,   var(--frame) 0 11px, transparent 11px),
+    var(--mat);
+  box-shadow: 0 16px 38px -26px rgba(60,45,20,.7);
+}
+
+/* 絵巻の章だけ、図版を横へ続く連続面にする */
+body[data-chapter="28-emaki"] figure.plate .mount {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  border-top: 3px solid var(--frame);
+  border-bottom: 3px solid var(--frame);
+  background: var(--mat);
+  padding: 14px 0;
+}
+body[data-chapter="28-emaki"] figure.plate .mount img {
+  max-width: none;
+  width: auto;
+  height: min(46vh, 26em);
+}
+
+/* ---------- 細部 ──────────────────────────────────────── */
+.era-japan ::selection { background: rgba(140,47,57,.24); }
+
+/* 縦組みは列が左へ伸びる。狭い列に入れると窮屈なので、画面に応じて広げる */
+@media (min-width: 900px) {
+  .era-japan .prose .run {
+    width: calc(100% + 8rem);
+    margin-left: -4rem; margin-right: -4rem;
+    padding-left: 2.4rem; padding-right: 2.4rem;
+  }
+}
+@media (min-width: 1240px) {
+  .era-japan .prose .run {
+    width: calc(100% + 14rem);
+    margin-left: -7rem; margin-right: -7rem;
+    padding-left: 3rem; padding-right: 3rem;
+  }
+}
+
+/* ---------- 狭い画面 ──────────────────────────────────── */
+@media (max-width: 700px) {
+  .era-japan .prose .run,
+  .era-japan .prose .run.-first {
+    height: min(70vh, 30em);
+    padding: 1.2rem 1rem 1.4rem;
+  }
+  .era-japan .prose .run > p { margin-left: 1.6em; line-height: 1.95; }
+}

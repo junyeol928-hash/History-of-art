@@ -1,0 +1,136 @@
+/* =========================================================================
+   中世 ── 第5〜7章
+   ビザンティン／ロマネスク／ゴシック
+
+   写本の面にする。読む人は、机の上に開いた一冊を覗き込んでいる。
+
+   足すのは三つ。
+     1. 本文を二段に割る（写字生の版面）
+     2. 節の頭に、金の装飾頭文字を落とす
+     3. 引用を欄外注として、段の外に押し出す
+
+   守ること（WORLD_BRIEF.md）：
+   ・stage.js が動かなければ .run が付かず、一段のまま全文読める
+   ・二段でも読む順番を迷わせない（段の間に罫を立てる）
+   ・狭い画面では一段に戻す
+   ========================================================================= */
+
+/* ---------- 紙 ── 罫を引いた羊皮紙 ────────────────────────
+   既存は30px方眼。写本の罫は横だけで、もっと詰んでいる。
+   そこに、獣皮の斑を薄く重ねる。 */
+.era-medieval {
+  --paper:
+    repeating-linear-gradient(0deg, rgba(158,126,62,.13) 0 1px, transparent 1px 27px),
+    radial-gradient(ellipse 60% 40% at 22% 18%, rgba(150,118,60,.07), transparent 70%),
+    radial-gradient(ellipse 50% 35% at 78% 62%, rgba(150,118,60,.06), transparent 70%),
+    radial-gradient(ellipse 40% 30% at 46% 88%, rgba(150,118,60,.05), transparent 70%);
+  --gold: #a98c47;
+  --gold-lit: #c8a44e;
+  --col-rule: rgba(169,140,71,.34);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .era-medieval {
+    --paper: repeating-linear-gradient(0deg, rgba(200,164,78,.07) 0 1px, transparent 1px 27px);
+    --col-rule: rgba(200,164,78,.24);
+  }
+}
+:root[data-theme="dark"] .era-medieval {
+  --paper: repeating-linear-gradient(0deg, rgba(200,164,78,.07) 0 1px, transparent 1px 27px);
+  --col-rule: rgba(200,164,78,.24);
+}
+
+/* ---------- 本文 ── 二段の版面 ────────────────────────────
+   写字生は紙を惜しんだ。段は詰み、行は短い。 */
+@media (min-width: 900px) {
+  .era-medieval .prose .run {
+    columns: 2;
+    column-gap: 3rem;
+    column-rule: 1px solid var(--col-rule);
+
+    /* 段に割るぶん、面を広く取る */
+    width: calc(100% + 8rem);
+    margin-left: -4rem;
+    margin-right: -4rem;
+    padding: 1.4rem 2rem;
+    box-sizing: border-box;
+  }
+  .era-medieval .prose .run > p {
+    margin: 0 0 1.15em;
+    text-indent: 1.1em;
+    line-height: 1.86;
+    text-align: justify;
+    hyphens: auto;
+  }
+  .era-medieval .prose .run > p:first-child { text-indent: 0; }
+}
+@media (min-width: 1240px) {
+  .era-medieval .prose .run {
+    width: calc(100% + 14rem);
+    margin-left: -7rem;
+    margin-right: -7rem;
+  }
+}
+
+/* ---------- 装飾頭文字 ────────────────────────────────────
+   節の書き出しの一字を、三行ぶんの高さで金地に落とす。
+   ここは写本がいちばん金を使った場所である。 */
+.era-medieval .prose .run.-opens > p:first-child::first-letter,
+.era-medieval .prose .run.-first > p:first-child::first-letter {
+  float: left;
+  font-family: var(--display-era);
+  font-size: 3.4em;
+  line-height: .84;
+  margin: .06em .16em 0 0;
+  padding: .1em .16em;
+  color: #3a2c10;
+  background:
+    linear-gradient(145deg, var(--gold-lit) 0%, #e8d79a 38%, var(--gold) 62%, #8d7233 100%);
+  box-shadow: 0 1px 0 rgba(255,255,255,.4) inset, 0 2px 6px -2px rgba(60,45,10,.6);
+}
+.era-medieval .prose .run.-opens > p:first-child,
+.era-medieval .prose .run.-first > p:first-child { text-indent: 0; }
+
+/* ---------- 引用 ── 欄外注 ────────────────────────────────
+   段の外に押し出し、細い字で、罫のそばに寄せる。 */
+@media (min-width: 1240px) {
+  .era-medieval .prose .run .pull {
+    float: right;
+    width: 11rem;
+    margin: .3rem -8.5rem .8rem 1.4rem;
+    padding: 0 0 0 .9rem;
+    border: 0;
+    border-left: 2px solid var(--gold);
+    font-size: .82rem;
+    line-height: 1.72;
+    font-style: normal;
+    color: var(--ink-2);
+    text-align: left;
+    text-indent: 0;
+  }
+}
+
+/* ---------- 図版 ── 石の枠に嵌める ──────────────────────── */
+.era-medieval figure.plate .mount {
+  border: 2px solid var(--frame);
+  outline: 1px solid var(--gold);
+  outline-offset: 3px;
+  background: var(--mat);
+}
+
+/* ゴシックの章だけ、図版を縦に長い開口部として扱う */
+body[data-chapter="07-gothic"] figure.plate .mount {
+  border-radius: 46% 46% 0 0 / 14% 14% 0 0;
+  overflow: hidden;
+}
+
+/* ---------- 細部 ──────────────────────────────────────── */
+.era-medieval ::selection { background: rgba(169,140,71,.3); }
+.era-medieval .band-label { color: var(--gold); }
+
+/* ---------- 狭い画面 ────────────────────────────────────
+   二段は狭い画面で成立しない。一段に戻す。頭文字は残す。 */
+@media (max-width: 899px) {
+  .era-medieval .prose .run { columns: 1; }
+  .era-medieval .prose .run.-opens > p:first-child::first-letter,
+  .era-medieval .prose .run.-first > p:first-child::first-letter { font-size: 2.8em; }
+}
