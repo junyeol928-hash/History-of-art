@@ -1,0 +1,136 @@
+/* =========================================================================
+   バロック ── 第12〜13章
+   カラヴァッジョとその後／オランダ
+
+   この時代の発明は闇である。画面の大半を暗くし、
+   ひとところにだけ光を当てて、そこに主題を置いた。
+
+   足すのは三つ。
+     1. 本文の面に、斜めの光を一本だけ差す（残りは沈める）
+     2. 節の書き出しを、光の当たる位置に置く
+     3. 図版を重い金の額に入れる
+
+   守ること（WORLD_BRIEF.md）：
+   ・stage.js が動かなければ .run が付かず、ふつうの紙面で全文読める
+   ・沈めるのは地であって文字ではない。全段落が同じ明度差で読める
+   ・光は動かさない
+   ========================================================================= */
+
+.era-baroque {
+  --dark:     #211a12;
+  --dark-lit: #4a3a24;
+  --b-ink:    #efe4cf;
+  --b-ink2:   #c0ad8f;
+  --gold:     #c69a4c;
+}
+
+/* ---------- 本文 ── 闇の中の一条 ──────────────────────────
+   面ごと暗くし、左上から斜めに光を入れる。
+   光の当たらないところも、文字は同じ色で置く。読めなくはしない。 */
+.era-baroque .prose .run {
+  position: relative;
+  padding: 3rem 2.8rem 3.2rem;
+  box-sizing: border-box;
+  margin: 3.4rem 0;
+  color: var(--b-ink);
+  background:
+    linear-gradient(148deg,
+      rgba(224,186,118,.26) 0%,
+      rgba(224,186,118,.10) 22%,
+      transparent 46%),
+    linear-gradient(160deg, var(--dark-lit) 0%, var(--dark) 62%);
+  box-shadow: inset 0 0 90px 20px rgba(0,0,0,.55);
+}
+
+.era-baroque .prose .run > p {
+  margin: 1.35em 0;
+  line-height: 2.05;
+  letter-spacing: .03em;
+}
+
+@media (min-width: 900px) {
+  .era-baroque .prose .run {
+    width: calc(100% + 12rem);
+    margin-left: -6rem;
+    margin-right: -6rem;
+    padding: 3.6rem 4.4rem 3.8rem;
+  }
+}
+
+/* 節の書き出しは、光の当たる位置にある ── そこに主題を置くのが作法 */
+.era-baroque .prose .run.-opens > p:first-child,
+.era-baroque .prose .run.-first > p:first-child {
+  font-size: 1.06em;
+  color: #fff6e4;
+}
+.era-baroque .prose .run.-opens > p:first-child::first-letter,
+.era-baroque .prose .run.-first > p:first-child::first-letter {
+  float: left;
+  font-family: var(--display-era);
+  font-size: 3.6em;
+  line-height: .8;
+  margin: .06em .16em 0 0;
+  color: #f6dfae;
+  text-shadow: 0 0 .18em rgba(255,224,160,.75), 0 0 .9em rgba(224,186,118,.45);
+}
+
+/* 暗い面の中では、線と色を明るい側へ寄せ替える */
+/* 既定の strong は「淡い地に濃い字」。暗い面ではその地が明るく残り、
+   明るい字と重なって読めなくなる。地を外し、下線で示す。 */
+.era-baroque .prose .run strong {
+  background: none;
+  box-shadow: inset 0 -.14em 0 rgba(198,154,76,.55);
+  color: #f2cf8c;
+}
+.era-baroque .prose .run .term { border-bottom-color: var(--gold); color: var(--b-ink); }
+.era-baroque .prose .run a { color: #e6bd77; }
+.era-baroque .prose .run .pull {
+  border: 0;
+  border-left: 3px solid var(--gold);
+  background: rgba(0,0,0,.3);
+  color: var(--b-ink2);
+  padding: 1.4rem 1.6rem;
+}
+
+/* オランダは闇の絵画ではない。市民の家の、窓からの横の光にする */
+body[data-chapter="13-dutch"] .prose .run {
+  color: var(--ink);
+  background:
+    linear-gradient(96deg,
+      rgba(255,244,214,.85) 0%,
+      rgba(246,232,198,.60) 26%,
+      rgba(214,196,158,.28) 62%,
+      rgba(150,132,100,.20) 100%),
+    var(--bg-raise);
+  box-shadow: inset 0 0 60px 10px rgba(120,98,58,.18);
+}
+body[data-chapter="13-dutch"] .prose .run strong { color: inherit; box-shadow: inset 0 -.16em 0 rgba(198,154,76,.55); }
+body[data-chapter="13-dutch"] .prose .run .term { color: inherit; }
+body[data-chapter="13-dutch"] .prose .run a { color: var(--accent-ink, var(--accent)); }
+body[data-chapter="13-dutch"] .prose .run .pull { background: rgba(255,255,255,.5); color: var(--ink-2); }
+body[data-chapter="13-dutch"] .prose .run.-opens > p:first-child,
+body[data-chapter="13-dutch"] .prose .run.-first > p:first-child { color: inherit; }
+body[data-chapter="13-dutch"] .prose .run.-opens > p:first-child::first-letter,
+body[data-chapter="13-dutch"] .prose .run.-first > p:first-child::first-letter {
+  color: #8a6a2c;
+  text-shadow: none;
+}
+
+/* ---------- 図版 ── 重い額 ──────────────────────────────── */
+.era-baroque figure.plate .mount {
+  border: 0;
+  padding: clamp(.8rem, 2.6vw, 1.6rem);
+  background: linear-gradient(150deg, #d9b26a 0%, #8f6f30 34%, #c9a355 58%, #6f5522 100%);
+  box-shadow: 0 26px 52px -30px rgba(20,14,6,.9);
+}
+
+/* ---------- 細部 ──────────────────────────────────────── */
+.era-baroque ::selection { background: rgba(198,154,76,.42); color: #1a1409; }
+
+/* ---------- 狭い画面 ──────────────────────────────────── */
+@media (max-width: 899px) {
+  .era-baroque .prose .run {
+    padding: 1.8rem 1.3rem 2rem;
+    box-shadow: inset 0 0 50px 8px rgba(0,0,0,.45);
+  }
+}

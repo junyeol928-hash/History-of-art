@@ -1,0 +1,155 @@
+/* =========================================================================
+   イスラーム世界 ── 第35〜36章
+   幾何学と文字／細密画
+
+   この美術の骨格は、無限に続く格子である。壁も天井も床も、
+   同じ規則で分割され、どこで切っても模様が成立する。
+   だから本文も、格子に嵌める。
+
+   足すのは三つ。
+     1. 本文の面を、八角の枠に嵌める（角を落とした版面）
+     2. 地に、繰り返しの幾何格子を敷く
+     3. 枠の内と外を、藍と金の細い線で分ける
+
+   二章はそれぞれ別の構成にする。
+     35 幾何学 ── 枠は閉じている。格子が面を覆う
+     36 細密画 ── 枠は閉じない。文章が枠の外へ溢れる（余白の詩文の作法）
+
+   守ること（WORLD_BRIEF.md）：
+   ・stage.js が動かなければ .run が付かず、ふつうの段落として読める
+   ・格子は文字の下に沈める。読む線と競らせない
+   ========================================================================= */
+
+.era-islam {
+  --lapis: #1f4f8f;
+  --lapis-soft: rgba(31,79,143,.12);
+  --gold-i: #b98f36;
+  --tile: rgba(31,79,143,.07);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .era-islam {
+    --lapis: #6f9bd8;
+    --lapis-soft: rgba(111,155,216,.14);
+    --gold-i: #d3ad5e;
+    --tile: rgba(111,155,216,.08);
+  }
+}
+:root[data-theme="dark"] .era-islam {
+  --lapis: #6f9bd8;
+  --lapis-soft: rgba(111,155,216,.14);
+  --gold-i: #d3ad5e;
+  --tile: rgba(111,155,216,.08);
+}
+
+/* ---------- 本文 ── 八角の枠に嵌める ──────────────────────
+   角を落とすのは、八角の星が敷き詰めの基本形だから。 */
+.era-islam .prose .run {
+  position: relative;
+  padding: 2.8rem 2.8rem 3rem;
+  box-sizing: border-box;
+  margin: 3.2rem 0;
+
+  background:
+    repeating-conic-gradient(from 45deg at 0 0,
+      var(--tile) 0deg 90deg, transparent 90deg 180deg) 0 0 / 34px 34px,
+    repeating-linear-gradient(45deg,  var(--tile) 0 1px, transparent 1px 17px),
+    repeating-linear-gradient(-45deg, var(--tile) 0 1px, transparent 1px 17px),
+    var(--bg-raise);
+
+  border: 1px solid var(--lapis);
+  outline: 1px solid var(--gold-i);
+  outline-offset: 5px;
+
+  /* 四隅を落として八角にする */
+  clip-path: polygon(
+    22px 0, calc(100% - 22px) 0, 100% 22px,
+    100% calc(100% - 22px), calc(100% - 22px) 100%,
+    22px 100%, 0 calc(100% - 22px), 0 22px);
+}
+
+.era-islam .prose .run > p {
+  margin: 1.2em 0;
+  line-height: 2.05;
+  text-align: justify;
+  letter-spacing: .03em;
+}
+
+@media (min-width: 900px) {
+  .era-islam .prose .run {
+    width: calc(100% + 10rem);
+    margin-left: -5rem;
+    margin-right: -5rem;
+    padding: 3.4rem 4rem 3.6rem;
+  }
+}
+
+/* 節の書き出しの一字を、藍のタイルに置く */
+.era-islam .prose .run.-opens > p:first-child::first-letter,
+.era-islam .prose .run.-first > p:first-child::first-letter {
+  float: left;
+  font-family: var(--display-era);
+  font-size: 3em;
+  line-height: 1;
+  width: 1.05em; height: 1.05em;
+  margin: .06em .3em 0 0;
+  text-align: center;
+  color: #f4ead2;
+  background: var(--lapis);
+  box-shadow: 0 0 0 2px var(--gold-i) inset;
+}
+
+/* 引用は、枠の中のもう一つの枠 */
+.era-islam .prose .run .pull {
+  border: 1px solid var(--gold-i);
+  background: var(--lapis-soft);
+  padding: 1.2rem 1.5rem;
+  text-align: center;
+  letter-spacing: .08em;
+}
+
+/* 36 細密画 ── 枠を閉じない。文章が外へ溢れる。
+   細密画の余白には、枠をまたいで詩文が書き込まれた。 */
+body[data-chapter="36-miniature"] .prose .run {
+  clip-path: none;
+  border: 0;
+  outline: 0;
+  border-top: 3px double var(--gold-i);
+  border-bottom: 3px double var(--gold-i);
+  background:
+    repeating-linear-gradient(72deg, var(--tile) 0 1px, transparent 1px 13px),
+    var(--bg-raise);
+}
+@media (min-width: 1100px) {
+  body[data-chapter="36-miniature"] .prose .run > p:nth-child(even) {
+    margin-right: -4.5rem;   /* 枠から外へ溢れる行 */
+  }
+  body[data-chapter="36-miniature"] .prose .run > p:nth-child(3n+1) {
+    margin-left: -3rem;
+  }
+}
+
+/* ---------- 図版 ── 二重の縁で囲う ──────────────────────── */
+.era-islam figure.plate .mount {
+  border: 1px solid var(--lapis);
+  outline: 2px solid var(--gold-i);
+  outline-offset: 4px;
+  background: var(--mat);
+}
+
+/* ---------- 細部 ──────────────────────────────────────── */
+.era-islam ::selection { background: rgba(31,79,143,.24); }
+
+/* ---------- 狭い画面 ────────────────────────────────────
+   角落としは狭い画面で文字を削る。落とし幅を減らす。 */
+@media (max-width: 899px) {
+  .era-islam .prose .run {
+    padding: 1.7rem 1.3rem 1.9rem;
+    outline-offset: 3px;
+    clip-path: polygon(
+      12px 0, calc(100% - 12px) 0, 100% 12px,
+      100% calc(100% - 12px), calc(100% - 12px) 100%,
+      12px 100%, 0 calc(100% - 12px), 0 12px);
+  }
+  .era-islam .prose .run > p { text-align: left; }
+  body[data-chapter="36-miniature"] .prose .run > p { margin-left: 0; margin-right: 0; }
+}

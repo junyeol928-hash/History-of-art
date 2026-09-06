@@ -1,0 +1,137 @@
+/* =========================================================================
+   ルネサンス ── 第8〜11章
+   クアトロチェント／チンクエチェント／北方／ヴェネツィア
+
+   この時代の発明は遠近法である。画面のどこかに消失点があり、
+   すべての線がそこへ集まる。だから紙面にも消失点を置く。
+
+   足すのは三つ。
+     1. 本文の面に、消失点へ集まる薄い罫を敷く
+     2. 版面を左右非対称にする（綴じ側を広く取る古い割り付け）
+     3. 節の頭に、正方形の枠に収めた頭文字を置く
+
+   守ること（WORLD_BRIEF.md）：
+   ・stage.js が動かなければ .run が付かず、ふつうの段落として読める
+   ・罫は文字の下に沈める。読む線と競らせない
+   ・北方の章は消失点を使わない（北方は一点透視を採らなかった）
+   ========================================================================= */
+
+.era-renaissance {
+  --vanish: rgba(120,132,104,.20);
+  --vanish-strong: rgba(120,132,104,.34);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .era-renaissance {
+    --vanish: rgba(190,206,168,.13);
+    --vanish-strong: rgba(190,206,168,.22);
+  }
+}
+:root[data-theme="dark"] .era-renaissance {
+  --vanish: rgba(190,206,168,.13);
+  --vanish-strong: rgba(190,206,168,.22);
+}
+
+/* ---------- 本文 ── 消失点のある面 ────────────────────────
+   罫は放射状に一点へ集まる。文字はその上を平らに流れる。
+   奥行きは背景にあり、文章は手前の面にある。 */
+.era-renaissance .prose .run {
+  position: relative;
+  padding: 2.4rem 2.6rem 2.8rem;
+  box-sizing: border-box;
+  margin: 3rem 0;
+  background:
+    repeating-conic-gradient(from 0deg at 62% 46%,
+      var(--vanish) 0deg 0.5deg, transparent 0.5deg 7.5deg),
+    var(--bg-raise);
+  border: 1px solid var(--rule-soft);
+}
+
+/* 消失点そのものを、小さな十字で示す */
+.era-renaissance .prose .run::before {
+  content: "";
+  position: absolute;
+  left: 62%; top: 46%;
+  width: 15px; height: 15px;
+  margin: -7px 0 0 -7px;
+  background:
+    linear-gradient(0deg,  transparent 46%, var(--vanish-strong) 46% 54%, transparent 54%),
+    linear-gradient(90deg, transparent 46%, var(--vanish-strong) 46% 54%, transparent 54%);
+  pointer-events: none;
+}
+
+.era-renaissance .prose .run > p {
+  position: relative;
+  margin: 1.2em 0;
+  line-height: 1.95;
+  text-indent: 1.2em;
+  text-align: justify;
+}
+.era-renaissance .prose .run > p:first-child { text-indent: 0; }
+
+/* 版面を左右非対称に */
+@media (min-width: 1100px) {
+  .era-renaissance .prose .run {
+    width: calc(100% + 10rem);
+    margin-left: -2.6rem;
+    margin-right: -7.4rem;
+    padding-left: 4.4rem;
+    padding-right: 6.6rem;
+  }
+}
+
+/* 節の書き出しの一字を、正方形の枠に収める ── 比例が主題の時代 */
+.era-renaissance .prose .run.-opens > p:first-child::first-letter,
+.era-renaissance .prose .run.-first > p:first-child::first-letter {
+  float: left;
+  font-family: var(--display-era);
+  font-size: 2.9em;
+  line-height: 1;
+  width: 1em; height: 1em;
+  margin: .08em .34em 0 0;
+  text-align: center;
+  border: 1px solid var(--frame);
+  background: var(--bg-sink);
+}
+.era-renaissance .prose .run.-opens > p:first-child,
+.era-renaissance .prose .run.-first > p:first-child { text-indent: 0; }
+
+/* 北方は一点透視を採らなかった。罫を外し、細部の密度で埋める */
+body[data-chapter="10-north"] .prose .run {
+  background:
+    repeating-linear-gradient(45deg,  rgba(120,132,104,.055) 0 1px, transparent 1px 6px),
+    repeating-linear-gradient(-45deg, rgba(120,132,104,.045) 0 1px, transparent 1px 6px),
+    var(--bg-raise);
+}
+body[data-chapter="10-north"] .prose .run::before { display: none; }
+
+/* ヴェネツィアは線より色。罫を色の層に置き換える */
+body[data-chapter="11-venice"] .prose .run {
+  background:
+    linear-gradient(172deg, rgba(190,150,90,.13) 0%, transparent 42%),
+    linear-gradient(8deg,   rgba(120,140,170,.12) 0%, transparent 46%),
+    var(--bg-raise);
+}
+body[data-chapter="11-venice"] .prose .run::before { opacity: .35; }
+
+/* ---------- 図版 ── 平らな額に、正面から ────────────────── */
+.era-renaissance figure.plate .mount {
+  border: 1px solid var(--frame);
+  background: var(--mat);
+  box-shadow: 0 20px 44px -34px rgba(40,50,30,.8);
+}
+
+/* ---------- 細部 ──────────────────────────────────────── */
+.era-renaissance ::selection { background: rgba(120,132,104,.26); }
+.era-renaissance .prose .run .pull {
+  text-indent: 0;
+  background: var(--bg-sink);
+  padding: 1.2rem 1.4rem;
+  border: 0;
+}
+
+/* ---------- 狭い画面 ──────────────────────────────────── */
+@media (max-width: 899px) {
+  .era-renaissance .prose .run { padding: 1.5rem 1.2rem; }
+  .era-renaissance .prose .run > p { text-align: left; }
+  .era-renaissance .prose .run::before { display: none; }
+}

@@ -1,0 +1,102 @@
+/* =========================================================================
+   古代エジプト ── 第2章　ナイルの規範
+
+   三千年、同じ規範で描き続けた美術である。
+   だから紙面も、規範に従わせる。全部の行の端が揃う。
+
+   足すのは三つ。
+     1. 本文を厳密な四角い版面にする（均等割り付け・段落間なし）
+     2. 節の頭を朱で起こす（パピルスの標題）
+     3. 右の欄外に、方眼の柱を立てる（画工が使った比例の格子）
+
+   守ること（WORLD_BRIEF.md）：
+   ・stage.js が動かなければ .run が付かず、ふつうの段落として読める
+   ・欄外の柱は飾りであって、そこに文章を置かない
+   ========================================================================= */
+
+.era-ancient {
+  --rubric: #a8321f;
+  --grid-line: rgba(148,120,60,.30);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .era-ancient {
+    --rubric: #e0765c;
+    --grid-line: rgba(224,200,130,.18);
+  }
+}
+:root[data-theme="dark"] .era-ancient {
+  --rubric: #e0765c;
+  --grid-line: rgba(224,200,130,.18);
+}
+
+/* ---------- 本文 ── 規範の版面 ────────────────────────────
+   段落の間を空けない。字下げだけで切る。
+   行末を揃え、面を隙間なく埋める。三千年の反復である。 */
+.era-ancient .prose .run {
+  padding: 2.2rem 2.4rem;
+  box-sizing: border-box;
+  margin: 2.8rem 0;
+  background: var(--bg-raise);
+  border-top: 3px double var(--frame);
+  border-bottom: 3px double var(--frame);
+}
+.era-ancient .prose .run > p {
+  margin: 0;
+  text-indent: 1.4em;
+  text-align: justify;
+  line-height: 2.0;
+  letter-spacing: .05em;
+}
+.era-ancient .prose .run > p:first-child { text-indent: 0; }
+
+/* 節の頭は朱で起こす。パピルスの標題の作法 */
+.era-ancient .prose .run.-opens > p:first-child,
+.era-ancient .prose .run.-first > p:first-child {
+  color: var(--rubric);
+  font-weight: 500;
+  letter-spacing: .09em;
+}
+
+/* 右の欄外に、比例の格子を立てる ── 画工は方眼で人体を割り付けた */
+@media (min-width: 1100px) {
+  .era-ancient .prose .run {
+    position: relative;
+    width: calc(100% + 11rem);
+    margin-left: -1.5rem;
+    margin-right: -9.5rem;
+    padding-right: 11rem;
+  }
+  .era-ancient .prose .run::after {
+    content: "";
+    position: absolute;
+    top: 1.6rem; bottom: 1.6rem; right: 2.2rem;
+    width: 6.2rem;
+    background:
+      repeating-linear-gradient(0deg,  var(--grid-line) 0 1px, transparent 1px 18px),
+      repeating-linear-gradient(90deg, var(--grid-line) 0 1px, transparent 1px 18px);
+    border-left: 2px solid var(--frame);
+    pointer-events: none;
+  }
+}
+
+/* ---------- 図版 ── 壁龕に嵌める ────────────────────────── */
+.era-ancient figure.plate .mount {
+  border: 1px solid var(--frame);
+  outline: 3px double var(--frame);
+  outline-offset: 4px;
+  background: var(--mat);
+}
+
+/* ---------- 細部 ──────────────────────────────────────── */
+.era-ancient ::selection { background: rgba(168,50,31,.24); }
+.era-ancient .prose .run .pull {
+  margin: 1.6rem 0;
+  text-indent: 0;
+  color: var(--rubric);
+}
+
+/* ---------- 狭い画面 ──────────────────────────────────── */
+@media (max-width: 899px) {
+  .era-ancient .prose .run { padding: 1.4rem 1.2rem; }
+  .era-ancient .prose .run > p { line-height: 1.95; text-align: left; }
+}

@@ -1,0 +1,117 @@
+/* =========================================================================
+   先史 ── 第1章　洞窟の中の手
+
+   この章の絵は、松明がなければ辿り着けない場所にある。
+   だから本文も、暗い岩の面に、光の輪の中で読ませる。
+
+   足すのは三つ。
+     1. 本文の塊を、明かりに照らされた岩肌にする
+     2. 段落ごとに左右の寄りを揺らす（岩は平らでない）
+     3. 図版は額を持たない。壁に直に描かれている
+
+   守ること（WORLD_BRIEF.md）：
+   ・stage.js が動かなければ .run が付かず、ふつうの紙面で全文読める
+   ・暗い地に明るい文字。低くてよいが、読める明度差は必ず残す
+   ・動きは足さない。光は静止している
+   ========================================================================= */
+
+.era-prehistory {
+  --rock:      #26201a;
+  --rock-lit:  #3a3128;
+  --rock-ink:  #ece2d2;
+  --rock-ink2: #b7a992;
+  --ochre:     #b0603a;
+}
+
+/* ---------- 本文 ── 明かりの届く岩の面 ────────────────────
+   読み幅の外へ出して、面ごと暗くする。
+   松明は一点にあり、下へ行くほど暗い。 */
+.era-prehistory .prose .run {
+  position: relative;
+  padding: 2.6rem 2rem 3rem;
+  box-sizing: border-box;
+  margin: 3.2rem 0;
+
+  color: var(--rock-ink);
+  background:
+    radial-gradient(ellipse 120% 70% at 34% 22%, rgba(226,178,110,.20), transparent 62%),
+    radial-gradient(circle at 78% 76%, rgba(176,96,58,.10), transparent 58%),
+    radial-gradient(circle at 12% 12%, rgba(255,255,255,.05) 0 2px, transparent 3px),
+    radial-gradient(circle at 63% 41%, rgba(255,255,255,.04) 0 3px, transparent 4px),
+    radial-gradient(circle at 41% 87%, rgba(255,255,255,.04) 0 2px, transparent 3px),
+    linear-gradient(168deg, var(--rock-lit) 0%, var(--rock) 78%);
+
+  /* 岩は四角くない。角を不揃いに落とす */
+  border-radius: 44% 12% 38% 16% / 9% 24% 11% 22%;
+  box-shadow: inset 0 2px 22px rgba(0,0,0,.42);
+}
+
+.era-prehistory .prose .run > p {
+  margin: 1.5em 0;
+  line-height: 2.15;
+  letter-spacing: .04em;
+}
+
+/* 岩の面は平らでない。段落ごとに寄りを変える */
+@media (min-width: 900px) {
+  .era-prehistory .prose .run {
+    width: calc(100% + 10rem);
+    margin-left: -5rem;
+    margin-right: -5rem;
+    padding: 3.2rem 3.4rem 3.6rem;
+  }
+  .era-prehistory .prose .run > p:nth-child(3n+1) { margin-left: 1.6rem; margin-right: 3.2rem; }
+  .era-prehistory .prose .run > p:nth-child(3n+2) { margin-left: 3.4rem; margin-right: 1.2rem; }
+  .era-prehistory .prose .run > p:nth-child(3n)   { margin-left: .6rem;  margin-right: 4.4rem; }
+}
+
+/* 節の書き出しの一字は、赤土で押した手のように */
+.era-prehistory .prose .run.-opens > p:first-child::first-letter,
+.era-prehistory .prose .run.-first > p:first-child::first-letter {
+  float: left;
+  font-family: var(--display-era);
+  font-size: 3.2em;
+  line-height: .86;
+  margin: .04em .2em 0 0;
+  color: #f0d9bd;
+  text-shadow: 0 0 .28em rgba(176,96,58,.9), 0 0 1.1em rgba(176,96,58,.5);
+}
+
+/* 暗い面の中では、線と色を明るい側へ寄せ替える */
+/* 既定の strong は「淡い地に濃い字」。暗い岩の面ではその地が明るく残り、
+   明るい字と重なって読めなくなる。地を外し、下線で示す。 */
+.era-prehistory .prose .run strong {
+  background: none;
+  box-shadow: inset 0 -.16em 0 rgba(176,96,58,.7);
+  color: #f2c98f;
+}
+.era-prehistory .prose .run .term {
+  border-bottom-color: var(--ochre);
+  color: var(--rock-ink);
+}
+.era-prehistory .prose .run .pull {
+  background: rgba(0,0,0,.24);
+  border: 0;
+  border-left: 3px solid var(--ochre);
+  color: var(--rock-ink2);
+  padding: 1.4rem 1.6rem;
+}
+.era-prehistory .prose .run a { color: #e9b47c; }
+
+/* ---------- 図版 ── 壁に直に ────────────────────────────── */
+.era-prehistory figure.plate .mount {
+  border: 0; padding: 0; background: transparent; box-shadow: none;
+}
+.era-prehistory figure.plate img { border-radius: 22% 6% 18% 8% / 6% 14% 7% 12%; }
+
+/* ---------- 細部 ──────────────────────────────────────── */
+.era-prehistory ::selection { background: rgba(176,96,58,.42); color: #fff; }
+
+/* ---------- 狭い画面 ──────────────────────────────────── */
+@media (max-width: 899px) {
+  .era-prehistory .prose .run {
+    padding: 1.8rem 1.3rem 2rem;
+    border-radius: 22% 8% 20% 10% / 5% 12% 6% 11%;
+  }
+  .era-prehistory .prose .run > p { margin-left: 0; margin-right: 0; }
+}

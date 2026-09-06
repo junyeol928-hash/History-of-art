@@ -1,0 +1,125 @@
+/* =========================================================================
+   ロココ ── 第14章　貝殻と、逃げ場としての庭
+
+   ロココは対称をやめた美術である。壁も鏡も家具も、
+   左右で違う形をしている。輪郭は直線を通らず、必ず曲がる。
+
+   足すのは三つ。
+     1. 本文の塊の四隅を、すべて違う曲率で丸める
+     2. 段の左右に曲線の切り抜きを置き、行の長さを波打たせる
+     3. 節の頭に、渦を巻く頭文字を置く
+
+   守ること（WORLD_BRIEF.md）：
+   ・stage.js が動かなければ .run が付かず、まっすぐな段落として読める
+   ・行が波打っても、行頭は必ず左端にある。読む順番は迷わせない
+   ・狭い画面では切り抜きを外す（行が短くなりすぎる）
+   ========================================================================= */
+
+.era-rococo {
+  --shell:   #d9b8c2;
+  --shell-2: #c8a9d4;
+  --ribbon:  #bfa06a;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .era-rococo {
+    --shell:   #7b5c68;
+    --shell-2: #6d5a80;
+    --ribbon:  #c2a878;
+  }
+}
+:root[data-theme="dark"] .era-rococo {
+  --shell:   #7b5c68;
+  --shell-2: #6d5a80;
+  --ribbon:  #c2a878;
+}
+
+/* ---------- 本文 ── 左右が違う面 ──────────────────────────
+   四隅の曲率をすべて変える。対称を一箇所も残さない。 */
+.era-rococo .prose .run {
+  position: relative;
+  padding: 2.6rem 2.4rem 3rem;
+  box-sizing: border-box;
+  margin: 3.2rem 0;
+  background:
+    radial-gradient(ellipse 70% 50% at 88% 8%,  rgba(217,184,194,.30), transparent 62%),
+    radial-gradient(ellipse 60% 45% at 6%  92%, rgba(200,169,212,.26), transparent 62%),
+    var(--bg-raise);
+  border-radius: 62% 18% 44% 12% / 22% 34% 14% 26%;
+  box-shadow: 0 20px 46px -34px rgba(120,80,100,.7);
+}
+
+.era-rococo .prose .run > p {
+  margin: 1.25em 0;
+  line-height: 2.02;
+}
+
+/* 曲線の切り抜き ── 行の長さが段ごとに揺れる。
+   float した見えない形に、文字が沿って流れる。 */
+@media (min-width: 1000px) {
+  .era-rococo .prose .run {
+    width: calc(100% + 9rem);
+    margin-left: -4.5rem;
+    margin-right: -4.5rem;
+    padding: 3.2rem 3.6rem 3.6rem;
+  }
+  .era-rococo .prose .run::before,
+  .era-rococo .prose .run::after {
+    content: "";
+    display: block;
+    width: 7.5rem;
+    height: 20rem;
+  }
+  .era-rococo .prose .run::before {
+    float: left;
+    shape-outside: ellipse(7.5rem 10rem at 0% 42%);
+    shape-margin: 1.1rem;
+  }
+  .era-rococo .prose .run::after {
+    float: right;
+    shape-outside: ellipse(7.5rem 10rem at 100% 74%);
+    shape-margin: 1.1rem;
+  }
+}
+
+/* 節の頭の一字を、渦にする */
+.era-rococo .prose .run.-opens > p:first-child::first-letter,
+.era-rococo .prose .run.-first > p:first-child::first-letter {
+  float: left;
+  font-family: var(--display-era);
+  font-size: 3.6em;
+  line-height: .82;
+  margin: .04em .18em 0 0;
+  color: var(--ribbon);
+  text-shadow: .04em .05em 0 rgba(217,184,194,.85);
+}
+
+/* 引用は、壁から垂れる帯として */
+.era-rococo .prose .run .pull {
+  border: 0;
+  padding: 1.3rem 1.6rem;
+  background: linear-gradient(120deg, rgba(217,184,194,.36), rgba(200,169,212,.24));
+  border-radius: 32% 8% 26% 10% / 18% 24% 12% 22%;
+}
+
+/* ---------- 図版 ── 額そのものが曲がる ────────────────── */
+.era-rococo figure.plate .mount {
+  border: 2px solid var(--ribbon);
+  background: var(--mat);
+  border-radius: 44% 8% 38% 10% / 16% 26% 12% 22%;
+  overflow: hidden;
+}
+
+/* ---------- 細部 ──────────────────────────────────────── */
+.era-rococo ::selection { background: rgba(200,169,212,.42); }
+.era-rococo .prose h2 { border-top-color: var(--ribbon); }
+
+/* ---------- 狭い画面 ────────────────────────────────────
+   切り抜きを外す。行が短くなりすぎるため。曲線の輪郭は残す。 */
+@media (max-width: 999px) {
+  .era-rococo .prose .run::before,
+  .era-rococo .prose .run::after { display: none; }
+  .era-rococo .prose .run {
+    padding: 1.6rem 1.3rem 1.9rem;
+    border-radius: 30% 10% 24% 8% / 10% 16% 8% 14%;
+  }
+}

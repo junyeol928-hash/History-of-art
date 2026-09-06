@@ -1,0 +1,133 @@
+/* =========================================================================
+   印象派とその後 ── 第17〜19章
+   印象派／ポスト印象派／世紀末
+
+   彼らは輪郭線を捨てた。色を混ぜずに並べ、離れて見たときに
+   目のほうで混ざるのに任せた。だから紙面からも輪郭を外す。
+
+   足すのは三つ。
+     1. 本文の面から枠を外し、縁を溶かす（額縁のない光の面）
+     2. 地に、混ぜていない色の斑を並べる
+     3. 節の頭を、色の中に沈める
+
+   守ること（WORLD_BRIEF.md）：
+   ・stage.js が動かなければ .run が付かず、ふつうの紙面で全文読める
+   ・地は溶かしてよいが、文字は溶かさない。輪郭を失うのは面のほう
+   ・動きは足さない。光は静止している
+   ========================================================================= */
+
+.era-impression {
+  --touch-a: rgba(120,150,220,.16);
+  --touch-b: rgba(240,180,120,.15);
+  --touch-c: rgba(150,200,160,.14);
+  --touch-d: rgba(210,140,190,.13);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .era-impression {
+    --touch-a: rgba(120,150,220,.20);
+    --touch-b: rgba(240,180,120,.16);
+    --touch-c: rgba(150,200,160,.15);
+    --touch-d: rgba(210,140,190,.15);
+  }
+}
+:root[data-theme="dark"] .era-impression {
+  --touch-a: rgba(120,150,220,.20);
+  --touch-b: rgba(240,180,120,.16);
+  --touch-c: rgba(150,200,160,.15);
+  --touch-d: rgba(210,140,190,.15);
+}
+
+/* ---------- 本文 ── 縁のない光の面 ────────────────────────
+   混ぜていない色を並べる。縁は mask で溶かす。
+   枠がないので、面がどこで終わるか分からない。それでよい。 */
+.era-impression .prose .run {
+  padding: 3rem 2.6rem 3.2rem;
+  box-sizing: border-box;
+  margin: 3.4rem 0;
+  background:
+    radial-gradient(circle at 12% 18%, var(--touch-a) 0 4.5rem, transparent 5rem),
+    radial-gradient(circle at 74% 12%, var(--touch-b) 0 5.5rem, transparent 6rem),
+    radial-gradient(circle at 32% 62%, var(--touch-c) 0 6rem,   transparent 6.5rem),
+    radial-gradient(circle at 86% 58%, var(--touch-d) 0 4rem,   transparent 4.5rem),
+    radial-gradient(circle at 54% 88%, var(--touch-a) 0 5rem,   transparent 5.5rem),
+    radial-gradient(circle at 8%  84%, var(--touch-b) 0 3.6rem, transparent 4rem),
+    var(--bg-raise);
+  -webkit-mask-image: radial-gradient(ellipse 96% 94% at 50% 50%, #000 62%, transparent 100%);
+          mask-image: radial-gradient(ellipse 96% 94% at 50% 50%, #000 62%, transparent 100%);
+}
+
+.era-impression .prose .run > p {
+  margin: 1.35em 0;
+  line-height: 2.1;
+  letter-spacing: .02em;
+}
+
+@media (min-width: 900px) {
+  .era-impression .prose .run {
+    width: calc(100% + 12rem);
+    margin-left: -6rem;
+    margin-right: -6rem;
+    padding: 3.8rem 5rem 4rem;
+  }
+}
+
+/* 節の書き出しの一字は、色の中に沈む */
+.era-impression .prose .run.-opens > p:first-child::first-letter,
+.era-impression .prose .run.-first > p:first-child::first-letter {
+  float: left;
+  font-family: var(--display-era);
+  font-size: 3.4em;
+  line-height: .86;
+  margin: .04em .18em 0 0;
+  color: var(--accent-ink, var(--accent));
+  opacity: .82;
+}
+
+/* 引用は、枠を持たずに色の面として置かれる */
+.era-impression .prose .run .pull {
+  border: 0;
+  padding: 1.4rem 1.8rem;
+  background: radial-gradient(ellipse 100% 100% at 30% 40%, var(--touch-a), transparent 78%);
+}
+
+/* ポスト印象派は色を並べるだけでは済まなかった。斑を大きく、輪郭を戻す */
+body[data-chapter="18-post"] .prose .run {
+  background:
+    radial-gradient(circle at 20% 24%, rgba(240,170,60,.22) 0 8rem, transparent 8.4rem),
+    radial-gradient(circle at 78% 30%, rgba(60,110,200,.20) 0 9rem, transparent 9.4rem),
+    radial-gradient(circle at 44% 78%, rgba(200,70,60,.16)  0 7rem, transparent 7.4rem),
+    var(--bg-raise);
+}
+
+/* 世紀末は、光ではなく線と装飾へ向かった。斑を細い曲線に置き換える */
+body[data-chapter="19-fin-de-siecle"] .prose .run {
+  background:
+    repeating-linear-gradient(102deg, rgba(150,120,180,.10) 0 1px, transparent 1px 14px),
+    repeating-linear-gradient(-98deg, rgba(190,150,90,.09)  0 1px, transparent 1px 22px),
+    var(--bg-raise);
+  -webkit-mask-image: none;
+          mask-image: none;
+  border-top: 1px solid var(--rule-soft);
+  border-bottom: 1px solid var(--rule-soft);
+}
+
+/* ---------- 図版 ── 額を細くし、光を回す ────────────────── */
+.era-impression figure.plate .mount {
+  border: 0;
+  padding: clamp(.5rem, 1.6vw, 1rem);
+  background: var(--mat);
+  box-shadow: 0 0 0 1px var(--rule-soft), 0 24px 50px -36px rgba(90,80,130,.8);
+}
+
+/* ---------- 細部 ──────────────────────────────────────── */
+.era-impression ::selection { background: rgba(120,150,220,.3); }
+
+/* ---------- 狭い画面 ────────────────────────────────────
+   縁を溶かすと、狭い画面では文字が縁に近づきすぎる。溶かしを外す。 */
+@media (max-width: 899px) {
+  .era-impression .prose .run {
+    padding: 1.8rem 1.3rem 2rem;
+    -webkit-mask-image: none;
+            mask-image: none;
+  }
+}

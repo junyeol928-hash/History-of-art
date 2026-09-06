@@ -1,0 +1,122 @@
+/* =========================================================================
+   戦後・現代 ── 第23〜25章
+   ニューヨーク／ポップとミニマル／現代
+
+   この時代の展示室は白い立方体である。作品と作品のあいだに
+   広大な余白があり、その余白が作品を作品にしている。
+
+   足すのは三つ。
+     1. 本文を、読み幅よりさらに狭く、左に寄せる（壁に対する作品の位置）
+     2. 塊と塊のあいだに、展示室のような余白を空ける
+     3. 節の書き出しだけを、壁一面の面として広げる
+
+   ここまでの14時代は「面を広げる」方向で強くしてきた。
+   この時代だけは逆に振る。狭さと空白が、この時代の記号である。
+
+   守ること（WORLD_BRIEF.md）：
+   ・stage.js が動かなければ .run が付かず、ふつうの読み幅で全文読める
+   ・狭くしても、一行が短くなりすぎない下限を置く
+   ========================================================================= */
+
+.era-contemp {
+  --wall: rgba(0,0,0,.055);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .era-contemp { --wall: rgba(255,255,255,.05); }
+}
+:root[data-theme="dark"] .era-contemp { --wall: rgba(255,255,255,.05); }
+
+/* ---------- 本文 ── 白い壁に、離して掛ける ────────────────
+   面を広げない。狭め、左に寄せ、あいだを大きく空ける。 */
+@media (min-width: 900px) {
+  .era-contemp .prose .run {
+    width: min(30rem, 78%);
+    margin: 7rem 0 7rem 0;
+    padding: 0;
+  }
+  .era-contemp .prose .run:nth-of-type(even) { margin-left: auto; margin-right: 0; }
+
+  /* 節の書き出しだけ、壁一面の面として広げる */
+  .era-contemp .prose .run.-opens {
+    width: calc(100% + 14rem);
+    margin-left: -7rem;
+    margin-right: -7rem;
+    padding: 4.5rem 7rem;
+    background: var(--wall);
+  }
+  .era-contemp .prose .run.-first {
+    width: calc(100% + 14rem);
+    margin-left: -7rem;
+    margin-right: -7rem;
+    padding: 5rem 7rem;
+    background: var(--wall);
+  }
+}
+
+.era-contemp .prose .run > p {
+  margin: 1.5em 0;
+  line-height: 2.05;
+}
+
+/* 見出しは壁の表示板。小さく、間隔を広く */
+.era-contemp .prose h2 {
+  font-size: 1.15rem;
+  letter-spacing: .3em;
+  font-weight: 500;
+  border-top: 1px solid var(--rule);
+  padding-top: 1.4rem;
+  margin-top: 6rem;
+}
+
+/* 引用は、キャプションの体裁で壁に貼る */
+.era-contemp .prose .run .pull {
+  border: 0;
+  padding: 0 0 0 1.2rem;
+  border-left: 1px solid var(--rule);
+  font-size: .88rem;
+  line-height: 1.85;
+  color: var(--ink-2);
+}
+
+/* ポップの章だけ、壁を色の面にする ── 白い立方体への反撃 */
+@media (min-width: 900px) {
+  body[data-chapter="24-pop-minimal"] .prose .run.-opens,
+  body[data-chapter="24-pop-minimal"] .prose .run.-first {
+    background:
+      linear-gradient(90deg,
+        rgba(255,86,120,.16) 0 25%,
+        rgba(255,196,60,.16) 25% 50%,
+        rgba(60,170,220,.16) 50% 75%,
+        rgba(120,210,140,.16) 75% 100%);
+  }
+}
+
+/* 現代の章は、壁そのものが揺れる ── 一枚岩の展示室が終わった時代 */
+@media (min-width: 900px) {
+  body[data-chapter="25-contemporary"] .prose .run:nth-of-type(3n+1) { width: min(24rem, 62%); }
+  body[data-chapter="25-contemporary"] .prose .run:nth-of-type(3n+2) { width: min(34rem, 88%); margin-left: 22%; }
+  body[data-chapter="25-contemporary"] .prose .run:nth-of-type(3n)   { width: min(28rem, 72%); margin-left: 8%; }
+}
+
+/* ---------- 図版 ── 額を持たない。壁に直に掛かる ────────── */
+.era-contemp figure.plate .mount {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  box-shadow: 0 30px 60px -46px rgba(0,0,0,.65);
+}
+.era-contemp figure.plate figcaption {
+  font-size: .8rem;
+  letter-spacing: .06em;
+  color: var(--ink-3);
+}
+
+/* ---------- 細部 ──────────────────────────────────────── */
+.era-contemp ::selection { background: rgba(0,0,0,.14); }
+
+/* ---------- 狭い画面 ────────────────────────────────────
+   狭い画面でこれ以上狭めない。余白だけ残す。 */
+@media (max-width: 899px) {
+  .era-contemp .prose .run { width: auto; margin: 3.4rem 0; }
+  .era-contemp .prose h2 { margin-top: 3.6rem; }
+}

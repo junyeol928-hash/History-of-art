@@ -13,7 +13,7 @@
    守ること（WORLD_BRIEF.md）：
    ・stage.js が動かなければ .run が付かず、まっすぐ一列で読める
    ・散らしても読む順番を迷わせない（上から下の順序は崩さない）
-   ・傾きは 1.4 度まで。読めなくなる角度にはしない
+   ・傾きは 3.6 度まで。紙片は重ねるが、上の紙が下の文章を隠さない
    ========================================================================= */
 
 /* ---------- 紙 ── 方眼と、刷りの見当 ──────────────────── */
@@ -53,7 +53,10 @@
 @media (min-width: 900px) {
   .era-modern .prose .run {
     position: relative;
-    padding: 1.5rem 1.7rem;
+    /* 重ねるぶん、上下の余白を厚く取る。
+       重なり(最大1.6rem)と傾き(最大3.6度＝端で約27px)を、
+       余白の内側で吸収させる。紙は重なるが、文章は隠れない。 */
+    padding: 3rem 1.9rem 4rem;
     box-sizing: border-box;
     background: var(--bg-raise);
     box-shadow: 0 1px 0 rgba(21,21,22,.1), 0 18px 40px -30px rgba(21,21,22,.55);
@@ -61,25 +64,29 @@
 
   /* 紙片ごとに、幅・寄り・傾きを変える */
   .era-modern .prose .run:nth-of-type(4n+1) {
-    width: calc(100% + 5rem); margin-left: -5rem;
-    transform: rotate(-.5deg);
+    width: calc(100% + 9rem); margin-left: -9rem;
+    transform: rotate(-2.4deg);
+    z-index: 2;
   }
   .era-modern .prose .run:nth-of-type(4n+2) {
-    width: calc(100% - 3rem); margin-left: 3rem;
-    transform: rotate(.7deg);
+    width: calc(100% - 4rem); margin-left: 6rem; margin-top: -1.4rem;
+    transform: rotate(3.1deg);
+    z-index: 3;
     background:
-      linear-gradient(105deg, var(--plane-a) 0 42%, transparent 42%),
+      linear-gradient(105deg, var(--plane-a) 0 46%, transparent 46%),
       var(--bg-raise);
   }
   .era-modern .prose .run:nth-of-type(4n+3) {
-    width: calc(100% + 7rem); margin-left: -3.5rem;
-    transform: rotate(.35deg);
+    width: calc(100% + 11rem); margin-left: -5.5rem; margin-top: -1rem;
+    transform: rotate(1.6deg);
+    z-index: 1;
   }
   .era-modern .prose .run:nth-of-type(4n) {
-    width: calc(100% - 1.5rem);
-    transform: rotate(-.9deg);
+    width: calc(100% - 2rem); margin-left: -2rem; margin-top: -1.6rem;
+    transform: rotate(-3.6deg);
+    z-index: 4;
     background:
-      linear-gradient(255deg, var(--plane-b) 0 38%, transparent 38%),
+      linear-gradient(255deg, var(--plane-b) 0 42%, transparent 42%),
       var(--bg-raise);
   }
 
@@ -91,10 +98,11 @@
     border-left: 6px solid var(--red);
   }
   .era-modern .prose .run.-first {
-    width: calc(100% + 9rem); margin-left: -4.5rem;
-    transform: rotate(0deg);
-    border-top: 10px solid var(--red);
+    width: calc(100% + 12rem); margin-left: -6rem;
+    transform: rotate(-1.1deg);
+    border-top: 14px solid var(--red);
     background: var(--bg-raise);
+    z-index: 5;
   }
 }
 

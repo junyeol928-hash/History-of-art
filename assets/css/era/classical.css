@@ -1,0 +1,122 @@
+/* =========================================================================
+   古代ギリシア・ローマ ── 第3〜4章
+
+   碑文の面にする。石に彫られた文字は、余白を贅沢に使わない。
+   行はきっちり並び、面は一枚の板として立つ。
+
+   足すのは三つ。
+     1. 本文を大理石の板に彫り込む（均等割り付け・彫りの影）
+     2. 節の頭に、彫り込みの見出し帯を通す
+     3. ローマの章だけ、板を左右の柱で挟む
+
+   守ること（WORLD_BRIEF.md）：
+   ・stage.js が動かなければ .run が付かず、ふつうの段落として読める
+   ・彫りの影は薄く。文字が沈んで読めなくなる手前で止める
+   ========================================================================= */
+
+.era-classical {
+  --marble:
+    linear-gradient(178deg, rgba(255,255,255,.9), rgba(240,238,230,.9)),
+    repeating-linear-gradient(64deg, rgba(150,146,132,.055) 0 1px, transparent 1px 23px),
+    repeating-linear-gradient(-71deg, rgba(150,146,132,.04) 0 1px, transparent 1px 37px);
+  --chisel: rgba(120,116,102,.45);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .era-classical {
+    --marble:
+      linear-gradient(178deg, rgba(52,52,50,.92), rgba(40,40,38,.92)),
+      repeating-linear-gradient(64deg, rgba(220,216,204,.05) 0 1px, transparent 1px 23px);
+    --chisel: rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"] .era-classical {
+  --marble:
+    linear-gradient(178deg, rgba(52,52,50,.92), rgba(40,40,38,.92)),
+    repeating-linear-gradient(64deg, rgba(220,216,204,.05) 0 1px, transparent 1px 23px);
+  --chisel: rgba(0,0,0,.6);
+}
+
+/* ---------- 本文 ── 碑文の板 ──────────────────────────────
+   段落の間を空けず、面を埋める。行末を揃える。
+   彫り込みの影を、面の内側の縁に落とす。 */
+.era-classical .prose .run {
+  padding: 2.6rem 2.8rem;
+  box-sizing: border-box;
+  margin: 3rem 0;
+  background: var(--marble);
+  box-shadow:
+    inset 0 3px 5px -2px var(--chisel),
+    inset 0 -3px 5px -2px rgba(255,255,255,.5),
+    0 14px 34px -28px rgba(40,38,30,.8);
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+.era-classical .prose .run > p {
+  margin: 0;
+  text-indent: 1.3em;
+  text-align: justify;
+  line-height: 1.98;
+  letter-spacing: .08em;
+  text-shadow: 0 1px 0 rgba(255,255,255,.55);
+}
+.era-classical .prose .run > p:first-child { text-indent: 0; }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .era-classical .prose .run > p { text-shadow: 0 -1px 0 rgba(0,0,0,.5); }
+}
+:root[data-theme="dark"] .era-classical .prose .run > p { text-shadow: 0 -1px 0 rgba(0,0,0,.5); }
+
+/* 節の書き出しは、板の肩に一行ぶんの帯を通す */
+.era-classical .prose .run.-opens { border-top: 4px solid var(--frame); }
+.era-classical .prose .run.-opens > p:first-child {
+  letter-spacing: .22em;
+  text-align: center;
+  text-indent: 0;
+}
+
+@media (min-width: 900px) {
+  .era-classical .prose .run {
+    width: calc(100% + 8rem);
+    margin-left: -4rem;
+    margin-right: -4rem;
+  }
+}
+
+/* ローマの章だけ、板を左右の柱で挟む ── 建築が文字を支える */
+@media (min-width: 1100px) {
+  body[data-chapter="04-rome"] .prose .run {
+    width: calc(100% + 14rem);
+    margin-left: -7rem;
+    margin-right: -7rem;
+    padding-left: 6.4rem;
+    padding-right: 6.4rem;
+    border-left: 1px solid var(--rule);
+    border-right: 1px solid var(--rule);
+    background:
+      repeating-linear-gradient(90deg, rgba(150,146,132,.16) 0 2px, transparent 2px 9px) left  / 3.6rem 100% no-repeat,
+      repeating-linear-gradient(90deg, rgba(150,146,132,.16) 0 2px, transparent 2px 9px) right / 3.6rem 100% no-repeat,
+      var(--marble);
+  }
+}
+
+/* ---------- 図版 ── 白い面に置く ────────────────────────── */
+.era-classical figure.plate .mount {
+  border: 1px solid var(--rule);
+  background: #fff;
+  box-shadow: 0 18px 40px -32px rgba(40,38,30,.8);
+}
+
+/* ---------- 細部 ──────────────────────────────────────── */
+.era-classical ::selection { background: rgba(120,116,102,.24); }
+.era-classical .prose .run .pull {
+  margin: 1.8rem 0;
+  text-indent: 0;
+  text-align: center;
+  letter-spacing: .14em;
+}
+
+/* ---------- 狭い画面 ──────────────────────────────────── */
+@media (max-width: 899px) {
+  .era-classical .prose .run { padding: 1.6rem 1.2rem; }
+  .era-classical .prose .run > p { text-align: left; letter-spacing: .04em; line-height: 1.9; }
+}

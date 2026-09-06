@@ -1,0 +1,179 @@
+/* =========================================================================
+   中国・朝鮮 ── 第32〜34章
+   青銅と墓／山水／朝鮮
+
+   日本の章と同じ縦組みでは、ここが日本の続きに見えてしまう。
+   日本は料紙の面をびっしり埋める。中国は逆で、余白が主題である。
+   同じ縦組みでも、空けかたで別の世界にする。
+
+   足すのは三つ。
+     1. 本文を縦組みにし、列と列を大きく空ける
+     2. 天地に大きな余白を取る（掛幅の上下）
+     3. 節の頭に朱の印を捺す
+
+   三章はそれぞれ別の構成にする。
+     32 青銅 ── 空けない。饕餮文のように面を埋める
+     33 山水 ── 最も空ける。余白が画面の半分を占める
+     34 朝鮮 ── 印も掛幅も使わない。白磁の素地のように何も足さない
+
+   守ること（WORLD_BRIEF.md）：
+   ・stage.js が動かなければ .run が付かず、ふつうの横組みで全文読める
+   ・ページ全体は縦スクロールのまま。横送りに閉じ込めない
+   ========================================================================= */
+
+.era-china {
+  --seal: #9c3024;
+  --silk: rgba(246,243,234,.55);
+  --silk-edge: rgba(150,146,130,.3);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .era-china {
+    --seal: #c65a48;
+    --silk: rgba(220,214,196,.045);
+    --silk-edge: rgba(200,194,176,.22);
+  }
+}
+:root[data-theme="dark"] .era-china {
+  --seal: #c65a48;
+  --silk: rgba(220,214,196,.045);
+  --silk-edge: rgba(200,194,176,.22);
+}
+
+/* ---------- 本文 ── 縦組み、列を空ける ────────────────────
+   注意：縦組みでは論理プロパティの軸が入れ替わる。
+   margin-block は左右に効く。ここは物理プロパティで書く。 */
+.era-china .prose .run {
+  /* 縦組みでは block 軸が横になる。つまり width は「行の伸びる向き」ではなく
+     「列が積まれる向き」の寸法で、auto にすると全列ぶんの幅まで伸びる。
+     900px 未満では width を書いていなかったので、
+     ページごと横にはみ出していた。ここで必ず読み幅に留める。 */
+  width: 100%;
+
+  position: relative;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+
+  padding: 4rem 1.8rem 4.4rem;   /* 天地を大きく空ける */
+  box-sizing: border-box;
+
+  height: min(80vh, 44em);
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+
+  margin: 3.4rem 0;
+  background: var(--silk);
+  border-left: 1px solid var(--silk-edge);
+  border-right: 1px solid var(--silk-edge);
+  scrollbar-color: var(--accent-line) transparent;
+}
+
+.era-china .prose .run > p {
+  margin: 0 0 0 3.4em;         /* 縦組みでは列の間隔。日本より広く取る */
+  line-height: 2.25;
+  letter-spacing: .09em;
+  text-indent: 1em;
+}
+.era-china .prose .run > p:first-child { text-indent: 0; }
+
+/* 節の頭に、朱の印を捺す */
+.era-china .prose .run.-opens::after,
+.era-china .prose .run.-first::after {
+  content: "";
+  position: absolute;
+  top: 1.3rem; right: 1.3rem;
+  width: 1.5rem; height: 1.5rem;
+  background:
+    linear-gradient(0deg,  transparent 38%, rgba(255,255,255,.85) 38% 46%, transparent 46%),
+    linear-gradient(90deg, transparent 38%, rgba(255,255,255,.85) 38% 46%, transparent 46%),
+    var(--seal);
+  pointer-events: none;
+}
+
+/* 縦組みの中では、線の向きが変わる */
+.era-china .prose .run strong { background: none; box-shadow: inset -.3em 0 0 var(--accent-soft); }
+.era-china .prose .run .term  { border-bottom: 0; border-right: 1px dotted var(--accent-line); }
+.era-china .prose .run .pull {
+  border: 0;
+  border-right: 3px solid var(--seal);
+  padding: 0 1.1rem 0 0;
+  margin-left: 3.4em;
+  text-align: start;
+  text-indent: 0;
+}
+
+@media (min-width: 900px) {
+  .era-china .prose .run {
+    width: calc(100% + 10rem);
+    margin-left: -5rem; margin-right: -5rem;
+    padding-left: 2.6rem; padding-right: 2.6rem;
+  }
+}
+@media (min-width: 1240px) {
+  .era-china .prose .run {
+    width: calc(100% + 14rem);
+    margin-left: -7rem; margin-right: -7rem;
+    padding-left: 3.4rem; padding-right: 3.4rem;
+  }
+}
+
+/* 32 青銅 ── 空けない。面を埋める。文様は隙間を嫌った */
+body[data-chapter="32-china-early"] .prose .run {
+  padding-top: 1.8rem;
+  padding-bottom: 2rem;
+  background:
+    repeating-linear-gradient(0deg,  rgba(120,110,86,.09) 0 1px, transparent 1px 10px),
+    repeating-linear-gradient(90deg, rgba(120,110,86,.09) 0 1px, transparent 1px 10px),
+    var(--silk);
+}
+body[data-chapter="32-china-early"] .prose .run > p { margin-left: 1.9em; }
+
+/* 33 山水 ── 最も空ける。天地を大きく取り、列をさらに離す */
+body[data-chapter="33-china-shanshui"] .prose .run {
+  height: min(88vh, 52em);
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  background:
+    linear-gradient(180deg, transparent 0 22%, rgba(150,146,130,.05) 55%, transparent 88%),
+    var(--silk);
+}
+body[data-chapter="33-china-shanshui"] .prose .run > p { margin-left: 4.6em; }
+
+/* 34 朝鮮 ── 何も足さない。白磁の素地。印も掛幅の縁も使わない */
+body[data-chapter="34-korea"] .prose .run {
+  background: none;
+  border: 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+body[data-chapter="34-korea"] .prose .run::after { display: none; }
+body[data-chapter="34-korea"] .prose .run > p { margin-left: 2.9em; }
+
+/* ---------- 図版 ── 掛幅の裂 ────────────────────────────── */
+.era-china figure.plate .mount {
+  border: 0;
+  padding: clamp(.8rem, 2.6vw, 1.5rem);
+  background:
+    linear-gradient(180deg, var(--frame) 0 6px, transparent 6px),
+    linear-gradient(0deg,   var(--frame) 0 9px, transparent 9px),
+    var(--mat);
+}
+body[data-chapter="34-korea"] figure.plate .mount {
+  background: var(--mat);
+  border: 1px solid var(--rule-soft);
+  padding: clamp(.6rem, 2vw, 1.2rem);
+}
+
+/* ---------- 細部 ──────────────────────────────────────── */
+.era-china ::selection { background: rgba(156,48,36,.24); }
+
+/* ---------- 狭い画面 ──────────────────────────────────── */
+@media (max-width: 700px) {
+  .era-china .prose .run,
+  body[data-chapter="33-china-shanshui"] .prose .run {
+    height: min(70vh, 30em);
+    padding: 2rem 1rem 2.2rem;
+  }
+  .era-china .prose .run > p { margin-left: 2.2em; line-height: 2.05; }
+  body[data-chapter="33-china-shanshui"] .prose .run > p { margin-left: 3em; }
+}
