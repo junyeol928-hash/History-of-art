@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="180" height="180">
+  <!-- 昼の壁に、時代の顔料で何枚も。姉妹サイト「名画の部屋」の「暗室に一枚」と対にした。
+       色は skins.css の時代色（実在の顔料）から ── ラピス、朱、緑青、薔薇、赤土、ウルトラマリン。
+       額の群れは中央の約56%に収め、Android が円で切り抜いても欠けない。 -->
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7f4ec"/><stop offset="1" stop-color="#ebe6d9"/>
+    </linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="2.2" stdDeviation="2.2" flood-color="#3c3223" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="180" height="180" fill="url(#wall)"/>
+  <g filter="url(#sh)"><rect x="40" y="44" width="46" height="58" fill="#fffdf8"/><rect x="43" y="47" width="40" height="52" fill="#1b6ca8"/></g>
+  <g filter="url(#sh)"><rect x="92" y="44" width="48" height="34" fill="#fffdf8"/><rect x="95" y="47" width="42" height="28" fill="#a8392b"/></g>
+  <g filter="url(#sh)"><rect x="92" y="84" width="22" height="26" fill="#fffdf8"/><rect x="95" y="87" width="16" height="20" fill="#4a7c59"/></g>
+  <g filter="url(#sh)"><rect x="118" y="84" width="22" height="26" fill="#fffdf8"/><rect x="121" y="87" width="16" height="20" fill="#b8567f"/></g>
+  <g filter="url(#sh)"><rect x="40" y="108" width="30" height="28" fill="#fffdf8"/><rect x="43" y="111" width="24" height="22" fill="#9c4a2f"/></g>
+  <g filter="url(#sh)"><rect x="76" y="116" width="64" height="20" fill="#fffdf8"/><rect x="79" y="119" width="58" height="14" fill="#2f4a9b"/></g>
+</svg>
